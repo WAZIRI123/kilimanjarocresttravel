@@ -50,8 +50,8 @@
             <div class="hero-cta">
                 <div class="cta-wrapper">
                     <div class="cta-buttons">
-                        <a href="#safari-packages" class="cta-button">Explore Safaris</a>
-                        <a href="#contact" class="cta-button secondary">Contact Us</a>
+                        <a href="#safari-packages" class="cta-button">View Tours</a>
+                        <a href="#contact" class="cta-button secondary">Book Now</a>
                     </div>
                     
                     <!-- Scroll Indicator -->

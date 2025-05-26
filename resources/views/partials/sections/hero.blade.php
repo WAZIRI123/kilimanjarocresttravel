@@ -30,6 +30,11 @@
     
     <!-- Mobile Navigation (Hidden by default) -->
     <div class="mobile-nav">
+        <button class="mobile-close-btn" aria-label="Close menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
         <a href="#" class="mobile-nav-link active">Home</a>
         <a href="#safari-packages" class="mobile-nav-link">Safari Packages</a>
         <a href="#destinations" class="mobile-nav-link">Destinations</a>
@@ -114,10 +119,18 @@
             left: 0;
             width: 100%;
             z-index: 1000;
-            padding: 1.5rem 0;
+            padding: 0.8rem 0; /* Reduced padding */
             transition: all 0.4s ease;
-            background: transparent;
-            border-bottom: 1px solid transparent;
+            background: rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .modern-navbar.scrolled {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 0.5rem 0; /* Reduced padding when scrolled */
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
         }
         
         .navbar-container {
@@ -137,7 +150,7 @@
         }
         
         .logo-img {
-            height: 60px; /* Increased from 40px */
+            height: 70px; /* Reduced logo size */
             width: auto;
             transition: all 0.3s ease;
             filter: brightness(1.4) contrast(1.3) saturate(1.4);
@@ -164,15 +177,21 @@
             gap: 2rem;
         }
         
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
+        
         .nav-link {
-            color: rgba(255, 255, 255, 0.9);
+            color: #ffffff;
             text-decoration: none;
-            font-weight: 500;
-            font-size: 0.95rem;
-            letter-spacing: 0.5px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500; /* Consistent weight */
+            font-size: 0.9rem;
+            letter-spacing: 0.8px;
             position: relative;
-            padding: 0.5rem 0;
-            transition: color 0.3s ease;
+            padding: 0.4rem 0;
+            transition: all 0.3s ease;
+            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
         }
         
         .nav-link::after {
@@ -182,8 +201,10 @@
             left: 0;
             width: 0;
             height: 2px;
-            background-color: #e8b143;
-            transition: width 0.3s ease;
+            background: linear-gradient(90deg, #e8b143, #ffd700);
+            transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1), transform 0.3s ease;
+            transform-origin: left;
+            border-radius: 2px;
         }
         
         .nav-link:hover,
@@ -194,19 +215,30 @@
         .nav-link:hover::after,
         .nav-link.active::after {
             width: 100%;
+            transform: scaleX(1.1);
+        }
+        
+        .nav-link:hover,
+        .nav-link.active {
+            color: #ffffff;
+            text-shadow: 0 0 12px rgba(255, 255, 255, 0.6);
+        }
+        
+        .nav-link.active {
+            /* No font weight change */
         }
         
         /* CTA Button Styles */
         .nav-cta-button {
             display: inline-block;
-            padding: 12px 30px;
+            padding: 8px 20px; /* Reduced padding */
             border-radius: 50px;
             font-weight: 600;
             text-transform: uppercase;
             letter-spacing: 1px;
             transition: all 0.3s ease;
             text-decoration: none;
-            font-size: 0.8rem;
+            font-size: 0.75rem; /* Slightly smaller font */
             background-color: #e8b143;
             color: #1a1a1a !important;
             border: 2px solid #e8b143;
@@ -268,23 +300,46 @@
         
         /* Mobile Navigation */
         .mobile-nav {
+            display: none;
+            flex-direction: column;
             position: fixed;
             top: 0;
             right: -100%;
-            width: 250px;
+            width: 80%;
+            max-width: 320px;
             height: 100vh;
-            background: rgba(15, 23, 42, 0.98);
+            background-color: rgba(26, 26, 26, 0.98);
             backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            padding: 4rem 1.5rem 2rem;
             z-index: 1000;
-            padding: 6rem 2rem 2rem;
-            display: flex;
-            flex-direction: column;
-            gap: 1.5rem;
-            transition: right 0.4s ease;
+            transition: right 0.3s ease-in-out;
+            overflow-y: auto;
         }
         
         .mobile-nav.active {
+            display: flex;
             right: 0;
+            box-shadow: -5px 0 30px rgba(0, 0, 0, 0.2);
+        }
+        
+        .mobile-close-btn {
+            position: absolute;
+            top: 1.5rem;
+            right: 1.5rem;
+            background: none;
+            border: none;
+            color: #fff;
+            font-size: 1.5rem;
+            cursor: pointer;
+            padding: 0.5rem;
+            z-index: 1001;
+            opacity: 0.8;
+            transition: opacity 0.2s ease;
+        }
+        
+        .mobile-close-btn:hover {
+            opacity: 1;
         }
         
         .mobile-nav-link {
@@ -558,6 +613,12 @@
         }
 
         @media (max-width: 576px) {
+            .logo-img {
+            height: 40px; /* Reduced logo size */
+            width: auto;
+            transition: all 0.3s ease;
+            filter: brightness(1.4) contrast(1.3) saturate(1.4);
+        }
             .title-line {
                 font-size: 2.8rem;
             }
@@ -818,19 +879,30 @@
             // Mobile menu toggle
             const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
             const mobileNav = document.querySelector('.mobile-nav');
+            const mobileCloseBtn = document.querySelector('.mobile-close-btn');
             const menuLines = document.querySelectorAll('.menu-line');
             
+            function toggleMobileMenu() {
+                mobileNav.classList.toggle('active');
+                mobileMenuBtn.classList.toggle('active');
+                document.body.style.overflow = mobileNav.classList.contains('active') ? 'hidden' : '';
+                
+                // Animate hamburger to X
+                menuLines[0].classList.toggle('rotate-45');
+                menuLines[0].classList.toggle('translate-y-2');
+                menuLines[1].classList.toggle('opacity-0');
+                menuLines[2].classList.toggle('-rotate-45');
+                menuLines[2].classList.toggle('-translate-y-2');
+            }
+            
             if (mobileMenuBtn) {
-                mobileMenuBtn.addEventListener('click', function() {
-                    mobileNav.classList.toggle('active');
-                    this.classList.toggle('active');
-                    
-                    // Animate hamburger to X
-                    menuLines[0].classList.toggle('rotate-45');
-                    menuLines[0].classList.toggle('translate-y-2');
-                    menuLines[1].classList.toggle('opacity-0');
-                    menuLines[2].classList.toggle('-rotate-45');
-                    menuLines[2].classList.toggle('-translate-y-2');
+                mobileMenuBtn.addEventListener('click', toggleMobileMenu);
+            }
+            
+            if (mobileCloseBtn) {
+                mobileCloseBtn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    toggleMobileMenu();
                 });
             }
             

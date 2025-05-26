@@ -150,7 +150,7 @@
         }
         
         .logo-img {
-            height: 70px; /* Reduced logo size */
+            height: 60px; /* Reduced logo size */
             width: auto;
             transition: all 0.3s ease;
             filter: brightness(1.4) contrast(1.3) saturate(1.4);

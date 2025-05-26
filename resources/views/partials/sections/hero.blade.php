@@ -1,4 +1,42 @@
 <section id="hero-section" class="hero-section" data-testid="section-container">
+    <!-- Modern Transparent Navbar -->
+    <nav class="modern-navbar">
+        <div class="navbar-container">
+            <!-- Logo -->
+            <div class="navbar-logo">
+                <a href="#" class="logo-link">
+                    <img src="https://waziri123.github.io/star-safari-website-demo/assets/images/star-safaris.png" alt="Stan Safari Tanzania" class="logo-img">
+                </a>
+            </div>
+            
+            <!-- Desktop Navigation -->
+            <div class="navbar-links">
+                <a href="#" class="nav-link active">Home</a>
+                <a href="#safari-packages" class="nav-link">Safari Packages</a>
+                <a href="#destinations" class="nav-link">Destinations</a>
+                <a href="#about" class="nav-link">About Us</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <a href="#contact" class="nav-cta-button">Get Quote</a>
+            </div>
+            
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span class="menu-line"></span>
+                <span class="menu-line"></span>
+                <span class="menu-line"></span>
+            </button>
+        </div>
+    </nav>
+    
+    <!-- Mobile Navigation (Hidden by default) -->
+    <div class="mobile-nav">
+        <a href="#" class="mobile-nav-link active">Home</a>
+        <a href="#safari-packages" class="mobile-nav-link">Safari Packages</a>
+        <a href="#destinations" class="mobile-nav-link">Destinations</a>
+        <a href="#about" class="mobile-nav-link">About Us</a>
+        <a href="#contact" class="mobile-nav-link">Contact</a>
+    </div>
+    
     <!-- Background Image -->
     <div class="hero-background">
         <img 
@@ -38,7 +76,7 @@
     </div>
 
     <!-- Hero Content -->
-    <div class="hero-content" style="padding-top: 40vh;">
+    <div class="hero-content" style="padding-top: 30vh;">
         <div class="hero-text">
             <h1 class="font_0 wixui-rich-text__text" style="color:#fff;font-weight: bold; font-size: 90px;
     text-decoration: none;
@@ -69,6 +107,255 @@
 
     <!-- Custom CSS for the hero section -->
     <style>
+        /* Modern Navbar Styles */
+        .modern-navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            padding: 1.5rem 0;
+            transition: all 0.4s ease;
+            background: transparent;
+            border-bottom: 1px solid transparent;
+        }
+        
+        .navbar-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .navbar-logo a {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            height: 100%;
+        }
+        
+        .logo-img {
+            height: 60px; /* Increased from 40px */
+            width: auto;
+            transition: all 0.3s ease;
+            filter: brightness(1.4) contrast(1.3) saturate(1.4);
+        }
+        
+        .modern-navbar.scrolled .logo-img {
+            height: 50px; /* Slightly smaller when scrolled, increased from 35px */
+        }
+        
+        .logo-text {
+            font-size: 1.5rem;
+            line-height: 1;
+        }
+        
+        .logo-subtext {
+            font-size: 0.8rem;
+            opacity: 0.8;
+            margin-top: 2px;
+            letter-spacing: 2px;
+        }
+        
+        .navbar-links {
+            display: flex;
+            gap: 2rem;
+        }
+        
+        .nav-link {
+            color: rgba(255, 255, 255, 0.9);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+            letter-spacing: 0.5px;
+            position: relative;
+            padding: 0.5rem 0;
+            transition: color 0.3s ease;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: #e8b143;
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover,
+        .nav-link.active {
+            color: #fff;
+        }
+        
+        .nav-link:hover::after,
+        .nav-link.active::after {
+            width: 100%;
+        }
+        
+        /* CTA Button Styles */
+        .nav-cta-button {
+            display: inline-block;
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            font-size: 0.8rem;
+            background-color: #e8b143;
+            color: #1a1a1a !important;
+            border: 2px solid #e8b143;
+            margin-left: 1rem;
+        }
+        
+        .nav-cta-button:hover {
+            background-color: #e8b143;
+            color: #1a1a1a !important;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            opacity: 0.95;
+        }
+        
+        /* Mobile Menu Button */
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0.5rem;
+            z-index: 1001;
+        }
+        
+        .menu-line {
+            display: block;
+            width: 25px;
+            height: 2px;
+            background-color: #fff;
+            margin: 5px 0;
+            transition: all 0.3s ease;
+            transform-origin: center;
+        }
+        
+        /* Menu button animation */
+        .mobile-menu-btn.active .menu-line {
+            background-color: #e8b143;
+        }
+        
+        .rotate-45 {
+            transform: rotate(45deg);
+        }
+        
+        .-rotate-45 {
+            transform: rotate(-45deg);
+        }
+        
+        .translate-y-2 {
+            transform: translateY(7px);
+        }
+        
+        .-translate-y-2 {
+            transform: translateY(-7px);
+        }
+        
+        .opacity-0 {
+            opacity: 0;
+        }
+        
+        /* Mobile Navigation */
+        .mobile-nav {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 250px;
+            height: 100vh;
+            background: rgba(15, 23, 42, 0.98);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            padding: 6rem 2rem 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            transition: right 0.4s ease;
+        }
+        
+        .mobile-nav.active {
+            right: 0;
+        }
+        
+        .mobile-nav-link {
+            color: rgba(255, 255, 255, 0.9);
+            text-decoration: none;
+            font-size: 1.1rem;
+            padding: 0.5rem 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            transition: color 0.3s ease, padding-left 0.3s ease;
+        }
+        
+        .mobile-nav-link:hover,
+        .mobile-nav-link.active {
+            color: #e8b143;
+            padding-left: 10px;
+        }
+        
+        .mobile-nav .nav-cta-button {
+            background-color: #e8b143;
+            color: #1a1a1a !important;
+            text-align: center;
+            margin: 1rem 0 0;
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.8rem;
+            border: 2px solid #e8b143;
+            width: 100%;
+            max-width: 200px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+        
+        .mobile-nav .nav-cta-button:hover {
+            background-color: #e8b143;
+            color: #1a1a1a !important;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            opacity: 0.95;
+        }
+        
+        /* Navbar Scroll Effect */
+        .modern-navbar.scrolled {
+            padding: 0.8rem 0;
+            background: rgba(15, 23, 42, 0.8);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 992px) {
+            .navbar-links {
+                display: none;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+        }
+        
+        @media (min-width: 993px) {
+            .mobile-nav {
+                display: none;
+            }
+        }
+        
         /* Hero Section Styling */
         .hero-section {
             position: relative;
@@ -524,4 +811,74 @@
             }
         }
     </style>
+
+    <!-- Navbar JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile menu toggle
+            const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+            const mobileNav = document.querySelector('.mobile-nav');
+            const menuLines = document.querySelectorAll('.menu-line');
+            
+            if (mobileMenuBtn) {
+                mobileMenuBtn.addEventListener('click', function() {
+                    mobileNav.classList.toggle('active');
+                    this.classList.toggle('active');
+                    
+                    // Animate hamburger to X
+                    menuLines[0].classList.toggle('rotate-45');
+                    menuLines[0].classList.toggle('translate-y-2');
+                    menuLines[1].classList.toggle('opacity-0');
+                    menuLines[2].classList.toggle('-rotate-45');
+                    menuLines[2].classList.toggle('-translate-y-2');
+                });
+            }
+            
+            // Close mobile menu when clicking on a link
+            const mobileLinks = document.querySelectorAll('.mobile-nav-link');
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileNav.classList.remove('active');
+                    mobileMenuBtn.classList.remove('active');
+                    menuLines[0].classList.remove('rotate-45', 'translate-y-2');
+                    menuLines[1].classList.remove('opacity-0');
+                    menuLines[2].classList.remove('-rotate-45', '-translate-y-2');
+                });
+            });
+            
+            // Navbar scroll effect
+            const navbar = document.querySelector('.modern-navbar');
+            if (navbar) {
+                window.addEventListener('scroll', function() {
+                    if (window.scrollY > 50) {
+                        navbar.classList.add('scrolled');
+                    } else {
+                        navbar.classList.remove('scrolled');
+                    }
+                });
+                
+                // Initialize navbar state on page load
+                if (window.scrollY > 50) {
+                    navbar.classList.add('scrolled');
+                }
+            }
+            
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        e.preventDefault();
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 80, // Adjust for fixed navbar
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
 </section>

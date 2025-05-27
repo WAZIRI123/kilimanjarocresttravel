@@ -188,9 +188,9 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-image: url('https://static.wixstatic.com/media/851897_9587828f79e74b21a175b075af31661e~mv2.jpg');
             background-size: cover;
             background-position: center;
+            background-color: rgba(0, 0, 0, 0.15);
             background-repeat: no-repeat;
             opacity: 0.15;
             z-index: -1;
@@ -203,7 +203,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(to bottom, rgba(15, 23, 42, 0.9) 0%, rgba(15, 23, 42, 0.7) 100%);
+            background:  rgba(0, 0, 0, 0.4);
             z-index: -1;
         }
         @keyframes slideUp {
@@ -226,8 +226,6 @@
             z-index: 1000;
             padding: 0.4rem 0;
             transition: all 0.4s ease;
-          
-          
             box-sizing: border-box;
         }
         
@@ -239,7 +237,7 @@
         
         .modern-navbar.scrolled {
             background: #1a1a1a; /* Same as default, but with shadow */
-            padding: 0.5rem 0;
+            padding: 0.2rem 0;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
         }
         
@@ -428,7 +426,7 @@
             width: 80%;
             max-width: 320px;
             height: 100vh;
-            background-color: rgba(26, 26, 26, 0.98);
+            background-color: rgba(0, 0, 0, 0.5);
             backdrop-filter: blur(10px);
             -webkit-backdrop-filter: blur(10px);
             padding: 4rem 1.5rem 2rem;
@@ -506,8 +504,8 @@
         
         /* Navbar Scroll Effect */
         .modern-navbar.scrolled {
-            padding: 0.8rem 0;
-            background: rgba(15, 23, 42, 0.8);
+            padding: 0.0rem 0;
+            background:rgb(0, 0, 0);
             backdrop-filter: blur(10px);
             -webkit-backdrop-filter: blur(10px);
             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -758,9 +756,7 @@
                 font-size: 3.5rem;
                 margin-top: -10px;
             }
-            .hero-content {
-                padding-top: 35vh !important;
-            }
+          
         }
 
         @media (max-width: 576px) {
@@ -786,7 +782,7 @@
                 font-size: 0.8rem !important;
             }
             .hero-content {
-                padding-top: 0vh !important;
+                padding-top: 10vh !important;
             }
         }
 

@@ -49,7 +49,6 @@
                                         <main id="PAGE_SECTIONSc1dmp" class="PAGE_SECTIONSc1dmp c1rIl3"
                                             data-main-content-parent="true"><!--$-->
                                         @include('partials.sections.hero')
-                                        @include('partials.sections.second')
                                         @include('partials.sections.third')
                                         @include('partials.sections.fourth')
                                         @include('partials.sections.fifth')

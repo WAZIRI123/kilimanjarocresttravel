@@ -28,8 +28,24 @@
         </div>
     </nav>
     
-    <!-- Mobile Navigation (Hidden by default) -->
+    <!-- Mobile Navigation (Hidden by default) with Enhanced Safari Theme -->
     <div class="mobile-nav">
+        <!-- Background Overlay with Elephant Image -->
+        <div class="mobile-nav-overlay"></div>
+        
+        <!-- Safari Decorative Elements -->
+        <div class="safari-decorations">
+            <div class="safari-bird safari-bird-1">
+                <svg viewBox="0 0 24 24" width="24" height="24">
+                    <path d="M23 3s-9.5 8-10.5 10c0 0-1.1 2-3.5 2s-3.5-2-3.5-2S2 13 1 12s1-1 1-1h2s1-1 2-2 1-2 3-2 5.5 2 5.5 2 3-3 5-3 3 1 3 1z" fill="#e8b143"/>
+                </svg>
+            </div>
+            <div class="safari-leaf safari-leaf-1">
+                <svg viewBox="0 0 24 24" width="20" height="20">
+                    <path d="M17 8C8 10 5.9 16.2 4 22c2.9-1.5 5.9-2 9-2 3.1 0 6.1.5 9 2-1.9-5.8-4-12-13-14z" fill="#4CAF50"/>
+                </svg>
+            </div>
+        </div>
         <button class="mobile-close-btn" aria-label="Close menu">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -51,33 +67,9 @@
             loading="eager"
         >
         
-        <!-- African Tribal Motifs -->
-        <div class="tribal-motif motif-1">
-            <svg viewBox="0 0 100 100" width="40" height="40" fill="none" stroke="#e8b143" stroke-width="1.5" stroke-linecap="round">
-                <path d="M20,50 Q30,30 50,30 Q70,30 80,50 Q70,70 50,70 Q30,70 20,50Z" fill-opacity="0.1"/>
-                <path d="M50,30 L50,70 M20,50 L80,50"/>
-            </svg>
-        </div>
-        <div class="tribal-motif motif-2">
-            <svg viewBox="0 0 100 100" width="50" height="50" fill="none" stroke="#e8b143" stroke-width="1.2">
-                <path d="M20,20 L40,40 M80,20 L60,40 M20,80 L40,60 M80,80 L60,60 M50,10 L50,30 M50,70 L50,90 M10,50 L30,50 M70,50 L90,50" stroke-opacity="0.7"/>
-                <circle cx="50" cy="50" r="15" fill-opacity="0.1"/>
-            </svg>
-        </div>
-        <div class="tribal-motif motif-3">
-            <svg viewBox="0 0 100 100" width="45" height="45" fill="none" stroke="#e8b143" stroke-width="1.3">
-                <path d="M20,50 Q35,20 50,35 Q65,50 80,35" stroke-dasharray="4,2"/>
-                <path d="M20,65 Q35,35 50,50 Q65,65 80,50" stroke-dasharray="4,2"/>
-            </svg>
-        </div>
-        <div class="tribal-motif motif-4">
-            <svg viewBox="0 0 100 100" width="55" height="55" fill="none" stroke="#e8b143" stroke-width="1.2">
-                <path d="M30,30 L70,30 L70,70 L30,70 Z" fill-opacity="0.05"/>
-                <path d="M35,35 L65,35 L65,65 L35,65 Z" fill-opacity="0.05"/>
-                <line x1="30" y1="30" x2="70" y2="70" stroke-opacity="0.5"/>
-                <line x1="70" y1="30" x2="30" y2="70" stroke-opacity="0.5"/>
-            </svg>
-        </div>
+      
+
+
     </div>
 
     <!-- Hero Content -->
@@ -87,8 +79,16 @@
     text-decoration: none;
     text-align: center;
     letter-spacing: 0.01em;">
-                <span class="title-line">The Essence of Untamed</span>
-                <span class="title-line accent" style="padding-top:1.5rem; padding-bottom:1.5rem">African Exploration...</span>
+                <div class="title-wrapper" style="overflow: hidden;">
+                    <div class="title-line" style="display: inline-block; transform: translateY(100%); opacity: 0; animation: slideUp 0.8s ease-out 0.3s forwards;">
+                        The Essence of Untamed
+                    </div>
+                </div>
+                <div class="title-wrapper" style="overflow: hidden;">
+                    <div class="title-line accent" style="display: inline-block; transform: translateY(100%); opacity: 0; animation: slideUp 0.8s ease-out 0.6s forwards; padding: 1.5rem 0;">
+                        African Exploration...
+                    </div>
+                </div>
             </h1>
             <div class="hero-cta">
                 <div class="cta-wrapper">
@@ -112,6 +112,110 @@
 
     <!-- Custom CSS for the hero section -->
     <style>
+        /* Safari Decorative Elements */
+        .safari-decorations {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 0;
+        }
+        
+        .safari-bird, .safari-leaf {
+            position: absolute;
+            opacity: 0.3;
+            animation-iteration-count: infinite;
+        }
+        
+        .safari-bird-1 {
+            top: 20%;
+            right: 10%;
+            animation: float 8s ease-in-out infinite;
+        }
+        
+        .safari-leaf-1 {
+            bottom: 25%;
+            left: 15%;
+            animation: float 6s ease-in-out 1s infinite reverse;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(5deg); }
+        }
+        
+        /* Enhanced Mobile Nav Items */
+        .mobile-nav-link {
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            margin: 8px 0;
+            padding: 12px 24px;
+            border-radius: 4px;
+        }
+        
+        .mobile-nav-link::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 4px;
+            background: #e8b143;
+            transform: scaleY(0);
+            transition: transform 0.3s ease;
+        }
+        
+        .mobile-nav-link:hover::before {
+            transform: scaleY(1);
+        }
+        
+        .mobile-nav-link:hover {
+            background: rgba(255, 255, 255, 0.05);
+            transform: translateX(8px);
+        }
+        /* Mobile Navigation Overlay */
+        .mobile-nav {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .mobile-nav-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://static.wixstatic.com/media/851897_9587828f79e74b21a175b075af31661e~mv2.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            opacity: 0.15;
+            z-index: -1;
+        }
+        
+        .mobile-nav::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(15, 23, 42, 0.9) 0%, rgba(15, 23, 42, 0.7) 100%);
+            z-index: -1;
+        }
+        @keyframes slideUp {
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        
+        .title-line {
+            display: inline-block;
+        }
         /* Modern Navbar Styles */
         .modern-navbar {
             position: fixed;
@@ -156,7 +260,7 @@
         }
         
         .logo-img {
-            height: 60px;
+            height: 80px;
             width: auto;
             transition: all 0.3s ease;
             filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.5)) 

@@ -118,19 +118,25 @@
             top: 0;
             left: 0;
             width: 100%;
+            height: auto; /* Fixed height */
             z-index: 1000;
-            padding: 0.8rem 0; /* Reduced padding */
+            padding: 0.4rem 0;
             transition: all 0.4s ease;
-            background: rgba(0, 0, 0, 0.2);
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+          
+          
+            box-sizing: border-box;
+        }
+        
+        /* Reset body margin and padding */
+        body {
+            margin: 0;
+            padding: 0;
         }
         
         .modern-navbar.scrolled {
-            background: rgba(0, 0, 0, 0.8);
-            padding: 0.5rem 0; /* Reduced padding when scrolled */
-            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+            background: #1a1a1a; /* Same as default, but with shadow */
+            padding: 0.5rem 0;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
         }
         
         .navbar-container {
@@ -150,10 +156,13 @@
         }
         
         .logo-img {
-            height: 60px; /* Reduced logo size */
+            height: 60px;
             width: auto;
             transition: all 0.3s ease;
-            filter: brightness(1.4) contrast(1.3) saturate(1.4);
+            filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.5)) 
+                    brightness(1.2) 
+                    contrast(1.2) 
+                    saturate(1.4);
         }
         
         .modern-navbar.scrolled .logo-img {
@@ -174,7 +183,7 @@
         
         .navbar-links {
             display: flex;
-            gap: 2rem;
+            gap: 1rem;
         }
         
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
@@ -182,22 +191,26 @@
         .nav-link {
             color: #ffffff;
             text-decoration: none;
-            font-family: 'Poppins', sans-serif;
-            font-weight: 500; /* Consistent weight */
-            font-size: 0.9rem;
+            font-weight: 600; /* Slightly bolder */
+            font-size: 0.95rem;
             letter-spacing: 0.8px;
             position: relative;
-            padding: 0.4rem 0;
+            padding: 0.4rem 0rem;
+            margin: 0rem 0.7rem;
             transition: all 0.3s ease;
-            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+            text-shadow: 
+                0 1px 1px rgba(0, 0, 0, 0.8),
+                0 0 10px rgba(0, 0, 0, 0.6),
+                0 0 20px rgba(0, 0, 0, 0.3);
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
+            border-radius: 4px;
         }
         
         .nav-link::after {
             content: '';
             position: absolute;
-            bottom: 0;
+            bottom: 0.7rem;
             left: 0;
             width: 0;
             height: 2px;
@@ -215,7 +228,7 @@
         .nav-link:hover::after,
         .nav-link.active::after {
             width: 100%;
-            transform: scaleX(1.1);
+            transform: scaleX(1);
         }
         
         .nav-link:hover,
@@ -231,26 +244,28 @@
         /* CTA Button Styles */
         .nav-cta-button {
             display: inline-block;
-            padding: 8px 20px; /* Reduced padding */
+            padding: 10px 30px;
             border-radius: 50px;
-            font-weight: 600;
+            font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 1px;
             transition: all 0.3s ease;
             text-decoration: none;
-            font-size: 0.75rem; /* Slightly smaller font */
-            background-color: #e8b143;
+            font-size: 0.8rem;
+            background-color: rgba(232, 177, 67, 0.9);
             color: #1a1a1a !important;
             border: 2px solid #e8b143;
-            margin-left: 1rem;
+            margin-left: 1.5rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            text-shadow: none;
         }
         
         .nav-cta-button:hover {
             background-color: #e8b143;
             color: #1a1a1a !important;
+            border-color: #e8b143;
             transform: translateY(-3px);
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-            opacity: 0.95;
         }
         
         /* Mobile Menu Button */
@@ -260,13 +275,14 @@
             border: none;
             cursor: pointer;
             padding: 0.5rem;
+            padding-right: 1.2rem;
             z-index: 1001;
         }
         
         .menu-line {
             display: block;
-            width: 25px;
-            height: 2px;
+            width: 30px;
+            height: 4px;
             background-color: #fff;
             margin: 5px 0;
             transition: all 0.3s ease;
@@ -411,19 +427,40 @@
             }
         }
         
-        /* Hero Section Styling */
+        /* Hero Section */
         .hero-section {
             position: relative;
             width: 100%;
-            height: 100vh;
-            min-height: 650px;
-            overflow: hidden;
+            min-height: 100vh;
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
-            color: #fff;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            overflow: hidden;
+            color: white;
+            text-align: center;
+            padding: 0 1.5rem;
+            margin: 0;
+            box-sizing: border-box;
         }
-
+        
+        /* Hero Content */
+        .hero-content {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex: 1;
+        }
+        
         .hero-background {
             position: absolute;
             top: 0;
@@ -473,6 +510,16 @@
         }
         
         @media (max-width: 768px) {
+            .hero-section {
+                padding-top: 60px; /* Space for navbar */
+                min-height: calc(100vh - 60px);
+            }
+            
+            .hero-content {
+                padding: 1rem;
+                margin-top: 0;
+            }
+            
             .tribal-motif {
                 opacity: 0.5;
             }
@@ -613,8 +660,12 @@
         }
 
         @media (max-width: 576px) {
+            .navbar-container{
+                padding: 0 0rem;
+            }
+          
             .logo-img {
-            height: 40px; /* Reduced logo size */
+            height: 80px; /* Reduced logo size */
             width: auto;
             transition: all 0.3s ease;
             filter: brightness(1.4) contrast(1.3) saturate(1.4);
@@ -631,7 +682,7 @@
                 font-size: 0.8rem !important;
             }
             .hero-content {
-                padding-top: 30vh !important;
+                padding-top: 0vh !important;
             }
         }
 

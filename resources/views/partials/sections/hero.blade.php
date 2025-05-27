@@ -348,14 +348,15 @@
             display: inline-block;
             padding: 10px 30px;
             border-radius: 50px;
-            font-weight: 700;
+            font-family: questrial, sans-serif;
+    font-size: calc(15 * var(--theme-spx-ratio));
+    font-weight: 400;
             text-transform: uppercase;
             letter-spacing: 1px;
             transition: all 0.3s ease;
             text-decoration: none;
-            font-size: 0.8rem;
             background-color: rgba(232, 177, 67, 0.9);
-            color: #1a1a1a !important;
+            color: #fff !important;
             border: 2px solid #e8b143;
             margin-left: 1.5rem;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
@@ -851,14 +852,20 @@
 
         .cta-button:first-child {
             background-color: #e8b143;
-            color: #1a1a1a;
+            font-family: questrial, sans-serif;
+    font-size: calc(15 * var(--theme-spx-ratio));
+            color: #fff;
+            font-weight: 400;
             border: 2px solid #e8b143;
         }
 
         .cta-button:first-child:hover {
             background-color: #e8b143; /* Keep the same background color on hover */
-            color: #1a1a1a; /* Keep the text color consistent */
+            color: #fff; /* Keep the text color consistent */
             transform: translateY(-3px);
+            font-family: questrial, sans-serif;
+    font-size: calc(15 * var(--theme-spx-ratio));
+    font-weight: 400;
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
             opacity: 0.95; /* Slight opacity change for feedback */
         }

@@ -19,15 +19,14 @@ data-testid="section-container">
             <div id="comp-m2vttpvv1"
                 class="HcOXKn c9GqVL QxJLC3 lq2cno YQcXTT comp-m2vttpvv1 wixui-rich-text"
                 data-testid="richTextElement"
-                ariaattributes="[object Object]">
+                ariaattributes="[object Object]" style="border-radius:1rem1">
                 <h2 class="font_2 wixui-rich-text__text"><span
                         class="wixui-rich-text__text">Experience Africa
                         Like Never Before<br
                             class="wixui-rich-text__text">
                         <span style="font-weight:bold;"
                             class="wixui-rich-text__text"><span
-                                style="font-family:sacramento,cursive;"
-                                class="wixui-rich-text__text">with&nbsp;Star
+                                class="wixui-rich-text__text">with&nbsp;Stan
                                 Safari</span></span></span></h2>
             </div><!--/$--><!--$-->
             <div id="comp-m2vttpvz4"
@@ -89,7 +88,7 @@ data-testid="section-container">
                 data-testid="linkElement"
                 href="#"
                 target="_self"
-                class="StylableButton2545352419__root style-m2vufkiw8__root wixui-button StylableButton2545352419__link"
+                class="StylableButton2545352419__root style-m2vufkiw8__root wixui-button StylableButton2545352419__link " style="background-color: #e8b143;"
                 aria-label="OUR PURPOSE"><span
                     class="StylableButton2545352419__container"><span
                         class="StylableButton2545352419__label wixui-button__label"
@@ -112,8 +111,7 @@ data-testid="section-container">
                         </span></span></span></a></div><!--/$-->
     </div><!--/$--><!--$-->
     <div id="comp-m2vttpw92" role=""
-        class="rM7ckN YJEKQk comp-m2vttpw92-container comp-m2vttpw92 wixui-box">
-        <div class="YAf4Ti InKIFF wixui-box"></div><!--$-->
+        class="rM7ckN YJEKQk comp-m2vttpw92-container comp-m2vttpw92 wixui-box"  style="background:#fff !important">
         <div id="comp-m2vttpwh" data-testid="imageX"
             class="lyNaha comp-m2vttpwh JdNFxG wixui-image">
             <div class="h1DYhE"
@@ -121,22 +119,91 @@ data-testid="section-container">
                 <div data-motion-part="BG_MEDIA comp-m2vttpwh">
                     <wow-image id="img-comp-m2vttpwh"
                         data-is-responsive="true"
-                        data-image-info="{&quot;containerId&quot;:&quot;comp-m2vttpwh&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;parallaxSpeed&quot;:1.5,&quot;sourceSets&quot;:[],&quot;imageData&quot;:{&quot;uri&quot;:&quot;851897_d4b5149370654db8adf78043535e1f90~mv2.jpg&quot;,&quot;width&quot;:1304,&quot;height&quot;:1937,&quot;alt&quot;:&quot;Thomson's Gazelle in Serengeti during safari with star SAFARI&quot;,&quot;name&quot;:&quot;Swala.jpg&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;scrollEffect&quot;:&quot;none&quot;,&quot;focalPoint&quot;:null},&quot;hasAnimation&quot;:false,&quot;encoding&quot;:&quot;AVIF&quot;}"
+                        data-image-info="{&quot;containerId&quot;:&quot;comp-m2vttpwh&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;parallaxSpeed&quot;:1.5,&quot;sourceSets&quot;:[],&quot;imageData&quot;:{&quot;uri&quot;:&quot;851897_d4b5149370654db8adf78043535e1f90~mv2.jpg&quot;,&quot;width&quot;:1304,&quot;height&quot;:1937,&quot;alt&quot;:&quot;Thomson's Gazelle in Serengeti during safari with stan SAFARI&quot;,&quot;name&quot;:&quot;Swala.jpg&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;scrollEffect&quot;:&quot;none&quot;,&quot;focalPoint&quot;:null},&quot;hasAnimation&quot;:false,&quot;encoding&quot;:&quot;AVIF&quot;}"
                         data-has-ssr-src="true"
                         data-motion-part="BG_IMG comp-m2vttpwh"
                         class="Ux33nC">
                         <picture><img loading="lazy" src=""
-                                alt="Thomson's Gazelle in Serengeti during safari with star SAFARI"
+                                alt="Thomson's Gazelle in Serengeti during safari with stan SAFARI"
                                 style="object-fit: cover; object-position: 50% 50%; width: 100%;"
                                 data-ssr-src-done="true"
                                 fetchpriority="high"></picture>
                     </wow-image></div>
             </div>
         </div><!--/$--><!--$-->
-        <div id="comp-m2wy201v" role=""
-            class="rM7ckN YJEKQk comp-m2wy201v-container comp-m2wy201v wixui-box">
-            <div class="YAf4Ti InKIFF wixui-box"></div>
-        </div><!--/$-->
+        <div id="comp-m2vttpwh2" data-testid="imageX"
+            class="lyNaha comp-m2vttpwh JdNFxG wixui-image">
+            <div class="h1DYhE"
+                data-motion-part="BG_LAYER comp-m2vttpwh">
+                <div data-motion-part="BG_MEDIA comp-m2vttpwh">
+                    <wow-image id="img-comp-m2vttpwh"
+                        data-is-responsive="true"
+                        data-image-info="{&quot;containerId&quot;:&quot;comp-m2vttpwh&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;parallaxSpeed&quot;:1.5,&quot;sourceSets&quot;:[],&quot;imageData&quot;:{&quot;uri&quot;:&quot;851897_d4b5149370654db8adf78043535e1f90~mv2.jpg&quot;,&quot;width&quot;:1304,&quot;height&quot;:1937,&quot;alt&quot;:&quot;Thomson's Gazelle in Serengeti during safari with stan SAFARI&quot;,&quot;name&quot;:&quot;Swala.jpg&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;scrollEffect&quot;:&quot;none&quot;,&quot;focalPoint&quot;:null},&quot;hasAnimation&quot;:false,&quot;encoding&quot;:&quot;AVIF&quot;}"
+                        data-has-ssr-src="true"
+                        data-motion-part="BG_IMG comp-m2vttpwh"
+                        class="Ux33nC">
+                        <picture><img loading="lazy" src=""
+                                alt="Thomson's Gazelle in Serengeti during safari with stan SAFARI"
+                                style="object-fit: cover; object-position: 50% 50%; width: 100%;"
+                                data-ssr-src-done="true"
+                                fetchpriority="high"></picture>
+                    </wow-image></div>
+            </div>
+        </div><!--/$--><!--$-->
     </div><!--/$-->
 </div>
+<style>
+    .comp-m2vttpv8-container {
+        padding-top: 3rem !important;
+    }
+    #comp-m2vttpwh
+
+ {
+    --cornerRadius: 10px 10px 10px 10px !important;
+ }
+ #comp-m2vttpvq{
+     grid-area: 1 / 2 / 2 / 3;
+   
+ }
+
+ #comp-m2vttpw92{
+    --cornerRadius: 10px 10px 10px 10px !important;
+    grid-area: 1 / 1 / 2 / 2;
+ }
+
+ 
+
+#comp-m2vttpwh2 {
+    min-height: unset;
+    --l_display: unset;
+    height: auto;
+    --aspect-ratio: 1.5117410230733073;
+    min-width: 0;
+    width: 49%;
+    margin-left: 1rem !important;
+    max-width: 99999px;
+    max-height: 99999px;
+    aspect-ratio: 1/var(--aspect-ratio);
+    --comp-display: unset;
+    display: var(--l_display,var(--display,block));
+    align-self: start;
+    justify-self: start;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    grid-area: 1 / 2 / 2 / 1;
+    position: relative;
+}
+#comp-m2vttpw92{
+    background-color: #F0D8C0 !important;
+}
+    
+    @media (max-width: 768px) {
+        .comp-m2vttpv8-container {
+            padding-top: 2rem !important;
+        }
+   
+    }
+</style>
 </section><!--/$--><!--$-->

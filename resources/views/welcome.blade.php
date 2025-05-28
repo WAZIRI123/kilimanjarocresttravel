@@ -50,7 +50,7 @@
                                             data-main-content-parent="true"><!--$-->
                                         @include('partials.sections.hero')
                                         @include('partials.sections.third')
-                                        @include('partials.sections.fourth')
+                    
                                         @include('partials.sections.fifth')
                                         @include('partials.sections.sixth')
                                         @include('partials.sections.seventh')

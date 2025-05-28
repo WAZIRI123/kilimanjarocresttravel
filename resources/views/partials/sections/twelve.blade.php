@@ -174,7 +174,7 @@ data-testid="section-container">
 
 @media (min-width: 992px) {
     #comp-m367d9uj5 {
-        grid-area: 2 / 2 / 1 / 3 !important;
+        grid-area: 2 / 2 / 1 / 4 !important;
     }
     #comp-m367d9up6 {
         grid-area: 1 / 1 / 1 / 1 !important;

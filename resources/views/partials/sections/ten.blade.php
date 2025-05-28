@@ -162,13 +162,14 @@ data-testid="section-container">
     --cornerRadius: 10px 10px 10px 10px !important;
  }
  #comp-m2vttpvq{
-     grid-area: 1 / 2 / 2 / 3;
+    grid-area: 1 / 1 / 2 / 2;
    
  }
 
  #comp-m2vttpw92{
     --cornerRadius: 10px 10px 10px 10px !important;
-    grid-area: 1 / 1 / 2 / 2;
+    grid-area: 1 / 2 / 2 / 3;
+   
  }
 
  

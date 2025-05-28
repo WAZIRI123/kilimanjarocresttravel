@@ -5,7 +5,7 @@
         <div id="bgMedia_comp-lznseo5c" data-motion-part="BG_MEDIA comp-lznseo5c" class="VgO9Yg"></div>
     </div>
     <div data-testid="responsive-container-content" class="comp-lznseo5c-container max-width-container">
-        <div id="comp-lznsremh" class="comp-lznsremh JGtLUp wixui-horizontal-line"></div>
+        {{-- <div id="comp-lznsremh" class="comp-lznsremh JGtLUp wixui-horizontal-line"></div> --}}
         <div id="comp-m09r35l6" role="" class="rM7ckN YJEKQk comp-m09r35l6-container comp-m09r35l6 wixui-box">
             <div class="YAf4Ti InKIFF wixui-box"></div>
             <div id="comp-lznsf06j" class="HcOXKn c9GqVL QxJLC3 lq2cno YQcXTT comp-lznsf06j wixui-rich-text"

@@ -438,4 +438,16 @@
                                                     </div><!--/$-->
                                                 </div>
                                             </section><!--/$-->
+                                            <style>
+                                         @media (max-width: 768px) {
+                                            #comp-kbgakxmn_r_comp-m0980hi9{
+                                               display: none;
+                                            }
+                                            #comp-kbgakxmn_r_comp-m1grw5kh{
+                                                margin: auto !important;
+                                                margin-bottom: 1px !important;
+
+                                            }
+                                         }
+                                           </style>
                                         </footer><!--$-->

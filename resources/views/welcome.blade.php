@@ -52,13 +52,8 @@
                                         @include('partials.sections.third')
                     
                                         @include('partials.sections.fifth')
-                                        @include('partials.sections.sixth')
-                                        @include('partials.sections.seventh')
-                                        @include('partials.sections.eight')
-                                        @include('partials.sections.nine')
-                                        @include('partials.sections.ten')
-                                        @include('partials.sections.eleven')
-                                        @include('partials.sections.twelve')
+
+                                     
                                         </main>
                                         @include('partials.sections.footer')
                                        

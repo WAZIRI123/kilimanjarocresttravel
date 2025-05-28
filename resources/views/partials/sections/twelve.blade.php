@@ -26,7 +26,6 @@ data-testid="section-container">
                             class="wixui-rich-text__text">Discover
                             Africa's <span style="font-weight:bold;"
                                 class="wixui-rich-text__text"><span
-                                    style="font-family:sacramento,cursive;"
                                     class="wixui-rich-text__text">Best&nbsp;
                                     Safari Secrets</span></span></span>
                     </h2>
@@ -168,4 +167,24 @@ data-testid="section-container">
         </div>
     </div><!--/$-->
 </div>
+<style>
+#comp-m367d9uq {
+    height: 100%;
+}
+
+@media (min-width: 992px) {
+    #comp-m367d9uj5 {
+        grid-area: 2 / 2 / 1 / 3 !important;
+    }
+    #comp-m367d9up6 {
+        grid-area: 1 / 1 / 1 / 1 !important;
+    }
+    #comp-m367d9uj7 {
+        grid-area: 1 / 3 / 1 / 4 !important;
+    }
+    #comp-m367d9uj8 {
+        grid-area: 1 / 4 / 1 / 5 !important;
+    }
+}
+</style>
 </section><!--/$-->

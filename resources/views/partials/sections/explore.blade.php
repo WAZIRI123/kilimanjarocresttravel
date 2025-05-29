@@ -2,6 +2,14 @@
                                                 data-block-level-container="Section"
                                                 class="xuzjBY comp-m31oqvfr wixui-section"
                                                 data-testid="section-container">
+        <style>
+       @media (min-width: 768px) {
+            #comp-m31oqvfr {
+               height: 40px !important;
+            }
+        }
+            
+        </style>
                                                 <div id="bgLayers_comp-m31oqvfr" data-hook="bgLayers"
                                                     data-motion-part="BG_LAYER comp-m31oqvfr" class="MW5IWV">
                                                     <div data-testid="colorUnderlay" class="LWbAav Kv1aVt"></div>
@@ -11,19 +19,7 @@
                                                 <div data-testid="responsive-container-content"
                                                     class="comp-m31oqvfr-container max-width-container"></div>
                                             </section><!--/$--><!--$-->
-                                            <section id="comp-m36885fu" tabindex="-1"
-                                                data-block-level-container="Section"
-                                                class="xuzjBY comp-m36885fu wixui-section"
-                                                data-testid="section-container">
-                                                <div id="bgLayers_comp-m36885fu" data-hook="bgLayers"
-                                                    data-motion-part="BG_LAYER comp-m36885fu" class="MW5IWV">
-                                                    <div data-testid="colorUnderlay" class="LWbAav Kv1aVt"></div>
-                                                    <div id="bgMedia_comp-m36885fu"
-                                                        data-motion-part="BG_MEDIA comp-m36885fu" class="VgO9Yg"></div>
-                                                </div>
-                                                <div data-testid="responsive-container-content"
-                                                    class="comp-m36885fu-container max-width-container"></div>
-                                            </section><!--/$--><!--$-->
+                                            
                                             <section id="comp-m2olr16u" tabindex="-1"
                                                 data-block-level-container="Section"
                                                 class="xuzjBY comp-m2olr16u wixui-section"
@@ -863,5 +859,17 @@
                                                             </div><!--/$-->
                                                         </div>
                                                     </div><!--/$-->
+                                                    
+<div class="text-center" style='margin:0 auto 1rem auto; padding:auto;width:50%; cursor:pointer !important; z-index:99'>
+    <div class="comp-m2vufkir" data-semantic-classname="button" style="cursor:pointer !important;"><a data-testid="linkElement" href="#" target="_self" class="StylableButton2545352419__root style-m2vufkiw8__root wixui-button StylableButton2545352419__link " style="background-color: #e8b143; cursor:pointer !important;" aria-label="OUR PURPOSE"><span class="StylableButton2545352419__container"><span class="StylableButton2545352419__label wixui-button__label" data-testid="stylablebutton-label">
+    CHOOSE YOUR PACKAGE</span><span class="StylableButton2545352419__icon wixui-button__icon" aria-hidden="true" data-testid="stylablebutton-icon"><span><!--?xml version="1.0" encoding="UTF-8"?-->
+           
+        </span></span></span></a></div>
+</div>
                                                 </div>
                                             </section><!--/$--><!--$-->
+
+
+<style>
+   
+</style>

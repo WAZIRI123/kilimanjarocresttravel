@@ -49,11 +49,16 @@
                                         <main id="PAGE_SECTIONSc1dmp" class="PAGE_SECTIONSc1dmp c1rIl3"
                                             data-main-content-parent="true"><!--$-->
                                         @include('partials.sections.hero')
-                                        @include('partials.sections.third')
+                                        @include('partials.sections.why-choose-us')
                     
-                                        @include('partials.sections.fifth')
-
-                                     
+                                        @include('partials.sections.testmonials')
+                                        @include('partials.sections.trusted')
+                                        @include('partials.sections.explore')
+                                        @include('partials.sections.why-luxury')
+                                        @include('partials.sections.Inspiring-our-extra-ordinary')
+                                        @include('partials.sections.experience-africa-like-never')
+                                        @include('partials.sections.our-2025')
+                                        @include('partials.sections.discover-africa-best')
                                         </main>
                                         @include('partials.sections.footer')
                                        

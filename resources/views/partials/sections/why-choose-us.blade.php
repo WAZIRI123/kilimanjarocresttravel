@@ -165,25 +165,14 @@
                 <div class="grid-item">
                     <div id="comp-m1gk7nsl" class="comp-m1gk7nsl wixui-vector-image">
                         <div data-testid="svgRoot-comp-m1gk7nsl" class="AKxYR5 VZYmYf comp-m1gk7nsl">
-                            <svg preserveAspectRatio="xMidYMid meet" data-bbox="26.5 36.011 147 127.998"
-                                viewBox="26.5 36.011 147 127.998" height="100" width="100"
-                                xmlns="http://www.w3.org/2000/svg" data-type="color" role="img"
-                                aria-label="Luxury Tanzania Safari Icon">
-                                <g>
-                                    <path
-                                        d="M161.646 47.804l-.035-.035-.002-.002c-15.816-15.671-41.556-15.676-57.378-.01l-.033.033-4.199 4.159-4.224-4.183c-15.82-15.671-41.564-15.671-57.385 0-7.667 7.594-11.89 17.69-11.89 28.43s4.223 20.837 11.889 28.43l58.784 58.223c.78.773 1.803 1.16 2.825 1.16s2.045-.387 2.825-1.16l58.784-58.222c7.666-7.59 11.89-17.684 11.893-28.421.003-10.726-4.208-20.813-11.854-28.402zm-5.689 51.204l-55.959 55.424L44.04 99.008c-6.151-6.093-9.54-14.195-9.54-22.811s3.389-16.718 9.54-22.811c6.354-6.292 14.697-9.438 23.042-9.438s16.688 3.146 23.042 9.438l7.049 6.982a4.02 4.02 0 0 0 5.65 0l7.052-6.984.032-.032c12.7-12.548 33.331-12.541 46.025.011l.035.035c6.149 6.093 9.534 14.194 9.532 22.808s-3.39 16.711-9.542 22.802z"
-                                        fill="#000001" data-color="1"></path>
-                                </g>
-                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 16 16"><!-- Icon from Garden SVG Icons by Zendesk - https://github.com/zendeskgarden/svg-icons/blob/main/LICENSE.md --><path fill="currentColor" d="M8 0C5.79 0 4 1.79 4 4v1h8V4c0-2.21-1.79-4-4-4m6 2h-.5c-.28 0-.5.22-.5.5V5c0 .55-.45 1-1 1H4c-.55 0-1-.45-1-1V2.5c0-.28-.22-.5-.5-.5H2c-.55 0-1 .45-1 1v12c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1M6.5 13.5c0 .28-.22.5-.5.5H4.5c-.28 0-.5-.22-.5-.5V12c0-.28.22-.5.5-.5H6c.28 0 .5.22.5.5zm0-4c0 .28-.22.5-.5.5H4.5c-.28 0-.5-.22-.5-.5V8c0-.28.22-.5.5-.5H6c.28 0 .5.22.5.5zM12 13H9c-.28 0-.5-.22-.5-.5s.22-.5.5-.5h3c.28 0 .5.22.5.5s-.22.5-.5.5m0-4H9c-.28 0-.5-.22-.5-.5S8.72 8 9 8h3c.28 0 .5.22.5.5s-.22.5-.5.5"/></svg>
                         </div>
                     </div>
                     <div id="comp-m1gkie2a" class="HcOXKn c9GqVL QxJLC3 lq2cno YQcXTT comp-m1gkie2a "
                         data-testid="richTextElement" ariaattributes="[object Object]">
                         <span
-                                        style="font-weight:bold;" class="wixui-rich-text__text font_8">PURPOSE</span>
-                        <p class="font_8 wixui-rich-text__text why-p"><span class="wixui-rich-text__text">Our passion for nature drives us. It inspires us to assemble a team of
-                                    safari
-                                    experts dedicated to a lasting quest to explore this incredible land in luxury and style.</span>
+                                        style="font-weight:bold;" class="wixui-rich-text__text font_8">CUSTOMIZED ITINERARIES</span>
+                        <p class="font_8 wixui-rich-text__text why-p"><span class="wixui-rich-text__text">We tailor every safari to your interests, budget, and preferences. Whether you want to see the Big Five or experience cultural immersion, we create the perfect journey for you.</span>
                         </p>
                     </div>
                 </div>
@@ -193,25 +182,14 @@
                 <div class="grid-item">
                     <div id="comp-m1gk7nsl" class="comp-m1gk7nsl wixui-vector-image">
                         <div data-testid="svgRoot-comp-m1gk7nsl" class="AKxYR5 VZYmYf comp-m1gk7nsl">
-                            <svg preserveAspectRatio="xMidYMid meet" data-bbox="26.5 36.011 147 127.998"
-                                viewBox="26.5 36.011 147 127.998" height="100" width="100"
-                                xmlns="http://www.w3.org/2000/svg" data-type="color" role="img"
-                                aria-label="Luxury Tanzania Safari Icon">
-                                <g>
-                                    <path
-                                        d="M161.646 47.804l-.035-.035-.002-.002c-15.816-15.671-41.556-15.676-57.378-.01l-.033.033-4.199 4.159-4.224-4.183c-15.82-15.671-41.564-15.671-57.385 0-7.667 7.594-11.89 17.69-11.89 28.43s4.223 20.837 11.889 28.43l58.784 58.223c.78.773 1.803 1.16 2.825 1.16s2.045-.387 2.825-1.16l58.784-58.222c7.666-7.59 11.89-17.684 11.893-28.421.003-10.726-4.208-20.813-11.854-28.402zm-5.689 51.204l-55.959 55.424L44.04 99.008c-6.151-6.093-9.54-14.195-9.54-22.811s3.389-16.718 9.54-22.811c6.354-6.292 14.697-9.438 23.042-9.438s16.688 3.146 23.042 9.438l7.049 6.982a4.02 4.02 0 0 0 5.65 0l7.052-6.984.032-.032c12.7-12.548 33.331-12.541 46.025.011l.035.035c6.149 6.093 9.534 14.194 9.532 22.808s-3.39 16.711-9.542 22.802z"
-                                        fill="#000001" data-color="1"></path>
-                                </g>
-                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 16 16"><!-- Icon from Garden SVG Icons by Zendesk - https://github.com/zendeskgarden/svg-icons/blob/main/LICENSE.md --><path fill="currentColor" d="M12 13H4v1.5a1.5 1.5 0 0 1-3 0v-1.585A1.5 1.5 0 0 1 0 11.5v-5a1.5 1.5 0 0 1 1.145-1.458L3.035.314A.5.5 0 0 1 3.5 0h9a.5.5 0 0 1 .464.314l1.891 4.728A1.5 1.5 0 0 1 16 6.5v5a1.5 1.5 0 0 1-1 1.415V14.5a1.5 1.5 0 0 1-3 0zM5 9a1 1 0 1 0-2 0a1 1 0 0 0 2 0m7-1a1 1 0 1 0 0 2a1 1 0 0 0 0-2M2.239 5H13.76l-1.6-4H3.84z"/></svg>
                         </div>
                     </div>
                     <div id="comp-m1gkie2a" class="HcOXKn c9GqVL QxJLC3 lq2cno YQcXTT comp-m1gkie2a wixui-rich-text"
                         data-testid="richTextElement" ariaattributes="[object Object]">
                         <span
-                        style="font-weight:bold;" class="wixui-rich-text__text font_8">PURPOSE</span>
-                        <p class="font_8 wixui-rich-text__text why-p"><span class="wixui-rich-text__text">Our passion for nature drives us. It inspires us to assemble a team of
-                                    safari
-                                    experts dedicated to a lasting quest to explore this incredible land in luxury and style.</span>
+                        style="font-weight:bold;" class="wixui-rich-text__text font_8">LUXURY EXPERIENCE</span>
+                        <p class="font_8 wixui-rich-text__text why-p"><span class="wixui-rich-text__text">From private game drives to exclusive lodges, we offer premium accommodations and personalized services that make your safari truly exceptional.</span>
                         </p>
                     </div>
                 </div>
@@ -221,26 +199,15 @@
                 <div class="grid-item">
                     <div id="comp-m1gk7nsl" class="comp-m1gk7nsl wixui-vector-image">
                         <div data-testid="svgRoot-comp-m1gk7nsl" class="AKxYR5 VZYmYf comp-m1gk7nsl">
-                            <svg preserveAspectRatio="xMidYMid meet" data-bbox="26.5 36.011 147 127.998"
-                                viewBox="26.5 36.011 147 127.998" height="100" width="100"
-                                xmlns="http://www.w3.org/2000/svg" data-type="color" role="img"
-                                aria-label="Luxury Tanzania Safari Icon">
-                                <g>
-                                    <path
-                                        d="M161.646 47.804l-.035-.035-.002-.002c-15.816-15.671-41.556-15.676-57.378-.01l-.033.033-4.199 4.159-4.224-4.183c-15.82-15.671-41.564-15.671-57.385 0-7.667 7.594-11.89 17.69-11.89 28.43s4.223 20.837 11.889 28.43l58.784 58.223c.78.773 1.803 1.16 2.825 1.16s2.045-.387 2.825-1.16l58.784-58.222c7.666-7.59 11.89-17.684 11.893-28.421.003-10.726-4.208-20.813-11.854-28.402zm-5.689 51.204l-55.959 55.424L44.04 99.008c-6.151-6.093-9.54-14.195-9.54-22.811s3.389-16.718 9.54-22.811c6.354-6.292 14.697-9.438 23.042-9.438s16.688 3.146 23.042 9.438l7.049 6.982a4.02 4.02 0 0 0 5.65 0l7.052-6.984.032-.032c12.7-12.548 33.331-12.541 46.025.011l.035.035c6.149 6.093 9.534 14.194 9.532 22.808s-3.39 16.711-9.542 22.802z"
-                                        fill="#000001" data-color="1"></path>
-                                </g>
-                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 16 16"><!-- Icon from Garden SVG Icons by Zendesk - https://github.com/zendeskgarden/svg-icons/blob/main/LICENSE.md --><path fill="currentColor" d="m3 1l-.117.007A1 1 0 0 0 2 2v1.898L.02 13.804A1 1 0 0 0 1 15h4a1 1 0 0 0 1-1v-3l.005-.147C6.065 9.828 6.939 9 8 9l.147.005C9.172 9.065 10 9.939 10 11v3a1 1 0 0 0 1 1h4l.116-.007a1 1 0 0 0 .865-1.19L14 3.904V2a1 1 0 0 0-1-1h-1l-.117.007A1 1 0 0 0 11 2v1h-1V2a1 1 0 0 0-1-1H7l-.117.007A1 1 0 0 0 6 2v1H5V2a1 1 0 0 0-1-1z"/></svg>
                         </div>
                     </div>
                     <div id="comp-m1gkie2a" class="HcOXKn c9GqVL QxJLC3 lq2cno YQcXTT comp-m1gkie2a wixui-rich-text"
                         data-testid="richTextElement" ariaattributes="[object Object]">
                         <span
-                        style="font-weight:bold;" class="wixui-rich-text__text font_8">PURPOSE</span>
+                        style="font-weight:bold;" class="wixui-rich-text__text font_8">EXPERT GUIDES</span>
                         <p class="font_8 wixui-rich-text__text why-p">
-                            <span class="wixui-rich-text__text">Our passion for nature drives us. It inspires us to assemble a team of
-                                    safari
-                                    experts dedicated to a lasting quest to explore this incredible land in luxury and style.</span>
+                            <span class="wixui-rich-text__text">Our expert guides are passionate about conservation and deeply knowledgeable about Tanzania’s wildlife, making your safari both insightful and memorable.</span>
                         </p>
                     </div>
                 </div>

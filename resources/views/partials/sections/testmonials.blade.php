@@ -15,7 +15,7 @@ data-testid="section-container">
         <div class="testimonial-content-wrapper">
             <div class="client-image-container">
                 <div class="client-image">
-                    <img src="https://via.placeholder.com/100" alt="Client Name">
+                    <img src="https://zahirnia.com/_nuxt/caleb-porzio.D5_euBoI.webp" alt="Client Name">
                 </div>
             </div>
 
@@ -235,12 +235,12 @@ document.addEventListener('DOMContentLoaded', function() {
         {
             text: "They gave us one of the best anniversary experiences in the world. They recommended amazing parks, luxury lodges and hotels and exceptional guides throughout our stay, that blended nature and wildlife in the best possible ways. We had the time of our lives in our Tanzania luxury safari with Star.",
             name: "John Doe, New York",
-            image: "https://via.placeholder.com/100"
+            image: "https://zahirnia.com/_nuxt/caleb-porzio.D5_euBoI.webp"
         },
         {
             text: "Absolutely incredible experience! The team went above and beyond to make our safari unforgettable. The attention to detail and personalized service was exceptional.",
-            name: "Sarah Johnson, London",
-            image: "https://via.placeholder.com/100/f3f3f3/333333"
+            name: "Tobias Petry, London",
+            image: "https://zahirnia.com/_nuxt/tobias-petry.Cuv0ck-G.webp"
         },
         {
             text: "The best vacation of our lives! The guides were knowledgeable, the accommodations were stunning, and we saw the Big Five on our first day. Can't wait to come back!",
@@ -299,23 +299,12 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Auto-rotate testimonials every 5 seconds
-    let slideInterval = setInterval(() => {
-        currentIndex = (currentIndex + 1) % testimonials.length;
-        updateTestimonial(currentIndex);
-    }, 5000);
+ 
 
     // Pause auto-rotation on hover
-    const testimonialCard = document.querySelector('.testimonial-card');
-    testimonialCard.addEventListener('mouseenter', () => {
-        clearInterval(slideInterval);
-    });
+  
 
-    testimonialCard.addEventListener('mouseleave', () => {
-        slideInterval = setInterval(() => {
-            currentIndex = (currentIndex + 1) % testimonials.length;
-            updateTestimonial(currentIndex);
-        }, 5000);
-    });
+   
 
     // Initialize first testimonial
     updateTestimonial(currentIndex);

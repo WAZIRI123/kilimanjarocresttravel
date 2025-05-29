@@ -38,24 +38,51 @@ data-testid="section-container">
         </div><!--/$-->
     </div>
 </div><!--/$--><!--$-->
+<style>
+  
+  @media (min-width: 768px) {
+    .comp-m1oqn1o44-container {
+          
+            background-image: url('{{ asset('images/lion.png') }}') !important; /* Replace with your actual image path */
+            background-size: cover;
+            background-position: center center;
+            z-index: 1; /* Below the overlay and text */
+        }
+
+        .overlay-color {
+            position: absolute; 
+            width: 100%; 
+            height: 100%;
+            background-color:  rgba(245, 241, 238,1);
+            
+            padding: 40px;
+            box-sizing: border-box;
+            z-index: 0; 
+            text-align: left;
+        }
+    }
+        
+
+</style>
 <div id="comp-m1oqn1o44" role=""
     class="rM7ckN YJEKQk comp-m1oqn1o44 wixui-box">
     <div class="YAf4Ti InKIFF wixui-box"></div>
     <div data-testid="responsive-container-content"
-        class="comp-m1oqn1o44-container"><!--$-->
+        class="comp-m1oqn1o44-container">
+        <div class="overlay-color"></div><!--$-->
         <div id="comp-m1oqn1o5" role=""
             class="rM7ckN YJEKQk comp-m1oqn1o5-container comp-m1oqn1o5 wixui-box">
             <div class="YAf4Ti InKIFF wixui-box"></div><!--$-->
             <div id="comp-m1oqn1o74"
                 class="HcOXKn c9GqVL QxJLC3 lq2cno YQcXTT comp-m1oqn1o74 wixui-rich-text"
                 data-testid="richTextElement"
-                ariaattributes="[object Object]">
+                ariaattributes="[object Object]" >
                 <h2 class="font_2 wixui-rich-text__text"><span
                         class="wixui-rich-text__text">The Safari that
                         Enhances Wildlife <span
                             style="font-weight:bold;"
                             class="wixui-rich-text__text"><span
-                                style="font-family:sacramento,cursive;"
+                              
                                 class="wixui-rich-text__text">&amp;
                                 Transforms Lives</span></span></span>
                 </h2>
@@ -96,12 +123,12 @@ data-testid="section-container">
                                 <wow-image
                                     id="img-comp-m1oqn1od6__item1"
                                     data-is-responsive="true"
-                                    data-image-info="{&quot;containerId&quot;:&quot;comp-m1oqn1od6__item1&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;parallaxSpeed&quot;:1.5,&quot;sourceSets&quot;:[],&quot;imageData&quot;:{&quot;uri&quot;:&quot;851897_837a3ffb941f4d05b4817eee6e12e681~mv2.jpg&quot;,&quot;width&quot;:2580,&quot;height&quot;:3219,&quot;alt&quot;:&quot;Luxury Tanzania Safari | Elephant in the Lodge&quot;,&quot;name&quot;:&quot;saf-eil-lei-activity-boat-cruise08.jpg&quot;,&quot;focalPoint&quot;:null},&quot;hasAnimation&quot;:false,&quot;encoding&quot;:&quot;AVIF&quot;}"
+                                    data-image-info="{&quot;containerId&quot;:&quot;comp-m1oqn1od6__item1&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;parallaxSpeed&quot;:1.5,&quot;sourceSets&quot;:[],&quot;imageData&quot;:{&quot;uri&quot;:&quot;{{ asset('images/tanzania-serengeti.jpg') }}&quot;,&quot;width&quot;:2580,&quot;height&quot;:3219,&quot;alt&quot;:&quot;Luxury Tanzania Safari | Elephant in the Lodge&quot;,&quot;name&quot;:&quot;saf-eil-lei-activity-boat-cruise08.jpg&quot;,&quot;focalPoint&quot;:null},&quot;hasAnimation&quot;:false,&quot;encoding&quot;:&quot;AVIF&quot;}"
                                     data-has-ssr-src="true"
                                     data-motion-part="BG_IMG comp-m1oqn1od6__item1"
                                     class="Ux33nC">
                                     <picture><img loading="lazy"
-                                            src="https://static.wixstatic.com/media/851897_837a3ffb941f4d05b4817eee6e12e681~mv2.jpg/v1/fill/w_147,h_183,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/saf-eil-lei-activity-boat-cruise08.jpg"
+                                            src="{{ asset('images/tanzania-serengeti.jpg') }}"
                                             alt="Luxury Tanzania Safari | Elephant in the Lodge"
                                             style="object-fit:cover;object-position:50% 50%">
                                     </picture>
@@ -123,12 +150,12 @@ data-testid="section-container">
                                 <wow-image
                                     id="img-comp-m1oqn1od6__item-j9ples3e"
                                     data-is-responsive="true"
-                                    data-image-info="{&quot;containerId&quot;:&quot;comp-m1oqn1od6__item-j9ples3e&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;parallaxSpeed&quot;:1.5,&quot;sourceSets&quot;:[],&quot;imageData&quot;:{&quot;uri&quot;:&quot;851897_61d328a711ac4d53a210d0653f579038~mv2.jpg&quot;,&quot;width&quot;:7360,&quot;height&quot;:4775,&quot;alt&quot;:&quot;andBeyond Under Canvas Luxury Camp - Serengeti, Tanzania&quot;,&quot;name&quot;:&quot;Tanzania-Serengeti-Under-Canvas-SUC-Guest-Area-camp-exterior-with-lantern-walkway-and-Maas&quot;,&quot;focalPoint&quot;:null},&quot;hasAnimation&quot;:false,&quot;encoding&quot;:&quot;AVIF&quot;}"
+                                    data-image-info="{&quot;containerId&quot;:&quot;comp-m1oqn1od6__item-j9ples3e&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;parallaxSpeed&quot;:1.5,&quot;sourceSets&quot;:[],&quot;imageData&quot;:{&quot;uri&quot;:&quot;{{ asset('images/selous-kinga-lodge-7-768x512.jpg') }}&quot;,&quot;width&quot;:7360,&quot;height&quot;:4775,&quot;alt&quot;:&quot;andBeyond Under Canvas Luxury Camp - Serengeti, Tanzania&quot;,&quot;name&quot;:&quot;Tanzania-Serengeti-Under-Canvas-SUC-Guest-Area-camp-exterior-with-lantern-walkway-and-Maas&quot;,&quot;focalPoint&quot;:null},&quot;hasAnimation&quot;:false,&quot;encoding&quot;:&quot;AVIF&quot;}"
                                     data-has-ssr-src="true"
                                     data-motion-part="BG_IMG comp-m1oqn1od6__item-j9ples3e"
                                     class="Ux33nC">
                                     <picture><img loading="lazy"
-                                            src="https://static.wixstatic.com/media/851897_61d328a711ac4d53a210d0653f579038~mv2.jpg/v1/fill/w_147,h_95,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/Tanzania-Serengeti-Under-Canvas-SUC-Guest-Area-camp-exterior-with-lantern-walkway-and-Maas.jpg"
+                                            src="{{ asset('images/selous-kinga-lodge-7-768x512.jpg') }}"
                                             alt="andBeyond Under Canvas Luxury Camp - Serengeti, Tanzania"
                                             style="object-fit:cover;object-position:50% 50%">
                                     </picture>
@@ -150,12 +177,12 @@ data-testid="section-container">
                                 <wow-image
                                     id="img-comp-m1oqn1od6__item-j9plerjk"
                                     data-is-responsive="true"
-                                    data-image-info="{&quot;containerId&quot;:&quot;comp-m1oqn1od6__item-j9plerjk&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;parallaxSpeed&quot;:1.5,&quot;sourceSets&quot;:[],&quot;imageData&quot;:{&quot;uri&quot;:&quot;851897_8544d5f54cb54ce49ffbead6e4d52810~mv2.jpg&quot;,&quot;width&quot;:1600,&quot;height&quot;:1067,&quot;alt&quot;:&quot;Rangers take excellent care of their rhinos in bomas - Save the Rhino Foundation&quot;,&quot;name&quot;:&quot;Rangers-take-excellent-care-of-their-rhinos-in-bomas-C-Save-the-Rhino-International-1-scal&quot;,&quot;focalPoint&quot;:null},&quot;hasAnimation&quot;:false,&quot;encoding&quot;:&quot;AVIF&quot;}"
+                                    data-image-info="{&quot;containerId&quot;:&quot;comp-m1oqn1od6__item-j9plerjk&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;parallaxSpeed&quot;:1.5,&quot;sourceSets&quot;:[],&quot;imageData&quot;:{&quot;uri&quot;:&quot;{{ asset('images/IMG_7902-768x512.jpg') }}&quot;,&quot;width&quot;:1600,&quot;height&quot;:1067,&quot;alt&quot;:&quot;Rangers take excellent care of their rhinos in bomas - Save the Rhino Foundation&quot;,&quot;name&quot;:&quot;Rangers-take-excellent-care-of-their-rhinos-in-bomas-C-Save-the-Rhino-International-1-scal&quot;,&quot;focalPoint&quot;:null},&quot;hasAnimation&quot;:false,&quot;encoding&quot;:&quot;AVIF&quot;}"
                                     data-has-ssr-src="true"
                                     data-motion-part="BG_IMG comp-m1oqn1od6__item-j9plerjk"
                                     class="Ux33nC">
                                     <picture><img loading="lazy"
-                                            src="https://static.wixstatic.com/media/851897_8544d5f54cb54ce49ffbead6e4d52810~mv2.jpg/v1/fill/w_147,h_98,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/Rangers-take-excellent-care-of-their-rhinos-in-bomas-C-Save-the-Rhino-International-1-scal.jpg"
+                                            src="{{ asset('images/IMG_7902-768x512.jpg') }}"
                                             alt="Rangers take excellent care of their rhinos in bomas - Save the Rhino Foundation"
                                             style="object-fit:cover;object-position:50% 50%">
                                     </picture>
@@ -195,7 +222,7 @@ data-testid="section-container">
                         class="wixui-rich-text__text">
                     Extraordinary&nbsp;<span style="font-weight:bold;"
                         class="wixui-rich-text__text"><span
-                            style="font-family:sacramento,cursive;"
+                          
                             class="wixui-rich-text__text">Journeys</span></span></span>
             </h3>
         </div><!--/$--><!--$-->
@@ -256,12 +283,12 @@ data-testid="section-container">
                                     <wow-image
                                         id="img-comp-m2omef1t6__item1"
                                         data-is-responsive="true"
-                                        data-image-info="{&quot;containerId&quot;:&quot;comp-m2omef1t6__item1&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;parallaxSpeed&quot;:1.5,&quot;sourceSets&quot;:[],&quot;imageData&quot;:{&quot;uri&quot;:&quot;851897_438bf84989f1466082a16b336391d8c7~mv2.jpg&quot;,&quot;width&quot;:1440,&quot;height&quot;:1440,&quot;alt&quot;:&quot;Luxury Tanzania Safari at Serval Wildlife Park, Arusha Tanzania with star SAFARI&quot;,&quot;name&quot;:&quot;gallery-serval.jpg&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;focalPoint&quot;:{&quot;x&quot;:63,&quot;y&quot;:42},&quot;scrollEffect&quot;:&quot;none&quot;},&quot;hasAnimation&quot;:false,&quot;encoding&quot;:&quot;AVIF&quot;}"
+                                        data-image-info="{&quot;containerId&quot;:&quot;comp-m2omef1t6__item1&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;parallaxSpeed&quot;:1.5,&quot;sourceSets&quot;:[],&quot;imageData&quot;:{&quot;uri&quot;:&quot;{{ asset('images/safari.jpeg') }}&quot;,&quot;width&quot;:1440,&quot;height&quot;:1440,&quot;alt&quot;:&quot;Luxury Tanzania Safari at Serval Wildlife Park, Arusha Tanzania with star SAFARI&quot;,&quot;name&quot;:&quot;gallery-serval.jpg&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;focalPoint&quot;:{&quot;x&quot;:63,&quot;y&quot;:42},&quot;scrollEffect&quot;:&quot;none&quot;},&quot;hasAnimation&quot;:false,&quot;encoding&quot;:&quot;AVIF&quot;}"
                                         data-has-ssr-src="true"
                                         data-motion-part="BG_IMG comp-m2omef1t6__item1"
                                         class="Ux33nC">
                                         <picture><img loading="lazy"
-                                                src="https://static.wixstatic.com/media/851897_438bf84989f1466082a16b336391d8c7~mv2.jpg/v1/fill/w_147,h_147,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/gallery-serval.jpg"
+                                                src="{{ asset('images/safari.jpeg') }}"
                                                 alt="Luxury Tanzania Safari at Serval Wildlife Park, Arusha Tanzania with star SAFARI"
                                                 style="object-fit:cover;object-position:63% 42%">
                                         </picture>
@@ -274,8 +301,8 @@ data-testid="section-container">
                             ariaattributes="[object Object]">
                             <p class="font_4 wixui-rich-text__text">
                                 <span
-                                    class="wixui-rich-text__text">Arusha,
-                                    Tanzania</span></p>
+                                    class="wixui-rich-text__text"> Wildlife,Safari
+                                    </span></p>
                         </div><!--/$-->
                     </div>
                 </div><!--/$--><!--$-->
@@ -295,12 +322,12 @@ data-testid="section-container">
                                     <wow-image
                                         id="img-comp-m2omef1t6__item-j9ples3e"
                                         data-is-responsive="true"
-                                        data-image-info="{&quot;containerId&quot;:&quot;comp-m2omef1t6__item-j9ples3e&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;parallaxSpeed&quot;:1.5,&quot;sourceSets&quot;:[],&quot;imageData&quot;:{&quot;uri&quot;:&quot;851897_322c74d6ef6849c9a73f3a289470e086~mv2.jpg&quot;,&quot;width&quot;:3504,&quot;height&quot;:2336,&quot;alt&quot;:&quot;The majestic Great Migration and its dramatic river crossings in Kenya or Tanzania &quot;,&quot;name&quot;:&quot;Serengeti-Migration.jpg&quot;,&quot;focalPoint&quot;:null},&quot;hasAnimation&quot;:false,&quot;encoding&quot;:&quot;AVIF&quot;}"
+                                        data-image-info="{&quot;containerId&quot;:&quot;comp-m2omef1t6__item-j9ples3e&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;parallaxSpeed&quot;:1.5,&quot;sourceSets&quot;:[],&quot;imageData&quot;:{&quot;uri&quot;:&quot;{{ asset('images/balloon-safari-scaled.jpg') }}&quot;,&quot;width&quot;:3504,&quot;height&quot;:2336,&quot;alt&quot;:&quot;The majestic Great Migration and its dramatic river crossings in Kenya or Tanzania &quot;,&quot;name&quot;:&quot;Serengeti-Migration.jpg&quot;,&quot;focalPoint&quot;:null},&quot;hasAnimation&quot;:false,&quot;encoding&quot;:&quot;AVIF&quot;}"
                                         data-has-ssr-src="true"
                                         data-motion-part="BG_IMG comp-m2omef1t6__item-j9ples3e"
                                         class="Ux33nC">
                                         <picture><img loading="lazy"
-                                                src="https://static.wixstatic.com/media/851897_322c74d6ef6849c9a73f3a289470e086~mv2.jpg/v1/fill/w_147,h_98,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/Serengeti-Migration.jpg"
+                                                src="{{ asset('images/balloon-safari-scaled.jpg') }}"
                                                 alt="The majestic Great Migration and its dramatic river crossings in Kenya or Tanzania "
                                                 style="object-fit:cover;object-position:50% 50%">
                                         </picture>
@@ -312,7 +339,7 @@ data-testid="section-container">
                             data-testid="richTextElement"
                             ariaattributes="[object Object]">
                             <p class="font_4 wixui-rich-text__text">
-                                Serengeti, Tanzania</p>
+                                Baloon, Safari</p>
                         </div><!--/$-->
                     </div>
                 </div><!--/$--><!--$-->
@@ -332,12 +359,12 @@ data-testid="section-container">
                                     <wow-image
                                         id="img-comp-m2omef1t6__item-j9plerjk"
                                         data-is-responsive="true"
-                                        data-image-info="{&quot;containerId&quot;:&quot;comp-m2omef1t6__item-j9plerjk&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;parallaxSpeed&quot;:1.5,&quot;sourceSets&quot;:[],&quot;imageData&quot;:{&quot;uri&quot;:&quot;851897_9db262fe117f4404ba9d0399e1388162~mv2.jpg&quot;,&quot;width&quot;:5184,&quot;height&quot;:3456,&quot;alt&quot;:&quot;Cheetahs spotted in the wilderness of Masai Mara duri- star SAFARI during safari&quot;,&quot;name&quot;:&quot;Safar-Jeep-Cheetahs.jpg&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;scrollEffect&quot;:&quot;none&quot;,&quot;focalPoint&quot;:null},&quot;hasAnimation&quot;:false,&quot;encoding&quot;:&quot;AVIF&quot;}"
+                                        data-image-info="{&quot;containerId&quot;:&quot;comp-m2omef1t6__item-j9plerjk&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;parallaxSpeed&quot;:1.5,&quot;sourceSets&quot;:[],&quot;imageData&quot;:{&quot;uri&quot;:&quot;{{ asset('images/Maasai-Cultural.jpeg') }}&quot;,&quot;width&quot;:5184,&quot;height&quot;:3456,&quot;alt&quot;:&quot;Cheetahs spotted in the wilderness of Masai Mara duri- star SAFARI during safari&quot;,&quot;name&quot;:&quot;Safar-Jeep-Cheetahs.jpg&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;scrollEffect&quot;:&quot;none&quot;,&quot;focalPoint&quot;:null},&quot;hasAnimation&quot;:false,&quot;encoding&quot;:&quot;AVIF&quot;}"
                                         data-has-ssr-src="true"
                                         data-motion-part="BG_IMG comp-m2omef1t6__item-j9plerjk"
                                         class="Ux33nC">
                                         <picture><img loading="lazy"
-                                                src="https://static.wixstatic.com/media/851897_9db262fe117f4404ba9d0399e1388162~mv2.jpg/v1/fill/w_147,h_98,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/Safar-Jeep-Cheetahs.jpg"
+                                                src="{{ asset('images/Maasai-Cultural.jpeg') }}"
                                                 alt="Cheetahs spotted in the wilderness of Masai Mara duri- Star SAFARI during safari"
                                                 style="object-fit:cover;object-position:50% 50%">
                                         </picture>
@@ -349,7 +376,7 @@ data-testid="section-container">
                             data-testid="richTextElement"
                             ariaattributes="[object Object]">
                             <p class="font_4 wixui-rich-text__text">
-                                Masai Mara, Kenya</p>
+                                Cultural, Tour</p>
                         </div><!--/$-->
                     </div>
                 </div><!--/$--><!--$-->
@@ -369,12 +396,12 @@ data-testid="section-container">
                                     <wow-image
                                         id="img-comp-m2omef1t6__item-m2q1cssk"
                                         data-is-responsive="true"
-                                        data-image-info="{&quot;containerId&quot;:&quot;comp-m2omef1t6__item-m2q1cssk&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;parallaxSpeed&quot;:1.5,&quot;sourceSets&quot;:[],&quot;imageData&quot;:{&quot;uri&quot;:&quot;851897_d2ad27e35ed34bb0b668a61a735ba966~mv2.jpeg&quot;,&quot;width&quot;:4045,&quot;height&quot;:6067,&quot;alt&quot;:&quot;Inside Okavago Delta - Your Ultimate Botswana Safari Guide with star SAFARI&quot;,&quot;name&quot;:&quot;Inside Khwai Reserve • Your Ultimate Botswana Safari Guide.jpeg&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;scrollEffect&quot;:&quot;none&quot;,&quot;focalPoint&quot;:null},&quot;hasAnimation&quot;:false,&quot;encoding&quot;:&quot;AVIF&quot;}"
+                                        data-image-info="{&quot;containerId&quot;:&quot;comp-m2omef1t6__item-m2q1cssk&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;parallaxSpeed&quot;:1.5,&quot;sourceSets&quot;:[],&quot;imageData&quot;:{&quot;uri&quot;:&quot;{{ asset('images/Crater-3.jpg') }}&quot;,&quot;width&quot;:4045,&quot;height&quot;:6067,&quot;alt&quot;:&quot;Inside Okavago Delta - Your Ultimate Botswana Safari Guide with star SAFARI&quot;,&quot;name&quot;:&quot;Inside Khwai Reserve • Your Ultimate Botswana Safari Guide.jpeg&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;scrollEffect&quot;:&quot;none&quot;,&quot;focalPoint&quot;:null},&quot;hasAnimation&quot;:false,&quot;encoding&quot;:&quot;AVIF&quot;}"
                                         data-has-ssr-src="true"
                                         data-motion-part="BG_IMG comp-m2omef1t6__item-m2q1cssk"
                                         class="Ux33nC">
                                         <picture><img loading="lazy"
-                                                src="https://static.wixstatic.com/media/851897_d2ad27e35ed34bb0b668a61a735ba966~mv2.jpeg/v1/fill/w_147,h_220,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/Inside%20Khwai%20Reserve%20%E2%80%A2%20Your%20Ultimate%20Botswana%20Safari%20Guide.jpeg"
+                                                src="{{ asset('images/Crater-3.jpg') }}"
                                                 alt="Inside Okavago Delta - Your Ultimate Botswana Safari Guide with star SAFARI"
                                                 style="object-fit:cover;object-position:50% 50%">
                                         </picture>
@@ -386,7 +413,7 @@ data-testid="section-container">
                             data-testid="richTextElement"
                             ariaattributes="[object Object]">
                             <p class="font_4 wixui-rich-text__text">
-                                Okavango, Botswana</p>
+                                Ngorongoro, Crater</p>
                         </div><!--/$-->
                     </div>
                 </div><!--/$--><!--$-->
@@ -406,12 +433,12 @@ data-testid="section-container">
                                     <wow-image
                                         id="img-comp-m2omef1t6__item-m2q1cu8b"
                                         data-is-responsive="true"
-                                        data-image-info="{&quot;containerId&quot;:&quot;comp-m2omef1t6__item-m2q1cu8b&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;parallaxSpeed&quot;:1.5,&quot;sourceSets&quot;:[],&quot;imageData&quot;:{&quot;uri&quot;:&quot;851897_77416ef18b4549febe2c057fa5fc6eec~mv2.jpg&quot;,&quot;width&quot;:800,&quot;height&quot;:500,&quot;alt&quot;:&quot;Luxury Gorilla Safari at Volcanoes National Park, Rwanda with star SAFARI&quot;,&quot;name&quot;:&quot;Gorilla_JPM_7.jpg&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;scrollEffect&quot;:&quot;none&quot;,&quot;focalPoint&quot;:null},&quot;hasAnimation&quot;:false,&quot;encoding&quot;:&quot;AVIF&quot;}"
+                                        data-image-info="{&quot;containerId&quot;:&quot;comp-m2omef1t6__item-m2q1cu8b&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;parallaxSpeed&quot;:1.5,&quot;sourceSets&quot;:[],&quot;imageData&quot;:{&quot;uri&quot;:&quot;{{ asset('images/bike.jpg') }}&quot;,&quot;width&quot;:800,&quot;height&quot;:500,&quot;alt&quot;:&quot;Luxury Gorilla Safari at Volcanoes National Park, Rwanda with star SAFARI&quot;,&quot;name&quot;:&quot;Gorilla_JPM_7.jpg&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;scrollEffect&quot;:&quot;none&quot;,&quot;focalPoint&quot;:null},&quot;hasAnimation&quot;:false,&quot;encoding&quot;:&quot;AVIF&quot;}"
                                         data-has-ssr-src="true"
                                         data-motion-part="BG_IMG comp-m2omef1t6__item-m2q1cu8b"
                                         class="Ux33nC">
                                         <picture><img loading="lazy"
-                                                src="https://static.wixstatic.com/media/851897_77416ef18b4549febe2c057fa5fc6eec~mv2.jpg/v1/fill/w_144,h_90,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/Gorilla_JPM_7.jpg"
+                                                src="{{ asset('images/bike.jpg') }}"
                                                 alt="Luxury Gorilla Safari at Volcanoes National Park, Rwanda with star SAFARI"
                                                 style="object-fit:cover;object-position:50% 50%">
                                         </picture>
@@ -423,7 +450,7 @@ data-testid="section-container">
                             data-testid="richTextElement"
                             ariaattributes="[object Object]">
                             <p class="font_4 wixui-rich-text__text">
-                                Volcanoes, Rwanda</p>
+                                Biking, Tour</p>
                         </div><!--/$-->
                     </div>
                 </div><!--/$--><!--$-->
@@ -443,12 +470,12 @@ data-testid="section-container">
                                     <wow-image
                                         id="img-comp-m2omef1t6__item-m2q1cv0l"
                                         data-is-responsive="true"
-                                        data-image-info="{&quot;containerId&quot;:&quot;comp-m2omef1t6__item-m2q1cv0l&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;parallaxSpeed&quot;:1.5,&quot;sourceSets&quot;:[],&quot;imageData&quot;:{&quot;uri&quot;:&quot;851897_1aca8e181e624b3bb5622332c73b9e47~mv2.jpg&quot;,&quot;width&quot;:1920,&quot;height&quot;:1080,&quot;alt&quot;:&quot;Kruger National Park Safari with star SAFARI - Lion Spotted crossing the road&quot;,&quot;name&quot;:&quot;hoyo-hoyo-lionvehicle-timhulme.jpeg&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;scrollEffect&quot;:&quot;none&quot;,&quot;focalPoint&quot;:null},&quot;hasAnimation&quot;:false,&quot;encoding&quot;:&quot;AVIF&quot;}"
+                                        data-image-info="{&quot;containerId&quot;:&quot;comp-m2omef1t6__item-m2q1cv0l&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;parallaxSpeed&quot;:1.5,&quot;sourceSets&quot;:[],&quot;imageData&quot;:{&quot;uri&quot;:&quot;{{ asset('images/walking.jpg') }}&quot;,&quot;width&quot;:1920,&quot;height&quot;:1080,&quot;alt&quot;:&quot;Kruger National Park Safari with star SAFARI - Lion Spotted crossing the road&quot;,&quot;name&quot;:&quot;hoyo-hoyo-lionvehicle-timhulme.jpeg&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;scrollEffect&quot;:&quot;none&quot;,&quot;focalPoint&quot;:null},&quot;hasAnimation&quot;:false,&quot;encoding&quot;:&quot;AVIF&quot;}"
                                         data-has-ssr-src="true"
                                         data-motion-part="BG_IMG comp-m2omef1t6__item-m2q1cv0l"
                                         class="Ux33nC">
                                         <picture><img loading="lazy"
-                                                src="https://static.wixstatic.com/media/851897_1aca8e181e624b3bb5622332c73b9e47~mv2.jpg/v1/fill/w_147,h_83,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/hoyo-hoyo-lionvehicle-timhulme.jpg"
+                                                src="{{ asset('images/walking.jpg') }}"
                                                 alt="Kruger National Park Safari with star SAFARI - Lion Spotted crossing the road"
                                                 style="object-fit:cover;object-position:50% 50%">
                                         </picture>
@@ -460,7 +487,7 @@ data-testid="section-container">
                             data-testid="richTextElement"
                             ariaattributes="[object Object]">
                             <p class="font_4 wixui-rich-text__text">
-                                Kruger, South Africa</p>
+                                Bush, Walking</p>
                         </div><!--/$-->
                     </div>
                 </div><!--/$-->
@@ -491,12 +518,12 @@ data-testid="section-container">
                 <div data-motion-part="BG_MEDIA comp-m2vr53bb7">
                     <wow-image id="img-comp-m2vr53bb7"
                         data-is-responsive="true"
-                        data-image-info="{&quot;containerId&quot;:&quot;comp-m2vr53bb7&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;parallaxSpeed&quot;:1.5,&quot;sourceSets&quot;:[],&quot;imageData&quot;:{&quot;uri&quot;:&quot;851897_5fde353119f44355a476337550ea055e~mv2.jpg&quot;,&quot;width&quot;:1880,&quot;height&quot;:1208,&quot;alt&quot;:&quot;Lake Manyara Tree Lodge Suite - STAR SAFARI Partner&quot;,&quot;name&quot;:&quot;Lake Manyara Tree Lodge.jpg&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;scrollEffect&quot;:&quot;none&quot;,&quot;focalPoint&quot;:null},&quot;hasAnimation&quot;:false,&quot;encoding&quot;:&quot;AVIF&quot;}"
+                        data-image-info="{&quot;containerId&quot;:&quot;comp-m2vr53bb7&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;parallaxSpeed&quot;:1.5,&quot;sourceSets&quot;:[],&quot;imageData&quot;:{&quot;uri&quot;:&quot;{{ asset('images/one-nature-nyaruswiga-lodge-serengeti.jpg') }}&quot;,&quot;width&quot;:1880,&quot;height&quot;:1208,&quot;alt&quot;:&quot;Lake Manyara Tree Lodge Suite - STAR SAFARI Partner&quot;,&quot;name&quot;:&quot;Lake Manyara Tree Lodge.jpg&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;scrollEffect&quot;:&quot;none&quot;,&quot;focalPoint&quot;:null},&quot;hasAnimation&quot;:false,&quot;encoding&quot;:&quot;AVIF&quot;}"
                         data-has-ssr-src="true"
                         data-motion-part="BG_IMG comp-m2vr53bb7"
                         class="Ux33nC">
                         <picture><img loading="lazy"
-                                src="https://static.wixstatic.com/media/851897_5fde353119f44355a476337550ea055e~mv2.jpg/v1/fill/w_147,h_94,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/Lake%20Manyara%20Tree%20Lodge.jpg"
+                                src="{{ asset('images/one-nature-nyaruswiga-lodge-serengeti.jpg') }}"
                                 alt="Lake Manyara Tree Lodge Suite - STAR SAFARI Partner"
                                 style="object-fit:cover;object-position:50% 50%">
                         </picture>
@@ -525,7 +552,6 @@ data-testid="section-container">
                         class="wixui-rich-text__text">Awe-Inspiring&nbsp;<span
                             style="font-weight:bold;"
                             class="wixui-rich-text__text"><span
-                                style="font-family:sacramento,cursive;"
                                 class="wixui-rich-text__text">Wild
                                 Seclusion</span></span></span></h2>
             </div><!--/$--><!--$-->
@@ -590,12 +616,12 @@ data-testid="section-container">
                                 <wow-image
                                     id="img-comp-m2vr53bl5__item1"
                                     data-is-responsive="true"
-                                    data-image-info="{&quot;containerId&quot;:&quot;comp-m2vr53bl5__item1&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;parallaxSpeed&quot;:1.5,&quot;sourceSets&quot;:[],&quot;imageData&quot;:{&quot;uri&quot;:&quot;851897_98b1a0a856374e06b79c1a2b08ffec9f~mv2.jpg&quot;,&quot;width&quot;:1211,&quot;height&quot;:700,&quot;alt&quot;:&quot;Namiri Plains - Exterior view during safari with star SAFARI&quot;,&quot;name&quot;:&quot;namiri_plains_-_tent_exterior.jpg&quot;,&quot;focalPoint&quot;:null},&quot;hasAnimation&quot;:false,&quot;encoding&quot;:&quot;AVIF&quot;}"
+                                    data-image-info="{&quot;containerId&quot;:&quot;comp-m2vr53bl5__item1&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;parallaxSpeed&quot;:1.5,&quot;sourceSets&quot;:[],&quot;imageData&quot;:{&quot;uri&quot;:&quot;{{ asset('images/selous-kinga-lodge-8-768x512.jpg') }}&quot;,&quot;width&quot;:1211,&quot;height&quot;:700,&quot;alt&quot;:&quot;Namiri Plains - Exterior view during safari with star SAFARI&quot;,&quot;name&quot;:&quot;selous-kinga-lodge-8-768x512.jpg&quot;,&quot;focalPoint&quot;:null},&quot;hasAnimation&quot;:false,&quot;encoding&quot;:&quot;AVIF&quot;}"
                                     data-has-ssr-src="true"
                                     data-motion-part="BG_IMG comp-m2vr53bl5__item1"
                                     class="Ux33nC">
                                     <picture><img loading="lazy"
-                                            src="https://static.wixstatic.com/media/851897_98b1a0a856374e06b79c1a2b08ffec9f~mv2.jpg/v1/fill/w_147,h_85,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/namiri_plains_-_tent_exterior.jpg"
+                                            src="{{ asset('images/selous-kinga-lodge-8-768x512.jpg') }}"
                                             alt="Namiri Plains - Exterior view during safari with star SAFARI"
                                             style="object-fit:cover;object-position:50% 50%">
                                     </picture>
@@ -617,13 +643,13 @@ data-testid="section-container">
                                 <wow-image
                                     id="img-comp-m2vr53bl5__item-j9ples3e"
                                     data-is-responsive="true"
-                                    data-image-info="{&quot;containerId&quot;:&quot;comp-m2vr53bl5__item-j9ples3e&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;parallaxSpeed&quot;:1.5,&quot;sourceSets&quot;:[],&quot;imageData&quot;:{&quot;uri&quot;:&quot;851897_b215796dc37f44d780979de9e5f4961a~mv2.webp&quot;,&quot;width&quot;:1600,&quot;height&quot;:2400,&quot;alt&quot;:&quot;andBeyond Grumeti River Lodge - Lounge - STAR SAFARI partner&quot;,&quot;name&quot;:&quot;Grumeti-River-Lodge-apr23-pr-AndBeyond.webp&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;scrollEffect&quot;:&quot;none&quot;,&quot;focalPoint&quot;:null},&quot;hasAnimation&quot;:false,&quot;encoding&quot;:&quot;AVIF&quot;}"
+                                    data-image-info="{&quot;containerId&quot;:&quot;comp-m2vr53bl5__item-j9ples3e&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;parallaxSpeed&quot;:1.5,&quot;sourceSets&quot;:[],&quot;imageData&quot;:{&quot;uri&quot;:&quot;{{ asset('images/mount climanjaro.webp') }}&quot;,&quot;width&quot;:1600,&quot;height&quot;:2400,&quot;alt&quot;:&quot;Mount Climanjaro - STAR SAFARI partner&quot;,&quot;name&quot;:&quot;mount climanjaro.jpg&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;scrollEffect&quot;:&quot;none&quot;,&quot;focalPoint&quot;:null},&quot;hasAnimation&quot;:false,&quot;encoding&quot;:&quot;AVIF&quot;}"
                                     data-has-ssr-src="true"
                                     data-motion-part="BG_IMG comp-m2vr53bl5__item-j9ples3e"
                                     class="Ux33nC">
                                     <picture><img loading="lazy"
-                                            src="https://static.wixstatic.com/media/851897_b215796dc37f44d780979de9e5f4961a~mv2.webp/v1/fill/w_147,h_221,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/Grumeti-River-Lodge-apr23-pr-AndBeyond.webp"
-                                            alt="andBeyond Grumeti River Lodge - Lounge - STAR SAFARI partner"
+                                            src="{{ asset('images/mount climanjaro.webp') }}"
+                                            alt="Mount Climanjaro - STAN SAFARI partner"
                                             style="object-fit:cover;object-position:50% 50%">
                                     </picture>
                                 </wow-image></div>
@@ -644,13 +670,13 @@ data-testid="section-container">
                                 <wow-image
                                     id="img-comp-m2vr53bl5__item-j9plerjk"
                                     data-is-responsive="true"
-                                    data-image-info="{&quot;containerId&quot;:&quot;comp-m2vr53bl5__item-j9plerjk&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;parallaxSpeed&quot;:1.5,&quot;sourceSets&quot;:[],&quot;imageData&quot;:{&quot;uri&quot;:&quot;851897_e174b7f98ba44b58aa6b11d7a972b4d8~mv2.jpg&quot;,&quot;width&quot;:2048,&quot;height&quot;:1365,&quot;alt&quot;:&quot;Mwiba Lodge - Poolside - STAR SAFARI partner&quot;,&quot;name&quot;:&quot;Mwiba Lodge.jpg&quot;,&quot;focalPoint&quot;:null},&quot;hasAnimation&quot;:false,&quot;encoding&quot;:&quot;AVIF&quot;}"
+                                    data-image-info="{&quot;containerId&quot;:&quot;comp-m2vr53bl5__item-j9plerjk&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;parallaxSpeed&quot;:1.5,&quot;sourceSets&quot;:[],&quot;imageData&quot;:{&quot;uri&quot;:&quot;{{ asset('images/village-visit-04.jpg') }}&quot;,&quot;width&quot;:2048,&quot;height&quot;:1365,&quot;alt&quot;:&quot;village-visit-04 - Poolside - STAN SAFARI partner&quot;,&quot;name&quot;:&quot;village-visit-04.jpg&quot;,&quot;focalPoint&quot;:null},&quot;hasAnimation&quot;:false,&quot;encoding&quot;:&quot;AVIF&quot;}"
                                     data-has-ssr-src="true"
                                     data-motion-part="BG_IMG comp-m2vr53bl5__item-j9plerjk"
                                     class="Ux33nC">
                                     <picture><img loading="lazy"
-                                            src="https://static.wixstatic.com/media/851897_e174b7f98ba44b58aa6b11d7a972b4d8~mv2.jpg/v1/fill/w_147,h_98,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/Mwiba%20Lodge.jpg"
-                                            alt="Mwiba Lodge - Poolside - STAR SAFARI partner"
+                                            src="{{ asset('images/village-visit-04.jpg') }}"
+                                            alt="village-visit-04 - Poolside - STAN SAFARI partner"
                                             style="object-fit:cover;object-position:50% 50%">
                                     </picture>
                                 </wow-image></div>

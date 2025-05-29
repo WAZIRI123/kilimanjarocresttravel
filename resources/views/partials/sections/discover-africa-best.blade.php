@@ -120,7 +120,7 @@ data-testid="section-container">
                                     class="Ux33nC">
                                     <picture><img loading="lazy"
                                             src="https://static.wixstatic.com/media/851897_1f54f551640a434586a00c39ddd80514~mv2.jpg/v1/fill/w_147,h_92,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/arijiju_07_mid.jpg"
-                                            alt="Arijiju Luxury Lodge - STAR SAFARI partner"
+                                            alt="Arijiju Luxury Lodge - STAN SAFARI partner"
                                             style="object-fit:cover;object-position:50% 50%">
                                     </picture>
                                 </wow-image></div>

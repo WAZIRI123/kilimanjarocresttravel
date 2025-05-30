@@ -40,11 +40,20 @@ data-testid="section-container">
 </div><!--/$--><!--$-->
 <style>
   
-  @media (min-width: 768px) {
+
     .comp-m1oqn1o44-container {
           
             background-image: url('{{ asset('images/lion.png') }}') !important; /* Replace with your actual image path */
             background-size: cover;
+            background-repeat: no-repeat;
+            background-position: left center;
+            z-index: 1; /* Below the overlay and text */
+        }
+
+        .comp-m2vr53bc7{
+            background-image: url('{{ asset('images/wildlife-serengeti-national-park.jpg') }}') !important; /* Replace with your actual image path */
+            background-size: cover;
+            background-repeat: no-repeat;
             background-position: center center;
             z-index: 1; /* Below the overlay and text */
         }
@@ -53,14 +62,14 @@ data-testid="section-container">
             position: absolute; 
             width: 100%; 
             height: 100%;
-            background-color:  rgba(245, 241, 238,1);
+            background-color:  rgba(245, 241, 238,0.89);
             
             padding: 40px;
             box-sizing: border-box;
             z-index: 0; 
             text-align: left;
         }
-    }
+ 
         
 
 </style>
@@ -539,8 +548,10 @@ data-testid="section-container">
 <div id="comp-m2vr53bc7" role=""
     class="rM7ckN YJEKQk comp-m2vr53bc7 wixui-box">
     <div class="YAf4Ti InKIFF wixui-box"></div>
+    <div class="overlay-color"></div>
     <div data-testid="responsive-container-content"
         class="comp-m2vr53bc7-container"><!--$-->
+
         <div id="comp-m2vr53bd" role=""
             class="rM7ckN YJEKQk comp-m2vr53bd-container comp-m2vr53bd wixui-box">
             <div class="YAf4Ti InKIFF wixui-box"></div><!--$-->

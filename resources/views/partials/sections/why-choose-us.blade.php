@@ -196,7 +196,7 @@
                         data-testid="richTextElement" ariaattributes="[object Object]">
                         <span
                         style="font-weight:bold;" class="wixui-rich-text__text font_8 why-header">Exclusive Accommodations in Prime Locations</span>
-                        <p class="font_8 wixui-rich-text__text why-p"><span class="wixui-rich-text__text">With our own Selous Kinga Lodge, located inside the breathtaking Nyerere National Park, and a cozy lodge in Moshi near Mount Kilimanjaro, you’ll enjoy a seamless safari experience with comfort, character, and easy access to top attractions.</span>
+                        <p class="font_8 wixui-rich-text__text why-p"><span class="wixui-rich-text__text">With our own Selous Kinga Lodge, located inside the breathtaking Nyerere National Park, and a cozy lodge in Moshi near Mount Kilimanjaro, you’ll enjoy a seamless safari experience with comfort and character.</span>
                         </p>
                     </div>
                 </div>

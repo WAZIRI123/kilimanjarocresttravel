@@ -3,7 +3,7 @@
     
         <div class="section-content">
             <div id="comp-m2vttpvv1" class="HcOXKn c9GqVL QxJLC3 lq2cno YQcXTT comp-m2vttpvv1 wixui-rich-text" data-testid="richTextElement" ariaattributes="[object Object]" style="border-radius:1rem1">
-                <h2 class="font_2 wixui-rich-text__text"><span class="wixui-rich-text__text">Experience the Magic of Tanzania:<br>Wildlife, Landscapes & Culture<br class="wixui-rich-text__text">
+                <h2 class="font_2 wixui-rich-text__text"><span class="wixui-rich-text__text">Experience The Magic of Tanzania:<br>Wildlife, Landscapes & Culture<br class="wixui-rich-text__text">
                        
             </div>
 
@@ -31,7 +31,7 @@
     /* Base Styles */
     .video-section {
         background: #fff;
-        padding: 60px 0;
+        padding: 20px 0 60px 0;
     }
     
     .section-container {

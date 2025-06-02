@@ -50,13 +50,14 @@
                                             data-main-content-parent="true"><!--$-->
                                         @include('partials.sections.hero')
                                         @include('partials.sections.why-choose-us')
-                    
+
                                         @include('partials.sections.testmonials')
                                         @include('partials.sections.trusted')
                                         @include('partials.sections.explore')
                                         @include('partials.sections.why-luxury')
                                         @include('partials.sections.Inspiring-our-extra-ordinary')
                                         @include('partials.sections.experience-africa-like-never')
+                                        @include('partials.sections.video-section')
                                         @include('partials.sections.our-2025')
                                         @include('partials.sections.discover-africa-best')
                                         </main>

@@ -67,11 +67,11 @@ data-testid="section-container">
                 class="HcOXKn c9GqVL QxJLC3 lq2cno YQcXTT comp-m31oqnce1 wixui-rich-text"
                 data-testid="richTextElement"
                 ariaattributes="[object Object]">
-                <p class="font_7 wixui-rich-text__text"><span
+                <p class="font_8 wixui-rich-text__text"><span
                         class="wixui-rich-text__text">Your ultimate African safari journey begins here.
                     </span></p>
 
-                <p class="font_7 wixui-rich-text__text"><span
+                <p class="font_8 wixui-rich-text__text"><span
                         class="wixui-rich-text__text">A dream Luxury
                         African Safari.</span></p>
             </div><!--/$-->
@@ -108,4 +108,10 @@ data-testid="section-container">
         </div>
     </div><!--/$-->
 </div>
+<style>
+    .font_8 {
+        font-size: 1.1rem !important;
+        line-height: 1.6 !important;
+    }
+</style>
 </section><!--/$--><!--$-->

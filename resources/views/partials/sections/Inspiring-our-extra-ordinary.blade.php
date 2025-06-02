@@ -87,13 +87,11 @@ data-testid="section-container">
                 data-testid="richTextElement"
                 ariaattributes="[object Object]" >
                 <h2 class="font_2 wixui-rich-text__text"><span
-                        class="wixui-rich-text__text">The Safari that
-                        Enhances Wildlife <span
+                        class="wixui-rich-text__text"> Join the movement, <span
                             style="font-weight:bold;"
                             class="wixui-rich-text__text"><span
                               
-                                class="wixui-rich-text__text">&amp;
-                                Transforms Lives</span></span></span>
+                                class="wixui-rich-text__text"> Travel with purpose.</span></span></span>
                 </h2>
             </div><!--/$--><!--$-->
             <div id="comp-m1oqyvln"
@@ -103,9 +101,7 @@ data-testid="section-container">
                 class="HcOXKn c9GqVL QxJLC3 lq2cno YQcXTT comp-m1oqn1o6 wixui-rich-text"
                 data-testid="richTextElement"
                 ariaattributes="[object Object]">
-                <p class="font_6 wixui-rich-text__text">This is Our
-                    Story of Impacting African Wilderness&nbsp; while
-                    Supporting&nbsp;Local&nbsp; Communities</p>
+                <p class="font_8 wixui-rich-text__text" style="font-weight: normal; !important">Every journey with Stan Safari does more than show you Africa’s beauty it helps protect it. Our ethical safaris directly support wildlife conservation and uplift the local communities we call home.</p>
             </div><!--/$-->
         </div><!--/$-->
     </div>
@@ -227,40 +223,70 @@ data-testid="section-container">
             data-testid="richTextElement"
             ariaattributes="[object Object]">
             <h3 class="font_3 wixui-rich-text__text"><span
-                    class="wixui-rich-text__text">Our<br
+                    class="wixui-rich-text__text">Curated African Escapes<br
                         class="wixui-rich-text__text">
-                    Extraordinary&nbsp;<span style="font-weight:bold;"
+                        &nbsp;<span style="font-weight:bold;"
                         class="wixui-rich-text__text"><span
                           
-                            class="wixui-rich-text__text">Journeys</span></span></span>
+                            class="wixui-rich-text__text">Crafted for You</span></span></span>
             </h3>
         </div><!--/$--><!--$-->
         <div id="comp-m2omef1m7"
             class="HcOXKn c9GqVL QxJLC3 lq2cno YQcXTT comp-m2omef1m7 wixui-rich-text"
             data-testid="richTextElement"
             ariaattributes="[object Object]">
-            <p class="font_7 wixui-rich-text__text"><span
-                    class="wixui-rich-text__text">Africa luxury travel
-                    tailored to your desires.</span></p>
+            <p class="font_8 wixui-rich-text__text">
+                <span class="wixui-rich-text__text">At Stan Safari, every journey is tailored to immerse you in Africa's beauty, culture, and wildlife with comfort and exclusivity at the core.</span>
+            </p>
 
-            <p class="font_7 wixui-rich-text__text"><span
-                    class="wixui-rich-text__text">Whether you want to
-                    experience the sheer magic of a luxury safari in
-                    Kenya, dream luxury Tanzania Safari, track gorillas
-                    in Rwanda or immerse yourself in the rich culture
-                    and culinary excellence of South Africa, we curate
-                    extraordinary experiences in the African destination
-                    of your dreams.</span></p>
+            <p class="font_8 wixui-rich-text__text">
+                <span class="wixui-rich-text__text">From thrilling safaris to cultural escapes, our curated experiences include:</span>
+            </p>
 
-            <p class="font_7 wixui-rich-text__text"><span
-                    class="wixui-rich-text__text">​</span></p>
-
-            <p class="font_7 wixui-rich-text__text"><span
-                    class="wixui-rich-text__text">Every country offers
-                    unique and inspiring encounters with wildlife,
-                    nature and local culture. Explore our destinations
-                    in more detail and discover your ideal African
-                    luxury travel experience.</span></p>
+            <div style="width: 100%; display: flex; justify-content: center; margin: 1.5rem 0;">
+                <div class="benefits-list" style="margin: 0; max-width: 600px; width: 100%;">
+                    <div style="display: flex; align-items: flex-start; margin-bottom: 12px;">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right: 12px; flex-shrink: 0; margin-top: 2px;">
+                            <path d="M20 6L9 17L4 12" stroke="#e8b143" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span style="font-size: 1rem; color: #333; line-height: 1.4;">
+                            <strong>Luxury Tanzania Safaris</strong> – Witness the Great Migration, explore Serengeti and Ngorongoro in style
+                        </span>
+                    </div>
+                    <div style="display: flex; align-items: flex-start; margin-bottom: 12px;">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right: 12px; flex-shrink: 0; margin-top: 2px;">
+                            <path d="M20 6L9 17L4 12" stroke="#e8b143" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span style="font-size: 1rem; color: #333; line-height: 1.4;">
+                            <strong>Kenya Safari Adventures</strong> – Iconic landscapes and Big Five game drives
+                        </span>
+                    </div>
+                    <div style="display: flex; align-items: flex-start; margin-bottom: 12px;">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right: 12px; flex-shrink: 0; margin-top: 2px;">
+                            <path d="M20 6L9 17L4 12" stroke="#e8b143" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span style="font-size: 1rem; color: #333; line-height: 1.4;">
+                            <strong>Rwanda Gorilla Trekking</strong> – Intimate encounters with mountain gorillas in lush rainforests
+                        </span>
+                    </div>
+                    <div style="display: flex; align-items: flex-start; margin-bottom: 12px;">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right: 12px; flex-shrink: 0; margin-top: 2px;">
+                            <path d="M20 6L9 17L4 12" stroke="#e8b143" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span style="font-size: 1rem; color: #333; line-height: 1.4;">
+                            <strong>South Africa Experiences</strong> – A fusion of wildlife, winelands, and cosmopolitan charm
+                        </span>
+                    </div>
+                    <div style="display: flex; align-items: flex-start;">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right: 12px; flex-shrink: 0; margin-top: 2px;">
+                            <path d="M20 6L9 17L4 12" stroke="#e8b143" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span style="font-size: 1rem; color: #333; line-height: 1.4;">
+                            <strong>Zanzibar Beach Escapes</strong> – White-sand relaxation with Swahili culture
+                        </span>
+                    </div>
+                </div>
+            </div>
         </div><!--/$--><!--$-->
         <div id="comp-m5s3orcj"
             class="comp-m5s3orcj JGtLUp wixui-horizontal-line"></div>
@@ -560,11 +586,10 @@ data-testid="section-container">
                 data-testid="richTextElement"
                 ariaattributes="[object Object]">
                 <h2 class="font_2 wixui-rich-text__text"><span
-                        class="wixui-rich-text__text">Awe-Inspiring&nbsp;<span
+                        class="wixui-rich-text__text">Luxury in the Heart<span
                             style="font-weight:bold;"
                             class="wixui-rich-text__text"><span
-                                class="wixui-rich-text__text">Wild
-                                Seclusion</span></span></span></h2>
+                                class="wixui-rich-text__text"> of the Wild</span></span></span></h2>
             </div><!--/$--><!--$-->
             <div id="comp-m2vrz666"
                 class="comp-m2vrz666 JGtLUp wixui-horizontal-line">
@@ -573,33 +598,24 @@ data-testid="section-container">
                 class="HcOXKn c9GqVL QxJLC3 lq2cno YQcXTT comp-m2vr53be wixui-rich-text"
                 data-testid="richTextElement"
                 ariaattributes="[object Object]">
-                <p class="font_8 wixui-rich-text__text">Unabashedly but
-                    thoughtfully luxurious, our exclusive-use of Private
-                    Villas, Luxury Lodges and state of the art
-                    accommodations are enchanting getaways into Africa's
-                    ancient calm and its unique thrills.</p>
+                <p class="font_8 wixui-rich-text__text">Retreat to Africa’s untouched wilderness in your own private villa, luxury lodge, or designer tented suite each crafted for comfort, privacy, and awe-inspiring views.
+
+                    From the moment you arrive, nature surrounds you: lions echo in the distance, elephants roam freely at dusk, and lanterns guide you to candlelit dinners beneath the stars.</p>
 
                 <p class="font_8 wixui-rich-text__text"><br
                         class="wixui-rich-text__text">
-                    You're in the African bush. A lion roars in the
-                    distance, hippos are submerged in a nearby
-                    waterhole, and you've just seen a herd of elephants
-                    march in a line across the plains, silhouetted
-                    against the setting sun.</p>
+                        Enjoy world-class amenities, gourmet cuisine, and bespoke service all set against Africa’s most breathtaking backdrops.
+
+This is more than a safari. It’s your exclusive sanctuary where adventure meets elegance.</p>
 
                 <p class="font_8 wixui-rich-text__text"><br
                         class="wixui-rich-text__text">
-                    Then, you arrive at a spot illuminated by lanterns,
-                    a table is set up for dinner and meat is sizzling on
-                    the grill. You're handed a drink and soulful singing
-                    accompanies your sundowner.<br
+                       <br
                         class="wixui-rich-text__text">
-                    Enjoy world-class facilities, gourmet dining, and
-                    personalized service, ensuring truly luxury&nbsp;<a
+                  <a
                         href="#" target="_blank"
                         rel="noreferrer noopener"
-                        class="wixui-rich-text__text">safari experience,
-                        truly an epitome of luxury african safari.</a>
+                        class="wixui-rich-text__text"></a>
                 </p>
             </div><!--/$-->
         </div><!--/$-->
@@ -698,4 +714,17 @@ data-testid="section-container">
         </div><!--/$-->
     </div>
 </div><!--/$-->
+<style>
+      .font_8 {
+        font-size: 1.1rem !important;
+        line-height: 1.6 !important;
+    }
+    @media (max-width: 768px) {
+        #comp-m1oqn1o6{
+            width:100% !important;
+            font-weight: normal !important;
+        }
+    }
+    
+</style>
 </section><!--/$--><!--$-->

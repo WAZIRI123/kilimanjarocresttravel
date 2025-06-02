@@ -23,11 +23,9 @@ data-testid="section-container">
                     data-testid="richTextElement"
                     ariaattributes="[object Object]">
                     <h2 class="font_2 wixui-rich-text__text"><span
-                            class="wixui-rich-text__text">Discover
-                            Africa's <span style="font-weight:bold;"
+                            class="wixui-rich-text__text">Unforgettable Safari Adventures <span style="font-weight:bold;"
                                 class="wixui-rich-text__text"><span
-                                    class="wixui-rich-text__text">Best&nbsp;
-                                    Safari Secrets</span></span></span>
+                                    class="wixui-rich-text__text">in Tanzania</span></span></span>
                     </h2>
                 </div><!--/$--><!--$-->
                 <div id="comp-m368cje8"
@@ -39,21 +37,11 @@ data-testid="section-container">
                     ariaattributes="[object Object]">
                     <p class="font_8 wixui-rich-text__text"><br
                             class="wixui-rich-text__text">
-                        Experience the pristine wilderness of luxury
-                        African travel like never before with Star
-                        SAFARI. Journey to the unspoiled natural beauty
-                        of Africa for an unforgettable luxury African
-                        safari experience.</p>
+                            Step into the wild with Stan Safari, where every journey brings you face-to-face with Africa’s most iconic landscapes and wildlife. From the endless plains of the Serengeti to the majestic Ngorongoro Crater, we deliver curated, luxury safari experiences designed for unforgettable moments.</p>
 
                     <p class="font_8 wixui-rich-text__text"><br
                             class="wixui-rich-text__text">
-                        As we pioneer the modern safari, we believe no
-                        one has higher standing in Africa. Our
-                        longstanding relationships from Dar es Salaam,
-                        Tanzania to Cape Town, South Africa allow us to
-                        offer an unrivaled safari experience, from
-                        luxurious mobile camping to the finest
-                        expert-led game viewing in Africa.</p>
+                            With deep roots across Dar es Salaam, Arusha, and Zanzibar, our expert-led safaris blend authentic African adventure with top-tier service, mobile luxury camps, and exclusive wildlife viewing.</p>
 
                     <p class="font_8 wixui-rich-text__text"><span
                             class="wixGuard wixui-rich-text__text">​</span>

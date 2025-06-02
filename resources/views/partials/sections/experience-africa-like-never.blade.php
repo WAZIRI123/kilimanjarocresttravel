@@ -21,8 +21,7 @@ data-testid="section-container">
                 data-testid="richTextElement"
                 ariaattributes="[object Object]" style="border-radius:1rem1">
                 <h2 class="font_2 wixui-rich-text__text"><span
-                        class="wixui-rich-text__text">Experience Africa
-                        Like Never Before<br
+                        class="wixui-rich-text__text">Experience Tanzania's Wild Beauty<br
                             class="wixui-rich-text__text">
                         <span style="font-weight:bold;"
                             class="wixui-rich-text__text"><span
@@ -34,50 +33,39 @@ data-testid="section-container">
                 data-testid="richTextElement"
                 ariaattributes="[object Object]">
                 <p class="font_8 wixui-rich-text__text"><span
-                        class="wixui-rich-text__text">The epitome of
-                        luxury and adventure in the heart of Africa.
-                        With a commitment to providing&nbsp;unrivaled
-                        safari experiences, we aim to create
-                        unforgettable journeys through the breathtaking
-                        landscapes and wildlife-rich ecosystems of
-                        Africa.</span></p>
+                        class="wixui-rich-text__text">Embark on a luxury safari in Tanzania with Stan Safari, your gateway to the Serengeti, Ngorongoro Crater, Mount Kilimanjaro, and beyond.</span></p>
 
                 <p class="font_8 wixui-rich-text__text"><span
-                        class="wixui-rich-text__text">​</span></p>
+                        class="wixui-rich-text__text">We offer private guided tours, custom itineraries, and premium lodges, all designed for unforgettable wildlife encounters and seamless comfort.</span></p>
 
                 <p class="font_8 wixui-rich-text__text"><span
-                        class="wixui-rich-text__text">From the moment
-                        you embark on your safari with us, you can
-                        expect a seamless blend of opulence,
-                        personalized service, and extraordinary
-                        encounters with nature.</span></p>
+                        class="wixui-rich-text__text">Whether you're chasing the Great Migration or relaxing in Zanzibar, your journey with us is crafted to impress.</span></p>
+
+                <div style="width: 100%; display: flex; justify-content: center;">
+                        <div class="benefits-list" style="margin: 1.5rem 0; max-width: 500px; width: 100%;">
+                            <div style="display: flex; align-items: center; margin-bottom: 12px; justify-content: center;">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right: 12px; flex-shrink: 0;">
+                                    <path d="M20 6L9 17L4 12" stroke="#e8b143" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span style="font-size: 1rem; color: #333;">Tailor-Made Safari</span>
+                            </div>
+                            <div style="display: flex; align-items: center; margin-bottom: 12px; justify-content: center;">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right: 12px; flex-shrink: 0;">
+                                    <path d="M20 6L9 17L4 12" stroke="#e8b143" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span style="font-size: 1rem; color: #333;">Expert Local Guides</span>
+                            </div>
+                            <div style="display: flex; align-items: center; justify-content: center;">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right: 12px; flex-shrink: 0;">
+                                    <path d="M20 6L9 17L4 12" stroke="#e8b143" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span style="font-size: 1rem; color: #333;">Big 5 Game Viewing</span>
+                            </div>
+                        </div>
+                    </div>
 
                 <p class="font_8 wixui-rich-text__text"><span
-                        class="wixui-rich-text__text">​</span></p>
-
-                <p class="font_8 wixui-rich-text__text"><span
-                        class="wixui-rich-text__text">Our foremost
-                        objective is to offer&nbsp;our clients an
-                        unparalleled level of luxury. We strive to
-                        surpass expectations by providing sumptuous
-                        accommodations, exceptional service, and lavish
-                        amenities throughout your safari experience in
-                        Africa.</span></p>
-
-                <p class="font_8 wixui-rich-text__text"><span
-                        class="wixui-rich-text__text"><span
-                            class="wixGuard wixui-rich-text__text">​</span></span>
-                </p>
-
-                <p class="font_8 wixui-rich-text__text"><span
-                        class="wixui-rich-text__text"><span
-                            class="wixGuard wixui-rich-text__text">​</span></span>
-                </p>
-
-                <p class="font_8 wixui-rich-text__text"><span
-                        class="wixui-rich-text__text"><span
-                            class="wixGuard wixui-rich-text__text">​</span></span>
-                </p>
+                        class="wixui-rich-text__text">Ready for adventure? <a href="#" style="color: #e8b143; font-weight: bold; margin-top:0px !important;">Start your safari now</a></span></p>
             </div><!--/$--><!--$-->
             <div id="comp-m2vue5lh"
                 class="comp-m2vue5lh JGtLUp wixui-horizontal-line">
@@ -92,8 +80,7 @@ data-testid="section-container">
                 aria-label="OUR PURPOSE"><span
                     class="StylableButton2545352419__container"><span
                         class="StylableButton2545352419__label wixui-button__label"
-                        data-testid="stylablebutton-label">OUR
-                        PURPOSE</span><span
+                        data-testid="stylablebutton-label">Learn More</span><span
                         class="StylableButton2545352419__icon wixui-button__icon"
                         aria-hidden="true"
                         data-testid="stylablebutton-icon"><span><!--?xml version="1.0" encoding="UTF-8"?-->
@@ -156,6 +143,12 @@ data-testid="section-container">
     .comp-m2vttpv8-container {
         padding-top: 3rem !important;
     }
+    
+    .font_8 {
+        font-size: 1.1rem !important;
+        line-height: 1.6 !important;
+    }
+
     #comp-m2vttpwh
 
  {
@@ -203,8 +196,45 @@ data-testid="section-container">
     @media (max-width: 768px) {
         .comp-m2vttpv8-container {
             padding-top: 2rem !important;
+            padding-bottom: 2rem !important;
         }
-   
+
+        .font_8 {
+            font-size: 1.1rem !important;
+            line-height: 1.6 !important;
+        }
+        
+        /* Ensure the 'Ready for Adventure' section is visible on mobile */
+        .wixui-rich-text__text a[style*="color: #e8b143"] {
+            display: inline-block !important;
+            margin-top: 1rem;
+            font-size: 1.2rem !important;
+        }
+        
+        /* Adjust the benefits list for better mobile display */
+        .benefits-list {
+            margin: 1rem 0 !important;
+        }
+
+        #comp-m2vufkir {
+    min-height: 0;
+    --l_display: unset;
+    height: 46px;
+    min-width: 0;
+    width: 99.99993714813431%;
+    max-width: 99999px;
+    max-height: 99999px;
+    --comp-display: unset;
+    display: var(--l_display,var(--display,block));
+    align-self: end;
+    justify-self: start;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    grid-area: 2/1/2/2 !important;
+    position: relative;
+}
     }
 </style>
 </section><!--/$--><!--$-->

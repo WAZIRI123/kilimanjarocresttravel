@@ -189,7 +189,7 @@
                 <div class="grid-item">
                     <div id="comp-m1gk7nsl" class="comp-m1gk7nsl wixui-vector-image">
                         <div data-testid="svgRoot-comp-m1gk7nsl" class="AKxYR5 VZYmYf comp-m1gk7nsl">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><!-- Icon from Material Symbols Light by Google - https://github.com/google/material-design-icons/blob/master/LICENSE --><path fill="currentColor" d="M2 18V5h1v9h8.5V7H22v11h-1v-3H3v3zm4.998-5.884q-.883 0-1.498-.618t-.615-1.5t.617-1.498t1.5-.615t1.498.617t.616 1.5t-.618 1.498t-1.5.616M12.5 14H21V8h-8.5zM7 11.116q.464 0 .79-.326t.326-.79t-.326-.79T7 8.886t-.79.326t-.325.789t.326.79t.789.326M12.5 8v6z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><!-- Icon from Guidance by Streamline - https://creativecommons.org/licenses/by/4.0/ --><path fill="none" stroke="currentColor" d="M1.5 18.5V14l.676-.184a37.34 37.34 0 0 1 19.648 0L22.5 14v4.5m-21 0s0 3-1.5 3m1.5-3h21m0 0s0 3 1.5 3M3.5 11c0-1.989-.297-3.966-.882-5.867L2.5 4.75V4.5h19v.25l-.118.383A20 20 0 0 0 20.5 11M12 7.5H6.5V11M12 7.5V11m0-3.5h5.5V11"/></svg>
                         </div>
                     </div>
                     <div id="comp-m1gkie2a" class="HcOXKn c9GqVL QxJLC3 lq2cno YQcXTT comp-m1gkie2a wixui-rich-text"

@@ -10,10 +10,10 @@ data-testid="section-container">
         data-motion-part="BG_MEDIA comp-m1oo0rkh" class="VgO9Yg"></div>
 </div>
 <div data-testid="responsive-container-content"
-    class="comp-m1oo0rkh-container max-width-container"><!--$-->
+    class="comp-m1oo0rkh-container max-width-container">
     <div id="comp-m1oo0rko" role=""
         class="rM7ckN YJEKQk comp-m1oo0rko-container comp-m1oo0rko wixui-box">
-        <div class="YAf4Ti InKIFF wixui-box"></div><!--$-->
+        <div class="YAf4Ti InKIFF wixui-box"></div>
         <div id="comp-m1oo0rkp5"
             class="HcOXKn c9GqVL QxJLC3 lq2cno YQcXTT comp-m1oo0rkp5 wixui-rich-text"
             data-testid="richTextElement"
@@ -45,8 +45,7 @@ data-testid="section-container">
             data-testid="richTextElement"
             ariaattributes="[object Object]">
             <p class="font_8 wixui-rich-text__text"><span
-                    class="wixui-rich-text__text">Stan Safari was born from a deep love for Africa its wild beauty, rich cultures, and the unforgettable experiences it offers to those who truly explore it. Founded in Tanzania by locals who grew up surrounded by some of the world’s most iconic landscapes and wildlife, our journey began with a simple mission: <strong>To share the real Africa with the world authentically, responsibly, and memorably</strong>. What started as guiding small groups through Tanzania’s national parks has grown into a trusted safari company offering tailor-made adventures across East and West Africa.
-                    But no matter how far we’ve come, our roots remain the same: grounded in local knowledge, driven by passion, and committed to delivering deeply personal and enriching travel experiences.</span></p>
+                    class="wixui-rich-text__text">Stan Safari was born from a deep love for Africa its wild beauty, rich cultures, and the unforgettable experiences it offers to those who truly explore it. Founded in Tanzania by locals who grew up surrounded by some of the world’s most iconic landscapes and wildlife, our journey began with a simple mission: <strong>To share the real Africa with the world authentically, responsibly, and memorably</strong>. What started as guiding small groups through Tanzania’s national parks has grown into a trusted safari company offering tailor-made adventures across East and West Africa. But no matter how far we’ve come, our roots remain the same: grounded in local knowledge, driven by passion, and committed to delivering deeply personal and enriching travel experiences.</span></p>
         </div><!--/$-->
     </div><!--/$--><!--$-->
     <div id="comp-m1oo0rky1" role=""

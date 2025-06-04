@@ -1,5 +1,5 @@
 <footer id="comp-kbgakxmn" class="comp-kbgakxmn S6Dcte comp-kbgakxmn-container"
-                                            slots="[object Object]"><!--$-->
+                                            slots="[object Object]" style="background-color: #736D39;"><!--$-->
                                             <section id="comp-kbgakxmn_r_comp-kbgakgyt" tabindex="-1"
                                                 data-block-level-container="Section"
                                                 class="xuzjBY comp-kbgakxmn_r_comp-kbgakgyt wixui-footer"
@@ -30,7 +30,7 @@
                                                                     <p class="font_4 wixui-rich-text__text"><a
                                                                             href="mailto:hello@starsafari.com?subject=I%20would%20Like%20to%20Know%20More"
                                                                             target="_self"
-                                                                            class="wixui-rich-text__text">hello@starsafari.com</a>
+                                                                            class="wixui-rich-text__text">hello@stansafari.com</a>
                                                                     </p>
 
                                                                     <p class="font_4 wixui-rich-text__text"><a

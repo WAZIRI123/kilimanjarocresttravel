@@ -66,10 +66,7 @@
             class="hero-bg-image"
             loading="eager"
         >
-        
-      
-
-
+    
     </div>
 
     <!-- Hero Content -->
@@ -85,7 +82,14 @@
                     </div>
                 </div>
                 <div class="title-wrapper" style="overflow: hidden;">
-                    <div class="title-line accent" style="display: inline-block; transform: translateY(100%); opacity: 0; animation: slideUp 0.8s ease-out 0.6s forwards; padding: 1.5rem 0;">
+                    <div class="title-line accent" style="display: inline-block; transform: translateY(100%); opacity: 0; animation: slideUp 0.8s ease-out 0.6s forwards; padding: 1.5rem 0;font-family: 'Kaushan Script', cursive;
+font-weight: 400;
+font-style: normal;
+font-size: 50px;
+line-height: 1.2;
+text-align: center;
+text-decoration: none;
+letter-spacing: 0.01em;">
                         African Exploration...
                     </div>
                 </div>
@@ -236,9 +240,9 @@
         }
         
         .modern-navbar.scrolled {
-            background: #1a1a1a; /* Same as default, but with shadow */
+            background: #625C30; 
             padding: 0.2rem 0;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 4px 20px #625C30;
         }
         
         .navbar-container {
@@ -300,10 +304,7 @@
             padding: 0.4rem 0rem;
             margin: 0rem 0.7rem;
             transition: all 0.3s ease;
-            text-shadow: 
-                0 1px 1px rgba(0, 0, 0, 0.8),
-                0 0 10px rgba(0, 0, 0, 0.6),
-                0 0 20px rgba(0, 0, 0, 0.3);
+           
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
             border-radius: 4px;
@@ -316,7 +317,7 @@
             left: 0;
             width: 0;
             height: 2px;
-            background: linear-gradient(90deg, #e8b143, #ffd700);
+            background: linear-gradient(90deg, #fff, #fff);
             transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1), transform 0.3s ease;
             transform-origin: left;
             border-radius: 2px;
@@ -336,7 +337,7 @@
         .nav-link:hover,
         .nav-link.active {
             color: #ffffff;
-            text-shadow: 0 0 12px rgba(255, 255, 255, 0.6);
+           
         }
         
         .nav-link.active {
@@ -355,18 +356,18 @@
             letter-spacing: 1px;
             transition: all 0.3s ease;
             text-decoration: none;
-            background-color: rgba(232, 177, 67, 0.9);
+            background-color: transparent;
             color: #fff !important;
-            border: 2px solid #e8b143;
+            border: 2px solid #fff;
             margin-left: 1.5rem;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
             text-shadow: none;
         }
         
         .nav-cta-button:hover {
-            background-color: #e8b143;
-            color: #1a1a1a !important;
-            border-color: #e8b143;
+            background-color: #fff;
+            color: #000 !important;
+            border-color: #fff;
             transform: translateY(-3px);
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
         }
@@ -506,11 +507,11 @@
         /* Navbar Scroll Effect */
         .modern-navbar.scrolled {
             padding: 0.0rem 0;
-            background:rgb(0, 0, 0);
+            background:#625C30;
             backdrop-filter: blur(10px);
             -webkit-backdrop-filter: blur(10px);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+            border-bottom: 1px solid #625C30;
+            box-shadow: 0 2px 20px #625C30;
         }
         
         /* Responsive Styles */

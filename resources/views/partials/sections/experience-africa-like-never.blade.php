@@ -98,7 +98,7 @@ data-testid="section-container">
                         </span></span></span></a></div><!--/$-->
     </div><!--/$--><!--$-->
     <div id="comp-m2vttpw92" role=""
-        class="rM7ckN YJEKQk comp-m2vttpw92-container comp-m2vttpw92 wixui-box"  style="background:#fff !important">
+        class="rM7ckN YJEKQk comp-m2vttpw92-container comp-m2vttpw92 wixui-box" >
         <div id="comp-m2vttpwh" data-testid="imageX"
             class="lyNaha comp-m2vttpwh JdNFxG wixui-image">
             <div class="h1DYhE"
@@ -106,26 +106,7 @@ data-testid="section-container">
                 <div data-motion-part="BG_MEDIA comp-m2vttpwh">
                     <wow-image id="img-comp-m2vttpwh"
                         data-is-responsive="true"
-                        data-image-info="{&quot;containerId&quot;:&quot;comp-m2vttpwh&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;parallaxSpeed&quot;:1.5,&quot;sourceSets&quot;:[],&quot;imageData&quot;:{&quot;uri&quot;:&quot;{{ asset('images/chui.png') }}&quot;,&quot;width&quot;:1304,&quot;height&quot;:1937,&quot;alt&quot;:&quot;Thomson's Gazelle in Serengeti during safari with stan SAFARI&quot;,&quot;name&quot;:&quot;Swala.jpg&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;scrollEffect&quot;:&quot;none&quot;,&quot;focalPoint&quot;:null},&quot;hasAnimation&quot;:false,&quot;encoding&quot;:&quot;AVIF&quot;}"
-                        data-has-ssr-src="true"
-                        data-motion-part="BG_IMG comp-m2vttpwh"
-                        class="Ux33nC">
-                        <picture><img loading="lazy" src="{{ asset('images/chui.png') }}"
-                                alt="Thomson's Gazelle in Serengeti during safari with stan SAFARI"
-                                style="object-fit: cover; object-position: 50% 50%; width: 100%;"
-                                data-ssr-src-done="true"
-                                fetchpriority="high"></picture>
-                    </wow-image></div>
-            </div>
-        </div><!--/$--><!--$-->
-        <div id="comp-m2vttpwh2" data-testid="imageX"
-            class="lyNaha comp-m2vttpwh JdNFxG wixui-image">
-            <div class="h1DYhE"
-                data-motion-part="BG_LAYER comp-m2vttpwh">
-                <div data-motion-part="BG_MEDIA comp-m2vttpwh">
-                    <wow-image id="img-comp-m2vttpwh"
-                        data-is-responsive="true"
-                        data-image-info="{&quot;containerId&quot;:&quot;comp-m2vttpwh&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;parallaxSpeed&quot;:1.5,&quot;sourceSets&quot;:[],&quot;imageData&quot;:{&quot;uri&quot;:&quot;{{ asset('images/girrafe1.png') }}&quot;,&quot;width&quot;:1304,&quot;height&quot;:1937,&quot;alt&quot;:&quot;Thomson's Gazelle in Serengeti during safari with stan SAFARI&quot;,&quot;name&quot;:&quot;Swala.jpg&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;scrollEffect&quot;:&quot;none&quot;,&quot;focalPoint&quot;:null},&quot;hasAnimation&quot;:false,&quot;encoding&quot;:&quot;AVIF&quot;}"
+                        data-image-info="{&quot;containerId&quot;:&quot;comp-m2vttpwh&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;parallaxSpeed&quot;:1.5,&quot;sourceSets&quot;:[],&quot;imageData&quot;:{&q/ot;uri&quot;:&quot;{{ asset('images/girrafe1.png') }}&quot;,&quot;width&quot;:1304,&quot;height&quot;:1937,&quot;alt&quot;:&quot;Thomson's Gazelle in Serengeti during safari with stan SAFARI&quot;,&quot;name&quot;:&quot;Swala.jpg&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;scrollEffect&quot;:&quot;none&quot;,&quot;focalPoint&quot;:null},&quot;hasAnimation&quot;:false,&quot;encoding&quot;:&quot;AVIF&quot;}"
                         data-has-ssr-src="true"
                         data-motion-part="BG_IMG comp-m2vttpwh"
                         class="Ux33nC">
@@ -137,6 +118,7 @@ data-testid="section-container">
                     </wow-image></div>
             </div>
         </div><!--/$--><!--$-->
+        
     </div><!--/$-->
 </div>
 <style>
@@ -149,11 +131,6 @@ data-testid="section-container">
         line-height: 1.6 !important;
     }
 
-    #comp-m2vttpwh
-
- {
-    --cornerRadius: 10px 10px 10px 10px !important;
- }
  #comp-m2vttpvq{
     grid-area: 1 / 1 / 2 / 2;
    
@@ -164,7 +141,14 @@ data-testid="section-container">
     grid-area: 1 / 2 / 2 / 3;
    
  }
+ #comp-m2vttpw92{
+    background-color: rgb(245, 241, 238)!important;
+}
+#comp-m2vttpwh
 
+{
+   --cornerRadius: 10px 10px 10px 10px !important;
+}
  
 
 #comp-m2vttpwh2 {
@@ -189,9 +173,7 @@ data-testid="section-container">
     grid-area: 1 / 2 / 2 / 1;
     position: relative;
 }
-#comp-m2vttpw92{
-    background-color: #F0D8C0 !important;
-}
+
     
     @media (max-width: 768px) {
         .comp-m2vttpv8-container {

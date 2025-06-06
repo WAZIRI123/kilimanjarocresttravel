@@ -72,7 +72,7 @@ data-testid="section-container">
                     </span></p>
 
                 <p class="font_8 wixui-rich-text__text"><span
-                        class="wixui-rich-text__text">A dream Luxury
+                        class="wixui-rich-text__text">A dream 
                         African Safari.</span></p>
             </div><!--/$-->
         </div>
@@ -89,7 +89,7 @@ data-testid="section-container">
                     <div data-motion-part="BG_MEDIA comp-m31y5let">
                         <wow-image id="img-comp-m31y5let"
                             data-is-responsive="true"
-                            data-image-info="{&quot;containerId&quot;:&quot;comp-m31y5let&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;parallaxSpeed&quot;:1.5,&quot;sourceSets&quot;:[{&quot;focalPoint&quot;:{&quot;x&quot;:61,&quot;y&quot;:38},&quot;displayMode&quot;:&quot;fill&quot;,&quot;scrollEffect&quot;:&quot;none&quot;,&quot;mediaQuery&quot;:&quot;(min-width: 320px) and (max-width: 1000px)&quot;}],&quot;imageData&quot;:{&quot;uri&quot;:&quot;{{ asset('images/Child-Friendly-copy.webp') }}&quot;,&quot;width&quot;:2200,&quot;height&quot;:1467,&quot;alt&quot;:&quot;STAR SAFARI guide during Luxury Family Safari in Kruger National Park - South Africa&quot;,&quot;name&quot;:&quot;Lebombo_Activities_Family_Slider1.jpg&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;focalPoint&quot;:{&quot;x&quot;:62,&quot;y&quot;:39},&quot;scrollEffect&quot;:&quot;none&quot;},&quot;hasAnimation&quot;:false,&quot;encoding&quot;:&quot;AVIF&quot;}"
+                            data-image-info="{&quot;containerId&quot;:&quot;comp-m31y5let&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;parallaxSpeed&quot;:1.5,&quot;sourceSets&quot;:[{&quot;focalPoint&quot;:{&quot;x&quot;:61,&quot;y&quot;:38},&quot;displayMode&quot;:&quot;fill&quot;,&quot;scrollEffect&quot;:&quot;none&quot;,&quot;mediaQuery&quot;:&quot;(min-width: 320px) and (max-width: 1000px)&quot;}],&quot;imageData&quot;:{&quot;uri&quot;:&quot;{{ asset('images/Child-Friendly-copy.webp') }}&quot;,&quot;width&quot;:2200,&quot;height&quot;:1467,&quot;alt&quot;:&quot;STAR SAFARI guide during  Family Safari in Kruger National Park - South Africa&quot;,&quot;name&quot;:&quot;Lebombo_Activities_Family_Slider1.jpg&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;focalPoint&quot;:{&quot;x&quot;:62,&quot;y&quot;:39},&quot;scrollEffect&quot;:&quot;none&quot;},&quot;hasAnimation&quot;:false,&quot;encoding&quot;:&quot;AVIF&quot;}"
                             data-has-ssr-src="true"
                             data-motion-part="BG_IMG comp-m31y5let"
                             class="Ux33nC">
@@ -99,7 +99,7 @@ data-testid="section-container">
                                     srcset="{{ asset('images/Child-Friendly-copy.webp') }}">
                                 <img loading="lazy"
                                     src="{{ asset('images/Child-Friendly-copy.webp') }}"
-                                    alt="STAR SAFARI guide during Luxury Family Safari in Kruger National Park - South Africa"
+                                    alt="STAR SAFARI guide during  Family Safari in Kruger National Park - South Africa"
                                     style="object-fit:cover;object-position:62% 39%">
                             </picture>
                         </wow-image></div>

@@ -22,7 +22,7 @@ data-testid="section-container">
             <div class="testimonial-text-container">
                 <p class="testimonial-text">
                     <span class="quote-mark">&ldquo;</span>
-                    They gave us one of the best anniversary experiences in the world. They recommended amazing parks, luxury lodges and hotels and exceptional guides throughout our stay, that blended nature and wildlife in the best possible ways. We had the time our lives in our Tanzania luxury safari with Star.
+                    They gave us one of the best anniversary experiences in the world. They recommended amazing parks,  lodges and hotels and exceptional guides throughout our stay, that blended nature and wildlife in the best possible ways. We had the time our lives in our Tanzania  safari with Star.
                 </p>
                 <p class="client-name">
                     John Doe, New York
@@ -233,7 +233,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Testimonial data
     const testimonials = [
         {
-            text: "They gave us one of the best anniversary experiences in the world. They recommended amazing parks, luxury lodges and hotels and exceptional guides throughout our stay, that blended nature and wildlife in the best possible ways. We had the time of our lives in our Tanzania luxury safari with Star.",
+            text: "They gave us one of the best anniversary experiences in the world. They recommended amazing parks,  lodges and hotels and exceptional guides throughout our stay, that blended nature and wildlife in the best possible ways. We had the time of our lives in our Tanzania  safari with Star.",
             name: "John Doe, New York",
             image: "https://zahirnia.com/_nuxt/caleb-porzio.D5_euBoI.webp"
         },

@@ -1,5 +1,5 @@
 <footer id="comp-kbgakxmn" class="comp-kbgakxmn S6Dcte comp-kbgakxmn-container"
-                                            slots="[object Object]" style="background-color: #736D39;"><!--$-->
+                                            slots="[object Object]" style="background-color:rgb(54, 51, 23);"><!--$-->
                                             <section id="comp-kbgakxmn_r_comp-kbgakgyt" tabindex="-1"
                                                 data-block-level-container="Section"
                                                 class="xuzjBY comp-kbgakxmn_r_comp-kbgakgyt wixui-footer"
@@ -27,18 +27,18 @@
                                                                     class="HcOXKn c9GqVL QxJLC3 lq2cno YQcXTT comp-kbgakxmn_r_comp-lznpyb56 wixui-rich-text"
                                                                     data-testid="richTextElement"
                                                                     ariaattributes="[object Object]">
-                                                                    <p class="font_4 wixui-rich-text__text"><a
-                                                                            href="mailto:hello@starsafari.com?subject=I%20would%20Like%20to%20Know%20More"
+                                                                    <p style="font-weight: 500;" class=" wixui-rich-text__text"><a
+                                                                            href="mailto:hello@stansafari.com?subject=I%20would%20Like%20to%20Know%20More"
                                                                             target="_self"
                                                                             class="wixui-rich-text__text">hello@stansafari.com</a>
                                                                     </p>
 
-                                                                    <p class="font_4 wixui-rich-text__text"><a
+                                                                    <p style="font-weight: 500;" class=" wixui-rich-text__text"><a
                                                                             href="tel:+255 628 183 052"
                                                                             class="wixui-rich-text__text">+255754 261 101
                                                                         </a></p>
 
-                                                                    <p class="font_4 wixui-rich-text__text">Tour Drive, African Parks,<br
+                                                                    <p style="font-weight: 500;" class=" wixui-rich-text__text">Tour Drive, African Parks,<br
                                                                             class="wixui-rich-text__text">
                                                                         Dar es Salaam, Tanzania</p>
                                                                 </div><!--/$--><!--$-->
@@ -77,8 +77,8 @@
                                                                     class="HcOXKn c9GqVL QxJLC3 lq2cno YQcXTT comp-kbgakxmn_r_comp-lznpyb7d wixui-rich-text"
                                                                     data-testid="richTextElement"
                                                                     ariaattributes="[object Object]">
-                                                                    <p class="font_4 wixui-rich-text__text">Reach out to
-                                                                        us, let's make your Dream Luxury African Safari
+                                                                    <p style="font-weight: 500;" class=" wixui-rich-text__text">Reach out to
+                                                                        us, let's make your Dream  African Safari
                                                                         an incredible&nbsp;reality.&nbsp;</p>
                                                                 </div><!--/$-->
                                                             </div><!--/$--><!--$-->
@@ -94,7 +94,7 @@
                                                                             <wow-image
                                                                                 id="img-comp-kbgakxmn_r_comp-m1ulepcp"
                                                                                 data-is-responsive="true"
-                                                                                data-image-info="{&quot;containerId&quot;:&quot;comp-kbgakxmn_r_comp-m1ulepcp&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;parallaxSpeed&quot;:1.5,&quot;sourceSets&quot;:[],&quot;imageData&quot;:{&quot;uri&quot;:&quot;https://waziri123.github.io/star-safari-website-demo/assets/images/star-safaris.png&quot;,&quot;width&quot;:500,&quot;height&quot;:500,&quot;alt&quot;:&quot;Black and Gold Star Safari Company Logo&quot;,&quot;name&quot;:&quot;Black and Gold Luxury Company Logo.png&quot;,&quot;displayMode&quot;:&quot;fit&quot;,&quot;scrollEffect&quot;:&quot;none&quot;,&quot;focalPoint&quot;:null},&quot;hasAnimation&quot;:false,&quot;encoding&quot;:&quot;AVIF&quot;}"
+                                                                                data-image-info="{&quot;containerId&quot;:&quot;comp-kbgakxmn_r_comp-m1ulepcp&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;parallaxSpeed&quot;:1.5,&quot;sourceSets&quot;:[],&quot;imageData&quot;:{&quot;uri&quot;:&quot;https://waziri123.github.io/star-safari-website-demo/assets/images/star-safaris.png&quot;,&quot;width&quot;:500,&quot;height&quot;:500,&quot;alt&quot;:&quot;Black and Gold Star Safari Company Logo&quot;,&quot;name&quot;:&quot;Black and Gold  Company Logo.png&quot;,&quot;displayMode&quot;:&quot;fit&quot;,&quot;scrollEffect&quot;:&quot;none&quot;,&quot;focalPoint&quot;:null},&quot;hasAnimation&quot;:false,&quot;encoding&quot;:&quot;AVIF&quot;}"
                                                                                 data-has-ssr-src="true"
                                                                                 data-motion-part="BG_IMG comp-kbgakxmn_r_comp-m1ulepcp"
                                                                                 class="Ux33nC">
@@ -118,7 +118,7 @@
                                                                                     data-testid="linkElement"
                                                                                     href="#"
                                                                                     target="_self"
-                                                                                    class="xfxJ27 wixui-vertical-menu__item-label">Home</a></span>
+                                                                                    class="xfxJ27 font_4 wixui-vertical-menu__item-label">Home</a></span>
                                                                         </div>
                                                                     </li>
                                                                     <li data-testid="comp-kbgakxmn_r_comp-m0dxs4xo-1"
@@ -129,7 +129,7 @@
                                                                                     data-testid="linkElement"
                                                                                     href="#"
                                                                                     target="_self"
-                                                                                    class="xfxJ27 wixui-vertical-menu__item-label">Destinations</a></span>
+                                                                                    class="xfxJ27 font_4 wixui-vertical-menu__item-label">Destinations</a></span>
                                                                         </div>
                                                                     </li>
                                                                     <li data-testid="comp-kbgakxmn_r_comp-m0dxs4xo-2"
@@ -140,7 +140,7 @@
                                                                                     data-testid="linkElement"
                                                                                     href="#"
                                                                                     target="_self"
-                                                                                    class="xfxJ27 wixui-vertical-menu__item-label">Experiences</a></span>
+                                                                                    class="xfxJ27 font_4 wixui-vertical-menu__item-label">Experiences</a></span>
                                                                         </div>
                                                                     </li>
                                                                     <li data-testid="comp-kbgakxmn_r_comp-m0dxs4xo-3"
@@ -151,7 +151,7 @@
                                                                                     data-testid="linkElement"
                                                                                     href="#"
                                                                                     target="_self"
-                                                                                    class="xfxJ27 wixui-vertical-menu__item-label">About
+                                                                                    class="xfxJ27 font_4 wixui-vertical-menu__item-label">About
                                                                                     Us</a></span></div>
                                                                     </li>
                                                                     <li data-testid="comp-kbgakxmn_r_comp-m0dxs4xo-4"
@@ -162,7 +162,7 @@
                                                                                     data-testid="linkElement"
                                                                                     href="#"
                                                                                     target="_self"
-                                                                                    class="xfxJ27 wixui-vertical-menu__item-label">Contact
+                                                                                    class="xfxJ27 font_4 wixui-vertical-menu__item-label">Contact
                                                                                     Us</a></span></div>
                                                                     </li>
                                                                     <li data-testid="comp-kbgakxmn_r_comp-m0dxs4xo-5"
@@ -173,7 +173,7 @@
                                                                                     data-testid="linkElement"
                                                                                     href="#"
                                                                                     target="_self"
-                                                                                    class="xfxJ27 wixui-vertical-menu__item-label">Our
+                                                                                    class="xfxJ27 font_4 wixui-vertical-menu__item-label">Our
                                                                                     Blog</a></span></div>
                                                                     </li>
                                                                     <li data-testid="comp-kbgakxmn_r_comp-m0dxs4xo-6"
@@ -184,20 +184,10 @@
                                                                                     data-testid="linkElement"
                                                                                     href="#"
                                                                                     target="_self"
-                                                                                    class="xfxJ27 wixui-vertical-menu__item-label">Best
+                                                                                    class="xfxJ27 font_4 wixui-vertical-menu__item-label">Best
                                                                                     Lodges</a></span></div>
                                                                     </li>
-                                                                    <li data-testid="comp-kbgakxmn_r_comp-m0dxs4xo-7"
-                                                                        class="u4cNtA YLBS9j OZVMSN wixui-vertical-menu__item">
-                                                                        <div data-testid="itemWrapper" class="fEGEM_">
-                                                                            <span data-testid="linkWrapper"
-                                                                                class="kGvnrc"><a
-                                                                                    data-testid="linkElement"
-                                                                                    href="#"
-                                                                                    target="_self"
-                                                                                    class="xfxJ27 wixui-vertical-menu__item-label">Search
-                                                                                    Results</a></span></div>
-                                                                    </li>
+                                                                    
                                                                 </ul>
                                                             </nav><!--/$-->
                                                         </div>
@@ -237,7 +227,7 @@
                                                                             class="Ux33nC">
                                                                             <picture><img loading="lazy"
                                                                                     src="https://waziri123.github.io/star-safari-website-demo/assets/images/star-safaris.png"
-                                                                                    alt="Black and Gold Luxury Company Logo.png"
+                                                                                    alt="Black and Gold  Company Logo.png"
                                                                                     style="object-fit:contain;object-position:center">
                                                                             </picture>
                                                                         </wow-image></div>
@@ -439,6 +429,7 @@
                                                 </div>
                                             </section><!--/$-->
                                             <style>
+                                        
                                          @media (max-width: 768px) {
                                             #comp-kbgakxmn_r_comp-m0980hi9{
                                                display: none;

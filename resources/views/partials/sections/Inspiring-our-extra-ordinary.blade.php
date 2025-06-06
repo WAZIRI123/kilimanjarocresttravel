@@ -20,13 +20,13 @@ data-testid="section-container">
                 <div data-motion-part="BG_MEDIA comp-m1oqn1o27">
                     <wow-image id="img-comp-m1oqn1o27"
                         data-is-responsive="true"
-                        data-image-info="{&quot;containerId&quot;:&quot;comp-m1oqn1o27&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;parallaxSpeed&quot;:1.5,&quot;sourceSets&quot;:[],&quot;imageData&quot;:{&quot;uri&quot;:&quot;851897_c87f425b36fc410ea47d91c5ebaf480f~mv2.jpg&quot;,&quot;width&quot;:2000,&quot;height&quot;:1333,&quot;alt&quot;:&quot;A herd of Elephants drinking water in Serengeti – Luxury African Safaris - Tanzania&quot;,&quot;name&quot;:&quot;29375.jpg&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;focalPoint&quot;:{&quot;x&quot;:64,&quot;y&quot;:44},&quot;scrollEffect&quot;:&quot;none&quot;},&quot;hasAnimation&quot;:false,&quot;encoding&quot;:&quot;AVIF&quot;}"
+                        data-image-info="{&quot;containerId&quot;:&quot;comp-m1oqn1o27&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;parallaxSpeed&quot;:1.5,&quot;sourceSets&quot;:[],&quot;imageData&quot;:{&quot;uri&quot;:&quot;851897_c87f425b36fc410ea47d91c5ebaf480f~mv2.jpg&quot;,&quot;width&quot;:2000,&quot;height&quot;:1333,&quot;alt&quot;:&quot;A herd of Elephants drinking water in Serengeti –  African Safaris - Tanzania&quot;,&quot;name&quot;:&quot;29375.jpg&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;focalPoint&quot;:{&quot;x&quot;:64,&quot;y&quot;:44},&quot;scrollEffect&quot;:&quot;none&quot;},&quot;hasAnimation&quot;:false,&quot;encoding&quot;:&quot;AVIF&quot;}"
                         data-has-ssr-src="true"
                         data-motion-part="BG_IMG comp-m1oqn1o27"
                         class="Ux33nC">
                         <picture><img loading="lazy"
                                 src="https://static.wixstatic.com/media/851897_c87f425b36fc410ea47d91c5ebaf480f~mv2.jpg/v1/fill/w_147,h_98,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/29375.jpg"
-                                alt="A herd of Elephants drinking water in Serengeti – Luxury African Safaris - Tanzania"
+                                alt="A herd of Elephants drinking water in Serengeti –  African Safaris - Tanzania"
                                 style="object-fit:cover;object-position:37% 44%">
                         </picture>
                     </wow-image></div>
@@ -128,13 +128,13 @@ data-testid="section-container">
                                 <wow-image
                                     id="img-comp-m1oqn1od6__item1"
                                     data-is-responsive="true"
-                                    data-image-info="{&quot;containerId&quot;:&quot;comp-m1oqn1od6__item1&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;parallaxSpeed&quot;:1.5,&quot;sourceSets&quot;:[],&quot;imageData&quot;:{&quot;uri&quot;:&quot;{{ asset('images/tanzania-serengeti.jpg') }}&quot;,&quot;width&quot;:2580,&quot;height&quot;:3219,&quot;alt&quot;:&quot;Luxury Tanzania Safari | Elephant in the Lodge&quot;,&quot;name&quot;:&quot;saf-eil-lei-activity-boat-cruise08.jpg&quot;,&quot;focalPoint&quot;:null},&quot;hasAnimation&quot;:false,&quot;encoding&quot;:&quot;AVIF&quot;}"
+                                    data-image-info="{&quot;containerId&quot;:&quot;comp-m1oqn1od6__item1&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;parallaxSpeed&quot;:1.5,&quot;sourceSets&quot;:[],&quot;imageData&quot;:{&quot;uri&quot;:&quot;{{ asset('images/tanzania-serengeti.jpg') }}&quot;,&quot;width&quot;:2580,&quot;height&quot;:3219,&quot;alt&quot;:&quot; Tanzania Safari | Elephant in the Lodge&quot;,&quot;name&quot;:&quot;saf-eil-lei-activity-boat-cruise08.jpg&quot;,&quot;focalPoint&quot;:null},&quot;hasAnimation&quot;:false,&quot;encoding&quot;:&quot;AVIF&quot;}"
                                     data-has-ssr-src="true"
                                     data-motion-part="BG_IMG comp-m1oqn1od6__item1"
                                     class="Ux33nC">
                                     <picture><img loading="lazy"
                                             src="{{ asset('images/tanzania-serengeti.jpg') }}"
-                                            alt="Luxury Tanzania Safari | Elephant in the Lodge"
+                                            alt=" Tanzania Safari | Elephant in the Lodge"
                                             style="object-fit:cover;object-position:50% 50%">
                                     </picture>
                                 </wow-image></div>
@@ -155,13 +155,13 @@ data-testid="section-container">
                                 <wow-image
                                     id="img-comp-m1oqn1od6__item-j9ples3e"
                                     data-is-responsive="true"
-                                    data-image-info="{&quot;containerId&quot;:&quot;comp-m1oqn1od6__item-j9ples3e&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;parallaxSpeed&quot;:1.5,&quot;sourceSets&quot;:[],&quot;imageData&quot;:{&quot;uri&quot;:&quot;{{ asset('images/selous-kinga-lodge-7-768x512.jpg') }}&quot;,&quot;width&quot;:7360,&quot;height&quot;:4775,&quot;alt&quot;:&quot;andBeyond Under Canvas Luxury Camp - Serengeti, Tanzania&quot;,&quot;name&quot;:&quot;Tanzania-Serengeti-Under-Canvas-SUC-Guest-Area-camp-exterior-with-lantern-walkway-and-Maas&quot;,&quot;focalPoint&quot;:null},&quot;hasAnimation&quot;:false,&quot;encoding&quot;:&quot;AVIF&quot;}"
+                                    data-image-info="{&quot;containerId&quot;:&quot;comp-m1oqn1od6__item-j9ples3e&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;parallaxSpeed&quot;:1.5,&quot;sourceSets&quot;:[],&quot;imageData&quot;:{&quot;uri&quot;:&quot;{{ asset('images/selous-kinga-lodge-7-768x512.jpg') }}&quot;,&quot;width&quot;:7360,&quot;height&quot;:4775,&quot;alt&quot;:&quot;andBeyond Under Canvas  Camp - Serengeti, Tanzania&quot;,&quot;name&quot;:&quot;Tanzania-Serengeti-Under-Canvas-SUC-Guest-Area-camp-exterior-with-lantern-walkway-and-Maas&quot;,&quot;focalPoint&quot;:null},&quot;hasAnimation&quot;:false,&quot;encoding&quot;:&quot;AVIF&quot;}"
                                     data-has-ssr-src="true"
                                     data-motion-part="BG_IMG comp-m1oqn1od6__item-j9ples3e"
                                     class="Ux33nC">
                                     <picture><img loading="lazy"
                                             src="{{ asset('images/selous-kinga-lodge-7-768x512.jpg') }}"
-                                            alt="andBeyond Under Canvas Luxury Camp - Serengeti, Tanzania"
+                                            alt="andBeyond Under Canvas  Camp - Serengeti, Tanzania"
                                             style="object-fit:cover;object-position:50% 50%">
                                     </picture>
                                 </wow-image></div>
@@ -247,42 +247,51 @@ data-testid="section-container">
                 <div class="benefits-list" style="margin: 0; max-width: 600px; width: 100%;">
                     <div style="display: flex; align-items: flex-start; margin-bottom: 12px;">
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right: 12px; flex-shrink: 0; margin-top: 2px;">
-                            <path d="M20 6L9 17L4 12" stroke="#e8b143" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M20 6L9 17L4 12" stroke="#4d4402e0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                         <span style="font-size: 1rem; color: #333; line-height: 1.4;">
-                            <strong>Luxury Tanzania Safaris</strong> – Witness the Great Migration, explore Serengeti and Ngorongoro in style
+                            <strong> Tanzania Safaris</strong> – Great Migration & stylish Serengeti/Ngorongoro exploration.
                         </span>
                     </div>
                     <div style="display: flex; align-items: flex-start; margin-bottom: 12px;">
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right: 12px; flex-shrink: 0; margin-top: 2px;">
-                            <path d="M20 6L9 17L4 12" stroke="#e8b143" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M20 6L9 17L4 12" stroke="#4d4402e0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span style="font-size: 1rem; color: #333; line-height: 1.4;">
+                            <strong>Zanzibar Beach Escapes</strong> – White-sand relaxation with Swahili culture
+                        </span>
+                    </div>
+                    <div style="display: flex; align-items: flex-start; margin-bottom: 12px;">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right: 12px; flex-shrink: 0; margin-top: 2px;">
+                            <path d="M20 6L9 17L4 12" stroke="#4d4402e0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                         <span style="font-size: 1rem; color: #333; line-height: 1.4;">
                             <strong>Kenya Safari Adventures</strong> – Iconic landscapes and Big Five game drives
                         </span>
                     </div>
+
                     <div style="display: flex; align-items: flex-start; margin-bottom: 12px;">
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right: 12px; flex-shrink: 0; margin-top: 2px;">
-                            <path d="M20 6L9 17L4 12" stroke="#e8b143" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M20 6L9 17L4 12" stroke="#4d4402e0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                         <span style="font-size: 1rem; color: #333; line-height: 1.4;">
-                            <strong>Rwanda Gorilla Trekking</strong> – Intimate encounters with mountain gorillas in lush rainforests
+                            <strong>Uganda Gorilla Trekking</strong> – Encounter mountain gorillas and diverse wildlife.
                         </span>
                     </div>
                     <div style="display: flex; align-items: flex-start; margin-bottom: 12px;">
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right: 12px; flex-shrink: 0; margin-top: 2px;">
-                            <path d="M20 6L9 17L4 12" stroke="#e8b143" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M20 6L9 17L4 12" stroke="#4d4402e0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                         <span style="font-size: 1rem; color: #333; line-height: 1.4;">
-                            <strong>South Africa Experiences</strong> – A fusion of wildlife, winelands, and cosmopolitan charm
+                            <strong>Rwanda Gorilla Trekking</strong> – Gorilla trekking in lush rainforests.
                         </span>
                     </div>
-                    <div style="display: flex; align-items: flex-start;">
+                    <div style="display: flex; align-items: flex-start; margin-bottom: 12px;">
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right: 12px; flex-shrink: 0; margin-top: 2px;">
-                            <path d="M20 6L9 17L4 12" stroke="#e8b143" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M20 6L9 17L4 12" stroke="#4d4402e0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                         <span style="font-size: 1rem; color: #333; line-height: 1.4;">
-                            <strong>Zanzibar Beach Escapes</strong> – White-sand relaxation with Swahili culture
+                            <strong>South Africa Experiences</strong> – Wildlife, winelands, and cosmopolitan charm.
                         </span>
                     </div>
                 </div>
@@ -318,13 +327,13 @@ data-testid="section-container">
                                     <wow-image
                                         id="img-comp-m2omef1t6__item1"
                                         data-is-responsive="true"
-                                        data-image-info="{&quot;containerId&quot;:&quot;comp-m2omef1t6__item1&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;parallaxSpeed&quot;:1.5,&quot;sourceSets&quot;:[],&quot;imageData&quot;:{&quot;uri&quot;:&quot;{{ asset('images/safari.jpeg') }}&quot;,&quot;width&quot;:1440,&quot;height&quot;:1440,&quot;alt&quot;:&quot;Luxury Tanzania Safari at Serval Wildlife Park, Arusha Tanzania with star SAFARI&quot;,&quot;name&quot;:&quot;gallery-serval.jpg&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;focalPoint&quot;:{&quot;x&quot;:63,&quot;y&quot;:42},&quot;scrollEffect&quot;:&quot;none&quot;},&quot;hasAnimation&quot;:false,&quot;encoding&quot;:&quot;AVIF&quot;}"
+                                        data-image-info="{&quot;containerId&quot;:&quot;comp-m2omef1t6__item1&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;parallaxSpeed&quot;:1.5,&quot;sourceSets&quot;:[],&quot;imageData&quot;:{&quot;uri&quot;:&quot;{{ asset('images/safari.jpeg') }}&quot;,&quot;width&quot;:1440,&quot;height&quot;:1440,&quot;alt&quot;:&quot; Tanzania Safari at Serval Wildlife Park, Arusha Tanzania with star SAFARI&quot;,&quot;name&quot;:&quot;gallery-serval.jpg&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;focalPoint&quot;:{&quot;x&quot;:63,&quot;y&quot;:42},&quot;scrollEffect&quot;:&quot;none&quot;},&quot;hasAnimation&quot;:false,&quot;encoding&quot;:&quot;AVIF&quot;}"
                                         data-has-ssr-src="true"
                                         data-motion-part="BG_IMG comp-m2omef1t6__item1"
                                         class="Ux33nC">
                                         <picture><img loading="lazy"
                                                 src="{{ asset('images/safari.jpeg') }}"
-                                                alt="Luxury Tanzania Safari at Serval Wildlife Park, Arusha Tanzania with star SAFARI"
+                                                alt=" Tanzania Safari at Serval Wildlife Park, Arusha Tanzania with star SAFARI"
                                                 style="object-fit:cover;object-position:63% 42%">
                                         </picture>
                                     </wow-image></div>
@@ -468,13 +477,13 @@ data-testid="section-container">
                                     <wow-image
                                         id="img-comp-m2omef1t6__item-m2q1cu8b"
                                         data-is-responsive="true"
-                                        data-image-info="{&quot;containerId&quot;:&quot;comp-m2omef1t6__item-m2q1cu8b&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;parallaxSpeed&quot;:1.5,&quot;sourceSets&quot;:[],&quot;imageData&quot;:{&quot;uri&quot;:&quot;{{ asset('images/bike.jpg') }}&quot;,&quot;width&quot;:800,&quot;height&quot;:500,&quot;alt&quot;:&quot;Luxury Gorilla Safari at Volcanoes National Park, Rwanda with star SAFARI&quot;,&quot;name&quot;:&quot;Gorilla_JPM_7.jpg&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;scrollEffect&quot;:&quot;none&quot;,&quot;focalPoint&quot;:null},&quot;hasAnimation&quot;:false,&quot;encoding&quot;:&quot;AVIF&quot;}"
+                                        data-image-info="{&quot;containerId&quot;:&quot;comp-m2omef1t6__item-m2q1cu8b&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;parallaxSpeed&quot;:1.5,&quot;sourceSets&quot;:[],&quot;imageData&quot;:{&quot;uri&quot;:&quot;{{ asset('images/bike.jpg') }}&quot;,&quot;width&quot;:800,&quot;height&quot;:500,&quot;alt&quot;:&quot; Gorilla Safari at Volcanoes National Park, Rwanda with star SAFARI&quot;,&quot;name&quot;:&quot;Gorilla_JPM_7.jpg&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;scrollEffect&quot;:&quot;none&quot;,&quot;focalPoint&quot;:null},&quot;hasAnimation&quot;:false,&quot;encoding&quot;:&quot;AVIF&quot;}"
                                         data-has-ssr-src="true"
                                         data-motion-part="BG_IMG comp-m2omef1t6__item-m2q1cu8b"
                                         class="Ux33nC">
                                         <picture><img loading="lazy"
                                                 src="{{ asset('images/bike.jpg') }}"
-                                                alt="Luxury Gorilla Safari at Volcanoes National Park, Rwanda with star SAFARI"
+                                                alt=" Gorilla Safari at Volcanoes National Park, Rwanda with star SAFARI"
                                                 style="object-fit:cover;object-position:50% 50%">
                                         </picture>
                                     </wow-image></div>
@@ -586,7 +595,7 @@ data-testid="section-container">
                 data-testid="richTextElement"
                 ariaattributes="[object Object]">
                 <h2 class="font_2 wixui-rich-text__text"><span
-                        class="wixui-rich-text__text">Luxury in the Heart<span
+                        class="wixui-rich-text__text"> in the Heart<span
                             style="font-weight:bold;"
                             class="wixui-rich-text__text"><span
                                 class="wixui-rich-text__text"> of the Wild</span></span></span></h2>
@@ -598,7 +607,7 @@ data-testid="section-container">
                 class="HcOXKn c9GqVL QxJLC3 lq2cno YQcXTT comp-m2vr53be wixui-rich-text"
                 data-testid="richTextElement"
                 ariaattributes="[object Object]">
-                <p class="font_8 wixui-rich-text__text">Retreat to Africa’s untouched wilderness in your own private villa, luxury lodge, or designer tented suite each crafted for comfort, privacy, and awe-inspiring views.
+                <p class="font_8 wixui-rich-text__text">Retreat to Africa’s untouched wilderness in your own private villa,  lodge, or designer tented suite each crafted for comfort, privacy, and awe-inspiring views.
 
                     From the moment you arrive, nature surrounds you: lions echo in the distance, elephants roam freely at dusk, and lanterns guide you to candlelit dinners beneath the stars.</p>
 

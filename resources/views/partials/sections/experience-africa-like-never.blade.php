@@ -33,7 +33,7 @@ data-testid="section-container">
                 data-testid="richTextElement"
                 ariaattributes="[object Object]">
                 <p class="font_8 wixui-rich-text__text"><span
-                        class="wixui-rich-text__text">Embark on a luxury safari in Tanzania with Stan Safari, your gateway to the Serengeti, Ngorongoro Crater, Mount Kilimanjaro, and beyond.</span></p>
+                        class="wixui-rich-text__text">Embark on a safari in Tanzania with Stan Safari, your gateway to the Serengeti, Ngorongoro Crater, Mount Kilimanjaro, and beyond.</span></p>
 
                 <p class="font_8 wixui-rich-text__text"><span
                         class="wixui-rich-text__text">We offer private guided tours, custom itineraries, and premium lodges, all designed for unforgettable wildlife encounters and seamless comfort.</span></p>
@@ -45,19 +45,19 @@ data-testid="section-container">
                         <div class="benefits-list" style="margin: 1.5rem 0; max-width: 500px; width: 100%;">
                             <div style="display: flex; align-items: center; margin-bottom: 12px; justify-content: center;">
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right: 12px; flex-shrink: 0;">
-                                    <path d="M20 6L9 17L4 12" stroke="#e8b143" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M20 6L9 17L4 12" stroke="#4d4402e0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
                                 <span style="font-size: 1rem; color: #333;">Tailor-Made Safari</span>
                             </div>
                             <div style="display: flex; align-items: center; margin-bottom: 12px; justify-content: center;">
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right: 12px; flex-shrink: 0;">
-                                    <path d="M20 6L9 17L4 12" stroke="#e8b143" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M20 6L9 17L4 12" stroke="#4d4402e0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
                                 <span style="font-size: 1rem; color: #333;">Expert Local Guides</span>
                             </div>
                             <div style="display: flex; align-items: center; justify-content: center;">
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right: 12px; flex-shrink: 0;">
-                                    <path d="M20 6L9 17L4 12" stroke="#e8b143" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M20 6L9 17L4 12" stroke="#4d4402e0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
                                 <span style="font-size: 1rem; color: #333;">Big 5 Game Viewing</span>
                             </div>
@@ -65,7 +65,7 @@ data-testid="section-container">
                     </div>
 
                 <p class="font_8 wixui-rich-text__text"><span
-                        class="wixui-rich-text__text">Ready for adventure? <a href="#" style="color: #e8b143; font-weight: bold; margin-top:0px !important;">Start your safari now</a></span></p>
+                        class="wixui-rich-text__text">Ready for adventure? <a href="#" style="color: #4d4402e0; font-weight: bold; margin-top:0px !important;">Start your safari now</a></span></p>
             </div><!--/$--><!--$-->
             <div id="comp-m2vue5lh"
                 class="comp-m2vue5lh JGtLUp wixui-horizontal-line">
@@ -76,7 +76,7 @@ data-testid="section-container">
                 data-testid="linkElement"
                 href="#"
                 target="_self"
-                class="StylableButton2545352419__root style-m2vufkiw8__root wixui-button StylableButton2545352419__link " style="background-color: #e8b143;"
+                class="StylableButton2545352419__root style-m2vufkiw8__root wixui-button StylableButton2545352419__link " style="background-color: #4d4402e0;"
                 aria-label="OUR PURPOSE"><span
                     class="StylableButton2545352419__container"><span
                         class="StylableButton2545352419__label wixui-button__label"
@@ -187,7 +187,7 @@ data-testid="section-container">
         }
         
         /* Ensure the 'Ready for Adventure' section is visible on mobile */
-        .wixui-rich-text__text a[style*="color: #e8b143"] {
+        .wixui-rich-text__text a[style*="color: #4d4402e0"] {
             display: inline-block !important;
             margin-top: 1rem;
             font-size: 1.2rem !important;

@@ -110,7 +110,7 @@
                                                                                                                             class="item-action"
                                                                                                                             tabindex="0"
                                                                                                                             data-hook="item-action"
-                                                                                                                            aria-label="8 Days | Classic Luxury Tanzania Signature Safari"
+                                                                                                                            aria-label="8 Days | Classic  Tanzania Signature Safari"
                                                                                                                             role="link">
                                                                                                                         </div>
                                                                                                                         <div>
@@ -129,7 +129,7 @@
                                                                                                                                         <source
                                                                                                                                             srcset="{{ asset('images/serengeti-safari-accommodation.jpg') }}"
                                                                                                                                             type="image/webp">
-                                                                                                                                        <img alt="8 Days | Classic Luxury Tanzania Signature Safari"
+                                                                                                                                        <img alt="8 Days | Classic  Tanzania Signature Safari"
                                                                                                                                             src="{{ asset('images/serengeti-safari-accommodation.jpg') }}"
                                                                                                                                             style="width:100%;height:100%"
                                                                                                                                             class="gallery-item-visible gallery-item gallery-item-preloaded"
@@ -144,7 +144,7 @@
                                                                                                                                         <source
                                                                                                                                             srcset="{{ asset('images/serengeti-safari-accommodation.jpg') }}"
                                                                                                                                             type="image/webp">
-                                                                                                                                        <img alt="8 Days | Classic Luxury Tanzania Signature Safari"
+                                                                                                                                        <img alt="8 Days | Classic  Tanzania Signature Safari"
                                                                                                                                             class="gallery-item-visible gallery-item gallery-item-preloaded"
                                                                                                                                             data-hook="gallery-item-image-img"
                                                                                                                                             data-idx="0"
@@ -182,7 +182,7 @@
                                                                                                                                                                 Days
                                                                                                                                                                 |
                                                                                                                                                                 Classic
-                                                                                                                                                                Luxury
+                                                                                                                                                                
                                                                                                                                                                 Tanzania
                                                                                                                                                                 Signature
                                                                                                                                                                 Safari
@@ -201,7 +201,7 @@
                                                                                                                                                                 style="-webkit-line-clamp:3">
                                                                                                                                                                 An
                                                                                                                                                                 8-day
-                                                                                                                                                                luxury
+                                                                                                                                                                
                                                                                                                                                                 safari
                                                                                                                                                                 adventure
                                                                                                                                                                 through
@@ -356,7 +356,7 @@
                                                                                                                             class="item-action"
                                                                                                                             tabindex="-1"
                                                                                                                             data-hook="item-action"
-                                                                                                                            aria-label="15 Days | Ultimate Luxury Southern Africa Safari"
+                                                                                                                            aria-label="15 Days | Ultimate  Southern Africa Safari"
                                                                                                                             role="link">
                                                                                                                         </div>
                                                                                                                         <div>
@@ -375,7 +375,7 @@
                                                                                                                                         <source
                                                                                                                                             srcset="{{ asset('/images/wildlife-serengeti-national-park.jpg') }}"
                                                                                                                                             type="image/webp">
-                                                                                                                                        <img alt="15 Days | Ultimate Luxury Southern Africa Safari"
+                                                                                                                                        <img alt="15 Days | Ultimate  Southern Africa Safari"
                                                                                                                                             src="{{ asset('/images/wildlife-serengeti-national-park.jpg') }}"
                                                                                                                                             style="width:100%;height:100%"
                                                                                                                                             class="gallery-item-visible gallery-item gallery-item-preloaded"
@@ -390,7 +390,7 @@
                                                                                                                                         <source
                                                                                                                                             srcset="{{ asset('/images/wildlife-serengeti-national-park.jpg') }}"
                                                                                                                                             type="image/webp">
-                                                                                                                                        <img alt="15 Days | Ultimate Luxury Southern Africa Safari"
+                                                                                                                                        <img alt="15 Days | Ultimate  Southern Africa Safari"
                                                                                                                                             class="gallery-item-visible gallery-item gallery-item-preloaded"
                                                                                                                                             data-hook="gallery-item-image-img"
                                                                                                                                             data-idx="1"
@@ -428,7 +428,7 @@
                                                                                                                                                                 Days
                                                                                                                                                                 |
                                                                                                                                                                 Ultimate
-                                                                                                                                                                Luxury
+                                                                                                                                                                
                                                                                                                                                                 Southern
                                                                                                                                                                 Africa
                                                                                                                                                                 Safari
@@ -463,7 +463,7 @@
                                                                                                                                                                 and
                                                                                                                                                                 focuses
                                                                                                                                                                 on
-                                                                                                                                                                luxury
+                                                                                                                                                                
                                                                                                                                                                 and
                                                                                                                                                                 premier
                                                                                                                                                                 safari
@@ -603,7 +603,7 @@
                                                                                                                             class="item-action"
                                                                                                                             tabindex="-1"
                                                                                                                             data-hook="item-action"
-                                                                                                                            aria-label="10 Days | Wild Luxury Honeymoon Safari &amp; Beach"
+                                                                                                                            aria-label="10 Days | Wild  Honeymoon Safari &amp; Beach"
                                                                                                                             role="link">
                                                                                                                         </div>
                                                                                                                         <div>
@@ -622,7 +622,7 @@
                                                                                                                                         <source
                                                                                                                                             srcset=""
                                                                                                                                             type="image/webp">
-                                                                                                                                        <img alt="10 Days | Wild Luxury Honeymoon Safari &amp; Beach"
+                                                                                                                                        <img alt="10 Days | Wild  Honeymoon Safari &amp; Beach"
                                                                                                                                             src="{{ asset('images/four-seasons-serengeti-safari-lodge-tanzania.jpg') }}"
                                                                                                                                             style="width:100%;height:100%"
                                                                                                                                             class="gallery-item-visible gallery-item gallery-item-preloaded"
@@ -637,7 +637,7 @@
                                                                                                                                         <source
                                                                                                                                             srcset="{{ asset('images/four-seasons-serengeti-safari-lodge-tanzania.jpg') }}"
                                                                                                                                             type="image/webp">
-                                                                                                                                        <img alt="10 Days | Wild Luxury Honeymoon Safari &amp; Beach"
+                                                                                                                                        <img alt="10 Days | Wild  Honeymoon Safari &amp; Beach"
                                                                                                                                             class="gallery-item-visible gallery-item gallery-item-preloaded"
                                                                                                                                             data-hook="gallery-item-image-img"
                                                                                                                                             data-idx="2"
@@ -675,7 +675,7 @@
                                                                                                                                                                 Days
                                                                                                                                                                 |
                                                                                                                                                                 Wild
-                                                                                                                                                                Luxury
+                                                                                                                                                                
                                                                                                                                                                 Honeymoon
                                                                                                                                                                 Safari
                                                                                                                                                                 &amp;
@@ -695,7 +695,7 @@
                                                                                                                                                                 style="-webkit-line-clamp:3">
                                                                                                                                                                 A
                                                                                                                                                                 fabulous
-                                                                                                                                                                luxury
+                                                                                                                                                                
                                                                                                                                                                 honeymoon
                                                                                                                                                                 combining
                                                                                                                                                                 the
@@ -860,7 +860,7 @@
                                                     </div><!--/$-->
                                                     
 <div class="text-center" style='margin:0 auto 1rem auto; padding:auto;width:50%; cursor:pointer !important; z-index:99'>
-    <div class="comp-m2vufkir" data-semantic-classname="button" style="cursor:pointer !important;"><a data-testid="linkElement" href="#" target="_self" class="StylableButton2545352419__root style-m2vufkiw8__root wixui-button StylableButton2545352419__link " style="background-color: #e8b143; cursor:pointer !important; color:#fff !important; font-weight:bold" aria-label="OUR PURPOSE"><span class="StylableButton2545352419__container"><span class="StylableButton2545352419__label wixui-button__label" data-testid="stylablebutton-label">
+    <div class="comp-m2vufkir" data-semantic-classname="button" style="cursor:pointer !important;"><a data-testid="linkElement" href="#" target="_self" class="StylableButton2545352419__root style-m2vufkiw8__root wixui-button StylableButton2545352419__link " style="background-color: #4d4402e0; cursor:pointer !important; color:#fff !important; font-weight:bold" aria-label="OUR PURPOSE"><span class="StylableButton2545352419__container"><span class="StylableButton2545352419__label wixui-button__label" data-testid="stylablebutton-label">
     CHOOSE YOUR PACKAGE</span><span class="StylableButton2545352419__icon wixui-button__icon" aria-hidden="true" data-testid="stylablebutton-icon"><span><!--?xml version="1.0" encoding="UTF-8"?-->
            
         </span></span></span></a></div>

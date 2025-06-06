@@ -37,7 +37,7 @@
         <div class="safari-decorations">
             <div class="safari-bird safari-bird-1">
                 <svg viewBox="0 0 24 24" width="24" height="24">
-                    <path d="M23 3s-9.5 8-10.5 10c0 0-1.1 2-3.5 2s-3.5-2-3.5-2S2 13 1 12s1-1 1-1h2s1-1 2-2 1-2 3-2 5.5 2 5.5 2 3-3 5-3 3 1 3 1z" fill="#e8b143"/>
+                    <path d="M23 3s-9.5 8-10.5 10c0 0-1.1 2-3.5 2s-3.5-2-3.5-2S2 13 1 12s1-1 1-1h2s1-1 2-2 1-2 3-2 5.5 2 5.5 2 3-3 5-3 3 1 3 1z" fill="#4d4402e0"/>
                 </svg>
             </div>
             <div class="safari-leaf safari-leaf-1">
@@ -62,7 +62,7 @@
     <div class="hero-background">
         <img 
             src="https://static.wixstatic.com/media/851897_9587828f79e74b21a175b075af31661e~mv2.jpg"
-            alt="A herd of Elephants drinking water in Serengeti – Luxury African Safaris - Tanzania"
+            alt="A herd of Elephants drinking water in Serengeti African Safaris - Tanzania"
             class="hero-bg-image"
             loading="eager"
         >
@@ -167,7 +167,7 @@ letter-spacing: 0.01em;">
             top: 0;
             height: 100%;
             width: 4px;
-            background: #e8b143;
+            background: #4d4402e0;
             transform: scaleY(0);
             transition: transform 0.3s ease;
         }
@@ -240,9 +240,9 @@ letter-spacing: 0.01em;">
         }
         
         .modern-navbar.scrolled {
-            background: #625C30; 
+            background: #4d4402e0; 
             padding: 0.2rem 0;
-            box-shadow: 0 4px 20px #625C30;
+            box-shadow: 0 4px 20px #4d4402e0;
         }
         
         .navbar-container {
@@ -395,7 +395,7 @@ letter-spacing: 0.01em;">
         
         /* Menu button animation */
         .mobile-menu-btn.active .menu-line {
-            background-color: #e8b143;
+            background-color: #4d4402e0;
         }
         
         .rotate-45 {
@@ -473,12 +473,12 @@ letter-spacing: 0.01em;">
         
         .mobile-nav-link:hover,
         .mobile-nav-link.active {
-            color: #e8b143;
+            color: #4d4402e0;
             padding-left: 10px;
         }
         
         .mobile-nav .nav-cta-button {
-            background-color: #e8b143;
+            background-color: #4d4402e0;
             color: #1a1a1a !important;
             text-align: center;
             margin: 1rem 0 0;
@@ -488,7 +488,7 @@ letter-spacing: 0.01em;">
             text-transform: uppercase;
             letter-spacing: 1px;
             font-size: 0.8rem;
-            border: 2px solid #e8b143;
+            border: 2px solid #4d4402e0;
             width: 100%;
             max-width: 200px;
             margin-left: auto;
@@ -497,7 +497,7 @@ letter-spacing: 0.01em;">
         }
         
         .mobile-nav .nav-cta-button:hover {
-            background-color: #e8b143;
+            background-color: #4d4402e0;
             color: #1a1a1a !important;
             transform: translateY(-3px);
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
@@ -507,11 +507,11 @@ letter-spacing: 0.01em;">
         /* Navbar Scroll Effect */
         .modern-navbar.scrolled {
             padding: 0.0rem 0;
-            background:#625C30;
+            background:#4d4402e0;
             backdrop-filter: blur(10px);
             -webkit-backdrop-filter: blur(10px);
-            border-bottom: 1px solid #625C30;
-            box-shadow: 0 2px 20px #625C30;
+            border-bottom: 1px solid #4d4402e0;
+            box-shadow: 0 2px 20px #4d4402e0;
         }
         
         /* Responsive Styles */
@@ -852,16 +852,16 @@ letter-spacing: 0.01em;">
         }
 
         .cta-button:first-child {
-            background-color: #e8b143;
+            background-color: #4d4402e0;
             font-family: questrial, sans-serif;
     font-size: calc(15 * var(--theme-spx-ratio));
             color: #fff;
             font-weight: 400;
-            border: 2px solid #e8b143;
+            border: 2px solid #4d4402e0;
         }
 
         .cta-button:first-child:hover {
-            background-color: #e8b143; /* Keep the same background color on hover */
+            background-color: #4d4402e0; /* Keep the same background color on hover */
             color: #fff; /* Keep the text color consistent */
             transform: translateY(-3px);
             font-family: questrial, sans-serif;

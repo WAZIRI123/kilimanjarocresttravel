@@ -37,11 +37,11 @@ data-testid="section-container">
                     ariaattributes="[object Object]">
                     <p class="font_8 wixui-rich-text__text"><br
                             class="wixui-rich-text__text">
-                            Step into the wild with Stan Safari, where every journey brings you face-to-face with Africa’s most iconic landscapes and wildlife. From the endless plains of the Serengeti to the majestic Ngorongoro Crater, we deliver curated, luxury safari experiences designed for unforgettable moments.</p>
+                            Step into the wild with Stan Safari, where every journey brings you face-to-face with Africa’s most iconic landscapes and wildlife. From the endless plains of the Serengeti to the majestic Ngorongoro Crater, we deliver curated,  safari experiences designed for unforgettable moments.</p>
 
                     <p class="font_8 wixui-rich-text__text"><br
                             class="wixui-rich-text__text">
-                            With deep roots across Dar es Salaam, Arusha, and Zanzibar, our expert-led safaris blend authentic African adventure with top-tier service, mobile luxury camps, and exclusive wildlife viewing.</p>
+                            With deep roots across Dar es Salaam, Arusha, and Zanzibar, our expert-led safaris blend authentic African adventure with top-tier service, mobile  camps, and exclusive wildlife viewing.</p>
 
                     <p class="font_8 wixui-rich-text__text"><span
                             class="wixGuard wixui-rich-text__text">​</span>
@@ -102,13 +102,13 @@ data-testid="section-container">
                                 data-motion-part="BG_MEDIA comp-m367d9uu">
                                 <wow-image id="img-comp-m367d9uu"
                                     data-is-responsive="true"
-                                    data-image-info="{&quot;containerId&quot;:&quot;comp-m367d9uu&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;parallaxSpeed&quot;:1.5,&quot;sourceSets&quot;:[],&quot;imageData&quot;:{&quot;uri&quot;:&quot;851897_1f54f551640a434586a00c39ddd80514~mv2.jpg&quot;,&quot;width&quot;:1280,&quot;height&quot;:800,&quot;alt&quot;:&quot;Arijiju Luxury Lodge - STAR SAFARI partner&quot;,&quot;name&quot;:&quot;arijiju_07_mid.jpg&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;scrollEffect&quot;:&quot;none&quot;,&quot;focalPoint&quot;:null},&quot;hasAnimation&quot;:false,&quot;encoding&quot;:&quot;AVIF&quot;}"
+                                    data-image-info="{&quot;containerId&quot;:&quot;comp-m367d9uu&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;parallaxSpeed&quot;:1.5,&quot;sourceSets&quot;:[],&quot;imageData&quot;:{&quot;uri&quot;:&quot;851897_1f54f551640a434586a00c39ddd80514~mv2.jpg&quot;,&quot;width&quot;:1280,&quot;height&quot;:800,&quot;alt&quot;:&quot;Arijiju  Lodge - STAR SAFARI partner&quot;,&quot;name&quot;:&quot;arijiju_07_mid.jpg&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;scrollEffect&quot;:&quot;none&quot;,&quot;focalPoint&quot;:null},&quot;hasAnimation&quot;:false,&quot;encoding&quot;:&quot;AVIF&quot;}"
                                     data-has-ssr-src="true"
                                     data-motion-part="BG_IMG comp-m367d9uu"
                                     class="Ux33nC">
                                     <picture><img loading="lazy"
                                             src="https://static.wixstatic.com/media/851897_1f54f551640a434586a00c39ddd80514~mv2.jpg/v1/fill/w_147,h_92,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/arijiju_07_mid.jpg"
-                                            alt="Arijiju Luxury Lodge - STAN SAFARI partner"
+                                            alt="Arijiju  Lodge - STAN SAFARI partner"
                                             style="object-fit:cover;object-position:50% 50%">
                                     </picture>
                                 </wow-image></div>

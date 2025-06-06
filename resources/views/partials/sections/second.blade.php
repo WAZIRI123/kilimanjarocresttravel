@@ -13,7 +13,7 @@ data-testid="section-container">
             data-motion-part="BG_IMG comp-m055paq8"
             data-bg-effect-name="" data-has-ssr-src="true"><img
                 src="https://static.wixstatic.com/media/851897_9587828f79e74b21a175b075af31661e~mv2.jpg"
-                alt="A herd of Elephants drinking water in Serengeti – Luxury African Safaris - Tanzania"
+                alt="A herd of Elephants drinking water in Serengeti  African Safaris - Tanzania"
                 style="object-fit: cover; object-position: 37% 44%; width: 100%;"
                 data-ssr-src-done="true" fetchpriority="high"></wow-image></div>
 </div>
@@ -40,7 +40,7 @@ data-testid="section-container">
             <svg preserveAspectRatio="none" data-bbox="20 20 160 160"
                 viewBox="20 20 160 160" height="200" width="200"
                 xmlns="http://www.w3.org/2000/svg" data-type="shape"
-                role="img" aria-label="Down Arrow for Luxury Safari">
+                role="img" aria-label="Down Arrow fo Safari">
                 <g>
                     <path
                         d="M20 100.002c41.21 6.266 54.993 20.886 54.993 20.886C92.289 135.827 99.952 180 99.952 180h.097s7.896-44.037 24.958-59.111c0 0 13.783-14.62 54.993-20.886v-.005c-41.21-6.266-54.993-20.886-54.993-20.886C107.944 64.037 100.048 20 100.048 20h-.097s-7.663 44.173-24.958 59.111c0 0-13.783 14.62-54.993 20.886v.005z">
@@ -58,7 +58,7 @@ data-testid="section-container">
                 height="200" width="200"
                 xmlns="http://www.w3.org/2000/svg" data-type="shape"
                 role="img"
-                aria-label="Basic Star Shape for Luxury African Safaris">
+                aria-label="Basic Star Shape fo African Safaris">
                 <g>
                     <path
                         d="M20 100.002c41.21 6.266 54.993 20.886 54.993 20.886C92.289 135.827 99.952 180 99.952 180h.097s7.896-44.037 24.958-59.111c0 0 13.783-14.62 54.993-20.886v-.005c-41.21-6.266-54.993-20.886-54.993-20.886C107.944 64.037 100.048 20 100.048 20h-.097s-7.663 44.173-24.958 59.111c0 0-13.783 14.62-54.993 20.886v.005z">

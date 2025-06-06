@@ -45,7 +45,7 @@ data-testid="section-container">
             data-testid="richTextElement"
             ariaattributes="[object Object]">
             <p class="font_8 wixui-rich-text__text"><span
-                    class="wixui-rich-text__text">Stan Safari was born from a deep love for Africa its wild beauty, rich cultures, and the unforgettable experiences it offers to those who truly explore it. Founded in Tanzania by locals who grew up surrounded by some of the world’s most iconic landscapes and wildlife, our journey began with a simple mission: <strong>To share the real Africa with the world authentically, responsibly, and memorably</strong>. What started as guiding small groups through Tanzania’s national parks has grown into a trusted safari company offering tailor-made adventures across East and West Africa. But no matter how far we’ve come, our roots remain the same: grounded in local knowledge, driven by passion, and committed to delivering deeply personal and enriching travel experiences.</span></p>
+                    class="wixui-rich-text__text">Born from a deep love for Africa's wild beauty and rich cultures, Stan Safari was founded in Tanzania by locals. Our mission is to share the real Africa with the world authentically, responsibly, and memorably. We started by guiding small groups through Tanzania’s national parks and have grown into a trusted safari company offering tailor-made adventures across East and West Africa. Our roots remain grounded in local knowledge, driven by passion, and committed to delivering deeply personal and enriching travel experiences.</span></p>
         </div><!--/$-->
     </div><!--/$--><!--$-->
     <div id="comp-m1oo0rky1" role=""
@@ -57,7 +57,7 @@ data-testid="section-container">
             ariaattributes="[object Object]">
             <p class="font_8 wixui-rich-text__text"><span
                     class="wixui-rich-text__text">
-                    As our company grew, so did our vision. We built Selous Kinga Lodge in the heart of the Selous Game Reserve to give our guests a true wilderness escape, and established a welcoming lodge in Moshi <strong> (Kinga Homes)</strong>, the gateway to Mount Kilimanjaro.
+                    As Stan Safari grew, we expanded our vision by building Selous Kinga Lodge in the Selous Game Reserve for a true wilderness escape, and establishing Kinga Homes in Moshi, the gateway to Mount Kilimanjaro.
                 
                 </span></p>
 
@@ -68,9 +68,7 @@ data-testid="section-container">
 
             <p class="font_8 wixui-rich-text__text"><span
                     class="wixui-rich-text__text">
-                    These properties reflect our values offering not just a place to stay, but a place to connect, unwind, and experience Africa in comfort.
-                    Today, Stan Safari is more than just a safari company. We are storytellers, hosts, and guardians of the natural world. We believe travel should be meaningful for our guests, for the communities we support, and for the lands we love.
-                    Our story is about Africa and now, it’s about you too. Come write your chapter with Stan Safari.</span>
+                    Our properties offer comfort and a genuine connection to Africa. As storytellers, hosts, and guardians of the natural world, Stan Safari believes travel should be meaningful for guests, communities, and the land. Our story is Africa's; now, it's yours to write. Come experience it with us.</span>
             </p>
         </div><!--/$-->
     </div><!--/$-->

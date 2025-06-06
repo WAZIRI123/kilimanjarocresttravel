@@ -166,13 +166,13 @@ data-testid="section-container">
                                             <wow-image
                                                 id="img-comp-m0dqbe5a__item-m0dm0ray"
                                                 data-is-responsive="true"
-                                                data-image-info="{&quot;containerId&quot;:&quot;comp-m0dqbe5a__item-m0dm0ray&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;parallaxSpeed&quot;:1.5,&quot;sourceSets&quot;:[],&quot;imageData&quot;:{&quot;uri&quot;:&quot;851897_e99590cb042b4e79a64111a4575ca5ed~mv2.png&quot;,&quot;width&quot;:1940,&quot;height&quot;:686,&quot;alt&quot;:&quot;LuxLife Magazine – Best  Local Safari Operator 2025 – Tanzania &quot;,&quot;name&quot;:&quot;luxlife_logo_gold_grey_4zd1_0f3.png&quot;,&quot;decorative&quot;:false,&quot;displayMode&quot;:&quot;fit&quot;,&quot;scrollEffect&quot;:&quot;none&quot;,&quot;focalPoint&quot;:null},&quot;hasAnimation&quot;:false,&quot;encoding&quot;:&quot;AVIF&quot;}"
+                                                data-image-info="{&quot;containerId&quot;:&quot;comp-m0dqbe5a__item-m0dm0ray&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;parallaxSpeed&quot;:1.5,&quot;sourceSets&quot;:[],&quot;imageData&quot;:{&quot;uri&quot;:&quot;{{ asset('images/tripadvisor1.png') }}&quot;,&quot;width&quot;:1940,&quot;height&quot;:686,&quot;alt&quot;:&quot;LuxLife Magazine – Best  Local Safari Operator 2025 – Tanzania &quot;,&quot;name&quot;:&quot;luxlife_logo_gold_grey_4zd1_0f3.png&quot;,&quot;decorative&quot;:false,&quot;displayMode&quot;:&quot;fit&quot;,&quot;scrollEffect&quot;:&quot;none&quot;,&quot;focalPoint&quot;:null},&quot;hasAnimation&quot;:false,&quot;encoding&quot;:&quot;AVIF&quot;}"
                                                 data-has-ssr-src="true"
                                                 data-motion-part="BG_IMG comp-m0dqbe5a__item-m0dm0ray"
                                                 class="Ux33nC">
                                                 <picture><img
                                                         loading="lazy"
-                                                        src="https://static.wixstatic.com/media/851897_e99590cb042b4e79a64111a4575ca5ed~mv2.png/v1/fill/w_49,h_17,al_c,q_85,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/luxlife_logo_gold_grey_4zd1_0f3.png"
+                                                        src="{{ asset('images/tripadvisor1.png') }}"
                                                         alt="LuxLife Magazine – Best  Local Safari Operator 2025 – Tanzania "
                                                         style="object-fit:contain;object-position:center">
                                                 </picture>

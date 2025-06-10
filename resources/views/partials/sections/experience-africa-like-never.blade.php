@@ -26,14 +26,14 @@ data-testid="section-container">
                         <span style="font-weight:bold;"
                             class="wixui-rich-text__text"><span
                                 class="wixui-rich-text__text">with&nbsp;Stan
-                                Safari</span></span></span></h2>
+                                Safaris</span></span></span></h2>
             </div><!--/$--><!--$-->
             <div id="comp-m2vttpvz4"
                 class="HcOXKn c9GqVL QxJLC3 lq2cno YQcXTT comp-m2vttpvz4 wixui-rich-text"
                 data-testid="richTextElement"
                 ariaattributes="[object Object]">
                 <p class="font_8 wixui-rich-text__text"><span
-                        class="wixui-rich-text__text">Embark on a safari in Tanzania with Stan Safari, your gateway to the Serengeti, Ngorongoro Crater, Mount Kilimanjaro, and beyond.</span></p>
+                        class="wixui-rich-text__text">Embark on a safari in Tanzania with Stan Safaris, your gateway to the Serengeti, Ngorongoro Crater, Mount Kilimanjaro, and beyond.</span></p>
 
                 <p class="font_8 wixui-rich-text__text"><span
                         class="wixui-rich-text__text">We offer private guided tours, custom itineraries, and premium lodges, all designed for unforgettable wildlife encounters and seamless comfort.</span></p>
@@ -106,12 +106,12 @@ data-testid="section-container">
                 <div data-motion-part="BG_MEDIA comp-m2vttpwh">
                     <wow-image id="img-comp-m2vttpwh"
                         data-is-responsive="true"
-                        data-image-info="{&quot;containerId&quot;:&quot;comp-m2vttpwh&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;parallaxSpeed&quot;:1.5,&quot;sourceSets&quot;:[],&quot;imageData&quot;:{&q/ot;uri&quot;:&quot;{{ asset('images/girrafe1.png') }}&quot;,&quot;width&quot;:1304,&quot;height&quot;:1937,&quot;alt&quot;:&quot;Thomson's Gazelle in Serengeti during safari with stan SAFARI&quot;,&quot;name&quot;:&quot;Swala.jpg&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;scrollEffect&quot;:&quot;none&quot;,&quot;focalPoint&quot;:null},&quot;hasAnimation&quot;:false,&quot;encoding&quot;:&quot;AVIF&quot;}"
+                        data-image-info="{&quot;containerId&quot;:&quot;comp-m2vttpwh&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;parallaxSpeed&quot;:1.5,&quot;sourceSets&quot;:[],&quot;imageData&quot;:{&q/ot;uri&quot;:&quot;{{ asset('images/girrafe1.png') }}&quot;,&quot;width&quot;:1304,&quot;height&quot;:1937,&quot;alt&quot;:&quot;Thomson's Gazelle in Serengeti during safari with stan SAFARIS&quot;,&quot;name&quot;:&quot;Swala.jpg&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;scrollEffect&quot;:&quot;none&quot;,&quot;focalPoint&quot;:null},&quot;hasAnimation&quot;:false,&quot;encoding&quot;:&quot;AVIF&quot;}"
                         data-has-ssr-src="true"
                         data-motion-part="BG_IMG comp-m2vttpwh"
                         class="Ux33nC">
                         <picture><img loading="lazy" src="{{ asset('images/girrafe1.png') }}"
-                                alt="Thomson's Gazelle in Serengeti during safari with stan SAFARI"
+                                alt="Thomson's Gazelle in Serengeti during safari with stan SAFARIS"
                                 style="object-fit: cover; object-position: 50% 50%; width: 100%;"
                                 data-ssr-src-done="true"
                                 fetchpriority="high"></picture>

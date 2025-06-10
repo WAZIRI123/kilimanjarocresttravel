@@ -5,7 +5,7 @@
             <!-- Logo -->
             <div class="navbar-logo">
                 <a href="#" class="logo-link">
-                    <img src="https://waziri123.github.io/star-safari-website-demo/assets/images/star-safaris.png" alt="Stan Safari Tanzania" class="logo-img">
+                    <img src="https://waziri123.github.io/star-safari-website-demo/assets/images/star-safaris.png" alt="Stan Safaris Tanzania" class="logo-img">
                 </a>
             </div>
             
@@ -66,8 +66,21 @@
             class="hero-bg-image"
             loading="eager"
         >
+        <div class="overlay-bg"></div>
     
     </div>
+
+<style>
+    .overlay-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.35); /* Adjust opacity as needed */
+    }
+
+    </style>
 
     <!-- Hero Content -->
     <div class="hero-content" style="padding-top: 30vh;">
@@ -82,7 +95,7 @@
                     </div>
                 </div>
                 <div class="title-wrapper" style="overflow: hidden;">
-                    <div class="title-line accent" style="display: inline-block; transform: translateY(100%); opacity: 0; animation: slideUp 0.8s ease-out 0.6s forwards; padding: 1.5rem 0;font-family: 'Kaushan Script', cursive;
+                    <div class="title-line accent hero-description" style="display: inline-block; transform: translateY(100%); opacity: 0; animation: slideUp 0.8s ease-out 0.6s forwards; padding: 2.5rem 0;  font-family: 'The Girl Next Door', cursive;
 font-weight: 400;
 font-style: normal;
 font-size: 50px;
@@ -98,12 +111,12 @@ letter-spacing: 0.01em;">
                 <div class="cta-wrapper">
                     <div class="cta-buttons">
                         <a href="#safari-packages" class="cta-button">View Tours</a>
-                        <a href="#contact" class="cta-button secondary">Book Now</a>
+                        <a href="#contact" class="cta-button secondary" >Book Now</a>
                     </div>
                     
                     <!-- Scroll Indicator -->
                     <div class="scroll-indicator">
-                        <div class="arrow-down">
+                        <div class="arrow-down"> 
                             <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M12 5v14M5 12l7 7 7-7"/>
                             </svg>
@@ -618,6 +631,10 @@ letter-spacing: 0.01em;">
                 padding-top: 60px; /* Space for navbar */
                 min-height: calc(100vh - 60px);
             }
+            .hero-description{
+                padding: 1.8rem 0rem !important;
+                font-size: 2rem !important;
+            }
             
             .hero-content {
                 padding: 1rem;
@@ -852,11 +869,11 @@ letter-spacing: 0.01em;">
         }
 
         .cta-button:first-child {
-            background-color: #4d4402e0;
+            background-color: rgba(77, 68, 2, 1);
             font-family: questrial, sans-serif;
     font-size: calc(15 * var(--theme-spx-ratio));
             color: #fff;
-            font-weight: 400;
+            font-weight: 900;
             border: 2px solid #4d4402e0;
         }
 

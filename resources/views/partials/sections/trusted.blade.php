@@ -129,13 +129,13 @@ data-testid="section-container">
                                             <wow-image
                                                 id="img-comp-m0dqbe5a__item-j9plerjk"
                                                 data-is-responsive="true"
-                                                data-image-info="{&quot;containerId&quot;:&quot;comp-m0dqbe5a__item-j9plerjk&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;parallaxSpeed&quot;:1.5,&quot;sourceSets&quot;:[],&quot;imageData&quot;:{&quot;uri&quot;:&quot;851897_e8810c323c8948eb948406465ce5d083~mv2.png&quot;,&quot;width&quot;:658,&quot;height&quot;:326,&quot;alt&quot;:&quot;Star Reviews on ProvenExpert.com&quot;,&quot;name&quot;:&quot;proven.png&quot;,&quot;displayMode&quot;:&quot;fit&quot;,&quot;scrollEffect&quot;:&quot;none&quot;,&quot;focalPoint&quot;:null},&quot;hasAnimation&quot;:false,&quot;encoding&quot;:&quot;AVIF&quot;}"
+                                                data-image-info="{&quot;containerId&quot;:&quot;comp-m0dqbe5a__item-j9plerjk&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;parallaxSpeed&quot;:1.5,&quot;sourceSets&quot;:[],&quot;imageData&quot;:{&quot;uri&quot;:&quot;{{ asset('images/safari-bookings.png') }}&quot;,&quot;width&quot;:658,&quot;height&quot;:326,&quot;alt&quot;:&quot;Star Reviews on ProvenExpert.com&quot;,&quot;name&quot;:&quot;safari-bookings.png&quot;,&quot;displayMode&quot;:&quot;fit&quot;,&quot;scrollEffect&quot;:&quot;none&quot;,&quot;focalPoint&quot;:null},&quot;hasAnimation&quot;:false,&quot;encoding&quot;:&quot;AVIF&quot;}"
                                                 data-has-ssr-src="true"
                                                 data-motion-part="BG_IMG comp-m0dqbe5a__item-j9plerjk"
                                                 class="Ux33nC">
                                                 <picture><img
                                                         loading="lazy"
-                                                        src="https://static.wixstatic.com/media/851897_e8810c323c8948eb948406465ce5d083~mv2.png/v1/fill/w_66,h_33,al_c,q_85,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/proven.png"
+                                                        src="{{ asset('images/safari-bookings.png') }}"
                                                         alt="Star Reviews on ProvenExpert.com"
                                                         style="object-fit:contain;object-position:center">
                                                 </picture>

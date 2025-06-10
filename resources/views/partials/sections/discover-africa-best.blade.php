@@ -37,7 +37,7 @@ data-testid="section-container">
                     ariaattributes="[object Object]">
                     <p class="font_8 wixui-rich-text__text"><br
                             class="wixui-rich-text__text">
-                            Step into the wild with Stan Safari, where every journey brings you face-to-face with Africa’s most iconic landscapes and wildlife. From the endless plains of the Serengeti to the majestic Ngorongoro Crater, we deliver curated,  safari experiences designed for unforgettable moments.</p>
+                            Step into the wild with Stan Safaris, where every journey brings you face-to-face with Africa’s most iconic landscapes and wildlife. From the endless plains of the Serengeti to the majestic Ngorongoro Crater, we deliver curated,  safari experiences designed for unforgettable moments.</p>
 
                     <p class="font_8 wixui-rich-text__text"><br
                             class="wixui-rich-text__text">
@@ -108,7 +108,7 @@ data-testid="section-container">
                                     class="Ux33nC">
                                     <picture><img loading="lazy"
                                             src="https://static.wixstatic.com/media/851897_1f54f551640a434586a00c39ddd80514~mv2.jpg/v1/fill/w_147,h_92,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/arijiju_07_mid.jpg"
-                                            alt="Arijiju  Lodge - STAN SAFARI partner"
+                                            alt="Arijiju  Lodge - STAN SAFARIS partner"
                                             style="object-fit:cover;object-position:50% 50%">
                                     </picture>
                                 </wow-image></div>

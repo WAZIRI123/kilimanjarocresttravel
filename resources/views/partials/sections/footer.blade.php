@@ -28,9 +28,9 @@
                                                                     data-testid="richTextElement"
                                                                     ariaattributes="[object Object]">
                                                                     <p style="font-weight: 500;" class=" wixui-rich-text__text"><a
-                                                                            href="mailto:hello@stansafari.com?subject=I%20would%20Like%20to%20Know%20More"
+                                                                            href="mailto:hello@stansafaris.com?subject=I%20would%20Like%20to%20Know%20More"
                                                                             target="_self"
-                                                                            class="wixui-rich-text__text">hello@stansafari.com</a>
+                                                                            class="wixui-rich-text__text">hello@stansafaris.com</a>
                                                                     </p>
 
                                                                     <p style="font-weight: 500;" class=" wixui-rich-text__text"><a

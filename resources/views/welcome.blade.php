@@ -9,8 +9,8 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
-    
+<link href="https://fonts.googleapis.com/css2?family=The+Girl+Next+Door&display=swap" rel="stylesheet">
+
     <!-- Gallery Fix Script -->
     <script src="js/gallery-fix.js"></script>
     <script src="js/gallery-slider.js"></script>
@@ -65,7 +65,9 @@
                                         @include('partials.sections.discover-africa-best')
                                         </main>
                                         @include('partials.sections.footer')
-                                       
+   <!-- Start of HubSpot Embed Code -->
+<script type="text/javascript" id="hs-script-loader" async defer src="//js-na2.hs-scripts.com/243011933.js"></script>
+<!-- End of HubSpot Embed Code -->                                    
 </body>
 
 </html>

@@ -595,10 +595,10 @@ data-testid="section-container">
                 data-testid="richTextElement"
                 ariaattributes="[object Object]">
                 <h2 class="font_2 wixui-rich-text__text"><span
-                        class="wixui-rich-text__text"> in the Heart<span
+                        class="wixui-rich-text__text"> Where Wilderness <span
                             style="font-weight:bold;"
                             class="wixui-rich-text__text"><span
-                                class="wixui-rich-text__text"> of the Wild</span></span></span></h2>
+                                class="wixui-rich-text__text"> Meets Comfort</span></span></span></h2>
             </div><!--/$--><!--$-->
             <div id="comp-m2vrz666"
                 class="comp-m2vrz666 JGtLUp wixui-horizontal-line">
@@ -685,7 +685,7 @@ This is more than a safari. It’s your exclusive sanctuary where adventure meet
                                     class="Ux33nC">
                                     <picture><img loading="lazy"
                                             src="{{ asset('images/mount climanjaro.webp') }}"
-                                            alt="Mount Climanjaro - STAN SAFARI partner"
+                                            alt="Mount Climanjaro - STAN SAFARIS partner"
                                             style="object-fit:cover;object-position:50% 50%">
                                     </picture>
                                 </wow-image></div>

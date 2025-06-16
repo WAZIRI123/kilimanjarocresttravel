@@ -62,7 +62,7 @@
     <!-- Background Image -->
     <div class="hero-background">
         <img 
-            src="https://static.wixstatic.com/media/851897_9587828f79e74b21a175b075af31661e~mv2.jpg"
+            src="{{ $image }}"
             alt="A herd of Elephants drinking water in Serengeti African Safaris - Tanzania"
             class="hero-bg-image"
             loading="eager"
@@ -92,7 +92,7 @@
     letter-spacing: 0.01em;">
                 <div class="title-wrapper" style="overflow: hidden;">
                     <div class="title-line" style="display: inline-block; transform: translateY(100%); opacity: 0; animation: slideUp 0.8s ease-out 0.3s forwards;">
-                        The Essence of Untamed
+                        {{ $title ?? 'The Essence of Untamed' }}
                     </div>
                 </div>
                 <div class="title-wrapper" style="overflow: hidden;">
@@ -104,27 +104,10 @@ line-height: 1.2;
 text-align: center;
 text-decoration: none;
 letter-spacing: 0.01em;">
-                        African Exploration...
+{{ $subtitle ?? 'African Exploration...' }}
                     </div>
                 </div>
             </h1>
-            <div class="hero-cta">
-                <div class="cta-wrapper">
-                    <div class="cta-buttons">
-                        <a href="#safari-packages" class="cta-button">View Tours</a>
-                        <a href="#contact" class="cta-button secondary" >Book Now</a>
-                    </div>
-                    
-                    <!-- Scroll Indicator -->
-                    <div class="scroll-indicator">
-                        <div class="arrow-down"> 
-                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M12 5v14M5 12l7 7 7-7"/>
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
 

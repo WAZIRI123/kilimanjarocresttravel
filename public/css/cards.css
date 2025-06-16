@@ -1,17 +1,8 @@
 /* Safari Destination Cards */
 .cards-section {
-    padding: 10px 20px;
-    background-color: none; /* Light beige background */
+    padding: 60px 20px;
+    background-color: #f8f5f0; /* Light beige background */
     font-family: 'Arial', sans-serif;
-    margin-bottom: 3.5rem;
-}
-
-.cards-section h2 {
-    font-size: 2.5rem;
-    color: #2c3e50;
-    margin-bottom: 30px;
-    text-align: center;
-    font-weight: 600;
 }
 
 .cards-container {
@@ -29,8 +20,6 @@
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    display: flex;
-    flex-direction: column;
 }
 
 .destination-card:hover {
@@ -47,24 +36,20 @@
 
 .card-content {
     padding: 20px;
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
 }
 
 .card-title {
     font-size: 1.5rem;
     color: #333;
-    margin: 0 0 15px 0;
+    margin: 0 0 10px 0;
     font-weight: 600;
 }
 
 .card-description {
     color: #666;
     font-size: 0.95rem;
-    line-height: 1.6;
+    line-height: 1.5;
     margin-bottom: 20px;
-    flex-grow: 1;
 }
 
 .card-footer {
@@ -75,7 +60,6 @@
     border-top: 1px solid #eee;
     color: #888;
     font-size: 0.9rem;
-    margin-top: auto;
 }
 
 .card-stats {
@@ -106,29 +90,11 @@
     fill: #ff4d4f;
 }
 
-
-
 /* Responsive adjustments */
 @media (max-width: 768px) {
-    .YAf4Ti{
-        height: 140px !important;
-    }
-    #comp-m2optkfl {
-        width: 94.6987951807229%;
-        justify-self: start;
-        margin-left: max(0.5px, 0.0289157 * (var(--scaling-factor) - var(--scrollbar-width)));
-        margin-right: 0;
-        margin-top: 27.68862951807229%;
-    }
     .cards-container {
         grid-template-columns: 1fr;
         max-width: 500px;
-        margin: 0 auto;
-    }
-    .cards-section {
-        padding: 20px 20px;
-        background-color: none; /* Light beige background */
-        font-family: 'Arial', sans-serif;
     }
     
     .card-image {
@@ -136,7 +102,4 @@
     }
 }
 
-/* Add some spacing between sections */
-.section-spacing {
-    margin: 60px 0;
-}
+/* Add to your main stylesheet or include this file in your layout */

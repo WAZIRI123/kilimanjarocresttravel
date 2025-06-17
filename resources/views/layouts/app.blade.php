@@ -15,7 +15,6 @@
     <script src="{{ asset('js/gallery-slider.js') }}"></script>
     <script src="{{ asset('js/remove-wix-error.js') }}"></script>
     <script src="{{ asset('js/sticky-header.js') }}"></script>
-
     @include('partials.imagejs')
     @include('partials.main-css')
     

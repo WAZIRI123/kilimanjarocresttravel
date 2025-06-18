@@ -16,7 +16,40 @@
 
    <!-- Safari Packages Section -->
     <div class="section-spacing">
-        @include('partials.explore-page.packages')
+        <div id="bgLayers_comp-m1luvo7h" data-hook="bgLayers" data-motion-part="BG_LAYER comp-m1luvo7h" class="MW5IWV"><div data-testid="colorUnderlay" class="LWbAav Kv1aVt"></div><div id="bgMedia_comp-m1luvo7h" data-motion-part="BG_MEDIA comp-m1luvo7h" class="VgO9Yg"></div></div>
+        @include('partials.packages.related-packages', [
+            'title' => 'Our Packages',
+            'customTitle' => 'Custom Package',
+            'viewAllLink' => '#',
+            'packages' => [
+                [
+                    'title' => '6 Days | Kilimanjaro Trekking',
+                    'url' => '#',
+                    'image' => 'https://images.unsplash.com/photo-1523805009345-7448845a9e53?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1472&q=80',
+                    'description' => "Many hikers believe that the Marangu route is the easiest route to Uhuru peak, since it is the only route which can be hiked in 5 days (making it the cheapest option)",
+                    'views' => '1.5k',
+                    'likes' => '42'
+                ],
+                [
+                    'title' => 'Kilimanjaro Trekking',
+                    'url' => '#',
+                    'image' => 'https://images.unsplash.com/photo-1501785888041-af3ef285b470?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80',
+                    'duration' => '7 Days',
+                    'description' => "Conquer Africa's highest peak through the scenic Machame route. Our experienced guides ensure a safe and memorable climbing experience.",
+                    'views' => '1.2k',
+                    'likes' => '36'
+                ],
+                [
+                    'title' => 'Zanzibar Beach Retreat',
+                    'url' => '#',
+                    'image' => 'https://images.unsplash.com/photo-1539367628448-4bc5c9d171c8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80',
+                    'duration' => '5 Days',
+                    'description' => "Unwind on Zanzibar's pristine white sand beaches. Explore the rich culture and crystal-clear waters of this tropical paradise.",
+                    'views' => '2.1k',
+                    'likes' => '64'
+                ]
+            ]
+        ])
     </div>
 @endsection
 
@@ -87,6 +120,39 @@
 
 @push('styles')
     <!-- Additional page-specific styles -->
+    <style>
+        .P0dCOY .PJ4KCX {
+    background-color: rgba(255, 255, 255, 1);
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+        .section-spacing {
+            width: 100%;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+            box-sizing: border-box;
+        }
+        @media (max-width: 768px){
+            .section-spacing {
+                padding: 0 0rem;
+            }
+        }
+        @media (min-width: 768px) {
+            .section-spacing {
+                padding: 0 2rem;
+            }
+        }
+        @media (min-width: 1200px) {
+            .section-spacing {
+                padding: 0 4rem;
+            }
+        }
+    </style>
 @endpush
 
 @push('scripts')

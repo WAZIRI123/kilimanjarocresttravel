@@ -18,7 +18,8 @@
    <div class="safari-package">
     <div id="bgLayers_comp-m1luvo7h" data-hook="bgLayers" data-motion-part="BG_LAYER comp-m1luvo7h" class="MW5IWV"><div data-testid="colorUnderlay" class="LWbAav Kv1aVt"></div><div id="bgMedia_comp-m1luvo7h" data-motion-part="BG_MEDIA comp-m1luvo7h" class="VgO9Yg"></div></div>
        <div class="package-header">
-           <h2 class="package-title">8 Days | Classic Luxury Tanzania Signature Safari</h2>
+           <h2 class="package-title">
+            6 Days | Kilimanjaro Trekking</h2>
        </div>
        <div class="package-image">
            <img src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80" 
@@ -30,9 +31,12 @@
            <!-- Your package content will go here -->
            <div class="content-section">
                <h3>Overview</h3>
-               <p>Experience the ultimate luxury safari in Tanzania's most famous national parks. This 8-day adventure takes you through the heart of the African wilderness.</p>
+               <p>Also known as the “Coca Cola route” the Marangu route is one of the most popular routes leading to the summit of Mount Kilimanjaro. Many hikers believe that the Marangu route is the easiest route to Uhuru peak, since it is the only route which can be hiked in 5 days (making it the cheapest option). However, we strongly recommend hiking the route over 6 days to increase your chances of reaching the summit successfully. Note that this is the only route that provides communal sleeping huts, equipped with beds and mattresses at every overnight site. Some basic goods such as mineral water, beer and chocolates are also sold at most sites. The Marangu route takes the same route for both ascend and descend.</p>
+
+               <h3>Best Time to Visit</h3>
+               <p>Dec-Mid-March / Mid-June-October.</p>
            </div>
-           <div class="content-section">
+           {{-- <div class="content-section">
                <h3>Trip Highlights</h3>
                <ul class="trip-highlights">
                    <li>Game drives in Serengeti National Park</li>
@@ -42,61 +46,76 @@
                    <li>Expert local guides and private safari vehicles</li>
                    <li>Sunset game viewing experiences</li>
                </ul>
-           </div>
+           </div> --}}
            <div class="content-section">
                <h3>Trip Price</h3>
                <p>Starts at $ 8,900 Per Person.</p>
            </div>
 
            <div class="content-section">
-               <h3>Itinerary</h3>
+               <h3 style="text-align:center">Day 1 - Airport pick-up- Drop off at hotel</h3>
                <div class="itinerary-card">
                    <div class="itinerary-day">
-                       <div class="itinerary-header">
-                           <h4>Day 1: Arrival in Arusha</h4>
-                       </div>
                        <div class="itinerary-content">
                            <div class="itinerary-image">
                                <img src="https://images.unsplash.com/photo-1605000797499-95a51c5269ae?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Luxury Lodge in Arusha">
                            </div>
                            <div class="itinerary-text">
-                               <p>Arrive at Kilimanjaro International Airport, transfer to your luxury lodge. Evening at leisure to relax and prepare for your safari adventure.</p>
+                               <p>You will be picked up by the staff of Stan Safaris from Kilimanjaro International Airport (JRO) and driven to your accommodation in Moshi. Participants will be given a short briefing for the climb the next day. Kits and the necessary equipment will be checked as well.</p>
                            </div>
                        </div>
                    </div>
                    
                    <div class="itinerary-day">
-                       <div class="itinerary-header">
-                           <h4>Day 2: Tarangire National Park</h4>
-                       </div>
+                    <h3 style="text-align:center">Day 2 - Marangu Gate (1860m) – Mandara hut (2715m)</h3>
                        <div class="itinerary-content">
+                           @include('partials.itinerary.meta-pills', [
+                               'items' => [
+                                   ['label' => 'Hiking Time', 'value' => '5hrs'],
+                                   ['label' => 'Distance', 'value' => '8.1 km'],
+                                   ['label' => 'Habitat', 'value' => 'Montane Forest']
+                               ]
+                           ])
                            <div class="itinerary-image">
                                <img src="https://images.unsplash.com/photo-1585405278873-1f3f88147a7a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Tarangire Elephants">
                            </div>
                            <div class="itinerary-text">
-                               <p>Morning game drive in Tarangire, known for its large elephant herds and baobab trees. Afternoon game viewing and overnight at luxury camp.</p>
+                               <p>The drive from Moshi to the Kilimanjaro National Park gate takes about 50 minutes. The journey passes through the village of Marangu, which is located on the lower slopes of the mountain. Once you reach the park gate, all hikers are requested to sign in at the Park office and make their final preparations for the climb. Porters will be seen arranging and loading their packs, containing the food, water, cooking gas as well as most of your equipment.  </p>
+                           </div>
+                               <div class="itinerary-text">
+                                <p>
+                                From the park gate, we ascend on a cleared ridge trail through the rain forest where you will see most of Kilimanjaro’s animals. An alternative and more scenic parallel forest trail branches off to the left a few minutes after the gate. This trail follows the edge of a stream through the undergrowth and offers you the option to rejoin the main trail either after 1.5 hours hiking, or 1 hour before Mandara hut where you will spend the night.
+                                Mandara hut consists of a group of wooden A-framed huts in a forest clearing. Each hut features 6-8 sleeping bunks with solar generated lighting. The total capacity of the camp is 60 climbers. Water is piped into the camp from springs above and there are flush toilets behind the main hut.
+                                </p>
                            </div>
                        </div>
                    </div>
                    
                    <div class="itinerary-day">
-                       <div class="itinerary-header">
-                           <h4>Day 3-4: Serengeti National Park</h4>
-                       </div>
+                    <h3 style="text-align:center">Day 3 - Mandara hut (2715m) – Horombo hut (3705m)</h3>
                        <div class="itinerary-content">
+                        @include('partials.itinerary.meta-pills', [
+                            'items' => [
+                                ['label' => 'Hiking Time', 'value' => '6hrs'],
+                                ['label' => 'Distance', 'value' => 'Approximately 11.6 km'],
+                                ['label' => 'Habitat', 'value' => 'Moorland']
+                            ]
+                        ])
                            <div class="itinerary-image">
                                <img src="https://images.unsplash.com/photo-1516426122078-c23e76319893?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Serengeti Landscape">
                            </div>
                            <div class="itinerary-text">
-                               <p>Two full days of game drives in the world-famous Serengeti. Witness the Great Migration (seasonal) and spot the Big Five.</p>
+                               <p>From Mandara hut, the trail passes through a short stretch of forest, skirts the base of the Maundi Crater and then emerges into a transition from rain forest to moorland. It is well worth a short detour to scramble up the rim of the Maundi Crater for your first impressive view of the Kibo Crater. On a clear day, Kibo will glimmer in the distance, with sightings of majestic glaciers in the morning sun.</p>
                            </div>
+
+                           <div class="itinerary-text">
+                            <p>Once you are in the open moorland, you will get the chance to see some of Kilimanjaro’s most spectacular plants – the endemic giant lobelia which grows up to 3 m in height and the giant groundsel (Senecia Kilimanjari), which can reach heights of 5m. After about 6 hours trek from here, you reach the Horombo hut for your accommodation.</p>
+                        </div>
                        </div>
                    </div>
                    
                    <div class="itinerary-day">
-                       <div class="itinerary-header">
-                           <h4>Day 5: Ngorongoro Crater</h4>
-                       </div>
+                    <h3 style="text-align:center">Day 4 - Horombo hut (3705m) – Acclimatization Day</h3>
                        <div class="itinerary-content">
                            <div class="itinerary-image">
                                <img src="https://images.unsplash.com/photo-1605000797499-95a51c5269ae?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Ngorongoro Crater">
@@ -104,27 +123,71 @@
                            
 
                         <div class="itinerary-text">
-                            <p>The charming town of Arusha rests underneath the mighty gaze of Mount Meru and is an ideal base to explore Tanzania Northern Safari Circuit. It's hard to think of another place in the world that is in close vicinity to such a variety of national parks and game reserves!</p>
+                            <p>Horombo hut is a village of huts perched on a small plateau, with buildings similar to Mandara with a capacity of 120 climbers! Horombo is normally bustling with hikers, guides and porters, with an atmosphere of adventure and excitement. 
+                            </p>
                         </div>
                         <div class="itinerary-text">
-                            <p>Arrive in Arusha and transfer to your lodge, situated on a working coffee plantation. Your private chalet near Mount Meru features a log fireplace and a balcony. Arusha in Africa is your gateway to Tanzania's treasure store.</p>
-                        </div>
-                        <div class="itinerary-text">
-                            <p>Descend into the Ngorongoro Crater for a full day of wildlife viewing in this natural wonder. Picnic lunch by the hippo pool.</p>
+                            <p>
+                            You will meet both ascending and descending hikers here. This extra day and night at Horombo are for additional acclimatization. A hike towards the Mawenzi hut, passing the Zebra Rocks on the way (about 3 hours up and 1,5 hours down) is strongly recommended.</p>
                         </div>
                        </div>
                    </div>
                    
                    <div class="itinerary-day">
-                       <div class="itinerary-header">
-                           <h4>Day 6: Lake Manyara & Departure</h4>
-                       </div>
+                       <h3 style="text-align:center">Day 5 - Horombo hut (3705m) – Kibo hut (4730m)</h3>
                        <div class="itinerary-content">
-                           <div class="itinerary-image">
-                               <img src="https://images.unsplash.com/photo-1585405278873-1f3f88147a7a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Lake Manyara">
+                           @include('partials.itinerary.meta-pills', [
+                               'items' => [
+                                   ['label' => 'Hiking Time', 'value' => '6 hours'],
+                                   ['label' => 'Distance', 'value' => 'Approximately 9.6 km'],
+                                   ['label' => 'Habitat', 'value' => 'Alpine desert']
+                               ]
+                           ])
+                           <div class="itinerary-text">
+                               <p>After breakfast, we continue our ascent into the Alpine desert habitat. From Horombo, there are two trails to the "Saddle" (which refers to the area located between the peaks of Mawenzi and Kibo). There is an upper route (right hand fork) and lower route (left hand fork) to choose from. The upper route should be very familiar, as you will have climbed most of it the previous day towards Mawenzi hut. This section is very stony and eroded.</p>
                            </div>
                            <div class="itinerary-text">
-                               <p>Morning game drive in Lake Manyara National Park, known for its tree-climbing lions. Afternoon transfer to Arusha for departure.</p>
+                               <p>The recommended lower route (left hand fork) is much easier and nearly an hour shorter, and it also passes the last watering point at 4130m. You will have to fill your water bottles with all the water you will need until your return to Horombo hut in two night's time (unless you are willing to buy Mineral water at Kibo hut).</p>
+                           </div>
+                           <div class="itinerary-image">
+                               <img src="https://images.unsplash.com/photo-1585405278873-1f3f88147a7a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Alpine desert on Kilimanjaro">
+                           </div>
+                           <div class="itinerary-text">
+                               <p>Situated in the barren Alpine desert is Kibo hut, a stone build block house which has bunk beds for 60 climbers, but no streams with water nearby. It is however possible to buy mineral water and soft drinks at the camp office. There are platform toilets behind the hut.</p>
+                           </div>
+                           <div class="itinerary-text">
+                               <p>The summit is now a further 1195m up and you will make your final ascent the same night. Prepare your equipment, ski-stick and thermal clothing for your summit bid. This should include the replacement of your headlamp and camera batteries and make sure you have a spare set available as well. To prevent freezing, it will be wise to carry your water in a thermal flask.</p>
+                           </div>
+                       </div>
+                   </div>
+                   
+                   <div class="itinerary-day">
+                       <h3 style="text-align:center">Day 6 - Kibo hut (4730m) – Uhuru Peak (5895m) – Horombo hut (3705m)</h3>
+                       <div class="itinerary-content">
+                           <div class="itinerary-text">
+                               <p>You will rise around 23h30, and after some tea and biscuits you shuffle off into the night, and this is where the going really gets tough. The first section of the trail consists of a rocky path to the Hans Meyer Cave (5150m), also a good resting spot. The path then zigzags up to Gillman's point (5 681m), which is located on the crater rim. This section is very steep with a lot of stone scree, requiring a great physical and mental effort. This is probably the most demanding section of the entire route. Do the Kili shuffle and move slowly.</p>
+                           </div>
+                           <div class="itinerary-image">
+                            <img src="https://images.unsplash.com/photo-1585405278873-1f3f88147a7a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Alpine desert on Kilimanjaro">
+                        </div>
+                           <div class="itinerary-text">
+                               <p>From Gillmans Point you will normally encounter snow all the way up to Uhuru peak (5895m), the highest point in Africa. Total walking time will be around 8 hours to reach Uhuru peak, where you will be able to see the most glorious sunrise you are ever likely to witness. Weather conditions on the summit will determine how long you will be able to spend, taking photographs before the 3 hour descent back to Kibo hut.</p>
+                           </div>
+                           
+                           <div class="itinerary-text">
+                               <p>After a short rest you gather all your gear for the ascent and head down to Horombo hut (3 hours) for your overnight. The return to Horombo hut will seem surprisingly fast compared to the ascent. The total time spent walking on this day is around 14 hours, so prepare for this.</p>
+                           </div>
+                       </div>
+                   </div>
+                   
+                   <div class="itinerary-day">
+                       <h3 style="text-align:center">Day 7 - Horombo hut (3705m) – Marangu Gate (1860m)</h3>
+                       <div class="itinerary-content">
+                           <div class="itinerary-text">
+                               <p>After breakfast you continue your descent (6 hours), passing the Mandara hut, down to the Marangu gate. At Marangu gate you sign your name and details in a register. To make your achievement official, you will receive a summit certificate. If you reached Gillman's Point (5685m) you will be presented with a green certificate and if you reached Uhuru Peak (5895m), you will have earned yourself a gold certificate.</p>
+                           </div>
+                           <div class="itinerary-text">
+                               <p>From the Marangu gate, a vehicle will meet you at Marangu village to drive you back to your hotel in Moshi/Arusha. Don't forget to tip your guides and porters. It is time for celebration!</p>
                            </div>
                        </div>
                    </div>
@@ -134,11 +197,207 @@
            <div class="button-container" style="display: flex; justify-content: center; margin: 2rem 0 4rem 0; width: 100%;">
                <a href="#" class="book-tour-btn" style="display: inline-block; background-color: #4d4402; color: white; padding: 1rem 2.5rem; text-decoration: none; border-radius: 4px; font-weight: 500; text-align: center; width: 100%; max-width: 280px;">Book This Tour</a>
            </div>
+           
+           <!-- Inclusions & Exclusions Section -->
+           <div class="content-section" style="margin: 4rem 0; padding: 0;">
+               <h3 style="text-align: center; margin-bottom: 2.5rem; font-size: 1.75rem; color: #333; font-weight: 600; line-height: 1.3;">What's Included & Excluded</h3>
+               
+               <div style="display: flex; flex-wrap: wrap; gap: 2.5rem; justify-content: space-between;">
+                   <!-- Inclusions -->
+                   <div class="inclusion-card" style="flex: 1; min-width: 300px; border: 1px solid #e0e0e0; border-radius: 8px; padding: 2rem; background: transparent;">
+                       <h4 style="color: #4d4402; font-size: 1.25rem; margin: 0 0 1.5rem 0; padding-bottom: 0.75rem; border-bottom: 1px solid #f0e6d2; font-weight: 600; line-height: 1.4;">Inclusions</h4>
+                       <ul style="list-style: none; padding: 0; margin: 0;">
+                           <li style="padding: 0.5rem 0; display: flex; align-items: flex-start;">
+                               <span style="color: #4d4402; margin-right: 0.75rem;">•</span>
+                               <span>Park fees</span>
+                           </li>
+                           <li style="padding: 0.5rem 0; display: flex; align-items: flex-start;">
+                               <span style="color: #4d4402; margin-right: 0.75rem;">•</span>
+                               <span>All activities (unless labeled as optional)</span>
+                           </li>
+                           <li style="padding: 0.5rem 0; display: flex; align-items: flex-start;">
+                               <span style="color: #4d4402; margin-right: 0.75rem;">•</span>
+                               <span>All accommodation as stated in the itinerary</span>
+                           </li>
+                           <li style="padding: 0.5rem 0; display: flex; align-items: flex-start;">
+                               <span style="color: #4d4402; margin-right: 0.75rem;">•</span>
+                               <span>A professional driver/guide</span>
+                           </li>
+                           <li style="padding: 0.5rem 0; display: flex; align-items: flex-start;">
+                               <span style="color: #4d4402; margin-right: 0.75rem;">•</span>
+                               <span>All transportation (unless labeled as optional)</span>
+                           </li>
+                           <li style="padding: 0.5rem 0; display: flex; align-items: flex-start;">
+                               <span style="color: #4d4402; margin-right: 0.75rem;">•</span>
+                               <span>All Taxes/VAT</span>
+                           </li>
+                           <li style="padding: 0.5rem 0; display: flex; align-items: flex-start;">
+                               <span style="color: #4d4402; margin-right: 0.75rem;">•</span>
+                               <span>Roundtrip airport transfer</span>
+                           </li>
+                           <li style="padding: 0.5rem 0; display: flex; align-items: flex-start;">
+                               <span style="color: #4d4402; margin-right: 0.75rem;">•</span>
+                               <span>All Meals (as specified in the day-by-day section)</span>
+                           </li>
+                           <li style="padding: 0.5rem 0; display: flex; align-items: flex-start;">
+                               <span style="color: #4d4402; margin-right: 0.75rem;">•</span>
+                               <span>Drinking water on all days</span>
+                           </li>
+                           <li style="padding: 0.5rem 0; display: flex; align-items: flex-start;">
+                               <span style="color: #4d4402; margin-right: 0.75rem;">•</span>
+                               <span>Camping Equipment</span>
+                           </li>
+                           <li style="padding: 0.5rem 0; display: flex; align-items: flex-start;">
+                               <span style="color: #4d4402; margin-right: 0.75rem;">•</span>
+                               <span>Porterage</span>
+                           </li>
+                       </ul>
+                   </div>
+                   
+                   <!-- Exclusions -->
+                   <div class="exclusion-card" style="flex: 1; min-width: 300px; border: 1px solid #e0e0e0; border-radius: 8px; padding: 2rem; background: transparent;">
+                       <h4 style="color: #4d4402; font-size: 1.25rem; margin: 0 0 1.5rem 0; padding-bottom: 0.75rem; border-bottom: 1px solid #f0e6d2; font-weight: 600; line-height: 1.4;">Exclusions</h4>
+                       <ul style="list-style: none; padding: 0; margin: 0;">
+                           <li style="padding: 0.5rem 0; display: flex; align-items: flex-start;">
+                               <span style="color: #4d4402; margin-right: 0.75rem;">•</span>
+                               <span>International flights (from/to home)</span>
+                           </li>
+                           <li style="padding: 0.5rem 0; display: flex; align-items: flex-start;">
+                               <span style="color: #4d4402; margin-right: 0.75rem;">•</span>
+                               <span>Additional accommodation before and at the end of the tour</span>
+                           </li>
+                           <li style="padding: 0.5rem 0; display: flex; align-items: flex-start;">
+                               <span style="color: #4d4402; margin-right: 0.75rem;">•</span>
+                               <span>Tips (tipping guideline US$20.00 pp per day)</span>
+                           </li>
+                           <li style="padding: 0.5rem 0; display: flex; align-items: flex-start;">
+                               <span style="color: #4d4402; margin-right: 0.75rem;">•</span>
+                               <span>Personal items (souvenirs, travel insurance, visa fees, etc.)</span>
+                           </li>
+                           <li style="padding: 0.5rem 0; display: flex; align-items: flex-start;">
+                               <span style="color: #4d4402; margin-right: 0.75rem;">•</span>
+                               <span>Government imposed increase of taxes and/or park fees</span>
+                           </li>
+                           <li style="padding: 0.5rem 0; display: flex; align-items: flex-start;">
+                               <span style="color: #4d4402; margin-right: 0.75rem;">•</span>
+                               <span>Alcoholic drinks</span>
+                           </li>
+                           <li style="padding: 0.5rem 0; display: flex; align-items: flex-start;">
+                               <span style="color: #4d4402; margin-right: 0.75rem;">•</span>
+                               <span>Rescue Fee</span>
+                           </li>
+                           <li style="padding: 0.5rem 0; display: flex; align-items: flex-start;">
+                               <span style="color: #4d4402; margin-right: 0.75rem;">•</span>
+                               <span>Climbing Gear</span>
+                           </li>
+                           <li style="padding: 0.5rem 0; display: flex; align-items: flex-start;">
+                               <span style="color: #4d4402; margin-right: 0.75rem;">•</span>
+                               <span>Sleeping Bag</span>
+                           </li>
+                       </ul>
+                   </div>
+               </div>
+           </div>
        </div>
    </div>
    
    @push('styles')
    <style>
+       /* Style for list items in Inclusions/Exclusions section */
+       .inclusion-card ul,
+       .exclusion-card ul {
+           font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+           color: #333;
+           line-height: 1.6;
+           font-size: 1rem;
+       }
+       
+       .inclusion-card li,
+       .exclusion-card li {
+           padding: 0;
+           display: flex;
+           align-items: flex-start;
+       }
+       
+       @media (max-width: 767px) {
+           .inclusion-card,
+           .exclusion-card {
+               padding: 1.5rem;
+               box-sizing: border-box;
+               width: 100%;
+           }
+           
+           .inclusion-card ul,
+           .exclusion-card ul {
+               width: 100%;
+               margin: 0;
+               padding: 0 0 0 1rem;
+           }
+           
+           .inclusion-card li,
+           .exclusion-card li {
+               justify-content: flex-start;
+               text-align: left;
+               padding: 0.25rem 0;
+               position: relative;
+               padding-left: 1.5rem;
+           }
+           
+           .inclusion-card li::before,
+           .exclusion-card li::before {
+               content: '';
+               color: #4d4402;
+               font-size: 1.5em;
+               position: absolute;
+               left: 0;
+               line-height: 1;
+           }
+           
+           .inclusion-card li span:first-child,
+           .exclusion-card li span:first-child {
+               display: none; /* Hide the original bullet span */
+           }
+       }
+       
+       .inclusion-card li span:first-child,
+       .exclusion-card li span:first-child {
+           color: #4d4402;
+           margin-right: 0.75rem;
+           font-size: 1.2em;
+           line-height: 1.4;
+           vertical-align: middle;
+       }
+       
+       /* Meta Pills Styles */
+       .itinerary-meta {
+           display: flex;
+           flex-wrap: wrap;
+           justify-content: center;
+           gap: 0.5rem;
+           margin: 0 auto 1.5rem;
+           width: 100%;
+           max-width: 800px;
+       }
+       
+       .itinerary-meta > div {
+           background: white;
+           border-radius: 20px;
+           padding: 0.5rem 1rem;
+           display: inline-flex;
+           align-items: center;
+           font-size: 0.9rem;
+           white-space: nowrap;
+           box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+       }
+       
+       .itinerary-meta span:first-child {
+           color: #333;
+           margin-right: 0.5rem;
+       }
+       
+       .itinerary-meta span:last-child {
+           font-weight: 500;
+       }
     
        .safari-package {
            width: 90%;
@@ -235,6 +494,19 @@
        .content-section:last-child {
            margin-bottom: 0;
        }
+        
+        /* Itinerary day styling with muted borders */
+        .itinerary-day {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+            padding-bottom: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .itinerary-day:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
        
        .content-section h3 {
            color: #2c3e50;
@@ -272,10 +544,10 @@
        }
        
        .content-section p {
-           color: #4a5568;
+           color: #333;
            line-height: 1.7;
            margin: 0 0 1rem 0;
-           font-size: clamp(0.95rem, 3vw, 1.1rem);
+           font-size: clamp(1rem, 3vw, 1.1rem);
        }
        
        /* Itinerary Card Styles */
@@ -315,12 +587,12 @@
        .itinerary-header {
            width: 100%;
            max-width: 800px;
-           margin: 0 auto 0.75rem;
+           margin: 0.5rem 0;
            padding: 0 0px;
        }
        
        .itinerary-header h4 {
-           color: #2d3748;
+           color: #333;
            font-size: 1.1rem;
            margin: 0;
            font-weight: 600;
@@ -328,15 +600,17 @@
        
        .itinerary-content {
            padding: 0;
+           width:70%;
+           margin: 0 auto;
            overflow: hidden; /* Clearfix for floated elements */
            position: relative;
        }
        
        /* Base image styles */
        .itinerary-image {
-           width: 60%;
+           width: 40%;
            max-width: 100%;
-           margin: 1rem 1.5rem 1rem 0;
+           margin: 0rem 1.5rem 0rem 0;
            overflow: hidden;
            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
            position: relative;
@@ -376,8 +650,8 @@
 
        
        .itinerary-text p {
-           color: #4a5568;
-           font-size: 0.95rem;
+           color: #333;
+           font-size: 17px;
            line-height: 1.6;
            margin: 0;
        }
@@ -466,7 +740,8 @@
            }
            
            .itinerary-content {
-               padding: 1.25rem;
+               width:100%;
+               padding: 1.25rem 0;
            }
            
            .itinerary-image {
@@ -478,7 +753,7 @@
            }
            
            .itinerary-text p {
-               font-size: 0.9rem;
+               font-size: 17px;
            }
        }
        
@@ -492,6 +767,9 @@
            .safari-package {
                width: 80%;
            }
+          .itinerary-header {
+           text-align:center;
+          }
            .related-packages{
             width:80%;
            }
@@ -500,145 +778,41 @@
    @endpush
    
    <!-- Related Packages Section -->
-   <div class="related-packages" style="padding: 3rem 0; margin: 0 auto;">
-       <div style="width: 100%; display: flex; justify-content: center;">
-           <div style="width: 100%; max-width: 100%; padding: 0 15px;">
-                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem; padding: 0 15px;">
-                    <h2 style="font-size: clamp(1.25rem, 6vw, 1.75rem); color: #333; font-weight: 600; margin: 0;">You May Also Like</h2>
-                    <a href="#" style="color: #4d4402; text-decoration: none; font-weight: 500; font-size: clamp(0.875rem, 4vw, 1rem); display: flex; align-items: center;">
-                        View All <i class="fas fa-arrow-right" style="margin-left: 0.5rem; font-size: 0.8em;"></i>
-                    </a>
-                </div>
-            
-           <div class="package-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; justify-items: center; position: relative; z-index: 10;">
-               <!-- Package 1 -->
-               <a href="#" class="package-card" style="display: block; text-decoration: none; color: inherit; background-color: #f5f2ed; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.1); max-width: 100%; width: 100%;">
-                   <div style="height: 200px; overflow: hidden;">
-                       <img src="https://images.unsplash.com/photo-1523805009345-7448845a9e53?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1472&q=80" 
-                            alt="Serengeti Safari" 
-                            style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
-                   </div>
-                   <div style="padding: 1.5rem;">
-                       <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
-                           <h3 style="font-size: 1.25rem; color: #222; margin: 0;">Serengeti Migration Safari</h3>
-                           <span style="background-color: #4d4402e0; color: white; padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.9rem;">6Days</span>
-                       </div>
-                       <p style="color: #666; font-size: 0.95rem; line-height: 1.5; margin: 0.75rem 0;">
-                           Experience the breathtaking wildebeest migration across the vast Serengeti plains. Witness nature's greatest spectacle with expert guides.
-                       </p>
-                       <div style="border-top: 1px solid #e0e0e0; margin: 1rem 0; padding-top: 0.75rem; display: flex; justify-content: space-between; align-items: center; font-size: 0.9rem; color: #666;">
-                           <span><i class="far fa-eye" style="margin-right: 0.25rem;"></i> 1.5k</span>
-                           <span><i class="far fa-heart" style="margin-right: 0.25rem;"></i> 42</span>
-                       </div>
-                   </div>
-               </a>
-               
-               <!-- Package 2 -->
-               <a href="#" class="package-card" style="display: block; text-decoration: none; color: inherit; background-color: #f5f2ed; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.1); max-width: 100%; width: 100%;">
-                   <div style="height: 200px; overflow: hidden;">
-                       <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
-                            alt="Kilimanjaro Climb" 
-                            style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
-                   </div>
-                   <div style="padding: 1.5rem;">
-                       <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
-                           <h3 style="font-size: 1.25rem; color: #222; margin: 0;">Kilimanjaro Trekking</h3>
-                           <span style="background-color: #4d4402e0; color: white; padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.9rem;">7Days</span>
-                       </div>
-                       <p style="color: #666; font-size: 0.95rem; line-height: 1.5; margin: 0.75rem 0;">
-                           Conquer Africa's highest peak through the scenic Machame route. Our experienced guides ensure a safe and memorable climbing experience.
-                       </p>
-                       <div style="border-top: 1px solid #e0e0e0; margin: 1rem 0; padding-top: 0.75rem; display: flex; justify-content: space-between; align-items: center; font-size: 0.9rem; color: #666;">
-                           <span><i class="far fa-eye" style="margin-right: 0.25rem;"></i> 1.2k</span>
-                           <span><i class="far fa-heart" style="margin-right: 0.25rem;"></i> 36</span>
-                       </div>
-                   </div>
-               </a>
-               
-               <!-- Package 3 -->
-               <a href="#" class="package-card" style="display: block; text-decoration: none; color: inherit; background-color: #f5f2ed; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.1); max-width: 100%; width: 100%;">
-                   <div style="height: 200px; overflow: hidden;">
-                       <img src="https://images.unsplash.com/photo-1539367628448-4bc5c9d171c8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
-                            alt="Zanzibar Beach" 
-                            style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
-                   </div>
-                   <div style="padding: 1.5rem;">
-                       <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
-                           <h3 style="font-size: 1.25rem; color: #222; margin: 0;">Zanzibar Beach Retreat</h3>
-                           <span style="background-color: #4d4402e0; color: white; padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.9rem;">5Days</span>
-                       </div>
-                       <p style="color: #666; font-size: 0.95rem; line-height: 1.5; margin: 0.75rem 0;">
-                           Unwind on Zanzibar's pristine white sand beaches. Explore the rich culture and crystal-clear waters of this tropical paradise.
-                       </p>
-                       <div style="border-top: 1px solid #e0e0e0; margin: 1rem 0; padding-top: 0.75rem; display: flex; justify-content: space-between; align-items: center; font-size: 0.9rem; color: #666;">
-                           <span><i class="far fa-eye" style="margin-right: 0.25rem;"></i> 2.1k</span>
-                           <span><i class="far fa-heart" style="margin-right: 0.25rem;"></i> 64</span>
-                       </div>
-                   </div>
-               </a>
-           </div>
-       </div>
-   </div>
+   @include('partials.packages.related-packages', [
+       'title' => 'You May Also Like',
+       'viewAllLink' => '#',
+       'packages' => [
+           [
+               'title' => 'Serengeti Migration Safari',
+               'url' => '#',
+               'image' => 'https://images.unsplash.com/photo-1523805009345-7448845a9e53?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1472&q=80',
+               'duration' => '6 Days',
+               'description' => "Experience the breathtaking wildebeest migration across the vast Serengeti plains. Witness nature's greatest spectacle with expert guides.",
+               'views' => '1.5k',
+               'likes' => '42'
+           ],
+           [
+               'title' => 'Kilimanjaro Trekking',
+               'url' => '#',
+               'image' => 'https://images.unsplash.com/photo-1501785888041-af3ef285b470?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80',
+               'duration' => '7 Days',
+               'description' => "Conquer Africa's highest peak through the scenic Machame route. Our experienced guides ensure a safe and memorable climbing experience.",
+               'views' => '1.2k',
+               'likes' => '36'
+           ],
+           [
+               'title' => 'Zanzibar Beach Retreat',
+               'url' => '#',
+               'image' => 'https://images.unsplash.com/photo-1539367628448-4bc5c9d171c8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80',
+               'duration' => '5 Days',
+               'description' => "Unwind on Zanzibar's pristine white sand beaches. Explore the rich culture and crystal-clear waters of this tropical paradise.",
+               'views' => '2.1k',
+               'likes' => '64'
+           ]
+       ]
+   ])
    
-   <style>
-       /* Responsive adjustments */
-       @media (max-width: 1024px) {
-           .related-packages > div {
-               width: 100% !important;
-               max-width: 100% !important;
-               padding: 0 0px;
-           }
-       }
-       
-       @media (max-width: 768px) {
-            .package-grid {
-                grid-template-columns: minmax(280px, 400px) !important;
-                justify-content: center !important;
-                gap: 1.5rem !important;
-                padding: 0 15px;
-            }
-           
-           .related-packages {
-               padding: 2rem 0 !important;
-           }
-       }
-       
-       /* Match main content width */
-       @media (min-width: 1024px) {
-           .related-packages > div > div {
-               width: 100%;
-               max-width: 1200px;
-               margin: 0 auto;
-           }
-       }
-       
-       /* Hover effects */
-       .package-card {
-           transition: transform 0.3s ease, box-shadow 0.3s ease;
-       }
-       
-       .package-card:hover {
-           transform: translateY(-5px);
-           box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
-       }
-       
-       .package-card-link {
-           color: inherit;
-           text-decoration: none;
-           display: block;
-           height: 100%;
-       }
-       
-       .package-card {
-           height: 100%;
-           transition: transform 0.3s ease, box-shadow 0.3s ease;
-       }
-       
-       .package-card-link:hover .package-card {
-           transform: translateY(-5px);
-           box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
-       }
-   </style>
+   <!-- Related Packages styles are now in the partial -->
 @endsection
 
 @push('styles')

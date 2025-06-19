@@ -10,8 +10,8 @@
     <!-- Hero Section -->
     @include('partials.sections.page-hero', [
         'image'=>'https://static.wixstatic.com/media/851897_9587828f79e74b21a175b075af31661e~mv2.jpg',
-        'title' => 'Explore Our Destinations',
-        'subtitle' => 'Discover the most breathtaking safari experiences in Africa'
+        'title' => $package->title ?? 'Explore Our Destinations',
+        'subtitle' => $package->short_description ?? 'Discover the most breathtaking safari experiences in Africa'
     ])
 
    <!-- Safari Packages Section -->
@@ -19,22 +19,19 @@
     <div id="bgLayers_comp-m1luvo7h" data-hook="bgLayers" data-motion-part="BG_LAYER comp-m1luvo7h" class="MW5IWV"><div data-testid="colorUnderlay" class="LWbAav Kv1aVt"></div><div id="bgMedia_comp-m1luvo7h" data-motion-part="BG_MEDIA comp-m1luvo7h" class="VgO9Yg"></div></div>
        <div class="package-header">
            <h2 class="package-title">
-            6 Days | Kilimanjaro Trekking</h2>
+            {{ $package->duration ?? '6 Days' }} | {{ $package->title ?? 'Kilimanjaro Trekking' }}</h2>
        </div>
        <div class="package-image">
-           <img src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80" 
-                alt="Tanzania Safari" 
+           <img src="{{ Storage::url($package->featured_image??'') }}" 
+                alt="{{ $package->title ?? 'test' }}" 
                 class="img-fluid">
        </div>
-       <div class="image-caption">Experience the breathtaking beauty of Tanzania's wildlife and landscapes</div>
+       <div class="image-caption">{{ $package->short_description ?? '' }}</div>
        <div class="package-content">
            <!-- Your package content will go here -->
            <div class="content-section">
-               <h3>Overview</h3>
-               <p>Also known as the “Coca Cola route” the Marangu route is one of the most popular routes leading to the summit of Mount Kilimanjaro. Many hikers believe that the Marangu route is the easiest route to Uhuru peak, since it is the only route which can be hiked in 5 days (making it the cheapest option). However, we strongly recommend hiking the route over 6 days to increase your chances of reaching the summit successfully. Note that this is the only route that provides communal sleeping huts, equipped with beds and mattresses at every overnight site. Some basic goods such as mineral water, beer and chocolates are also sold at most sites. The Marangu route takes the same route for both ascend and descend.</p>
-
-               <h3>Best Time to Visit</h3>
-               <p>Dec-Mid-March / Mid-June-October.</p>
+               <h3 style="margin-bottom: 0rem; text-align:center">Overview</h3>
+               <span style="text-align:center;">{!! $package->description??'' !!}</span>
            </div>
            {{-- <div class="content-section">
                <h3>Trip Highlights</h3>
@@ -47,9 +44,28 @@
                    <li>Sunset game viewing experiences</li>
                </ul>
            </div> --}}
-           <div class="content-section">
-               <h3>Trip Price</h3>
-               <p>Starts at $ 8,900 Per Person.</p>
+           <div class="content-section" style="text-align: center; width:80%;margin:0 auto;">
+               <div style="display: inline-block; max-width: 1200px; width: 100%; text-align: left;">
+                   <div style="font-size: 0; text-align: center;">
+                       @if(isset($package->best_time_to_visit))
+                       <div style="display: inline-block; width: calc(50% - 1rem); margin: 0 0.5rem 1.5rem; vertical-align: top; font-size: 1rem; text-align: left;" id="best-time-section">
+                           
+                           <div style="margin-top: 0.5rem; padding: 1rem; border: 1px solid #e2e8f0; border-radius: 8px; text-align:center">
+                            <p style="margin: 0;">Best Time to Visit: <br/> <strong>{{ strip_tags($package->best_time_to_visit) }}</strong></p>
+                           </div>
+                       </div>
+                       @endif
+                       
+                       <div style="display: inline-block; width: calc(50% - 1rem); margin: 0 0.5rem 1.5rem; vertical-align: top; font-size: 1rem; text-align: left;"id="trip-price-section">
+                           <div style="margin-bottom: 0.5rem;">
+                               
+                           </div>
+                           <div style="padding: 1rem; border: 1px solid #e0e0e0; border-radius: 8px; text-align: center; min-height: 100%;">
+                               <p style="margin: 0;">Starts at: <br/> <strong>${{ number_format($package->price ?? 0, 2) }}</strong> Per Person</p>
+                           </div>
+                       </div>
+                   </div>
+               </div>
            </div>
 
            <div class="content-section">
@@ -207,10 +223,19 @@
                    <div class="inclusion-card" style="flex: 1; min-width: 300px; border: 1px solid #e0e0e0; border-radius: 8px; padding: 2rem; background: transparent;">
                        <h4 style="color: #4d4402; font-size: 1.25rem; margin: 0 0 1.5rem 0; padding-bottom: 0.75rem; border-bottom: 1px solid #f0e6d2; font-weight: 600; line-height: 1.4;">Inclusions</h4>
                        <ul style="list-style: none; padding: 0; margin: 0;">
+                           @if(isset($package->included_items) && is_array($package->included_items))
+                           @foreach($package->included_items as $item)
+                           <li style="padding: 0.5rem 0; display: flex; align-items: flex-start;">
+                               <span style="color: #4d4402; margin-right: 0.75rem;">•</span>
+                               <span>{{ $item }}</span>
+                           </li>
+                           @endforeach
+                       @else
                            <li style="padding: 0.5rem 0; display: flex; align-items: flex-start;">
                                <span style="color: #4d4402; margin-right: 0.75rem;">•</span>
                                <span>Park fees</span>
                            </li>
+                           <!-- Default inclusions if none provided -->
                            <li style="padding: 0.5rem 0; display: flex; align-items: flex-start;">
                                <span style="color: #4d4402; margin-right: 0.75rem;">•</span>
                                <span>All activities (unless labeled as optional)</span>
@@ -219,38 +244,7 @@
                                <span style="color: #4d4402; margin-right: 0.75rem;">•</span>
                                <span>All accommodation as stated in the itinerary</span>
                            </li>
-                           <li style="padding: 0.5rem 0; display: flex; align-items: flex-start;">
-                               <span style="color: #4d4402; margin-right: 0.75rem;">•</span>
-                               <span>A professional driver/guide</span>
-                           </li>
-                           <li style="padding: 0.5rem 0; display: flex; align-items: flex-start;">
-                               <span style="color: #4d4402; margin-right: 0.75rem;">•</span>
-                               <span>All transportation (unless labeled as optional)</span>
-                           </li>
-                           <li style="padding: 0.5rem 0; display: flex; align-items: flex-start;">
-                               <span style="color: #4d4402; margin-right: 0.75rem;">•</span>
-                               <span>All Taxes/VAT</span>
-                           </li>
-                           <li style="padding: 0.5rem 0; display: flex; align-items: flex-start;">
-                               <span style="color: #4d4402; margin-right: 0.75rem;">•</span>
-                               <span>Roundtrip airport transfer</span>
-                           </li>
-                           <li style="padding: 0.5rem 0; display: flex; align-items: flex-start;">
-                               <span style="color: #4d4402; margin-right: 0.75rem;">•</span>
-                               <span>All Meals (as specified in the day-by-day section)</span>
-                           </li>
-                           <li style="padding: 0.5rem 0; display: flex; align-items: flex-start;">
-                               <span style="color: #4d4402; margin-right: 0.75rem;">•</span>
-                               <span>Drinking water on all days</span>
-                           </li>
-                           <li style="padding: 0.5rem 0; display: flex; align-items: flex-start;">
-                               <span style="color: #4d4402; margin-right: 0.75rem;">•</span>
-                               <span>Camping Equipment</span>
-                           </li>
-                           <li style="padding: 0.5rem 0; display: flex; align-items: flex-start;">
-                               <span style="color: #4d4402; margin-right: 0.75rem;">•</span>
-                               <span>Porterage</span>
-                           </li>
+                       @endif
                        </ul>
                    </div>
                    
@@ -258,10 +252,19 @@
                    <div class="exclusion-card" style="flex: 1; min-width: 300px; border: 1px solid #e0e0e0; border-radius: 8px; padding: 2rem; background: transparent;">
                        <h4 style="color: #4d4402; font-size: 1.25rem; margin: 0 0 1.5rem 0; padding-bottom: 0.75rem; border-bottom: 1px solid #f0e6d2; font-weight: 600; line-height: 1.4;">Exclusions</h4>
                        <ul style="list-style: none; padding: 0; margin: 0;">
+                       @if(isset($package->excluded_items) && is_array($package->excluded_items))
+                           @foreach($package->excluded_items as $item)
+                           <li style="padding: 0.5rem 0; display: flex; align-items: flex-start;">
+                               <span style="color: #4d4402; margin-right: 0.75rem;">•</span>
+                               <span>{{ $item }}</span>
+                           </li>
+                           @endforeach
+                       @else
                            <li style="padding: 0.5rem 0; display: flex; align-items: flex-start;">
                                <span style="color: #4d4402; margin-right: 0.75rem;">•</span>
                                <span>International flights (from/to home)</span>
                            </li>
+                           <!-- Default exclusions if none provided -->
                            <li style="padding: 0.5rem 0; display: flex; align-items: flex-start;">
                                <span style="color: #4d4402; margin-right: 0.75rem;">•</span>
                                <span>Additional accommodation before and at the end of the tour</span>
@@ -270,30 +273,7 @@
                                <span style="color: #4d4402; margin-right: 0.75rem;">•</span>
                                <span>Tips (tipping guideline US$20.00 pp per day)</span>
                            </li>
-                           <li style="padding: 0.5rem 0; display: flex; align-items: flex-start;">
-                               <span style="color: #4d4402; margin-right: 0.75rem;">•</span>
-                               <span>Personal items (souvenirs, travel insurance, visa fees, etc.)</span>
-                           </li>
-                           <li style="padding: 0.5rem 0; display: flex; align-items: flex-start;">
-                               <span style="color: #4d4402; margin-right: 0.75rem;">•</span>
-                               <span>Government imposed increase of taxes and/or park fees</span>
-                           </li>
-                           <li style="padding: 0.5rem 0; display: flex; align-items: flex-start;">
-                               <span style="color: #4d4402; margin-right: 0.75rem;">•</span>
-                               <span>Alcoholic drinks</span>
-                           </li>
-                           <li style="padding: 0.5rem 0; display: flex; align-items: flex-start;">
-                               <span style="color: #4d4402; margin-right: 0.75rem;">•</span>
-                               <span>Rescue Fee</span>
-                           </li>
-                           <li style="padding: 0.5rem 0; display: flex; align-items: flex-start;">
-                               <span style="color: #4d4402; margin-right: 0.75rem;">•</span>
-                               <span>Climbing Gear</span>
-                           </li>
-                           <li style="padding: 0.5rem 0; display: flex; align-items: flex-start;">
-                               <span style="color: #4d4402; margin-right: 0.75rem;">•</span>
-                               <span>Sleeping Bag</span>
-                           </li>
+                       @endif
                        </ul>
                    </div>
                </div>
@@ -488,7 +468,7 @@
        }
        
        .content-section {
-           margin-bottom: 2rem;
+           margin-bottom: 1rem;
        }
        
        .content-section:last-child {
@@ -546,7 +526,7 @@
        .content-section p {
            color: #333;
            line-height: 1.7;
-           margin: 0 0 1rem 0;
+           margin: 0 0 0.5rem 0;
            font-size: clamp(1rem, 3vw, 1.1rem);
        }
        
@@ -657,6 +637,10 @@
        }
        
        @media (max-width: 992px) {
+        #best-time-section,
+        #trip-price-section {
+            width: calc(100% - 1rem) !important;
+        }
            .itinerary-image,
            .itinerary-day:nth-child(even) .itinerary-image {
                width: 100%;

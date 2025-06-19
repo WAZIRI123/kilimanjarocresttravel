@@ -12,8 +12,7 @@
             <!-- Desktop Navigation -->
             <div class="navbar-links">
                 <a href="/" class="nav-link {{ request()->is('/') ? 'active' : '' }}">Home</a>
-                <a href="{{ route('explore') }}" class="nav-link {{ request()->is('explore*') ? 'active' : '' }}">Explore</a>
-                <a href="#safari-packages" class="nav-link">Safari Packages</a>
+                <a href="{{ route('all-packages') }}" class="nav-link {{ request()->is('all-packages*') ? 'active' : '' }}">Safari Packages</a>
                 <a href="#destinations" class="nav-link">Destinations</a>
                 <a href="#about" class="nav-link">About Us</a>
                 <a href="#contact" class="nav-cta-button">Get Quote</a>
@@ -52,8 +51,7 @@
             </svg>
         </button>
         <a href="/" class="mobile-nav-link {{ request()->is('/') ? 'active' : '' }}">Home</a>
-        <a href="{{ route('explore') }}" class="mobile-nav-link {{ request()->is('explore*') ? 'active' : '' }}">Explore</a>
-        <a href="#safari-packages" class="mobile-nav-link">Safari Packages</a>
+        <a href="{{ route('all-packages') }}" class="mobile-nav-link {{ request()->is('all-packages*') ? 'active' : '' }}">Safari Packages</a>
         <a href="#destinations" class="mobile-nav-link">Destinations</a>
         <a href="#about" class="mobile-nav-link">About Us</a>
         <a href="#contact" class="mobile-nav-link">Contact</a>

@@ -17,7 +17,7 @@ class PackageResource extends Resource
 {
     protected static ?string $model = Package::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-gift';
+    protected static ?string $navigationIcon = 'heroicon-o-light-bulb';
 
     protected static ?string $navigationGroup = 'Content';
 
@@ -55,6 +55,11 @@ class PackageResource extends Resource
                                             ->required()
                                             ->maxLength(100)
                                             ->columnSpanFull(),
+
+                                        Forms\Components\RichEditor::make('overview')
+                                            ->required()
+                                            ->columnSpanFull()
+                                            ->helperText('A brief overview of the package'),
 
                                         Forms\Components\Textarea::make('short_description')
                                             ->required()
@@ -111,17 +116,19 @@ class PackageResource extends Resource
                                     ->columns(1),  // Set to 1 column for full width
 
                                 // Included/Excluded Items Section
-                                Forms\Components\Section::make('Included/Excluded Items')
+                                Forms\Components\Section::make('Included/Excluded Items & Tips')
                                     ->schema([
                                         Forms\Components\Repeater::make('included_items')
                                             ->label('Included Items')
                                             ->schema([
                                                 Forms\Components\TextInput::make('item')
                                                     ->required()
+                                                    ->columnSpanFull()
                                             ])
                                             ->itemLabel(fn (array $state): ?string => $state['item'] ?? null)
                                             ->defaultItems(3)
                                             ->collapsible()
+                                            ->grid(1)
                                             ->columnSpanFull(),
 
                                         Forms\Components\Repeater::make('excluded_items')
@@ -129,10 +136,12 @@ class PackageResource extends Resource
                                             ->schema([
                                                 Forms\Components\TextInput::make('item')
                                                     ->required()
+                                                    ->columnSpanFull()
                                             ])
                                             ->itemLabel(fn (array $state): ?string => $state['item'] ?? null)
                                             ->defaultItems(3)
                                             ->collapsible()
+                                            ->grid(1)
                                             ->columnSpanFull(),
                                     ])
                                     ->columns(1)  // Set to 1 column for full width
@@ -192,7 +201,14 @@ class PackageResource extends Resource
                                             ->addActionLabel('Add Description')
                                             ->collapsible()
                                             ->grid(1)
+                                            ->columnSpanFull(),
+                                            
+                                        // Tips for this day
+                                        Forms\Components\Textarea::make('tips')
+                                            ->label('Day Tips (comma-separated)')
+                                            ->helperText('Enter tips for this day separated by commas. Example: "Wear comfortable shoes, Bring a camera, Pack a light jacket"')
                                             ->columnSpanFull()
+                                            ->maxLength(65535)
                                     ])
                                     ->itemLabel(fn (array $state): ?string => $state['title'] ?? 'New Itinerary Day')
                                     ->defaultItems(1)

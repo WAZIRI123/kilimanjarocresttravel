@@ -61,8 +61,15 @@
                
                @if(!empty($itineraries) && is_array($itineraries))
                    @foreach($itineraries as $index => $itinerary)
-                    <div class="itinerary-card">
-                        <h3 style="text-align:center">Day {{ $index + 1 }} - {{ $itinerary['title'] ?? 'Day ' . ($index + 1) }}</h3>
+                    <div class="itinerary-card" style="margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid #e0e0e0;">
+                        <h3 style="text-align: center; margin-top: 0; color: #2c3e50; padding-bottom: 0.75rem; margin-bottom: 1.5rem; position: relative;">
+                            <span style=" padding: 0 1.5rem; position: relative; z-index: 1;">
+                                Day {{ $index + 1 }} - {{ $itinerary['title'] ?? 'Day ' . ($index + 1) }}
+                            </span>
+                            <span style="position: absolute; bottom: 0; left: 0; right: 0; height: 1px; background: #e0e0e0; overflow: hidden;">
+                                <span style="position: absolute; left: 50%; top: 0; transform: translateX(-50%); width: 200px; height: 3px; background: #2c3e50; border-radius: 3px;"></span>
+                            </span>
+                        </h3>
                         
                         @php
                             // Process tips for pills

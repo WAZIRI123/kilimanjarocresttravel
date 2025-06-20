@@ -36,16 +36,16 @@
                <div style="display: inline-block; max-width: 1200px; width: 100%; text-align: left;">
                    <div style="font-size: 0; text-align: center;">
                        @if(isset($package->best_time_to_visit))
-                       <div style="display: inline-block; width: calc(50% - 1rem); margin: 0 0.5rem 1.5rem; vertical-align: top; font-size: 1rem; text-align: left;" id="best-time-section">
-                           <div style="margin-top: 0.5rem; padding: 1rem; border: 1px solid #e2e8f0; border-radius: 8px; text-align:center">
+                       <div style="display: inline-block; width: calc(50% - 1rem); margin: 0 0.5rem 1.5rem; vertical-align: top; font-size: 1rem; text-align: left; box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1); transition: transform 0.2s ease, box-shadow 0.2s ease;" id="best-time-section">
+                           <div style="margin-top: 0.5rem; padding: 1rem; border-radius: 8px; text-align:center">
                             <p style="margin: 0;">Best Time to Visit: <br/> <strong>{{ strip_tags($package->best_time_to_visit) }}</strong></p>
                            </div>
                        </div>
                        @endif
                        
-                       <div style="display: inline-block; width: calc(50% - 1rem); margin: 0 0.5rem 1.5rem; vertical-align: top; font-size: 1rem; text-align: left;"id="trip-price-section">
+                       <div style="display: inline-block; width: calc(50% - 1rem); margin: 0 0.5rem 1.5rem; vertical-align: top; font-size: 1rem; text-align: left; box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1); transition: transform 0.2s ease, box-shadow 0.2s ease;"id="trip-price-section">
                            <div style="margin-bottom: 0.5rem;"></div>
-                           <div style="padding: 1rem; border: 1px solid #e0e0e0; border-radius: 8px; text-align: center; min-height: 100%;">
+                           <div style="padding: 1rem; border-radius: 8px; text-align: center; min-height: 100%;">
                                <p style="margin: 0;">Starts at: <br/> <strong>${{ number_format($package->price ?? 0, 2) }}</strong> Per Person</p>
                            </div>
                        </div>
@@ -132,12 +132,12 @@
            
       
            <!-- Inclusions & Exclusions Section -->
-           <div class="content-section" style="padding: 0;width:90%;margin:4rem auto;">
+           <div class="content-section" style="padding: 0;width:90%;margin:1rem auto;">
                <h3 style="text-align: center; margin-bottom: 2.5rem; font-size: 1.75rem; color: #333; font-weight: 600; line-height: 1.3;">What's Included & Excluded</h3>
                
                <div style="display: flex; flex-wrap: wrap; gap: 2.5rem; justify-content: space-between;">
                    <!-- Inclusions -->
-                   <div class="inclusion-card" style="flex: 1; min-width: 300px; border: 1px solid #e0e0e0; border-radius: 8px; padding: 2rem; background: #f5f2ed;">
+                   <div class="inclusion-card" style="flex: 1; min-width: 300px; border: 1px solid #e0e0e0; border-radius: 8px; padding: 2rem; background: #f5f2ed; box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1); transition: transform 0.2s ease, box-shadow 0.2s ease;">
                        <h4 style="color: #4d4402; font-size: 1.25rem; margin: 0 0 1.5rem 0; padding-bottom: 0.75rem; border-bottom: 1px solid #f0e6d2; font-weight: 600; line-height: 1.4;">Inclusions</h4>
                        <ul style="list-style: none; padding: 0; margin: 0;">
                         
@@ -172,7 +172,7 @@
                    </div>
                    
                    <!-- Exclusions -->
-                   <div class="exclusion-card" style="flex: 1; min-width: 300px; border: 1px solid #e0e0e0; border-radius: 8px; padding: 2rem; background: #f5f2ed;">
+                   <div class="exclusion-card" style="flex: 1; min-width: 300px; border: 1px solid #e0e0e0; border-radius: 8px; padding: 2rem; background: #f5f2ed; box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08); transition: transform 0.2s ease, box-shadow 0.2s ease;">
                        <h4 style="color: #4d4402; font-size: 1.25rem; margin: 0 0 1.5rem 0; padding-bottom: 0.75rem; border-bottom: 1px solid #f0e6d2; font-weight: 600; line-height: 1.4;">Exclusions</h4>
                        <ul style="list-style: none; padding: 0; margin: 0;">
                        @if(isset($package->excluded_items) && is_array($package->excluded_items))
@@ -528,13 +528,13 @@
        /* Image on right */
        .itinerary-day.image-right .itinerary-image {
            float: right;
-           margin: 0 0 1rem 1.5rem;
+           margin: 1rem 0 1rem 1.5rem;
        }
        
        /* Image on left */
        .itinerary-day.image-left .itinerary-image {
            float: left;
-           margin: 0 1.5rem 1rem 0;
+           margin: 1rem 1.5rem 1rem 0;
        }
        
        .itinerary-image img {
@@ -658,7 +658,7 @@
            
            .itinerary-content {
                width:100%;
-               padding: 1.25rem 0;
+               padding: 0rem 0;
            }
            
            .itinerary-image {

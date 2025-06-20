@@ -49,6 +49,9 @@ class PackageResource extends Resource
                                             ->required()
                                             ->maxLength(255)
                                             ->unique(ignoreRecord: true)
+                                            ->disabled()
+                                            ->dehydrated()
+                                            ->helperText('Auto-generated from the title')
                                             ->columnSpanFull(),
 
                                         Forms\Components\TextInput::make('duration')
@@ -59,20 +62,54 @@ class PackageResource extends Resource
                                         Forms\Components\RichEditor::make('overview')
                                             ->required()
                                             ->columnSpanFull()
-                                            ->helperText('A brief overview of the package'),
+                                            ->helperText('A brief overview of the package')
+                                            ->disableToolbarButtons([
+                                                'blockquote',
+                                                'bold',
+                                                'bulletList',
+                                                'codeBlock',
+                                                'h2',
+                                                'h3',
+                                                'italic',
+                                                'link',
+                                                'orderedList',
+                                                'redo',
+                                                'strike',
+                                                'underline',
+                                                'undo',
+                                            ])
+                                            ->toolbarButtons([]),
 
                                         Forms\Components\Textarea::make('short_description')
                                             ->required()
                                             ->maxLength(255)
                                             ->columnSpanFull(),
-
-                                        Forms\Components\RichEditor::make('description')
-                                            ->required()
+                                            
+                                        Forms\Components\TextInput::make('category')
+                                            ->label('Category')
+                                            ->maxLength(100)
+                                            ->helperText('E.g., Adventure, Safari, Cultural, etc.')
                                             ->columnSpanFull(),
 
-                                        Forms\Components\RichEditor::make('best_time_to_visit')
+Forms\Components\RichEditor::make('best_time_to_visit')
                                             ->label('Best Time to Visit')
-                                            ->columnSpanFull(),
+                                            ->columnSpanFull()
+                                            ->disableToolbarButtons([
+                                                'blockquote',
+                                                'bold',
+                                                'bulletList',
+                                                'codeBlock',
+                                                'h2',
+                                                'h3',
+                                                'italic',
+                                                'link',
+                                                'orderedList',
+                                                'redo',
+                                                'strike',
+                                                'underline',
+                                                'undo',
+                                            ])
+                                            ->toolbarButtons([]),
 
                                         Forms\Components\FileUpload::make('featured_image')
                                             ->image()
@@ -190,10 +227,21 @@ class PackageResource extends Resource
                                                     ->label('')
                                                     ->required()
                                                     ->disableToolbarButtons([
-                                                        'attachFiles',
                                                         'blockquote',
+                                                        'bold',
+                                                        'bulletList',
                                                         'codeBlock',
+                                                        'h2',
+                                                        'h3',
+                                                        'italic',
+                                                        'link',
+                                                        'orderedList',
+                                                        'redo',
+                                                        'strike',
+                                                        'underline',
+                                                        'undo',
                                                     ])
+                                                    ->toolbarButtons([])
                                                     ->columnSpanFull()
                                             ])
                                             ->itemLabel(fn (array $state): ?string => $state['content'] ?? null)

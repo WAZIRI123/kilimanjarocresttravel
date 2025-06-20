@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Support\Str;
 
 class Package extends Model
 {
@@ -18,7 +19,7 @@ class Package extends Model
         'duration',
         'overview',
         'short_description',
-        'description',
+        'category',
         'featured_image',
         'price',
         'is_featured',
@@ -43,6 +44,28 @@ class Package extends Model
      *
      * @var array<string, string>
      */
+    /**
+     * Boot the model.
+     */
+    protected static function boot()
+    {
+        parent::boot();
+
+        static::saving(function ($package) {
+            if (empty($package->slug) || $package->isDirty('title')) {
+                $slug = Str::slug($package->title);
+                $count = 2;
+                
+                // Ensure the slug is unique
+                while (static::where('slug', $slug)->where('id', '!=', $package->id ?? null)->exists()) {
+                    $slug = Str::slug($package->title) . '-' . $count++;
+                }
+                
+                $package->slug = $slug;
+            }
+        });
+    }
+
     protected $casts = [
         'is_featured' => 'boolean',
         'is_active' => 'boolean',

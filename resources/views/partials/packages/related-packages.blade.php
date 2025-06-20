@@ -20,7 +20,7 @@
                 @foreach($packages as $package)
                 <a href="{{ $package['url'] ?? '#' }}" class="package-card" style="display: flex; flex-direction: column; height: 100%; text-decoration: none; color: inherit; background-color: #f5f2ed; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
                     <div style="height: 200px; overflow: hidden; flex-shrink: 0;">
-                        <img src="{{ $package['image'] }}" 
+                        <img src="{{  Storage::url($package['image'])}}" 
                              alt="{{ $package['title'] }}" 
                              style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
                     </div>
@@ -28,9 +28,7 @@
                         <div style="flex-grow: 1;">
                             <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.75rem;">
                                 <h3 style="font-size: 1.25rem; color: #222; margin: 0; margin-right: 1rem;">{{ $package['title'] }}</h3>
-                                @if(isset($package['duration']))
-                                <span style="background-color: #4d4402e0; color: white; padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.9rem; white-space: nowrap; flex-shrink: 0;">{{ $package['duration'] }}</span>
-                                @endif
+                               
                             </div>
                             @if(isset($package['description']))
                             <p style="color: #333; font-size: 0.95rem; line-height: 1.5; margin: 0 0 1rem 0; min-height: 4.5em; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;">

@@ -8,11 +8,20 @@
 
 @section('content')
     <!-- Hero Section -->
-    @include('partials.sections.page-hero', [
-        'image'=>'https://static.wixstatic.com/media/851897_9587828f79e74b21a175b075af31661e~mv2.jpg',
-        'title' => $package->title ?? 'Explore Our Destinations',
-        'subtitle' => $package->short_description ?? 'Discover the most breathtaking safari experiences in Africa'
-    ])
+    @php
+    $heroImage = 'https://static.wixstatic.com/media/851897_9587828f79e74b21a175b075af31661e~mv2.jpg';
+    $itineraries = is_string($package->itineraries) ? json_decode($package->itineraries, true) : $package->itineraries;
+    
+    // Check if itinerary 3 exists and has an image
+    if (!empty($itineraries[1]['image'])) {
+        $heroImage = $itineraries[1]['image'];
+    }
+@endphp
+@include('partials.sections.page-hero', [
+    'image' => '/storage/'.$heroImage,
+    'title' => $package->title ?? 'Explore Our Destinations',
+    'subtitle' => ''
+])
 
    <!-- Safari Packages Section -->
    <div class="safari-package">
@@ -64,7 +73,7 @@
                     <div class="itinerary-card" style="margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid #e0e0e0;">
                         <h3 style="text-align: center; margin-top: 0; color: #2c3e50; padding-bottom: 0.75rem; margin-bottom: 1.5rem; position: relative;">
                             <span style=" padding: 0 1.5rem; position: relative; z-index: 1;">
-                                Day {{ $index + 1 }} - {{ $itinerary['title'] ?? 'Day ' . ($index + 1) }}
+                                 {{ $itinerary['title'] ?? 'Day ' . ($index + 1) }}
                             </span>
                             <span style="position: absolute; bottom: 0; left: 0; right: 0; height: 1px; background: #e0e0e0; overflow: hidden;">
                                 <span style="position: absolute; left: 50%; top: 0; transform: translateX(-50%); width: 200px; height: 3px; background: #2c3e50; border-radius: 3px;"></span>
@@ -700,41 +709,30 @@
        }
    </style>
    @endpush
-   
+   @use('App\Models\Package')
    <!-- Related Packages Section -->
-   @include('partials.packages.related-packages', [
-       'title' => 'You May Also Like',
-       'viewAllLink' => '#',
-       'packages' => [
-           [
-               'title' => 'Serengeti Migration Safari',
-               'url' => '#',
-               'image' => 'https://images.unsplash.com/photo-1523805009345-7448845a9e53?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1472&q=80',
-               'duration' => '6 Days',
-               'description' => "Experience the breathtaking wildebeest migration across the vast Serengeti plains. Witness nature's greatest spectacle with expert guides.",
-               'views' => '1.5k',
-               'likes' => '42'
-           ],
-           [
-               'title' => 'Kilimanjaro Trekking',
-               'url' => '#',
-               'image' => 'https://images.unsplash.com/photo-1501785888041-af3ef285b470?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80',
-               'duration' => '7 Days',
-               'description' => "Conquer Africa's highest peak through the scenic Machame route. Our experienced guides ensure a safe and memorable climbing experience.",
-               'views' => '1.2k',
-               'likes' => '36'
-           ],
-           [
-               'title' => 'Zanzibar Beach Retreat',
-               'url' => '#',
-               'image' => 'https://images.unsplash.com/photo-1539367628448-4bc5c9d171c8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80',
-               'duration' => '5 Days',
-               'description' => "Unwind on Zanzibar's pristine white sand beaches. Explore the rich culture and crystal-clear waters of this tropical paradise.",
-               'views' => '2.1k',
-               'likes' => '64'
-           ]
-       ]
-   ])
+   @php $packages=Package::paginate(); @endphp
+    @if($packages->count() > 0)
+            @include('partials.packages.related-packages', [
+                'title' => 'Our Featured Packages',
+                'packages' => $packages->map(function($package) {
+                    return [
+                        'title' => $package->title,
+                        'url' => route('package.show', $package->slug),
+                        'image' => $package->featured_image ?? 'https://images.unsplash.com/photo-1523805009345-7448845a9e53?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1472&q=80',
+                        'duration' => $package->duration,
+                        'description' => $package->short_description,
+                        'views' => number_format(rand(100, 2000) / 10, 1) . 'k',
+                        'likes' => rand(10, 100)
+                    ];
+                })
+            ])
+
+            <!-- Pagination -->
+            <div class="pagination-wrapper" style="margin-top: 2rem; display: flex; justify-content: center;">
+                {{ $packages->links('pagination::bootstrap-4') }}
+            </div>
+    @endif
    
    <!-- Related Packages styles are now in the partial -->
 @endsection

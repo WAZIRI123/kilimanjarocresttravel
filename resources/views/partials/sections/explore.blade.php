@@ -860,7 +860,7 @@
                                                     </div><!--/$-->
                                                     
 <div class="text-center" style='margin:0 auto 1rem auto; padding:auto;width:50%; cursor:pointer !important; z-index:99'>
-    <div class="comp-m2vufkir" data-semantic-classname="button" style="cursor:pointer !important;"><a data-testid="linkElement" href="#" target="_self" class="StylableButton2545352419__root style-m2vufkiw8__root wixui-button StylableButton2545352419__link " style="background-color: #4d4402e0; cursor:pointer !important; color:#fff !important; font-weight:bold" aria-label="OUR PURPOSE"><span class="StylableButton2545352419__container"><span class="StylableButton2545352419__label wixui-button__label" data-testid="stylablebutton-label">
+    <div class="comp-m2vufkir" data-semantic-classname="button" style="cursor:pointer !important;"><a data-testid="linkElement" href="/all-packages" target="_self" class="StylableButton2545352419__root style-m2vufkiw8__root wixui-button StylableButton2545352419__link " style="background-color: #4d4402e0; cursor:pointer !important; color:#fff !important; font-weight:bold" aria-label="OUR PURPOSE"><span class="StylableButton2545352419__container"><span class="StylableButton2545352419__label wixui-button__label" data-testid="stylablebutton-label">
     CHOOSE YOUR PACKAGE</span><span class="StylableButton2545352419__icon wixui-button__icon" aria-hidden="true" data-testid="stylablebutton-icon"><span><!--?xml version="1.0" encoding="UTF-8"?-->
            
         </span></span></span></a></div>

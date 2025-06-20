@@ -9,9 +9,9 @@
 @section('content')
     <!-- Hero Section -->
     @include('partials.sections.page-hero', [
-        'image'=>'https://static.wixstatic.com/media/851897_9587828f79e74b21a175b075af31661e~mv2.jpg',
-        'title' => 'All Safari Packages',
-        'subtitle' => 'Discover our curated collection of unforgettable safari experiences in Africa'
+        'image' => asset('images/serengeti-safari-tanzania.jpg'),
+        'title' => 'Tanzania Safaris',
+        'subtitle' => 'Your African Adventure Awaits'
     ])
 
     <!-- Safari Packages Section -->
@@ -24,6 +24,7 @@
         @if($packages->count() > 0)
             @include('partials.packages.related-packages', [
                 'title' => 'Our Featured Packages',
+                'viewAllLink' => '#',
                 'packages' => $packages->map(function($package) {
                     return [
                         'title' => $package->title,

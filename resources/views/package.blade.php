@@ -38,8 +38,16 @@
        <div class="image-caption">{{ $package->short_description ?? '' }}</div>
        <div class="package-content">
            <div class="content-section">
-               <h3 style="margin-bottom: 0rem; text-align:center">Overview</h3>
-               <span style="text-align:center;">{!! $package->description??'' !!}</span>
+            <div class="itinerary-card" style="margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid #e0e0e0;">
+                <h3 style="text-align: center; margin-top: 0; color: #2c3e50; padding-bottom: 0.75rem; margin-bottom: 1.5rem; position: relative;">
+                    <span style=" padding: 0 1.5rem; position: relative; z-index: 1;">
+                         Overview
+                    </span>
+                    <span style="position: absolute; bottom: 0; left: 0; right: 0; height: 1px; background: #e0e0e0; overflow: hidden;">
+                        <span style="position: absolute; left: 50%; top: 0; transform: translateX(-50%); width: 200px; height: 3px; background: #2c3e50; border-radius: 3px;"></span>
+                    </span>
+                </h3>
+               <span style="">{!! $package->overview??'' !!}</span>
            </div>
            <div class="content-section" style="text-align: center; width:80%;margin:0 auto;">
                <div style="display: inline-block; max-width: 1200px; width: 100%; text-align: left;">

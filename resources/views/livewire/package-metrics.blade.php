@@ -3,8 +3,8 @@
         <i class="fas fa-eye mr-2"></i>
         <span class="text-sm font-medium">{{ number_format($views) }}</span>
     </div>
-    <div class="flex items-center text-gray-600">
-        <button type="button" wire:click="toggleLike" class="flex items-center focus:outline-none">
+    <div class="flex items-center text-gray-600 relative">
+        <button type="button" wire:click="toggleLike" class="flex items-center focus:outline-none relative z-10 p-2 -m-2">
             @if($hasLiked)
                <i class="fas fa-heart" style="color: #ff8787;"></i>
                 <span class="text-sm font-medium text-red-500 ml-1">{{ number_format($likes) }}</span>
@@ -27,6 +27,8 @@
     .package-metrics i {
         font-size: 1.1rem;
         transition: all 0.2s ease;
+        position: relative;
+        z-index: 5;
     }
     .package-metrics .fa-heart:hover {
         transform: scale(1.1);

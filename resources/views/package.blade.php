@@ -31,7 +31,7 @@
             {{ $package->duration ?? '6 Days' }} | {{ $package->title ?? 'Kilimanjaro Trekking' }}</h2>
             
             <!-- Add the Livewire component here -->
-            @livewire('package-metrics', ['package' => $package])
+
             
        </div>
        <div class="package-image">
@@ -232,6 +232,11 @@
                        @endif
                        </ul>
                    </div>
+               </div>
+               
+               <!-- Package Metrics (Likes & Views) -->
+               <div style="display: flex; justify-content: flex-end; margin-top: 1.5rem; padding-right: 1rem;">
+                   @livewire('package-metrics', ['package' => $package])
                </div>
            </div>
        </div>

@@ -73,6 +73,10 @@
     <!-- HubSpot Embed Code -->
     <script type="text/javascript" id="hs-script-loader" async defer src="//js-na2.hs-scripts.com/243011933.js"></script>
     <!-- End of HubSpot Embed Code -->
+    
+    <!-- Livewire Scripts -->
+    @livewireScripts
+    @livewireStyles
 </body>
 
 </html>

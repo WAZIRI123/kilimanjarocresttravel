@@ -45,6 +45,7 @@
     41 => 'RyanChandler\\BladeCaptureDirective\\BladeCaptureDirectiveServiceProvider',
     42 => 'App\\Providers\\AppServiceProvider',
     43 => 'App\\Providers\\Filament\\AdminPanelProvider',
+    44 => 'Livewire\\LivewireServiceProvider',
   ),
   'eager' => 
   array (
@@ -77,6 +78,7 @@
     26 => 'RyanChandler\\BladeCaptureDirective\\BladeCaptureDirectiveServiceProvider',
     27 => 'App\\Providers\\AppServiceProvider',
     28 => 'App\\Providers\\Filament\\AdminPanelProvider',
+    29 => 'Livewire\\LivewireServiceProvider',
   ),
   'deferred' => 
   array (

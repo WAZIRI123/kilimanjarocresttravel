@@ -29,6 +29,10 @@
        <div class="package-header">
            <h2 class="package-title">
             {{ $package->duration ?? '6 Days' }} | {{ $package->title ?? 'Kilimanjaro Trekking' }}</h2>
+            
+            <!-- Add the Livewire component here -->
+            @livewire('package-metrics', ['package' => $package])
+            
        </div>
        <div class="package-image">
            <img src="{{ Storage::url($package->featured_image??'') }}" 
@@ -719,27 +723,22 @@
    @endpush
    @use('App\Models\Package')
    <!-- Related Packages Section -->
-   @php $packages=Package::paginate(); @endphp
-    @if($packages->count() > 0)
+   @if(isset($relatedPackages) && $relatedPackages->count() > 0)
             @include('partials.packages.related-packages', [
-                'title' => 'Our Featured Packages',
-                'packages' => $packages->map(function($package) {
+                'title' => 'You May Also Like',
+                'packages' => $relatedPackages->map(function($package) {
                     return [
                         'title' => $package->title,
                         'url' => route('package.show', $package->slug),
                         'image' => $package->featured_image ?? 'https://images.unsplash.com/photo-1523805009345-7448845a9e53?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1472&q=80',
                         'duration' => $package->duration,
                         'description' => $package->short_description,
-                        'views' => number_format(rand(100, 2000) / 10, 1) . 'k',
-                        'likes' => rand(10, 100)
+                        'views' => $package->views,
+                        'likes' => $package->likes
                     ];
                 })
             ])
 
-            <!-- Pagination -->
-            <div class="pagination-wrapper" style="margin-top: 2rem; display: flex; justify-content: center;">
-                {{ $packages->links('pagination::bootstrap-4') }}
-            </div>
     @endif
    
    <!-- Related Packages styles are now in the partial -->

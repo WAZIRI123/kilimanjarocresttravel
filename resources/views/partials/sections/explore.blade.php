@@ -65,8 +65,15 @@
 
         </div>
     </div>
-    <div class="text-center"
-    style='margin:2rem auto 1rem auto; padding:auto;width:30%; cursor:pointer !important; z-index:99'>
+    <div class="text-center all-btn"
+    style='margin:2rem auto 1rem auto; padding:auto; width: 50%; max-width: 300px; cursor:pointer !important; z-index:99; transition: width 0.3s ease;'>
+    <style>
+        @media (min-width: 992px) {
+            .all-btn {
+                width: 30% !important;
+            }
+        }
+    </style>
     <div class="comp-m2vufkir" data-semantic-classname="button" style="cursor:pointer !important;"><a
             data-testid="linkElement" href="/all-packages" target="_self"
             class="StylableButton2545352419__root style-m2vufkiw8__root wixui-button StylableButton2545352419__link "
@@ -74,7 +81,7 @@
             aria-label="OUR PURPOSE"><span class="StylableButton2545352419__container"><span
                     class="StylableButton2545352419__label wixui-button__label"
                     data-testid="stylablebutton-label">
-                    VIEW All PACKAGES</span><span class="StylableButton2545352419__icon wixui-button__icon"
+                    VIEW ALL PACKAGES</span><span class="StylableButton2545352419__icon wixui-button__icon"
                     aria-hidden="true"
                     data-testid="stylablebutton-icon"><span><!--?xml version="1.0" encoding="UTF-8"?-->
 
@@ -94,6 +101,9 @@
     }
     
     @media (max-width: 768px) {
+        .all-btn{
+            width:50% !important;
+        }
         .package-grid {
             grid-template-columns: minmax(280px, 400px) !important;
             justify-content: center !important;

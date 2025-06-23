@@ -56,7 +56,31 @@
 
                                         @include('partials.sections.testmonials')
                                         @include('partials.sections.trusted')
-                                        @include('partials.sections.explore')
+                                        @php
+                                        $packages = \App\Models\Package::where(
+                                            'is_featured',
+                                            true,
+                                        )
+                                            ->where('is_active', true)
+                                            ->orderBy('sort_order', 'asc')
+                                            ->take(3)
+                                            ->get();
+                                        @endphp
+                                        @include('partials.sections.explore', [
+                'title' => 'Our Best Packages',
+                'viewAllLink' => '#',
+                'packages' => $packages->map(function($package) {
+                    return [
+                        'title' => $package->title,
+                        'url' => route('package.show', $package->slug),
+                        'image' => $package->featured_image ?? 'https://images.unsplash.com/photo-1523805009345-7448845a9e53?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1472&q=80',
+                        'duration' => $package->duration,
+                        'description' => $package->short_description,
+                        'views' => $package->views,
+                        'likes' => $package->likes
+                    ];
+                })
+            ])
                                         @include('partials.sections.why-luxury')
                                         @include('partials.sections.Inspiring-our-extra-ordinary')
                                         @include('partials.sections.experience-africa-like-never')

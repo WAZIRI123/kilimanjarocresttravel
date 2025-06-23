@@ -20,7 +20,7 @@
             <div data-testid="colorUnderlay" class="LWbAav Kv1aVt"></div>
             <div id="bgMedia_comp-m1luvo7h" data-motion-part="BG_MEDIA comp-m1luvo7h" class="VgO9Yg"></div>
         </div>
-        
+      
         @if($packages->count() > 0)
             @include('partials.packages.related-packages', [
                 'title' => 'Our Featured Packages',

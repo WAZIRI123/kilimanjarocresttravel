@@ -22,9 +22,9 @@ A new safari booking has been submitted through the website. Here are the detail
 - **Newsletter Subscription:** {{ $booking->subscribe_to_newsletter ? 'Subscribed' : 'Not Subscribed' }}
 - **Submitted At:** {{ $booking->created_at->format('F j, Y \a\t g:i A') }}
 
-<x-mail::button :url="route('admin.bookings.show', $booking->id)">
-View Booking Details
-</x-mail::button>
+---
+
+You can view all bookings in the database or set up an admin dashboard to manage them.
 
 Thanks,<br>
 {{ config('app.name') }}

@@ -7,8 +7,18 @@ use Livewire\Component;
 class BookingWizard extends Component
 {
     public $currentStep = 1;
-    public $totalSteps = 10; // Total steps including confirmation step
-    public $safariPreferences = ''; // Added for safari preferences
+    public $totalSteps = 11; // Total steps including contact info and confirmation
+    
+    // Contact Information
+    public $firstName = '';
+    public $lastName = '';
+    public $email = '';
+    public $phone = '';
+    public $country = '';
+    public $subscribeToNewsletter = false;
+    
+    // Safari Preferences
+    public $safariPreferences = '';
     public $selectedDestination = '';
     public $selectedBudget = '';
     public $selectedTravelDate = '';
@@ -126,6 +136,15 @@ class BookingWizard extends Component
         } elseif ($this->currentStep === 5 || $this->currentStep === 6 || $this->currentStep === 7) {
             // After any date selection path, go to traveler type selection
             $this->currentStep = 8;
+        } elseif ($this->currentStep === 8) {
+            // After traveler type, go to contact information
+            $this->currentStep = 9;
+        } elseif ($this->currentStep === 9) {
+            // After contact information, go to safari preferences
+            $this->currentStep = 10;
+        } elseif ($this->currentStep === 10) {
+            // After safari preferences, go to confirmation
+            $this->currentStep = 11;
         } else {
             // Default step increment
             $this->currentStep++;
@@ -135,8 +154,20 @@ class BookingWizard extends Component
     public function goToPreviousStep()
     {
         if ($this->currentStep > 1) {
+            // If going back from confirmation, go to safari preferences
+            if ($this->currentStep === 11) {
+                $this->currentStep = 10;
+            }
+            // If going back from safari preferences, go to contact information
+            elseif ($this->currentStep === 10) {
+                $this->currentStep = 9;
+            }
+            // If going back from contact information, go to traveler type
+            elseif ($this->currentStep === 9) {
+                $this->currentStep = 8;
+            }
             // If going back from traveler type step, return to appropriate date selection
-            if ($this->currentStep === 8) {
+            elseif ($this->currentStep === 8) {
                 if ($this->selectedTravelDate === 'I have specific dates') {
                     $this->currentStep = 6;
                 } elseif ($this->selectedTravelDate === 'I am flexible') {
@@ -173,6 +204,15 @@ class BookingWizard extends Component
                 return !empty($this->selectedDuration);
             case 8:
                 return !empty($this->travelingWith);
+            case 9: // Contact Information
+                return !empty($this->firstName) && 
+                       !empty($this->lastName) && 
+                       !empty($this->email) && 
+                       filter_var($this->email, FILTER_VALIDATE_EMAIL) &&
+                       !empty($this->phone) &&
+                       !empty($this->country);
+            case 10: // Safari Preferences
+                return !empty($this->safariPreferences);
             default:
                 return true;
         }

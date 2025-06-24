@@ -333,7 +333,90 @@
                 </div>
                 
             @elseif($currentStep === 9)
-                <!-- Step 9: Safari Preferences -->
+                <!-- Step 9: Contact Information -->
+                <div class="contact-information-step">
+                    <h2 class="step-title">Where can we send your trip details?</h2>
+                    <p class="step-subtitle">We'll use this information to contact you about your safari plans.</p>
+                    
+                    <div class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group half-width">
+                                <label for="firstName">First Name*</label>
+                                <input 
+                                    type="text" 
+                                    id="firstName" 
+                                    wire:model.live="firstName"
+                                    class="form-control"
+                                    placeholder="Your first name"
+                                >
+                            </div>
+                            <div class="form-group half-width">
+                                <label for="lastName">Last Name*</label>
+                                <input 
+                                    type="text" 
+                                    id="lastName" 
+                                    wire:model.live="lastName"
+                                    class="form-control"
+                                    placeholder="Your last name"
+                                >
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address*</label>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                wire:model.live="email"
+                                class="form-control"
+                                placeholder="your.email@example.com"
+                            >
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group half-width">
+                                <label for="phone">Phone Number*</label>
+                                <input 
+                                    type="tel" 
+                                    id="phone" 
+                                    wire:model.live="phone"
+                                    class="form-control"
+                                    placeholder="+254 700 000000"
+                                >
+                            </div>
+                            <div class="form-group half-width">
+                                <label for="country">Country*</label>
+                                <input 
+                                    type="text" 
+                                    id="country" 
+                                    wire:model.live="country"
+                                    class="form-control"
+                                    placeholder="Your country of residence"
+                                >
+                            </div>
+                        </div>
+                        
+                        <div class="form-group newsletter-option">
+                            <div class="checkbox-container">
+                                <input 
+                                    type="checkbox" 
+                                    id="subscribeToNewsletter" 
+                                    wire:model.live="subscribeToNewsletter"
+                                    class="checkbox-input"
+                                >
+                                <label for="subscribeToNewsletter" class="checkbox-label">
+                                    Yes, I'd like to receive travel inspiration, special offers, and updates from Stan Safaris
+                                </label>
+                            </div>
+                            <p class="newsletter-description">
+                                Stay updated with the latest safari deals, travel tips, and exclusive offers. We respect your privacy and you can unsubscribe at any time.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+            @elseif($currentStep === 10)
+                <!-- Step 10: Safari Preferences -->
                 <div class="safari-preferences-step">
                     <h2 class="step-title">Tell us about your dream safari</h2>
                     <p class="step-subtitle">What would you like to see and experience on your safari?</p>
@@ -349,29 +432,59 @@
                 </div>
                 
             @elseif($currentStep === 10)
-                <!-- Final Step -->
+                <!-- Step 10: Safari Preferences -->
+                <div class="safari-preferences-step">
+                    <h2 class="step-title">Tell us about your dream safari</h2>
+                    <p class="step-subtitle">What would you like to see and experience on your safari?</p>
+                    <div class="form-group">
+                        <textarea 
+                            class="form-control safari-preferences-textarea" 
+                            wire:model.live="safariPreferences"
+                            placeholder="For example: Must-see wildlife, special occasions, preferred activities, accommodation preferences, or any specific requirements you have..."
+                            rows="6"
+                        ></textarea>
+                        <p class="hint-text">The more you tell us, the better we can tailor your perfect safari experience.</p>
+                    </div>
+                </div>
+                
+            @elseif($currentStep === 11)
+                <!-- Final Step: Confirmation -->
                 <div class="step-content">
                     <h2 class="step-title">Almost There!</h2>
-                    <p class="step-description">Thank you for your information. Click 'Complete Booking' to proceed.</p>
+                    <p class="step-description">Thank you for your information. Please review your details below and click 'Complete Booking' to proceed.</p>
                     
                     <!-- Display summary of selections -->
                     <div class="summary-container">
-                        <h3>Your Selections:</h3>
-                        <p><strong>Destination:</strong> {{ $selectedDestination }}</p>
-                        <p><strong>Budget:</strong> {{ $selectedBudget }}</p>
-                        <p>
-                            <strong>Travel Dates:</strong> 
-                            @if(is_numeric($selectedTravelDate))
-                                {{ $selectedDay }} {{ $selectedMonth }} {{ $selectedTravelDate }}
-                            @elseif($selectedTravelDate === 'I have specific dates')
-                                {{ date('M d, Y', strtotime($arrivalDate)) }} to {{ date('M d, Y', strtotime($departureDate)) }}
-                            @else
-                                Flexible - {{ $selectedDuration }}
+                        <h3>Your Trip Details</h3>
+                        <div class="summary-section">
+                            <h4>Trip Information</h4>
+                            <p><strong>Destination:</strong> {{ $selectedDestination }}</p>
+                            <p><strong>Budget:</strong> {{ $selectedBudget }}</p>
+                            <p>
+                                <strong>Travel Dates:</strong> 
+                                @if(is_numeric($selectedTravelDate))
+                                    {{ $selectedDay }} {{ $selectedMonth }} {{ $selectedTravelDate }}
+                                @elseif($selectedTravelDate === 'I have specific dates')
+                                    {{ date('M d, Y', strtotime($arrivalDate)) }} to {{ date('M d, Y', strtotime($departureDate)) }}
+                                @else
+                                    Flexible - {{ $selectedDuration }}
+                                @endif
+                            </p>
+                            @if($travelingWith)
+                                <p><strong>Traveling With:</strong> {{ $travelingWith }}</p>
                             @endif
-                        </p>
-                        @if($travelingWith)
-                            <p><strong>Traveling With:</strong> {{ $travelingWith }}</p>
-                        @endif
+                            @if($safariPreferences)
+                                <p><strong>Your Safari Preferences:</strong> {{ $safariPreferences }}</p>
+                            @endif
+                        </div>
+                        
+                        <div class="summary-section">
+                            <h4>Contact Information</h4>
+                            <p><strong>Name:</strong> {{ $firstName }} {{ $lastName }}</p>
+                            <p><strong>Email:</strong> {{ $email }}</p>
+                            <p><strong>Phone:</strong> {{ $phone }}</p>
+                            <p><strong>Country:</strong> {{ $country }}</p>
+                        </div>
                     </div>
                 </div>
             @endif

@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DestinationController;
+use App\Livewire\BookingWizard;
 
 Route::get('/', function () {
     return view('welcome');
@@ -17,6 +18,11 @@ Route::get('/packages/{package:slug}', [\App\Http\Controllers\PackageController:
 Route::get('/destinations/{id}', [DestinationController::class, 'show'])
     ->where('id', '[a-z0-9-]+')
     ->name('destinations.show');
+
+// Booking Wizard
+Route::get('/book-now', function () {
+    return view('book-now');
+})->name('book-now');
 
 // Debug route - REMOVE AFTER USE
 Route::get('/debug/schema', function () {

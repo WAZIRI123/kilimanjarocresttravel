@@ -1,0 +1,289 @@
+/* Booking Wizard Styles */
+.booking-wizard {
+    height: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0rem;
+    width: 100%;
+    background: none !important;
+    box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+    .booking-wizard {
+        padding: 0rem 1rem;
+    }
+}
+
+.wizard-container {
+    width: 100%;
+    max-width: 1200px;
+    background: transparent;
+    border-radius: 12px;
+    padding: 0 1.5rem;
+    margin: 0rem auto 2rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+    .wizard-container {
+        padding:  0rem 2rem;
+        margin: 1rem auto;
+    }
+}
+
+.wizard-steps {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+}
+
+/* Responsive width */
+@media (min-width: 1024px) {
+    .wizard-container {
+        width: 80%;
+        padding: 2rem;
+    }
+}
+
+/* Progress Bar */
+.progress-container {
+    margin: 24px 0;
+    width: 100%;
+    padding: 0 4px;
+}
+
+/* Bottom progress bar specific styles */
+.bottom-progress {
+    margin: 32px 0 0;
+    padding-top: 16px;
+    border-top: 1px solid #e5e7eb;
+}
+
+@media (min-width: 480px) {
+    .progress-container {
+        margin: 32px 0;
+        padding: 0;
+    }
+    
+    .bottom-progress {
+        margin-top: 40px;
+        padding-top: 20px;
+    }
+}
+
+.progress-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.progress-label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #4b5563;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 8px;
+    background-color: #e5e7eb;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background-color: #4d4402e0;
+    border-radius: 4px;
+    transition: width 0.3s ease;
+}
+
+.step-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1f2937;
+    text-align: center;
+    margin: 0 0 20px;
+    line-height: 1.3;
+}
+
+@media (min-width: 480px) {
+    .step-title {
+        font-size: 24px;
+        margin-bottom: 24px;
+    }
+}
+
+.destinations-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin: 0 0 24px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+@media (min-width: 480px) {
+    .destinations-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+        margin: 0 0 24px;
+    }
+}
+
+.destination-btn {
+    width: 100%;
+    padding: 10px 8px;
+    border-radius: 30px;
+    font-weight: 500;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border: 1px solid #1e1e1e;
+    background: transparent;
+    color: #1e1e1e;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+@media (min-width: 480px) {
+    .destination-btn {
+        padding: 12px 16px;
+        font-size: 14px;
+        width: auto;
+        min-width: 120px;
+        margin: 0;
+    }
+}
+
+/* Center the buttons on mobile */
+@media (max-width: 639px) {
+    .destinations-grid {
+        justify-content: center;
+    }
+    .destination-btn {
+        flex: 0 0 calc(50% - 12px);
+    }
+}
+
+/* On larger screens, let buttons take natural width */
+@media (min-width: 640px) {
+    .destinations-grid {
+        justify-content: center;
+    }
+    .destination-btn {
+        flex: 0 0 auto;
+        padding: 12px 24px;
+    }
+}
+
+.destination-btn:hover {
+    border-color: #4d4402e0;
+}
+
+.destination-btn.selected {
+    background-color: #4d4402e0;
+    border-color: #4d4402e0;
+    color: white;
+}
+
+.navigation-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 16px;
+    gap: 12px;
+    width: 100%;
+}
+
+@media (min-width: 480px) {
+    .navigation-buttons {
+        flex-direction: row;
+        justify-content: center;
+        padding-top: 24px;
+        gap: 16px;
+    }
+}
+
+.btn-back {
+    padding: 10px 24px;
+    border: 1px solid #d1d5db;
+    border-radius: 9999px;
+    background: white;
+    color: #4b5563;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    width: 100%;
+    max-width: 280px;
+    font-size: 15px;
+}
+
+.btn-back:hover {
+    background-color: #f9fafb;
+}
+
+@media (min-width: 480px) {
+    .btn-back {
+        padding: 8px 24px;
+        width: auto;
+        min-width: 100px;
+    }
+}
+
+.btn-next {
+    padding: 10px 24px;
+    border-radius: 9999px;
+    background-color: #f97316;
+    color: white;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    width: 100%;
+    max-width: 280px;
+    text-align: center;
+    font-size: 15px;
+}
+
+@media (min-width: 480px) {
+    .btn-next {
+        padding: 12px 32px;
+        width: auto;
+        min-width: 160px;
+    }
+}
+
+.btn-next:hover {
+    background-color: #4d4402e0;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.btn-next:disabled {
+    background-color: #d1d5db;
+    cursor: not-allowed;
+    opacity: 0.7;
+    transform: none;
+    box-shadow: none;
+}
+
+/* Hide the back button on first step */
+.navigation-buttons > div:empty {
+    display: none;
+}

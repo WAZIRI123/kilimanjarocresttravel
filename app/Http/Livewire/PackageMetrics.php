@@ -22,7 +22,17 @@ class PackageMetrics extends Component
         $this->packageId = $package->id;
         $this->views = $package->views;
         $this->likes = $package->likes;
-        $this->hasLiked = $this->checkIfLiked();
+        
+        // Check if package is liked in cookies
+        $cookieLiked = $this->checkIfLiked();
+        
+        // If cookie says it's liked but likes count is 0, fix the inconsistency
+        if ($cookieLiked && $this->likes <= 0) {
+            $this->removeFromLikedPackages();
+            $this->hasLiked = false;
+        } else {
+            $this->hasLiked = $cookieLiked;
+        }
         
         // Increment view count if not viewed in this session
         if (!session()->has('viewed_package_' . $this->packageId)) {
@@ -36,18 +46,34 @@ class PackageMetrics extends Component
 
     public function toggleLike()
     {
+        // Toggle the like state immediately for better UX
+        $this->hasLiked = !$this->hasLiked;
+        
+        // Get fresh package data to ensure we have the latest like count
+        $freshPackage = $this->package->fresh();
+        
         if ($this->hasLiked) {
-            $this->package->decrement('likes');
-            $this->likes = $this->package->fresh()->likes;
-            $this->removeFromLikedPackages();
-        } else {
+            // Increment and add to liked packages
             $this->package->increment('likes');
-            $this->likes = $this->package->fresh()->likes;
             $this->addToLikedPackages();
+        } else {
+            // Only decrement if the current like count is greater than 0
+            if ($freshPackage->likes > 0) {
+                $this->package->decrement('likes');
+            }
+            $this->removeFromLikedPackages();
         }
         
-        $this->hasLiked = !$this->hasLiked;
-        // Using dispatch for Livewire 3.x instead of emit
+        // Update the likes count from fresh data
+        $this->likes = $this->package->fresh()->likes;
+        
+        // Ensure the like state is in sync with the database
+        if ($this->likes <= 0) {
+            $this->hasLiked = false;
+            $this->removeFromLikedPackages();
+        }
+        
+        // Notify other components about the like toggle
         $this->dispatch('likeToggled');
     }
 
@@ -60,7 +86,7 @@ class PackageMetrics extends Component
     private function checkIfLiked()
     {
         $likedPackages = json_decode(Cookie::get('liked_packages', '[]'), true);
-        return in_array($this->packageId, $likedPackages);
+        return in_array($this->packageId, (array)$likedPackages);
     }
 
     private function addToLikedPackages()

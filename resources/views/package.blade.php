@@ -51,7 +51,7 @@
                         <span style="position: absolute; left: 50%; top: 0; transform: translateX(-50%); width: 200px; height: 3px; background: #2c3e50; border-radius: 3px;"></span>
                     </span>
                 </h3>
-               <span style="">{!! $package->overview??'' !!}</span>
+                           <span style="">{!! $package->overview??'' !!}</span>
            </div>
            <div class="content-section" style="text-align: center; width:80%;margin:0 auto;">
                <div style="display: inline-block; max-width: 1200px; width: 100%; text-align: left;">

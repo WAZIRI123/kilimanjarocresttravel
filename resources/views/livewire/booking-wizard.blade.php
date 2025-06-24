@@ -3,7 +3,7 @@
         <!-- Form Steps -->
         <div class="wizard-steps">
             <div style="margin:1rem auto; text-align:center;">
-                <a href="/" style="display:inline-flex; align-items:center; text-decoration:none; color:black; font-size:12px;">
+                <a href="/" class="btn-home">
                     <svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right:4px;">
                         <path d="M19 12H5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M12 19L5 12L12 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -491,34 +491,85 @@
 
             <!-- Navigation Buttons -->
             <div class="navigation-buttons">
-                @if($currentStep > 1)
+                @if($currentStep > 1 && !$isSubmitted)
                     <button 
                         type="button"
                         wire:click="goToPreviousStep"
                         class="btn-back"
+                        @if($isSubmitting) disabled @endif
                     >
                         Back
                     </button>
-                @else
+                @elseif(!$isSubmitted)
                     <div></div> <!-- Empty div for flex spacing -->
                 @endif
                 
-                <button 
-                    type="button"
-                    wire:click="goToNextStep"
-                    class="btn-next"
-                    @if(($currentStep === 1 && !$selectedDestination) || 
-                        ($currentStep === 2 && !$selectedBudget) ||
-                        ($currentStep === 3 && !$selectedTravelDate) ||
-                        ($currentStep === 4 && !$selectedMonth) ||
-                        ($currentStep === 5 && !$selectedDay) ||
-                        ($currentStep === 6 && (!$arrivalDate || !$departureDate)) ||
-                        ($currentStep === 7 && !$selectedDuration) ||
-                        ($currentStep === 8 && !$travelingWith)) disabled @endif
-                >
-                    {{ $currentStep === $totalSteps ? 'Complete Booking' : 'NEXT' }}
-                </button>
+                @if($currentStep === $totalSteps && !$isSubmitted)
+                    <!-- Submit Button for Final Step -->
+                    <button 
+                        type="button"
+                        wire:click="submitBooking"
+                        class="btn-next"
+                        @if($isSubmitting) disabled @endif
+                    >
+                        @if($isSubmitting)
+                            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                            Processing...
+                        @else
+                            Complete Booking
+                        @endif
+                    </button>
+                @elseif(!$isSubmitted)
+                    <!-- Regular Next Button -->
+                    <button 
+                        type="button"
+                        wire:click="goToNextStep"
+                        class="btn-next"
+                        @if(($currentStep === 1 && !$selectedDestination) || 
+                            ($currentStep === 2 && !$selectedBudget) ||
+                            ($currentStep === 3 && !$selectedTravelDate) ||
+                            ($currentStep === 4 && !$selectedMonth) ||
+                            ($currentStep === 5 && !$selectedDay) ||
+                            ($currentStep === 6 && (!$arrivalDate || !$departureDate)) ||
+                            ($currentStep === 7 && !$selectedDuration) ||
+                            ($currentStep === 8 && !$travelingWith)) disabled @endif
+                    >
+                        NEXT
+                    </button>
+                @endif
+                
+                @if($isSubmitted)
+                    <div class="submission-success">
+                        <div class="success-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                        <h3>Booking Submitted Successfully!</h3>
+                        <p>Thank you for your booking request. We've received your details and our team will contact you shortly to confirm your safari adventure.</p>
+                        <div class="success-actions">
+                            <a href="/" class="btn-home">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="home-icon" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
+                                </svg>
+                                Go Home
+                            </a>
+                        </div>
+                    </div>
+                @endif
             </div>
+            
+            <!-- Error Message Display -->
+            @if($submissionError)
+                <div class="error-message">
+                    <div class="alert alert-danger">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd" />
+                        </svg>
+                        {{ $submissionError }}
+                    </div>
+                </div>
+            @endif
             
             <!-- Progress Bar at Bottom -->
             <div class="progress-container bottom-progress">

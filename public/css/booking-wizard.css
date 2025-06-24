@@ -1009,3 +1009,162 @@
 .navigation-buttons > div:empty {
     display: none;
 }
+
+/* Submission Success State */
+.submission-success {
+    text-align: center;
+    padding: 2.5rem 1.5rem;
+    background-color: #ffffff;
+    border-radius: 0.75rem;
+    margin: 1.5rem 0;
+    border: 1px solid #e5e7eb;
+    width: 100%;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.02);
+}
+
+.submission-success .success-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 1.5rem;
+    background-color: #f3f4f6;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #e5e7eb;
+}
+
+.submission-success .success-icon svg {
+    width: 28px;
+    height: 28px;
+    color: #4b5563;
+}
+
+.submission-success h3 {
+    font-size: 1.5rem;
+    color: #1f2937;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.submission-success p {
+    color: #4b5563;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1rem;
+}
+
+/* Loading State */
+.btn-next:disabled {
+    opacity: 0.8;
+    cursor: wait;
+    position: relative;
+}
+
+.btn-next .spinner-border {
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+/* Error Message */
+.error-message {
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.alert-danger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1.25rem;
+    color: #7f1d1d;
+    background-color: #fee2e2;
+    border: 1px solid #fecaca;
+    border-radius: 0.5rem;
+    width: 100%;
+    text-align: left;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.alert-danger svg {
+    flex-shrink: 0;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-right: 0.5rem;
+    color: #dc2626;
+}
+
+/* Success Actions */
+.success-actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+/* Home Icon in Button */
+.submission-success .btn-home {
+    padding: 0.6rem 1.5rem;
+    background-color: #f3f4f6;
+    color: #1f2937;
+    border: 1px solid #d1d5db;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.submission-success .home-icon {
+    width: 14px;
+    height: 14px;
+    margin-right: 8px;
+    color: #4b5563;
+}
+
+.submission-success .btn-home:hover {
+    background-color: #e5e7eb;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.1);
+    border-color: #9ca3af;
+}
+
+.submission-success .btn-home:active {
+    transform: translateY(0);
+    background-color: #d1d5db;
+}
+
+/* Responsive adjustments for success actions */
+@media (max-width: 480px) {
+    .success-actions {
+        margin-top: 1.5rem;
+    }
+    
+    .submission-success .btn-home {
+        width: 100%;
+        padding: 0.75rem 1.5rem;
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+    .submission-success {
+        padding: 1.5rem 1rem;
+    }
+    
+    .submission-success h3 {
+        font-size: 1.25rem;
+    }
+    
+    .submission-success p {
+        font-size: 0.95rem;
+    }
+}

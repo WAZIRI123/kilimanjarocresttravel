@@ -2,12 +2,21 @@
 
 namespace App\Livewire;
 
+use App\Models\Booking;
+use App\Mail\AdminBookingNotification;
+use Illuminate\Support\Facades\Mail;
 use Livewire\Component;
+use Illuminate\Support\Facades\Log;
 
 class BookingWizard extends Component
 {
     public $currentStep = 1;
     public $totalSteps = 11; // Total steps including contact info and confirmation
+    
+    // Form submission state
+    public $isSubmitting = false;
+    public $isSubmitted = false;
+    public $submissionError = null;
     
     // Contact Information
     public $firstName = '';
@@ -227,5 +236,164 @@ class BookingWizard extends Component
         
         $this->days = range(1, $daysInMonth);
         $this->selectedDay = ''; // Reset selected day when month changes
+    }
+    
+    /**
+     * Submit the booking form
+     */
+    public function submitBooking()
+    {
+        // Validate all required fields
+        if (!$this->validateAllSteps()) {
+            Log::error('Validation failed in submitBooking');
+            $this->submissionError = 'Please fill in all required fields correctly.';
+            return;
+        }
+        
+        $this->isSubmitting = true;
+        $this->submissionError = null;
+        
+        Log::info('Starting booking submission', [
+            'email' => $this->email,
+            'destination' => $this->selectedDestination,
+            'step' => $this->currentStep
+        ]);
+        
+        try {
+            // Create new booking
+            $bookingData = [
+                'first_name' => $this->firstName,
+                'last_name' => $this->lastName,
+                'email' => $this->email,
+                'phone' => $this->phone,
+                'country' => $this->country,
+                'subscribe_to_newsletter' => $this->subscribeToNewsletter ? 1 : 0,
+                'destination' => $this->selectedDestination,
+                'budget' => $this->selectedBudget,
+                'travel_date_option' => $this->selectedTravelDate,
+                'selected_month' => $this->selectedMonth,
+                'selected_day' => $this->selectedDay,
+                'arrival_date' => $this->arrivalDate ?: null,
+                'departure_date' => $this->departureDate ?: null,
+                'selected_duration' => $this->selectedDuration,
+                'traveling_with' => $this->travelingWith,
+                'safari_preferences' => $this->safariPreferences,
+                'status' => 'pending',
+            ];
+            
+            Log::info('Attempting to create booking', $bookingData);
+            
+            $booking = new Booking($bookingData);
+            
+            // Save the booking
+            $saved = $booking->save();
+            
+            if (!$saved) {
+                throw new \Exception('Failed to save booking to database');
+            }
+            
+            Log::info('Booking saved successfully', ['booking_id' => $booking->id]);
+            
+            // Send email notification to admin
+            try {
+                $adminEmail = config('mail.admin_email', 'admin@stansafaris.com');
+                Log::info('Sending email notification to: ' . $adminEmail);
+                
+                Mail::to($adminEmail)->send(new AdminBookingNotification($booking));
+                Log::info('Email notification sent successfully');
+                
+                // Mark as submitted
+                $this->isSubmitted = true;
+            } catch (\Exception $emailException) {
+                Log::error('Failed to send email notification', [
+                    'error' => $emailException->getMessage(),
+                    'trace' => $emailException->getTraceAsString()
+                ]);
+                // Don't fail the whole process if email fails
+                $this->isSubmitted = true;
+            }
+            
+            // Reset form state if needed
+            // $this->resetExcept(['isSubmitted']);
+            
+        } catch (\Exception $e) {
+            $errorMessage = 'Booking submission failed: ' . $e->getMessage();
+            Log::error($errorMessage, [
+                'exception' => get_class($e),
+                'file' => $e->getFile(),
+                'line' => $e->getLine(),
+                'trace' => $e->getTraceAsString()
+            ]);
+            
+            $this->submissionError = 'An error occurred while submitting your booking. Please try again later.';
+            
+            // Log the full error to the browser console for debugging
+            $this->dispatchBrowserEvent('console-error', [
+                'message' => $errorMessage,
+                'file' => $e->getFile(),
+                'line' => $e->getLine()
+            ]);
+        } finally {
+            $this->isSubmitting = false;
+        }
+    }
+    
+    /**
+     * Validate all form steps
+     */
+    protected function validateAllSteps()
+    {
+        // Check all required steps
+        $stepsToValidate = [
+            1 => !empty($this->selectedDestination),
+            2 => !empty($this->selectedBudget),
+            3 => !empty($this->selectedTravelDate),
+            4 => is_numeric($this->selectedTravelDate) ? !empty($this->selectedMonth) : true,
+            5 => (is_numeric($this->selectedTravelDate) && $this->selectedMonth) ? !empty($this->selectedDay) : true,
+            6 => ($this->selectedTravelDate === 'I have specific dates') ? (!empty($this->arrivalDate) && !empty($this->departureDate)) : true,
+            7 => ($this->selectedTravelDate === 'I am flexible') ? !empty($this->selectedDuration) : true,
+            8 => !empty($this->travelingWith),
+            9 => !empty($this->firstName) && 
+                 !empty($this->lastName) && 
+                 !empty($this->email) && 
+                 filter_var($this->email, FILTER_VALIDATE_EMAIL) &&
+                 !empty($this->phone) &&
+                 !empty($this->country),
+            10 => !empty($this->safariPreferences),
+        ];
+        
+        // If any step is invalid, return false
+        return !in_array(false, $stepsToValidate, true);
+    }
+    
+    /**
+     * Reset the form
+     */
+    public function resetForm()
+    {
+        $this->reset([
+            'currentStep',
+            'firstName',
+            'lastName',
+            'email',
+            'phone',
+            'country',
+            'subscribeToNewsletter',
+            'safariPreferences',
+            'selectedDestination',
+            'selectedBudget',
+            'selectedTravelDate',
+            'selectedMonth',
+            'selectedDay',
+            'arrivalDate',
+            'departureDate',
+            'selectedDuration',
+            'travelingWith',
+            'isSubmitted',
+            'isSubmitting',
+            'submissionError',
+        ]);
+        
+        $this->currentStep = 1;
     }
 }

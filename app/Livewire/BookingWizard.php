@@ -53,7 +53,7 @@ class BookingWizard extends Component
             (string)$currentYear,
             (string)($currentYear + 1),
             (string)($currentYear + 2),
-            'I\'m flexible',
+            'I am flexible',
             'I have specific dates'
         ];
         
@@ -89,7 +89,7 @@ class BookingWizard extends Component
         if ($option === 'I have specific dates') {
             $this->arrivalDate = '';
             $this->departureDate = '';
-        } elseif ($option === 'I\'m flexible') {
+        } elseif ($option === 'I am flexible') {
             $this->selectedDuration = '';
         } else {
             // For year selection, reset month and day
@@ -116,7 +116,7 @@ class BookingWizard extends Component
                 $this->currentStep = 4; // Go to month selection
             } elseif ($this->selectedTravelDate === 'I have specific dates') {
                 $this->currentStep = 6; // Skip to date range input
-            } else { // I'm flexible
+            } elseif ($this->selectedTravelDate === 'I am flexible') {
                 $this->currentStep = 7; // Skip to duration selection
             }
         } elseif ($this->currentStep === 4) {
@@ -138,7 +138,7 @@ class BookingWizard extends Component
             if ($this->currentStep === 8) {
                 if ($this->selectedTravelDate === 'I have specific dates') {
                     $this->currentStep = 6;
-                } elseif ($this->selectedTravelDate === 'I\'m flexible') {
+                } elseif ($this->selectedTravelDate === 'I am flexible') {
                     $this->currentStep = 7;
                 } elseif (is_numeric($this->selectedTravelDate)) {
                     $this->currentStep = 5; // Go back to day selection

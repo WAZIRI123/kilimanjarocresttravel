@@ -298,7 +298,7 @@
                 </script>
                 @endpush
                 
-            @elseif($currentStep === 7 && $selectedTravelDate === 'I\'m flexible')
+            @elseif($currentStep === 7 && $selectedTravelDate === 'I am flexible')
                 <!-- Step 7: Duration Selection (for flexible dates) -->
                 <div>
                     <h2 class="step-title">How long would you like to stay?</h2>
@@ -332,7 +332,7 @@
                     </div>
                 </div>
                 
-            @elseif($currentStep === 9 && $selectedTravelDate === 'I\'m flexible')
+            @elseif($currentStep === 9 && $selectedTravelDate === 'I am flexible')
                 <!-- Step 9: Duration Selection (for flexible dates) -->
                 <div>
                     <h2 class="step-title">How long would you like to stay?</h2>

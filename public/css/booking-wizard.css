@@ -514,6 +514,46 @@
     width: 100%;
 }
 
+/* Safari Preferences Step */
+.safari-preferences-step {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1.5rem 0;
+}
+
+.step-subtitle {
+    color: #4b5563;
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.safari-preferences-textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    resize: vertical;
+    min-height: 150px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.safari-preferences-textarea:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+.hint-text {
+    color: #6b7280;
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
+    text-align: center;
+    font-style: italic;
+}
+
 .date-input {
     width: 100%;
     height: 52px;

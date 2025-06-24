@@ -7,7 +7,8 @@ use Livewire\Component;
 class BookingWizard extends Component
 {
     public $currentStep = 1;
-    public $totalSteps = 8; // Updated total steps to include traveler type and additional steps
+    public $totalSteps = 10; // Total steps including confirmation step
+    public $safariPreferences = ''; // Added for safari preferences
     public $selectedDestination = '';
     public $selectedBudget = '';
     public $selectedTravelDate = '';

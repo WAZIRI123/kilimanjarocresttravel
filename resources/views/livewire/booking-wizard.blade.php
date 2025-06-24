@@ -332,24 +332,23 @@
                     </div>
                 </div>
                 
-            @elseif($currentStep === 9 && $selectedTravelDate === 'I am flexible')
-                <!-- Step 9: Duration Selection (for flexible dates) -->
-                <div>
-                    <h2 class="step-title">How long would you like to stay?</h2>
-                    <div class="destinations-grid">
-                        @foreach($durations as $duration)
-                            <button 
-                                type="button"
-                                wire:click="$set('selectedDuration', '{{ $duration }}')"
-                                class="destination-btn {{ $selectedDuration === $duration ? 'selected' : '' }}"
-                            >
-                                {{ $duration }}
-                            </button>
-                        @endforeach
+            @elseif($currentStep === 9)
+                <!-- Step 9: Safari Preferences -->
+                <div class="safari-preferences-step">
+                    <h2 class="step-title">Tell us about your dream safari</h2>
+                    <p class="step-subtitle">What would you like to see and experience on your safari?</p>
+                    <div class="form-group">
+                        <textarea 
+                            class="form-control safari-preferences-textarea" 
+                            wire:model.live="safariPreferences"
+                            placeholder="For example: Must-see wildlife, special occasions, preferred activities, accommodation preferences, or any specific requirements you have..."
+                            rows="6"
+                        ></textarea>
+                        <p class="hint-text">The more you tell us, the better we can tailor your perfect safari experience.</p>
                     </div>
                 </div>
                 
-            @else
+            @elseif($currentStep === 10)
                 <!-- Final Step -->
                 <div class="step-content">
                     <h2 class="step-title">Almost There!</h2>

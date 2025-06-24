@@ -2,9 +2,19 @@
     <div class="wizard-container">
         <!-- Form Steps -->
         <div class="wizard-steps">
+            <div style="margin:1rem auto; text-align:center;">
+                <a href="/" style="display:inline-flex; align-items:center; text-decoration:none; color:black; font-size:12px;">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right:4px;">
+                        <path d="M19 12H5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 19L5 12L12 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Go Home
+                </a>
+            </div>
             @if($currentStep === 1)
                 <!-- Step 1: Destination Selection -->
                 <div>
+                    
                     <h2 class="step-title">Where would you like to travel?</h2>
                     
                     <div class="destinations-grid">

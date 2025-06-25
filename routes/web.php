@@ -29,3 +29,13 @@ Route::get('/debug/schema', function () {
     $columns = \DB::select('PRAGMA table_info(packages)');
     return response()->json($columns);
 })->middleware('web');
+
+// Debug booking data - REMOVE AFTER USE
+Route::get('/debug/booking/{id}', function ($id) {
+    $booking = \App\Models\Booking::findOrFail($id);
+    return response()->json([
+        'id' => $booking->id,
+        'budget' => $booking->budget,
+        'all_attributes' => $booking->toArray()
+    ]);
+})->middleware('web');

@@ -28,18 +28,32 @@ class AdminPanelProvider extends PanelProvider
             ->path('admin')
             ->login()
             ->brandName('Stan-Safaris')
+            ->favicon(asset('favicon.ico'))
             ->colors([
                 'primary' => Color::Amber,
+                'danger' => Color::Rose,
+                'gray' => Color::Gray,
+                'info' => Color::Blue,
+                'success' => Color::Emerald,
+                'warning' => Color::Orange,
             ])
             ->discoverResources(in: app_path('Filament/Resources'), for: 'App\\Filament\\Resources')
             ->discoverPages(in: app_path('Filament/Pages'), for: 'App\\Filament\\Pages')
             ->pages([
                 Pages\Dashboard::class,
             ])
+            ->navigationGroups([
+                'Bookings',
+                'Content',
+                'Settings',
+            ])
             ->discoverWidgets(in: app_path('Filament/Widgets'), for: 'App\\Filament\\Widgets')
             ->widgets([
-                Widgets\AccountWidget::class,
-                Widgets\FilamentInfoWidget::class,
+                \App\Filament\Widgets\StatsOverview::class,
+            ])
+            ->resources([
+                // Add resources that should be in the navigation here
+                \App\Filament\Resources\BookingResource::class,
             ])
             ->middleware([
                 EncryptCookies::class,

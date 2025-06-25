@@ -1,13 +1,17 @@
 <?php return array (
   'livewireComponents' => 
   array (
+    'app.filament.resources.booking-resource.pages.create-booking' => 'App\\Filament\\Resources\\BookingResource\\Pages\\CreateBooking',
+    'app.filament.resources.booking-resource.pages.edit-booking' => 'App\\Filament\\Resources\\BookingResource\\Pages\\EditBooking',
+    'app.filament.resources.booking-resource.pages.list-bookings' => 'App\\Filament\\Resources\\BookingResource\\Pages\\ListBookings',
+    'app.filament.resources.booking-resource.pages.view-booking' => 'App\\Filament\\Resources\\BookingResource\\Pages\\ViewBooking',
+    'app.filament.resources.booking-resource.widgets.booking-details' => 'App\\Filament\\Resources\\BookingResource\\Widgets\\BookingDetails',
     'app.filament.resources.package-resource.pages.create-package' => 'App\\Filament\\Resources\\PackageResource\\Pages\\CreatePackage',
     'app.filament.resources.package-resource.pages.edit-package' => 'App\\Filament\\Resources\\PackageResource\\Pages\\EditPackage',
     'app.filament.resources.package-resource.pages.list-packages' => 'App\\Filament\\Resources\\PackageResource\\Pages\\ListPackages',
     'app.filament.resources.package-resource.pages.view-package' => 'App\\Filament\\Resources\\PackageResource\\Pages\\ViewPackage',
     'filament.pages.dashboard' => 'Filament\\Pages\\Dashboard',
-    'filament.widgets.account-widget' => 'Filament\\Widgets\\AccountWidget',
-    'filament.widgets.filament-info-widget' => 'Filament\\Widgets\\FilamentInfoWidget',
+    'app.filament.widgets.stats-overview' => 'App\\Filament\\Widgets\\StatsOverview',
     'filament.livewire.database-notifications' => 'Filament\\Livewire\\DatabaseNotifications',
     'filament.pages.auth.edit-profile' => 'Filament\\Pages\\Auth\\EditProfile',
     'filament.livewire.global-search' => 'Filament\\Livewire\\GlobalSearch',
@@ -40,7 +44,9 @@
   ),
   'resources' => 
   array (
+    'C:\\Users\\hp\\CascadeProjects\\stan-safari\\app\\Filament\\Resources\\BookingResource.php' => 'App\\Filament\\Resources\\BookingResource',
     'C:\\Users\\hp\\CascadeProjects\\stan-safari\\app\\Filament\\Resources\\PackageResource.php' => 'App\\Filament\\Resources\\PackageResource',
+    0 => 'App\\Filament\\Resources\\BookingResource',
   ),
   'resourceDirectories' => 
   array (
@@ -52,8 +58,8 @@
   ),
   'widgets' => 
   array (
-    0 => 'Filament\\Widgets\\AccountWidget',
-    1 => 'Filament\\Widgets\\FilamentInfoWidget',
+    'C:\\Users\\hp\\CascadeProjects\\stan-safari\\app\\Filament\\Widgets\\StatsOverview.php' => 'App\\Filament\\Widgets\\StatsOverview',
+    0 => 'App\\Filament\\Widgets\\StatsOverview',
   ),
   'widgetDirectories' => 
   array (

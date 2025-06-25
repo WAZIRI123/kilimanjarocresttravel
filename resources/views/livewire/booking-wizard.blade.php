@@ -2,13 +2,13 @@
     <div class="wizard-container">
         <!-- Form Steps -->
         <div class="wizard-steps">
-            <div style="margin:1rem auto; text-align:center;">
-                <a href="/" class="btn-home">
-                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right:4px;">
+            <div style="margin: 1rem auto; display: flex; justify-content: center; align-items: center;">
+                <a href="/" class="btn-home" style="display: inline-flex; align-items: center; justify-content: center; font-size: 0.7rem; gap: 4px;">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M19 12H5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M12 19L5 12L12 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
-                    Go Home
+                    <span>Go Home</span>
                 </a>
             </div>
             @if($currentStep === 1)
@@ -548,7 +548,7 @@
                         <h3>Booking Submitted Successfully!</h3>
                         <p>Thank you for your booking request. We've received your details and our team will contact you shortly to confirm your safari adventure.</p>
                         <div class="success-actions">
-                            <a href="/" class="btn-home">
+                            <a href="/" class="btn-home"  >
                                 <svg xmlns="http://www.w3.org/2000/svg" class="home-icon" viewBox="0 0 20 20" fill="currentColor">
                                     <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
                                 </svg>

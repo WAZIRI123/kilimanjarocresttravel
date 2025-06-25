@@ -207,6 +207,41 @@
     ),
     'prefix' => 'stan_safaris_cache_',
   ),
+  'contact' => 
+  array (
+    'offices' => 
+    array (
+      'nairobi' => 
+      array (
+        'name' => 'Nairobi Office',
+        'phone' => '+254 20 232 4904',
+        'email' => 'nairobi@stansafaris.com',
+        'address' => 'Nairobi, Kenya',
+      ),
+      'arusha' => 
+      array (
+        'name' => 'Arusha Office',
+        'phone' => '+255 736 500 515',
+        'email' => 'arusha@stansafaris.com',
+        'address' => 'Arusha, Tanzania',
+      ),
+      'cape_town' => 
+      array (
+        'name' => 'Cape Town Office',
+        'phone' => '+27 21 418 0468',
+        'email' => 'capetown@stansafaris.com',
+        'address' => 'Cape Town, South Africa',
+      ),
+    ),
+    'social_media' => 
+    array (
+      'facebook' => 'https://facebook.com/stansafaris',
+      'instagram' => 'https://instagram.com/stansafaris',
+      'twitter' => 'https://twitter.com/stansafaris',
+    ),
+    'support_email' => 'info@stansafaris.com',
+    'booking_email' => 'bookings@stansafaris.com',
+  ),
   'database' => 
   array (
     'default' => 'sqlite',
@@ -512,7 +547,7 @@
   ),
   'mail' => 
   array (
-    'default' => 'log',
+    'default' => 'smtp',
     'mailers' => 
     array (
       'smtp' => 
@@ -520,10 +555,10 @@
         'transport' => 'smtp',
         'scheme' => NULL,
         'url' => NULL,
-        'host' => '127.0.0.1',
+        'host' => 'sandbox.smtp.mailtrap.io',
         'port' => '2525',
-        'username' => NULL,
-        'password' => NULL,
+        'username' => '9dbbe755190c8e',
+        'password' => '6cadeef95f0688',
         'timeout' => NULL,
         'local_domain' => '127.0.0.1',
       ),
@@ -576,7 +611,7 @@
     ),
     'from' => 
     array (
-      'address' => 'hello@example.com',
+      'address' => 'contact@testing.com',
       'name' => 'Stan-Safaris',
     ),
     'markdown' => 

@@ -243,10 +243,13 @@ class BookingWizard extends Component
      */
     public function submitBooking()
     {
-        // Validate all required fields
+        // Prevent multiple submissions
+        if ($this->isSubmitting) {
+            return;
+        }
+        
+        // Final validation before submission
         if (!$this->validateAllSteps()) {
-            Log::error('Validation failed in submitBooking');
-            $this->submissionError = 'Please fill in all required fields correctly.';
             return;
         }
         
@@ -258,6 +261,9 @@ class BookingWizard extends Component
             'destination' => $this->selectedDestination,
             'step' => $this->currentStep
         ]);
+        
+        // Ensure the UI updates to show loading state
+        $this->dispatch('$refresh');
         
         try {
             // Create new booking
@@ -297,21 +303,37 @@ class BookingWizard extends Component
             // Send email notification to admin
             try {
                 $adminEmail = config('mail.admin_email', 'admin@stansafaris.com');
-                Log::info('Sending email notification to: ' . $adminEmail);
+                Log::info('Sending email notification to admin: ' . $adminEmail);
                 
                 Mail::to($adminEmail)->send(new AdminBookingNotification($booking));
-                Log::info('Email notification sent successfully');
+                Log::info('Admin email notification sent successfully');
                 
-                // Mark as submitted
-                $this->isSubmitted = true;
-            } catch (\Exception $emailException) {
-                Log::error('Failed to send email notification', [
-                    'error' => $emailException->getMessage(),
-                    'trace' => $emailException->getTraceAsString()
+            } catch (\Exception $adminEmailException) {
+                Log::error('Failed to send admin email notification', [
+                    'error' => $adminEmailException->getMessage(),
+                    'trace' => $adminEmailException->getTraceAsString()
                 ]);
-                // Don't fail the whole process if email fails
-                $this->isSubmitted = true;
+                // Continue even if admin email fails
             }
+            
+            // Send confirmation email to user
+            try {
+                Log::info('Sending confirmation email to user: ' . $this->email);
+                
+                Mail::to($this->email)->send(new \App\Mail\BookingConfirmation($booking));
+                Log::info('User confirmation email sent successfully');
+                
+            } catch (\Exception $userEmailException) {
+                Log::error('Failed to send user confirmation email', [
+                    'error' => $userEmailException->getMessage(),
+                    'trace' => $userEmailException->getTraceAsString()
+                ]);
+                // Continue even if user email fails
+            }
+            
+            // Mark as submitted
+            $this->isSubmitted = true;
+            $this->isSubmitting = false;
             
             // Reset form state if needed
             // $this->resetExcept(['isSubmitted']);
@@ -326,6 +348,7 @@ class BookingWizard extends Component
             ]);
             
             $this->submissionError = 'An error occurred while submitting your booking. Please try again later.';
+            $this->isSubmitting = false;
             
             // Log the full error to the browser console for debugging
             $this->dispatchBrowserEvent('console-error', [
@@ -333,6 +356,9 @@ class BookingWizard extends Component
                 'file' => $e->getFile(),
                 'line' => $e->getLine()
             ]);
+            
+            // Ensure UI updates to enable the button again
+            $this->dispatch('$refresh');
         } finally {
             $this->isSubmitting = false;
         }

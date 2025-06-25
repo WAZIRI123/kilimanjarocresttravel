@@ -509,15 +509,18 @@
                     <button 
                         type="button"
                         wire:click="submitBooking"
-                        class="btn-next"
-                        @if($isSubmitting) disabled @endif
+                        class="btn-next loading-button"
+                        wire:loading.attr="disabled"
+                        wire:loading.class="is-loading"
                     >
-                        @if($isSubmitting)
-                            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-                            Processing...
-                        @else
-                            Complete Booking
-                        @endif
+                        <span class="button-content">
+                            <span class="button-text">Complete Booking</span>
+                            <span class="loading-spinner">
+                                <span class="spinner-dot"></span>
+                                <span class="spinner-dot"></span>
+                                <span class="spinner-dot"></span>
+                            </span>
+                        </span>
                     </button>
                 @elseif(!$isSubmitted)
                     <!-- Regular Next Button -->

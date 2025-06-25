@@ -39,3 +39,16 @@ Route::get('/debug/booking/{id}', function ($id) {
         'all_attributes' => $booking->toArray()
     ]);
 })->middleware('web');
+
+// Email template placeholder routes
+Route::get('/itineraries', function () {
+    return redirect('/')->with('message', 'Itineraries page coming soon!');
+})->name('itineraries');
+
+Route::get('/special-offers', function () {
+    return redirect('/')->with('message', 'Special offers page coming soon!');
+})->name('special-offers');
+
+Route::get('/home', function () {
+    return redirect('/');
+})->name('home');

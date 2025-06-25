@@ -1,11 +1,8 @@
 <?php return array (
   'livewireComponents' => 
   array (
-    'app.filament.resources.booking-resource.pages.create-booking' => 'App\\Filament\\Resources\\BookingResource\\Pages\\CreateBooking',
-    'app.filament.resources.booking-resource.pages.edit-booking' => 'App\\Filament\\Resources\\BookingResource\\Pages\\EditBooking',
     'app.filament.resources.booking-resource.pages.list-bookings' => 'App\\Filament\\Resources\\BookingResource\\Pages\\ListBookings',
     'app.filament.resources.booking-resource.pages.view-booking' => 'App\\Filament\\Resources\\BookingResource\\Pages\\ViewBooking',
-    'app.filament.resources.booking-resource.widgets.booking-details' => 'App\\Filament\\Resources\\BookingResource\\Widgets\\BookingDetails',
     'app.filament.resources.package-resource.pages.create-package' => 'App\\Filament\\Resources\\PackageResource\\Pages\\CreatePackage',
     'app.filament.resources.package-resource.pages.edit-package' => 'App\\Filament\\Resources\\PackageResource\\Pages\\EditPackage',
     'app.filament.resources.package-resource.pages.list-packages' => 'App\\Filament\\Resources\\PackageResource\\Pages\\ListPackages',

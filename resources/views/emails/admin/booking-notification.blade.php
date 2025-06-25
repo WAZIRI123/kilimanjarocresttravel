@@ -4,6 +4,9 @@
 A new safari booking has been submitted through the website. Here are the details:
 
 ## Trip Details
+@if($booking->package_title)
+- **Package:** {{ $booking->package_title }}
+@endif
 - **Destination:** {{ $booking->destination }}
 - **Budget:** {{ $booking->budget }}
 - **Travel Dates:** {{ $formattedTravelDates }}

@@ -103,6 +103,13 @@
             
             <p class="greeting">We have received your travel enquiry and it is currently being processed by our reservations team. Someone will be in touch with you within 24 hours (48 hours if it's the weekend) to discuss how we can help you experience the best of East Africa.</p>
             
+            @if($booking->package_title)
+            <div class="package-details" style="background: #f8f9fa; padding: 15px; border-left: 4px solid #1a5276; margin: 20px 0;">
+                <h3 style="margin-top: 0; color: #1a5276;">Package Details</h3>
+                <p style="margin: 5px 0 0 0; font-weight: 500;">{{ $booking->package_title }}</p>
+            </div>
+            @endif
+            
             @if($booking->id)
             <div class="booking-ref">
                 <strong>Your Booking Reference:</strong> #{{ $booking->id }}

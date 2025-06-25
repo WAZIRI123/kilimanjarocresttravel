@@ -21,7 +21,29 @@ Route::get('/destinations/{id}', [DestinationController::class, 'show'])
 
 // Booking Wizard
 Route::get('/book-now', function () {
-    return view('book-now');
+    // Get package ID from query parameter
+    $packageId = request()->query('package');
+    
+    // Debug information
+    $debugInfo = [
+        'package_query_param' => $packageId,
+        'package_type' => gettype($packageId),
+        'request_all' => request()->all(),
+        'request_url' => request()->fullUrl(),
+    ];
+    
+    \Log::info('Book Now Route Debug:', $debugInfo);
+    
+    // Dump debug info to response in local environment
+    if (app()->environment('local')) {
+        dump('Package ID from query parameter:', $packageId);
+        dump('Package ID being passed to view:', $packageId ? (int)$packageId : null);
+    }
+    
+    // Pass the package ID to the view
+    return view('book-now', [
+        'packageId' => $packageId ? (int)$packageId : null
+    ]);
 })->name('book-now');
 
 // Debug route - REMOVE AFTER USE

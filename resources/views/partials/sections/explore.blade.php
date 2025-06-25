@@ -1,6 +1,7 @@
 <section id="comp-m31oqvfr" tabindex="-1" data-block-level-container="Section" class="xuzjBY comp-m31oqvfr wixui-sectio="comp-m2opg1yq"id="section-container">
     <style>
         @media (min-width: 768px) {
+            
             #comp-m31oqvfr {
                 height: 40px !important;
             }
@@ -14,7 +15,7 @@
 </section><!--/$--><!--$-->
 
 @if(isset($packages) && count($packages) > 0)
-<div class="related-packages" id="comp-m2olr16u" style="padding: 3rem 0 1rem 0; margin: 0 auto; background-color:#fff">
+<div class="related-packages" id="comp-m2olr16u" style="padding: 3rem 0 1rem 0; margin: 0 auto; background-color:#fff;">
 
     <div style="width: 100%; display: flex; justify-content: center;">
         <div style="width: 100%; max-width: 100%; padding: 0 15px;">
@@ -89,8 +90,19 @@
 </div>
 </div>
 
+
+<style>
+    @media(min-width:1024px){
+    #comp-m2olr16u{
+       width:80%;
+    }
+        
+}
+</style>
+
 @push('styles')
 <style>
+    
     /* Responsive adjustments */
     @media (max-width: 1024px) {
         .related-packages > div {
@@ -118,10 +130,14 @@
     
     /* Match main content width */
     @media (min-width: 1024px) {
+    
         .related-packages > div > div {
             width: 100%;
             max-width: 1200px;
             margin: 0 auto;
+        }
+        .w-70p{
+            width:70% !important;
         }
     }
     

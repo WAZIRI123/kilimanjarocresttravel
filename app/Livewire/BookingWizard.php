@@ -8,9 +8,13 @@ use Illuminate\Support\Facades\Mail;
 use Livewire\Component;
 use Illuminate\Support\Facades\Log;
 
+use App\Models\Package;
+
 class BookingWizard extends Component
 {
     public $currentStep = 1;
+    public $packageId = null;
+    public $package = null;
     public $totalSteps = 11; // Total steps including contact info and confirmation
     
     // Form submission state
@@ -66,8 +70,14 @@ class BookingWizard extends Component
         '2 weeks+'
     ];
     
-    public function mount()
+    public function mount($packageId = null)
     {
+        // First check if package ID is in the query parameters
+        $packageId = request()->query('package', $packageId);
+        
+        // Convert package ID to integer if it's not null
+        $this->packageId = $packageId ? (int)$packageId : null;
+        
         $currentYear = (int)date('Y');
         $this->travelDateOptions = [
             (string)$currentYear,
@@ -81,6 +91,36 @@ class BookingWizard extends Component
             'January', 'February', 'March', 'April', 'May', 'June',
             'July', 'August', 'September', 'October', 'November', 'December'
         ];
+        
+      
+        
+        // Load package if ID is provided
+        if ($packageId) {
+       
+            $this->packageId = $packageId;
+            $this->package = Package::find($packageId);
+            
+            // Set destination based on package's country
+            if ($this->package) {
+                // Map country to the expected destination format (uppercase)
+                $countryMap = [
+                    'tanzania' => 'TANZANIA',
+                    'kenya' => 'KENYA',
+                    'rwanda' => 'RWANDA',
+                    'uganda' => 'UGANDA',
+                    'zanzibar' => 'ZANZIBAR'
+                ];
+                
+                // Get the country from the package and convert to lowercase for case-insensitive comparison
+                $packageCountry = strtolower(trim($this->package->country));
+             
+                // Map the country to the expected destination format, default to 'TANZANIA' if not found
+                $this->selectedDestination = $countryMap[$packageCountry] ?? 'TANZANIA';
+             
+                // Skip to the next step (budget selection) since destination is pre-selected
+                $this->currentStep = 2;
+            }
+        }
     }
     
     protected $listeners = ['goToNextStep', 'goToPreviousStep'];
@@ -88,7 +128,8 @@ class BookingWizard extends Component
     public function render()
     {
         return view('livewire.booking-wizard', [
-            'progress' => ($this->currentStep / $this->totalSteps) * 100
+            'progress' => ($this->currentStep / $this->totalSteps) * 100,
+            'package' => $this->package
         ]);
     }
 
@@ -266,7 +307,7 @@ class BookingWizard extends Component
         $this->dispatch('$refresh');
         
         try {
-            // Create new booking
+            // Prepare booking data
             $bookingData = [
                 'first_name' => $this->firstName,
                 'last_name' => $this->lastName,
@@ -287,7 +328,13 @@ class BookingWizard extends Component
                 'status' => 'pending',
             ];
             
-            Log::info('Attempting to create booking', $bookingData);
+            // Add package details if booking is for a package
+            if ($this->packageId && $this->package) {
+                $bookingData['package_id'] = $this->package->id;
+                $bookingData['package_title'] = $this->package->title;
+            }
+            
+            Log::info('Creating booking with data:', $bookingData);
             
             $booking = new Booking($bookingData);
             
@@ -340,25 +387,39 @@ class BookingWizard extends Component
             
         } catch (\Exception $e) {
             $errorMessage = 'Booking submission failed: ' . $e->getMessage();
+            
+            // Log detailed error information
             Log::error($errorMessage, [
                 'exception' => get_class($e),
                 'file' => $e->getFile(),
                 'line' => $e->getLine(),
-                'trace' => $e->getTraceAsString()
+                'trace' => $e->getTraceAsString(),
+                'form_data' => [
+                    'destination' => $this->selectedDestination,
+                    'budget' => $this->selectedBudget,
+                    'package_id' => $this->packageId ?? null,
+                    'package' => $this->package ? 'exists' : 'null'
+                ]
             ]);
             
-            $this->submissionError = 'An error occurred while submitting your booking. Please try again later.';
+            // Set a more specific error message
+            $this->submissionError = 'An error occurred while submitting your booking. Please check your information and try again. If the problem persists, please contact support.';
             $this->isSubmitting = false;
             
             // Log the full error to the browser console for debugging
-            $this->dispatchBrowserEvent('console-error', [
-                'message' => $errorMessage,
-                'file' => $e->getFile(),
-                'line' => $e->getLine()
-            ]);
+            $this->dispatch('console-error', 
+                message: $errorMessage,
+                file: $e->getFile(),
+                line: $e->getLine()
+            );
             
             // Ensure UI updates to enable the button again
             $this->dispatch('$refresh');
+            
+            // Re-throw the exception in development for better debugging
+            if (app()->environment('local')) {
+                throw $e;
+            }
         } finally {
             $this->isSubmitting = false;
         }

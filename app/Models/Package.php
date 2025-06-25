@@ -20,6 +20,7 @@ class Package extends Model
         'overview',
         'short_description',
         'category',
+        'country',
         'featured_image',
         'price',
         'is_featured',

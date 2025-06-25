@@ -90,6 +90,13 @@ class PackageResource extends Resource
                                             ->maxLength(100)
                                             ->helperText('E.g., Adventure, Safari, Cultural, etc.')
                                             ->columnSpanFull(),
+                                            
+                                        Forms\Components\TextInput::make('country')
+                                            ->required()
+                                            ->maxLength(100)
+                                            ->default('Tanzania')
+                                            ->helperText('E.g., Tanzania, Kenya, Rwanda, etc.')
+                                            ->columnSpanFull(),
 
 Forms\Components\RichEditor::make('best_time_to_visit')
                                             ->label('Best Time to Visit')
@@ -279,7 +286,10 @@ Forms\Components\RichEditor::make('best_time_to_visit')
             ->columns([
                 Tables\Columns\ImageColumn::make('featured_image')
                     ->circular(),
-                Tables\Columns\TextColumn::make('title')
+                Tables\Columns\TextColumn::make('category')
+                    ->searchable()
+                    ->sortable(),
+                Tables\Columns\TextColumn::make('country')
                     ->searchable()
                     ->sortable(),
                 Tables\Columns\TextColumn::make('duration')

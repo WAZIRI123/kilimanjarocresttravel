@@ -1,5 +1,6 @@
 <div class="booking-wizard">
     <div class="wizard-container">
+      
         <!-- Form Steps -->
         <div class="wizard-steps">
             <div style="margin: 1rem auto; display: flex; justify-content: center; align-items: center;">
@@ -458,6 +459,9 @@
                         <h3>Your Trip Details</h3>
                         <div class="summary-section">
                             <h4>Trip Information</h4>
+                            @if($package && $package->title)
+                                <p><strong>Package:</strong> {{ $package->title }}</p>
+                            @endif
                             <p><strong>Destination:</strong> {{ $selectedDestination }}</p>
                             <p><strong>Budget:</strong> {{ $selectedBudget }}</p>
                             <p>

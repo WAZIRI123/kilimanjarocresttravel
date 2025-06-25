@@ -29,6 +29,8 @@ class Booking extends Model
         'traveling_with',
         'safari_preferences',
         'status',
+        'package_id',
+        'package_title',
     ];
 
     /**

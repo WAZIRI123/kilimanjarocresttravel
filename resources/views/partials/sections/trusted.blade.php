@@ -92,13 +92,13 @@ data-testid="section-container">
                                             <wow-image
                                                 id="img-comp-m0dqbe5a__item-j9ples3e"
                                                 data-is-responsive="true"
-                                                data-image-info="{&quot;containerId&quot;:&quot;comp-m0dqbe5a__item-j9ples3e&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;parallaxSpeed&quot;:1.5,&quot;sourceSets&quot;:[],&quot;imageData&quot;:{&quot;uri&quot;:&quot;851897_06316a2145fe40d184c5ba699d833f65~mv2.png&quot;,&quot;width&quot;:551,&quot;height&quot;:193,&quot;alt&quot;:&quot;5 Star Reviews on Trustindex - Star Safari&quot;,&quot;name&quot;:&quot;Trust-index-rating.png&quot;,&quot;decorative&quot;:false,&quot;displayMode&quot;:&quot;fit&quot;,&quot;scrollEffect&quot;:&quot;none&quot;,&quot;focalPoint&quot;:null},&quot;hasAnimation&quot;:false,&quot;encoding&quot;:&quot;AVIF&quot;}"
+                                                data-image-info="{&quot;containerId&quot;:&quot;comp-m0dqbe5a__item-j9ples3e&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;parallaxSpeed&quot;:1.5,&quot;sourceSets&quot;:[],&quot;imageData&quot;:{&quot;uri&quot;:&quot;{{ asset('images/yourguide.png') }}&quot;,&quot;width&quot;:551,&quot;height&quot;:193,&quot;alt&quot;:&quot;5 Star Reviews on Trustindex - Star Safari&quot;,&quot;name&quot;:&quot;Trust-index-rating.png&quot;,&quot;decorative&quot;:false,&quot;displayMode&quot;:&quot;fit&quot;,&quot;scrollEffect&quot;:&quot;none&quot;,&quot;focalPoint&quot;:null},&quot;hasAnimation&quot;:false,&quot;encoding&quot;:&quot;AVIF&quot;}"
                                                 data-has-ssr-src="true"
                                                 data-motion-part="BG_IMG comp-m0dqbe5a__item-j9ples3e"
                                                 class="Ux33nC">
                                                 <picture><img
                                                         loading="lazy"
-                                                        src="https://static.wixstatic.com/media/851897_06316a2145fe40d184c5ba699d833f65~mv2.png/v1/fill/w_55,h_19,al_c,q_85,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/Trust-index-rating.png"
+                                                        src="{{ asset('images/yourguide.png') }}"
                                                         alt="5 Star Reviews on Trustindex - Star Safari"
                                                         style="object-fit:contain;object-position:center">
                                                 </picture>

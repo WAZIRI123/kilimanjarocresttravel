@@ -93,7 +93,13 @@
                                         @include('partials.sections.footer')
    <!-- Start of HubSpot Embed Code -->
 <script type="text/javascript" id="hs-script-loader" async defer src="//js-na2.hs-scripts.com/243011933.js"></script>
-<!-- End of HubSpot Embed Code -->                                    
+<!-- End of HubSpot Embed Code -->    
+<style>
+@media(max-width:991px)   {
+    #comp-m367d9um11,#comp-m367d9ul5{
+        margin-left: 0 !important;
+    }
+}                             
 </body>
 
 </html>

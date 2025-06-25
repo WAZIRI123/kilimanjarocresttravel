@@ -73,4 +73,13 @@ data-testid="section-container">
         </div><!--/$-->
     </div><!--/$-->
 </div>
+<style>
+    @media(max-width:991px){
+    
+        #comp-m1oo0rkw3{
+            padding-bottom: 60px !important;
+
+        }
+    }
+    </style>
 </section><!--/$--><!--$-->

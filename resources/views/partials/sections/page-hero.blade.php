@@ -15,7 +15,7 @@
                 <a href="{{ route('all-packages') }}" class="nav-link {{ request()->is('all-packages*') ? 'active' : '' }}">Safari Packages</a>
                 <a href="#destinations" class="nav-link">Destinations</a>
                 <a href="#about" class="nav-link">About Us</a>
-                <a href="#contact" class="nav-cta-button">Get Quote</a>
+                <a href="book-now" class="nav-cta-button">Get Quote</a>
             </div>
             
             <!-- Mobile Menu Button -->

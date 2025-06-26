@@ -34,43 +34,11 @@ Route::get('/book-now', function () {
     // Get package ID from query parameter
     $packageId = request()->query('package');
     
-    // Debug information
-    $debugInfo = [
-        'package_query_param' => $packageId,
-        'package_type' => gettype($packageId),
-        'request_all' => request()->all(),
-        'request_url' => request()->fullUrl(),
-    ];
-    
-    \Log::info('Book Now Route Debug:', $debugInfo);
-    
-    // Dump debug info to response in local environment
-    if (app()->environment('local')) {
-        dump('Package ID from query parameter:', $packageId);
-        dump('Package ID being passed to view:', $packageId ? (int)$packageId : null);
-    }
-    
     // Pass the package ID to the view
     return view('book-now', [
         'packageId' => $packageId ? (int)$packageId : null
     ]);
 })->name('book-now');
-
-// Debug route - REMOVE AFTER USE
-Route::get('/debug/schema', function () {
-    $columns = \DB::select('PRAGMA table_info(packages)');
-    return response()->json($columns);
-})->middleware('web');
-
-// Debug booking data - REMOVE AFTER USE
-Route::get('/debug/booking/{id}', function ($id) {
-    $booking = \App\Models\Booking::findOrFail($id);
-    return response()->json([
-        'id' => $booking->id,
-        'budget' => $booking->budget,
-        'all_attributes' => $booking->toArray()
-    ]);
-})->middleware('web');
 
 // Email template placeholder routes
 Route::get('/itineraries', function () {

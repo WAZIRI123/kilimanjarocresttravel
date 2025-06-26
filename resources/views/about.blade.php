@@ -57,7 +57,7 @@
                                             @include('partials.sections.page-hero', [
                                                 'image' => asset('images/serengeti-safari-tanzania.jpg'),
                                                 'title' => 'About Stan Safaris',
-                                                'subtitle' => 'Your Trusted Partner for Unforgettable African Safaris'
+                                                'subtitle' => 'Your Trusted Partner'
                                             ])
 
                                        
@@ -80,14 +80,14 @@
                                                     <!-- Team Member 1 -->
                                                     <div class="group relative overflow-hidden rounded-xl">
                                                         <div class="aspect-w-1 aspect-h-1">
-                                                            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" 
-                                                                 alt="Guide" 
+                                                            <img src="https://placehold.co/600x750/png" 
+                                                                 alt="James Mwita - Head Safari Guide" 
                                                                  class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
                                                         </div>
                                                         <div class="absolute inset-0 bg-gradient-to-t from-black to-35% to-transparent transition duration-300 flex items-end p-6">
                                                             <div>
                                                                 <h4 class="text-white text-xl font-bold">James Mwita</h4>
-                                                                <p class="text-yellow-400"style="color: #fff;">Head Safari Guide</p>
+                                                                <p class="text-white">Head Safari Guide</p>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -95,14 +95,14 @@
                                                     <!-- Team Member 2 -->
                                                     <div class="group relative overflow-hidden rounded-xl">
                                                         <div class="aspect-w-1 aspect-h-1">
-                                                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" 
-                                                                 alt="Guide" 
+                                                            <img src="https://placehold.co/600x750/png" 
+                                                                 alt="Neema Joseph - Cultural Specialist" 
                                                                  class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
                                                         </div>
                                                         <div class="absolute inset-0 bg-gradient-to-t from-black to-35% to-transparent transition duration-300 flex items-end p-6">
                                                             <div>
                                                                 <h4 class="text-white text-xl font-bold">Neema Joseph</h4>
-                                                                <p class="text-yellow-400"style="color: #fff;">Cultural Specialist</p>
+                                                                <p class="text-white">Cultural Specialist</p>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -110,14 +110,14 @@
                                                     <!-- Team Member 3 -->
                                                     <div class="group relative overflow-hidden rounded-xl">
                                                         <div class="aspect-w-1 aspect-h-1">
-                                                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" 
-                                                                 alt="Guide" 
+                                                            <img src="https://placehold.co/600x750/png" 
+                                                                 alt="Rajabu Ally - Wildlife Photographer" 
                                                                  class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
                                                         </div>
                                                         <div class="absolute inset-0 bg-gradient-to-t from-black to-35% to-transparent transition duration-300 flex items-end p-6">
                                                             <div>
                                                                 <h4 class="text-white text-xl font-bold">Rajabu Ally</h4>
-                                                                <p class="text-yellow-400"style="color: #fff;">Wildlife Photographer</p>
+                                                                <p class="text-white">Wildlife Photographer</p>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -125,14 +125,14 @@
                                                     <!-- Team Member 4 -->
                                                     <div class="group relative overflow-hidden rounded-xl">
                                                         <div class="aspect-w-1 aspect-h-1">
-                                                            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" 
-                                                                 alt="Guide" 
+                                                            <img src="https://placehold.co/600x750/png" 
+                                                                 alt="Amina Hassan - Adventure Specialist" 
                                                                  class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
                                                         </div>
                                                         <div class="absolute inset-0 bg-gradient-to-t from-black to-35% to-transparent transition duration-300 flex items-end p-6">
                                                             <div>
                                                                 <h4 class="text-white text-xl font-bold">Amina Hassan</h4>
-                                                                <p class="text-yellow-400"style="color: #fff;">Adventure Specialist</p>
+                                                                <p class="text-white">Adventure Specialist</p>
                                                             </div>
                                                         </div>
                                                     </div>

@@ -15,7 +15,7 @@
                 <a href="{{ route('all-packages') }}" class="nav-link {{ request()->is('all-packages*') ? 'active' : '' }}">Safari Packages</a>
                 <a href="#destinations" class="nav-link">Destinations</a>
                 <a href="#about" class="nav-link">About Us</a>
-                <a href="#contact" class="nav-cta-button">Get Quote</a>
+                <a href="book-now" class="nav-cta-button">Get Quote</a>
             </div>
             
             <!-- Mobile Menu Button -->
@@ -109,8 +109,8 @@ letter-spacing: 0.01em;">
             <div class="hero-cta">
                 <div class="cta-wrapper">
                     <div class="cta-buttons">
-                        <a href="#safari-packages" class="cta-button">View Tours</a>
-                        <a href="#contact" class="cta-button secondary" >Book Now</a>
+                        <a href="all-packages" class="cta-button">View Tours</a>
+                        <a href="book-now" class="cta-button secondary" >Book Now</a>
                     </div>
                     
                     <!-- Scroll Indicator -->

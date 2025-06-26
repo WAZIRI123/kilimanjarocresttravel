@@ -11,6 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=The+Girl+Next+Door&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="{{ asset('css/booking-wizard.css') }}" rel="stylesheet">
+    {{-- Tailwind CSS CDN --}}
+    <script src="https://cdn.tailwindcss.com"></script>
     <!-- Gallery Fix Script -->
     <script src="{{ asset('js/gallery-fix.js') }}"></script>
     <script src="{{ asset('js/gallery-slider.js') }}"></script>

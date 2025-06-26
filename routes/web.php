@@ -8,6 +8,16 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+// About Us Page
+Route::get('/about', function () {
+    return view('about');
+})->name('about');
+
+// Contact Page
+Route::get('/contact', function () {
+    return view('contact');
+})->name('contact');
+
 Route::get('/all-packages', [\App\Http\Controllers\PackageController::class, 'index'])->name('all-packages');
 
 // Package routes

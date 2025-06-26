@@ -20,29 +20,29 @@
                         
                         <div class="space-y-6">
                             <div class="flex items-start">
-                                <div class="flex-shrink-0 bg-yellow-100 p-3 rounded-full">
-                                    <i class="fas fa-map-marker-alt text-yellow-500 text-xl"></i>
+                                <div class="flex-shrink-0 bg-[#4d4402e0] p-3 rounded-full">
+                                    <i class="fas fa-map-marker-alt text-white text-xl"></i>
                                 </div>
                                 <div class="ml-4">
                                     <h3 class="text-xl font-semibold text-gray-800 mb-2">Our Office</h3>
-                                    <p class="text-gray-700 text-base">123 Safari Street, Arusha, Tanzania</p>
+                                    <p class="text-gray-700 text-base">Dar es Salaam
+                                        , Tanzania</p>
                                 </div>
                             </div>
                             
                             <div class="flex items-start">
-                                <div class="flex-shrink-0 bg-yellow-100 p-3 rounded-full">
-                                    <i class="fas fa-phone-alt text-yellow-500 text-xl"></i>
+                                <div class="flex-shrink-0 bg-[#4d4402e0] p-3 rounded-full">
+                                    <i class="fas fa-phone-alt text-white text-xl"></i>
                                 </div>
                                 <div class="ml-4">
                                     <h3 class="text-xl font-semibold text-gray-800 mb-2">Call Us</h3>
-                                    <p class="text-gray-700 text-base">+255 123 456 789</p>
-                                    <p class="text-gray-700 text-base">+255 987 654 321</p>
+                                    <p class="text-gray-700 text-base">+255754 261 101</p>
                                 </div>
                             </div>
                             
                             <div class="flex items-start">
-                                <div class="flex-shrink-0 bg-yellow-100 p-3 rounded-full">
-                                    <i class="fas fa-envelope text-yellow-500 text-xl"></i>
+                                <div class="flex-shrink-0 bg-[#4d4402e0] p-3 rounded-full">
+                                    <i class="fas fa-envelope text-white text-xl"></i>
                                 </div>
                                 <div class="ml-4">
                                     <h3 class="text-xl font-semibold text-gray-800 mb-2">Email Us</h3>
@@ -52,8 +52,8 @@
                             </div>
                             
                             <div class="flex items-start">
-                                <div class="flex-shrink-0 bg-yellow-100 p-3 rounded-full">
-                                    <i class="fas fa-clock text-yellow-500 text-xl"></i>
+                                <div class="flex-shrink-0 bg-[#4d4402e0] p-3 rounded-full">
+                                    <i class="fas fa-clock text-white text-xl"></i>
                                 </div>
                                 <div class="ml-4">
                                     <h3 class="text-xl font-semibold text-gray-800 mb-2">Working Hours</h3>
@@ -67,16 +67,16 @@
                         <div class="mt-8">
                             <h3 class="text-lg font-semibold text-gray-800 mb-4">Follow Us</h3>
                             <div class="flex space-x-4">
-                                <a href="#" class="text-gray-600 hover:text-yellow-500 transition-colors">
+                                <a href="#" class="text-gray-600 hover:text-white transition-colors">
                                     <i class="fab fa-facebook-f text-2xl"></i>
                                 </a>
-                                <a href="#" class="text-gray-600 hover:text-yellow-500 transition-colors">
+                                <a href="#" class="text-gray-600 hover:text-white transition-colors">
                                     <i class="fab fa-twitter text-2xl"></i>
                                 </a>
-                                <a href="#" class="text-gray-600 hover:text-yellow-500 transition-colors">
+                                <a href="#" class="text-gray-600 hover:text-white transition-colors">
                                     <i class="fab fa-instagram text-2xl"></i>
                                 </a>
-                                <a href="#" class="text-gray-600 hover:text-yellow-500 transition-colors">
+                                <a href="#" class="text-gray-600 hover:text-white transition-colors">
                                     <i class="fab fa-youtube text-2xl"></i>
                                 </a>
                             </div>
@@ -119,7 +119,7 @@
                             
                             <div>
                                 <button type="submit" 
-                                    class="w-full bg-yellow-500 text-white font-semibold py-3 px-6 rounded-md hover:bg-yellow-600 transition duration-300">
+                                    class="w-full bg-[#4d4402e0] text-white font-semibold py-3 px-6 rounded-md hover:bg-[#4d4402e0] transition duration-300">
                                     Send Message
                                 </button>
                             </div>
@@ -133,12 +133,13 @@
     <!-- Map Section -->
     <section class="h-96 bg-gray-100">
         <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.534232990382!2d36.82182031475398!3d-1.2863436359668116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1a6bf7445dc1%3A0x940b62a3b7f3b1e6!2sNairobi%2C%20Kenya!5e0!3m2!1sen!2ske!4v1620000000000!5m2!1sen!2ske" 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.964978242355!2d39.20820031477197!3d-6.792481195057237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x185c4b03e0991891%3A0x9d5eefcaf6a1f0a9!2sDar%20es%20Salaam%2C%20Tanzania!5e0!3m2!1sen!2s!4v1620000000000!5m2!1sen!2s" 
             width="100%" 
             height="100%" 
             style="border:0;" 
             allowfullscreen="" 
-            loading="lazy">
+            loading="lazy"
+            title="Stan Safaris Office Location - Dar es Salaam, Tanzania">
         </iframe>
     </section>
 
@@ -167,7 +168,6 @@
         }
         
         .contact-subtitle {
-            margin-top: -15px;
             font-size: 1.1rem;
             color: #4b5563;
         }
@@ -218,7 +218,7 @@
             --tw-ring-color: rgba(245, 158, 11, var(--tw-ring-opacity));
         }
         
-        .hover\:bg-yellow-600:hover {
+        .hover\:bg-[#4d4402e0]:hover {
             --tw-bg-opacity: 1;
             background-color: rgba(217, 119, 6, var(--tw-bg-opacity));
         }

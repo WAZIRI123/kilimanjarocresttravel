@@ -14,9 +14,8 @@ Route::get('/about', function () {
 })->name('about');
 
 // Contact Page
-Route::get('/contact', function () {
-    return view('contact');
-})->name('contact');
+Route::get('/contact', [\App\Http\Controllers\ContactController::class, 'show'])->name('contact');
+Route::post('/contact', [\App\Http\Controllers\ContactController::class, 'submit'])->name('contact.submit');
 
 Route::get('/all-packages', [\App\Http\Controllers\PackageController::class, 'index'])->name('all-packages');
 

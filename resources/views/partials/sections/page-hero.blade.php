@@ -14,7 +14,8 @@
                 <a href="/" class="nav-link {{ request()->is('/') ? 'active' : '' }}">Home</a>
                 <a href="{{ route('all-packages') }}" class="nav-link {{ request()->is('all-packages*') ? 'active' : '' }}">Safari Packages</a>
                 <a href="#destinations" class="nav-link">Destinations</a>
-                <a href="#about" class="nav-link">About Us</a>
+                <a href="{{ route('about') }}" class="nav-link {{ request()->is('about') ? 'active' : '' }}">About Us</a>
+                <a href="{{ route('contact') }}" class="nav-link {{ request()->is('contact') ? 'active' : '' }}">Contact Us</a>
                 <a href="book-now" class="nav-cta-button">Get Quote</a>
             </div>
             
@@ -82,7 +83,7 @@
     </style>
 
     <!-- Hero Content -->
-    <div class="hero-content" style="padding-top: 30vh;">
+    <div class="hero-content" style="padding-top: 20vh;">
         <div class="hero-text">
             <h1 class="font_0 wixui-rich-text__text" style="color:#fff;font-weight: bold; font-size: 90px;
     text-decoration: none;
@@ -93,7 +94,7 @@
                         {{ $title ?? 'The Essence of Untamed' }}
                     </div>
                 </div>
-                <div class="title-wrapper" style="overflow: hidden;">
+                <div class="title-wrapper contact-subtitle" style="overflow: hidden;">
                     <div class="title-line accent hero-description" style="display: inline-block; transform: translateY(100%); opacity: 0; animation: slideUp 0.8s ease-out 0.6s forwards; padding: 2.0rem 0;  font-family: 'The Girl Next Door', cursive;
 font-weight: 400;
 font-style: normal;
@@ -744,6 +745,22 @@ letter-spacing: 0.01em;">
             .title-line {
                 font-size: 4.5rem;
             }
+            .hero-content{
+                width: 100%;
+            }
+            #hero-section {
+              height: 50%;
+              min-height: 50vh !important;
+            }
+            .hero-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            overflow: hidden;
+        }
             .title-line.accent {
                 font-size: 4.5rem;
             }

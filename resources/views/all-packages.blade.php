@@ -23,7 +23,7 @@
       
         @if($packages->count() > 0)
             @include('partials.packages.related-packages', [
-                'title' => 'Our Featured Packages',
+                'title' => 'Our Packages',
                 'viewAllLink' => '#',
                 'packages' => $packages->map(function($package) {
                     return [

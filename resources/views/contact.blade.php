@@ -2,15 +2,11 @@
 
 @section('content')
     <!-- Hero Section with Page Title -->
-    <section class="page-hero-section bg-cover bg-center relative" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1526772662000-3f88f10405ff?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80');">
-        <div class="container mx-auto px-4 h-full flex items-center justify-center text-center">
-            <div class="text-white py-24">
-                <h1 class="text-5xl md:text-6xl font-bold mb-4">Contact Us</h1>
-                <div class="w-24 h-1 bg-yellow-500 mx-auto mb-6"></div>
-                <p class="text-xl md:text-2xl">We'd love to hear from you. Get in touch with our team.</p>
-            </div>
-        </div>
-    </section>
+    @include('partials.sections.page-hero', [
+        'image' => asset('images/serengeti-safari-tanzania.jpg'),
+        'title' => 'Contact Us',
+        'subtitle' => 'Get in Touch'
+    ])
 
     <!-- Contact Form Section -->
     <section class="py-16 md:py-24 bg-white">
@@ -19,8 +15,8 @@
                 <div class="grid md:grid-cols-2 gap-12">
                     <!-- Contact Information -->
                     <div>
-                        <h2 class="text-3xl font-bold text-gray-800 mb-6">Get in Touch</h2>
-                        <p class="text-gray-600 mb-8">Have questions about our safaris or need help planning your trip? Our team is here to assist you.</p>
+                        <h2 class="text-4xl font-bold text-gray-800 mb-6">Get in Touch</h2>
+                        <p class="text-lg text-gray-700 mb-8 leading-relaxed">Have questions about our safaris or need help planning your trip? Our team is here to assist you.</p>
                         
                         <div class="space-y-6">
                             <div class="flex items-start">
@@ -28,8 +24,8 @@
                                     <i class="fas fa-map-marker-alt text-yellow-500 text-xl"></i>
                                 </div>
                                 <div class="ml-4">
-                                    <h3 class="text-lg font-semibold text-gray-800">Our Office</h3>
-                                    <p class="text-gray-600">123 Safari Street, Arusha, Tanzania</p>
+                                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Our Office</h3>
+                                    <p class="text-gray-700 text-base">123 Safari Street, Arusha, Tanzania</p>
                                 </div>
                             </div>
                             
@@ -38,9 +34,9 @@
                                     <i class="fas fa-phone-alt text-yellow-500 text-xl"></i>
                                 </div>
                                 <div class="ml-4">
-                                    <h3 class="text-lg font-semibold text-gray-800">Call Us</h3>
-                                    <p class="text-gray-600">+255 123 456 789</p>
-                                    <p class="text-gray-600">+255 987 654 321</p>
+                                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Call Us</h3>
+                                    <p class="text-gray-700 text-base">+255 123 456 789</p>
+                                    <p class="text-gray-700 text-base">+255 987 654 321</p>
                                 </div>
                             </div>
                             
@@ -49,9 +45,9 @@
                                     <i class="fas fa-envelope text-yellow-500 text-xl"></i>
                                 </div>
                                 <div class="ml-4">
-                                    <h3 class="text-lg font-semibold text-gray-800">Email Us</h3>
-                                    <p class="text-gray-600">info@stansafaris.com</p>
-                                    <p class="text-gray-600">bookings@stansafaris.com</p>
+                                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Email Us</h3>
+                                    <p class="text-gray-700 text-base">info@stansafaris.com</p>
+                                    <p class="text-gray-700 text-base">bookings@stansafaris.com</p>
                                 </div>
                             </div>
                             
@@ -60,10 +56,10 @@
                                     <i class="fas fa-clock text-yellow-500 text-xl"></i>
                                 </div>
                                 <div class="ml-4">
-                                    <h3 class="text-lg font-semibold text-gray-800">Working Hours</h3>
-                                    <p class="text-gray-600">Monday - Friday: 8:00 AM - 6:00 PM</p>
-                                    <p class="text-gray-600">Saturday: 9:00 AM - 4:00 PM</p>
-                                    <p class="text-gray-600">Sunday: Closed</p>
+                                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Working Hours</h3>
+                                    <p class="text-gray-700 text-base">Monday - Friday: 8:00 AM - 6:00 PM</p>
+                                    <p class="text-gray-700 text-base">Saturday: 9:00 AM - 4:00 PM</p>
+                                    <p class="text-gray-700 text-base">Sunday: Closed</p>
                                 </div>
                             </div>
                         </div>
@@ -89,7 +85,7 @@
                     
                     <!-- Contact Form -->
                     <div class="bg-gray-50 p-8 rounded-lg shadow-md">
-                        <h2 class="text-2xl font-bold text-gray-800 mb-6">Send Us a Message</h2>
+                        <h2 class="text-3xl font-bold text-gray-800 mb-8">Send Us a Message</h2>
                         <form action="#" method="POST" class="space-y-6">
                             <div>
                                 <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
@@ -147,6 +143,49 @@
     </section>
 
     <style>
+        /* Improved Typography */
+        body {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        
+        h2 {
+            font-size: 2rem;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+        }
+        
+        h3 {
+            font-size: 1.25rem;
+            line-height: 1.4;
+            margin-bottom: 0.75rem;
+        }
+        
+        p {
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+        
+        .contact-subtitle {
+            margin-top: -15px;
+            font-size: 1.1rem;
+            color: #4b5563;
+        }
+        
+        @media (max-width: 768px) {
+            .contact-subtitle {
+                margin-top: -25px;
+                font-size: 1rem;
+            }
+            
+            h2 {
+                font-size: 1.75rem;
+            }
+            
+            h3 {
+                font-size: 1.1rem;
+            }
+        }
         .page-hero-section {
             min-height: 40vh;
             display: flex;

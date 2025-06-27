@@ -16,7 +16,9 @@
                 <a href="#destinations" class="nav-link">Destinations</a>
                 <a href="{{ route('about') }}" class="nav-link {{ request()->is('about') ? 'active' : '' }}">About Us</a>
                 <a href="{{ route('contact') }}" class="nav-link {{ request()->is('contact') ? 'active' : '' }}">Contact Us</a>
-                <a href="book-now" class="nav-cta-button">Get Quote</a>
+                <a href="https://wa.me/255754261101" target="_blank" rel="noopener noreferrer" class="nav-cta-button">
+                    <i class="fab fa-whatsapp"></i> WhatsApp Us
+                </a>
             </div>
             
             <!-- Mobile Menu Button -->

@@ -4,8 +4,8 @@
         <div class="navbar-container">
             <!-- Logo -->
             <div class="navbar-logo">
-                <a href="#" class="logo-link">
-                    <img src="https://waziri123.github.io/star-safari-website-demo/assets/images/star-safaris.png" alt="Stan Safaris Tanzania" class="logo-img">
+                <a href="/" class="logo-link">
+                    <img src="{{ asset('images/star-safaris.png') }}" alt="Stan Safaris Tanzania" class="logo-img">
                 </a>
             </div>
             

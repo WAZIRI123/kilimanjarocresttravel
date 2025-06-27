@@ -171,6 +171,15 @@ letter-spacing: 0.01em;">
             margin: 8px 0;
             padding: 12px 24px;
             border-radius: 4px;
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+        }
+        
+        .mobile-nav-link.active {
+            color: #fff;
+            font-weight: bold;
+            text-decoration: underline;
+            text-underline-offset: 4px;
         }
         
         .mobile-nav-link::before {
@@ -484,10 +493,15 @@ letter-spacing: 0.01em;">
             transition: color 0.3s ease, padding-left 0.3s ease;
         }
         
-        .mobile-nav-link:hover,
+        .mobile-nav-link:hover {
+            color: #fff;
+            transform: translateX(8px);
+        }
+        
         .mobile-nav-link.active {
-            color: #4d4402e0;
-            padding-left: 10px;
+            font-weight: bold;
+            color: #fff;
+            text-decoration: underline;
         }
         
         .mobile-nav .nav-cta-button {

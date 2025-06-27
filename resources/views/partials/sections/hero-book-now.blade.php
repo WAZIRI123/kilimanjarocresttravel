@@ -11,11 +11,11 @@
             
             <!-- Desktop Navigation -->
             <div class="navbar-links">
-                <a href="/" class="nav-link {{ request()->is('/') ? 'active' : '' }}">Home</a>
+                <a href="{{ route('home') }}" class="nav-link {{ request()->is('/') ? 'active' : '' }}">Home</a>
                 <a href="{{ route('all-packages') }}" class="nav-link {{ request()->is('all-packages*') ? 'active' : '' }}">Safari Packages</a>
-                <a href="#destinations" class="nav-link">Destinations</a>
-                <a href="#about" class="nav-link">About Us</a>
-                <a href="#contact" class="nav-cta-button">Get Quote</a>
+                <a href="{{ route('destinations') }}" class="nav-link {{ request()->is('destinations*') ? 'active' : '' }}">Destinations</a>
+                <a href="{{ route('about') }}" class="nav-link {{ request()->is('about*') ? 'active' : '' }}">About Us</a>
+                <a href="{{ route('contact') }}" class="nav-cta-button">Get Quote</a>
             </div>
             
             <!-- Mobile Menu Button -->
@@ -50,11 +50,11 @@
                 <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
         </button>
-        <a href="/" class="mobile-nav-link {{ request()->is('/') ? 'active' : '' }}">Home</a>
+        <a href="{{ route('home') }}" class="mobile-nav-link {{ request()->is('/') ? 'active' : '' }}">Home</a>
         <a href="{{ route('all-packages') }}" class="mobile-nav-link {{ request()->is('all-packages*') ? 'active' : '' }}">Safari Packages</a>
-        <a href="#destinations" class="mobile-nav-link">Destinations</a>
-        <a href="#about" class="mobile-nav-link">About Us</a>
-        <a href="#contact" class="mobile-nav-link">Contact</a>
+        <a href="{{ route('destinations') }}" class="mobile-nav-link {{ request()->is('destinations*') ? 'active' : '' }}">Destinations</a>
+        <a href="{{ route('about') }}" class="mobile-nav-link {{ request()->is('about*') ? 'active' : '' }}">About Us</a>
+        <a href="{{ route('contact') }}" class="mobile-nav-link {{ request()->is('contact*') ? 'active' : '' }}">Contact Us</a>
     </div>
 
 

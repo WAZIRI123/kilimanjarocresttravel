@@ -24,6 +24,9 @@ Route::get('/packages/{package:slug}', [\App\Http\Controllers\PackageController:
     ->name('package.show');
 
 // Destination routes
+Route::get('/destinations', [DestinationController::class, 'index'])
+    ->name('destinations');
+    
 Route::get('/destinations/{id}', [DestinationController::class, 'show'])
     ->where('id', '[a-z0-9-]+')
     ->name('destinations.show');

@@ -46,7 +46,7 @@
                                                                     class="comp-kbgakxmn_r_comp-m2014zbk"
                                                                     data-semantic-classname="button"><a
                                                                         data-testid="linkElement"
-                                                                        href="#"
+                                                                        href="/book-now"
                                                                         target="_self"
                                                                         class="StylableButton2545352419__root comp-kbgakxmn_r_comp-m2014zbk-styleId__root wixui-button StylableButton2545352419__link"
                                                                         aria-label="GET YOUR FREE QUOTE"><span
@@ -116,7 +116,7 @@
                                                                             <span data-testid="linkWrapper"
                                                                                 class="kGvnrc"><a
                                                                                     data-testid="linkElement"
-                                                                                    href="#"
+                                                                                    href="{{ route('home') }}"
                                                                                     target="_self"
                                                                                     class="xfxJ27 font_4 wixui-vertical-menu__item-label">Home</a></span>
                                                                         </div>
@@ -127,7 +127,7 @@
                                                                             <span data-testid="linkWrapper"
                                                                                 class="kGvnrc"><a
                                                                                     data-testid="linkElement"
-                                                                                    href="#"
+                                                                                    href="{{ route('destinations') }}"
                                                                                     target="_self"
                                                                                     class="xfxJ27 font_4 wixui-vertical-menu__item-label">Destinations</a></span>
                                                                         </div>
@@ -138,7 +138,7 @@
                                                                             <span data-testid="linkWrapper"
                                                                                 class="kGvnrc"><a
                                                                                     data-testid="linkElement"
-                                                                                    href="#"
+                                                                                    href="{{ route('all-packages') }}"
                                                                                     target="_self"
                                                                                     class="xfxJ27 font_4 wixui-vertical-menu__item-label">Experiences</a></span>
                                                                         </div>
@@ -149,7 +149,7 @@
                                                                             <span data-testid="linkWrapper"
                                                                                 class="kGvnrc"><a
                                                                                     data-testid="linkElement"
-                                                                                    href="#"
+                                                                                    href="{{ route('about') }}"
                                                                                     target="_self"
                                                                                     class="xfxJ27 font_4 wixui-vertical-menu__item-label">About
                                                                                     Us</a></span></div>
@@ -160,7 +160,7 @@
                                                                             <span data-testid="linkWrapper"
                                                                                 class="kGvnrc"><a
                                                                                     data-testid="linkElement"
-                                                                                    href="#"
+                                                                                    href="{{ route('contact') }}"
                                                                                     target="_self"
                                                                                     class="xfxJ27 font_4 wixui-vertical-menu__item-label">Contact
                                                                                     Us</a></span></div>
@@ -328,6 +328,7 @@
                                                                             href="#"
                                                                             target="_blank" rel="noreferrer noopener"
                                                                             class="Q8t1PH"
+                                                                            aria-label="Facebook"
                                                                             aria-label="Facebook"><wow-image
                                                                                 id="img_0_comp-kbgakxmn_r_comp-m1grw5kh"
                                                                                 class="jhxvbR qFhtwZ"
@@ -357,6 +358,7 @@
                                                                             href="#"
                                                                             target="_blank" rel="noreferrer noopener"
                                                                             class="Q8t1PH"
+                                                                            aria-label="Instagram"
                                                                             aria-label="X       "><wow-image
                                                                                 id="img_2_comp-kbgakxmn_r_comp-m1grw5kh"
                                                                                 class="jhxvbR qFhtwZ"
@@ -385,6 +387,7 @@
                                                                             href="#"
                                                                             target="_blank" rel="noreferrer noopener"
                                                                             class="Q8t1PH"
+                                                                            aria-label="Twitter"
                                                                             aria-label="Youtube"><wow-image
                                                                                 id="img_4_comp-kbgakxmn_r_comp-m1grw5kh"
                                                                                 class="jhxvbR qFhtwZ"
@@ -414,6 +417,7 @@
                                                                             href="#"
                                                                             target="_blank" rel="noreferrer noopener"
                                                                             class="Q8t1PH"
+                                                                            aria-label="YouTube"
                                                                             aria-label="TikTok"><wow-image
                                                                                 id="img_6_comp-kbgakxmn_r_comp-m1grw5kh"
                                                                                 class="jhxvbR qFhtwZ"

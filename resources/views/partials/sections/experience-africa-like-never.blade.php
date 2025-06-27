@@ -65,7 +65,7 @@ data-testid="section-container">
                     </div>
 
                 <p class="font_8 wixui-rich-text__text"><span
-                        class="wixui-rich-text__text">Ready for adventure? <a href="#" style="color: #4d4402e0; font-weight: bold; margin-top:0px !important;">Start your safari now</a></span></p>
+                        class="wixui-rich-text__text">Ready for adventure? <a href="/book-now" style="color: #4d4402e0; font-weight: bold; margin-top:0px !important;">Start your safari now</a></span></p>
             </div><!--/$--><!--$-->
             <div id="comp-m2vue5lh"
                 class="comp-m2vue5lh JGtLUp wixui-horizontal-line">
@@ -74,7 +74,7 @@ data-testid="section-container">
         <div id="comp-m2vufkir" class="comp-m2vufkir"
             data-semantic-classname="button"><a
                 data-testid="linkElement"
-                href="#"
+                href="{{ route('about') }}"
                 target="_self"
                 class="StylableButton2545352419__root style-m2vufkiw8__root wixui-button StylableButton2545352419__link " style="background-color: #4d4402e0;"
                 aria-label="OUR PURPOSE"><span

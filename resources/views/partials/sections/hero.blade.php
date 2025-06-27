@@ -117,13 +117,13 @@ letter-spacing: 0.01em;">
                     </div>
                     
                     <!-- Scroll Indicator -->
-                    <div class="scroll-indicator">
+                    <a href="#comp-m2vttpv8" class="scroll-indicator" id="scroll-indicator">
                         <div class="arrow-down"> 
                             <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M12 5v14M5 12l7 7 7-7"/>
                             </svg>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>

@@ -145,7 +145,6 @@
             transition: all 0.2s ease;
             font-size: 15px;
             font-weight: 500;
-            font-family: 'Poppins', sans-serif;
             line-height: 1.5;
         }
         

@@ -15,144 +15,82 @@ class PackageSeeder extends Seeder
     {
         $packages = [
             [
-                'title' => 'Great Migration Safari',
+                'title' => '7 Days Marangu Route',
+                'slug' => '7-days-marangu-route',
                 'duration' => '7 Days',
-                'overview' => 'Experience the spectacular Great Migration in Serengeti National Park, one of the most incredible wildlife events on the planet.',
-                'short_description' => 'Witness the Great Migration in Serengeti and explore the Ngorongoro Crater on this 7-day safari adventure.',
-                'category' => 'safari',
-                'country' => 'Tanzania',
-                'featured_image' => 'safari/great-migration.jpg',
-                'price' => 2950,
+                'subtitle' => '',
+                'short_description' => 'Many hikers believe that the Marangu route is the easiest route to Uhuru peak, since it is the only route which can be hiked in 5 days (making it the cheapest option)',
+                'overview' => '<p>Also known as the "Coca Cola route" the Marangu route is one of the most popular routes leading to the summit of Mount Kilimanjaro. Many hikers believe that the Marangu route is the easiest route to Uhuru peak, since it is the only route which can be hiked in 5 days (making it the cheapest option). However, we strongly recommend hiking the route over 6 days to increase your chances of reaching the summit successfully. Note that this is the only route that provides communal sleeping huts, equipped with beds and mattresses at every overnight site. Some basic goods such as mineral water, beer and chocolates are also sold at most sites. The Marangu route takes the same route for both ascend and descend.</p>',
+                'best_time_to_visit' => '<p><strong>Dec-Mid-March / Mid-June-October</strong></p>',
+                'featured_image' => 'packages/01JYVM861EZS7543BM04KRGXXN.jpg',
+                'price' => 1700,
+                'sale_price' => null,
                 'is_featured' => true,
                 'is_active' => true,
                 'sort_order' => 1,
-                'meta_title' => 'Great Migration Safari - 7 Days',
-                'meta_description' => 'Experience the Great Migration in Serengeti National Park on this 7-day safari adventure.',
-                'included_items' => json_encode([
-                    'All park fees and conservation fees',
-                    'Full board accommodation',
-                    'Professional English-speaking guide',
-                    '4x4 safari vehicle with pop-up roof',
-                    'All game drives as per itinerary'
-                ]),
-                'excluded_items' => json_encode([
-                    'International flights',
-                    'Visa fees',
-                    'Travel insurance',
-                    'Tips and gratuities'
-                ]),
-                'best_time_to_visit' => 'June to October',
-                'itineraries' => json_encode([
-                    [
-                        'day' => 'Day 1',
-                        'title' => 'Arrival in Arusha',
-                        'description' => 'Arrive at Kilimanjaro International Airport and transfer to your lodge in Arusha for dinner and overnight.',
-                        'image' => 'safari/arusha-arrival.jpg'
-                    ],
-                    [
-                        'day' => 'Day 2-3',
-                        'title' => 'Serengeti National Park',
-                        'description' => 'Two full days exploring Serengeti and witnessing the Great Migration. Game drives at dawn and dusk.',
-                        'image' => 'safari/serengeti-migration.jpg'
-                    ]
-                ])
-            ],
-            [
-                'title' => 'Kilimanjaro Climb - Machame Route',
-                'duration' => '8 Days',
-                'overview' => 'Conquer Africa\'s highest peak via the scenic Machame Route, also known as the "Whiskey Route".',
-                'short_description' => '8-day trek to the summit of Mount Kilimanjaro via the beautiful Machame Route.',
-                'category' => 'trekking',
+                'category' => 'kilimanjaro',
                 'country' => 'Tanzania',
-                'featured_image' => 'trekking/kilimanjaro-machame.jpg',
-                'price' => 2450,
-                'is_featured' => true,
-                'is_active' => true,
-                'sort_order' => 2,
-                'meta_title' => 'Kilimanjaro Climb - Machame Route 8 Days',
-                'meta_description' => 'Climb Mount Kilimanjaro via the scenic Machame Route on this 8-day trekking adventure.',
-                'included_items' => json_encode([
-                    'All park fees and rescue fees',
-                    'Professional mountain guides and porters',
-                    'All meals during the climb',
-                    'Mountain tents and sleeping mats',
-                    'Airport transfers'
-                ]),
-                'excluded_items' => json_encode([
-                    'International flights',
-                    'Visa fees',
-                    'Personal climbing gear',
-                    'Tips for guides and porters'
-                ]),
-                'best_time_to_visit' => 'January to March, June to October',
+                'views' => 1,
+                'likes' => 0,
+                'meta_title' => '7 Days Marangu Route - Kilimanjaro Climb',
+                'meta_description' => 'Climb Mount Kilimanjaro via the Marangu Route, also known as the "Coca Cola Route". Experience the beauty of Kilimanjaro with our expert guides.',
+                'meta_keywords' => json_encode(['kilimanjaro', 'marangu route', 'mount kilimanjaro', 'tanzania', 'hiking', 'trekking']),
                 'itineraries' => json_encode([
                     [
-                        'day' => 'Day 1',
-                        'title' => 'Machame Gate to Machame Camp',
-                        'description' => 'Hike through the rainforest to Machame Camp (3,000m).',
-                        'image' => 'trekking/machame-gate.jpg'
+                        'title' => 'Day 1 - Airport pick-up- Drop off at hotel',
+                        'image' => 'itineraries/01JYVM8644CQQ1D6M0WDKDH5VE.jpg',
+                        'descriptions' => [
+                            ['content' => '<p>You will be picked up by the staff of Stan Safaris from Kilimanjaro International Airport (JRO) and driven to your accommodation in Moshi. Participants will be given a short briefing for the climb the next day. Kits and the necessary equipment will be checked as well.</p>']
+                        ],
+                        'tips' => null
                     ],
                     [
-                        'day' => 'Day 2',
-                        'title' => 'Machame Camp to Shira Camp',
-                        'description' => 'Ascend through the heath and moorland to Shira Camp (3,840m).',
-                        'image' => 'trekking/shira-camp.jpg'
-                    ]
-                ])
-                ],
-                
-                    [
-                        'title' => 'Kilimanjaro Climb - Machame Route',
-                        'duration' => '8 Days',
-                        'overview' => 'Conquer Africa\'s highest peak via the scenic Machame Route, also known as the "Whiskey Route".',
-                        'short_description' => '8-day trek to the summit of Mount Kilimanjaro via the beautiful Machame Route.',
-                        'category' => 'trekking',
-                        'country' => 'Tanzania',
-                        'featured_image' => 'trekking/kilimanjaro-machame.jpg',
-                        'price' => 2450,
-                        'is_featured' => true,
-                        'is_active' => true,
-                        'sort_order' => 2,
-                        'meta_title' => 'Kilimanjaro Climb - Machame Route 8 Days',
-                        'meta_description' => 'Climb Mount Kilimanjaro via the scenic Machame Route on this 8-day trekking adventure.',
-                        'included_items' => json_encode([
-                            'All park fees and rescue fees',
-                            'Professional mountain guides and porters',
-                            'All meals during the climb',
-                            'Mountain tents and sleeping mats',
-                            'Airport transfers'
-                        ]),
-                        'excluded_items' => json_encode([
-                            'International flights',
-                            'Visa fees',
-                            'Personal climbing gear',
-                            'Tips for guides and porters'
-                        ]),
-                        'best_time_to_visit' => 'January to March, June to October',
-                        'itineraries' => json_encode([
-                            [
-                                'day' => 'Day 1',
-                                'title' => 'Machame Gate to Machame Camp',
-                                'description' => 'Hike through the rainforest to Machame Camp (3,000m).',
-                                'image' => 'trekking/machame-gate.jpg'
-                            ],
-                            [
-                                'day' => 'Day 2',
-                                'title' => 'Machame Camp to Shira Camp',
-                                'description' => 'Ascend through the heath and moorland to Shira Camp (3,840m).',
-                                'image' => 'trekking/shira-camp.jpg'
-                            ]
-                        ])
-                    ]
+                        'title' => 'Day 2 - Marangu Gate (1860m) – Mandara hut (2715m)',
+                        'image' => 'itineraries/01JYVM864CA6XVCQZFD5WQ6FH2.jpg',
+                        'descriptions' => [
+                            ['content' => '<p>The drive from Moshi to the Kilimanjaro National Park gate takes about 50 minutes. The journey passes through the village of Marangu, which is located on the lower slopes of the mountain. Once you reach the park gate, all hikers are requested to sign in at the Park office and make their final preparations for the climb. Porters will be seen arranging and loading their packs, containing the food, water, cooking gas as well as most of your equipment.</p><p>From the park gate, we ascend on a cleared ridge trail through the rain forest where you will see most of Kilimanjaro\'s animals. An alternative and more scenic parallel forest trail branches off to the left a few minutes after the gate. This trail follows the edge of a stream through the undergrowth and offers you the option to rejoin the main trail either after 1.5 hours hiking, or 1 hour before Mandara hut where you will spend the night.</p><p>Mandara hut consists of a group of wooden A-framed huts in a forest clearing. Each hut features 6-8 sleeping bunks with solar generated lighting. The total capacity of the camp is 60 climbers. Water is piped into the camp from springs above and there are flush toilets behind the main hut.</p>']
+                        ],
+                        'tips' => 'Hiking time: 5hrs,Distance: Approximately 8.1 km,Habitat: Montane Forest'
+                    ],
+                    // Add other days here...
+                ]),
+                'included_items' => json_encode([
+                    ['item' => 'All Taxes/VAT'],
+                    ['item' => 'All Meals (as specified in the day-by-day section)'],
+                    ['item' => 'Park fees'],
+                    ['item' => 'All activities (unless labeled as optional)'],
+                    ['item' => 'All accommodation as stated in the itinerary'],
+                    ['item' => 'A professional driver/guide'],
+                    ['item' => 'All transportation (unless labeled as optional)'],
+                    ['item' => 'Roundtrip airport transfer'],
+                    ['item' => 'Camping Equipment'],
+                    ['item' => 'Drinking water on all days'],
+                    ['item' => 'Porterage']
+                ]),
+                'excluded_items' => json_encode([
+                    ['item' => 'International flights (from/to home)'],
+                    ['item' => 'Sleeping Bag'],
+                    ['item' => 'Additional accommodation before and at the end of the tour'],
+                    ['item' => 'Tips (tipping guideline US$20.00 pp per day)'],
+                    ['item' => 'Personal items (souvenirs, travel insurance, visa fees, etc.)'],
+                    ['item' => 'Government imposed increase of taxes and/or park fees'],
+                    ['item' => 'Alcoholic drinks'],
+                    ['item' => 'Rescue Fee'],
+                    ['item' => 'Climbing Gear']
+                ]),
+                'created_at' => now(),
+                'updated_at' => now()
+            ]
         ];
 
-
-        foreach ($packages as $packageData) {
-            // Generate slug from title
-            $packageData['slug'] = Str::slug($packageData['title']);
+        foreach ($packages as $package) {
+            // Generate slug from title if not set
+            if (!isset($package['slug']) || empty($package['slug'])) {
+                $package['slug'] = Str::slug($package['title']);
+            }
             
             // Create the package
-            Package::create($packageData);
+            Package::create($package);
         }
     }
 }

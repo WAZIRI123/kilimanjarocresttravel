@@ -16,6 +16,8 @@
                     <i class="fas fa-chevron-down ml-1"></i>
                 </a>
                 <div class="dropdown-menu" aria-labelledby="packagesDropdown">
+                    <a class="dropdown-item {{ !request('category') ? 'active' : '' }}" href="{{ route('all-packages') }}">All Packages</a>
+                    <div class="dropdown-divider"></div>
                     <a class="dropdown-item {{ request('category') === 'safari' ? 'active' : '' }}" href="{{ route('all-packages', ['category' => 'safari']) }}">Safari Packages</a>
                     <a class="dropdown-item {{ request('category') === 'zanzibar' ? 'active' : '' }}" href="{{ route('all-packages', ['category' => 'zanzibar']) }}">Zanzibar Packages</a>
                     <a class="dropdown-item {{ request('category') === 'kilimanjaro' ? 'active' : '' }}" href="{{ route('all-packages', ['category' => 'kilimanjaro']) }}">Kilimanjaro Packages</a>
@@ -68,6 +70,9 @@
             <i class="fas fa-chevron-down mobile-dropdown-icon"></i>
         </button>
         <div class="mobile-dropdown">
+            <a href="{{ route('all-packages') }}" class="mobile-dropdown-item {{ !request('category') ? 'active' : '' }}">
+                All Packages
+            </a>
             <a href="{{ route('all-packages', ['category' => 'safari']) }}" class="mobile-dropdown-item {{ request('category') === 'safari' ? 'active' : '' }}">
                 Safari Packages
             </a>

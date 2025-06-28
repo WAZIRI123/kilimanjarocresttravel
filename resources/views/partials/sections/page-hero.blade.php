@@ -1,64 +1,7 @@
 <section id="hero-section" class="hero-section" data-testid="section-container">
     <!-- Modern Transparent Navbar -->
-    <nav class="modern-navbar">
-        <div class="navbar-container">
-            <!-- Logo -->
-            <div class="navbar-logo">
-                <a href="/" class="logo-link">
-                    <img src="{{ asset('images/star-safaris.png') }}" alt="Stan Safaris Tanzania" class="logo-img">
-                </a>
-            </div>
-            
-            <!-- Desktop Navigation -->
-            <div class="navbar-links">
-                <a href="/" class="nav-link {{ request()->is('/') ? 'active' : '' }}">Home</a>
-                <a href="{{ route('all-packages') }}" class="nav-link {{ request()->is('all-packages*') ? 'active' : '' }}">Safari Packages</a>
-                <a href="#destinations" class="nav-link">Destinations</a>
-                <a href="{{ route('about') }}" class="nav-link {{ request()->is('about') ? 'active' : '' }}">About Us</a>
-                <a href="{{ route('contact') }}" class="nav-link {{ request()->is('contact') ? 'active' : '' }}">Contact Us</a>
-                <a href="https://wa.me/255754261101" target="_blank" rel="noopener noreferrer" class="nav-cta-button">
-                    <i class="fab fa-whatsapp"></i> WhatsApp Us
-                </a>
-            </div>
-            
-            <!-- Mobile Menu Button -->
-            <button class="mobile-menu-btn" aria-label="Toggle menu">
-                <span class="menu-line"></span>
-                <span class="menu-line"></span>
-                <span class="menu-line"></span>
-            </button>
-        </div>
-    </nav>
+    @include('partials.sections.navigation')
     
-    <!-- Mobile Navigation (Hidden by default) with Enhanced Safari Theme -->
-    <div class="mobile-nav">
-        <!-- Background Overlay with Elephant Image -->
-        <div class="mobile-nav-overlay"></div>
-        
-        <!-- Safari Decorative Elements -->
-        <div class="safari-decorations">
-            <div class="safari-bird safari-bird-1">
-                <svg viewBox="0 0 24 24" width="24" height="24">
-                    <path d="M23 3s-9.5 8-10.5 10c0 0-1.1 2-3.5 2s-3.5-2-3.5-2S2 13 1 12s1-1 1-1h2s1-1 2-2 1-2 3-2 5.5 2 5.5 2 3-3 5-3 3 1 3 1z" fill="#4d4402e0"/>
-                </svg>
-            </div>
-            <div class="safari-leaf safari-leaf-1">
-                <svg viewBox="0 0 24 24" width="20" height="20">
-                    <path d="M17 8C8 10 5.9 16.2 4 22c2.9-1.5 5.9-2 9-2 3.1 0 6.1.5 9 2-1.9-5.8-4-12-13-14z" fill="#4CAF50"/>
-                </svg>
-            </div>
-        </div>
-        <button class="mobile-close-btn" aria-label="Close menu">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-        </button>
-        <a href="{{ route('home') }}" class="mobile-nav-link {{ request()->is('/') ? 'active' : '' }}">Home</a>
-        <a href="{{ route('all-packages') }}" class="mobile-nav-link {{ request()->is('all-packages*') ? 'active' : '' }}">Safari Packages</a>
-        <a href="{{ route('destinations') }}" class="mobile-nav-link {{ request()->is('destinations*') ? 'active' : '' }}">Destinations</a>
-        <a href="{{ route('about') }}" class="mobile-nav-link {{ request()->is('about*') ? 'active' : '' }}">About Us</a>
-        <a href="{{ route('contact') }}" class="mobile-nav-link {{ request()->is('contact*') ? 'active' : '' }}">Contact Us</a>
-    </div>
     
     <!-- Background Image -->
     <div class="hero-background">
@@ -148,96 +91,9 @@ letter-spacing: 0.01em;">
             50% { transform: translateY(-20px) rotate(5deg); }
         }
         
-        /* Enhanced Mobile Nav Items */
-        .mobile-nav-link {
-            position: relative;
-            overflow: hidden;
-            transition: all 0.3s ease;
-            margin: 8px 0;
-            padding: 12px 24px;
-            border-radius: 4px;
-            color: rgba(255, 255, 255, 0.8);
-            text-decoration: none;
-        }
-        
-        .mobile-nav-link.active {
-            color: #fff;
-            font-weight: bold;
-            text-decoration: underline;
-            text-underline-offset: 4px;
-        }
-        
-        .mobile-nav-link::before {
-            content: '';
-            position: absolute;
-            left: 0;
-            top: 0;
-            height: 100%;
-            width: 4px;
-            background: #4d4402e0;
-            transform: scaleY(0);
-            transition: transform 0.3s ease;
-        }
-        
-        .mobile-nav-link:hover::before {
-            transform: scaleY(1);
-        }
-        
-        .mobile-nav-link:hover {
-            background: rgba(255, 255, 255, 0.05);
-            transform: translateX(8px);
-        }
-        /* Mobile Navigation Overlay */
-        .mobile-nav {
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .mobile-nav-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-size: cover;
-            background-position: center;
-            background-color: rgba(0, 0, 0, 0.15);
-            background-repeat: no-repeat;
-            opacity: 0.15;
-            z-index: -1;
-        }
-        
-        .mobile-nav::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background:  rgba(0, 0, 0, 0.4);
-            z-index: -1;
-        }
-        @keyframes slideUp {
-            to {
-                transform: translateY(0);
-                opacity: 1;
-            }
-        }
         
         .title-line {
             display: inline-block;
-        }
-        /* Modern Navbar Styles */
-        .modern-navbar {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: auto; /* Fixed height */
-            z-index: 1000;
-            padding: 0.4rem 0;
-            transition: all 0.4s ease;
-            box-sizing: border-box;
         }
         
         /* Reset body margin and padding */
@@ -294,62 +150,8 @@ letter-spacing: 0.01em;">
             letter-spacing: 2px;
         }
         
-        .navbar-links {
-            display: flex;
-            gap: 1rem;
-        }
-        
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
-        
-        .nav-link {
-            color: #ffffff;
-            text-decoration: none;
-            font-weight: 600; /* Slightly bolder */
-            font-size: 0.95rem;
-            letter-spacing: 0.8px;
-            position: relative;
-            padding: 0.4rem 0rem;
-            margin: 0rem 0.7rem;
-            transition: all 0.3s ease;
-           
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-            border-radius: 4px;
-        }
-        
-        .nav-link::after {
-            content: '';
-            position: absolute;
-            bottom: 0.7rem;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background: linear-gradient(90deg, #fff, #fff);
-            transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1), transform 0.3s ease;
-            transform-origin: left;
-            border-radius: 2px;
-        }
-        
-        .nav-link:hover,
-        .nav-link.active {
-            color: #fff;
-        }
-        
-        .nav-link:hover::after,
-        .nav-link.active::after {
-            width: 100%;
-            transform: scaleX(1);
-        }
-        
-        .nav-link:hover,
-        .nav-link.active {
-            color: #ffffff;
-           
-        }
-        
-        .nav-link.active {
-            /* No font weight change */
-        }
+    
+       
         
         /* CTA Button Styles */
         .nav-cta-button {
@@ -765,7 +567,7 @@ letter-spacing: 0.01em;">
                 width: 100%;
             }
             #hero-section {
-              height: 50%;
+              height: 100%;
               min-height: 50vh !important;
             }
             .hero-background {
@@ -955,7 +757,6 @@ letter-spacing: 0.01em;">
             height: 30px;
             color: #fff;
         }
-        
         .scroll-text {
             font-size: 16px;
             letter-spacing: 2px;
@@ -1064,84 +865,4 @@ letter-spacing: 0.01em;">
         }
     </style>
 
-    <!-- Navbar JavaScript -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Mobile menu toggle
-            const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-            const mobileNav = document.querySelector('.mobile-nav');
-            const mobileCloseBtn = document.querySelector('.mobile-close-btn');
-            const menuLines = document.querySelectorAll('.menu-line');
-            
-            function toggleMobileMenu() {
-                mobileNav.classList.toggle('active');
-                mobileMenuBtn.classList.toggle('active');
-                document.body.style.overflow = mobileNav.classList.contains('active') ? 'hidden' : '';
-                
-                // Animate hamburger to X
-                menuLines[0].classList.toggle('rotate-45');
-                menuLines[0].classList.toggle('translate-y-2');
-                menuLines[1].classList.toggle('opacity-0');
-                menuLines[2].classList.toggle('-rotate-45');
-                menuLines[2].classList.toggle('-translate-y-2');
-            }
-            
-            if (mobileMenuBtn) {
-                mobileMenuBtn.addEventListener('click', toggleMobileMenu);
-            }
-            
-            if (mobileCloseBtn) {
-                mobileCloseBtn.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    toggleMobileMenu();
-                });
-            }
-            
-            // Close mobile menu when clicking on a link
-            const mobileLinks = document.querySelectorAll('.mobile-nav-link');
-            mobileLinks.forEach(link => {
-                link.addEventListener('click', () => {
-                    mobileNav.classList.remove('active');
-                    mobileMenuBtn.classList.remove('active');
-                    menuLines[0].classList.remove('rotate-45', 'translate-y-2');
-                    menuLines[1].classList.remove('opacity-0');
-                    menuLines[2].classList.remove('-rotate-45', '-translate-y-2');
-                });
-            });
-            
-            // Navbar scroll effect
-            const navbar = document.querySelector('.modern-navbar');
-            if (navbar) {
-                window.addEventListener('scroll', function() {
-                    if (window.scrollY > 50) {
-                        navbar.classList.add('scrolled');
-                    } else {
-                        navbar.classList.remove('scrolled');
-                    }
-                });
-                
-                // Initialize navbar state on page load
-                if (window.scrollY > 50) {
-                    navbar.classList.add('scrolled');
-                }
-            }
-            
-            // Smooth scrolling for anchor links
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function(e) {
-                    const targetId = this.getAttribute('href');
-                    if (targetId === '#') return;
-                    
-                    const targetElement = document.querySelector(targetId);
-                    if (targetElement) {
-                        e.preventDefault();
-                        window.scrollTo({
-                            top: targetElement.offsetTop - 80, // Adjust for fixed navbar
-                            behavior: 'smooth'
-                        });
-                    }
-                });
-            });
-        });
-    </script>
 </section>

@@ -10,8 +10,8 @@
     <!-- Hero Section -->
     @include('partials.sections.page-hero', [
         'image' => asset('images/serengeti-safari-tanzania.jpg'),
-        'title' => 'Tanzania Safaris',
-        'subtitle' => 'Your African Adventure Awaits'
+        'title' => $title,
+        'subtitle' => $subtitle
     ])
 
     <!-- Safari Packages Section -->

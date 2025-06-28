@@ -1,3 +1,8 @@
+@php
+    $experience = \App\Models\ExperienceAfrica::where('is_active', true)->first();
+@endphp
+
+@if($experience)
 <section id="comp-m2vttpv8" tabindex="-1"
 data-block-level-container="Section"
 class="xuzjBY comp-m2vttpv8 wixui-section"
@@ -21,25 +26,15 @@ data-testid="section-container">
                 data-testid="richTextElement"
                 ariaattributes="[object Object]" style="border-radius:1rem1">
                 <h2 class="font_2 wixui-rich-text__text"><span
-                        class="wixui-rich-text__text">Experience Tanzania's Wild Beauty<br
-                            class="wixui-rich-text__text">
-                        <span style="font-weight:bold;"
-                            class="wixui-rich-text__text"><span
-                                class="wixui-rich-text__text">with&nbsp;Stan
-                                Safaris</span></span></span></h2>
+                        class="wixui-rich-text__text">{!! str_replace('Stan Safaris', '<span style="font-weight:bold;" class="wixui-rich-text__text">Stan Safaris</span>', e($experience->heading)) !!}</span></h2>
             </div><!--/$--><!--$-->
             <div id="comp-m2vttpvz4"
                 class="HcOXKn c9GqVL QxJLC3 lq2cno YQcXTT comp-m2vttpvz4 wixui-rich-text"
                 data-testid="richTextElement"
                 ariaattributes="[object Object]">
-                <p class="font_8 wixui-rich-text__text"><span
-                        class="wixui-rich-text__text">Embark on a safari in Tanzania with Stan Safaris, your gateway to the Serengeti, Ngorongoro Crater, Mount Kilimanjaro, and beyond.</span></p>
 
                 <p class="font_8 wixui-rich-text__text"><span
-                        class="wixui-rich-text__text">We offer private guided tours, custom itineraries, and premium lodges, all designed for unforgettable wildlife encounters and seamless comfort.</span></p>
-
-                <p class="font_8 wixui-rich-text__text"><span
-                        class="wixui-rich-text__text">Whether you're chasing the Great Migration or relaxing in Zanzibar, your journey with us is crafted to impress.</span></p>
+                        class="wixui-rich-text__text">{!! $experience->subheading?? 'Embark on a safari in Tanzania with Stan Safaris, your gateway to the Serengeti, Ngorongoro Crater, Mount Kilimanjaro, and beyond.' !!}</span></p>
 
                 <div style="width: 100%; display: flex; justify-content: center;">
                         <div class="benefits-list" style="margin: 1.5rem 0; max-width: 500px; width: 100%;">
@@ -47,19 +42,19 @@ data-testid="section-container">
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right: 12px; flex-shrink: 0;">
                                     <path d="M20 6L9 17L4 12" stroke="#4d4402e0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
-                                <span style="font-size: 1rem; color: #333;">Tailor-Made Safari</span>
+                                <span style="font-size: 1rem; color: #333;">{!! $experience->benefits[0]['benefit'] ?? 'Tailor-Made Safari' !!}</span>
                             </div>
                             <div style="display: flex; align-items: center; margin-bottom: 12px; justify-content: center;">
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right: 12px; flex-shrink: 0;">
                                     <path d="M20 6L9 17L4 12" stroke="#4d4402e0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
-                                <span style="font-size: 1rem; color: #333;">Expert Local Guides</span>
+                                <span style="font-size: 1rem; color: #333;">{!! $experience->benefits[1]['benefit'] ?? 'Expert Local Guides' !!}</span>
                             </div>
                             <div style="display: flex; align-items: center; justify-content: center;">
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right: 12px; flex-shrink: 0;">
                                     <path d="M20 6L9 17L4 12" stroke="#4d4402e0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
-                                <span style="font-size: 1rem; color: #333;">Big 5 Game Viewing</span>
+                                <span style="font-size: 1rem; color: #333;">{!! $experience->benefits[2]['benefit'] ?? 'Big 5 Game Viewing' !!}</span>
                             </div>
                         </div>
                     </div>
@@ -69,18 +64,18 @@ data-testid="section-container">
             </div><!--/$--><!--$-->
             <div id="comp-m2vue5lh"
                 class="comp-m2vue5lh JGtLUp wixui-horizontal-line">
-            </div><!--/$-->
+            </div><!--/$--><!--$-->
         </div><!--/$--><!--$-->
         <div id="comp-m2vufkir" class="comp-m2vufkir"
             data-semantic-classname="button"><a
                 data-testid="linkElement"
-                href="{{ route('about') }}"
+                href="{!! $experience->button_link ?? '/book-now' !!}"
                 target="_self"
                 class="StylableButton2545352419__root style-m2vufkiw8__root wixui-button StylableButton2545352419__link " style="background-color: #4d4402e0;"
                 aria-label="OUR PURPOSE"><span
                     class="StylableButton2545352419__container"><span
                         class="StylableButton2545352419__label wixui-button__label"
-                        data-testid="stylablebutton-label">Learn More</span><span
+                        data-testid="stylablebutton-label">{!! $experience->button_text ?? 'Start your safari now' !!}</span><span
                         class="StylableButton2545352419__icon wixui-button__icon"
                         aria-hidden="true"
                         data-testid="stylablebutton-icon"><span><!--?xml version="1.0" encoding="UTF-8"?-->
@@ -106,12 +101,12 @@ data-testid="section-container">
                 <div data-motion-part="BG_MEDIA comp-m2vttpwh">
                     <wow-image id="img-comp-m2vttpwh"
                         data-is-responsive="true"
-                        data-image-info="{&quot;containerId&quot;:&quot;comp-m2vttpwh&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;parallaxSpeed&quot;:1.5,&quot;sourceSets&quot;:[],&quot;imageData&quot;:{&q/ot;uri&quot;:&quot;{{ asset('images/girrafe1.png') }}&quot;,&quot;width&quot;:1304,&quot;height&quot;:1937,&quot;alt&quot;:&quot;Thomson's Gazelle in Serengeti during safari with stan SAFARIS&quot;,&quot;name&quot;:&quot;Swala.jpg&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;scrollEffect&quot;:&quot;none&quot;,&quot;focalPoint&quot;:null},&quot;hasAnimation&quot;:false,&quot;encoding&quot;:&quot;AVIF&quot;}"
+                        data-image-info="{&quot;containerId&quot;:&quot;comp-m2vttpwh&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;parallaxSpeed&quot;:1.5,&quot;sourceSets&quot;:[],&quot;imageData&quot;:{&q/ot;uri&quot;:&quot;{{ asset('/storage/'.$experience->image_path ?? 'images/girrafe1.png') }}&quot;,&quot;width&quot;:1304,&quot;height&quot;:1937,&quot;alt&quot;:&quot;Thomson's Gazelle in Serengeti during safari with stan SAFARIS&quot;,&quot;name&quot;:&quot;Swala.jpg&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;scrollEffect&quot;:&quot;none&quot;,&quot;focalPoint&quot;:null},&quot;hasAnimation&quot;:false,&quot;encoding&quot;:&quot;AVIF&quot;}"
                         data-has-ssr-src="true"
                         data-motion-part="BG_IMG comp-m2vttpwh"
                         class="Ux33nC">
-                        <picture><img loading="lazy" src="{{ asset('images/girrafe1.png') }}"
-                                alt="Thomson's Gazelle in Serengeti during safari with stan SAFARIS"
+                        <picture><img loading="lazy" src="{{ asset('/storage/'.$experience->image_path ?? 'images/girrafe1.png') }}"
+                                alt="{{ $experience->subheading ?? "Thomson's Gazelle in Serengeti during safari with stan SAFARIS" }}"
                                 style="object-fit: cover; object-position: 50% 50%; width: 100%;"
                                 data-ssr-src-done="true"
                                 fetchpriority="high"></picture>
@@ -173,7 +168,10 @@ data-testid="section-container">
     grid-area: 1 / 2 / 2 / 1;
     position: relative;
 }
-
+.lyNaha .h1DYhE{
+    top: 15 !important;
+    bottom: 15 !important;
+}
     
     @media (max-width: 768px) {
         .comp-m2vttpv8-container {
@@ -219,4 +217,5 @@ data-testid="section-container">
 }
     }
 </style>
+@endif
 </section><!--/$--><!--$-->

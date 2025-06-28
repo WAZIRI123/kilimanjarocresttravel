@@ -3,6 +3,9 @@
   array (
     'app.filament.resources.booking-resource.pages.list-bookings' => 'App\\Filament\\Resources\\BookingResource\\Pages\\ListBookings',
     'app.filament.resources.booking-resource.pages.view-booking' => 'App\\Filament\\Resources\\BookingResource\\Pages\\ViewBooking',
+    'app.filament.resources.experience-africa-resource.pages.create-experience-africa' => 'App\\Filament\\Resources\\ExperienceAfricaResource\\Pages\\CreateExperienceAfrica',
+    'app.filament.resources.experience-africa-resource.pages.edit-experience-africa' => 'App\\Filament\\Resources\\ExperienceAfricaResource\\Pages\\EditExperienceAfrica',
+    'app.filament.resources.experience-africa-resource.pages.list-experience-africas' => 'App\\Filament\\Resources\\ExperienceAfricaResource\\Pages\\ListExperienceAfricas',
     'app.filament.resources.package-resource.pages.create-package' => 'App\\Filament\\Resources\\PackageResource\\Pages\\CreatePackage',
     'app.filament.resources.package-resource.pages.edit-package' => 'App\\Filament\\Resources\\PackageResource\\Pages\\EditPackage',
     'app.filament.resources.package-resource.pages.list-packages' => 'App\\Filament\\Resources\\PackageResource\\Pages\\ListPackages',
@@ -42,6 +45,7 @@
   'resources' => 
   array (
     'C:\\Users\\hp\\CascadeProjects\\stan-safari\\app\\Filament\\Resources\\BookingResource.php' => 'App\\Filament\\Resources\\BookingResource',
+    'C:\\Users\\hp\\CascadeProjects\\stan-safari\\app\\Filament\\Resources\\ExperienceAfricaResource.php' => 'App\\Filament\\Resources\\ExperienceAfricaResource',
     'C:\\Users\\hp\\CascadeProjects\\stan-safari\\app\\Filament\\Resources\\PackageResource.php' => 'App\\Filament\\Resources\\PackageResource',
     0 => 'App\\Filament\\Resources\\BookingResource',
   ),

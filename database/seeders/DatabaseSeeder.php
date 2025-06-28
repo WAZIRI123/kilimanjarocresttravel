@@ -19,9 +19,10 @@ class DatabaseSeeder extends Seeder
             'email' => 'test@example.com',
         ]);
 
-        // Seed packages
+        // Seed packages and content
         $this->call([
             PackageSeeder::class,
+            ExperienceAfricaSeeder::class,
         ]);
     }
 }

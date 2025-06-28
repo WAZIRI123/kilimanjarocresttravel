@@ -95,6 +95,9 @@
 <script type="text/javascript" id="hs-script-loader" async defer src="//js-na2.hs-scripts.com/243011933.js"></script>
 <!-- End of HubSpot Embed Code -->    
 <style>
+      .P0dCOY .PJ4KCX{
+        background-color:#fff !important;
+    }
 @media(max-width:991px)   {
     #comp-m367d9um11,#comp-m367d9ul5{
         margin-left: 0 !important;

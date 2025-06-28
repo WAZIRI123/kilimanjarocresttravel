@@ -22,13 +22,17 @@
             @if(isset($title) || isset($viewAllLink))
             <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem; padding: 0 15px;">
                 @if(isset($title))
-                <h2 style="font-size: clamp(1.25rem, 6vw, 1.75rem); color: #333; font-weight: 600; margin: 0; text-align:center; width:100%;background-color:#fff">{{ $title }}</h2>
+                <h2 style="font-size: clamp(1.25rem, 6vw, 1.75rem); color: #333; font-weight: 600; margin: 0; text-align:center; width:100%;background-color:#fff">{{ $title }}
+                    <div id="comp-m2vue5lh" class="comp-m2vue5lh JGtLUp wixui-horizontal-line" style="margin-top: 1rem;">
+                    </div>
+                </h2>
+             
                 @endif
                
             </div>
             @endif
             
-            <div class="package-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; justify-items: center; position: relative; z-index: 10;">
+            <div class="package-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 300px)); gap: 2rem; justify-content: center; position: relative; z-index: 10; width: 100%;">
                 @foreach($packages as $package)
                 <a href="{{ $package['url'] ?? '#' }}" class="package-card" style="display: flex; flex-direction: column; height: 100%; text-decoration: none; color: inherit; background-color: #f5f2ed; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
                     <div style="height: 200px; overflow: hidden; flex-shrink: 0;">
@@ -102,7 +106,7 @@
 
 @push('styles')
 <style>
-    
+  
     /* Responsive adjustments */
     @media (max-width: 1024px) {
         .related-packages > div {

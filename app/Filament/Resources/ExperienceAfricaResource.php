@@ -18,6 +18,12 @@ class ExperienceAfricaResource extends Resource
     protected static ?string $navigationIcon = 'heroicon-o-globe-alt';
     protected static ?string $navigationGroup = 'Content';
     protected static ?int $navigationSort = 2;
+    protected static ?string $navigationLabel = 'Section One';
+
+    public static function canCreate(): bool
+    {
+        return false;
+    }
 
     public static function form(Form $form): Form
     {
@@ -101,12 +107,6 @@ class ExperienceAfricaResource extends Resource
             ])
             ->actions([
                 Tables\Actions\EditAction::make(),
-                Tables\Actions\DeleteAction::make(),
-            ])
-            ->bulkActions([
-                Tables\Actions\BulkActionGroup::make([
-                    Tables\Actions\DeleteBulkAction::make(),
-                ]),
             ]);
     }
 

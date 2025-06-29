@@ -68,7 +68,7 @@ data-testid="section-container">
                                     class="Ux33nC">
                                     <picture>
                                         <img loading="lazy"
-                                            src="{{ asset( $discoverAfrica->image1_path) }}"
+                                            src="{{ asset('storage/' . $discoverAfrica->image1_path) }}"
                                             alt="{{ $discoverAfrica->image1_alt ?? 'Safari Vehicle' }}"
                                             style="object-fit:cover;object-position:43% 97%">
                                     </picture>
@@ -103,7 +103,7 @@ data-testid="section-container">
                                     class="Ux33nC">
                                     <picture>
                                         <img loading="lazy"
-                                            src="{{ asset( $discoverAfrica->image2_path) }}"
+                                            src="{{ asset('storage/' . $discoverAfrica->image2_path) }}"
                                             alt="{{ $discoverAfrica->image2_alt ?? 'Luxury Lodge' }}"
                                             style="object-fit:cover;object-position:50% 50%">
                                     </picture>
@@ -138,7 +138,7 @@ data-testid="section-container">
                                     class="Ux33nC">
                                     <picture>
                                         <img loading="lazy"
-                                            src="{{ asset( $discoverAfrica->image3_path) }}"
+                                            src="{{ asset('storage/' . $discoverAfrica->image3_path) }}"
                                             alt="{{ $discoverAfrica->image3_alt ?? 'Safari Wildlife' }}"
                                             style="object-fit: cover; object-position: 60% 49%; width: 100%;"
                                             data-ssr-src-done="true"

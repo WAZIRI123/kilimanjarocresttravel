@@ -3,6 +3,9 @@
   array (
     'app.filament.resources.booking-resource.pages.list-bookings' => 'App\\Filament\\Resources\\BookingResource\\Pages\\ListBookings',
     'app.filament.resources.booking-resource.pages.view-booking' => 'App\\Filament\\Resources\\BookingResource\\Pages\\ViewBooking',
+    'app.filament.resources.discover-africa-best-resource.pages.create-discover-africa-best' => 'App\\Filament\\Resources\\DiscoverAfricaBestResource\\Pages\\CreateDiscoverAfricaBest',
+    'app.filament.resources.discover-africa-best-resource.pages.edit-discover-africa-best' => 'App\\Filament\\Resources\\DiscoverAfricaBestResource\\Pages\\EditDiscoverAfricaBest',
+    'app.filament.resources.discover-africa-best-resource.pages.list-discover-africa-bests' => 'App\\Filament\\Resources\\DiscoverAfricaBestResource\\Pages\\ListDiscoverAfricaBests',
     'app.filament.resources.experience-africa-resource.pages.create-experience-africa' => 'App\\Filament\\Resources\\ExperienceAfricaResource\\Pages\\CreateExperienceAfrica',
     'app.filament.resources.experience-africa-resource.pages.edit-experience-africa' => 'App\\Filament\\Resources\\ExperienceAfricaResource\\Pages\\EditExperienceAfrica',
     'app.filament.resources.experience-africa-resource.pages.list-experience-africas' => 'App\\Filament\\Resources\\ExperienceAfricaResource\\Pages\\ListExperienceAfricas',
@@ -48,6 +51,7 @@
   'resources' => 
   array (
     'C:\\Users\\hp\\CascadeProjects\\stan-safari\\app\\Filament\\Resources\\BookingResource.php' => 'App\\Filament\\Resources\\BookingResource',
+    'C:\\Users\\hp\\CascadeProjects\\stan-safari\\app\\Filament\\Resources\\DiscoverAfricaBestResource.php' => 'App\\Filament\\Resources\\DiscoverAfricaBestResource',
     'C:\\Users\\hp\\CascadeProjects\\stan-safari\\app\\Filament\\Resources\\ExperienceAfricaResource.php' => 'App\\Filament\\Resources\\ExperienceAfricaResource',
     'C:\\Users\\hp\\CascadeProjects\\stan-safari\\app\\Filament\\Resources\\PackageResource.php' => 'App\\Filament\\Resources\\PackageResource',
     'C:\\Users\\hp\\CascadeProjects\\stan-safari\\app\\Filament\\Resources\\VideoSectionResource.php' => 'App\\Filament\\Resources\\VideoSectionResource',

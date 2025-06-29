@@ -24,6 +24,7 @@ class DatabaseSeeder extends Seeder
             PackageSeeder::class,
             ExperienceAfricaSeeder::class,
             VideoSectionSeeder::class,
+            DiscoverAfricaBestSeeder::class,
         ]);
     }
 }

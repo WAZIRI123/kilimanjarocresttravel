@@ -16,8 +16,8 @@ class ExperienceAfricaResource extends Resource
 {
     protected static ?string $model = ExperienceAfrica::class;
     protected static ?string $navigationIcon = 'heroicon-o-globe-alt';
-    protected static ?string $navigationGroup = 'Content';
-    protected static ?int $navigationSort = 2;
+    protected static ?string $navigationGroup = 'Home Page Sections';
+    protected static ?int $navigationSort = 1;
     protected static ?string $navigationLabel = 'Section One';
 
     public static function canCreate(): bool

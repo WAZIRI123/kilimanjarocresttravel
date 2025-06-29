@@ -34,8 +34,8 @@ class PackageSeeder extends Seeder
                 'likes' => 0,
                 'meta_title' => '7 Days Marangu Route - Kilimanjaro Climb',
                 'meta_description' => 'Climb Mount Kilimanjaro via the Marangu Route, also known as the "Coca Cola Route". Experience the beauty of Kilimanjaro with our expert guides.',
-                'meta_keywords' => json_encode(['kilimanjaro', 'marangu route', 'mount kilimanjaro', 'tanzania', 'hiking', 'trekking']),
-                'itineraries' => json_encode([
+                'meta_keywords' => ['kilimanjaro', 'marangu route', 'mount kilimanjaro', 'tanzania', 'hiking', 'trekking'],
+                'itineraries' => [
                     [
                         'title' => 'Day 1 - Airport pick-up- Drop off at hotel',
                         'image' => 'itineraries/01JYVM8644CQQ1D6M0WDKDH5VE.jpg',
@@ -53,8 +53,8 @@ class PackageSeeder extends Seeder
                         'tips' => 'Hiking time: 5hrs,Distance: Approximately 8.1 km,Habitat: Montane Forest'
                     ],
                     // Add other days here...
-                ]),
-                'included_items' => json_encode([
+                ],
+                'included_items' => [
                     ['item' => 'All Taxes/VAT'],
                     ['item' => 'All Meals (as specified in the day-by-day section)'],
                     ['item' => 'Park fees'],
@@ -66,8 +66,8 @@ class PackageSeeder extends Seeder
                     ['item' => 'Camping Equipment'],
                     ['item' => 'Drinking water on all days'],
                     ['item' => 'Porterage']
-                ]),
-                'excluded_items' => json_encode([
+                ],
+                'excluded_items' => [
                     ['item' => 'International flights (from/to home)'],
                     ['item' => 'Sleeping Bag'],
                     ['item' => 'Additional accommodation before and at the end of the tour'],
@@ -77,7 +77,7 @@ class PackageSeeder extends Seeder
                     ['item' => 'Alcoholic drinks'],
                     ['item' => 'Rescue Fee'],
                     ['item' => 'Climbing Gear']
-                ]),
+                ],
                 'created_at' => now(),
                 'updated_at' => now()
             ]

@@ -15,8 +15,8 @@ class VideoSectionResource extends Resource
 {
     protected static ?string $model = VideoSection::class;
     protected static ?string $navigationIcon = 'heroicon-o-video-camera';
-    protected static ?string $navigationGroup = 'Content';
-    protected static ?int $navigationSort = 3;
+    protected static ?string $navigationGroup = 'Home Page Sections';
+    protected static ?int $navigationSort = 2;
     protected static ?string $navigationLabel = 'Section Two';
 
     public static function canCreate(): bool

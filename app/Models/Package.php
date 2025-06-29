@@ -75,11 +75,9 @@ class Package extends Model
         'included_items' => 'array',
         'excluded_items' => 'array',
         'itineraries' => 'array',
-        'included_items' => 'array',
-        'excluded_items' => 'array',
-        'itineraries' => 'array',
         'meta_keywords' => 'array',
     ];
+    
 
     /**
      * Prepare a date for array / JSON serialization.

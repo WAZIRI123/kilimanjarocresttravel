@@ -1,6 +1,7 @@
 
 @php
     $sectionFour = \App\Models\SectionFour::active()->first();
+    $sectionSix = \App\Models\SectionSix::active()->first();
 @endphp
 <section id="comp-m1oqn1nf" tabindex="-1"
 data-block-level-container="Section"
@@ -564,13 +565,13 @@ data-testid="section-container">
                 <div data-motion-part="BG_MEDIA comp-m2vr53bb7">
                     <wow-image id="img-comp-m2vr53bb7"
                         data-is-responsive="true"
-                        data-image-info="{&quot;containerId&quot;:&quot;comp-m2vr53bb7&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;parallaxSpeed&quot;:1.5,&quot;sourceSets&quot;:[],&quot;imageData&quot;:{&quot;uri&quot;:&quot;{{ asset('images/one-nature-nyaruswiga-lodge-serengeti.jpg') }}&quot;,&quot;width&quot;:1880,&quot;height&quot;:1208,&quot;alt&quot;:&quot;Lake Manyara Tree Lodge Suite - STAR SAFARI Partner&quot;,&quot;name&quot;:&quot;Lake Manyara Tree Lodge.jpg&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;scrollEffect&quot;:&quot;none&quot;,&quot;focalPoint&quot;:null},&quot;hasAnimation&quot;:false,&quot;encoding&quot;:&quot;AVIF&quot;}"
+                        data-image-info="{&quot;containerId&quot;:&quot;comp-m2vr53bb7&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;parallaxSpeed&quot;:1.5,&quot;sourceSets&quot;:[],&quot;imageData&quot;:{&quot;uri&quot;:&quot;{{ asset($sectionSix->main_image_path) }}&quot;,&quot;width&quot;:1880,&quot;height&quot;:1208,&quot;alt&quot;:&quot;{!! $sectionSix->main_image_alt !!}&quot;,&quot;name&quot;:&quot;Lake Manyara Tree Lodge.jpg&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;scrollEffect&quot;:&quot;none&quot;,&quot;focalPoint&quot;:null},&quot;hasAnimation&quot;:false,&quot;encoding&quot;:&quot;AVIF&quot;}"
                         data-has-ssr-src="true"
                         data-motion-part="BG_IMG comp-m2vr53bb7"
                         class="Ux33nC">
                         <picture><img loading="lazy"
-                                src="{{ asset('images/one-nature-nyaruswiga-lodge-serengeti.jpg') }}"
-                                alt="Lake Manyara Tree Lodge Suite - STAR SAFARI Partner"
+                                src="{{ asset('/storage'.$sectionSix->main_image_path) }}"
+                                alt="{!! $sectionSix->main_image_alt !!}
                                 style="object-fit:cover;object-position:50% 50%">
                         </picture>
                     </wow-image></div>
@@ -597,10 +598,7 @@ data-testid="section-container">
                 data-testid="richTextElement"
                 ariaattributes="[object Object]">
                 <h2 class="font_2 wixui-rich-text__text"><span
-                        class="wixui-rich-text__text"> Where Wilderness <span
-                            style="font-weight:bold;"
-                            class="wixui-rich-text__text"><span
-                                class="wixui-rich-text__text"> Meets Comfort</span></span></span></h2>
+                        class="wixui-rich-text__text"> {!! $sectionSix->title !!}</span></h2>
             </div><!--/$--><!--$-->
             <div id="comp-m2vrz666"
                 class="comp-m2vrz666 JGtLUp wixui-horizontal-line">
@@ -609,15 +607,11 @@ data-testid="section-container">
                 class="HcOXKn c9GqVL QxJLC3 lq2cno YQcXTT comp-m2vr53be wixui-rich-text"
                 data-testid="richTextElement"
                 ariaattributes="[object Object]">
-                <p class="font_8 wixui-rich-text__text">Retreat to Africa’s untouched wilderness in your own private villa,  lodge, or designer tented suite each crafted for comfort, privacy, and awe-inspiring views.
-
-                    From the moment you arrive, nature surrounds you: lions echo in the distance, elephants roam freely at dusk, and lanterns guide you to candlelit dinners beneath the stars.</p>
+                <p class="font_8 wixui-rich-text__text">{!! $sectionSix->first_paragraph !!}</p>
 
                 <p class="font_8 wixui-rich-text__text"><br
                         class="wixui-rich-text__text">
-                        Enjoy world-class amenities, gourmet cuisine, and bespoke service all set against Africa’s most breathtaking backdrops.
-
-This is more than a safari. It’s your exclusive sanctuary where adventure meets elegance.</p>
+                        {!! $sectionSix->second_paragraph !!}</p>
 
                 <p class="font_8 wixui-rich-text__text"><br
                         class="wixui-rich-text__text">
@@ -654,13 +648,13 @@ This is more than a safari. It’s your exclusive sanctuary where adventure meet
                                 <wow-image
                                     id="img-comp-m2vr53bl5__item1"
                                     data-is-responsive="true"
-                                    data-image-info="{&quot;containerId&quot;:&quot;comp-m2vr53bl5__item1&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;parallaxSpeed&quot;:1.5,&quot;sourceSets&quot;:[],&quot;imageData&quot;:{&quot;uri&quot;:&quot;{{ asset('images/selous-kinga-lodge-8-768x512.jpg') }}&quot;,&quot;width&quot;:1211,&quot;height&quot;:700,&quot;alt&quot;:&quot;Namiri Plains - Exterior view during safari with star SAFARI&quot;,&quot;name&quot;:&quot;selous-kinga-lodge-8-768x512.jpg&quot;,&quot;focalPoint&quot;:null},&quot;hasAnimation&quot;:false,&quot;encoding&quot;:&quot;AVIF&quot;}"
+                                    data-image-info="{&quot;containerId&quot;:&quot;comp-m2vr53bl5__item1&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;parallaxSpeed&quot;:1.5,&quot;sourceSets&quot;:[],&quot;imageData&quot;:{&quot;uri&quot;:&quot;{{ asset('/storage/'.$sectionSix->thumbnail1_path) }}&quot;,&quot;width&quot;:1211,&quot;height&quot;:700,&quot;alt&quot;:&quot;{!! $sectionSix->thumbnail1_alt !!}&quot;,&quot;name&quot;:&quot;{!! $sectionSix->thumbnail1_path !!}&quot;,&quot;focalPoint&quot;:null},&quot;hasAnimation&quot;:false,&quot;encoding&quot;:&quot;AVIF&quot;}"
                                     data-has-ssr-src="true"
                                     data-motion-part="BG_IMG comp-m2vr53bl5__item1"
                                     class="Ux33nC">
                                     <picture><img loading="lazy"
-                                            src="{{ asset('images/selous-kinga-lodge-8-768x512.jpg') }}"
-                                            alt="Namiri Plains - Exterior view during safari with star SAFARI"
+                                            src="{{ asset('/storage/'.$sectionSix->thumbnail1_path) }}"
+                                            alt="{!! $sectionSix->thumbnail1_alt !!}"
                                             style="object-fit:cover;object-position:50% 50%">
                                     </picture>
                                 </wow-image></div>
@@ -681,13 +675,13 @@ This is more than a safari. It’s your exclusive sanctuary where adventure meet
                                 <wow-image
                                     id="img-comp-m2vr53bl5__item-j9ples3e"
                                     data-is-responsive="true"
-                                    data-image-info="{&quot;containerId&quot;:&quot;comp-m2vr53bl5__item-j9ples3e&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;parallaxSpeed&quot;:1.5,&quot;sourceSets&quot;:[],&quot;imageData&quot;:{&quot;uri&quot;:&quot;{{ asset('images/mount climanjaro.webp') }}&quot;,&quot;width&quot;:1600,&quot;height&quot;:2400,&quot;alt&quot;:&quot;Mount Climanjaro - STAR SAFARI partner&quot;,&quot;name&quot;:&quot;mount climanjaro.jpg&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;scrollEffect&quot;:&quot;none&quot;,&quot;focalPoint&quot;:null},&quot;hasAnimation&quot;:false,&quot;encoding&quot;:&quot;AVIF&quot;}"
+                                    data-image-info="{&quot;containerId&quot;:&quot;comp-m2vr53bl5__item-j9ples3e&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;parallaxSpeed&quot;:1.5,&quot;sourceSets&quot;:[],&quot;imageData&quot;:{&quot;uri&quot;:&quot;{{ asset('/storage/'.$sectionSix->thumbnail2_path) }}&quot;,&quot;width&quot;:1600,&quot;height&quot;:2400,&quot;alt&quot;:&quot;{!! $sectionSix->thumbnail2_alt !!}&quot;,&quot;name&quot;:&quot;mount climanjaro.jpg&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;scrollEffect&quot;:&quot;none&quot;,&quot;focalPoint&quot;:null},&quot;hasAnimation&quot;:false,&quot;encoding&quot;:&quot;AVIF&quot;}"
                                     data-has-ssr-src="true"
                                     data-motion-part="BG_IMG comp-m2vr53bl5__item-j9ples3e"
                                     class="Ux33nC">
                                     <picture><img loading="lazy"
-                                            src="{{ asset('images/mount climanjaro.webp') }}"
-                                            alt="Mount Climanjaro - STAN SAFARIS partner"
+                                            src="{{ asset('/storage/'.$sectionSix->thumbnail2_path) }}"
+                                            alt="{!! $sectionSix->thumbnail2_alt !!}
                                             style="object-fit:cover;object-position:50% 50%">
                                     </picture>
                                 </wow-image></div>
@@ -708,12 +702,12 @@ This is more than a safari. It’s your exclusive sanctuary where adventure meet
                                 <wow-image
                                     id="img-comp-m2vr53bl5__item-j9plerjk"
                                     data-is-responsive="true"
-                                    data-image-info="{&quot;containerId&quot;:&quot;comp-m2vr53bl5__item-j9plerjk&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;parallaxSpeed&quot;:1.5,&quot;sourceSets&quot;:[],&quot;imageData&quot;:{&quot;uri&quot;:&quot;{{ asset('images/village-visit-04.jpg') }}&quot;,&quot;width&quot;:2048,&quot;height&quot;:1365,&quot;alt&quot;:&quot;village-visit-04 - Poolside - STAN SAFARI partner&quot;,&quot;name&quot;:&quot;village-visit-04.jpg&quot;,&quot;focalPoint&quot;:null},&quot;hasAnimation&quot;:false,&quot;encoding&quot;:&quot;AVIF&quot;}"
+                                    data-image-info="{&quot;containerId&quot;:&quot;comp-m2vr53bl5__item-j9plerjk&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;parallaxSpeed&quot;:1.5,&quot;sourceSets&quot;:[],&quot;imageData&quot;:{&quot;uri&quot;:&quot;{{ asset('/storage/'.$sectionSix->thumbnail3_path) }}&quot;,&quot;width&quot;:2048,&quot;height&quot;:1365,&quot;alt&quot;:&quot;{!! $sectionSix->thumbnail3_alt !!}&quot;,&quot;name&quot;:&quot;village-visit-04.jpg&quot;,&quot;focalPoint&quot;:null},&quot;hasAnimation&quot;:false,&quot;encoding&quot;:&quot;AVIF&quot;}"
                                     data-has-ssr-src="true"
                                     data-motion-part="BG_IMG comp-m2vr53bl5__item-j9plerjk"
                                     class="Ux33nC">
                                     <picture><img loading="lazy"
-                                            src="{{ asset('images/village-visit-04.jpg') }}"
+                                            src="{{ asset('/storage/'.$sectionSix->thumbnail3_path) }}"
                                             alt="village-visit-04 - Poolside - STAN SAFARI partner"
                                             style="object-fit:cover;object-position:50% 50%">
                                     </picture>

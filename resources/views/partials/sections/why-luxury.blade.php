@@ -1,4 +1,7 @@
 
+@php
+$sectionFive = \App\Models\SectionFive::first();
+@endphp
 <section id="comp-m1oo0rkh" tabindex="-1"
 data-block-level-container="Section"
 class="xuzjBY comp-m1oo0rkh wixui-section"
@@ -19,7 +22,7 @@ data-testid="section-container">
             data-testid="richTextElement"
             ariaattributes="[object Object]">
             <h3 class="font_3 wixui-rich-text__text"><span
-                    class="wixui-rich-text__text">Our Story</span></h3>
+                    class="wixui-rich-text__text">{{ $sectionFive->title }}</span></h3>
         </div><!--/$--><!--$-->
         <div id="comp-m1oof7jp"
             class="comp-m1oof7jp JGtLUp wixui-horizontal-line"></div>
@@ -33,8 +36,7 @@ data-testid="section-container">
             data-testid="richTextElement"
             ariaattributes="[object Object]">
             <h4 class="font_7 wixui-rich-text__text"><span
-                    class="wixui-rich-text__text">STAN
-                    SAFARIS</span></h4>
+                    class="wixui-rich-text__text">{{ $sectionFive->subtitle }}</span></h4>
         </div><!--/$-->
     </div><!--/$--><!--$-->
     <div id="comp-m1oo0rkw3" role=""
@@ -45,7 +47,7 @@ data-testid="section-container">
             data-testid="richTextElement"
             ariaattributes="[object Object]">
             <p class="font_8 wixui-rich-text__text"><span
-                    class="wixui-rich-text__text">Born from a deep love for Africa's wild beauty and rich cultures, Stan Safaris was founded in Tanzania by locals. Our mission is to share the real Africa with the world authentically, responsibly, and memorably. We started by guiding small groups through Tanzania’s national parks and have grown into a trusted safari company offering tailor-made adventures across East and West Africa. Our roots remain grounded in local knowledge, driven by passion, and committed to delivering deeply personal and enriching travel experiences.</span></p>
+                    class="wixui-rich-text__text">{{ $sectionFive->first_paragraph }}</span></p>
         </div><!--/$-->
     </div><!--/$--><!--$-->
     <div id="comp-m1oo0rky1" role=""
@@ -57,7 +59,7 @@ data-testid="section-container">
             ariaattributes="[object Object]">
             <p class="font_8 wixui-rich-text__text"><span
                     class="wixui-rich-text__text">
-                    As Stan Safaris grew, we expanded our vision by building Selous Kinga Lodge in the Selous Game Reserve for a true wilderness escape, and establishing Kinga Homes in Moshi, the gateway to Mount Kilimanjaro.
+                    {{ $sectionFive->second_paragraph }}
                 
                 </span></p>
 
@@ -68,7 +70,7 @@ data-testid="section-container">
 
             <p class="font_8 wixui-rich-text__text"><span
                     class="wixui-rich-text__text">
-                    Our properties offer comfort and a genuine connection to Africa. As storytellers, hosts, and guardians of the natural world, Stan Safaris believes travel should be meaningful for guests, communities, and the land. Our story is Africa's; now, it's yours to write. Come experience it with us.</span>
+                    {{ $sectionFive->third_paragraph }}</span>
             </p>
         </div><!--/$-->
     </div><!--/$-->

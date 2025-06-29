@@ -97,7 +97,7 @@ data-testid="section-container">
         <div id="comp-m2vttpwh" data-testid="imageX"
             class="lyNaha comp-m2vttpwh JdNFxG wixui-image">
             <div class="h1DYhE"
-                data-motion-part="BG_LAYER comp-m2vttpwh">
+                data-motion-part="BG_LAYER comp-m2vttpwh" style="top: 15 !important; bottom: 15 !important;">
                 <div data-motion-part="BG_MEDIA comp-m2vttpwh">
                     <wow-image id="img-comp-m2vttpwh"
                         data-is-responsive="true"
@@ -168,10 +168,7 @@ data-testid="section-container">
     grid-area: 1 / 2 / 2 / 1;
     position: relative;
 }
-.lyNaha .h1DYhE{
-    top: 15 !important;
-    bottom: 15 !important;
-}
+
     
     @media (max-width: 768px) {
         .comp-m2vttpv8-container {

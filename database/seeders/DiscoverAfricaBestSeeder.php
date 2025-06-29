@@ -18,7 +18,7 @@ class DiscoverAfricaBestSeeder extends Seeder
 
         // Create initial data
         DiscoverAfricaBest::create([
-            'heading' => 'Unforgettable Safari Adventures <strong>in Tanzania</strong>',
+            'heading' => 'Discover Unforgettable and      Thrilling  Safari  Adventures <strong> of Africa</strong>',
             'subheading' => 'Step into the wild with Stan Safaris, where every journey brings you face-to-face with Africa\'s most iconic landscapes and wildlife. From the endless plains of the Serengeti to the majestic Ngorongoro Crater, we deliver curated safari experiences designed for unforgettable moments.',
             'image1_path' => 'images/safari1.png',
             'image1_alt' => 'Safari Vehicle During Game Drive at Serengeti with Stan Safaris',

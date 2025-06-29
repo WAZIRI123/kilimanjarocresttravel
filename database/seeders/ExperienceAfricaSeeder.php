@@ -17,9 +17,9 @@ class ExperienceAfricaSeeder extends Seeder
             'heading' => "Experience Tanzania's Wild Beauty with Stan Safaris",
             'subheading' => "Embark on a safari in Tanzania with Stan Safaris, your gateway to the Serengeti, Ngorongoro Crater, Mount Kilimanjaro, and beyond. We offer private guided tours, custom itineraries, and premium lodges, all designed for unforgettable wildlife encounters and seamless comfort. Whether you're chasing the Great Migration or relaxing in Zanzibar, your journey with us is crafted to impress.",
             'benefits' => [
-                'Tailor-Made Safari',
-                'Expert Local Guides',
-                'Big 5 Game Viewing'
+                ['benefit' => 'Tailor-Made Safari'],
+                ['benefit' => 'Expert Local Guides'],
+                ['benefit' => 'Big 5 Game Viewing']
             ],
             'button_text' => 'Learn More',
             'button_link' => '/about',

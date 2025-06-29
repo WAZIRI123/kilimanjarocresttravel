@@ -1,12 +1,16 @@
-<section id="video-section" class="video-section" style="grid-area:6/1/7/2" >
+@php
+    use App\Models\VideoSection;
+    $video = VideoSection::where('is_active', true)->first();
+@endphp
+
+@if($video)
+<section id="video-section" class="video-section" style="grid-area:6/1/7/2">
     <div class="section-container">
-    
         <div class="section-content">
             <div id="comp-m2vttpvv1" class="HcOXKn c9GqVL QxJLC3 lq2cno YQcXTT comp-m2vttpvv1 wixui-rich-text" data-testid="richTextElement" ariaattributes="[object Object]" style="border-radius:1rem1">
-                <h2 class="font_2 wixui-rich-text__text"><span class="wixui-rich-text__text">Experience The Magic of Tanzania:   <span style="font-weight:bold;"
-                    class="wixui-rich-text__text"><span
-                        class="wixui-rich-text__text">Wildlife, Landscapes & Culture.</span></span></span></h2>
-                       
+                <h2 class="font_2 wixui-rich-text__text">
+                    <span class="wixui-rich-text__text">{!! $video->title !!}</span>
+                </h2>
             </div>
 
             <div id="comp-m2vue5lh" class="comp-m2vue5lh JGtLUp wixui-horizontal-line">
@@ -16,18 +20,19 @@
             <div class="video-embed">
                 <div class="video-container">
                     <iframe 
-                        src="https://www.youtube.com/embed/zU7YkmqiqPI?start=9&rel=0&modestbranding=1&showinfo=0" 
-                        title="Safari Adventure Video" 
+                        src="https://www.youtube.com/embed/{{ $video->video_id }}?start=9&rel=0&modestbranding=1&showinfo=0" 
+                        title="{{ $video->title }}" 
                         frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                         allowfullscreen
-                        style="background: url('https://img.youtube.com/vi/zU7YkmqiqPI/maxresdefault.jpg') center/cover no-repeat;">
+                        style="background: url('{{ $video->thumbnail_url ?? 'https://img.youtube.com/vi/' . $video->video_id . '/maxresdefault.jpg' }}') center/cover no-repeat;">
                     </iframe>
                 </div>
             </div>
         </div>
     </div>
 </section>
+@endif
 
 <style>
     /* Base Styles */

@@ -10,6 +10,9 @@
     'app.filament.resources.package-resource.pages.edit-package' => 'App\\Filament\\Resources\\PackageResource\\Pages\\EditPackage',
     'app.filament.resources.package-resource.pages.list-packages' => 'App\\Filament\\Resources\\PackageResource\\Pages\\ListPackages',
     'app.filament.resources.package-resource.pages.view-package' => 'App\\Filament\\Resources\\PackageResource\\Pages\\ViewPackage',
+    'app.filament.resources.video-section-resource.pages.create-video-section' => 'App\\Filament\\Resources\\VideoSectionResource\\Pages\\CreateVideoSection',
+    'app.filament.resources.video-section-resource.pages.edit-video-section' => 'App\\Filament\\Resources\\VideoSectionResource\\Pages\\EditVideoSection',
+    'app.filament.resources.video-section-resource.pages.list-video-sections' => 'App\\Filament\\Resources\\VideoSectionResource\\Pages\\ListVideoSections',
     'filament.pages.dashboard' => 'Filament\\Pages\\Dashboard',
     'app.filament.widgets.stats-overview' => 'App\\Filament\\Widgets\\StatsOverview',
     'filament.livewire.database-notifications' => 'Filament\\Livewire\\DatabaseNotifications',
@@ -47,6 +50,7 @@
     'C:\\Users\\hp\\CascadeProjects\\stan-safari\\app\\Filament\\Resources\\BookingResource.php' => 'App\\Filament\\Resources\\BookingResource',
     'C:\\Users\\hp\\CascadeProjects\\stan-safari\\app\\Filament\\Resources\\ExperienceAfricaResource.php' => 'App\\Filament\\Resources\\ExperienceAfricaResource',
     'C:\\Users\\hp\\CascadeProjects\\stan-safari\\app\\Filament\\Resources\\PackageResource.php' => 'App\\Filament\\Resources\\PackageResource',
+    'C:\\Users\\hp\\CascadeProjects\\stan-safari\\app\\Filament\\Resources\\VideoSectionResource.php' => 'App\\Filament\\Resources\\VideoSectionResource',
     0 => 'App\\Filament\\Resources\\BookingResource',
   ),
   'resourceDirectories' => 

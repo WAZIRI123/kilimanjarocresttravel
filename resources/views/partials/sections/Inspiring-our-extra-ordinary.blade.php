@@ -1,3 +1,7 @@
+
+@php
+    $sectionFour = \App\Models\SectionFour::active()->first();
+@endphp
 <section id="comp-m1oqn1nf" tabindex="-1"
 data-block-level-container="Section"
 class="xuzjBY comp-m1oqn1nf-container comp-m1oqn1nf wixui-section undefined"
@@ -20,13 +24,13 @@ data-testid="section-container">
                 <div data-motion-part="BG_MEDIA comp-m1oqn1o27">
                     <wow-image id="img-comp-m1oqn1o27"
                         data-is-responsive="true"
-                        data-image-info="{&quot;containerId&quot;:&quot;comp-m1oqn1o27&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;parallaxSpeed&quot;:1.5,&quot;sourceSets&quot;:[],&quot;imageData&quot;:{&quot;uri&quot;:&quot;851897_c87f425b36fc410ea47d91c5ebaf480f~mv2.jpg&quot;,&quot;width&quot;:2000,&quot;height&quot;:1333,&quot;alt&quot;:&quot;A herd of Elephants drinking water in Serengeti –  African Safaris - Tanzania&quot;,&quot;name&quot;:&quot;29375.jpg&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;focalPoint&quot;:{&quot;x&quot;:64,&quot;y&quot;:44},&quot;scrollEffect&quot;:&quot;none&quot;},&quot;hasAnimation&quot;:false,&quot;encoding&quot;:&quot;AVIF&quot;}"
+                        data-image-info="{&quot;containerId&quot;:&quot;comp-m1oqn1o27&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;parallaxSpeed&quot;:1.5,&quot;sourceSets&quot;:[],&quot;imageData&quot;:{&quot;uri&quot;:&quot;{{ asset('storage/' . ($sectionFour->main_image_path ?? 'images/lions-section-four.png')) }}&quot;,&quot;width&quot;:2000,&quot;height&quot;:1333,&quot;alt&quot;:&quot;{{ $sectionFour->main_image_alt ?? 'Stan Safari Hero Background' }}&quot;,&quot;name&quot;:&quot;{{ $sectionFour->main_image_path }}&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;focalPoint&quot;:{&quot;x&quot;:50,&quot;y&quot;:50},&quot;scrollEffect&quot;:&quot;none&quot;},&quot;hasAnimation&quot;:false,&quot;encoding&quot;:&quot;AVIF&quot;}"
                         data-has-ssr-src="true"
                         data-motion-part="BG_IMG comp-m1oqn1o27"
                         class="Ux33nC">
                         <picture><img loading="lazy"
-                                src="https://static.wixstatic.com/media/851897_c87f425b36fc410ea47d91c5ebaf480f~mv2.jpg/v1/fill/w_147,h_98,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/29375.jpg"
-                                alt="A herd of Elephants drinking water in Serengeti –  African Safaris - Tanzania"
+                                src="{{ asset('storage/' . ($sectionFour->main_image_path ?? 'images/lions-section-four.png')) }}"
+                               alt="{{ $sectionFour->main_image_alt ?? 'Stan Safari Hero Background' }}"
                                 style="object-fit:cover;object-position:37% 44%">
                         </picture>
                     </wow-image></div>
@@ -73,6 +77,8 @@ data-testid="section-container">
         
 
 </style>
+
+
 <div id="comp-m1oqn1o44" role=""
     class="rM7ckN YJEKQk comp-m1oqn1o44 wixui-box">
     <div class="YAf4Ti InKIFF wixui-box"></div>
@@ -87,11 +93,7 @@ data-testid="section-container">
                 data-testid="richTextElement"
                 ariaattributes="[object Object]" >
                 <h2 class="font_2 wixui-rich-text__text"><span
-                        class="wixui-rich-text__text"> Join the movement, <span
-                            style="font-weight:bold;"
-                            class="wixui-rich-text__text"><span
-                              
-                                class="wixui-rich-text__text"> Travel with purpose.</span></span></span>
+                        class="wixui-rich-text__text"> {!! $sectionFour->title !!}</span>
                 </h2>
             </div><!--/$--><!--$-->
             <div id="comp-m1oqyvln"
@@ -101,7 +103,7 @@ data-testid="section-container">
                 class="HcOXKn c9GqVL QxJLC3 lq2cno YQcXTT comp-m1oqn1o6 wixui-rich-text"
                 data-testid="richTextElement"
                 ariaattributes="[object Object]">
-                <p class="font_8 wixui-rich-text__text" style="font-weight: normal; !important">Every journey with Stan Safari does more than show you Africa’s beauty it helps protect it. Our ethical safaris directly support wildlife conservation and uplift the local communities we call home.</p>
+                <p class="font_8 wixui-rich-text__text" style="font-weight: normal; !important">{!! $sectionFour->description !!}</p>
             </div><!--/$-->
         </div><!--/$-->
     </div>
@@ -128,13 +130,13 @@ data-testid="section-container">
                                 <wow-image
                                     id="img-comp-m1oqn1od6__item1"
                                     data-is-responsive="true"
-                                    data-image-info="{&quot;containerId&quot;:&quot;comp-m1oqn1od6__item1&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;parallaxSpeed&quot;:1.5,&quot;sourceSets&quot;:[],&quot;imageData&quot;:{&quot;uri&quot;:&quot;{{ asset('images/tanzania-serengeti.jpg') }}&quot;,&quot;width&quot;:2580,&quot;height&quot;:3219,&quot;alt&quot;:&quot; Tanzania Safari | Elephant in the Lodge&quot;,&quot;name&quot;:&quot;saf-eil-lei-activity-boat-cruise08.jpg&quot;,&quot;focalPoint&quot;:null},&quot;hasAnimation&quot;:false,&quot;encoding&quot;:&quot;AVIF&quot;}"
+                                    data-image-info="{&quot;containerId&quot;:&quot;comp-m1oqn1od6__item1&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;parallaxSpeed&quot;:1.5,&quot;sourceSets&quot;:[],&quot;imageData&quot;:{&quot;uri&quot;:&quot;{{ asset('storage/'.$sectionFour->thumbnail1_path ?? 'images/tanzania-serengeti.jpg') }}&quot;,&quot;width&quot;:2580,&quot;height&quot;:3219,&quot;alt&quot;:&quot; Tanzania Safari | Elephant in the Lodge&quot;,&quot;name&quot;:&quot;saf-eil-lei-activity-boat-cruise08.jpg&quot;,&quot;focalPoint&quot;:null},&quot;hasAnimation&quot;:false,&quot;encoding&quot;:&quot;AVIF&quot;}"
                                     data-has-ssr-src="true"
                                     data-motion-part="BG_IMG comp-m1oqn1od6__item1"
                                     class="Ux33nC">
                                     <picture><img loading="lazy"
-                                            src="{{ asset('images/tanzania-serengeti.jpg') }}"
-                                            alt=" Tanzania Safari | Elephant in the Lodge"
+                                            src="{{ asset('storage/'.$sectionFour->thumbnail1_path ?? 'images/tanzania-serengeti.jpg') }}"
+                                            alt="{{ $sectionFour->thumbnail1_alt ?? 'Thumbnail 1' }}"
                                             style="object-fit:cover;object-position:50% 50%">
                                     </picture>
                                 </wow-image></div>
@@ -155,13 +157,13 @@ data-testid="section-container">
                                 <wow-image
                                     id="img-comp-m1oqn1od6__item-j9ples3e"
                                     data-is-responsive="true"
-                                    data-image-info="{&quot;containerId&quot;:&quot;comp-m1oqn1od6__item-j9ples3e&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;parallaxSpeed&quot;:1.5,&quot;sourceSets&quot;:[],&quot;imageData&quot;:{&quot;uri&quot;:&quot;{{ asset('images/selous-kinga-lodge-7-768x512.jpg') }}&quot;,&quot;width&quot;:7360,&quot;height&quot;:4775,&quot;alt&quot;:&quot;andBeyond Under Canvas  Camp - Serengeti, Tanzania&quot;,&quot;name&quot;:&quot;Tanzania-Serengeti-Under-Canvas-SUC-Guest-Area-camp-exterior-with-lantern-walkway-and-Maas&quot;,&quot;focalPoint&quot;:null},&quot;hasAnimation&quot;:false,&quot;encoding&quot;:&quot;AVIF&quot;}"
+                                    data-image-info="{&quot;containerId&quot;:&quot;comp-m1oqn1od6__item-j9ples3e&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;parallaxSpeed&quot;:1.5,&quot;sourceSets&quot;:[],&quot;imageData&quot;:{&quot;uri&quot;:&quot;{{ asset('storage/'.$sectionFour->thumbnail2_path ?? 'images/selous-kinga-lodge-7-768x512.jpg') }}&quot;,&quot;width&quot;:7360,&quot;height&quot;:4775,&quot;alt&quot;:&quot;andBeyond Under Canvas  Camp - Serengeti, Tanzania&quot;,&quot;name&quot;:&quot;Tanzania-Serengeti-Under-Canvas-SUC-Guest-Area-camp-exterior-with-lantern-walkway-and-Maas&quot;,&quot;focalPoint&quot;:null},&quot;hasAnimation&quot;:false,&quot;encoding&quot;:&quot;AVIF&quot;}"
                                     data-has-ssr-src="true"
                                     data-motion-part="BG_IMG comp-m1oqn1od6__item-j9ples3e"
                                     class="Ux33nC">
                                     <picture><img loading="lazy"
-                                            src="{{ asset('images/selous-kinga-lodge-7-768x512.jpg') }}"
-                                            alt="andBeyond Under Canvas  Camp - Serengeti, Tanzania"
+                                            src="{{ asset('storage/'.$sectionFour->thumbnail2_path ?? 'images/selous-kinga-lodge-7-768x512.jpg') }}"
+                                            alt="{{ $sectionFour->thumbnail2_alt ?? 'Thumbnail 2' }}"
                                             style="object-fit:cover;object-position:50% 50%">
                                     </picture>
                                 </wow-image></div>
@@ -182,13 +184,13 @@ data-testid="section-container">
                                 <wow-image
                                     id="img-comp-m1oqn1od6__item-j9plerjk"
                                     data-is-responsive="true"
-                                    data-image-info="{&quot;containerId&quot;:&quot;comp-m1oqn1od6__item-j9plerjk&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;parallaxSpeed&quot;:1.5,&quot;sourceSets&quot;:[],&quot;imageData&quot;:{&quot;uri&quot;:&quot;{{ asset('images/IMG_7902-768x512.jpg') }}&quot;,&quot;width&quot;:1600,&quot;height&quot;:1067,&quot;alt&quot;:&quot;Rangers take excellent care of their rhinos in bomas - Save the Rhino Foundation&quot;,&quot;name&quot;:&quot;Rangers-take-excellent-care-of-their-rhinos-in-bomas-C-Save-the-Rhino-International-1-scal&quot;,&quot;focalPoint&quot;:null},&quot;hasAnimation&quot;:false,&quot;encoding&quot;:&quot;AVIF&quot;}"
+                                    data-image-info="{&quot;containerId&quot;:&quot;comp-m1oqn1od6__item-j9plerjk&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;parallaxSpeed&quot;:1.5,&quot;sourceSets&quot;:[],&quot;imageData&quot;:{&quot;uri&quot;:&quot;{{ asset('storage/'.$sectionFour->thumbnail3_path ?? 'images/IMG_7902-768x512.jpg') }}&quot;,&quot;width&quot;:1600,&quot;height&quot;:1067,&quot;alt&quot;:&quot;{{ $sectionFour->thumbnail3_alt ?? 'Thumbnail 3' }}&quot;,&quot;name&quot;:&quot;{{ $sectionFour->thumbnail3_alt ?? 'Thumbnail 3' }}&quot;,&quot;focalPoint&quot;:null},&quot;hasAnimation&quot;:false,&quot;encoding&quot;:&quot;AVIF&quot;}"
                                     data-has-ssr-src="true"
                                     data-motion-part="BG_IMG comp-m1oqn1od6__item-j9plerjk"
                                     class="Ux33nC">
                                     <picture><img loading="lazy"
-                                            src="{{ asset('images/IMG_7902-768x512.jpg') }}"
-                                            alt="Rangers take excellent care of their rhinos in bomas - Save the Rhino Foundation"
+                                            src="{{ asset('storage/'.$sectionFour->thumbnail3_path ?? 'images/IMG_7902-768x512.jpg') }}"
+                                            alt="{{ $sectionFour->thumbnail3_alt ?? 'Thumbnail 3' }}"
                                             style="object-fit:cover;object-position:50% 50%">
                                     </picture>
                                 </wow-image></div>

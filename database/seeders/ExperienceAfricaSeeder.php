@@ -23,7 +23,7 @@ class ExperienceAfricaSeeder extends Seeder
             ],
             'button_text' => 'Learn More',
             'button_link' => '/about',
-            'image_path' => 'images/girrafe1.png',
+            'image_path' => '/experience-africa/girrafe1.png',
             'is_active' => true
         ]);
     }

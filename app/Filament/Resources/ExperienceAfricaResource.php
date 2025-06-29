@@ -25,6 +25,11 @@ class ExperienceAfricaResource extends Resource
         return false;
     }
 
+    public static function canDelete($record): bool
+    {
+        return false;
+    }
+    
     public static function form(Form $form): Form
     {
         return $form->schema([

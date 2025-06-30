@@ -171,10 +171,10 @@
                                                                             <span data-testid="linkWrapper"
                                                                                 class="kGvnrc"><a
                                                                                     data-testid="linkElement"
-                                                                                    href="#"
+                                                                                    href="{{ route('all-packages') }}?category=zanzibar"
                                                                                     target="_self"
-                                                                                    class="xfxJ27 font_4 wixui-vertical-menu__item-label">Our
-                                                                                    Blog</a></span></div>
+                                                                                    class="xfxJ27 font_4 wixui-vertical-menu__item-label">
+                                                                                    Zanzibar</a></span></div>
                                                                     </li>
                                                                     <li data-testid="comp-kbgakxmn_r_comp-m0dxs4xo-6"
                                                                         class="u4cNtA YLBS9j OZVMSN wixui-vertical-menu__item">
@@ -182,10 +182,9 @@
                                                                             <span data-testid="linkWrapper"
                                                                                 class="kGvnrc"><a
                                                                                     data-testid="linkElement"
-                                                                                    href="#"
+                                                                                    href="{{ route('all-packages') }}?category=kilimanjaro"
                                                                                     target="_self"
-                                                                                    class="xfxJ27 font_4 wixui-vertical-menu__item-label">Best
-                                                                                    Lodges</a></span></div>
+                                                                                    class="xfxJ27 font_4 wixui-vertical-menu__item-label">Kilimanjaro</a></span></div>
                                                                     </li>
                                                                     
                                                                 </ul>

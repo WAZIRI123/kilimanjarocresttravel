@@ -37,6 +37,9 @@
 
     <script type="wix/htmlEmbeds" id="pageHtmlEmbeds.bodyStart end"></script>
     <!--pageHtmlEmbeds.bodyStart end-->
+    @php
+    $teamMembers = \App\Models\TeamMember::all();
+    @endphp
     <div id="SITE_CONTAINER">
         <div id="main_MF" class="main_MF">
             <div id="SCROLL_TO_TOP" class="Vd6aQZ ignore-focus SCROLL_TO_TOP" tabindex="-1" role="region"
@@ -77,65 +80,21 @@
                                                 </div>
 
                                                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                                                    <!-- Team Member 1 -->
+                                                    @foreach ($teamMembers as $member)
                                                     <div class="group relative overflow-hidden rounded-xl">
                                                         <div class="aspect-w-1 aspect-h-1">
-                                                            <img src="https://placehold.co/600x750/png" 
-                                                                 alt="James Mwita - Head Safari Guide" 
+                                                            <img src="{{ asset('/storage/' . $member->image) }}" 
+                                                                 alt="{{ $member->name }} - {{ $member->title }}" 
                                                                  class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
                                                         </div>
                                                         <div class="absolute inset-0 bg-gradient-to-t from-black to-35% to-transparent transition duration-300 flex items-end p-6">
                                                             <div>
-                                                                <h4 class="text-white text-xl font-bold">James Mwita</h4>
-                                                                <p class="text-white">Head Safari Guide</p>
+                                                                <h4 class="text-white text-xl font-bold">{{ $member->name }}</h4>
+                                                                <p class="text-white">{{ $member->title }}</p>
                                                             </div>
                                                         </div>
                                                     </div>
-
-                                                    <!-- Team Member 2 -->
-                                                    <div class="group relative overflow-hidden rounded-xl">
-                                                        <div class="aspect-w-1 aspect-h-1">
-                                                            <img src="https://placehold.co/600x750/png" 
-                                                                 alt="Neema Joseph - Cultural Specialist" 
-                                                                 class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
-                                                        </div>
-                                                        <div class="absolute inset-0 bg-gradient-to-t from-black to-35% to-transparent transition duration-300 flex items-end p-6">
-                                                            <div>
-                                                                <h4 class="text-white text-xl font-bold">Neema Joseph</h4>
-                                                                <p class="text-white">Cultural Specialist</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                    <!-- Team Member 3 -->
-                                                    <div class="group relative overflow-hidden rounded-xl">
-                                                        <div class="aspect-w-1 aspect-h-1">
-                                                            <img src="https://placehold.co/600x750/png" 
-                                                                 alt="Rajabu Ally - Wildlife Photographer" 
-                                                                 class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
-                                                        </div>
-                                                        <div class="absolute inset-0 bg-gradient-to-t from-black to-35% to-transparent transition duration-300 flex items-end p-6">
-                                                            <div>
-                                                                <h4 class="text-white text-xl font-bold">Rajabu Ally</h4>
-                                                                <p class="text-white">Wildlife Photographer</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                    <!-- Team Member 4 -->
-                                                    <div class="group relative overflow-hidden rounded-xl">
-                                                        <div class="aspect-w-1 aspect-h-1">
-                                                            <img src="https://placehold.co/600x750/png" 
-                                                                 alt="Amina Hassan - Adventure Specialist" 
-                                                                 class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
-                                                        </div>
-                                                        <div class="absolute inset-0 bg-gradient-to-t from-black to-35% to-transparent transition duration-300 flex items-end p-6">
-                                                            <div>
-                                                                <h4 class="text-white text-xl font-bold">Amina Hassan</h4>
-                                                                <p class="text-white">Adventure Specialist</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                                    @endforeach
                                                 </div>
 
                                                 <div class="mt-16 relative rounded-2xl overflow-hidden py-16 px-6 sm:px-12">

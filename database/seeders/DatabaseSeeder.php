@@ -28,6 +28,7 @@ class DatabaseSeeder extends Seeder
             SectionFourSeeder::class,
             SectionFiveSeeder::class,
             SectionSixSeeder::class,
+            TeamMemberSeeder::class,
             SectionTenSeeder::class,
             SectionEightSeeder::class,
             SectionSevenSeeder::class,

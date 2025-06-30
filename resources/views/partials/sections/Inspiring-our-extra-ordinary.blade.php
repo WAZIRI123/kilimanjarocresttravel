@@ -2,6 +2,8 @@
 @php
     $sectionFour = \App\Models\SectionFour::active()->first();
     $sectionSix = \App\Models\SectionSix::active()->first();
+    $sectionEight = \App\Models\SectionEight::first();
+ 
 @endphp
 <section id="comp-m1oqn1nf" tabindex="-1"
 data-block-level-container="Section"
@@ -226,12 +228,8 @@ data-testid="section-container">
             data-testid="richTextElement"
             ariaattributes="[object Object]">
             <h3 class="font_3 wixui-rich-text__text"><span
-                    class="wixui-rich-text__text">Curated African Escapes<br
-                        class="wixui-rich-text__text">
-                        &nbsp;<span style="font-weight:bold;"
-                        class="wixui-rich-text__text"><span
-                          
-                            class="wixui-rich-text__text">Crafted for You</span></span></span>
+                    class="wixui-rich-text__text">{!! $sectionEight->title !!}
+                        </span>
             </h3>
         </div><!--/$--><!--$-->
         <div id="comp-m2omef1m7"
@@ -239,64 +237,21 @@ data-testid="section-container">
             data-testid="richTextElement"
             ariaattributes="[object Object]">
             <p class="font_8 wixui-rich-text__text">
-                <span class="wixui-rich-text__text">At Stan Safari, every journey is tailored to immerse you in Africa's beauty, culture, and wildlife with comfort and exclusivity at the core.</span>
-            </p>
-
-            <p class="font_8 wixui-rich-text__text">
-                <span class="wixui-rich-text__text">From thrilling safaris to cultural escapes, our curated experiences include:</span>
+                <span class="wixui-rich-text__text">{!! $sectionEight->subtitle !!}</span>
             </p>
 
             <div style="width: 100%; display: flex; justify-content: center; margin: 1.5rem 0;">
                 <div class="benefits-list" style="margin: 0; max-width: 600px; width: 100%;">
+                    @foreach($sectionEight->destinations as $destination)
                     <div style="display: flex; align-items: flex-start; margin-bottom: 12px;">
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right: 12px; flex-shrink: 0; margin-top: 2px;">
                             <path d="M20 6L9 17L4 12" stroke="#4d4402e0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                         <span style="font-size: 1rem; color: #333; line-height: 1.4;">
-                            <strong> Tanzania Safaris</strong> – Great Migration & stylish Serengeti/Ngorongoro exploration.
+                            <strong>{{ $destination['name'] }} </strong> – {{ $destination['description'] }}
                         </span>
                     </div>
-                    <div style="display: flex; align-items: flex-start; margin-bottom: 12px;">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right: 12px; flex-shrink: 0; margin-top: 2px;">
-                            <path d="M20 6L9 17L4 12" stroke="#4d4402e0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                        <span style="font-size: 1rem; color: #333; line-height: 1.4;">
-                            <strong>Zanzibar Beach Escapes</strong> – White-sand relaxation with Swahili culture
-                        </span>
-                    </div>
-                    <div style="display: flex; align-items: flex-start; margin-bottom: 12px;">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right: 12px; flex-shrink: 0; margin-top: 2px;">
-                            <path d="M20 6L9 17L4 12" stroke="#4d4402e0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                        <span style="font-size: 1rem; color: #333; line-height: 1.4;">
-                            <strong>Kenya Safari Adventures</strong> – Iconic landscapes and Big Five game drives
-                        </span>
-                    </div>
-
-                    <div style="display: flex; align-items: flex-start; margin-bottom: 12px;">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right: 12px; flex-shrink: 0; margin-top: 2px;">
-                            <path d="M20 6L9 17L4 12" stroke="#4d4402e0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                        <span style="font-size: 1rem; color: #333; line-height: 1.4;">
-                            <strong>Uganda Gorilla Trekking</strong> – Encounter mountain gorillas and diverse wildlife.
-                        </span>
-                    </div>
-                    <div style="display: flex; align-items: flex-start; margin-bottom: 12px;">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right: 12px; flex-shrink: 0; margin-top: 2px;">
-                            <path d="M20 6L9 17L4 12" stroke="#4d4402e0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                        <span style="font-size: 1rem; color: #333; line-height: 1.4;">
-                            <strong>Rwanda Gorilla Trekking</strong> – Gorilla trekking in lush rainforests.
-                        </span>
-                    </div>
-                    <div style="display: flex; align-items: flex-start; margin-bottom: 12px;">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right: 12px; flex-shrink: 0; margin-top: 2px;">
-                            <path d="M20 6L9 17L4 12" stroke="#4d4402e0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                        <span style="font-size: 1rem; color: #333; line-height: 1.4;">
-                            <strong>South Africa Experiences</strong> – Wildlife, winelands, and cosmopolitan charm.
-                        </span>
-                    </div>
+                    @endforeach
                 </div>
             </div>
         </div><!--/$--><!--$-->

@@ -121,7 +121,7 @@
                                                             </a>
                                                             <a href="tel:+255123456789" class="inline-flex items-center justify-center px-8 py-4 border-2 border-white text-base font-medium rounded-full text-white bg-transparent hover:bg-white hover:bg-opacity-10 hover:scale-105 transition-all duration-300">
                                                                 <i class="fas fa-phone-alt mr-2"></i>
-                                                                +255 123 456 789
+                                                                +255754 261 101
                                                             </a>
                                                         </div>
                                                     </div>

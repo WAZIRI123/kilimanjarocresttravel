@@ -58,12 +58,10 @@
                                         <main id="PAGE_SECTIONSc1dmp" class="PAGE_SECTIONSc1dmp c1rIl3"
                                             data-main-content-parent="true"><!--$-->
                                             @include('partials.sections.page-hero', [
-                                                'image' => asset('images/serengeti-safari-tanzania.jpg'),
+                                                'image' => asset('storage/images/tanzania-serengeti.jpg'),
                                                 'title' => 'About Stan Safaris',
-                                                'subtitle' => 'Your Trusted Partner'
+                                                'subtitle' => 'Your Trusted Safari Experts'
                                             ])
-
-                                       
 
                                         @include('partials.sections.why-luxury-about')
                                         <!-- Meet the Team -->

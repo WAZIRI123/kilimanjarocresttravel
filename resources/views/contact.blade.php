@@ -3,9 +3,9 @@
 @section('content')
     <!-- Hero Section with Page Title -->
     @include('partials.sections.page-hero', [
-        'image' => asset('images/serengeti-safari-tanzania.jpg'),
+        'image' => asset('storage/images/contact-us-hero.jpg'),
         'title' => 'Contact Us',
-        'subtitle' => 'Get in Touch'
+        'subtitle' => 'We’ll Get Back Soon'
     ])
 
     <!-- Contact Form Section -->

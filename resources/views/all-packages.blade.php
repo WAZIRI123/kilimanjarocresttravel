@@ -8,8 +8,19 @@
 
 @section('content')
     <!-- Hero Section -->
+    @php
+        $heroImages = [
+            'safari' => 'storage/images/safari-hero.webp',
+            'zanzibar' => 'storage/images/Zanzibar-hero.webp',
+            'kilimanjaro' => 'storage/images/Kilimanjaro-hero.webp',
+            'default' => 'storage/images/honeymoon-Tanzania-and-Zanzibar.webp'
+        ];
+        
+        $category = request()->query('category', 'default');
+        $heroImage = $heroImages[$category] ?? $heroImages['default'];
+    @endphp
     @include('partials.sections.page-hero', [
-        'image' => asset('images/serengeti-safari-tanzania.jpg'),
+        'image' => asset($heroImage),
         'title' => $title,
         'subtitle' => $subtitle
     ])

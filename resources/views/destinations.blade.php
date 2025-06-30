@@ -9,7 +9,7 @@
 @section('content')
     <!-- Hero Section -->
     @include('partials.sections.page-hero', [
-        'image' => asset('images/serengeti-safari-tanzania.jpg'),
+        'image' => asset('/storage/images/Destination-hero1.webp'),
         'title' => $title,
         'subtitle' => $subtitle
     ])
@@ -29,7 +29,7 @@
                                 return [
                                     'title' => $package->title,
                                     'url' => route('package.show', $package->slug),
-                                    'image' => $package->featured_image ?? 'https://images.unsplash.com/photo-1523805009345-7448845a9e53?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1472&q=80',
+                                    'image' => $package->featured_image ?? asset("/storage/images/Serengeti-National-Park-5-1.webp"),
                                     'duration' => $package->duration,
                                     'description' => $package->short_description,
                                     'views' => $package->views,

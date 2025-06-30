@@ -123,10 +123,7 @@
             <h2>While You're Waiting...</h2>
             
             <p>For some safari inspiration, check out our popular itineraries:</p>
-            <a href="{{ route('itineraries') }}" class="cta-button">View Itineraries</a>
-            
-            <p>For our best rates, see our latest special offers:</p>
-            <a href="{{ route('special-offers') }}" class="cta-button">View Special Offers</a>
+            <a href="{{ route('all-packages') }}" class="cta-button">View Itineraries</a>
             
             <div class="divider"></div>
             

@@ -122,7 +122,7 @@
             <ul>
                 <li>Our team typically responds within 24-48 hours</li>
                 <li>For urgent inquiries, please call us at +255 123 456 789</li>
-                <li>Check out our <a href="{{ url('/faq') }}">FAQ</a> for common questions</li>
+                <li>Learn More About <a href="{{ url('/about') }}">About</a></li>
             </ul>
             
             <p>If you need to add any additional information, please reply to this email.</p>

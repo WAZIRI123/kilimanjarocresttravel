@@ -3,6 +3,7 @@
     $sectionFour = \App\Models\SectionFour::active()->first();
     $sectionSix = \App\Models\SectionSix::active()->first();
     $sectionEight = \App\Models\SectionEight::first();
+    $sectionNine = \App\Models\SectionNine::first();
  
 @endphp
 <section id="comp-m1oqn1nf" tabindex="-1"
@@ -285,13 +286,13 @@ data-testid="section-container">
                                     <wow-image
                                         id="img-comp-m2omef1t6__item1"
                                         data-is-responsive="true"
-                                        data-image-info="{&quot;containerId&quot;:&quot;comp-m2omef1t6__item1&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;parallaxSpeed&quot;:1.5,&quot;sourceSets&quot;:[],&quot;imageData&quot;:{&quot;uri&quot;:&quot;{{ asset('images/safari.jpeg') }}&quot;,&quot;width&quot;:1440,&quot;height&quot;:1440,&quot;alt&quot;:&quot; Tanzania Safari at Serval Wildlife Park, Arusha Tanzania with star SAFARI&quot;,&quot;name&quot;:&quot;gallery-serval.jpg&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;focalPoint&quot;:{&quot;x&quot;:63,&quot;y&quot;:42},&quot;scrollEffect&quot;:&quot;none&quot;},&quot;hasAnimation&quot;:false,&quot;encoding&quot;:&quot;AVIF&quot;}"
+                                        data-image-info="{&quot;containerId&quot;:&quot;comp-m2omef1t6__item1&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;parallaxSpeed&quot;:1.5,&quot;sourceSets&quot;:[],&quot;imageData&quot;:{&quot;uri&quot;:&quot;{{ asset('storage/'.$sectionNine->image ?? 'images/safari.jpeg') }}&quot;,&quot;width&quot;:1440,&quot;height&quot;:1440,&quot;alt&quot;:&quot; Tanzania Safari at Serval Wildlife Park, Arusha Tanzania with star SAFARI&quot;,&quot;name&quot;:&quot;gallery-serval.jpg&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;focalPoint&quot;:{&quot;x&quot;:63,&quot;y&quot;:42},&quot;scrollEffect&quot;:&quot;none&quot;},&quot;hasAnimation&quot;:false,&quot;encoding&quot;:&quot;AVIF&quot;}"
                                         data-has-ssr-src="true"
                                         data-motion-part="BG_IMG comp-m2omef1t6__item1"
                                         class="Ux33nC">
                                         <picture><img loading="lazy"
-                                                src="{{ asset('images/safari.jpeg') }}"
-                                                alt=" Tanzania Safari at Serval Wildlife Park, Arusha Tanzania with star SAFARI"
+                                                src="{{ asset('storage/'.$sectionNine->image ?? 'images/safari.jpeg') }}"
+                                                alt="{{ $sectionNine->caption }}"
                                                 style="object-fit:cover;object-position:63% 42%">
                                         </picture>
                                     </wow-image></div>
@@ -303,7 +304,7 @@ data-testid="section-container">
                             ariaattributes="[object Object]">
                             <p class="font_4 wixui-rich-text__text">
                                 <span
-                                    class="wixui-rich-text__text"> Wildlife,Safari
+                                    class="wixui-rich-text__text"> {{ $sectionNine->caption }}
                                     </span></p>
                         </div><!--/$-->
                     </div>
@@ -324,13 +325,13 @@ data-testid="section-container">
                                     <wow-image
                                         id="img-comp-m2omef1t6__item-j9ples3e"
                                         data-is-responsive="true"
-                                        data-image-info="{&quot;containerId&quot;:&quot;comp-m2omef1t6__item-j9ples3e&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;parallaxSpeed&quot;:1.5,&quot;sourceSets&quot;:[],&quot;imageData&quot;:{&quot;uri&quot;:&quot;{{ asset('images/balloon-safari-scaled.jpg') }}&quot;,&quot;width&quot;:3504,&quot;height&quot;:2336,&quot;alt&quot;:&quot;The majestic Great Migration and its dramatic river crossings in Kenya or Tanzania &quot;,&quot;name&quot;:&quot;Serengeti-Migration.jpg&quot;,&quot;focalPoint&quot;:null},&quot;hasAnimation&quot;:false,&quot;encoding&quot;:&quot;AVIF&quot;}"
+                                        data-image-info="{&quot;containerId&quot;:&quot;comp-m2omef1t6__item-j9ples3e&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;parallaxSpeed&quot;:1.5,&quot;sourceSets&quot;:[],&quot;imageData&quot;:{&quot;uri&quot;:&quot;{{ asset('storage/'.$sectionNine->image2 ?? 'images/balloon-safari-scaled.jpg') }}&quot;,&quot;width&quot;:3504,&quot;height&quot;:2336,&quot;alt&quot;:&quot;The majestic Great Migration and its dramatic river crossings in Kenya or Tanzania &quot;,&quot;name&quot;:&quot;Serengeti-Migration.jpg&quot;,&quot;focalPoint&quot;:null},&quot;hasAnimation&quot;:false,&quot;encoding&quot;:&quot;AVIF&quot;}"
                                         data-has-ssr-src="true"
                                         data-motion-part="BG_IMG comp-m2omef1t6__item-j9ples3e"
                                         class="Ux33nC">
                                         <picture><img loading="lazy"
-                                                src="{{ asset('images/balloon-safari-scaled.jpg') }}"
-                                                alt="The majestic Great Migration and its dramatic river crossings in Kenya or Tanzania "
+                                                src="{{ asset('storage/'.$sectionNine->image2 ?? 'images/balloon-safari-scaled.jpg') }}"
+                                                alt="{{ $sectionNine->caption2 }}"
                                                 style="object-fit:cover;object-position:50% 50%">
                                         </picture>
                                     </wow-image></div>
@@ -341,7 +342,7 @@ data-testid="section-container">
                             data-testid="richTextElement"
                             ariaattributes="[object Object]">
                             <p class="font_4 wixui-rich-text__text">
-                                Baloon, Safari</p>
+                                {{ $sectionNine->caption2 }}</p>
                         </div><!--/$-->
                     </div>
                 </div><!--/$--><!--$-->
@@ -361,13 +362,13 @@ data-testid="section-container">
                                     <wow-image
                                         id="img-comp-m2omef1t6__item-j9plerjk"
                                         data-is-responsive="true"
-                                        data-image-info="{&quot;containerId&quot;:&quot;comp-m2omef1t6__item-j9plerjk&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;parallaxSpeed&quot;:1.5,&quot;sourceSets&quot;:[],&quot;imageData&quot;:{&quot;uri&quot;:&quot;{{ asset('images/Maasai-Cultural.jpeg') }}&quot;,&quot;width&quot;:5184,&quot;height&quot;:3456,&quot;alt&quot;:&quot;Cheetahs spotted in the wilderness of Masai Mara duri- star SAFARI during safari&quot;,&quot;name&quot;:&quot;Safar-Jeep-Cheetahs.jpg&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;scrollEffect&quot;:&quot;none&quot;,&quot;focalPoint&quot;:null},&quot;hasAnimation&quot;:false,&quot;encoding&quot;:&quot;AVIF&quot;}"
+                                        data-image-info="{&quot;containerId&quot;:&quot;comp-m2omef1t6__item-j9plerjk&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;parallaxSpeed&quot;:1.5,&quot;sourceSets&quot;:[],&quot;imageData&quot;:{&quot;uri&quot;:&quot;{{ asset('storage/'.$sectionNine->image3 ?? 'images/Maasai-Cultural.jpeg') }}&quot;,&quot;width&quot;:5184,&quot;height&quot;:3456,&quot;alt&quot;:&quot;Cheetahs spotted in the wilderness of Masai Mara duri- star SAFARI during safari&quot;,&quot;name&quot;:&quot;Safar-Jeep-Cheetahs.jpg&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;scrollEffect&quot;:&quot;none&quot;,&quot;focalPoint&quot;:null},&quot;hasAnimation&quot;:false,&quot;encoding&quot;:&quot;AVIF&quot;}"
                                         data-has-ssr-src="true"
                                         data-motion-part="BG_IMG comp-m2omef1t6__item-j9plerjk"
                                         class="Ux33nC">
                                         <picture><img loading="lazy"
-                                                src="{{ asset('images/Maasai-Cultural.jpeg') }}"
-                                                alt="Cheetahs spotted in the wilderness of Masai Mara duri- Star SAFARI during safari"
+                                                src="{{ asset('storage/'.$sectionNine->image3 ?? 'images/Maasai-Cultural.jpeg') }}"
+                                                alt="{{ $sectionNine->caption3 }}"
                                                 style="object-fit:cover;object-position:50% 50%">
                                         </picture>
                                     </wow-image></div>
@@ -378,7 +379,7 @@ data-testid="section-container">
                             data-testid="richTextElement"
                             ariaattributes="[object Object]">
                             <p class="font_4 wixui-rich-text__text">
-                                Cultural, Tour</p>
+                                {{ $sectionNine->caption3 }}</p>
                         </div><!--/$-->
                     </div>
                 </div><!--/$--><!--$-->
@@ -398,13 +399,13 @@ data-testid="section-container">
                                     <wow-image
                                         id="img-comp-m2omef1t6__item-m2q1cssk"
                                         data-is-responsive="true"
-                                        data-image-info="{&quot;containerId&quot;:&quot;comp-m2omef1t6__item-m2q1cssk&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;parallaxSpeed&quot;:1.5,&quot;sourceSets&quot;:[],&quot;imageData&quot;:{&quot;uri&quot;:&quot;{{ asset('images/Crater-3.jpg') }}&quot;,&quot;width&quot;:4045,&quot;height&quot;:6067,&quot;alt&quot;:&quot;Inside Okavago Delta - Your Ultimate Botswana Safari Guide with star SAFARI&quot;,&quot;name&quot;:&quot;Inside Khwai Reserve • Your Ultimate Botswana Safari Guide.jpeg&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;scrollEffect&quot;:&quot;none&quot;,&quot;focalPoint&quot;:null},&quot;hasAnimation&quot;:false,&quot;encoding&quot;:&quot;AVIF&quot;}"
+                                        data-image-info="{&quot;containerId&quot;:&quot;comp-m2omef1t6__item-m2q1cssk&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;parallaxSpeed&quot;:1.5,&quot;sourceSets&quot;:[],&quot;imageData&quot;:{&quot;uri&quot;:&quot;{{ asset('storage/'.$sectionNine->image4 ?? 'images/Crater-3.jpg') }}&quot;,&quot;width&quot;:4045,&quot;height&quot;:6067,&quot;alt&quot;:&quot;Inside Okavago Delta - Your Ultimate Botswana Safari Guide with star SAFARI&quot;,&quot;name&quot;:&quot;Inside Khwai Reserve • Your Ultimate Botswana Safari Guide.jpeg&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;scrollEffect&quot;:&quot;none&quot;,&quot;focalPoint&quot;:null},&quot;hasAnimation&quot;:false,&quot;encoding&quot;:&quot;AVIF&quot;}"
                                         data-has-ssr-src="true"
                                         data-motion-part="BG_IMG comp-m2omef1t6__item-m2q1cssk"
                                         class="Ux33nC">
                                         <picture><img loading="lazy"
-                                                src="{{ asset('images/Crater-3.jpg') }}"
-                                                alt="Inside Okavago Delta - Your Ultimate Botswana Safari Guide with star SAFARI"
+                                                src="{{ asset('storage/'.$sectionNine->image4 ?? 'images/Crater-3.jpg') }}"
+                                                alt="{{ $sectionNine->caption4 }}"
                                                 style="object-fit:cover;object-position:50% 50%">
                                         </picture>
                                     </wow-image></div>
@@ -415,7 +416,7 @@ data-testid="section-container">
                             data-testid="richTextElement"
                             ariaattributes="[object Object]">
                             <p class="font_4 wixui-rich-text__text">
-                                Ngorongoro, Crater</p>
+                                {{ $sectionNine->caption4 }}</p>
                         </div><!--/$-->
                     </div>
                 </div><!--/$--><!--$-->
@@ -435,13 +436,13 @@ data-testid="section-container">
                                     <wow-image
                                         id="img-comp-m2omef1t6__item-m2q1cu8b"
                                         data-is-responsive="true"
-                                        data-image-info="{&quot;containerId&quot;:&quot;comp-m2omef1t6__item-m2q1cu8b&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;parallaxSpeed&quot;:1.5,&quot;sourceSets&quot;:[],&quot;imageData&quot;:{&quot;uri&quot;:&quot;{{ asset('images/bike.jpg') }}&quot;,&quot;width&quot;:800,&quot;height&quot;:500,&quot;alt&quot;:&quot; Gorilla Safari at Volcanoes National Park, Rwanda with star SAFARI&quot;,&quot;name&quot;:&quot;Gorilla_JPM_7.jpg&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;scrollEffect&quot;:&quot;none&quot;,&quot;focalPoint&quot;:null},&quot;hasAnimation&quot;:false,&quot;encoding&quot;:&quot;AVIF&quot;}"
+                                        data-image-info="{&quot;containerId&quot;:&quot;comp-m2omef1t6__item-m2q1cu8b&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;parallaxSpeed&quot;:1.5,&quot;sourceSets&quot;:[],&quot;imageData&quot;:{&quot;uri&quot;:&quot;{{ asset('storage/'.$sectionNine->image5 ?? 'images/bike.jpg') }}&quot;,&quot;width&quot;:800,&quot;height&quot;:500,&quot;alt&quot;:&quot; Gorilla Safari at Volcanoes National Park, Rwanda with star SAFARI&quot;,&quot;name&quot;:&quot;Gorilla_JPM_7.jpg&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;scrollEffect&quot;:&quot;none&quot;,&quot;focalPoint&quot;:null},&quot;hasAnimation&quot;:false,&quot;encoding&quot;:&quot;AVIF&quot;}"
                                         data-has-ssr-src="true"
                                         data-motion-part="BG_IMG comp-m2omef1t6__item-m2q1cu8b"
                                         class="Ux33nC">
                                         <picture><img loading="lazy"
-                                                src="{{ asset('images/bike.jpg') }}"
-                                                alt=" Gorilla Safari at Volcanoes National Park, Rwanda with star SAFARI"
+                                                src="{{ asset('storage/'.$sectionNine->image5 ?? 'images/bike.jpg') }}"
+                                                alt="{{ $sectionNine->caption5 }}"
                                                 style="object-fit:cover;object-position:50% 50%">
                                         </picture>
                                     </wow-image></div>
@@ -452,7 +453,7 @@ data-testid="section-container">
                             data-testid="richTextElement"
                             ariaattributes="[object Object]">
                             <p class="font_4 wixui-rich-text__text">
-                                Biking, Tour</p>
+                                {{ $sectionNine->caption5 }}</p>
                         </div><!--/$-->
                     </div>
                 </div><!--/$--><!--$-->
@@ -472,13 +473,13 @@ data-testid="section-container">
                                     <wow-image
                                         id="img-comp-m2omef1t6__item-m2q1cv0l"
                                         data-is-responsive="true"
-                                        data-image-info="{&quot;containerId&quot;:&quot;comp-m2omef1t6__item-m2q1cv0l&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;parallaxSpeed&quot;:1.5,&quot;sourceSets&quot;:[],&quot;imageData&quot;:{&quot;uri&quot;:&quot;{{ asset('images/walking.jpg') }}&quot;,&quot;width&quot;:1920,&quot;height&quot;:1080,&quot;alt&quot;:&quot;Kruger National Park Safari with star SAFARI - Lion Spotted crossing the road&quot;,&quot;name&quot;:&quot;hoyo-hoyo-lionvehicle-timhulme.jpeg&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;scrollEffect&quot;:&quot;none&quot;,&quot;focalPoint&quot;:null},&quot;hasAnimation&quot;:false,&quot;encoding&quot;:&quot;AVIF&quot;}"
+                                        data-image-info="{&quot;containerId&quot;:&quot;comp-m2omef1t6__item-m2q1cv0l&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;parallaxSpeed&quot;:1.5,&quot;sourceSets&quot;:[],&quot;imageData&quot;:{&quot;uri&quot;:&quot;{{ asset('storage/'.$sectionNine->image6 ?? 'images/walking.jpg') }}&quot;,&quot;width&quot;:1920,&quot;height&quot;:1080,&quot;alt&quot;:&quot;Kruger National Park Safari with star SAFARI - Lion Spotted crossing the road&quot;,&quot;name&quot;:&quot;hoyo-hoyo-lionvehicle-timhulme.jpeg&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;scrollEffect&quot;:&quot;none&quot;,&quot;focalPoint&quot;:null},&quot;hasAnimation&quot;:false,&quot;encoding&quot;:&quot;AVIF&quot;}"
                                         data-has-ssr-src="true"
                                         data-motion-part="BG_IMG comp-m2omef1t6__item-m2q1cv0l"
                                         class="Ux33nC">
                                         <picture><img loading="lazy"
-                                                src="{{ asset('images/walking.jpg') }}"
-                                                alt="Kruger National Park Safari with star SAFARI - Lion Spotted crossing the road"
+                                                src="{{ asset('storage/'.$sectionNine->image6 ?? 'images/walking.jpg') }}"
+                                                alt="{{ $sectionNine->caption6 }}"
                                                 style="object-fit:cover;object-position:50% 50%">
                                         </picture>
                                     </wow-image></div>
@@ -489,7 +490,7 @@ data-testid="section-container">
                             data-testid="richTextElement"
                             ariaattributes="[object Object]">
                             <p class="font_4 wixui-rich-text__text">
-                                Bush, Walking</p>
+                                {{ $sectionNine->caption6 }}</p>
                         </div><!--/$-->
                     </div>
                 </div><!--/$-->

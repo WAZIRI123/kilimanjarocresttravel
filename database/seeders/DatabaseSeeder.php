@@ -30,6 +30,7 @@ class DatabaseSeeder extends Seeder
             SectionSixSeeder::class,
             SectionEightSeeder::class,
             SectionSevenSeeder::class,
+            SectionNineSeeder::class,
         ]);
     }
 }

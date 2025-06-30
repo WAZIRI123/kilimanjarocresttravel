@@ -1,47 +1,54 @@
+@php
+use App\Models\SectionTen;
+$testimonials = SectionTen::where('is_active', true)->orderBy('order')->get();
+@endphp
+
+@if($testimonials->count() > 0)
 <section id="comp-m098b90j" tabindex="-1"
 data-block-level-container="Section"
 class="xuzjBY comp-m098b90j wixui-section"
 data-testid="section-container">
-<div class="testimonial-section">
+    <div class="testimonial-section">
+        <h2 class="section-title">HERE'S WHAT OUR CLIENTS HAVE TO SAY</h2>
 
-    <h2 class="section-title">HERE'S WHAT OUR CLIENTS HAVE TO SAY</h2>
+        <div class="testimonial-card">
+            <button class="nav-button left">
+                &#x2190;
+            </button>
 
-    <div class="testimonial-card">
+            <div class="testimonial-content-wrapper">
+                <div class="client-image-container">
+                    <div class="client-image">
+                        <img src="{{ asset('storage/' . $testimonials[0]->image) }}" alt="{{ $testimonials[0]->name }}">
+                    </div>
+                </div>
 
-        <button class="nav-button left">
-            &#x2190;
-        </button>
-
-        <div class="testimonial-content-wrapper">
-            <div class="client-image-container">
-                <div class="client-image">
-                    <img src="https://zahirnia.com/_nuxt/caleb-porzio.D5_euBoI.webp" alt="Client Name">
+                <div class="testimonial-text-container">
+                    <p class="testimonial-text">
+                        <span class="quote-mark">&ldquo;</span>
+                        {{ $testimonials[0]->testimonial }}
+                    </p>
+                    <p class="client-name">
+                        {{ $testimonials[0]->name }}, {{ $testimonials[0]->location }}
+                    </p>
                 </div>
             </div>
 
-            <div class="testimonial-text-container">
-                <p class="testimonial-text">
-                    <span class="quote-mark">&ldquo;</span>
-                    They gave us one of the best anniversary experiences in the world. They recommended amazing parks,  lodges and hotels and exceptional guides throughout our stay, that blended nature and wildlife in the best possible ways. We had the time our lives in our Tanzania  safari with Star.
-                </p>
-                <p class="client-name">
-                    John Doe, New York
-                </p>
-            </div>
+            <button class="nav-button right">
+                &#x2192;
+            </button>
         </div>
 
-        <button class="nav-button right">
-            &#x2192;
-        </button>
+        @if($testimonials->count() > 1)
+            <div class="pagination-dots">
+                @foreach($testimonials as $index => $testimonial)
+                    <span class="dot {{ $index === 0 ? 'active' : '' }}" data-index="{{ $index }}"></span>
+                @endforeach
+            </div>
+        @endif
     </div>
-
-    <div class="pagination-dots">
-        <span class="dot active"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-    </div>
-
-</div>
+</section>
+@endif
 <style>
             .testimonial-section {
             padding: 30px 15px;
@@ -230,24 +237,17 @@ data-testid="section-container">
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-    // Testimonial data
-    const testimonials = [
-        {
-            text: "They gave us one of the best anniversary experiences in the world. They recommended amazing parks,  lodges and hotels and exceptional guides throughout our stay, that blended nature and wildlife in the best possible ways. We had the time of our lives in our Tanzania  safari with Star.",
-            name: "John Doe, New York",
-            image: "https://zahirnia.com/_nuxt/caleb-porzio.D5_euBoI.webp"
-        },
-        {
-            text: "Absolutely incredible experience! The team went above and beyond to make our safari unforgettable. The attention to detail and personalized service was exceptional.",
-            name: "Tobias Petry, London",
-            image: "https://zahirnia.com/_nuxt/tobias-petry.Cuv0ck-G.webp"
-        },
-        {
-            text: "The best vacation of our lives! The guides were knowledgeable, the accommodations were stunning, and we saw the Big Five on our first day. Can't wait to come back!",
-            name: "Michael Chen, Toronto",
-            image: "https://via.placeholder.com/100/333333/f3f3f3"
-        }
-    ];
+    // Testimonial data from PHP
+    @php
+    $testimonialData = $testimonials->map(function($item) {
+        return [
+            'text' => $item->testimonial,
+            'name' => $item->name . ', ' . $item->location,
+            'image' => asset('storage/' . $item->image)
+        ];
+    });
+    @endphp
+    const testimonials = @json($testimonialData);
 
     // DOM elements
     const testimonialText = document.querySelector('.testimonial-text');
@@ -306,9 +306,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
    
 
-    // Initialize first testimonial
-    updateTestimonial(currentIndex);
+    // Initialize first testimonial if there are any
+    if (testimonials.length > 0) {
+        updateTestimonial(currentIndex);
+    }
 });
 </script>
-
-</section><!--/$--><!--$-->

@@ -9,55 +9,55 @@
         
         <div class="destinations-grid">
             <!-- Destination Card 1 -->
-            <div class="destination-card shadow-lg">
+            <a href="#" class="destination-card block shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <div class="card-image">
                     <img src="https://stanley-safaris.com/wp-content/uploads/2024/12/Stanley-Safaris-Honeymoon-112.jpg.pagespeed.ce.Jp54jafdCt.jpg" alt="Maasai Mara National Reserve">
                     <div class="card-overlay">
                         <div class="flex flex-col h-full justify-between py-6">
                             <div class="mt-auto w-full">
-                                <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-1 w-full">
-                                    <h3 class="text-white text-lg sm:text-xl font-semibold line-clamp-2">Maasai Mara National Reserve</h3>
-                                    <div class="duration whitespace-nowrap">3 Days</div>
+                                <div class="flex flex-row justify-between items-center w-full">
+                                    <h3 class="text-white text-lg sm:text-xl font-semibold line-clamp-1 pr-2">Maasai Mara</h3>
+                                    <div class="duration whitespace-nowrap bg-white/20 text-white px-2 py-1 rounded text-sm sm:text-base">3 Days</div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </a>
 
             <!-- Destination Card 2 -->
-            <div class="destination-card shadow-lg">
+            <a href="#" class="destination-card block shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <div class="card-image">
                     <img src="https://stanley-safaris.com/wp-content/uploads/2024/12/Stanley-Safaris-Honeymoon-112.jpg.pagespeed.ce.Jp54jafdCt.jpg" alt="Serengeti National Park">
                     <div class="card-overlay">
                         <div class="flex flex-col h-full justify-between py-6">
                             <div class="mt-auto w-full">
-                                <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 w-full">
-                                    <h3 class="text-white text-lg sm:text-xl font-semibold line-clamp-2">Serengeti National Park</h3>
-                                    <div class="duration whitespace-nowrap">4 Days</div>
+                                <div class="flex flex-row justify-between items-center w-full">
+                                    <h3 class="text-white text-lg sm:text-xl font-semibold line-clamp-1 pr-2">Serengeti</h3>
+                                    <div class="duration whitespace-nowrap bg-white/20 text-white px-2 py-1 rounded text-sm sm:text-base">4 Days</div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </a>
 
             <!-- Destination Card 3 -->
-            <div class="destination-card shadow-lg">
+            <a href="#" class="destination-card block shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <div class="card-image">
                     <img src="https://stanley-safaris.com/wp-content/uploads/2024/12/Stanley-Safaris-Honeymoon-112.jpg.pagespeed.ce.Jp54jafdCt.jpg" alt="Amboseli National Park">
                     <div class="card-overlay">
                         <div class="flex flex-col h-full justify-between py-6">
-                          
                             <div class="mt-auto w-full">
-                                <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 w-full">
-                                    <h3 class="text-white text-lg sm:text-xl font-semibold line-clamp-2">Amboseli National Park with Mount Kilimanjaro Views</h3>
-                                    <div class="duration whitespace-nowrap">2 Days</div>
+                                <div class="flex flex-row justify-between items-center w-full">
+                                    <h3 class="text-white text-lg sm:text-xl font-semibold line-clamp-1 pr-2">Amboseli</h3>
+                                    <div class="duration whitespace-nowrap bg-white/20 text-white px-2 py-1 rounded text-sm sm:text-base">3 Days</div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </a>
             </div>
         </div>
         

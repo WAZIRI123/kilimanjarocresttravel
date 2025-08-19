@@ -98,7 +98,7 @@
         </div>
         
         <!-- Tabs Navigation -->
-        <div class="flex justify-center mb-3">
+        <div class="flex justify-center mb-6">
             <div class="inline-flex outline outline-1 outline-gray-300 rounded-lg border border-gray-200 p-1 bg-gray-50">
                 @foreach($tabs as $tab)
                     <button 
@@ -117,7 +117,7 @@
             <div x-show="activeTab === '{{ $tab['id'] }}'" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100">
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
                     @foreach($tab['packages'] as $package)
-                    <div class="group relative bg-white rounded-xl border border-gray-300 overflow-hidden transition-all duration-300  shadow-lg">
+                    <div class="group relative bg-white rounded-xl border-gray-300 overflow-hidden transition-all duration-300  shadow-lg">
                         <div class="aspect-w-16 aspect-h-9 overflow-hidden">
                             <img src="{{ $package['image'] }}" alt="{{ $package['title'] }}" class="w-full h-60 object-cover transition-transform duration-500 group-hover:scale-105">
                         </div>

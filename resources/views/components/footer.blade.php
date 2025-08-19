@@ -1,15 +1,15 @@
 <footer class="w-full  pt-8 bg-[rgba(0,0,0,0.05)]">
     <div class="container mx-auto px-4 py-12 md:py-16">
-    
+
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <!-- Company Info -->
             <div class="space-y-4">
-                <div class="flex items-center space-x-2">
+                <div class="flex justify-center lg:justify-start items-center space-x-2">
                     <x-application-logo class="h-8 w-auto" />
                     <span class="text-xl font-bold">Stan Safari</span>
                 </div>
-                <p class="text-muted-foreground">Creating unforgettable safari experiences in the heart of Africa.</p>
-                <div class="flex space-x-4">
+                <p class="text-muted-foreground text-center lg:text-left">Creating unforgettable safari experiences in the heart of Africa.</p>
+                <div class="flex justify-center lg:justify-start space-x-4">
                     <a href="#" class="text-muted-foreground hover:text-foreground transition-colors">
                         <span class="sr-only">Facebook</span>
                         <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -33,52 +33,55 @@
 
             <!-- Quick Links -->
             <div>
-                <h3 class="text-sm font-semibold">Quick Links</h3>
-                <ul class="mt-4 space-y-2">
-                    <li><a href="#" class="text-muted-foreground hover:text-foreground transition-colors">Home</a></li>
-                    <li><a href="#" class="text-muted-foreground hover:text-foreground transition-colors">About Us</a></li>
-                    <li><a href="#" class="text-muted-foreground hover:text-foreground transition-colors">Safari Tours</a></li>
-                    <li><a href="#" class="text-muted-foreground hover:text-foreground transition-colors">Destinations</a></li>
-                    <li><a href="#" class="text-muted-foreground hover:text-foreground transition-colors">Contact Us</a></li>
+                <h3 class="text-lg font-bold lg:text-left text-center">Quick Links</h3>
+                @include('partials.sections.divider1')
+                <ul class="mt-4 grid grid-cols-2 gap-2 sm:grid-cols-1 sm:gap-0 sm:space-y-2">
+                    <li class="lg:text-left text-center"><a href="#" class="text-muted-foreground hover:text-foreground transition-colors font-semibold">Home</a></li>
+                    <li class="lg:text-left text-center"><a href="#" class="text-muted-foreground hover:text-foreground transition-colors font-semibold">About Us</a></li>
+                    <li class="lg:text-left text-center"><a href="#" class="text-muted-foreground hover:text-foreground transition-colors font-semibold">Safari Tours</a></li>
+                    <li class="lg:text-left text-center"><a href="#" class="text-muted-foreground hover:text-foreground transition-colors font-semibold">Destinations</a></li>
+                    <li class="lg:text-left text-center sm:col-span-2 md:col-span-1"><a href="#" class="text-muted-foreground hover:text-foreground transition-colors font-semibold">Contact Us</a></li>
                 </ul>
             </div>
 
             <!-- Contact Info -->
             <div>
-                <h3 class="text-sm font-semibold">Contact Us</h3>
-                <ul class="mt-4 space-y-2">
-                    <li class="flex items-start">
+                <h3 class="text-lg font-bold lg:text-left text-center">Contact Us</h3>
+                @include('partials.sections.divider1')
+                <ul class="mt-4 space-y-2 lg:text-left text-center">
+                    <li class="flex lg:justify-left justify-center  items-start font-semibold">
                         <svg class="h-5 w-5 text-muted-foreground mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                         </svg>
-                        <span class="text-muted-foreground">123 Safari Road, Arusha, Tanzania</span>
+                        <span class="text-muted-foreground font-semibold">123 Safari Road, Arusha, Tanzania</span>
                     </li>
-                    <li class="flex items-center">
+                    <li class="flex  items-center font-semibold  justify-center lg:justify-start">
                         <svg class="h-5 w-5 text-muted-foreground mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                         </svg>
-                        <a href="mailto:info@stansafari.com" class="text-muted-foreground hover:text-foreground transition-colors">info@stansafari.com</a>
+                        <a href="mailto:info@stansafari.com" class="text-muted-foreground hover:text-foreground transition-colors font-semibold">info@stansafari.com</a>
                     </li>
-                    <li class="flex items-center">
+                    <li class="flex justify-center lg:justify-start items-center font-semibold">
                         <svg class="h-5 w-5 text-muted-foreground mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                         </svg>
-                        <a href="tel:+255123456789" class="text-muted-foreground hover:text-foreground transition-colors">+255 123 456 789</a>
+                        <a href="tel:+255123456789" class="text-muted-foreground hover:text-foreground transition-colors font-semibold">+255 123 456 789</a>
                     </li>
                 </ul>
             </div>
 
             <!-- Newsletter -->
             <div>
-                <h3 class="text-sm font-semibold">Newsletter</h3>
-                <p class="mt-2 text-sm text-muted-foreground">Subscribe to our newsletter for the latest updates and offers.</p>
+                <h3 class="text-lg font-bold lg:text-left text-center">Newsletter</h3>
+                @include('partials.sections.divider1')
+                <p class="mt-2 text-sm lg:text-left text-center text-muted-foreground">Subscribe to our newsletter for the latest updates and offers.</p>
                 <form class="mt-4 space-y-2">
                     <div>
                         <label for="email" class="sr-only">Email address</label>
                         <input type="email" id="email" placeholder="Enter your email" class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50" />
                     </div>
-                    <button type="submit" class="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 w-full">
+                    <button type="submit" class="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-amber-600 text-primary-foreground hover:bg-amber-600/90 h-10 px-4 py-2 w-full cursor-pointer">
                         Subscribe
                     </button>
                 </form>

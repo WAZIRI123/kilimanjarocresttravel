@@ -14,6 +14,7 @@
             @include('partials.sections.text-image')
             @include('partials.sections._destinations-grid')
             @include('partials.sections.popular-package')
+            @include('partials.sections.Our-partner')
         </div>
     </div>
 </x-layouts.app>

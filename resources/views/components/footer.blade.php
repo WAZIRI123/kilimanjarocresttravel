@@ -115,5 +115,5 @@
                 <p class="text-sm text-muted-foreground bg-white dark:bg-gray-950 px-3">&copy; {{ date('Y') }} Stan Safari. All rights reserved.</p>
             </div>
         </div>
-    </div>
+        </div>
 </footer>

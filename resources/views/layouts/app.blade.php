@@ -1,84 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1" id="wixDesktopViewport">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
+    <title>{{ config('app.name', 'Stan Safari') }}</title>
+
+   <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=The+Girl+Next+Door&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="{{ asset('css/booking-wizard.css') }}" rel="stylesheet">
-    {{-- Tailwind CSS CDN --}}
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Gallery Fix Script -->
-    <script src="{{ asset('js/gallery-fix.js') }}"></script>
-    <script src="{{ asset('js/gallery-slider.js') }}"></script>
-    <script src="{{ asset('js/remove-wix-error.js') }}"></script>
-    <script src="{{ asset('js/sticky-header.js') }}"></script>
-    @include('partials.imagejs')
-    @include('partials.main-css')
-    
-    @stack('styles')
-    @stack('head-scripts')
-    
-    <title>@yield('title', 'Stan Safari')</title>
-</head>
-
-<body class="responsive" style="--scrollbar-width: 15px;" data-new-gr-c-s-check-loaded="14.1235.0" data-gr-ext-installed="" cz-shortcut-listen="true">
-    <!--pageHtmlEmbeds.bodyStart start-->
-    <script type="wix/htmlEmbeds" id="pageHtmlEmbeds.bodyStart start"></script>
-    <script type="wix/htmlEmbeds" id="pageHtmlEmbeds.bodyStart end"></script>
-    <!--pageHtmlEmbeds.bodyStart end-->
-    
-    <div id="SITE_CONTAINER">
-        <div id="main_MF" class="main_MF">
-            <div id="SCROLL_TO_TOP" class="Vd6aQZ ignore-focus SCROLL_TO_TOP" tabindex="-1" role="region"
-                aria-label="top of page">
-                <span class="mHZSwn">top of page</span>
-            </div>
-            
-            <button id="SKIP_TO_CONTENT_BTN" class="SKIP_TO_CONTENT_BTN LHrbPP has-custom-focus" tabindex="0">
-                Skip to Main Content
-            </button>
-            
-            <div id="site-root" class="overflow-clip-in-mobile site-root">
-                <div id="masterPage" class="masterPage css-editing-scope">
-                    <div id="SITE_PAGES" class="JsJXaX SITE_PAGES">
-                        <div id="c1dmp" class="P0dCOY c1dmp">
-                            <div class="PJ4KCX wixui-page" data-testid="page-bg"></div>
-                            <div>
-                                <div class="c1dmp-overflow-wrapper xpmKd_" data-testid="responsive-container-overflow">
-                                    <div data-testid="responsive-container-content" tabindex="-1" class="c1dmp-container">
-                                        <!-- Main Content -->
-                                        <main id="main-content" class="c1rIl3" data-main-content-parent="true">
-                                            @yield('content')
-                                        </main>
-                                        
-                                        <!-- Footer -->
-                                        @include('partials.sections.footer')
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!-- Scripts -->
-    @stack('scripts')
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    <style>
+       :root {
+        --background: 0 0% 100%;
+        --foreground: 222.2 84% 4.9%;
+        --card: 0 0% 100%;
+        --card-foreground: 222.2 84% 4.9%;
+        --popover: 0 0% 100%;
+        --popover-foreground: 222.2 84% 4.9%;
+        --primary: 221.2 83.2% 53.3%;
+        --primary-foreground: 210 40% 98%;
+        --secondary: 210 40% 96.1%;
+        --secondary-foreground: 222.2 47.4% 11.2%;
+        --muted: 210 40% 96.1%;
+        --muted-foreground: 215.4 16.3% 46.9%;
+        --accent: 210 40% 96.1%;
+        --accent-foreground: 222.2 47.4% 11.2%;
+        --destructive: 0 84.2% 60.2%;
+        --destructive-foreground: 210 40% 98%;
+        --border: 214.3 31.8% 91.4%;
+        --input: 214.3 31.8% 91.4%;
+        --ring: 221.2 83.2% 53.3%;
+        --radius: 0.5rem;
+    }
     
-    <!-- HubSpot Embed Code -->
-    <script type="text/javascript" id="hs-script-loader" async defer src="//js-na2.hs-scripts.com/243011933.js"></script>
-    <!-- End of HubSpot Embed Code -->
+    body {
+        background-color: hsl(var(--background));
+        color: hsl(var(--foreground));
+    }
     
-    <!-- Livewire Scripts -->
-    @livewireScripts
-    @livewireStyles
-</body>
+    .container {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    @media (min-width: 640px) {
+        .container {
+            max-width: 640px;
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+        }
+    }
+    
+    @media (min-width: 1024px) {
+        .container {
+            max-width: 1024px;
+        }
+    }
+    
+    @media (min-width: 1280px) {
+        .container {
+            max-width: 1280px;
+        }
+    }
 
+
+@layer components {
+    .container {
+        max-width: 1280px;
+    }
+    }
+    </style>
+</head>
+<body class="font-sans antialiased">
+    <div class="min-h-screen bg-gray-100">
+        <!-- Page Content -->
+        <main>
+            {{ $slot }}
+        </main>
+    </div>
+</body>
 </html>

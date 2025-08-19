@@ -7,15 +7,7 @@
 <section id="video-section" class="video-section" style="grid-area:6/1/7/2">
     <div class="section-container">
         <div class="section-content">
-            <div id="comp-m2vttpvv1" class="HcOXKn c9GqVL QxJLC3 lq2cno YQcXTT comp-m2vttpvv1 wixui-rich-text" data-testid="richTextElement" ariaattributes="[object Object]" style="border-radius:1rem1">
-                <h2 class="font_2 wixui-rich-text__text">
-                    <span class="wixui-rich-text__text">{!! $video->title !!}</span>
-                </h2>
-            </div>
-
-            <div id="comp-m2vue5lh" class="comp-m2vue5lh JGtLUp wixui-horizontal-line">
-            </div>
-            
+        
             <!-- Video Embed -->
             <div class="video-embed">
                 <div class="video-container">
@@ -117,6 +109,9 @@
     @media (max-width: 768px) {
         .video-section {
             padding: 0px 0;
+        }
+        #comp-m2vttpvv1{
+            margin-top: 1rem !important;
         }
         
         .section-container {

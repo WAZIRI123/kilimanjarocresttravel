@@ -87,6 +87,9 @@
     <a href="{{ route('destinations') }}" class="mobile-nav-link {{ request()->is('destinations*') ? 'active' : '' }}">Destinations</a>
     <a href="{{ route('about') }}" class="mobile-nav-link {{ request()->is('about*') ? 'active' : '' }}">About Us</a>
     <a href="{{ route('contact') }}" class="mobile-nav-link {{ request()->is('contact*') ? 'active' : '' }}">Contact Us</a>
+    <a href="https://wa.me/255754261101" target="_blank" rel="noopener noreferrer" class="mobile-whatsapp-btn">
+        <i class="fab fa-whatsapp"></i> WhatsApp Us
+    </a>
 </div>
 
 <!-- Background Image -->
@@ -638,13 +641,51 @@
         }
         
         .mobile-nav-link {
-            color: rgba(255, 255, 255, 0.9);
-            text-decoration: none;
-            font-size: 1.1rem;
-            padding: 0.5rem 0;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-            transition: color 0.3s ease, padding-left 0.3s ease;
-        }
+    display: block;
+    padding: 12px 25px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.mobile-whatsapp-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 25px;
+    border-radius: 50px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+    background-color: transparent;
+    color: #fff !important;
+    border: 2px solid #fff;
+    margin: 15px auto;
+    max-width: 200px;
+    width: 100%;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.mobile-whatsapp-btn:hover {
+    background-color: #fff;
+    color: #000 !important;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.mobile-whatsapp-btn i {
+    margin-right: 8px;
+    font-size: 1.1rem;
+}
         
         .mobile-nav-link:hover {
             color: #fff;
@@ -801,4 +842,7 @@
                     });
                 });
             });
+
+            
+            
         </script>

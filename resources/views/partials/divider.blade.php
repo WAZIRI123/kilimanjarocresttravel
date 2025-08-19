@@ -1,0 +1,1 @@
+   <div class="w-20 h-[1px] bg-amber-500 mx-auto mb-6"></div>

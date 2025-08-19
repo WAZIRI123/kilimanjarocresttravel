@@ -31,6 +31,17 @@ Route::get('/destinations/{id}', [DestinationController::class, 'show'])
     ->where('id', '[a-z0-9-]+')
     ->name('destinations.show');
 
+    Route::get('/clear-cache', function() {
+        $exitCode = Artisan::call('cache:clear');
+        $exitCode = Artisan::call('config:clear');
+        $exitCode = Artisan::call('view:clear');
+        $exitCode = Artisan::call('route:clear');
+        $exitCode = Artisan::call('view:cache');
+        $exitCode = Artisan::call('route:cache');
+        $exitCode = Artisan::call('config:cache');
+        return 'Caches cleared!'; // This will be displayed when you visit /clear-cache
+    })->name('clear.cache');
+
 // Booking Wizard
 Route::get('/book-now', function () {
     // Get package ID from query parameter

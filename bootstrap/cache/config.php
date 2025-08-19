@@ -689,15 +689,15 @@
     array (
       'token' => NULL,
     ),
+    'resend' => 
+    array (
+      'key' => NULL,
+    ),
     'ses' => 
     array (
       'key' => '',
       'secret' => '',
       'region' => 'us-east-1',
-    ),
-    'resend' => 
-    array (
-      'key' => NULL,
     ),
     'slack' => 
     array (

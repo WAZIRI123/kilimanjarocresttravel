@@ -9,45 +9,54 @@
         
         <div class="destinations-grid">
             <!-- Destination Card 1 -->
-            <div class="destination-card">
+            <div class="destination-card shadow-lg">
                 <div class="card-image">
                     <img src="https://stanley-safaris.com/wp-content/uploads/2024/12/Stanley-Safaris-Honeymoon-112.jpg.pagespeed.ce.Jp54jafdCt.jpg" alt="Maasai Mara National Reserve">
                     <div class="card-overlay">
-                        <div class="price-tag">From $1,200</div>
-                        <div class="duration">3 Days</div>
+                        <div class="flex flex-col h-full justify-between py-6">
+                            <div class="mt-auto w-full">
+                                <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-1 w-full">
+                                    <h3 class="text-white text-lg sm:text-xl font-semibold line-clamp-2">Maasai Mara National Reserve</h3>
+                                    <div class="duration whitespace-nowrap">3 Days</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="card-content">
-                    <h3 class="destination-name"><a href="/destinations/maasai-mara" class="text-xl font-semibold text-gray-900">Maasai Mara National Reserve</a></h3>
                 </div>
             </div>
 
             <!-- Destination Card 2 -->
-            <div class="destination-card">
+            <div class="destination-card shadow-lg">
                 <div class="card-image">
                     <img src="https://stanley-safaris.com/wp-content/uploads/2024/12/Stanley-Safaris-Honeymoon-112.jpg.pagespeed.ce.Jp54jafdCt.jpg" alt="Serengeti National Park">
                     <div class="card-overlay">
-                        <div class="price-tag">From $1,500</div>
-                        <div class="duration">4 Days</div>
+                        <div class="flex flex-col h-full justify-between py-6">
+                            <div class="mt-auto w-full">
+                                <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 w-full">
+                                    <h3 class="text-white text-lg sm:text-xl font-semibold line-clamp-2">Serengeti National Park</h3>
+                                    <div class="duration whitespace-nowrap">4 Days</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                 <div class="card-content">
-                    <h3 class="destination-name"><a href="/destinations/maasai-mara" class="text-xl font-semibold text-gray-900">Maasai Mara National Reserve</a></h3>
                 </div>
             </div>
 
             <!-- Destination Card 3 -->
-            <div class="destination-card">
+            <div class="destination-card shadow-lg">
                 <div class="card-image">
                     <img src="https://stanley-safaris.com/wp-content/uploads/2024/12/Stanley-Safaris-Honeymoon-112.jpg.pagespeed.ce.Jp54jafdCt.jpg" alt="Amboseli National Park">
                     <div class="card-overlay">
-                        <div class="price-tag">From $950</div>
-                        <div class="duration">2 Days</div>
+                        <div class="flex flex-col h-full justify-between py-6">
+                          
+                            <div class="mt-auto w-full">
+                                <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 w-full">
+                                    <h3 class="text-white text-lg sm:text-xl font-semibold line-clamp-2">Amboseli National Park with Mount Kilimanjaro Views</h3>
+                                    <div class="duration whitespace-nowrap">2 Days</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="card-content">
-                    <h3 class="destination-name"><a href="/destinations/amboseli" class="text-xl font-semibold text-gray-900">Amboseli National Park</a></h3>
-
                 </div>
             </div>
         </div>
@@ -95,12 +104,13 @@
 }
 
 .destination-card {
-    background: #fff;
+    background: transparent;
     border-radius: 10px;
-    min-height: 60vh;
+    min-height: 80%;
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
 }
 
 .destination-card:hover {
@@ -110,8 +120,9 @@
 
 .card-image {
     position: relative;
-    height: 320px;
+    height: 420px;
     overflow: hidden;
+    border-radius: 10px;
 }
 
 .card-image img {
@@ -131,12 +142,13 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 50%);
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    padding: 20px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.1) 100%);
     color: #fff;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    box-sizing: border-box;
 }
 
 .price-tag {
@@ -147,29 +159,35 @@
     font-weight: 600;
     font-size: 0.9rem;
     margin: 0;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .duration {
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(5px);
-    padding: 3px 12px;
+    padding: 5px 12px;
     border-radius: 15px;
     font-size: 0.8rem;
+    text-align: center;
     margin: 0;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    flex-shrink: 0;
+    margin-left: 0.5rem;
 }
 
-.card-content {
-    padding: 1.5rem;
-    text-align:center;
-    text-decoration:underline;
+.line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
-.destination-name {
-    font-size: 1.4rem;
-    color: #1a472a;
-    margin-bottom: 0.5rem;
-    font-weight: 700;
-}
+/* Removed card-content styles as they're no longer needed */
+
+/* Removed destination-name styles as they're now in the overlay */
 
 .destination-link {
     color: inherit;

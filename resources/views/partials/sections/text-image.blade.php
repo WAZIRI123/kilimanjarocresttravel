@@ -12,16 +12,57 @@
                     that will leave you with unforgettable memories.
                     
                 </p>
-                <div >
-                    <div class="flex flex-col sm:flex-row gap-3 mt-4">
-                        <a href="#" class="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 bg-amber-500 hover:bg-amber-600">
-                            View All Tours
-                        </a>
-                        <a href="#" class="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 
-                        outline-double outline-1 outline-gray-300 disabled:pointer-events-none disabled:opacity-50 bg-transparent text-foreground shadow-sm hover:bg-[rgba(0,0,0,0.05)] h-10 px-4 py-2">
-                            Special Offers
-                        </a>
+                <div class="w-full">
+                    <!-- Three Column Image Grid -->
+                    <div class="grid grid-cols-3 gap-4 mb-6">
+                        <!-- Image 1 -->
+                        <div class="group relative overflow-hidden rounded-lg bg-card text-card-foreground shadow-sm hover:shadow-md transition-all duration-300">
+                            <div class="aspect-square overflow-hidden">
+                                <img 
+                                    src="https://altezzatravel.com/local/templates/altezza/images/pages/components/tl-card-2.webp" 
+                                    alt="Safari Adventure"
+                                    class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                                >
+                                <!-- Text Overlay -->
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent flex flex-col justify-end p-4">
+                                    <h3 class="text-white font-medium text-sm">Safari Tours</h3>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Image 2 -->
+                        <div class="group relative overflow-hidden rounded-lg bg-card text-card-foreground shadow-sm hover:shadow-md transition-all duration-300">
+                            <div class="aspect-square overflow-hidden">
+                                <img 
+                                    src="https://altezzatravel.com/local/templates/altezza/images/pages/components/tl-card-2.webp" 
+                                    alt="Mountain Climbing"
+                                    class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                                >
+                                <!-- Text Overlay -->
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent flex flex-col justify-end p-4">
+                                    <h3 class="text-white font-medium text-sm">Mountain Climbing</h3>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Image 3 -->
+                        <div class="group relative overflow-hidden rounded-lg bg-card text-card-foreground shadow-sm hover:shadow-md transition-all duration-300">
+                            <div class="aspect-square overflow-hidden">
+                                <img 
+                                    src="https://altezzatravel.com/local/templates/altezza/images/pages/components/tl-card-2.webp" 
+                                    alt="Beach Getaway"
+                                    class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                                >
+                                <!-- Text Overlay -->
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent flex flex-col justify-end p-4">
+                                    <h3 class="text-white font-medium text-sm">Beach Getaways</h3>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                    
+                    
                 </div>
             </div>
             

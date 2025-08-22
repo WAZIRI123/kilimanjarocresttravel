@@ -1,93 +1,46 @@
-@props(['tabs' => [
-    [
-        'id' => 'safari',
-        'name' => 'Safari',
-        'packages' => [
-            [
-                'id' => 1,
-                'title' => 'Maasai Mara Safari',
-                'location' => 'Maasai Mara, Kenya',
-                'price' => 1299,
-                'duration' => '5 Days',
-                'image' => 'https://altezzatravel.com/upload/iblock/8af/0ru21gpfybgrwz24gzvejz4fb98h69xv.webp',
-                'rating' => 4.8,
-                'reviews' => 124
-            ],
-             [
-                'id' => 1,
-                'title' => 'Maasai Mara Safari',
-                'location' => 'Maasai Mara, Kenya',
-                'price' => 1299,
-                'duration' => '5 Days',
-                'image' => 'https://altezzatravel.com/upload/iblock/8af/0ru21gpfybgrwz24gzvejz4fb98h69xv.webp',
-                'rating' => 4.8,
-                'reviews' => 124
-            ],
-            [
-                'id' => 2,
-                'title' => 'Serengeti Adventure',
-                'location' => 'Serengeti, Tanzania',
-                'price' => 1599,
-                'duration' => '7 Days',
-                'image' => 'https://altezzatravel.com/upload/iblock/8af/0ru21gpfybgrwz24gzvejz4fb98h69xv.webp',
-                'rating' => 4.9,
-                'reviews' => 98
-            ]
-        ]
-    ],
-    [
-        'id' => 'kilimanjaro',
-        'name' => 'Kilimanjaro',
-        'packages' => [
-            [
-                'id' => 3,
-                'title' => 'Machame Route',
-                'location' => 'Kilimanjaro, Tanzania',
-                'price' => 2499,
-                'duration' => '8 Days',
-                'image' => 'https://altezzatravel.com/upload/iblock/8af/0ru21gpfybgrwz24gzvejz4fb98h69xv.webp',
-                'rating' => 4.9,
-                'reviews' => 156
-            ],
-            [
-                'id' => 4,
-                'title' => 'Lemosho Route',
-                'location' => 'Kilimanjaro, Tanzania',
-                'price' => 2799,
-                'duration' => '9 Days',
-                'image' => 'https://altezzatravel.com/upload/iblock/8af/0ru21gpfybgrwz24gzvejz4fb98h69xv.webp',
-                'rating' => 4.8,
-                'reviews' => 112
-            ]
-        ]
-    ],
-    [
-        'id' => 'zanzibar',
-        'name' => 'Zanzibar',
-        'packages' => [
-            [
-                'id' => 5,
-                'title' => 'Beach Paradise',
-                'location' => 'Nungwi, Zanzibar',
-                'price' => 899,
-                'duration' => '5 Days',
-                'image' => 'https://altezzatravel.com/upload/iblock/8af/0ru21gpfybgrwz24gzvejz4fb98h69xv.webp',
-                'rating' => 4.7,
-                'reviews' => 203
-            ],
-            [
-                'id' => 6,
-                'title' => 'Stone Town & Spice Tour',
-                'location' => 'Zanzibar, Tanzania',
-                'price' => 699,
-                'duration' => '4 Days',
-                'image' => 'https://altezzatravel.com/upload/iblock/8af/0ru21gpfybgrwz24gzvejz4fb98h69xv.webp',
-                'rating' => 4.6,
-                'reviews' => 178
-            ]
-        ]
-    ]
-]])
+@php
+// Get all active packages grouped by category
+$categories = \App\Models\Package::where('is_active', true)
+    ->orderBy('sort_order', 'asc')
+    ->get()
+    ->groupBy('category')
+    ->map(function ($packages) {
+        return $packages->take(3)->map(function ($package) {
+            return [
+                'id' => $package->id,
+                'title' => $package->title,
+                'location' => $package->country,
+                'price' => $package->price,
+                'duration' => $package->duration,
+                'image' => $package->featured_image,
+                'rating' => 4.8, // Default rating, you can add this to your Package model if needed
+                'reviews' => 0, // Default reviews count, add to Package model if needed
+                'slug' => $package->slug
+            ];
+        })->toArray();
+    });
+
+// Define the tabs structure based on the categories
+$tabs = [];
+$categoryNames = [
+    'safari' => 'safari',
+    'kilimanjaro' => 'kilimanjaro',
+    'zanzibar' => 'honeymoon',
+    // Add more category mappings as needed
+];
+
+foreach ($categoryNames as $id => $name) {
+    if (isset($categories[$name])) {
+        $tabs[] = [
+            'id' => $id,
+            'name' => $name,
+            'packages' => $categories[$name]
+        ];
+    }
+}
+@endphp
+
+@if(count($tabs) > 0)
 
 <section class="py-6 md:py-6 lg:py-6 bg-white" x-data="{ activeTab: '{{ $tabs[0]['id'] }}' }">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -119,7 +72,7 @@
                     @foreach($tab['packages'] as $package)
                     <div class="group relative bg-white rounded-xl border-gray-300 overflow-hidden transition-all duration-300  shadow-lg">
                         <div class="aspect-w-16 aspect-h-9 overflow-hidden">
-                            <img src="{{ $package['image'] }}" alt="{{ $package['title'] }}" class="w-full h-60 object-cover transition-transform duration-500 group-hover:scale-105">
+                            <img src="{{'storage/'. $package['image'] }}" alt="{{ $package['title'] }}" class="w-full h-60 object-cover transition-transform duration-500 group-hover:scale-105">
                         </div>
                         
                         <div class="p-6">
@@ -169,3 +122,4 @@
         @endforeach
     </div>
 </section>
+@endif

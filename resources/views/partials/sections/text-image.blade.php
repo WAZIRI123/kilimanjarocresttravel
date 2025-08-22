@@ -4,12 +4,10 @@
             <!-- Text Content -->
             <div class="space-y-6">
                 <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-foreground">
-                    Discover Amazing Destinations
+                  Who We Are!
                 </h2>
                 <p class="text-lg text-muted-foreground leading-relaxed">
-                    Experience the adventure of a lifetime with our curated travel experiences. 
-                    From stunning landscapes to vibrant cultures, we bring you the best destinations 
-                    that will leave you with unforgettable memories.
+               The Crowned Wild Africa is a premier tour and safari company born out of a deep passion for the natural beauty, diverse cultures, and incredible wildlife of Tanzania.We offer unique tours, Mount Kilimanjaro climbs, serene Zanzibar beach getaways, and unforgettable safaris.
                     
                 </p>
                 <div class="w-full">
@@ -19,13 +17,13 @@
                         <div class="group relative overflow-hidden rounded-lg bg-card text-card-foreground shadow-sm hover:shadow-md transition-all duration-300">
                             <div class="aspect-square overflow-hidden">
                                 <img 
-                                    src="https://altezzatravel.com/local/templates/altezza/images/pages/components/tl-card-2.webp" 
-                                    alt="Safari Adventure"
+                                    src="{{ asset('images/image-used/amazing-bird-eyes-view-zanzibar.webp') }}" 
+                                    alt="beaches"
                                     class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
                                 >
                                 <!-- Text Overlay -->
                                 <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent flex flex-col justify-end p-4">
-                                    <h3 class="text-white font-medium text-sm">Safari Tours</h3>
+                                    <h3 class="text-white font-medium text-sm">Zanzibar Beaches</h3>
                                 </div>
                             </div>
                         </div>
@@ -34,7 +32,7 @@
                         <div class="group relative overflow-hidden rounded-lg bg-card text-card-foreground shadow-sm hover:shadow-md transition-all duration-300">
                             <div class="aspect-square overflow-hidden">
                                 <img 
-                                    src="https://altezzatravel.com/local/templates/altezza/images/pages/components/tl-card-2.webp" 
+                                    src="{{ asset('images/image-used/Mount-Kilimanjaro-Marangu-2.webp') }}" 
                                     alt="Mountain Climbing"
                                     class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
                                 >
@@ -50,13 +48,13 @@
                         <div class="group relative overflow-hidden rounded-lg bg-card text-card-foreground shadow-sm hover:shadow-md transition-all duration-300">
                             <div class="aspect-square overflow-hidden">
                                 <img 
-                                    src="https://altezzatravel.com/local/templates/altezza/images/pages/components/tl-card-2.webp" 
-                                    alt="Beach Getaway"
+                                    src="{{ asset('images/image-used/chui.PNG') }}" 
+                                    alt="safaris"
                                     class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
                                 >
                                 <!-- Text Overlay -->
                                 <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent flex flex-col justify-end p-4">
-                                    <h3 class="text-white font-medium text-sm">Beach Getaways</h3>
+                                    <h3 class="text-white font-medium text-sm">Safaris</h3>
                                 </div>
                             </div>
                         </div>
@@ -69,7 +67,7 @@
             <!-- Image -->
             <div class="relative aspect-video overflow-hidden rounded-xl  bg-muted shadow-lg">
                 <img 
-                    src="https://altezzatravel.com/local/templates/altezza/images/pages/components/tl-card-2.webp" 
+                    src="{{ asset('images/image-used/heroimage.webp') }}" 
                     alt="Beautiful landscape"
                     class="absolute inset-0 w-full h-full object-cover"
                 >

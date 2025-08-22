@@ -2,7 +2,6 @@
     <!-- Modern Transparent Navbar -->
     @include('partials.sections.navigation')
     
-    
     <!-- Background Image -->
     <div class="hero-background">
         <img 
@@ -109,7 +108,7 @@ letter-spacing: 0.01em;">
         }
         
         .navbar-container {
-            max-width: 1200px;
+            
             margin: 0 auto;
             padding: 0 2rem;
             display: flex;
@@ -368,8 +367,8 @@ letter-spacing: 0.01em;">
         /* Hero Content */
         .hero-content {
             width: 100%;
-            max-width: 1200px;
-            margin: 0 auto;
+            
+            margin: 0 0;
             padding: 0 1rem;
             box-sizing: border-box;
             display: flex;
@@ -516,10 +515,10 @@ letter-spacing: 0.01em;">
             position: relative;
             z-index: 3;
             text-align: center;
-            max-width: 1200px;
+            
             width: 90%;
             padding: 0 20px;
-            margin: 0 auto;
+            margin: 0 0;
             animation: fadeInUp 1s ease-out;
         }
 

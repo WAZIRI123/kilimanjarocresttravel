@@ -153,7 +153,7 @@
                @endif
                
                <div class="button-container" style="display: flex; justify-content: center; margin: 2rem 0 4rem 0; width: 100%;">
-                   <a href="{{ route('book-now', ['package' => $package->id]) }}" class="book-tour-btn" style="display: inline-block; background-color: #4d4402; color: white; padding: 1rem 2.5rem; text-decoration: none; border-radius: 4px; font-weight: 500; text-align: center; width: 100%; max-width: 280px;">Book This Tour</a>
+                   <a href="{{ route('book-now', ['package' => $package->id]) }}" class="book-tour-btn" style="display: inline-block; background-color: #D97706; color: white; padding: 1rem 2.5rem; text-decoration: none; border-radius: 4px; font-weight: 500; text-align: center; width: 100%; max-width: 280px;">Book This Tour</a>
                </div>
                </div>
            </div>
@@ -358,7 +358,8 @@
            position: sticky;
            top: 0;
            z-index: 100;
-       }.P0dCOY .PJ4KCX {
+       }
+    .P0dCOY .PJ4KCX {
     background-color: rgba(255, 255, 255, 1);
     bottom: 0;
     left: 0;
@@ -661,7 +662,7 @@
        
        .book-tour-btn:hover,
        .book-tour-btn:focus {
-           background-color: #3d3702; /* Darker shade for hover */
+           background-color: #D97706; /* Darker shade for hover */
            cursor: pointer;
            transform: translateY(-2px);
            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
@@ -682,7 +683,7 @@
            }
            
            .book-tour-btn:hover {
-               background-color: #3d3702 !important;
+               background-color: #D97706 !important;
            }
            
            .itinerary-header {

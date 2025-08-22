@@ -224,7 +224,7 @@
 @push('styles')
     <!-- Additional page-specific styles -->
     <style>
-        .P0dCOY .PJ4KCX {
+    .P0dCOY .PJ4KCX {
     background-color: rgba(255, 255, 255, 1);
     bottom: 0;
     left: 0;

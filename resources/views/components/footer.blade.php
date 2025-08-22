@@ -1,4 +1,4 @@
-<footer class="w-full  pt-8 bg-[rgba(0,0,0,0.05)]">
+<footer class="w-full  pt-8 bg-white">
     <div class="container mx-auto px-4 py-12 md:py-16">
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -6,7 +6,7 @@
             <div class="space-y-4">
                 <div class="flex justify-center lg:justify-start items-center space-x-2">
                     <x-application-logo class="h-8 w-auto" />
-                    <span class="text-xl font-bold">Stan Safari</span>
+                   
                 </div>
                 <p class="text-muted-foreground text-center lg:text-left">Creating unforgettable safari experiences in the heart of Africa.</p>
                 <div class="flex justify-center lg:justify-start space-x-4">
@@ -49,24 +49,24 @@
                 <h3 class="text-lg font-bold lg:text-left text-center">Contact Us</h3>
                 @include('partials.sections.divider1')
                 <ul class="mt-4 space-y-2 lg:text-left text-center">
-                    <li class="flex lg:justify-left justify-center  items-start font-semibold">
+                    <li class="flex justify-center lg:justify-start items-start font-semibold">
                         <svg class="h-5 w-5 text-muted-foreground mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                         </svg>
-                        <span class="text-muted-foreground font-semibold">123 Safari Road, Arusha, Tanzania</span>
+                        <span class="text-muted-foreground font-semibold text-start">Daresalam, Tanzania</span>
                     </li>
                     <li class="flex  items-center font-semibold  justify-center lg:justify-start">
                         <svg class="h-5 w-5 text-muted-foreground mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                         </svg>
-                        <a href="mailto:info@stansafari.com" class="text-muted-foreground hover:text-foreground transition-colors font-semibold">info@stansafari.com</a>
+                        <a href="mailto:info@stansafari.com" class="text-muted-foreground hover:text-foreground transition-colors font-semibold">info@crownedwildafrica.com</a>
                     </li>
                     <li class="flex justify-center lg:justify-start items-center font-semibold">
                         <svg class="h-5 w-5 text-muted-foreground mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                         </svg>
-                        <a href="tel:+255123456789" class="text-muted-foreground hover:text-foreground transition-colors font-semibold">+255 123 456 789</a>
+                        <a href="tel:+255743155783" class="text-muted-foreground hover:text-foreground transition-colors font-semibold">+255 743 155 783</a>
                     </li>
                 </ul>
             </div>
@@ -92,10 +92,10 @@
         <div class="mt-12 pt-8">
             <div class="relative">
                 <div class="absolute inset-0 flex items-center">
-                    <span class="w-full border-t border-gray-200 dark:border-gray-800"></span>
+                    <span class="w-full border-t border-gray-200"></span>
                 </div>
                 <div class="relative flex justify-center text-xs uppercase">
-                    <span class="bg-white dark:bg-gray-950 px-2 text-muted-foreground">We Accept</span>
+                    <span class="bg-white px-2 text-muted-foreground">We Accept</span>
                 </div>
             </div>
             <div class="mt-6 flex flex-wrap justify-center items-center gap-4 md:gap-6">
@@ -108,11 +108,11 @@
         <div class="mt-6 pt-6">
             <div class="relative">
                 <div class="absolute inset-0 flex items-center">
-                    <span class="w-full border-t border-gray-200 dark:border-gray-800"></span>
+                    <span class="w-full border-t border-gray-200"></span>
                 </div>
             </div>
             <div class="relative flex justify-center">
-                <p class="text-sm text-muted-foreground bg-white dark:bg-gray-950 px-3">&copy; {{ date('Y') }} Stan Safari. All rights reserved.</p>
+                <p class="text-sm text-muted-foreground bg-white  px-3">&copy; {{ date('Y') }} Stan Safari. All rights reserved.</p>
             </div>
         </div>
         </div>

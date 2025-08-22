@@ -1,23 +1,41 @@
+@php 
+$latestSafari = \App\Models\Package::where('is_active', true)
+    ->where('category', 'safari')
+    ->orderBy('created_at', 'desc')
+    ->orderBy('id', 'desc')
+    ->first();
+$latestKilimanjaro = \App\Models\Package::where('is_active', true)
+    ->where('category', 'kilimanjaro')
+    ->orderBy('created_at', 'desc')
+    ->orderBy('id', 'desc')
+    ->first();
+
+$latestHoneymoon = \App\Models\Package::where('is_active', true)
+    ->where('category', 'honeymoon')
+    ->orderBy('created_at', 'desc')
+    ->orderBy('id', 'desc')
+    ->first();
+
+@endphp
 <!-- Destinations Grid Partial -->
 <section class="destinations-section bg-[rgba(0,0,0,0.05)]">
     <div class="container">
         <div class="section-header">
             <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Popular Destinations</h2>
             @include('partials.divider')
-            <p class="section-subtitle">Explore our most sought-after safari destinations</p>
+            <p class="section-subtitle">Explore our most popular Tanzanian destinations</p>
         </div>
         
         <div class="destinations-grid">
             <!-- Destination Card 1 -->
             <a href="#" class="destination-card block shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <div class="card-image">
-                    <img src="https://stanley-safaris.com/wp-content/uploads/2024/12/Stanley-Safaris-Honeymoon-112.jpg.pagespeed.ce.Jp54jafdCt.jpg" alt="Maasai Mara National Reserve">
+                    <img src="{{asset('storage/' . $latestSafari->featured_image)}}" alt="Maasai Mara National Reserve">
                     <div class="card-overlay">
                         <div class="flex flex-col h-full justify-between py-6">
                             <div class="mt-auto w-full">
                                 <div class="flex flex-row justify-between items-center w-full">
-                                    <h3 class="text-white text-lg sm:text-xl font-semibold line-clamp-1 pr-2">Maasai Mara</h3>
-                                    <div class="duration whitespace-nowrap bg-white/20 text-white px-2 py-1 rounded text-sm sm:text-base">3 Days</div>
+                                    <h3 class="text-white text-lg sm:text-xl font-semibold pr-2">Conquer Mount Kilimanjaro, the Roof of Africa.</h3>
                                 </div>
                             </div>
                         </div>
@@ -28,13 +46,12 @@
             <!-- Destination Card 2 -->
             <a href="#" class="destination-card block shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <div class="card-image">
-                    <img src="https://stanley-safaris.com/wp-content/uploads/2024/12/Stanley-Safaris-Honeymoon-112.jpg.pagespeed.ce.Jp54jafdCt.jpg" alt="Serengeti National Park">
+                    <img src="{{asset('storage/' . $latestKilimanjaro->featured_image)}}" alt="Serengeti National Park">
                     <div class="card-overlay">
                         <div class="flex flex-col h-full justify-between py-6">
                             <div class="mt-auto w-full">
                                 <div class="flex flex-row justify-between items-center w-full">
-                                    <h3 class="text-white text-lg sm:text-xl font-semibold line-clamp-1 pr-2">Serengeti</h3>
-                                    <div class="duration whitespace-nowrap bg-white/20 text-white px-2 py-1 rounded text-sm sm:text-base">4 Days</div>
+                                    <h3 class="text-white text-lg sm:text-xl font-semibold  pr-2">Conquer Mount Kilimanjaro, the Roof of Africa.</h3>
                                 </div>
                             </div>
                         </div>
@@ -45,13 +62,13 @@
             <!-- Destination Card 3 -->
             <a href="#" class="destination-card block shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <div class="card-image">
-                    <img src="https://stanley-safaris.com/wp-content/uploads/2024/12/Stanley-Safaris-Honeymoon-112.jpg.pagespeed.ce.Jp54jafdCt.jpg" alt="Amboseli National Park">
+                    <img src="{{asset('storage/' . $latestHoneymoon->featured_image)}}" alt="Amboseli National Park">
                     <div class="card-overlay">
                         <div class="flex flex-col h-full justify-between py-6">
                             <div class="mt-auto w-full">
                                 <div class="flex flex-row justify-between items-center w-full">
-                                    <h3 class="text-white text-lg sm:text-xl font-semibold line-clamp-1 pr-2">Amboseli</h3>
-                                    <div class="duration whitespace-nowrap bg-white/20 text-white px-2 py-1 rounded text-sm sm:text-base">3 Days</div>
+                                    <h3 class="text-white text-lg sm:text-xl font-semibold pr-2">Escape to a Tropical Paradise</h3>
+                                   
                                 </div>
                             </div>
                         </div>

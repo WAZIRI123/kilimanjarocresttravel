@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Stan Safari') }}</title>
+    <title>{{ config('app.name', 'Crowned wild africa') }}</title>
 
    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,6 +17,7 @@
 
     <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @stack('styles')
     <style>
        :root {
         --background: 0 0% 100%;
@@ -86,8 +87,13 @@
     <div class="min-h-screen bg-gray-100">
         <!-- Page Content -->
         <main>
-            {{ $slot }}
+             @isset($slot)
+                {{ $slot }}
+            @else
+                @yield('content')
+            @endisset
         </main>
     </div>
+    @include('components.footer')
 </body>
 </html>

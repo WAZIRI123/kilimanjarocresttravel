@@ -4,7 +4,7 @@
             <!-- Text Content -->
             <div class="space-y-6">
                 <p class="text-lg text-muted-foreground leading-relaxed">
-               The Crowned Wild Africa is a premier tour and safari company born out of a deep passion for the natural beauty, diverse cultures, and incredible wildlife of Tanzania.We offer unique tours, Mount Kilimanjaro climbs, serene Zanzibar beach getaways, and unforgettable safaris.
+                    <span class="font-bold text-2xl text-foreground">The Crowned Wild Africa</span> is a premier tour and safari company born out of a deep passion for the natural beauty, diverse cultures, and incredible wildlife of Tanzania.We offer unique tours, Mount Kilimanjaro climbs, serene Zanzibar beach getaways, and unforgettable safaris.
                     
                 </p>
                 <div class="w-full">

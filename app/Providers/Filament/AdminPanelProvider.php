@@ -27,7 +27,7 @@ class AdminPanelProvider extends PanelProvider
             ->id('admin')
             ->path('admin')
             ->login()
-            ->brandName('Stan-Safaris')
+            ->brandName('Crowned-Wild-Africa')
             ->favicon(asset('favicon.ico'))
             ->colors([
                 'primary' => Color::Amber,

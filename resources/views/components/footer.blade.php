@@ -108,4 +108,21 @@
             </div>
         </div>
         </div>
+           <div class="gtranslate_wrapper"></div>
+<script>window.gtranslateSettings = {"default_language":"en","languages":["en","fr","it","es","de","hi","ru","zh-CN","sw"],"wrapper_selector":".gtranslate_wrapper","alt_flags":{"en":"usa","pt":"brazil","es":"colombia","fr":"quebec"}}</script>
+<script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer></script>
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/68a9d6b64ebc491927e0fe29/1j3bmtep5';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
 </footer>

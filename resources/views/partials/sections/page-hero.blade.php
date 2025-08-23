@@ -428,7 +428,7 @@ letter-spacing: 0.01em;">
         
         @media (max-width: 768px) {
             .hero-section {
-                padding-top: 60px; /* Space for navbar */
+                padding-top: 6px; /* Space for navbar */
                 min-height: calc(100vh - 60px);
             }
             .hero-description{

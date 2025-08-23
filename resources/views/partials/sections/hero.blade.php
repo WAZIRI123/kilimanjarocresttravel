@@ -25,8 +25,9 @@
         </video>
         <div class="absolute inset-0 bg-black/50 backdrop-blur-xsm"></div>
     </div>
-    
+    <div class="px-4 sm:px-6 lg:px-8">
     @include('partials.sections.navigation')
+    </div>
     
     <!-- Hero Content (unchanged) -->
     <div class="relative z-10 flex flex-col items-center justify-center h-[calc(100vh-5rem)] px-4 sm:px-6 lg:px-8 text-center">
@@ -48,9 +49,3 @@
 </header>
 
 <!-- Mobile Menu Toggle Script -->
-<script>
-    document.getElementById('mobile-menu-button').addEventListener('click', function() {
-        const menu = document.getElementById('mobile-menu');
-        menu.classList.toggle('hidden');
-    });
-</script>

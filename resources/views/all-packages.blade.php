@@ -1,13 +1,9 @@
-@extends('layouts.app')
-
-@section('title', 'All Packages - Stan Safari')
+<x-layouts.app>
 
 @push('styles')
 <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
 @endpush
 
-@section('content')
-    <!-- Hero Section -->
     @php
         $heroImages = [
             'safari' => 'storage/images/safari-hero.webp',
@@ -154,7 +150,6 @@
             </style>
         @endif
     </div>
-@endsection
 
 @push('styles')
 <style>
@@ -261,3 +256,5 @@
 @push('scripts')
     <!-- Additional page-specific scripts -->
 @endpush
+
+</x-layouts.app>

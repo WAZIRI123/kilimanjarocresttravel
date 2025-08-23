@@ -1,7 +1,5 @@
 @extends('layouts.app')
 
-@section('title', 'Explore - Stan Safari')
-
 @push('styles')
 <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
 @endpush
@@ -358,8 +356,7 @@
            position: sticky;
            top: 0;
            z-index: 100;
-       }
-    .P0dCOY .PJ4KCX {
+       }.P0dCOY .PJ4KCX {
     background-color: rgba(255, 255, 255, 1);
     bottom: 0;
     left: 0;

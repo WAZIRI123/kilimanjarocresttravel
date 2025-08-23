@@ -87,11 +87,7 @@
     <div class="min-h-screen bg-gray-100">
         <!-- Page Content -->
         <main>
-             @isset($slot)
-                {{ $slot }}
-            @else
                 @yield('content')
-            @endisset
         </main>
     </div>
     @include('components.footer')

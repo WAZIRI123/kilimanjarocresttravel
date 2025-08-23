@@ -13,15 +13,16 @@
 
     <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+    
 </head>
 <body class="font-sans antialiased flex flex-col min-h-screen">
     <div class="flex-1">
         <main>
-
+  
          {{ $slot }}
 
         </main>
     </div>
-    @include('components.footer')
+  @include('components.footer')
 </body>
 </html>

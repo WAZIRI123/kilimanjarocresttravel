@@ -38,12 +38,12 @@
             Experience the thrill of African safaris with our expert guides and luxurious accommodations.
         </p>
         <div class="flex flex-col sm:flex-row gap-4">
-            <button class="bg-white text-gray-900 px-8 py-3 rounded-full font-medium hover:bg-gray-100 transition-colors  text-sm">
+            <a href="{{ route('book-now') }}" class="inline-block bg-white text-gray-900 px-8 py-3 rounded-full font-medium hover:bg-gray-100 transition-colors text-sm text-center" wire:navigate.hover>
+                Book Now
+            </a>
+            <a href="{{ route('all-packages') }}" class="inline-block bg-transparent border-2 border-white text-white px-8 py-3 rounded-full font-medium hover:bg-white/10 transition-colors outline-double outline-1 outline-gray-300 text-sm text-center" wire:navigate.hover>
                 Explore Tours
-            </button>
-            <button class="bg-transparent border-2 border-white text-white px-8 py-3 rounded-full font-medium hover:bg-white/10 transition-colors outline-double outline-1 outline-gray-300 text-sm">
-                Watch Video 
-            </button>
+            </a>
         </div>
     </div>
 </header>

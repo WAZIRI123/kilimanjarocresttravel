@@ -17,11 +17,11 @@
                 <h3 class="text-lg font-bold lg:text-left text-center">Quick Links</h3>
                 @include('partials.sections.divider1')
                 <ul class="mt-4 grid grid-cols-2 gap-2 sm:grid-cols-1 sm:gap-0 sm:space-y-2">
-                    <li class="lg:text-left text-center"><a href="#" class="text-muted-foreground hover:text-foreground transition-colors font-semibold">Home</a></li>
-                    <li class="lg:text-left text-center"><a href="#" class="text-muted-foreground hover:text-foreground transition-colors font-semibold">About Us</a></li>
-                    <li class="lg:text-left text-center"><a href="#" class="text-muted-foreground hover:text-foreground transition-colors font-semibold">Safari Tours</a></li>
-                    <li class="lg:text-left text-center"><a href="#" class="text-muted-foreground hover:text-foreground transition-colors font-semibold">Destinations</a></li>
-                    <li class="lg:text-left text-center sm:col-span-2 md:col-span-1"><a href="#" class="text-muted-foreground hover:text-foreground transition-colors font-semibold">Contact Us</a></li>
+                    <li class="lg:text-left text-center"><a href="/" class="text-muted-foreground hover:text-foreground transition-colors font-semibold" wire:navigate.hover>Home</a></li>
+                    <li class="lg:text-left text-center" wire:navigate.hover><a href="/about" class="text-muted-foreground hover:text-foreground transition-colors font-semibold" wire:navigate.hover>About Us</a></li>
+                    <li class="lg:text-left text-center" wire:navigate.hover><a href="/all-packages" class="text-muted-foreground hover:text-foreground transition-colors font-semibold" wire:navigate.hover>Safari Tours</a></li>
+                    <li class="lg:text-left text-center" wire:navigate.hover><a href="/destinations" class="text-muted-foreground hover:text-foreground transition-colors font-semibold" wire:navigate.hover>Destinations</a></li>
+                    <li class="lg:text-left text-center sm:col-span-2 md:col-span-1" wire:navigate.hover><a href="/contact" class="text-muted-foreground hover:text-foreground transition-colors font-semibold" wire:navigate.hover>Contact Us</a></li>
                 </ul>
             </div>
 
@@ -41,7 +41,7 @@
                         <svg class="h-5 w-5 text-muted-foreground mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                         </svg>
-                        <a href="mailto:info@stansafari.com" class="text-muted-foreground hover:text-foreground transition-colors font-semibold">info@crownedwildafrica.com</a>
+                        <a href="mailto:info@crownedwildafrica.com" class="text-muted-foreground hover:text-foreground transition-colors font-semibold">info@crownedwildafrica.com</a>
                     </li>
                     <li class="flex justify-center lg:justify-start items-center font-semibold">
                         <svg class="h-5 w-5 text-muted-foreground mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">

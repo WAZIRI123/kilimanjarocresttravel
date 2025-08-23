@@ -33,21 +33,9 @@
     text-decoration: none;
     text-align: center;
     letter-spacing: 0.01em;">
-                <div class="title-wrapper" style="overflow: hidden;">
-                    <div class="title-line" style="display: inline-block; transform: translateY(100%); opacity: 0; animation: slideUp 0.8s ease-out 0.3s forwards;">
+                <div class="title-wrapper" >
+                    <div class="title-line" style="display: inline-block; transform: translateY(0%); animation: slideUp 0.8s ease-out 0.3s forwards;">
                         {{ $title ?? 'The Essence of Untamed' }}
-                    </div>
-                </div>
-                <div class="title-wrapper contact-subtitle" style="overflow: hidden;">
-                    <div class="title-line accent hero-description" style="display: inline-block; transform: translateY(100%); opacity: 0; animation: slideUp 0.8s ease-out 0.6s forwards; padding: 2.0rem 0;  font-family: 'The Girl Next Door', cursive;
-font-weight: 400;
-font-style: normal;
-font-size: 50px;
-line-height: 1.2;
-text-align: center;
-text-decoration: none;
-letter-spacing: 0.01em;">
-{{ $subtitle ?? 'African Exploration...' }}
                     </div>
                 </div>
             </h1>
@@ -221,10 +209,7 @@ letter-spacing: 0.01em;">
         .-translate-y-2 {
             transform: translateY(-7px);
         }
-        
-        .opacity-0 {
-            opacity: 0;
-        }
+    
         
         /* Mobile Navigation */
         .mobile-nav {

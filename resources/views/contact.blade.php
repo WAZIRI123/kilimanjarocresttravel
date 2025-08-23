@@ -11,7 +11,7 @@
     <!-- Contact Form Section -->
     <section class="py-16 md:py-24 bg-white">
         <div class="container mx-auto px-4">
-            <div class="max-w-4xl mx-auto">
+            <div class="w-[90%] mx-auto">
                 <div class="grid md:grid-cols-2 gap-12">
                     <!-- Contact Information -->
                     <div>
@@ -20,7 +20,7 @@
                         
                         <div class="space-y-6">
                             <div class="flex items-start">
-                                <div class="flex-shrink-0 bg-[#4d4402e0] p-3 rounded-full">
+                                <div class="flex-shrink-0 bg-amber-600 p-3 rounded-full">
                                     <i class="fas fa-map-marker-alt text-white text-xl"></i>
                                 </div>
                                 <div class="ml-4">
@@ -31,7 +31,7 @@
                             </div>
                             
                             <div class="flex items-start">
-                                <div class="flex-shrink-0 bg-[#4d4402e0] p-3 rounded-full">
+                                <div class="flex-shrink-0 bg-amber-600 p-3 rounded-full">
                                     <i class="fas fa-phone-alt text-white text-xl"></i>
                                 </div>
                                 <div class="ml-4">
@@ -41,18 +41,18 @@
                             </div>
                             
                             <div class="flex items-start">
-                                <div class="flex-shrink-0 bg-[#4d4402e0] p-3 rounded-full">
+                                <div class="flex-shrink-0 bg-amber-600 p-3 rounded-full">
                                     <i class="fas fa-envelope text-white text-xl"></i>
                                 </div>
                                 <div class="ml-4">
                                     <h3 class="text-xl font-semibold text-gray-800 mb-2">Email Us</h3>
-                                    <p class="text-gray-700 text-base">info@stansafaris.com</p>
-                                    <p class="text-gray-700 text-base">bookings@stansafaris.com</p>
+                                    <p class="text-gray-700 text-base">info@crownedwildafrica.com</p>
+                                    <p class="text-gray-700 text-base">bookings@crownedwildafrica.com</p>
                                 </div>
                             </div>
                             
                             <div class="flex items-start">
-                                <div class="flex-shrink-0 bg-[#4d4402e0] p-3 rounded-full">
+                                <div class="flex-shrink-0 bg-amber-600 p-3 rounded-full">
                                     <i class="fas fa-clock text-white text-xl"></i>
                                 </div>
                                 <div class="ml-4">
@@ -172,7 +172,7 @@
                             
                             <div class="pt-2">
                                 <button type="submit" 
-                                    class="w-full bg-[#4d4402e0] text-white font-semibold py-3 px-6 rounded-md hover:bg-[#4d4402e0] transition duration-300">
+                                    class="w-full bg-amber-600 text-white font-semibold py-3 px-6 rounded-md hover:bg-amber-600 transition duration-300">
                                     Send Message
                                 </button>
                             </div>
@@ -271,7 +271,7 @@
             --tw-ring-color: rgba(245, 158, 11, var(--tw-ring-opacity));
         }
         
-        .hover\:bg-[#4d4402e0]:hover {
+        .hover\:bg-amber-600:hover {
             --tw-bg-opacity: 1;
             background-color: rgba(217, 119, 6, var(--tw-bg-opacity));
         }

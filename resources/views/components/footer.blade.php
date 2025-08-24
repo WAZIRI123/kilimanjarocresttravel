@@ -104,7 +104,7 @@
                 </div>
             </div>
             <div class="relative flex justify-center">
-                <p class="text-sm text-muted-foreground bg-white  px-3">&copy; {{ date('Y') }} Stan Safari. All rights reserved.</p>
+                <p class="text-sm text-muted-foreground bg-white  px-3">&copy; {{ date('Y') }} Crowned Wild Africa. All rights reserved.</p>
             </div>
         </div>
         </div>
@@ -124,5 +124,6 @@ s1.setAttribute('crossorigin','*');
 s0.parentNode.insertBefore(s1,s0);
 })();
 </script>
+
 <!--End of Tawk.to Script-->
 </footer>

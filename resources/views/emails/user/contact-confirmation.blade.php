@@ -90,7 +90,7 @@
     <div class="email-container">
         <!-- Header -->
         <div class="header">
-            <img src="{{ asset('images/star-safaris.png') }}" alt="{{ config('app.name') }}">
+            <img src="{{ asset('images/image-used/Black-Crowned-logo.png') }}" alt="{{ config('app.name') }}">
         </div>
         
         <!-- Main Content -->
@@ -121,7 +121,7 @@
             <h2>What's Next?</h2>
             <ul>
                 <li>Our team typically responds within 24-48 hours</li>
-                <li>For urgent inquiries, please call us at +255 123 456 789</li>
+                <li>For urgent inquiries, please call us at +255 780 986 288</li>
                 <li>Learn More About <a href="{{ url('/about') }}">About</a></li>
             </ul>
             
@@ -136,10 +136,7 @@
         <!-- Footer -->
         <div class="footer">
             <p>© {{ date('Y') }} {{ config('app.name') }}. All rights reserved.</p>
-            <p>
-                <a href="{{ url('/privacy-policy') }}">Privacy Policy</a> | 
-                <a href="{{ url('/terms') }}">Terms of Service</a>
-            </p>
+         
         </div>
     </div>
 </body>

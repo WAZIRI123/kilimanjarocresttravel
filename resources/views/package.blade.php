@@ -151,7 +151,7 @@
                @endif
                
                <div class="button-container" style="display: flex; justify-content: center; margin: 2rem 0 4rem 0; width: 100%;">
-                   <a href="{{ route('book-now', ['package' => $package->id]) }}" class="book-tour-btn" style="display: inline-block; background-color: #D97706; color: white; padding: 1rem 2.5rem; text-decoration: none; border-radius: 4px; font-weight: 500; text-align: center; width: 100%; max-width: 280px;" wire:navigate.hover>Book This Tour</a>
+                   <a href="{{ route('book-now', ['package' => $package->id]) }}" class="book-tour-btn" style="display: inline-block; background-color: #fff; color: #4d4402; padding: 1rem 2.5rem; text-decoration: none; border-radius: 4px; font-weight: 500; text-align: center; width: 100%; max-width: 280px;" wire:navigate.hover>Book This Tour</a>
                </div>
                </div>
            </div>
@@ -163,7 +163,7 @@
                
                <div style="display: flex; flex-wrap: wrap; gap: 2.5rem; justify-content: space-between;">
                    <!-- Inclusions -->
-                   <div class="inclusion-card" style="flex: 1; min-width: 300px; border: 1px solid #e0e0e0; border-radius: 8px; padding: 2rem; background: #f5f2ed; box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1); transition: transform 0.2s ease, box-shadow 0.2s ease;">
+                   <div class="inclusion-card" style="flex: 1; min-width: 300px; border: 1px solid #e0e0e0; border-radius: 8px; padding: 2rem; background: #F5F5DC; box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1); transition: transform 0.2s ease, box-shadow 0.2s ease;">
                        <h4 style="color: #4d4402; font-size: 1.25rem; margin: 0 0 1.5rem 0; padding-bottom: 0.75rem; border-bottom: 1px solid #f0e6d2; font-weight: 600; line-height: 1.4;">Inclusions</h4>
                        <ul style="list-style: none; padding: 0; margin: 0;">
                         
@@ -198,7 +198,7 @@
                    </div>
                    
                    <!-- Exclusions -->
-                   <div class="exclusion-card" style="flex: 1; min-width: 300px; border: 1px solid #e0e0e0; border-radius: 8px; padding: 2rem; background: #f5f2ed; box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08); transition: transform 0.2s ease, box-shadow 0.2s ease;">
+                   <div class="exclusion-card" style="flex: 1; min-width: 300px; border: 1px solid #e0e0e0; border-radius: 8px; padding: 2rem; background: #F5F5DC; box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08); transition: transform 0.2s ease, box-shadow 0.2s ease;">
                        <h4 style="color: #4d4402; font-size: 1.25rem; margin: 0 0 1.5rem 0; padding-bottom: 0.75rem; border-bottom: 1px solid #f0e6d2; font-weight: 600; line-height: 1.4;">Exclusions</h4>
                        <ul style="list-style: none; padding: 0; margin: 0;">
                        @if(isset($package->excluded_items) && is_array($package->excluded_items))
@@ -348,7 +348,7 @@
        }
        
        .package-header {
-           background-color: #f5f2ed;
+           background-color: #F5F5DC;
            padding: 1.25rem 1.5rem;
            display: flex;
            justify-content: space-between;
@@ -394,7 +394,7 @@
        .image-caption {
            text-align: center;
            color: #555;
-           background-color: #f5f2ed;
+           background-color: #F5F5DC;
            font-size: 0.95rem;
            line-height: 1.5;
            padding: 0.5rem 0 0.5rem 0;
@@ -408,7 +408,7 @@
        }
        
        .package-content {
-           background-color: #f5f2ed;
+           background-color: #F5F5DC;
            padding: 1.5rem;
            overflow-y: visible; /* Allow content to expand naturally */
        }
@@ -631,8 +631,8 @@
            width: 70%;
            max-width: 400px;
            margin: 0 auto;
-           background-color: #4d4402e0;
-           color: white;
+           background-color: #fff;
+           color: #4d4402;
            font-size: 1.1rem;
            font-weight: 600;
            padding: 1rem 1.5rem;

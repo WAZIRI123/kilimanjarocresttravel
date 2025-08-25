@@ -49,9 +49,6 @@
                                     <a   {{ request('category') === 'safari' ? 'active' : '' }}" href="{{ route('all-packages', ['category' => 'safari']) }}" class="flex items-center px-4 py-1 text-sm hover:bg-gray-100 rounded-md transition-colors text-black" wire:navigate.hover>
                                         Safaris Packages
                                     </a>
-                                    <a  {{ request('category') === 'zanzibar' ? 'active' : '' }}" href="{{ route('all-packages', ['category' => 'zanzibar']) }}" class="flex items-center px-4 py-1 text-sm hover:bg-gray-100 rounded-md transition-colors text-black" wire:navigate.hover>
-                                        Zanzibar Packages
-                                    </a>
                                     <a   {{ request('category') === 'kilimanjaro' ? 'active' : '' }}" href="{{ route('all-packages', ['category' => 'kilimanjaro']) }}" class="flex items-center px-4 py-1 text-sm hover:bg-gray-100 rounded-md transition-colors text-black" wire:navigate.hover>
                                        Kilimanjaro Packages
                                     </a>
@@ -103,9 +100,6 @@
                         </a>
                         <a  href="{{ route('all-packages', ['category' => 'safari']) }}" class="block px-3 py-2 text-sm text-gray-600 hover:bg-gray-50 rounded-md {{ request('category') === 'safari' ? 'active' : '' }}" wire:navigate.hover>
                             Safaris Packages
-                        </a>
-                        <a  href="{{ route('all-packages', ['category' => 'zanzibar']) }}" class="block px-3 py-2 text-sm text-gray-600 hover:bg-gray-50 rounded-md {{ request('category') === 'zanzibar' ? 'active' : '' }}" wire:navigate.hover>
-                            Zanzibar Packages
                         </a>
                         <a  href="{{ route('all-packages', ['category' => 'kilimanjaro']) }}" class="block px-3 py-2 text-sm text-gray-600 hover:bg-gray-50 rounded-md {{ request('category') === 'kilimanjaro' ? 'active' : '' }}" wire:navigate.hover>
                             Kilimanjaro Packages

@@ -36,7 +36,7 @@
                                 </div>
                                 <div class="ml-4">
                                     <h3 class="text-xl font-semibold text-gray-800 mb-2">Call Us</h3>
-                                    <p class="text-gray-700 text-base">+255754 261 101</p>
+                                    <p class="text-gray-700 text-base">+255 780 986 288</p>
                                 </div>
                             </div>
                             
@@ -47,7 +47,7 @@
                                 <div class="ml-4">
                                     <h3 class="text-xl font-semibold text-gray-800 mb-2">Email Us</h3>
                                     <p class="text-gray-700 text-base">info@crownedwildafrica.com</p>
-                                    <p class="text-gray-700 text-base">bookings@crownedwildafrica.com</p>
+                                    <p class="text-gray-700 text-base">safari@crownedwildafrica.com </p>
                                 </div>
                             </div>
                             
@@ -64,23 +64,6 @@
                             </div>
                         </div>
                         
-                        <div class="mt-8">
-                            <h3 class="text-lg font-semibold text-gray-800 mb-4">Follow Us</h3>
-                            <div class="flex space-x-4">
-                                <a href="#" class="text-gray-600 hover:text-white transition-colors">
-                                    <i class="fab fa-facebook-f text-2xl"></i>
-                                </a>
-                                <a href="#" class="text-gray-600 hover:text-white transition-colors">
-                                    <i class="fab fa-twitter text-2xl"></i>
-                                </a>
-                                <a href="#" class="text-gray-600 hover:text-white transition-colors">
-                                    <i class="fab fa-instagram text-2xl"></i>
-                                </a>
-                                <a href="#" class="text-gray-600 hover:text-white transition-colors">
-                                    <i class="fab fa-youtube text-2xl"></i>
-                                </a>
-                            </div>
-                        </div>
                     </div>
                     
                     <!-- Contact Form -->

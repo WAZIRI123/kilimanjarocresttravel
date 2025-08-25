@@ -101,7 +101,7 @@
 
 .progress-fill {
     height: 100%;
-    background-color: #4d4402e0;
+    background-color: #000;
     border-radius: 4px;
     transition: width 0.3s ease;
 }
@@ -192,12 +192,12 @@
 }
 
 .destination-btn:hover {
-    border-color: #4d4402e0;
+    border-color: #000;
 }
 
 .destination-btn.selected {
-    background-color: #4d4402e0;
-    border-color: #4d4402e0;
+    background-color: #000;
+    border-color: #000;
     color: white;
 }
 
@@ -230,7 +230,7 @@
 
 .form-control:focus {
     outline: none;
-    border-color: #4d4402e0;
+    border-color: #000;
     box-shadow: 0 0 0 3px rgba(77, 68, 2, 0.15);
 }
 
@@ -316,7 +316,7 @@
 
 /* Style the date input's focus state */
 .date-option-inner:focus-within {
-    border-color: #4d4402e0;
+    border-color: #000;
     box-shadow: 0 0 0 3px rgba(77, 68, 2, 0.15);
 }
 
@@ -366,7 +366,7 @@
 }
 
 .date-option-inner:focus-within {
-    border-color: #4d4402e0;
+    border-color: #000;
     box-shadow: 0 0 0 3px rgba(77, 68, 2, 0.15);
 }
 
@@ -447,8 +447,8 @@
 .flatpickr-day.selected.nextMonthDay, 
 .flatpickr-day.startRange.nextMonthDay, 
 .flatpickr-day.endRange.nextMonthDay {
-    background: #4d4402e0;
-    border-color: #4d4402e0;
+    background: #000;
+    border-color: #000;
 }
 
 .flatpickr-day.inRange {
@@ -458,7 +458,7 @@
 }
 
 .flatpickr-day.today {
-    border-color: #4d4402e0;
+    border-color: #000;
 }
 
 .flatpickr-day.today:hover,
@@ -567,7 +567,7 @@
 
 .contact-form .form-control:focus {
     outline: none;
-    border-color: #4d4402e0;
+    border-color: #000;
     box-shadow: 0 0 0 3px rgba(77, 68, 2, 0.15);
 }
 
@@ -657,7 +657,7 @@
 
 .date-input:focus {
     outline: none;
-    border-color: #4d4402e0;
+    border-color: #000;
     box-shadow: 0 0 0 3px rgba(77, 68, 2, 0.15);
 }
 
@@ -677,7 +677,7 @@
 }
 
 .date-input:focus + .date-icon {
-    color: #4d4402e0;
+    color: #000;
 }
 
 .date-summary {
@@ -862,8 +862,8 @@
 }
 
 .checkbox-input:checked {
-    background-color: #4d4402e0;
-    border-color: #4d4402e0;
+    background-color: #000;
+    border-color: #000;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='white'%3E%3Cpath fill-rule='evenodd' d='M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z' clip-rule='evenodd' /%3E%3C/svg%3E");
     background-repeat: no-repeat;
     background-position: center;
@@ -919,7 +919,7 @@
     border-radius: 0.5rem;
     margin-top: 1rem;
     font-style: italic;
-    border-left: 3px solid #4d4402e0;
+    border-left: 3px solid #000;
 }
 
 /* Budget Selection - Using same styles as destination selection */
@@ -971,7 +971,7 @@
 .btn-next {
     padding: 10px 24px;
     border-radius: 9999px;
-    background-color: #4d4402e0;
+    background-color: #000;
     color: white;
     font-weight: 500;
     border: none;
@@ -992,7 +992,7 @@
 }
 
 .btn-next:hover {
-    background-color: #4d4402e0;
+    background-color: #000;
     transform: translateY(-1px);
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }

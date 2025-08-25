@@ -18,7 +18,7 @@ $latestHoneymoon = \App\Models\Package::where('is_active', true)
 
 @endphp
 <!-- Destinations Grid Partial -->
-<section class="destinations-section bg-[rgba(0,0,0,0.05)]">
+<section class="destinations-section" style="background-color: #F5F5DC;">
     <div class="container">
         <div class="section-header">
             <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Popular Destinations</h2>
@@ -34,8 +34,8 @@ $latestHoneymoon = \App\Models\Package::where('is_active', true)
                     <div class="card-overlay">
                         <div class="flex flex-col h-full justify-between py-6">
                             <div class="mt-auto w-full">
-                                <div class="flex flex-row justify-between items-center w-full">
-                                    <h3 class="text-white text-lg sm:text-xl font-semibold pr-2">Conquer Mount Kilimanjaro, the Roof of Africa.</h3>
+                                <div class="flex flex-row justify-center items-center w-full">
+                                    <h3 class="text-white text-lg sm:text-xl font-semibold pr-2">Safaris</h3>
                                 </div>
                             </div>
                         </div>
@@ -50,8 +50,8 @@ $latestHoneymoon = \App\Models\Package::where('is_active', true)
                     <div class="card-overlay">
                         <div class="flex flex-col h-full justify-between py-6">
                             <div class="mt-auto w-full">
-                                <div class="flex flex-row justify-between items-center w-full">
-                                    <h3 class="text-white text-lg sm:text-xl font-semibold  pr-2">Conquer Mount Kilimanjaro, the Roof of Africa.</h3>
+                                <div class="flex flex-row justify-center items-center w-full">
+                                    <h3 class="text-white text-lg sm:text-xl font-semibold  pr-2">Hiking</h3>
                                 </div>
                             </div>
                         </div>
@@ -62,13 +62,11 @@ $latestHoneymoon = \App\Models\Package::where('is_active', true)
             <!-- Destination Card 3 -->
             <a href="#" class="destination-card block shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <div class="card-image">
-                    <img src="{{asset('storage/' . $latestHoneymoon->featured_image)}}" alt="Amboseli National Park">
-                    <div class="card-overlay">
+                    <img src="{{asset('storage/' . $latestHoneymoon->featured_image)}}" alt="Amboseli National Park">                    <div class="card-overlay">
                         <div class="flex flex-col h-full justify-between py-6">
                             <div class="mt-auto w-full">
-                                <div class="flex flex-row justify-between items-center w-full">
-                                    <h3 class="text-white text-lg sm:text-xl font-semibold pr-2">Escape to a Tropical Paradise</h3>
-                                   
+                                <div class="flex flex-row justify-center items-center w-full">
+                                    <h3 class="text-white text-lg sm:text-xl font-semibold pr-2 ">Beaches</h3>
                                 </div>
                             </div>
                         </div>

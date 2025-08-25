@@ -94,7 +94,7 @@
     <div class="email-container">
         <!-- Header -->
         <div class="header">
-            <img src="{{ asset('images/star-safaris.png') }}" alt="{{ config('app.name') }}">
+            <img src="{{ asset('images/image-used/Black-Crowned-logo.png') }}" alt="{{ config('app.name') }}">
         </div>
         
         <!-- Main Content -->

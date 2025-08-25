@@ -10,9 +10,9 @@
             </div>
             @endif
             
-            <div class="package-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 300px)); gap: 2rem; justify-content: center; position: relative; z-index: 10; width: 100%;">
+            <div class="grid grid-cols-1 mx-auto sm:grid-cols-2 lg:grid-cols-3 gap-8 relative z-10 w-[90%] justify-items-center">
                 @foreach($packages as $package)
-                <a href="{{ $package['url'] ?? '#' }}" class="package-card" style="display: flex; flex-direction: column; height: 100%; text-decoration: none; color: inherit; background-color: #f5f2ed; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <a href="{{ $package['url'] ?? '#' }}" class="package-card" style="display: flex; flex-direction: column; height: 100%; text-decoration: none; color: inherit; background-color: #F5F5DC; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.1);" wire:navigate.hover>
                     <div style="height: 200px; overflow: hidden; flex-shrink: 0;">
                         <img src="{{  Storage::url($package['image'])}}" 
                              alt="{{ $package['title'] }}" 
@@ -34,7 +34,7 @@
                         </div>
                         <div style="border-top: 1px solid #e0e0e0; padding-top: 0.75rem; margin-top: auto; display: flex; justify-content: center; align-items: center; font-size: 0.9rem; color: #666;">
     
-                            <span class="inline-flex items-center px-6 pb-2 pt-1 border border-transparent text-center font-medium rounded-md shadow-sm text-white bg-amber-600 hover:bg-amber-700 transition-colors duration-200">View Package </span>
+                            <span class="inline-flex items-center px-6 pb-2 pt-1 border border-transparent text-center font-medium rounded-md shadow-sm bg-white hover:bg-white-700 transition-colors duration-200">View Package </span>
 
                         </div>
                     </div>

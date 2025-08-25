@@ -1,5 +1,5 @@
 <!-- Why Travel With Us -->
-<div class="py-16 bg-gray-50">
+<div class="py-16" style="background-color: #F5F5DC;">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12">
             <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Why Travel With Us</h2>
@@ -10,7 +10,7 @@
         <div class="grid md:grid-cols-3 gap-8 lg:w-3/4 lg:mx-auto">
             <!-- Card 1 -->
             <div class="group relative rounded-xl border border-gray-200 p-6 shadow-sm transition-all hover:shadow-md hover:-translate-y-1 overflow-hidden">
-                <div class="absolute inset-0 bg-cover bg-center z-0" style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('{{ asset('images/image-used/experts.jpeg') }}') no-repeat center center; background-size: cover;"></div>
+                <div class="absolute inset-0 bg-cover bg-center z-0" style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('{{ asset('images/image-used/experts.jpeg') }}') no-repeat center center; background-size: cover;"></div>
                 <div class="relative z-10">
                     <div class="w-12 h-12 rounded-lg bg-blue-50 flex items-center justify-center mb-4 group-hover:bg-blue-100 transition-colors">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -24,7 +24,7 @@
 
             <!-- Card 2 -->
             <div class="group relative rounded-xl border border-gray-200 p-6 shadow-sm transition-all hover:shadow-md hover:-translate-y-1 overflow-hidden">
-                <div class="absolute inset-0 bg-cover bg-center z-0" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('{{ asset('images/image-used/plan.jpg') }}') no-repeat center center; background-size: cover;"></div>
+                <div class="absolute inset-0 bg-cover bg-center z-0" style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('{{ asset('images/image-used/plan.jpg') }}') no-repeat center center; background-size: cover;"></div>
                 <div class="relative z-10">
                     <div class="w-12 h-12 rounded-lg bg-green-50 flex items-center justify-center mb-4 group-hover:bg-green-100 transition-colors">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -38,15 +38,15 @@
 
             <!-- Card 3 -->
             <div class="group relative rounded-xl border border-gray-200 p-6 shadow-sm transition-all hover:shadow-md hover:-translate-y-1 overflow-hidden">
-                  <div class="absolute inset-0 bg-cover bg-center z-0" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('{{ asset('images/image-used/village-visit-04.jpg') }}') no-repeat center center; background-size: cover;"></div>
+                  <div class="absolute inset-0 bg-cover bg-center z-0" style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('{{ asset('images/image-used/CHARITY-1.jpeg') }}') no-repeat center center; background-size: cover;"></div>
                 <div class="relative z-10">
                     <div class="w-12 h-12 rounded-lg bg-purple-50 flex items-center justify-center mb-4 group-hover:bg-purple-100 transition-colors">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                         </svg>
                     </div>
-                    <h3 class="text-xl font-semibold text-white mb-2">Local Expertise</h3>
-                    <p class="text-gray-300">With our extensive local knowledge, we provide insider access to hidden gems and unique experiences you won't find in guidebooks.</p>
+                    <h3 class="text-xl font-semibold text-white mb-2">Sustainable Tourism</h3>
+                    <p class="text-gray-300">We believe in creating meaningful connections through responsible travel by Empowering local initiatives, and supporting education.</p>
                 </div>
             </div>
         </div>

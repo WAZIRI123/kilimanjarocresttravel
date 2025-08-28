@@ -4,7 +4,7 @@
             <div class="flex items-center justify-between h-20">
                 <!-- Logo -->
                 <div class="flex-shrink-0" style="max-width:80px; max-height:80px">
-                    <a   href="/" class="text-white text-2xl font-bold" wire:navigate.hover>
+                    <a   href="/" class="text-white text-2xl font-bold">
                         <img src="{{ asset('images/image-used/white-logo-copy.PNG') }}" alt="crowned Wild Africa" class="logo-img w-30 h-auto pt-3">
                     </a>
                 </div>
@@ -12,7 +12,7 @@
                 <!-- Centered Desktop Navigation -->
                 <div class="hidden lg:flex items-center justify-center flex-1 pt-5">
                     <div class="flex items-center space-x-1  rounded-full px-6 py-2 backdrop-blur-sm">
-                        <a  href="/" class="text-white {{ Request::is('/') ? 'bg-white/10' : 'hover:bg-white/10' }} px-4 py-2 rounded-full text-lg font-medium transition-colors" wire:navigate.hover>Home</a>
+                        <a  href="/" class="text-white {{ Request::is('/') ? 'bg-white/10' : 'hover:bg-white/10' }} px-4 py-2 rounded-full text-lg font-medium transition-colors">Home</a>
                         
                         <!-- Package Dropdown -->
                         <div x-data="{ open: false }" 
@@ -22,9 +22,9 @@
                             class="relative">
                             <button 
                                 @click="if(window.innerWidth < 768) open = !open"
-                                class="flex items-center text-white {{ request()->is('all-packages*') ? 'bg-white/10' : 'hover:bg-white/10' }} px-4 py-0 rounded-full text-lg font-medium transition-colors"
+                                class="flex items-center text-white {{ request()->is('all-packages?category=short-safaris') || request()->is('all-packages?category=northern-safaris') || request()->is('all-packages?category=southern-safaris') ? 'bg-white/10' : 'hover:bg-white/10' }} px-4 py-0 rounded-full text-lg font-medium transition-colors"
                                 :aria-expanded="open">
-                                Packages
+                                Safaris
                                 <svg class="w-4 h-4 ml-1" :class="{'rotate-180': open}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                                 </svg>
@@ -43,29 +43,31 @@
                                 @mouseleave="if(window.innerWidth >= 768) open = false"
                                 style="display: none;">
                                 <div class="p-2 space-y-1">
-                                    <a   {{ !request('category') ? 'active' : '' }}" href="{{ route('all-packages') }}" class="flex items-center px-4 py-0 text-sm hover:bg-gray-100 rounded-md transition-colors text-black" wire:navigate.hover>
-                                        All Packages
+                                    <a   {{ request('category') === 'northern-safaris' ? 'active' : '' }}" href="{{ route('all-packages', ['category' => 'northern-safaris']) }}" class="flex items-center px-4 py-0 text-sm hover:bg-gray-100 rounded-md transition-colors text-black">
+                                        Northern Safaris
                                     </a>
-                                    <a   {{ request('category') === 'safari' ? 'active' : '' }}" href="{{ route('all-packages', ['category' => 'safari']) }}" class="flex items-center px-4 py-1 text-sm hover:bg-gray-100 rounded-md transition-colors text-black" wire:navigate.hover>
-                                        Safaris Packages
+                                    <a   {{ request('category') === 'short-safaris' ? 'active' : '' }}" href="{{ route('all-packages', ['category' => 'short-safaris']) }}" class="flex items-center px-4 py-1 text-sm hover:bg-gray-100 rounded-md transition-colors text-black">
+                                         Short Safaris
                                     </a>
-                                    <a   {{ request('category') === 'kilimanjaro' ? 'active' : '' }}" href="{{ route('all-packages', ['category' => 'kilimanjaro']) }}" class="flex items-center px-4 py-1 text-sm hover:bg-gray-100 rounded-md transition-colors text-black" wire:navigate.hover>
-                                       Kilimanjaro Packages
+                                    <a   {{ request('category') === 'southern-safaris' ? 'active' : '' }}" href="{{ route('all-packages', ['category' => 'southern-safaris']) }}" class="flex items-center px-4 py-1 text-sm hover:bg-gray-100 rounded-md transition-colors text-black">
+                                       Southern Safaris
                                     </a>
                                 </div>
                             </div>
                         </div>
 
-                        <a wire:navigate.hover  href="{{ route('destinations') }}" class="text-white {{ Request::is('destinations*') ? 'bg-white/10' : 'hover:bg-white/10' }} px-4 py-2 rounded-full text-lg font-medium transition-colors" wire:navigate.hover>Destinations</a>
+                        <a href="{{ route('all-packages', ['category' => 'kilimanjaro']) }}" class="text-white {{ request('category') === 'kilimanjaro' ? 'bg-white/10' : 'hover:bg-white/10' }} px-4 py-2 rounded-full text-lg font-medium transition-colors">Kilimanjaro</a>
 
-                        <a   href="{{ route('about') }}" class="text-white {{ Request::is('about*') ? 'bg-white/10' : 'hover:bg-white/10' }} px-4 py-2 rounded-full text-lg font-medium transition-colors" wire:navigate.hover>About</a>
-                        <a  href="{{ route('contact') }}" class="text-white {{ Request::is('contact*') ? 'bg-white/10' : 'hover:bg-white/10' }} px-4 py-2 rounded-full text-lg font-medium transition-colors" wire:navigate.hover>Contact</a>
+                        <a href="{{ route('all-packages', ['category' => 'zanzibar']) }}" class="text-white {{ request('category') === 'zanzibar' ? 'bg-white/10' : 'hover:bg-white/10' }} px-4 py-2 rounded-full text-lg font-medium transition-colors">Zanzibar</a>
+
+                        <a   href="{{ route('about') }}" class="text-white {{ Request::is('about*') ? 'bg-white/10' : 'hover:bg-white/10' }} px-4 py-2 rounded-full text-lg font-medium transition-colors">About</a>
+                        <a  href="{{ route('contact') }}" class="text-white {{ Request::is('contact*') ? 'bg-white/10' : 'hover:bg-white/10' }} px-4 py-2 rounded-full text-lg font-medium transition-colors">Contact</a>
                     </div>
                 </div>
 
                 <!-- Book Now Button -->
                 <div class="hidden lg:block">
-                    <a  href="{{ route('contact') }}" class="bg-white text-gray-900 px-6 py-2 rounded-full text-sm font-medium hover:bg-gray-100 transition-colors" wire:navigate.hover >
+                    <a  href="{{ route('contact') }}" class="bg-white text-gray-900 px-6 py-2 rounded-full text-sm font-medium hover:bg-gray-100 transition-colors">
                         Enquiry Now
                     </a>
                 </div>
@@ -84,36 +86,38 @@
         <!-- Mobile Menu -->
         <div class="hidden lg:hidden bg-white shadow-lg rounded-lg mx-2 my-1" id="mobile-menu" style="text-align: left;">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <a   href="/" class="block px-3 py-2 rounded-md text-base font-medium {{ Request::is('/') ? 'bg-gray-100 text-gray-900' : 'text-gray-700 hover:bg-gray-100' }}" wire:navigate.hover>Home</a>
+                <a   href="/" class="block px-3 py-2 rounded-md text-base font-medium {{ Request::is('/') ? 'bg-gray-100 text-gray-900' : 'text-gray-700 hover:bg-gray-100' }}">Home</a>
                 
                 <!-- Safaris Mobile Dropdown -->
                 <div x-data="{ open: false }" class="relative">
-                    <button @click="open = !open" class="w-full flex justify-between items-center px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-100 {{ in_array(request('category'), ['safari', 'zanzibar', 'kilimanjaro']) ? 'active' : '' }}" wire:navigate.hover>
-                        <span>Packages</span>
+                    <button @click="open = !open" class="w-full flex justify-between items-center px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-100 {{ in_array(request('category'), ['northern-safaris', 'short-safaris', 'southern-safaris']) ? 'active' : '' }}">
+                        <span>Safaris</span>
                         <svg class="w-4 h-4 ml-1 transition-transform duration-200" :class="{'transform rotate-180': open}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                         </svg>
                     </button>
                     <div x-show="open" x-collapse class="pl-4 space-y-1">
-                        <a  href="{{ route('all-packages') }}" class="block px-3 py-2 text-sm text-gray-600 hover:bg-gray-50 rounded-md {{ !request('category') ? 'active' : '' }}" wire:navigate.hover>
-                            All Packages
+                        <a  href="{{ route('all-packages', ['category' => 'northern-safaris']) }}" class="block px-3 py-2 text-sm text-gray-600 hover:bg-gray-50 rounded-md {{ request('category') === 'northern-safaris' ? 'active' : '' }}">
+                            Northern Safaris
                         </a>
-                        <a  href="{{ route('all-packages', ['category' => 'safari']) }}" class="block px-3 py-2 text-sm text-gray-600 hover:bg-gray-50 rounded-md {{ request('category') === 'safari' ? 'active' : '' }}" wire:navigate.hover>
-                            Safaris Packages
+                        <a  href="{{ route('all-packages', ['category' => 'short-safaris']) }}" class="block px-3 py-2 text-sm text-gray-600 hover:bg-gray-50 rounded-md {{ request('category') === 'short-safaris' ? 'active' : '' }}">
+                            Short Safaris
                         </a>
-                        <a  href="{{ route('all-packages', ['category' => 'kilimanjaro']) }}" class="block px-3 py-2 text-sm text-gray-600 hover:bg-gray-50 rounded-md {{ request('category') === 'kilimanjaro' ? 'active' : '' }}" wire:navigate.hover>
-                            Kilimanjaro Packages
+                        <a  href="{{ route('all-packages', ['category' => 'southern-safaris']) }}" class="block px-3 py-2 text-sm text-gray-600 hover:bg-gray-50 rounded-md {{ request('category') === 'southern-safaris' ? 'active' : '' }}">
+                            Southern Safaris
                         </a>
                     </div>
                 </div>
                 
-                <a href="{{ route('destinations') }}" class="block px-3 py-2 rounded-md text-base font-medium {{ Request::is('destinations*') ? 'bg-gray-100 text-gray-900' : 'text-gray-700 hover:bg-gray-100' }}" wire:navigate.hover>Destinations</a>
+                <a href="{{ route('all-packages', ['category' => 'kilimanjaro']) }}" class="block px-3 py-2 rounded-md text-base font-medium {{ request('category') === 'kilimanjaro' ? 'bg-gray-100 text-gray-900' : 'text-gray-700 hover:bg-gray-100' }}">Kilimanjaro</a>
+
+                <a href="{{ route('all-packages', ['category' => 'zanzibar']) }}" class="block px-3 py-2 rounded-md text-base font-medium {{ request('category') === 'zanzibar' ? 'bg-gray-100 text-gray-900' : 'text-gray-700 hover:bg-gray-100' }}">Zanzibar</a>
                 
-                <a href="{{ route('about') }}" class="block px-3 py-2 rounded-md text-base font-medium {{ Request::is('about*') ? 'bg-gray-100 text-gray-900' : 'text-gray-700 hover:bg-gray-100' }}" wire:navigate.hover>About</a>
-                <a href="{{ route('contact') }}" class="block px-3 py-2 rounded-md text-base font-medium {{ Request::is('contact*') ? 'bg-gray-100 text-gray-900' : 'text-gray-700 hover:bg-gray-100' }}" wire:navigate.hover>Contact</a>
+                <a href="{{ route('about') }}" class="block px-3 py-2 rounded-md text-base font-medium {{ Request::is('about*') ? 'bg-gray-100 text-gray-900' : 'text-gray-700 hover:bg-gray-100' }}">About</a>
+                <a href="{{ route('contact') }}" class="block px-3 py-2 rounded-md text-base font-medium {{ Request::is('contact*') ? 'bg-gray-100 text-gray-900' : 'text-gray-700 hover:bg-gray-100' }}">Contact</a>
                 
                 <div class="flex justify-center px-3">
-                    <a wire:navigate.hover  href="{{ route('book-now') }}" class="w-full bg-amber-600 text-white px-4 py-2 rounded-md text-base font-medium hover:bg-amber-700 mt-2 transition-colors text-center" wire:navigate.hover>
+                    <a href="{{ route('book-now') }}" class="w-full bg-amber-600 text-white px-4 py-2 rounded-md text-base font-medium hover:bg-amber-700 mt-2 transition-colors text-center">
                         Enquiry Now
                     </a>
                 </div>

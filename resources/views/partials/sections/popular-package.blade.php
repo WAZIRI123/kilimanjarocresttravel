@@ -25,7 +25,7 @@ $tabs = [];
 $categoryNames = [
     'safari' => 'safari',
     'kilimanjaro' => 'kilimanjaro',
-    'zanzibar' => 'honeymoon',
+    'zanzibar' => 'zanzibar',
     // Add more category mappings as needed
 ];
 
@@ -97,7 +97,7 @@ foreach ($categoryNames as $id => $name) {
                             </div>
                             
                             <div class="mt-6">
-                                <a href="/packages/{{ $package['slug'] }}" class="w-full inline-flex justify-center items-center px-6 py-3 border ring-offset-background border-transparent text-white text-lg font-medium rounded-md outline-double outline-1 outline-gray-300  bg-black hover:bg-black transition-colors duration-200" wire:navigate.hover>
+                                <a href="/packages/{{ $package['slug'] }}" class="w-full inline-flex justify-center items-center px-6 py-3 border ring-offset-background border-transparent text-white text-lg font-medium rounded-md outline-double outline-1 outline-gray-300 bg-black hover:bg-black transition-colors duration-200">
                                     Book Now
                                     <svg class="ml-2 -mr-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
@@ -111,7 +111,7 @@ foreach ($categoryNames as $id => $name) {
                 
                 <!-- View All Button -->
                 <div class="mt-10 text-center">
-                    <a href="{{ route('all-packages', ['category' => $tab['name']]) }}" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-black transition-colors duration-200" wire:navigate.hover>
+                    <a href="{{ route('all-packages', ['category' => $tab['name']]) }}" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-black transition-colors duration-200">
                         View All {{ $tab['name'] }} Packages
                         <svg class="ml-2 -mr-1 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />

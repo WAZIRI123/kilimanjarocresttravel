@@ -1,1 +1,1 @@
-   <div class="w-20 h-[1px] bg-gray-400 mb-6 lg:mx-0 sm:mx-auto"></div>
+   <div class="w-20 h-[1px] bg-gray-400 mb-6 lg:mx-0 mx-auto"></div>

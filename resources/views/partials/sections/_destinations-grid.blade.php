@@ -10,8 +10,8 @@ $latestKilimanjaro = \App\Models\Package::where('is_active', true)
     ->orderBy('id', 'desc')
     ->first();
 
-$latestHoneymoon = \App\Models\Package::where('is_active', true)
-    ->where('category', 'honeymoon')
+$latestzanzibar = \App\Models\Package::where('is_active', true)
+    ->where('category', 'zanzibar')
     ->orderBy('created_at', 'desc')
     ->orderBy('id', 'desc')
     ->first();
@@ -62,7 +62,7 @@ $latestHoneymoon = \App\Models\Package::where('is_active', true)
             <!-- Destination Card 3 -->
             <a href="#" class="destination-card block shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <div class="card-image">
-                    <img src="{{asset('storage/' . $latestHoneymoon->featured_image)}}" alt="Amboseli National Park">                    <div class="card-overlay">
+                    <img src="{{asset('storage/' . $latestzanzibar->featured_image)}}" alt="Amboseli National Park">                    <div class="card-overlay">
                         <div class="flex flex-col h-full justify-between py-6">
                             <div class="mt-auto w-full">
                                 <div class="flex flex-row justify-center items-center w-full">

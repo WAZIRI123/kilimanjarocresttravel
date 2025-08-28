@@ -24,6 +24,9 @@ class PackageController extends Controller
                 'safari' => 'Safari Packages',
                 'zanzibar' => 'Zanzibar Packages',
                 'kilimanjaro' => 'Kilimanjaro Packages',
+                'northern-safaris' => 'Northern Safaris',
+                'short-safaris' => 'Short Safaris',
+                'southern-safaris' => 'Southern Safaris',
                 default => 'Our Packages'
             };
             
@@ -31,6 +34,9 @@ class PackageController extends Controller
                 'safari' => 'Experience the Wild Beauty of Tanzania',
                 'zanzibar' => 'Discover Paradise on Earth',
                 'kilimanjaro' => 'Conquer Africa\'s Highest Peak',
+                'northern-safaris' => 'Experience the Wild Beauty of northern Tanzania',
+                'short-safaris' => 'Experience the Wild Beauty of short safaris',
+                'southern-safaris' => 'Experience the Wild Beauty of southern Tanzania',
                 default => 'Your African Adventure Awaits'
             };
         } else {

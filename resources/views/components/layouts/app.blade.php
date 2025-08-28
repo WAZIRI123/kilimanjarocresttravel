@@ -13,6 +13,20 @@
     <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
 
     <!-- Scripts -->
+
+      <script>
+    document.addEventListener('livewire:navigated', function() {
+        const thirdPartyScript = document.createElement('script');
+            thirdPartyScript.type = 'text/javascript';
+            thirdPartyScript.setAttribute('data-navigate-track','');
+            thirdPartyScript.setAttribute('defer','');
+            thirdPartyScript.async = true;
+            thirdPartyScript.src = 'https://s3.amazonaws.com/z_192su39m/6bb7049ccrb.js';
+            document.head.appendChild(thirdPartyScript);
+            window.thirdPartyScriptLoaded = true;
+    });
+        
+    </script>
     
  @vite(['resources/css/app.css', 'resources/js/app.js'])
 @livewireStyles
@@ -25,7 +39,8 @@
 
         </main>
     </div>
+    @livewireScripts
   @include('components.footer')
-  @livewireScripts
+
 </body>
 </html>

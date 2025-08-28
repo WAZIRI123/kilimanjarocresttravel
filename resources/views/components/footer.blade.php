@@ -17,11 +17,11 @@
                 <h3 class="text-lg font-bold lg:text-left text-center">Quick Links</h3>
                 @include('partials.sections.divider1')
                 <ul class="mt-4 grid grid-cols-2 gap-2 sm:grid-cols-1 sm:gap-0 sm:space-y-2">
-                    <li class="lg:text-left text-center"><a href="/" class="text-muted-foreground hover:text-foreground transition-colors font-semibold" wire:navigate.hover>Home</a></li>
-                    <li class="lg:text-left text-center" wire:navigate.hover><a href="/about" class="text-muted-foreground hover:text-foreground transition-colors font-semibold" wire:navigate.hover>About Us</a></li>
-                    <li class="lg:text-left text-center" wire:navigate.hover><a href="/all-packages" class="text-muted-foreground hover:text-foreground transition-colors font-semibold" wire:navigate.hover>Safari Tours</a></li>
-                    <li class="lg:text-left text-center" wire:navigate.hover><a href="/destinations" class="text-muted-foreground hover:text-foreground transition-colors font-semibold" wire:navigate.hover>Destinations</a></li>
-                    <li class="lg:text-left text-center sm:col-span-2 md:col-span-1" wire:navigate.hover><a href="/contact" class="text-muted-foreground hover:text-foreground transition-colors font-semibold" wire:navigate.hover>Contact Us</a></li>
+                    <li class="lg:text-left text-center"><a href="/" class="text-muted-foreground hover:text-foreground transition-colors font-semibold">Home</a></li>
+                    <li class="lg:text-left text-center"><a href="/about" class="text-muted-foreground hover:text-foreground transition-colors font-semibold">About Us</a></li>
+                    <li class="lg:text-left text-center"><a href="/all-packages" class="text-muted-foreground hover:text-foreground transition-colors font-semibold">Safari Tours</a></li>
+                    <li class="lg:text-left text-center"><a href="/destinations" class="text-muted-foreground hover:text-foreground transition-colors font-semibold">Destinations</a></li>
+                    <li class="lg:text-left text-center sm:col-span-2 md:col-span-1"><a href="/contact" class="text-muted-foreground hover:text-foreground transition-colors font-semibold">Contact Us</a></li>
                 </ul>
             </div>
 
@@ -109,22 +109,6 @@
             </div>
         </div>
         </div>
-           <div class="gtranslate_wrapper"></div>
-<script>window.gtranslateSettings = {"default_language":"en","languages":["en","fr","it","es","de","hi","ru","zh-CN","sw"],"wrapper_selector":".gtranslate_wrapper","alt_flags":{"en":"usa","pt":"brazil","es":"colombia","fr":"quebec"}}</script>
-<script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer></script>
+    <div class="gtranslate_wrapper"></div>
 
-<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/68a9d6b64ebc491927e0fe29/1j3bmtep5';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-
-<!--End of Tawk.to Script-->
 </footer>

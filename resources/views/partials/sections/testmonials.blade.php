@@ -137,12 +137,15 @@ data-testid="section-container">
             flex-grow: 1;
         }
 
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+        
         .testimonial-text {
-            font-family: 'Dancing Script', cursive;
+            font-family: 'Dancing Script', 'Brush Script MT', 'Segoe Script', 'Segoe UI', 'Comic Sans MS', cursive, serif;
             font-size: 1.5em;
             line-height: 1.5;
             color: #333;
             margin-bottom: 15px;
+            font-weight: 500;
         }
 
         .quote-mark {

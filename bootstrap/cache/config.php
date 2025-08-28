@@ -6,10 +6,10 @@
   14 => 'view',
   'app' => 
   array (
-    'name' => 'Stan-Safaris',
+    'name' => 'Crowned-Wild-Africa',
     'env' => 'local',
     'debug' => true,
-    'url' => 'http://127.0.0.1:8081',
+    'url' => 'https://stan.test',
     'frontend_url' => 'http://localhost:3000',
     'asset_url' => NULL,
     'timezone' => 'UTC',
@@ -160,8 +160,8 @@
       'file' => 
       array (
         'driver' => 'file',
-        'path' => 'C:\\Users\\hp\\CascadeProjects\\stan-safari\\storage\\framework/cache/data',
-        'lock_path' => 'C:\\Users\\hp\\CascadeProjects\\stan-safari\\storage\\framework/cache/data',
+        'path' => 'C:\\laragon\\www\\stan\\storage\\framework/cache/data',
+        'lock_path' => 'C:\\laragon\\www\\stan\\storage\\framework/cache/data',
       ),
       'memcached' => 
       array (
@@ -205,7 +205,7 @@
         'driver' => 'octane',
       ),
     ),
-    'prefix' => 'stan_safaris_cache_',
+    'prefix' => 'crowned_wild_africa_cache_',
   ),
   'contact' => 
   array (
@@ -251,7 +251,7 @@
       array (
         'driver' => 'sqlite',
         'url' => NULL,
-        'database' => 'C:\\Users\\hp\\CascadeProjects\\stan-safari\\database\\database.sqlite',
+        'database' => 'C:\\laragon\\www\\stan\\database\\database.sqlite',
         'prefix' => '',
         'foreign_key_constraints' => true,
         'busy_timeout' => NULL,
@@ -338,7 +338,7 @@
       'options' => 
       array (
         'cluster' => 'redis',
-        'prefix' => 'stan_safaris_database_',
+        'prefix' => 'crowned_wild_africa_database_',
         'persistent' => false,
       ),
       'default' => 
@@ -369,7 +369,7 @@
       'local' => 
       array (
         'driver' => 'local',
-        'root' => 'C:\\Users\\hp\\CascadeProjects\\stan-safari\\storage\\app/private',
+        'root' => 'C:\\laragon\\www\\stan\\storage\\app/private',
         'serve' => true,
         'throw' => false,
         'report' => false,
@@ -377,8 +377,8 @@
       'public' => 
       array (
         'driver' => 'local',
-        'root' => 'C:\\Users\\hp\\CascadeProjects\\stan-safari\\storage\\app/public',
-        'url' => 'http://127.0.0.1:8081/storage',
+        'root' => 'C:\\laragon\\www\\stan\\storage\\app/public',
+        'url' => 'https://stan.test/storage',
         'visibility' => 'public',
         'throw' => false,
         'report' => false,
@@ -399,13 +399,13 @@
     ),
     'links' => 
     array (
-      'C:\\Users\\hp\\CascadeProjects\\stan-safari\\public\\storage' => 'C:\\Users\\hp\\CascadeProjects\\stan-safari\\storage\\app/public',
+      'C:\\laragon\\www\\stan\\public\\storage' => 'C:\\laragon\\www\\stan\\storage\\app/public',
     ),
   ),
   'livewire' => 
   array (
     'class_namespace' => 'App\\Livewire',
-    'view_path' => 'C:\\Users\\hp\\CascadeProjects\\stan-safari\\resources\\views/livewire',
+    'view_path' => 'C:\\laragon\\www\\stan\\resources\\views/livewire',
     'layout' => 'components.layouts.app',
     'lazy_placeholder' => NULL,
     'temporary_file_upload' => 
@@ -469,14 +469,14 @@
       'single' => 
       array (
         'driver' => 'single',
-        'path' => 'C:\\Users\\hp\\CascadeProjects\\stan-safari\\storage\\logs/laravel.log',
+        'path' => 'C:\\laragon\\www\\stan\\storage\\logs/laravel.log',
         'level' => 'debug',
         'replace_placeholders' => true,
       ),
       'daily' => 
       array (
         'driver' => 'daily',
-        'path' => 'C:\\Users\\hp\\CascadeProjects\\stan-safari\\storage\\logs/laravel.log',
+        'path' => 'C:\\laragon\\www\\stan\\storage\\logs/laravel.log',
         'level' => 'debug',
         'days' => 14,
         'replace_placeholders' => true,
@@ -541,7 +541,7 @@
       ),
       'emergency' => 
       array (
-        'path' => 'C:\\Users\\hp\\CascadeProjects\\stan-safari\\storage\\logs/laravel.log',
+        'path' => 'C:\\laragon\\www\\stan\\storage\\logs/laravel.log',
       ),
     ),
   ),
@@ -560,7 +560,7 @@
         'username' => '9dbbe755190c8e',
         'password' => '6cadeef95f0688',
         'timeout' => NULL,
-        'local_domain' => '127.0.0.1',
+        'local_domain' => 'stan.test',
       ),
       'ses' => 
       array (
@@ -612,14 +612,14 @@
     'from' => 
     array (
       'address' => 'contact@testing.com',
-      'name' => 'Stan-Safaris',
+      'name' => 'Crowned-Wild-Africa',
     ),
     'markdown' => 
     array (
       'theme' => 'default',
       'paths' => 
       array (
-        0 => 'C:\\Users\\hp\\CascadeProjects\\stan-safari\\resources\\views/vendor/mail',
+        0 => 'C:\\laragon\\www\\stan\\resources\\views/vendor/mail',
       ),
     ),
   ),
@@ -689,15 +689,15 @@
     array (
       'token' => NULL,
     ),
+    'resend' => 
+    array (
+      'key' => NULL,
+    ),
     'ses' => 
     array (
       'key' => '',
       'secret' => '',
       'region' => 'us-east-1',
-    ),
-    'resend' => 
-    array (
-      'key' => NULL,
     ),
     'slack' => 
     array (
@@ -714,7 +714,7 @@
     'lifetime' => 120,
     'expire_on_close' => false,
     'encrypt' => false,
-    'files' => 'C:\\Users\\hp\\CascadeProjects\\stan-safari\\storage\\framework/sessions',
+    'files' => 'C:\\laragon\\www\\stan\\storage\\framework/sessions',
     'connection' => NULL,
     'table' => 'sessions',
     'store' => NULL,
@@ -723,7 +723,7 @@
       0 => 2,
       1 => 100,
     ),
-    'cookie' => 'stan_safaris_session',
+    'cookie' => 'crowned_wild_africa_session',
     'path' => '/',
     'domain' => NULL,
     'secure' => NULL,
@@ -841,9 +841,9 @@
   array (
     'paths' => 
     array (
-      0 => 'C:\\Users\\hp\\CascadeProjects\\stan-safari\\resources\\views',
+      0 => 'C:\\laragon\\www\\stan\\resources\\views',
     ),
-    'compiled' => 'C:\\Users\\hp\\CascadeProjects\\stan-safari\\storage\\framework\\views',
+    'compiled' => 'C:\\laragon\\www\\stan\\storage\\framework\\views',
   ),
   'blade-heroicons' => 
   array (
@@ -877,7 +877,7 @@
     ),
     'default_filesystem_disk' => 'public',
     'assets_path' => NULL,
-    'cache_path' => 'C:\\Users\\hp\\CascadeProjects\\stan-safari\\bootstrap/cache/filament',
+    'cache_path' => 'C:\\laragon\\www\\stan\\bootstrap/cache/filament',
     'livewire_loading_delay' => 'default',
     'system_route_prefix' => 'filament',
   ),

@@ -1,3 +1,77 @@
+/* Text Image Section */
+.text-image-section {
+    padding: 4rem 1rem;
+    background-color: #f9fafb;
+}
+
+.text-image-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.text-image-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+.text-content h2 {
+    font-size: 2rem;
+    color: #1a202c;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+.text-content p {
+    font-size: 1.125rem;
+    color: #4a5568;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #3182ce;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.375rem;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+.cta-button:hover {
+    background-color: #2c5282;
+}
+
+.image-container {
+    position: relative;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    height: 24rem;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .text-image-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .text-content h2 {
+        font-size: 2.5rem;
+    }
+}
+
 /* Safari Destination Cards */
 .cards-section {
     padding: 10px 20px;
@@ -105,8 +179,6 @@
 .likes svg {
     fill: #ff4d4f;
 }
-
-
 
 /* Responsive adjustments */
 @media (max-width: 768px) {

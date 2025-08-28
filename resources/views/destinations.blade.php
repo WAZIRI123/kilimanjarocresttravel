@@ -1,7 +1,5 @@
 @extends('layouts.app')
 
-@section('title', 'All Packages - Stan Safari')
-
 @push('styles')
 <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
 @endpush

@@ -1,13 +1,9 @@
-@extends('layouts.app')
-
-@section('title', 'All Packages - Stan Safari')
+<x-layouts.app>
 
 @push('styles')
 <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
 @endpush
 
-@section('content')
-    <!-- Hero Section -->
     @php
         $heroImages = [
             'safari' => 'storage/images/safari-hero.webp',
@@ -50,8 +46,8 @@
             ])
 
             <!-- Pagination -->
-            <div class="pagination-wrapper" style="margin-top: 2rem; display: flex; justify-content: center;">
-                {{ $packages->links('pagination::bootstrap-4') }}
+            <div class="mt-8 flex justify-center">
+                {{ $packages->onEachSide(1)->links('pagination::tailwind') }}
             </div>
         @else
             <div class="no-packages-wrapper" style="min-height: 60vh; display: flex; align-items: center; justify-content: center; padding: 1rem; font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; color: #333; box-sizing: border-box;">
@@ -68,14 +64,14 @@
                     <p style="color: #5d6d7e; font-size: clamp(0.95rem, 3vw, 1.1rem); margin: 0 auto 2rem; line-height: 1.7; max-width: 580px; padding: 0 0.5rem; box-sizing: border-box;">We're currently updating our collection of amazing safari experiences. Check back soon for our latest adventures or contact us for personalized recommendations.</p>
                     
                     <div class="cta-buttons" style="display: flex; flex-direction: column; gap: 0.75rem; width: 100%; max-width: 280px; margin: 0 auto; box-sizing: border-box; position: relative; z-index: 100;">
-                        <a href="{{ route('contact') }}" class="btn-primary" style="display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; background: #4d4402; color: white; padding: 0.8rem 1.5rem; border-radius: 6px; text-decoration: none; font-weight: 500; transition: all 0.3s ease; font-size: 1rem; white-space: nowrap; border: 2px solid transparent; width: 100%; box-sizing: border-box; cursor: pointer; position: relative; z-index: 101; pointer-events: auto;">
+                        <a href="{{ route('contact') }}" class="btn-primary" style="display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; background: #4d4402; color: white; padding: 0.8rem 1.5rem; border-radius: 6px; text-decoration: none; font-weight: 500; transition: all 0.3s ease; font-size: 1rem; white-space: nowrap; border: 2px solid transparent; width: 100%; box-sizing: border-box; cursor: pointer; position: relative; z-index: 101; pointer-events: auto;" wire:navigate.hover>
                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail">
                                 <rect width="20" height="16" x="2" y="4" rx="2"></rect>
                                 <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
                             </svg>
                             Contact Us
                         </a>
-                        <a href="{{ route('home') }}" class="btn-secondary" style="display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; background: #f5f2ed; color: #4d4402; padding: 0.8rem 1.5rem; border-radius: 6px; text-decoration: none; font-weight: 500; transition: all 0.3s ease; font-size: 1rem; white-space: nowrap; border: 2px solid #e0d9cc; width: 100%; box-sizing: border-box; cursor: pointer; position: relative; z-index: 101; pointer-events: auto;">
+                        <a href="{{ route('home') }}" class="btn-secondary" style="display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; background: #f5f2ed; color: #4d4402; padding: 0.8rem 1.5rem; border-radius: 6px; text-decoration: none; font-weight: 500; transition: all 0.3s ease; font-size: 1rem; white-space: nowrap; border: 2px solid #e0d9cc; width: 100%; box-sizing: border-box; cursor: pointer; position: relative; z-index: 101; pointer-events: auto;" wire:navigate.hover>
                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-home">
                                 <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
                                 <polyline points="9 22 9 12 15 12 15 22"></polyline>
@@ -154,7 +150,6 @@
             </style>
         @endif
     </div>
-@endsection
 
 @push('styles')
 <style>
@@ -224,7 +219,7 @@
 @push('styles')
     <!-- Additional page-specific styles -->
     <style>
-        .P0dCOY .PJ4KCX {
+    .P0dCOY .PJ4KCX {
     background-color: rgba(255, 255, 255, 1);
     bottom: 0;
     left: 0;
@@ -261,3 +256,5 @@
 @push('scripts')
     <!-- Additional page-specific scripts -->
 @endpush
+
+</x-layouts.app>

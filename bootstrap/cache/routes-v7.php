@@ -86,86 +86,6 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      '/admin/discover-africa-bests' => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'filament.admin.resources.discover-africa-bests.index',
-          ),
-          1 => NULL,
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      '/admin/discover-africa-bests/create' => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'filament.admin.resources.discover-africa-bests.create',
-          ),
-          1 => NULL,
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      '/admin/experience-africas' => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'filament.admin.resources.experience-africas.index',
-          ),
-          1 => NULL,
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      '/admin/experience-africas/create' => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'filament.admin.resources.experience-africas.create',
-          ),
-          1 => NULL,
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
       '/admin/packages' => 
       array (
         0 => 
@@ -206,326 +126,6 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      '/admin/section-eights' => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'filament.admin.resources.section-eights.index',
-          ),
-          1 => NULL,
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      '/admin/section-eights/create' => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'filament.admin.resources.section-eights.create',
-          ),
-          1 => NULL,
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      '/admin/section-fives' => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'filament.admin.resources.section-fives.index',
-          ),
-          1 => NULL,
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      '/admin/section-fives/create' => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'filament.admin.resources.section-fives.create',
-          ),
-          1 => NULL,
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      '/admin/section-fours' => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'filament.admin.resources.section-fours.index',
-          ),
-          1 => NULL,
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      '/admin/section-fours/create' => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'filament.admin.resources.section-fours.create',
-          ),
-          1 => NULL,
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      '/admin/section-nines' => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'filament.admin.resources.section-nines.index',
-          ),
-          1 => NULL,
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      '/admin/section-nines/create' => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'filament.admin.resources.section-nines.create',
-          ),
-          1 => NULL,
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      '/admin/section-sevens' => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'filament.admin.resources.section-sevens.index',
-          ),
-          1 => NULL,
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      '/admin/section-sevens/create' => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'filament.admin.resources.section-sevens.create',
-          ),
-          1 => NULL,
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      '/admin/section-sixes' => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'filament.admin.resources.section-sixes.index',
-          ),
-          1 => NULL,
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      '/admin/section-sixes/create' => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'filament.admin.resources.section-sixes.create',
-          ),
-          1 => NULL,
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      '/admin/section-tens' => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'filament.admin.resources.section-tens.index',
-          ),
-          1 => NULL,
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      '/admin/section-tens/create' => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'filament.admin.resources.section-tens.create',
-          ),
-          1 => NULL,
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      '/admin/video-sections' => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'filament.admin.resources.video-sections.index',
-          ),
-          1 => NULL,
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      '/admin/video-sections/create' => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'filament.admin.resources.video-sections.create',
-          ),
-          1 => NULL,
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
       '/livewire/update' => 
       array (
         0 => 
@@ -551,7 +151,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::JoR8y5lqjK7a0o88',
+            '_route' => 'generated::B5jn2ixI1JWxebPp',
           ),
           1 => NULL,
           2 => 
@@ -571,7 +171,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::aq6KyGAOHAntZKlj',
+            '_route' => 'generated::0Wktm5MApciFkAkI',
           ),
           1 => NULL,
           2 => 
@@ -610,7 +210,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::XdneDKfMDhw9q44q',
+            '_route' => 'generated::sx6uhj3LkUY7InhS',
           ),
           1 => NULL,
           2 => 
@@ -630,7 +230,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::iueE57ZOynf0Gzbo',
+            '_route' => 'generated::upQcOOWS2JCxi9DD',
           ),
           1 => NULL,
           2 => 
@@ -740,6 +340,26 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
+      '/clear-cache' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'clear.cache',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
       '/book-now' => 
       array (
         0 => 
@@ -823,7 +443,7 @@ app('router')->setCompiledRoutes(
     ),
     2 => 
     array (
-      0 => '{^(?|/filament/(?|exports/([^/]++)/download(*:45)|imports/([^/]++)/failed\\-rows/download(*:90))|/admin/(?|bookings/([^/]++)(*:125)|discover\\-africa\\-bests/([^/]++)/edit(*:170)|experience\\-africas/([^/]++)/edit(*:211)|packages/([^/]++)(?|/edit(*:244)|(*:252))|section\\-(?|eights/([^/]++)/edit(*:293)|f(?|ives/([^/]++)/edit(*:323)|ours/([^/]++)/edit(*:349))|nines/([^/]++)/edit(*:377)|s(?|evens/([^/]++)/edit(*:408)|ixes/([^/]++)/edit(*:434))|tens/([^/]++)/edit(*:461))|video\\-sections/([^/]++)/edit(*:499))|/livewire/preview\\-file/([^/]++)(*:540)|/packages/([^/]++)(*:566)|/destinations/([a-z0-9-]+)(*:600)|/storage/(.*)(*:621))/?$}sDu',
+      0 => '{^(?|/filament/(?|exports/([^/]++)/download(*:45)|imports/([^/]++)/failed\\-rows/download(*:90))|/admin/(?|bookings/([^/]++)(*:125)|packages/([^/]++)(?|/edit(*:158)|(*:166)))|/livewire/preview\\-file/([^/]++)(*:208)|/packages/([^/]++)(*:234)|/destinations/([a-z0-9-]+)(*:268)|/storage/(.*)(*:289))/?$}sDu',
     ),
     3 => 
     array (
@@ -896,53 +516,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      170 => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'filament.admin.resources.discover-africa-bests.edit',
-          ),
-          1 => 
-          array (
-            0 => 'record',
-          ),
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      211 => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'filament.admin.resources.experience-africas.edit',
-          ),
-          1 => 
-          array (
-            0 => 'record',
-          ),
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      244 => 
+      158 => 
       array (
         0 => 
         array (
@@ -965,7 +539,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      252 => 
+      166 => 
       array (
         0 => 
         array (
@@ -988,191 +562,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      293 => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'filament.admin.resources.section-eights.edit',
-          ),
-          1 => 
-          array (
-            0 => 'record',
-          ),
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      323 => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'filament.admin.resources.section-fives.edit',
-          ),
-          1 => 
-          array (
-            0 => 'record',
-          ),
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      349 => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'filament.admin.resources.section-fours.edit',
-          ),
-          1 => 
-          array (
-            0 => 'record',
-          ),
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      377 => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'filament.admin.resources.section-nines.edit',
-          ),
-          1 => 
-          array (
-            0 => 'record',
-          ),
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      408 => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'filament.admin.resources.section-sevens.edit',
-          ),
-          1 => 
-          array (
-            0 => 'record',
-          ),
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      434 => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'filament.admin.resources.section-sixes.edit',
-          ),
-          1 => 
-          array (
-            0 => 'record',
-          ),
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      461 => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'filament.admin.resources.section-tens.edit',
-          ),
-          1 => 
-          array (
-            0 => 'record',
-          ),
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      499 => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'filament.admin.resources.video-sections.edit',
-          ),
-          1 => 
-          array (
-            0 => 'record',
-          ),
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      540 => 
+      208 => 
       array (
         0 => 
         array (
@@ -1195,7 +585,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      566 => 
+      234 => 
       array (
         0 => 
         array (
@@ -1218,7 +608,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      600 => 
+      268 => 
       array (
         0 => 
         array (
@@ -1241,7 +631,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      621 => 
+      289 => 
       array (
         0 => 
         array (
@@ -1600,312 +990,6 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'filament.admin.resources.discover-africa-bests.index' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'GET',
-        1 => 'HEAD',
-      ),
-      'uri' => 'admin/discover-africa-bests',
-      'action' => 
-      array (
-        'domain' => NULL,
-        'middleware' => 
-        array (
-          0 => 'panel:admin',
-          1 => 'Illuminate\\Cookie\\Middleware\\EncryptCookies',
-          2 => 'Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse',
-          3 => 'Illuminate\\Session\\Middleware\\StartSession',
-          4 => 'Filament\\Http\\Middleware\\AuthenticateSession',
-          5 => 'Illuminate\\View\\Middleware\\ShareErrorsFromSession',
-          6 => 'Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken',
-          7 => 'Illuminate\\Routing\\Middleware\\SubstituteBindings',
-          8 => 'Filament\\Http\\Middleware\\DisableBladeIconComponents',
-          9 => 'Filament\\Http\\Middleware\\DispatchServingFilamentEvent',
-          10 => 'Filament\\Http\\Middleware\\Authenticate',
-        ),
-        'excluded_middleware' => 
-        array (
-        ),
-        'uses' => 'App\\Filament\\Resources\\DiscoverAfricaBestResource\\Pages\\ListDiscoverAfricaBests@__invoke',
-        'controller' => 'App\\Filament\\Resources\\DiscoverAfricaBestResource\\Pages\\ListDiscoverAfricaBests',
-        'as' => 'filament.admin.resources.discover-africa-bests.index',
-        'namespace' => NULL,
-        'prefix' => 'admin/discover-africa-bests',
-        'where' => 
-        array (
-        ),
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'filament.admin.resources.discover-africa-bests.create' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'GET',
-        1 => 'HEAD',
-      ),
-      'uri' => 'admin/discover-africa-bests/create',
-      'action' => 
-      array (
-        'domain' => NULL,
-        'middleware' => 
-        array (
-          0 => 'panel:admin',
-          1 => 'Illuminate\\Cookie\\Middleware\\EncryptCookies',
-          2 => 'Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse',
-          3 => 'Illuminate\\Session\\Middleware\\StartSession',
-          4 => 'Filament\\Http\\Middleware\\AuthenticateSession',
-          5 => 'Illuminate\\View\\Middleware\\ShareErrorsFromSession',
-          6 => 'Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken',
-          7 => 'Illuminate\\Routing\\Middleware\\SubstituteBindings',
-          8 => 'Filament\\Http\\Middleware\\DisableBladeIconComponents',
-          9 => 'Filament\\Http\\Middleware\\DispatchServingFilamentEvent',
-          10 => 'Filament\\Http\\Middleware\\Authenticate',
-        ),
-        'excluded_middleware' => 
-        array (
-        ),
-        'uses' => 'App\\Filament\\Resources\\DiscoverAfricaBestResource\\Pages\\CreateDiscoverAfricaBest@__invoke',
-        'controller' => 'App\\Filament\\Resources\\DiscoverAfricaBestResource\\Pages\\CreateDiscoverAfricaBest',
-        'as' => 'filament.admin.resources.discover-africa-bests.create',
-        'namespace' => NULL,
-        'prefix' => 'admin/discover-africa-bests',
-        'where' => 
-        array (
-        ),
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'filament.admin.resources.discover-africa-bests.edit' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'GET',
-        1 => 'HEAD',
-      ),
-      'uri' => 'admin/discover-africa-bests/{record}/edit',
-      'action' => 
-      array (
-        'domain' => NULL,
-        'middleware' => 
-        array (
-          0 => 'panel:admin',
-          1 => 'Illuminate\\Cookie\\Middleware\\EncryptCookies',
-          2 => 'Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse',
-          3 => 'Illuminate\\Session\\Middleware\\StartSession',
-          4 => 'Filament\\Http\\Middleware\\AuthenticateSession',
-          5 => 'Illuminate\\View\\Middleware\\ShareErrorsFromSession',
-          6 => 'Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken',
-          7 => 'Illuminate\\Routing\\Middleware\\SubstituteBindings',
-          8 => 'Filament\\Http\\Middleware\\DisableBladeIconComponents',
-          9 => 'Filament\\Http\\Middleware\\DispatchServingFilamentEvent',
-          10 => 'Filament\\Http\\Middleware\\Authenticate',
-        ),
-        'excluded_middleware' => 
-        array (
-        ),
-        'uses' => 'App\\Filament\\Resources\\DiscoverAfricaBestResource\\Pages\\EditDiscoverAfricaBest@__invoke',
-        'controller' => 'App\\Filament\\Resources\\DiscoverAfricaBestResource\\Pages\\EditDiscoverAfricaBest',
-        'as' => 'filament.admin.resources.discover-africa-bests.edit',
-        'namespace' => NULL,
-        'prefix' => 'admin/discover-africa-bests',
-        'where' => 
-        array (
-        ),
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'filament.admin.resources.experience-africas.index' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'GET',
-        1 => 'HEAD',
-      ),
-      'uri' => 'admin/experience-africas',
-      'action' => 
-      array (
-        'domain' => NULL,
-        'middleware' => 
-        array (
-          0 => 'panel:admin',
-          1 => 'Illuminate\\Cookie\\Middleware\\EncryptCookies',
-          2 => 'Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse',
-          3 => 'Illuminate\\Session\\Middleware\\StartSession',
-          4 => 'Filament\\Http\\Middleware\\AuthenticateSession',
-          5 => 'Illuminate\\View\\Middleware\\ShareErrorsFromSession',
-          6 => 'Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken',
-          7 => 'Illuminate\\Routing\\Middleware\\SubstituteBindings',
-          8 => 'Filament\\Http\\Middleware\\DisableBladeIconComponents',
-          9 => 'Filament\\Http\\Middleware\\DispatchServingFilamentEvent',
-          10 => 'Filament\\Http\\Middleware\\Authenticate',
-        ),
-        'excluded_middleware' => 
-        array (
-        ),
-        'uses' => 'App\\Filament\\Resources\\ExperienceAfricaResource\\Pages\\ListExperienceAfricas@__invoke',
-        'controller' => 'App\\Filament\\Resources\\ExperienceAfricaResource\\Pages\\ListExperienceAfricas',
-        'as' => 'filament.admin.resources.experience-africas.index',
-        'namespace' => NULL,
-        'prefix' => 'admin/experience-africas',
-        'where' => 
-        array (
-        ),
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'filament.admin.resources.experience-africas.create' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'GET',
-        1 => 'HEAD',
-      ),
-      'uri' => 'admin/experience-africas/create',
-      'action' => 
-      array (
-        'domain' => NULL,
-        'middleware' => 
-        array (
-          0 => 'panel:admin',
-          1 => 'Illuminate\\Cookie\\Middleware\\EncryptCookies',
-          2 => 'Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse',
-          3 => 'Illuminate\\Session\\Middleware\\StartSession',
-          4 => 'Filament\\Http\\Middleware\\AuthenticateSession',
-          5 => 'Illuminate\\View\\Middleware\\ShareErrorsFromSession',
-          6 => 'Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken',
-          7 => 'Illuminate\\Routing\\Middleware\\SubstituteBindings',
-          8 => 'Filament\\Http\\Middleware\\DisableBladeIconComponents',
-          9 => 'Filament\\Http\\Middleware\\DispatchServingFilamentEvent',
-          10 => 'Filament\\Http\\Middleware\\Authenticate',
-        ),
-        'excluded_middleware' => 
-        array (
-        ),
-        'uses' => 'App\\Filament\\Resources\\ExperienceAfricaResource\\Pages\\CreateExperienceAfrica@__invoke',
-        'controller' => 'App\\Filament\\Resources\\ExperienceAfricaResource\\Pages\\CreateExperienceAfrica',
-        'as' => 'filament.admin.resources.experience-africas.create',
-        'namespace' => NULL,
-        'prefix' => 'admin/experience-africas',
-        'where' => 
-        array (
-        ),
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'filament.admin.resources.experience-africas.edit' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'GET',
-        1 => 'HEAD',
-      ),
-      'uri' => 'admin/experience-africas/{record}/edit',
-      'action' => 
-      array (
-        'domain' => NULL,
-        'middleware' => 
-        array (
-          0 => 'panel:admin',
-          1 => 'Illuminate\\Cookie\\Middleware\\EncryptCookies',
-          2 => 'Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse',
-          3 => 'Illuminate\\Session\\Middleware\\StartSession',
-          4 => 'Filament\\Http\\Middleware\\AuthenticateSession',
-          5 => 'Illuminate\\View\\Middleware\\ShareErrorsFromSession',
-          6 => 'Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken',
-          7 => 'Illuminate\\Routing\\Middleware\\SubstituteBindings',
-          8 => 'Filament\\Http\\Middleware\\DisableBladeIconComponents',
-          9 => 'Filament\\Http\\Middleware\\DispatchServingFilamentEvent',
-          10 => 'Filament\\Http\\Middleware\\Authenticate',
-        ),
-        'excluded_middleware' => 
-        array (
-        ),
-        'uses' => 'App\\Filament\\Resources\\ExperienceAfricaResource\\Pages\\EditExperienceAfrica@__invoke',
-        'controller' => 'App\\Filament\\Resources\\ExperienceAfricaResource\\Pages\\EditExperienceAfrica',
-        'as' => 'filament.admin.resources.experience-africas.edit',
-        'namespace' => NULL,
-        'prefix' => 'admin/experience-africas',
-        'where' => 
-        array (
-        ),
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
     'filament.admin.resources.packages.index' => 
     array (
       'methods' => 
@@ -2110,1230 +1194,6 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'filament.admin.resources.section-eights.index' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'GET',
-        1 => 'HEAD',
-      ),
-      'uri' => 'admin/section-eights',
-      'action' => 
-      array (
-        'domain' => NULL,
-        'middleware' => 
-        array (
-          0 => 'panel:admin',
-          1 => 'Illuminate\\Cookie\\Middleware\\EncryptCookies',
-          2 => 'Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse',
-          3 => 'Illuminate\\Session\\Middleware\\StartSession',
-          4 => 'Filament\\Http\\Middleware\\AuthenticateSession',
-          5 => 'Illuminate\\View\\Middleware\\ShareErrorsFromSession',
-          6 => 'Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken',
-          7 => 'Illuminate\\Routing\\Middleware\\SubstituteBindings',
-          8 => 'Filament\\Http\\Middleware\\DisableBladeIconComponents',
-          9 => 'Filament\\Http\\Middleware\\DispatchServingFilamentEvent',
-          10 => 'Filament\\Http\\Middleware\\Authenticate',
-        ),
-        'excluded_middleware' => 
-        array (
-        ),
-        'uses' => 'App\\Filament\\Resources\\SectionEightResource\\Pages\\ListSectionEights@__invoke',
-        'controller' => 'App\\Filament\\Resources\\SectionEightResource\\Pages\\ListSectionEights',
-        'as' => 'filament.admin.resources.section-eights.index',
-        'namespace' => NULL,
-        'prefix' => 'admin/section-eights',
-        'where' => 
-        array (
-        ),
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'filament.admin.resources.section-eights.create' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'GET',
-        1 => 'HEAD',
-      ),
-      'uri' => 'admin/section-eights/create',
-      'action' => 
-      array (
-        'domain' => NULL,
-        'middleware' => 
-        array (
-          0 => 'panel:admin',
-          1 => 'Illuminate\\Cookie\\Middleware\\EncryptCookies',
-          2 => 'Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse',
-          3 => 'Illuminate\\Session\\Middleware\\StartSession',
-          4 => 'Filament\\Http\\Middleware\\AuthenticateSession',
-          5 => 'Illuminate\\View\\Middleware\\ShareErrorsFromSession',
-          6 => 'Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken',
-          7 => 'Illuminate\\Routing\\Middleware\\SubstituteBindings',
-          8 => 'Filament\\Http\\Middleware\\DisableBladeIconComponents',
-          9 => 'Filament\\Http\\Middleware\\DispatchServingFilamentEvent',
-          10 => 'Filament\\Http\\Middleware\\Authenticate',
-        ),
-        'excluded_middleware' => 
-        array (
-        ),
-        'uses' => 'App\\Filament\\Resources\\SectionEightResource\\Pages\\CreateSectionEight@__invoke',
-        'controller' => 'App\\Filament\\Resources\\SectionEightResource\\Pages\\CreateSectionEight',
-        'as' => 'filament.admin.resources.section-eights.create',
-        'namespace' => NULL,
-        'prefix' => 'admin/section-eights',
-        'where' => 
-        array (
-        ),
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'filament.admin.resources.section-eights.edit' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'GET',
-        1 => 'HEAD',
-      ),
-      'uri' => 'admin/section-eights/{record}/edit',
-      'action' => 
-      array (
-        'domain' => NULL,
-        'middleware' => 
-        array (
-          0 => 'panel:admin',
-          1 => 'Illuminate\\Cookie\\Middleware\\EncryptCookies',
-          2 => 'Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse',
-          3 => 'Illuminate\\Session\\Middleware\\StartSession',
-          4 => 'Filament\\Http\\Middleware\\AuthenticateSession',
-          5 => 'Illuminate\\View\\Middleware\\ShareErrorsFromSession',
-          6 => 'Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken',
-          7 => 'Illuminate\\Routing\\Middleware\\SubstituteBindings',
-          8 => 'Filament\\Http\\Middleware\\DisableBladeIconComponents',
-          9 => 'Filament\\Http\\Middleware\\DispatchServingFilamentEvent',
-          10 => 'Filament\\Http\\Middleware\\Authenticate',
-        ),
-        'excluded_middleware' => 
-        array (
-        ),
-        'uses' => 'App\\Filament\\Resources\\SectionEightResource\\Pages\\EditSectionEight@__invoke',
-        'controller' => 'App\\Filament\\Resources\\SectionEightResource\\Pages\\EditSectionEight',
-        'as' => 'filament.admin.resources.section-eights.edit',
-        'namespace' => NULL,
-        'prefix' => 'admin/section-eights',
-        'where' => 
-        array (
-        ),
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'filament.admin.resources.section-fives.index' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'GET',
-        1 => 'HEAD',
-      ),
-      'uri' => 'admin/section-fives',
-      'action' => 
-      array (
-        'domain' => NULL,
-        'middleware' => 
-        array (
-          0 => 'panel:admin',
-          1 => 'Illuminate\\Cookie\\Middleware\\EncryptCookies',
-          2 => 'Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse',
-          3 => 'Illuminate\\Session\\Middleware\\StartSession',
-          4 => 'Filament\\Http\\Middleware\\AuthenticateSession',
-          5 => 'Illuminate\\View\\Middleware\\ShareErrorsFromSession',
-          6 => 'Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken',
-          7 => 'Illuminate\\Routing\\Middleware\\SubstituteBindings',
-          8 => 'Filament\\Http\\Middleware\\DisableBladeIconComponents',
-          9 => 'Filament\\Http\\Middleware\\DispatchServingFilamentEvent',
-          10 => 'Filament\\Http\\Middleware\\Authenticate',
-        ),
-        'excluded_middleware' => 
-        array (
-        ),
-        'uses' => 'App\\Filament\\Resources\\SectionFiveResource\\Pages\\ListSectionFives@__invoke',
-        'controller' => 'App\\Filament\\Resources\\SectionFiveResource\\Pages\\ListSectionFives',
-        'as' => 'filament.admin.resources.section-fives.index',
-        'namespace' => NULL,
-        'prefix' => 'admin/section-fives',
-        'where' => 
-        array (
-        ),
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'filament.admin.resources.section-fives.create' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'GET',
-        1 => 'HEAD',
-      ),
-      'uri' => 'admin/section-fives/create',
-      'action' => 
-      array (
-        'domain' => NULL,
-        'middleware' => 
-        array (
-          0 => 'panel:admin',
-          1 => 'Illuminate\\Cookie\\Middleware\\EncryptCookies',
-          2 => 'Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse',
-          3 => 'Illuminate\\Session\\Middleware\\StartSession',
-          4 => 'Filament\\Http\\Middleware\\AuthenticateSession',
-          5 => 'Illuminate\\View\\Middleware\\ShareErrorsFromSession',
-          6 => 'Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken',
-          7 => 'Illuminate\\Routing\\Middleware\\SubstituteBindings',
-          8 => 'Filament\\Http\\Middleware\\DisableBladeIconComponents',
-          9 => 'Filament\\Http\\Middleware\\DispatchServingFilamentEvent',
-          10 => 'Filament\\Http\\Middleware\\Authenticate',
-        ),
-        'excluded_middleware' => 
-        array (
-        ),
-        'uses' => 'App\\Filament\\Resources\\SectionFiveResource\\Pages\\CreateSectionFive@__invoke',
-        'controller' => 'App\\Filament\\Resources\\SectionFiveResource\\Pages\\CreateSectionFive',
-        'as' => 'filament.admin.resources.section-fives.create',
-        'namespace' => NULL,
-        'prefix' => 'admin/section-fives',
-        'where' => 
-        array (
-        ),
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'filament.admin.resources.section-fives.edit' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'GET',
-        1 => 'HEAD',
-      ),
-      'uri' => 'admin/section-fives/{record}/edit',
-      'action' => 
-      array (
-        'domain' => NULL,
-        'middleware' => 
-        array (
-          0 => 'panel:admin',
-          1 => 'Illuminate\\Cookie\\Middleware\\EncryptCookies',
-          2 => 'Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse',
-          3 => 'Illuminate\\Session\\Middleware\\StartSession',
-          4 => 'Filament\\Http\\Middleware\\AuthenticateSession',
-          5 => 'Illuminate\\View\\Middleware\\ShareErrorsFromSession',
-          6 => 'Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken',
-          7 => 'Illuminate\\Routing\\Middleware\\SubstituteBindings',
-          8 => 'Filament\\Http\\Middleware\\DisableBladeIconComponents',
-          9 => 'Filament\\Http\\Middleware\\DispatchServingFilamentEvent',
-          10 => 'Filament\\Http\\Middleware\\Authenticate',
-        ),
-        'excluded_middleware' => 
-        array (
-        ),
-        'uses' => 'App\\Filament\\Resources\\SectionFiveResource\\Pages\\EditSectionFive@__invoke',
-        'controller' => 'App\\Filament\\Resources\\SectionFiveResource\\Pages\\EditSectionFive',
-        'as' => 'filament.admin.resources.section-fives.edit',
-        'namespace' => NULL,
-        'prefix' => 'admin/section-fives',
-        'where' => 
-        array (
-        ),
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'filament.admin.resources.section-fours.index' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'GET',
-        1 => 'HEAD',
-      ),
-      'uri' => 'admin/section-fours',
-      'action' => 
-      array (
-        'domain' => NULL,
-        'middleware' => 
-        array (
-          0 => 'panel:admin',
-          1 => 'Illuminate\\Cookie\\Middleware\\EncryptCookies',
-          2 => 'Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse',
-          3 => 'Illuminate\\Session\\Middleware\\StartSession',
-          4 => 'Filament\\Http\\Middleware\\AuthenticateSession',
-          5 => 'Illuminate\\View\\Middleware\\ShareErrorsFromSession',
-          6 => 'Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken',
-          7 => 'Illuminate\\Routing\\Middleware\\SubstituteBindings',
-          8 => 'Filament\\Http\\Middleware\\DisableBladeIconComponents',
-          9 => 'Filament\\Http\\Middleware\\DispatchServingFilamentEvent',
-          10 => 'Filament\\Http\\Middleware\\Authenticate',
-        ),
-        'excluded_middleware' => 
-        array (
-        ),
-        'uses' => 'App\\Filament\\Resources\\SectionFourResource\\Pages\\ListSectionFours@__invoke',
-        'controller' => 'App\\Filament\\Resources\\SectionFourResource\\Pages\\ListSectionFours',
-        'as' => 'filament.admin.resources.section-fours.index',
-        'namespace' => NULL,
-        'prefix' => 'admin/section-fours',
-        'where' => 
-        array (
-        ),
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'filament.admin.resources.section-fours.create' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'GET',
-        1 => 'HEAD',
-      ),
-      'uri' => 'admin/section-fours/create',
-      'action' => 
-      array (
-        'domain' => NULL,
-        'middleware' => 
-        array (
-          0 => 'panel:admin',
-          1 => 'Illuminate\\Cookie\\Middleware\\EncryptCookies',
-          2 => 'Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse',
-          3 => 'Illuminate\\Session\\Middleware\\StartSession',
-          4 => 'Filament\\Http\\Middleware\\AuthenticateSession',
-          5 => 'Illuminate\\View\\Middleware\\ShareErrorsFromSession',
-          6 => 'Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken',
-          7 => 'Illuminate\\Routing\\Middleware\\SubstituteBindings',
-          8 => 'Filament\\Http\\Middleware\\DisableBladeIconComponents',
-          9 => 'Filament\\Http\\Middleware\\DispatchServingFilamentEvent',
-          10 => 'Filament\\Http\\Middleware\\Authenticate',
-        ),
-        'excluded_middleware' => 
-        array (
-        ),
-        'uses' => 'App\\Filament\\Resources\\SectionFourResource\\Pages\\CreateSectionFour@__invoke',
-        'controller' => 'App\\Filament\\Resources\\SectionFourResource\\Pages\\CreateSectionFour',
-        'as' => 'filament.admin.resources.section-fours.create',
-        'namespace' => NULL,
-        'prefix' => 'admin/section-fours',
-        'where' => 
-        array (
-        ),
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'filament.admin.resources.section-fours.edit' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'GET',
-        1 => 'HEAD',
-      ),
-      'uri' => 'admin/section-fours/{record}/edit',
-      'action' => 
-      array (
-        'domain' => NULL,
-        'middleware' => 
-        array (
-          0 => 'panel:admin',
-          1 => 'Illuminate\\Cookie\\Middleware\\EncryptCookies',
-          2 => 'Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse',
-          3 => 'Illuminate\\Session\\Middleware\\StartSession',
-          4 => 'Filament\\Http\\Middleware\\AuthenticateSession',
-          5 => 'Illuminate\\View\\Middleware\\ShareErrorsFromSession',
-          6 => 'Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken',
-          7 => 'Illuminate\\Routing\\Middleware\\SubstituteBindings',
-          8 => 'Filament\\Http\\Middleware\\DisableBladeIconComponents',
-          9 => 'Filament\\Http\\Middleware\\DispatchServingFilamentEvent',
-          10 => 'Filament\\Http\\Middleware\\Authenticate',
-        ),
-        'excluded_middleware' => 
-        array (
-        ),
-        'uses' => 'App\\Filament\\Resources\\SectionFourResource\\Pages\\EditSectionFour@__invoke',
-        'controller' => 'App\\Filament\\Resources\\SectionFourResource\\Pages\\EditSectionFour',
-        'as' => 'filament.admin.resources.section-fours.edit',
-        'namespace' => NULL,
-        'prefix' => 'admin/section-fours',
-        'where' => 
-        array (
-        ),
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'filament.admin.resources.section-nines.index' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'GET',
-        1 => 'HEAD',
-      ),
-      'uri' => 'admin/section-nines',
-      'action' => 
-      array (
-        'domain' => NULL,
-        'middleware' => 
-        array (
-          0 => 'panel:admin',
-          1 => 'Illuminate\\Cookie\\Middleware\\EncryptCookies',
-          2 => 'Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse',
-          3 => 'Illuminate\\Session\\Middleware\\StartSession',
-          4 => 'Filament\\Http\\Middleware\\AuthenticateSession',
-          5 => 'Illuminate\\View\\Middleware\\ShareErrorsFromSession',
-          6 => 'Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken',
-          7 => 'Illuminate\\Routing\\Middleware\\SubstituteBindings',
-          8 => 'Filament\\Http\\Middleware\\DisableBladeIconComponents',
-          9 => 'Filament\\Http\\Middleware\\DispatchServingFilamentEvent',
-          10 => 'Filament\\Http\\Middleware\\Authenticate',
-        ),
-        'excluded_middleware' => 
-        array (
-        ),
-        'uses' => 'App\\Filament\\Resources\\SectionNineResource\\Pages\\ListSectionNines@__invoke',
-        'controller' => 'App\\Filament\\Resources\\SectionNineResource\\Pages\\ListSectionNines',
-        'as' => 'filament.admin.resources.section-nines.index',
-        'namespace' => NULL,
-        'prefix' => 'admin/section-nines',
-        'where' => 
-        array (
-        ),
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'filament.admin.resources.section-nines.create' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'GET',
-        1 => 'HEAD',
-      ),
-      'uri' => 'admin/section-nines/create',
-      'action' => 
-      array (
-        'domain' => NULL,
-        'middleware' => 
-        array (
-          0 => 'panel:admin',
-          1 => 'Illuminate\\Cookie\\Middleware\\EncryptCookies',
-          2 => 'Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse',
-          3 => 'Illuminate\\Session\\Middleware\\StartSession',
-          4 => 'Filament\\Http\\Middleware\\AuthenticateSession',
-          5 => 'Illuminate\\View\\Middleware\\ShareErrorsFromSession',
-          6 => 'Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken',
-          7 => 'Illuminate\\Routing\\Middleware\\SubstituteBindings',
-          8 => 'Filament\\Http\\Middleware\\DisableBladeIconComponents',
-          9 => 'Filament\\Http\\Middleware\\DispatchServingFilamentEvent',
-          10 => 'Filament\\Http\\Middleware\\Authenticate',
-        ),
-        'excluded_middleware' => 
-        array (
-        ),
-        'uses' => 'App\\Filament\\Resources\\SectionNineResource\\Pages\\CreateSectionNine@__invoke',
-        'controller' => 'App\\Filament\\Resources\\SectionNineResource\\Pages\\CreateSectionNine',
-        'as' => 'filament.admin.resources.section-nines.create',
-        'namespace' => NULL,
-        'prefix' => 'admin/section-nines',
-        'where' => 
-        array (
-        ),
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'filament.admin.resources.section-nines.edit' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'GET',
-        1 => 'HEAD',
-      ),
-      'uri' => 'admin/section-nines/{record}/edit',
-      'action' => 
-      array (
-        'domain' => NULL,
-        'middleware' => 
-        array (
-          0 => 'panel:admin',
-          1 => 'Illuminate\\Cookie\\Middleware\\EncryptCookies',
-          2 => 'Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse',
-          3 => 'Illuminate\\Session\\Middleware\\StartSession',
-          4 => 'Filament\\Http\\Middleware\\AuthenticateSession',
-          5 => 'Illuminate\\View\\Middleware\\ShareErrorsFromSession',
-          6 => 'Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken',
-          7 => 'Illuminate\\Routing\\Middleware\\SubstituteBindings',
-          8 => 'Filament\\Http\\Middleware\\DisableBladeIconComponents',
-          9 => 'Filament\\Http\\Middleware\\DispatchServingFilamentEvent',
-          10 => 'Filament\\Http\\Middleware\\Authenticate',
-        ),
-        'excluded_middleware' => 
-        array (
-        ),
-        'uses' => 'App\\Filament\\Resources\\SectionNineResource\\Pages\\EditSectionNine@__invoke',
-        'controller' => 'App\\Filament\\Resources\\SectionNineResource\\Pages\\EditSectionNine',
-        'as' => 'filament.admin.resources.section-nines.edit',
-        'namespace' => NULL,
-        'prefix' => 'admin/section-nines',
-        'where' => 
-        array (
-        ),
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'filament.admin.resources.section-sevens.index' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'GET',
-        1 => 'HEAD',
-      ),
-      'uri' => 'admin/section-sevens',
-      'action' => 
-      array (
-        'domain' => NULL,
-        'middleware' => 
-        array (
-          0 => 'panel:admin',
-          1 => 'Illuminate\\Cookie\\Middleware\\EncryptCookies',
-          2 => 'Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse',
-          3 => 'Illuminate\\Session\\Middleware\\StartSession',
-          4 => 'Filament\\Http\\Middleware\\AuthenticateSession',
-          5 => 'Illuminate\\View\\Middleware\\ShareErrorsFromSession',
-          6 => 'Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken',
-          7 => 'Illuminate\\Routing\\Middleware\\SubstituteBindings',
-          8 => 'Filament\\Http\\Middleware\\DisableBladeIconComponents',
-          9 => 'Filament\\Http\\Middleware\\DispatchServingFilamentEvent',
-          10 => 'Filament\\Http\\Middleware\\Authenticate',
-        ),
-        'excluded_middleware' => 
-        array (
-        ),
-        'uses' => 'App\\Filament\\Resources\\SectionSevenResource\\Pages\\ListSectionSevens@__invoke',
-        'controller' => 'App\\Filament\\Resources\\SectionSevenResource\\Pages\\ListSectionSevens',
-        'as' => 'filament.admin.resources.section-sevens.index',
-        'namespace' => NULL,
-        'prefix' => 'admin/section-sevens',
-        'where' => 
-        array (
-        ),
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'filament.admin.resources.section-sevens.create' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'GET',
-        1 => 'HEAD',
-      ),
-      'uri' => 'admin/section-sevens/create',
-      'action' => 
-      array (
-        'domain' => NULL,
-        'middleware' => 
-        array (
-          0 => 'panel:admin',
-          1 => 'Illuminate\\Cookie\\Middleware\\EncryptCookies',
-          2 => 'Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse',
-          3 => 'Illuminate\\Session\\Middleware\\StartSession',
-          4 => 'Filament\\Http\\Middleware\\AuthenticateSession',
-          5 => 'Illuminate\\View\\Middleware\\ShareErrorsFromSession',
-          6 => 'Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken',
-          7 => 'Illuminate\\Routing\\Middleware\\SubstituteBindings',
-          8 => 'Filament\\Http\\Middleware\\DisableBladeIconComponents',
-          9 => 'Filament\\Http\\Middleware\\DispatchServingFilamentEvent',
-          10 => 'Filament\\Http\\Middleware\\Authenticate',
-        ),
-        'excluded_middleware' => 
-        array (
-        ),
-        'uses' => 'App\\Filament\\Resources\\SectionSevenResource\\Pages\\CreateSectionSeven@__invoke',
-        'controller' => 'App\\Filament\\Resources\\SectionSevenResource\\Pages\\CreateSectionSeven',
-        'as' => 'filament.admin.resources.section-sevens.create',
-        'namespace' => NULL,
-        'prefix' => 'admin/section-sevens',
-        'where' => 
-        array (
-        ),
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'filament.admin.resources.section-sevens.edit' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'GET',
-        1 => 'HEAD',
-      ),
-      'uri' => 'admin/section-sevens/{record}/edit',
-      'action' => 
-      array (
-        'domain' => NULL,
-        'middleware' => 
-        array (
-          0 => 'panel:admin',
-          1 => 'Illuminate\\Cookie\\Middleware\\EncryptCookies',
-          2 => 'Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse',
-          3 => 'Illuminate\\Session\\Middleware\\StartSession',
-          4 => 'Filament\\Http\\Middleware\\AuthenticateSession',
-          5 => 'Illuminate\\View\\Middleware\\ShareErrorsFromSession',
-          6 => 'Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken',
-          7 => 'Illuminate\\Routing\\Middleware\\SubstituteBindings',
-          8 => 'Filament\\Http\\Middleware\\DisableBladeIconComponents',
-          9 => 'Filament\\Http\\Middleware\\DispatchServingFilamentEvent',
-          10 => 'Filament\\Http\\Middleware\\Authenticate',
-        ),
-        'excluded_middleware' => 
-        array (
-        ),
-        'uses' => 'App\\Filament\\Resources\\SectionSevenResource\\Pages\\EditSectionSeven@__invoke',
-        'controller' => 'App\\Filament\\Resources\\SectionSevenResource\\Pages\\EditSectionSeven',
-        'as' => 'filament.admin.resources.section-sevens.edit',
-        'namespace' => NULL,
-        'prefix' => 'admin/section-sevens',
-        'where' => 
-        array (
-        ),
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'filament.admin.resources.section-sixes.index' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'GET',
-        1 => 'HEAD',
-      ),
-      'uri' => 'admin/section-sixes',
-      'action' => 
-      array (
-        'domain' => NULL,
-        'middleware' => 
-        array (
-          0 => 'panel:admin',
-          1 => 'Illuminate\\Cookie\\Middleware\\EncryptCookies',
-          2 => 'Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse',
-          3 => 'Illuminate\\Session\\Middleware\\StartSession',
-          4 => 'Filament\\Http\\Middleware\\AuthenticateSession',
-          5 => 'Illuminate\\View\\Middleware\\ShareErrorsFromSession',
-          6 => 'Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken',
-          7 => 'Illuminate\\Routing\\Middleware\\SubstituteBindings',
-          8 => 'Filament\\Http\\Middleware\\DisableBladeIconComponents',
-          9 => 'Filament\\Http\\Middleware\\DispatchServingFilamentEvent',
-          10 => 'Filament\\Http\\Middleware\\Authenticate',
-        ),
-        'excluded_middleware' => 
-        array (
-        ),
-        'uses' => 'App\\Filament\\Resources\\SectionSixResource\\Pages\\ListSectionSixes@__invoke',
-        'controller' => 'App\\Filament\\Resources\\SectionSixResource\\Pages\\ListSectionSixes',
-        'as' => 'filament.admin.resources.section-sixes.index',
-        'namespace' => NULL,
-        'prefix' => 'admin/section-sixes',
-        'where' => 
-        array (
-        ),
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'filament.admin.resources.section-sixes.create' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'GET',
-        1 => 'HEAD',
-      ),
-      'uri' => 'admin/section-sixes/create',
-      'action' => 
-      array (
-        'domain' => NULL,
-        'middleware' => 
-        array (
-          0 => 'panel:admin',
-          1 => 'Illuminate\\Cookie\\Middleware\\EncryptCookies',
-          2 => 'Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse',
-          3 => 'Illuminate\\Session\\Middleware\\StartSession',
-          4 => 'Filament\\Http\\Middleware\\AuthenticateSession',
-          5 => 'Illuminate\\View\\Middleware\\ShareErrorsFromSession',
-          6 => 'Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken',
-          7 => 'Illuminate\\Routing\\Middleware\\SubstituteBindings',
-          8 => 'Filament\\Http\\Middleware\\DisableBladeIconComponents',
-          9 => 'Filament\\Http\\Middleware\\DispatchServingFilamentEvent',
-          10 => 'Filament\\Http\\Middleware\\Authenticate',
-        ),
-        'excluded_middleware' => 
-        array (
-        ),
-        'uses' => 'App\\Filament\\Resources\\SectionSixResource\\Pages\\CreateSectionSix@__invoke',
-        'controller' => 'App\\Filament\\Resources\\SectionSixResource\\Pages\\CreateSectionSix',
-        'as' => 'filament.admin.resources.section-sixes.create',
-        'namespace' => NULL,
-        'prefix' => 'admin/section-sixes',
-        'where' => 
-        array (
-        ),
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'filament.admin.resources.section-sixes.edit' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'GET',
-        1 => 'HEAD',
-      ),
-      'uri' => 'admin/section-sixes/{record}/edit',
-      'action' => 
-      array (
-        'domain' => NULL,
-        'middleware' => 
-        array (
-          0 => 'panel:admin',
-          1 => 'Illuminate\\Cookie\\Middleware\\EncryptCookies',
-          2 => 'Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse',
-          3 => 'Illuminate\\Session\\Middleware\\StartSession',
-          4 => 'Filament\\Http\\Middleware\\AuthenticateSession',
-          5 => 'Illuminate\\View\\Middleware\\ShareErrorsFromSession',
-          6 => 'Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken',
-          7 => 'Illuminate\\Routing\\Middleware\\SubstituteBindings',
-          8 => 'Filament\\Http\\Middleware\\DisableBladeIconComponents',
-          9 => 'Filament\\Http\\Middleware\\DispatchServingFilamentEvent',
-          10 => 'Filament\\Http\\Middleware\\Authenticate',
-        ),
-        'excluded_middleware' => 
-        array (
-        ),
-        'uses' => 'App\\Filament\\Resources\\SectionSixResource\\Pages\\EditSectionSix@__invoke',
-        'controller' => 'App\\Filament\\Resources\\SectionSixResource\\Pages\\EditSectionSix',
-        'as' => 'filament.admin.resources.section-sixes.edit',
-        'namespace' => NULL,
-        'prefix' => 'admin/section-sixes',
-        'where' => 
-        array (
-        ),
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'filament.admin.resources.section-tens.index' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'GET',
-        1 => 'HEAD',
-      ),
-      'uri' => 'admin/section-tens',
-      'action' => 
-      array (
-        'domain' => NULL,
-        'middleware' => 
-        array (
-          0 => 'panel:admin',
-          1 => 'Illuminate\\Cookie\\Middleware\\EncryptCookies',
-          2 => 'Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse',
-          3 => 'Illuminate\\Session\\Middleware\\StartSession',
-          4 => 'Filament\\Http\\Middleware\\AuthenticateSession',
-          5 => 'Illuminate\\View\\Middleware\\ShareErrorsFromSession',
-          6 => 'Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken',
-          7 => 'Illuminate\\Routing\\Middleware\\SubstituteBindings',
-          8 => 'Filament\\Http\\Middleware\\DisableBladeIconComponents',
-          9 => 'Filament\\Http\\Middleware\\DispatchServingFilamentEvent',
-          10 => 'Filament\\Http\\Middleware\\Authenticate',
-        ),
-        'excluded_middleware' => 
-        array (
-        ),
-        'uses' => 'App\\Filament\\Resources\\SectionTenResource\\Pages\\ListSectionTens@__invoke',
-        'controller' => 'App\\Filament\\Resources\\SectionTenResource\\Pages\\ListSectionTens',
-        'as' => 'filament.admin.resources.section-tens.index',
-        'namespace' => NULL,
-        'prefix' => 'admin/section-tens',
-        'where' => 
-        array (
-        ),
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'filament.admin.resources.section-tens.create' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'GET',
-        1 => 'HEAD',
-      ),
-      'uri' => 'admin/section-tens/create',
-      'action' => 
-      array (
-        'domain' => NULL,
-        'middleware' => 
-        array (
-          0 => 'panel:admin',
-          1 => 'Illuminate\\Cookie\\Middleware\\EncryptCookies',
-          2 => 'Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse',
-          3 => 'Illuminate\\Session\\Middleware\\StartSession',
-          4 => 'Filament\\Http\\Middleware\\AuthenticateSession',
-          5 => 'Illuminate\\View\\Middleware\\ShareErrorsFromSession',
-          6 => 'Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken',
-          7 => 'Illuminate\\Routing\\Middleware\\SubstituteBindings',
-          8 => 'Filament\\Http\\Middleware\\DisableBladeIconComponents',
-          9 => 'Filament\\Http\\Middleware\\DispatchServingFilamentEvent',
-          10 => 'Filament\\Http\\Middleware\\Authenticate',
-        ),
-        'excluded_middleware' => 
-        array (
-        ),
-        'uses' => 'App\\Filament\\Resources\\SectionTenResource\\Pages\\CreateSectionTen@__invoke',
-        'controller' => 'App\\Filament\\Resources\\SectionTenResource\\Pages\\CreateSectionTen',
-        'as' => 'filament.admin.resources.section-tens.create',
-        'namespace' => NULL,
-        'prefix' => 'admin/section-tens',
-        'where' => 
-        array (
-        ),
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'filament.admin.resources.section-tens.edit' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'GET',
-        1 => 'HEAD',
-      ),
-      'uri' => 'admin/section-tens/{record}/edit',
-      'action' => 
-      array (
-        'domain' => NULL,
-        'middleware' => 
-        array (
-          0 => 'panel:admin',
-          1 => 'Illuminate\\Cookie\\Middleware\\EncryptCookies',
-          2 => 'Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse',
-          3 => 'Illuminate\\Session\\Middleware\\StartSession',
-          4 => 'Filament\\Http\\Middleware\\AuthenticateSession',
-          5 => 'Illuminate\\View\\Middleware\\ShareErrorsFromSession',
-          6 => 'Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken',
-          7 => 'Illuminate\\Routing\\Middleware\\SubstituteBindings',
-          8 => 'Filament\\Http\\Middleware\\DisableBladeIconComponents',
-          9 => 'Filament\\Http\\Middleware\\DispatchServingFilamentEvent',
-          10 => 'Filament\\Http\\Middleware\\Authenticate',
-        ),
-        'excluded_middleware' => 
-        array (
-        ),
-        'uses' => 'App\\Filament\\Resources\\SectionTenResource\\Pages\\EditSectionTen@__invoke',
-        'controller' => 'App\\Filament\\Resources\\SectionTenResource\\Pages\\EditSectionTen',
-        'as' => 'filament.admin.resources.section-tens.edit',
-        'namespace' => NULL,
-        'prefix' => 'admin/section-tens',
-        'where' => 
-        array (
-        ),
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'filament.admin.resources.video-sections.index' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'GET',
-        1 => 'HEAD',
-      ),
-      'uri' => 'admin/video-sections',
-      'action' => 
-      array (
-        'domain' => NULL,
-        'middleware' => 
-        array (
-          0 => 'panel:admin',
-          1 => 'Illuminate\\Cookie\\Middleware\\EncryptCookies',
-          2 => 'Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse',
-          3 => 'Illuminate\\Session\\Middleware\\StartSession',
-          4 => 'Filament\\Http\\Middleware\\AuthenticateSession',
-          5 => 'Illuminate\\View\\Middleware\\ShareErrorsFromSession',
-          6 => 'Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken',
-          7 => 'Illuminate\\Routing\\Middleware\\SubstituteBindings',
-          8 => 'Filament\\Http\\Middleware\\DisableBladeIconComponents',
-          9 => 'Filament\\Http\\Middleware\\DispatchServingFilamentEvent',
-          10 => 'Filament\\Http\\Middleware\\Authenticate',
-        ),
-        'excluded_middleware' => 
-        array (
-        ),
-        'uses' => 'App\\Filament\\Resources\\VideoSectionResource\\Pages\\ListVideoSections@__invoke',
-        'controller' => 'App\\Filament\\Resources\\VideoSectionResource\\Pages\\ListVideoSections',
-        'as' => 'filament.admin.resources.video-sections.index',
-        'namespace' => NULL,
-        'prefix' => 'admin/video-sections',
-        'where' => 
-        array (
-        ),
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'filament.admin.resources.video-sections.create' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'GET',
-        1 => 'HEAD',
-      ),
-      'uri' => 'admin/video-sections/create',
-      'action' => 
-      array (
-        'domain' => NULL,
-        'middleware' => 
-        array (
-          0 => 'panel:admin',
-          1 => 'Illuminate\\Cookie\\Middleware\\EncryptCookies',
-          2 => 'Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse',
-          3 => 'Illuminate\\Session\\Middleware\\StartSession',
-          4 => 'Filament\\Http\\Middleware\\AuthenticateSession',
-          5 => 'Illuminate\\View\\Middleware\\ShareErrorsFromSession',
-          6 => 'Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken',
-          7 => 'Illuminate\\Routing\\Middleware\\SubstituteBindings',
-          8 => 'Filament\\Http\\Middleware\\DisableBladeIconComponents',
-          9 => 'Filament\\Http\\Middleware\\DispatchServingFilamentEvent',
-          10 => 'Filament\\Http\\Middleware\\Authenticate',
-        ),
-        'excluded_middleware' => 
-        array (
-        ),
-        'uses' => 'App\\Filament\\Resources\\VideoSectionResource\\Pages\\CreateVideoSection@__invoke',
-        'controller' => 'App\\Filament\\Resources\\VideoSectionResource\\Pages\\CreateVideoSection',
-        'as' => 'filament.admin.resources.video-sections.create',
-        'namespace' => NULL,
-        'prefix' => 'admin/video-sections',
-        'where' => 
-        array (
-        ),
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'filament.admin.resources.video-sections.edit' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'GET',
-        1 => 'HEAD',
-      ),
-      'uri' => 'admin/video-sections/{record}/edit',
-      'action' => 
-      array (
-        'domain' => NULL,
-        'middleware' => 
-        array (
-          0 => 'panel:admin',
-          1 => 'Illuminate\\Cookie\\Middleware\\EncryptCookies',
-          2 => 'Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse',
-          3 => 'Illuminate\\Session\\Middleware\\StartSession',
-          4 => 'Filament\\Http\\Middleware\\AuthenticateSession',
-          5 => 'Illuminate\\View\\Middleware\\ShareErrorsFromSession',
-          6 => 'Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken',
-          7 => 'Illuminate\\Routing\\Middleware\\SubstituteBindings',
-          8 => 'Filament\\Http\\Middleware\\DisableBladeIconComponents',
-          9 => 'Filament\\Http\\Middleware\\DispatchServingFilamentEvent',
-          10 => 'Filament\\Http\\Middleware\\Authenticate',
-        ),
-        'excluded_middleware' => 
-        array (
-        ),
-        'uses' => 'App\\Filament\\Resources\\VideoSectionResource\\Pages\\EditVideoSection@__invoke',
-        'controller' => 'App\\Filament\\Resources\\VideoSectionResource\\Pages\\EditVideoSection',
-        'as' => 'filament.admin.resources.video-sections.edit',
-        'namespace' => NULL,
-        'prefix' => 'admin/video-sections',
-        'where' => 
-        array (
-        ),
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
     'livewire.update' => 
     array (
       'methods' => 
@@ -3365,7 +1225,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::JoR8y5lqjK7a0o88' => 
+    'generated::B5jn2ixI1JWxebPp' => 
     array (
       'methods' => 
       array (
@@ -3377,7 +1237,7 @@ app('router')->setCompiledRoutes(
       array (
         'uses' => 'Livewire\\Mechanisms\\FrontendAssets\\FrontendAssets@returnJavaScriptAsFile',
         'controller' => 'Livewire\\Mechanisms\\FrontendAssets\\FrontendAssets@returnJavaScriptAsFile',
-        'as' => 'generated::JoR8y5lqjK7a0o88',
+        'as' => 'generated::B5jn2ixI1JWxebPp',
       ),
       'fallback' => false,
       'defaults' => 
@@ -3393,7 +1253,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::aq6KyGAOHAntZKlj' => 
+    'generated::0Wktm5MApciFkAkI' => 
     array (
       'methods' => 
       array (
@@ -3405,7 +1265,7 @@ app('router')->setCompiledRoutes(
       array (
         'uses' => 'Livewire\\Mechanisms\\FrontendAssets\\FrontendAssets@maps',
         'controller' => 'Livewire\\Mechanisms\\FrontendAssets\\FrontendAssets@maps',
-        'as' => 'generated::aq6KyGAOHAntZKlj',
+        'as' => 'generated::0Wktm5MApciFkAkI',
       ),
       'fallback' => false,
       'defaults' => 
@@ -3476,7 +1336,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::XdneDKfMDhw9q44q' => 
+    'generated::sx6uhj3LkUY7InhS' => 
     array (
       'methods' => 
       array (
@@ -3486,7 +1346,7 @@ app('router')->setCompiledRoutes(
       'uri' => 'up',
       'action' => 
       array (
-        'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:0:{}s:8:"function";s:844:"function () {
+        'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:0:{}s:8:"function";s:823:"function () {
                     $exception = null;
 
                     try {
@@ -3501,11 +1361,11 @@ app('router')->setCompiledRoutes(
                         $exception = $e->getMessage();
                     }
 
-                    return response(\\Illuminate\\Support\\Facades\\View::file(\'C:\\\\Users\\\\hp\\\\CascadeProjects\\\\stan-safari\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Configuration\'.\'/../resources/health-up.blade.php\', [
+                    return response(\\Illuminate\\Support\\Facades\\View::file(\'C:\\\\laragon\\\\www\\\\stan\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Configuration\'.\'/../resources/health-up.blade.php\', [
                         \'exception\' => $exception,
                     ]), status: $exception ? 500 : 200);
-                }";s:5:"scope";s:54:"Illuminate\\Foundation\\Configuration\\ApplicationBuilder";s:4:"this";N;s:4:"self";s:32:"0000000000000d380000000000000000";}}',
-        'as' => 'generated::XdneDKfMDhw9q44q',
+                }";s:5:"scope";s:54:"Illuminate\\Foundation\\Configuration\\ApplicationBuilder";s:4:"this";N;s:4:"self";s:32:"0000000000000d1a0000000000000000";}}',
+        'as' => 'generated::sx6uhj3LkUY7InhS',
       ),
       'fallback' => false,
       'defaults' => 
@@ -3521,7 +1381,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::iueE57ZOynf0Gzbo' => 
+    'generated::upQcOOWS2JCxi9DD' => 
     array (
       'methods' => 
       array (
@@ -3537,13 +1397,13 @@ app('router')->setCompiledRoutes(
         ),
         'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:0:{}s:8:"function";s:44:"function () {
     return \\view(\'welcome\');
-}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"0000000000000d3c0000000000000000";}}',
+}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"0000000000000d1e0000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
         array (
         ),
-        'as' => 'generated::iueE57ZOynf0Gzbo',
+        'as' => 'generated::upQcOOWS2JCxi9DD',
       ),
       'fallback' => false,
       'defaults' => 
@@ -3575,7 +1435,7 @@ app('router')->setCompiledRoutes(
         ),
         'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:0:{}s:8:"function";s:42:"function () {
     return \\view(\'about\');
-}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"0000000000000d3e0000000000000000";}}',
+}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"0000000000000d200000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -3820,6 +1680,51 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
+    'clear.cache' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'clear-cache',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:0:{}s:8:"function";s:463:"function() {
+        $exitCode = \\Artisan::call(\'cache:clear\');
+        $exitCode = \\Artisan::call(\'config:clear\');
+        $exitCode = \\Artisan::call(\'view:clear\');
+        $exitCode = \\Artisan::call(\'route:clear\');
+        $exitCode = \\Artisan::call(\'view:cache\');
+        $exitCode = \\Artisan::call(\'route:cache\');
+        $exitCode = \\Artisan::call(\'config:cache\');
+        return \'Caches cleared!\'; // This will be displayed when you visit /clear-cache
+    }";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"0000000000000d280000000000000000";}}',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+        'as' => 'clear.cache',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
     'book-now' => 
     array (
       'methods' => 
@@ -3842,7 +1747,7 @@ app('router')->setCompiledRoutes(
     return \\view(\'book-now\', [
         \'packageId\' => $packageId ? (int)$packageId : null
     ]);
-}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"0000000000000d460000000000000000";}}',
+}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"0000000000000d2a0000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -3880,7 +1785,7 @@ app('router')->setCompiledRoutes(
         ),
         'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:0:{}s:8:"function";s:92:"function () {
     return \\redirect(\'/\')->with(\'message\', \'Itineraries page coming soon!\');
-}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"0000000000000d480000000000000000";}}',
+}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"0000000000000d2c0000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -3918,7 +1823,7 @@ app('router')->setCompiledRoutes(
         ),
         'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:0:{}s:8:"function";s:95:"function () {
     return \\redirect(\'/\')->with(\'message\', \'Special offers page coming soon!\');
-}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"0000000000000d4a0000000000000000";}}',
+}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"0000000000000d2e0000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -3956,7 +1861,7 @@ app('router')->setCompiledRoutes(
         ),
         'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:0:{}s:8:"function";s:42:"function () {
     return \\redirect(\'/\');
-}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"0000000000000d4c0000000000000000";}}',
+}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"0000000000000d300000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
@@ -3988,13 +1893,13 @@ app('router')->setCompiledRoutes(
       'uri' => 'storage/{path}',
       'action' => 
       array (
-        'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:3:{s:4:"disk";s:5:"local";s:6:"config";a:5:{s:6:"driver";s:5:"local";s:4:"root";s:59:"C:\\Users\\hp\\CascadeProjects\\stan-safari\\storage\\app/private";s:5:"serve";b:1;s:5:"throw";b:0;s:6:"report";b:0;}s:12:"isProduction";b:0;}s:8:"function";s:323:"function (\\Illuminate\\Http\\Request $request, string $path) use ($disk, $config, $isProduction) {
+        'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:3:{s:4:"disk";s:5:"local";s:6:"config";a:5:{s:6:"driver";s:5:"local";s:4:"root";s:39:"C:\\laragon\\www\\stan\\storage\\app/private";s:5:"serve";b:1;s:5:"throw";b:0;s:6:"report";b:0;}s:12:"isProduction";b:0;}s:8:"function";s:323:"function (\\Illuminate\\Http\\Request $request, string $path) use ($disk, $config, $isProduction) {
                     return (new \\Illuminate\\Filesystem\\ServeFile(
                         $disk,
                         $config,
                         $isProduction
                     ))($request, $path);
-                }";s:5:"scope";s:47:"Illuminate\\Filesystem\\FilesystemServiceProvider";s:4:"this";N;s:4:"self";s:32:"0000000000000d4f0000000000000000";}}',
+                }";s:5:"scope";s:47:"Illuminate\\Filesystem\\FilesystemServiceProvider";s:4:"this";N;s:4:"self";s:32:"0000000000000d330000000000000000";}}',
         'as' => 'storage.local',
       ),
       'fallback' => false,

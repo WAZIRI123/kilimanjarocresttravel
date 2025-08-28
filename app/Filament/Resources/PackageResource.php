@@ -88,7 +88,11 @@ class PackageResource extends Resource
                                         Forms\Components\TextInput::make('category')
                                             ->label('Category')
                                             ->maxLength(100)
-                                            ->helperText('E.g., Adventure, Safari, Cultural, etc.')
+                                            ->helperText(' kilimanjaro,
+                                            zanzibar,
+                                            short-safaris,
+                                            northern-safaris,
+                                            southern-safaris')
                                             ->columnSpanFull(),
                                             
                                         Forms\Components\TextInput::make('country')
@@ -98,7 +102,7 @@ class PackageResource extends Resource
                                             ->helperText('E.g., Tanzania, Kenya, Rwanda, etc.')
                                             ->columnSpanFull(),
 
-Forms\Components\RichEditor::make('best_time_to_visit')
+               Forms\Components\RichEditor::make('best_time_to_visit')
                                             ->label('Best Time to Visit')
                                             ->columnSpanFull()
                                             ->disableToolbarButtons([

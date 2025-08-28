@@ -28,7 +28,7 @@ data-testid="section-container">
                     data-testid="richTextElement"
                     ariaattributes="[object Object]">
                     <h2 class="font_2 wixui-rich-text__text"><span
-                            class="wixui-rich-text__text">{!! $discoverAfrica->heading !!}</span>
+                            class="wixui-rich-text__text text-center">{!! $discoverAfrica->heading !!}</span>
                     </h2>
                 </div><!--/$--><!--$-->
                 <div id="comp-m368cje8"
@@ -159,6 +159,14 @@ data-testid="section-container">
     height: 100%;
 }
 
+@media (max-width: 992px) {
+    .text-center {
+        text-align: center !important;
+    }
+    #comp-m367d9um11 :is(p,h1,h2,h3,h4,h5,h6,ul,ol,span[data-attr-richtext-marker],blockquote) {
+        padding-bottom: 1.5rem !important;
+    }
+}
 @media (min-width: 992px) {
     #comp-m367d9uj5 {
         grid-area: 2 / 2 / 1 / 4 !important;

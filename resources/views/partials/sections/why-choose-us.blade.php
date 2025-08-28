@@ -223,3 +223,10 @@
         </div>
     </div>
 </section>
+<style>
+    @media (max-width: 992px) {
+    #comp-lznsf06j{
+        padding-top: 1rem !important;
+    }
+    }
+</style>

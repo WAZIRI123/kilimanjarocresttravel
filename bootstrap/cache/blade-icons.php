@@ -1,7 +1,7 @@
 <?php return array (
   'heroicons' => 
   array (
-    'C:\\Users\\hp\\CascadeProjects\\stan-safari\\vendor\\blade-ui-kit\\blade-heroicons\\src/../resources/svg' => 
+    'C:\\laragon\\www\\stan\\vendor\\blade-ui-kit\\blade-heroicons\\src/../resources/svg' => 
     array (
       0 => 'c-academic-cap',
       1 => 'c-adjustments-horizontal',

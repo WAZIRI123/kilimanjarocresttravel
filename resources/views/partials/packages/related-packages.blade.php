@@ -3,22 +3,16 @@
     <div style="width: 100%; display: flex; justify-content: center;">
         <div style="width: 100%; max-width: 100%; padding: 0 15px;">
             @if(isset($title) || isset($viewAllLink))
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem; padding: 0 15px;">
+            <div style="display: flex; justify-content:center; align-items: center; margin-bottom: 2rem; padding: 0 15px;">
                 @if(isset($title))
                 <h2 style="font-size: clamp(1.25rem, 6vw, 1.75rem); color: #333; font-weight: 600; margin: 0;">{{ $title }}</h2>
-                @endif
-                @if(isset($viewAllLink))
-                <a href="{{ $viewAllLink }}" style="color: #4d4402; text-decoration: none; font-weight: 500; font-size: clamp(0.875rem, 4vw, 1rem); display: inline-flex; align-items: center; gap: 0.5rem;">
-                    {{ $customTitle ?? 'View All' }}
-                    <i class="fas fa-arrow-right" style="font-size: 0.8em; display: inline-flex; align-items: center;"></i>
-                </a>
                 @endif
             </div>
             @endif
             
-            <div class="package-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 300px)); gap: 2rem; justify-content: center; position: relative; z-index: 10; width: 100%;">
+            <div class="grid grid-cols-1 mx-auto sm:grid-cols-2 lg:grid-cols-3 gap-8 relative z-10 w-[90%] justify-items-center">
                 @foreach($packages as $package)
-                <a href="{{ $package['url'] ?? '#' }}" class="package-card" style="display: flex; flex-direction: column; height: 100%; text-decoration: none; color: inherit; background-color: #f5f2ed; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <a href="{{ $package['url'] ?? '#' }}" class="package-card" style="display: flex; flex-direction: column; height: 100%; text-decoration: none; color: inherit; background-color: #F5F5DC; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
                     <div style="height: 200px; overflow: hidden; flex-shrink: 0;">
                         <img src="{{  Storage::url($package['image'])}}" 
                              alt="{{ $package['title'] }}" 
@@ -34,17 +28,14 @@
                             <p style="color: #333; font-size: 0.95rem; line-height: 1.5; margin: 0 0 1rem 0; min-height: 4.5em; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;">
                                 {{ $package['description'] }}
                             </p>
+                            
                             @endif
+                            
                         </div>
-                        <div style="border-top: 1px solid #e0e0e0; padding-top: 0.75rem; margin-top: auto; display: flex; justify-content: space-between; align-items: center; font-size: 0.9rem; color: #666;">
-                            @if(isset($package['views']))
-                            <span><i class="far fa-eye" style="margin-right: 0.25rem;"></i> {{ $package['views'] }}</span>
-                            @else
-                            <span></span>
-                            @endif
-                            @if(isset($package['likes']))
-                            <span><i class="far fa-heart" style="margin-right: 0.25rem;"></i> {{ $package['likes'] }}</span>
-                            @endif
+                        <div style="border-top: 1px solid #e0e0e0; padding-top: 0.75rem; margin-top: auto; display: flex; justify-content: center; align-items: center; font-size: 0.9rem; border-radius: 8px;">
+    
+                            <span class="inline-flex items-center px-6 pb-2 pt-1 border border-transparent text-center font-medium rounded-md shadow-sm  transition-colors duration-200" style="background-color:#000; color:#fff;">View Package </span>
+
                         </div>
                     </div>
                 </a>

@@ -713,7 +713,7 @@ class PackageSeeder extends Seeder
                 'best_time_to_visit' => '<p><strong>Best Time: April, May & November</strong> (Low season with excellent wildlife viewing and fewer crowds)</p>',
                 'featured_image' => 'packages/ngorongoro-1.webp',
                 'price' => 3500,
-                'sale_price' => 3150,
+                'sale_price' => 31501,
                 'is_featured' => true,
                 'is_active' => true,
                 'sort_order' => 8,

@@ -3,9 +3,9 @@
         <div class="max-w-7xl mx-auto px-0 sm:px-0 lg:px-0">
             <div class="flex items-center justify-between h-20">
                 <!-- Logo -->
-                <div class="flex-shrink-0" style="max-width:80px; max-height:80px">
+                <div class="flex-shrink-0" style="max-width:200px; max-height:200px">
                     <a   href="/" class="text-white text-2xl font-bold">
-                        <img src="{{ asset('images/image-used/white-logo-copy.PNG') }}" alt="crowned Wild Africa" class="logo-img w-30 h-auto pt-3">
+                        <img src="{{ asset('images/image-used/vanana.png') }}" alt="crowned Wild Africa" class="logo-img w-80 h-auto pt-8">
                     </a>
                 </div>
 
@@ -67,7 +67,7 @@
 
                 <!-- Book Now Button -->
                 <div class="hidden lg:block">
-                    <a  href="{{ route('contact') }}" class="bg-white text-gray-900 px-6 py-2 rounded-full text-sm font-medium hover:bg-gray-100 transition-colors">
+                    <a  href="{{ route('book-now') }}" class="bg-white text-gray-900 px-6 py-2 rounded-full text-sm font-medium hover:bg-gray-100 transition-colors">
                         Enquiry Now
                     </a>
                 </div>

@@ -31,6 +31,7 @@ return new class extends Migration
             $table->date('departure_date')->nullable();
             $table->string('selected_duration')->nullable();
             $table->string('traveling_with');
+            $table->integer('number_of_children')->nullable();
             $table->text('safari_preferences')->nullable();
             
             // Status

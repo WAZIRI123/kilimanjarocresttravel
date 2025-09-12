@@ -20,7 +20,7 @@
             background: #ffffff;
         }
         .header {
-            background-color: #1a5276;
+            background-color: #f5f5d5;
             padding: 20px 0;
             text-align: center;
         }
@@ -32,24 +32,25 @@
             padding: 30px;
         }
         h1 {
-            color: #1a5276;
+            color: #1b1c1d;
             font-size: 24px;
             margin-top: 0;
         }
         .greeting {
             font-size: 18px;
+            color: #1b1c1d;
             margin-bottom: 20px;
         }
         .booking-ref {
             background: #f8f9fa;
-            border-left: 4px solid #1a5276;
+            border-left: 4px solid #f5f5d5;
             padding: 15px;
             margin: 20px 0;
             font-size: 16px;
         }
         .cta-button {
             display: inline-block;
-            background: #1a5276;
+            background: #000;
             color: #ffffff !important;
             text-decoration: none;
             padding: 12px 25px;
@@ -64,7 +65,7 @@
             margin: 15px 0;
         }
         .office-name {
-            color: #1a5276;
+            color: #000;
             font-weight: bold;
             margin-bottom: 10px;
         }
@@ -74,12 +75,12 @@
         .social-icon {
             display: inline-block;
             margin-right: 10px;
-            color: #1a5276;
+            color: #000;
             text-decoration: none;
         }
         .footer {
-            background: #1a5276;
-            color: #ffffff;
+            background: #f5f5d5;
+            color: #000;
             padding: 20px;
             text-align: center;
             font-size: 14px;
@@ -105,7 +106,7 @@
             
             @if($booking->package_title)
             <div class="package-details" style="background: #f8f9fa; padding: 15px; border-left: 4px solid #1a5276; margin: 20px 0;">
-                <h3 style="margin-top: 0; color: #1a5276;">Package Details</h3>
+                <h3 style="margin-top: 0; color: #1b1c1d;">Package Details</h3>
                 <p style="margin: 5px 0 0 0; font-weight: 500;">{{ $booking->package_title }}</p>
             </div>
             @endif
@@ -116,39 +117,29 @@
             </div>
             @endif
             
-            <p>If you haven't heard from us within 48 hours, please check your spam folder or email us at <a href="mailto:{{ config('mail.from.address') }}" style="color: #1a5276;">{{ config('mail.from.address') }}</a>.</p>
+            <p style="color: #1b1c1d;">If you haven't heard from us within 48 hours, please check your spam folder or email us at <a href="mailto:{{ config('mail.from.address') }}" style="color: #1b1c1d;">{{ config('mail.from.address') }}</a>.</p>
             
             <div class="divider"></div>
             
-            <h2>While You're Waiting...</h2>
+            <h2 style="color:#000">While You're Waiting...</h2>
             
-            <p>For some safari inspiration, check out our popular itineraries:</p>
+            <p style="color: #1b1c1d;">For some safari inspiration, check out our popular itineraries:</p>
             <a href="{{ route('all-packages') }}" class="cta-button">View Itineraries</a>
             
             <div class="divider"></div>
             
-            <h3>Our Offices</h3>
+            <h3 style="color: #000;">Our Offices</h3>
             @if(config('contact.offices'))
                 @foreach(config('contact.offices') as $office)
                     <div class="office-card">
-                        <div class="office-name">{{ $office['name'] }}</div>
-                        <div>{{ $office['address'] }}</div>
-                        <div>Phone: <a href="tel:{{ $office['phone'] }}" style="color: #1a5276; text-decoration: none;">{{ $office['phone'] }}</a></div>
-                        <div>Email: <a href="mailto:{{ $office['email'] }}" style="color: #1a5276; text-decoration: none;">{{ $office['email'] }}</a></div>
+                        <div style="color: #000;" class="office-name">{{ $office['name'] }}</div>
+                        <div style="color: #1b1c1d;">{{ $office['address'] }}</div>
+                        <div><strong style="color: #000;">Phone:</strong> <a href="tel:{{ $office['phone'] }}" style="color: #1b1c1d; text-decoration: none;">{{ $office['phone'] }}</a></div>
+                        <div><strong style="color: #000;">Email: </strong><a href="mailto:{{ $office['email'] }}" style="color: #000; text-decoration: none;">{{ $office['email'] }}</a></div>
                     </div>
                 @endforeach
             @endif
             
-            @if(config('contact.social_media'))
-                <div class="social-links">
-                    <p>Follow us on:</p>
-                    @foreach(config('contact.social_media') as $platform => $url)
-                        <a href="{{ $url }}" class="social-icon" target="_blank" style="color: #1a5276; margin-right: 15px; text-decoration: none;">
-                            {{ ucfirst($platform) }}
-                        </a>
-                    @endforeach
-                </div>
-            @endif
         </div>
         
         <!-- Footer -->
@@ -157,8 +148,8 @@
             Your {{ config('app.name') }} Team</p>
             
             <p>
-                <a href="{{ config('app.url') }}" style="color: #ffffff;">{{ config('app.url') }}</a> | 
-                <a href="mailto:{{ config('mail.from.address') }}" style="color: #ffffff;">{{ config('mail.from.address') }}</a>
+                <a href="{{ config('app.url') }}" style="color: #000;">{{ config('app.url') }}</a> | 
+                <a href="mailto:{{ config('mail.from.address') }}" style="color: #000;">{{ config('mail.from.address') }}</a>
             </p>
             
             <p style="font-size: 12px; margin-top: 20px;">

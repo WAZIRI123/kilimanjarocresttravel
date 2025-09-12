@@ -147,8 +147,20 @@ class PackageResource extends Resource
                                             ->prefix('$')
                                             ->columnSpanFull(),
 
+                                        Forms\Components\TextInput::make('discount_percentage')
+                                            ->numeric()
+                                            ->maxValue(100)
+                                            ->minValue(0)
+                                            ->columnSpanFull(),
+
+                                        Forms\Components\TextInput::make('valid_until')
+                                            ->columnSpanFull(),
+
                                         Forms\Components\Toggle::make('is_featured')
                                             ->required()
+                                            ->columnSpanFull(),
+
+                                        Forms\Components\Toggle::make('is_special')
                                             ->columnSpanFull(),
 
                                         Forms\Components\Toggle::make('is_active')
@@ -302,7 +314,14 @@ class PackageResource extends Resource
                 Tables\Columns\TextColumn::make('price')
                     ->money('USD')
                     ->sortable(),
+                Tables\Columns\TextColumn::make('discount_percentage')
+                    ->sortable(),
+                Tables\Columns\TextColumn::make('valid_until')
+                    ->sortable(),
                 Tables\Columns\IconColumn::make('is_featured')
+                    ->boolean()
+                    ->sortable(),
+                Tables\Columns\IconColumn::make('is_special')
                     ->boolean()
                     ->sortable(),
                 Tables\Columns\IconColumn::make('is_active')

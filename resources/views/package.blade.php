@@ -65,7 +65,14 @@
                        <div style="display: inline-block; width: calc(50% - 1rem); margin: 0 0.5rem 1.5rem; vertical-align: top; font-size: 1rem; text-align: left; box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1); transition: transform 0.2s ease, box-shadow 0.2s ease;"id="trip-price-section">
                            <div style="margin-bottom: 0.5rem;"></div>
                            <div style="padding: 1rem; border-radius: 8px; text-align: center; min-height: 100%;">
-                               <p style="margin: 0;">Starts at: <br/> <strong>${{ number_format($package->price ?? 0, 2) }}</strong> Per Person</p>
+                           <p style="margin: 0;">Starts at: <br/> <strong>
+                               <span class="text-2xl font-bold text-gray-900">
+                                   ${{ $package?->discount_percentage > 0 ? number_format($package->price - ($package->price * $package->discount_percentage / 100), 2) : number_format($package?->price, 2) }}
+                                   @if($package?->discount_percentage > 0)
+                                       <span class="text-gray-500 line-through text-sm">${{ number_format($package?->price, 2) }}</span>
+                                   @endif
+                               </span>
+                           </strong> Per Person</p>
                            </div>
                        </div>
                    </div>
@@ -519,10 +526,6 @@
            margin-bottom: 0;
        }
        
-       .itinerary-day:last-child {
-           border-bottom: none;
-       }
-       
        .itinerary-header {
            width: 100%;
            max-width: 800px;
@@ -586,12 +589,6 @@
            position: relative;
            z-index: 2;
        }
-       
-       .itinerary-text p {
-           margin-top: 0;
-           
-       }
-
        
        .itinerary-text p {
            color: #333;

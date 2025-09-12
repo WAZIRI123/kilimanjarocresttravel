@@ -45,7 +45,7 @@
                         <div class="group relative overflow-hidden rounded-lg bg-card text-card-foreground shadow-sm hover:shadow-md transition-all duration-300">
                             <div class="aspect-square overflow-hidden">
                                 <img 
-                                    src="{{ asset('images/image-used/chui.PNG') }}" 
+                                    src="{{ asset('images/image-used/chui.png') }}" 
                                     alt="safaris"
                                     class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
                                 >

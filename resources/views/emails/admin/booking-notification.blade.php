@@ -11,6 +11,7 @@ A new safari booking has been submitted through the website. Here are the detail
 - **Budget:** {{ $booking->budget }}
 - **Travel Dates:** {{ $formattedTravelDates }}
 - **Traveling With:** {{ $booking->traveling_with }}
+- **Number of Children:** {{ $booking->number_of_children }}
 
 ## Contact Information
 - **Name:** {{ $booking->first_name }} {{ $booking->last_name }}

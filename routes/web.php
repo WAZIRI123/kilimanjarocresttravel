@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DestinationController;
 use App\Livewire\BookingWizard;
+use App\Models\NewsletterSubscriber;
+use App\Notifications\VerifyNewsletterEmail;
 
 Route::get('/', function () {
     return view('welcome');
@@ -39,8 +41,17 @@ Route::get('/destinations/{id}', [DestinationController::class, 'show'])
         $exitCode = Artisan::call('view:cache');
         $exitCode = Artisan::call('route:cache');
         $exitCode = Artisan::call('config:cache');
+        
+        $exitCode = Artisan::call('optimize');
+        
         return 'Caches cleared!'; // This will be displayed when you visit /clear-cache
     })->name('clear.cache');
+    
+       Route::get('/storage-link', function() {
+        $exitCode = Artisan::call('storage:link');
+  
+        return 'storage link'; // This will be displayed when you visit /clear-cache
+    })->name('storage-link');
 
 // Booking Wizard
 Route::get('/book-now', function () {
@@ -65,3 +76,22 @@ Route::get('/special-offers', function () {
 Route::get('/home', function () {
     return redirect('/');
 })->name('home');
+
+//news letter
+Route::post('/subscribe', function () {
+    $email = request('email');
+    $subscriber = new \App\Models\NewsletterSubscriber();
+    $subscriber->email = $email;
+    $subscriber->save();
+    $subscriber->notify(new VerifyNewsletterEmail());
+    return redirect()->back()->with('success', 'You have been subscribed to our newsletter! please check your email for confirmation');
+})->name('subscribe');
+  Route::get('/special-offers', function () {
+    return view('special-offers');
+     })->name('special-offers');
+
+Route::get('/verify-email/{subscriber}', function (NewsletterSubscriber $subscriber) {
+    $subscriber->email_verified_at = now();
+    $subscriber->save();
+    return redirect()->route('special-offers')->with('success', 'Your email has been verified!');
+})->name('verification.verify');

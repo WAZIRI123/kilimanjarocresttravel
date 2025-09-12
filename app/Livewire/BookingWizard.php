@@ -50,12 +50,15 @@ class BookingWizard extends Component
         'MY FRIENDS'
     ];
     
+    // Number of children (only shown when traveling with family)
+    public $numberOfChildren = 0;
+    
     // Budget options
     public $budgetOptions = [
-        'LESS THAN US$5,000',
-        'US$5,000 - US$10,000',
+        'LESS THAN US$10,000',
         'US$10,000 - US$15,000',
-        'US$15,000 +',
+        'US$15,000 - US$20,000',
+        'US$20,000 +',
         'NOT SURE'
     ];
     
@@ -87,13 +90,18 @@ class BookingWizard extends Component
             'I have specific dates'
         ];
         
-        $this->months = [
+        // Get current month (0-11)
+        $currentMonth = (int)date('n') - 1; // Convert to 0-based index
+        
+        // Get all months
+        $allMonths = [
             'January', 'February', 'March', 'April', 'May', 'June',
             'July', 'August', 'September', 'October', 'November', 'December'
         ];
-        
-      
-        
+
+            // Set initial months based on current year
+        $this->updateMonthsForYear(date('Y'));
+       
         // Load package if ID is provided
         if ($packageId) {
        
@@ -124,6 +132,28 @@ class BookingWizard extends Component
     }
     
     protected $listeners = ['goToNextStep', 'goToPreviousStep'];
+    
+    /**
+     * Update the available months based on the selected year
+     */
+    protected function updateMonthsForYear($year)
+    {
+        $allMonths = [
+            'January', 'February', 'March', 'April', 'May', 'June',
+            'July', 'August', 'September', 'October', 'November', 'December'
+        ];
+        
+        $currentYear = (int)date('Y');
+        $currentMonth = (int)date('n') - 1; // 0-based index
+        
+        if ($year == $currentYear) {
+            // For current year, only show remaining months
+            $this->months = array_slice($allMonths, $currentMonth);
+        } else {
+            // For future years, show all months
+            $this->months = $allMonths;
+        }
+    }
 
     public function render()
     {
@@ -146,20 +176,19 @@ class BookingWizard extends Component
     public function selectTravelDate($option)
     {
         $this->selectedTravelDate = $option;
-        // If specific dates are selected, generate days for current month
+        
+        // Reset month and day when changing the year
+        $this->selectedMonth = '';
+        $this->selectedDay = '';
+        
         if ($option === 'I have specific dates') {
             $this->arrivalDate = '';
             $this->departureDate = '';
         } elseif ($option === 'I am flexible') {
             $this->selectedDuration = '';
         } else {
-            // For year selection, reset month and day
-            $this->selectedMonth = '';
-            $this->selectedDay = '';
-            // Generate days for current month if a month is selected
-            if ($this->selectedMonth) {
-                $this->updatedSelectedMonth();
-            }
+            // If a year is selected, update the months list
+            $this->updateMonthsForYear($option);
         }
     }
 
@@ -253,7 +282,12 @@ class BookingWizard extends Component
             case 7:
                 return !empty($this->selectedDuration);
             case 8:
-                return !empty($this->travelingWith);
+                $isValid = !empty($this->travelingWith);
+                // If traveling with family, validate number of children
+                if ($this->travelingWith === 'MY FAMILY') {
+                    $isValid = $isValid && is_numeric($this->numberOfChildren) && $this->numberOfChildren >= 0;
+                }
+                return $isValid;
             case 9: // Contact Information
                 return !empty($this->firstName) && 
                        !empty($this->lastName) && 
@@ -271,11 +305,30 @@ class BookingWizard extends Component
     public function updatedSelectedMonth()
     {
         // Update days based on selected month and year
-        $year = is_numeric($this->selectedTravelDate) ? (int)$this->selectedTravelDate : (int)date('Y');
-        $month = array_search($this->selectedMonth, $this->months) + 1;
-        $daysInMonth = cal_days_in_month(CAL_GREGORIAN, $month, $year);
+        $selectedYear = is_numeric($this->selectedTravelDate) ? (int)$this->selectedTravelDate : (int)date('Y');
+        $selectedMonth = array_search($this->selectedMonth, [
+            'January', 'February', 'March', 'April', 'May', 'June',
+            'July', 'August', 'September', 'October', 'November', 'December'
+        ]) + 1; // Convert month name to number (1-12)
         
-        $this->days = range(1, $daysInMonth);
+        $currentYear = (int)date('Y');
+        $currentMonth = (int)date('n');
+        $currentDay = (int)date('j');
+        
+        // Get all days in the selected month
+        $daysInMonth = cal_days_in_month(CAL_GREGORIAN, $selectedMonth, $selectedYear);
+        $allDays = range(1, $daysInMonth);
+        
+        // If it's the current year and month, filter out past days
+        if ($selectedYear === $currentYear && $selectedMonth === $currentMonth) {
+            $this->days = array_filter($allDays, function($day) use ($currentDay) {
+                return $day >= $currentDay;
+            });
+        } else {
+            $this->days = $allDays;
+        }
+        
+        $this->days = array_values($this->days); // Re-index the array
         $this->selectedDay = ''; // Reset selected day when month changes
     }
     
@@ -324,6 +377,7 @@ class BookingWizard extends Component
                 'departure_date' => $this->departureDate ?: null,
                 'selected_duration' => $this->selectedDuration,
                 'traveling_with' => $this->travelingWith,
+                'number_of_children' => $this->numberOfChildren,
                 'safari_preferences' => $this->safariPreferences,
                 'status' => 'pending',
             ];
@@ -349,7 +403,7 @@ class BookingWizard extends Component
             
             // Send email notification to admin
             try {
-                $adminEmail = config('mail.admin_email', 'admin@stansafaris.com');
+                $adminEmail = config('mail.admin_email', 'safari@crownedwildafrica.com');
                 Log::info('Sending email notification to admin: ' . $adminEmail);
                 
                 Mail::to($adminEmail)->send(new AdminBookingNotification($booking));

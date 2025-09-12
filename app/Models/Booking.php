@@ -27,6 +27,7 @@ class Booking extends Model
         'departure_date',
         'selected_duration',
         'traveling_with',
+        'number_of_children',
         'safari_preferences',
         'status',
         'package_id',

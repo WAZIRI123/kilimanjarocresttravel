@@ -154,17 +154,54 @@
                             return null;
                         };
 
+                        // Handle month filtering when year changes
+                        Livewire.on('updatedSelectedTravelDate', (year) => {
+                            const currentDate = new Date();
+                            const currentYear = currentDate.getFullYear();
+                            const currentMonth = currentDate.getMonth();
+                            if (parseInt(year) === currentYear) {
+                                // For current year, only show remaining months
+                                const allMonths = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+                                const filteredMonths = allMonths.slice(currentMonth);
+                                @this.set('months', filteredMonths);
+                                
+                                // Reset selected month if it's now invalid
+                                const selectedMonth = @this.get('selectedMonth');
+                                if (selectedMonth && !filteredMonths.includes(selectedMonth)) {
+                                    @this.set('selectedMonth', '');
+                                }
+                            } else if (parseInt(year) > currentYear) {
+                                // For future years, show all months
+                                @this.set('months', ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']);
+                            }
+                        });
+                        
                         // Initialize date pickers
                         const initDatePickers = () => {
                             // Arrival date picker
                             const arrivalInput = document.getElementById('arrivalDateInput');
+                            const today = new Date();
+                            const currentYear = today.getFullYear();
+                            const currentMonth = today.getMonth();
+                            const currentDay = today.getDate();
+                            
                             const arrivalPicker = flatpickr(arrivalInput, {
                                 dateFormat: "d/m/Y",
                                 minDate: "today",
                                 allowInput: true,
                                 clickOpens: true,
+                                onMonthChange: function(selectedDates, dateStr, instance) {
+                                    // Prevent going to past months in the current year
+                                    const selectedDate = selectedDates[0];
+                                    if (selectedDate.getFullYear() === currentYear && 
+                                        selectedDate.getMonth() < currentMonth) {
+                                        instance.setDate(today);
+                                    }
+                                },
                                 onOpen: function(selectedDates) {
                                     this.set('minDate', "today");
+                                    // Set default view to current month
+                                    this.set('defaultDate', today);
                                     if (selectedDates.length > 0) {
                                         this.setDate(selectedDates[0]);
                                     }
@@ -331,6 +368,52 @@
                             </button>
                         @endforeach
                     </div>
+
+                    @if($travelingWith === 'MY FAMILY')
+                        <div class="children-input" style="margin-top: 2rem;">
+                            <label for="numberOfChildren" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">
+                                Number of children traveling with you:
+                            </label>
+                            <div style="display: flex; align-items: center; gap: 1rem;">
+                                <button 
+                                    type="button" 
+                                    wire:click="$set('numberOfChildren', Math.max(0, {{ $numberOfChildren }} - 1))"
+                                    style="padding: 0.5rem 1rem; border: 1px solid #ddd; background: #f8f9fa; border-radius: 4px; cursor: pointer;"
+                                >
+                                    -
+                                </button>
+                                <input 
+                                    type="number" 
+                                    id="numberOfChildren" 
+                                    wire:model.live="numberOfChildren" 
+                                    min="0" 
+                                    style="width: 80px; text-align: center; padding: 0.5rem; border: 1px solid #ddd; border-radius: 4px;"
+                                >
+                                <button 
+                                    type="button" 
+                                    wire:click="$set('numberOfChildren', {{ $numberOfChildren }} + 1)"
+                                    style="padding: 0.5rem 1rem; border: 1px solid #ddd; background: #f8f9fa; border-radius: 4px; cursor: pointer;"
+                                >
+                                    +
+                                </button>
+                            </div>
+                        </div>
+                        
+                        @push('scripts')
+                        <script>
+                            document.addEventListener('livewire:initialized', () => {
+                                // Ensure number of children is always a number and at least 0
+                                Livewire.on('updatedNumberOfChildren', (value) => {
+                                    if (isNaN(value) || value < 0) {
+                                        @this.set('numberOfChildren', 0);
+                                    } else {
+                                        @this.set('numberOfChildren', parseInt(value));
+                                    }
+                                });
+                            });
+                        </script>
+                        @endpush
+                    @endif
                 </div>
                 
             @elseif($currentStep === 9)
@@ -476,6 +559,9 @@
                             </p>
                             @if($travelingWith)
                                 <p><strong>Traveling With:</strong> {{ $travelingWith }}</p>
+                                @if($numberOfChildren)
+                                    <p><strong>Number of Children:</strong> {{ $numberOfChildren }}</p>
+                                @endif
                             @endif
                             @if($safariPreferences)
                                 <p><strong>Your Safari Preferences:</strong> {{ $safariPreferences }}</p>

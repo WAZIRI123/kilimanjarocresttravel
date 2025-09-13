@@ -3,3 +3,25 @@
 @source '../../storage/framework/views/*.php';
 @source '../**/*.blade.php';
 @source '../**/*.js';
+
+@font-face {
+    font-family: 'AlternateGotNo1D';
+    src: url('../../public/css/fonts/used_font/AlternateGotNo1DRegular.woff2') format('woff2'),
+         url('../../public/css/fonts/used_font/AlternateGotNo1DRegular.woff') format('woff');
+    font-weight: 400;
+    font-size: 1.4375rem !important;
+    letter-spacing: 1.84px !important;
+    text-transform: uppercase !important;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'brandon-bold-webfont';
+    src: url('../../public/css/fonts/used_font/brandon-bold-webfont.woff2') format('woff2'),
+         url('../../public/css/fonts/used_font/brandon-bold-webfont.woff') format('woff');
+    font-weight: 400;
+    font-size: 1.4375rem !important;
+    letter-spacing: 1.84px !important;
+    text-transform: uppercase !important;
+    font-display: swap;
+}

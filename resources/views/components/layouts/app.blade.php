@@ -11,7 +11,7 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
-
+<link href="{{ asset('css/fonts/used_font/AlternateGotNo1DRegular.woff2') }}" rel="stylesheet">
     <!-- Scripts -->
 
       <script>
@@ -43,4 +43,5 @@
   @include('components.footer')
 
 </body>
+
 </html>

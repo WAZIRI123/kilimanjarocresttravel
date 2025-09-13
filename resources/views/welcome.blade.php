@@ -11,7 +11,9 @@
                 ->get();
             @endphp
              
-            @include('partials.sections.text-image')
+            <div id="next-section">
+                @include('partials.sections.text-image')
+            </div>
             @include('partials.sections._destinations-grid')
             @include('partials.sections.text-image2')
             @include('partials.sections.popular-package')

@@ -12,7 +12,7 @@
             <div class="video-embed">
                 <div class="video-container">
                     <iframe 
-                        src="https://www.youtube.com/embed/{{ $video->video_id }}?start=9&rel=0&modestbranding=1&showinfo=0" 
+                        src="https://www.youtube.coms/embed/{{ $video->video_id }}?start=9&rel=0&modestbranding=1&showinfo=0" 
                         title="{{ $video->title }}" 
                         frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 

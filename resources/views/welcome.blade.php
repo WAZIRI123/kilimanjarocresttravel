@@ -12,7 +12,7 @@
             @endphp
              
             <div id="next-section">
-                @include('partials.sections.text-image')
+                @include('partials.sections.section-after-hero')
             </div>
             @include('partials.sections._destinations-grid')
             @include('partials.sections.text-image2')

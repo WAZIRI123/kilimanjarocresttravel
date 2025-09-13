@@ -1,5 +1,12 @@
 import './bootstrap';
 
+// AOS Animation
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+//initialize AOS
+AOS.init();
+
 // Only initialize Alpine if it's not already loaded
 if (!window.Alpine) {
     import('alpinejs').then(Alpine => {

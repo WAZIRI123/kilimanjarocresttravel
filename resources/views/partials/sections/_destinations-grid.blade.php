@@ -18,61 +18,113 @@ $latestzanzibar = \App\Models\Package::where('is_active', true)
 
 @endphp
 <!-- Destinations Grid Partial -->
-<section class="destinations-section" style="background-color: #F5F5DC;">
+<section class="destinations-section" style="background-color: #f9f9f9;">
     <div class="container">
         <div class="section-header">
-            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Popular Destinations</h2>
-            @include('partials.divider')
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 section-title">Popular Destinations</h2>
             <p class="section-subtitle">Explore our most popular Tanzanian destinations</p>
         </div>
         
-        <div class="destinations-grid">
-            <!-- Destination Card 1 -->
-            <a href="#" class="destination-card block shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <div class="card-image">
-                    <img src="{{asset('storage/' . $latestSafari?->featured_image)}}" alt="Maasai Mara National Reserve">
-                    <div class="card-overlay">
-                        <div class="flex flex-col h-full justify-between py-6">
-                            <div class="mt-auto w-full">
-                                <div class="flex flex-row justify-center items-center w-full">
-                                    <h3 class="text-white text-lg sm:text-xl font-semibold pr-2">Safaris</h3>
+        <div class="destinations-scroll-container">
+            <div class="destinations-grid">
+                <!-- Destination Card 1 -->
+                <a href="#" class="destination-card block shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="card-image">
+                        <img src="{{asset('storage/' . $latestSafari?->featured_image)}}" alt="Maasai Mara National Reserve">
+                        <div class="card-overlay">
+                            <div class="flex flex-col h-full justify-between py-6">
+                                <div class="mt-auto w-full">
+                                    <div class="flex flex-row justify-center items-center w-full">
+                                        <h3 class="text-white text-lg sm:text-xl font-semibold pr-2">Safaris</h3>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </a>
+                </a>
 
-            <!-- Destination Card 2 -->
-            <a href="#" class="destination-card block shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <div class="card-image">
-                    <img src="{{asset('storage/' . $latestKilimanjaro?->featured_image)}}" alt="Serengeti National Park">
-                    <div class="card-overlay">
-                        <div class="flex flex-col h-full justify-between py-6">
-                            <div class="mt-auto w-full">
-                                <div class="flex flex-row justify-center items-center w-full">
-                                    <h3 class="text-white text-lg sm:text-xl font-semibold  pr-2">Hiking</h3>
+  <!-- Destination Card 1 -->
+                <a href="#" class="destination-card block shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="card-image">
+                        <img src="{{asset('storage/' . $latestSafari?->featured_image)}}" alt="Maasai Mara National Reserve">
+                        <div class="card-overlay">
+                            <div class="flex flex-col h-full justify-between py-6">
+                                <div class="mt-auto w-full">
+                                    <div class="flex flex-row justify-center items-center w-full">
+                                        <h3 class="text-white text-lg sm:text-xl font-semibold pr-2">Safaris</h3>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </a>
+                </a>
 
-            <!-- Destination Card 3 -->
-            <a href="#" class="destination-card block shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <div class="card-image">
-                    <img src="{{asset('storage/' . $latestzanzibar?->featured_image)}}" alt="Amboseli National Park">                    <div class="card-overlay">
-                        <div class="flex flex-col h-full justify-between py-6">
-                            <div class="mt-auto w-full">
-                                <div class="flex flex-row justify-center items-center w-full">
-                                    <h3 class="text-white text-lg sm:text-xl font-semibold pr-2 ">Beaches</h3>
+
+  <!-- Destination Card 1 -->
+                <a href="#" class="destination-card block shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="card-image">
+                        <img src="{{asset('storage/' . $latestSafari?->featured_image)}}" alt="Maasai Mara National Reserve">
+                        <div class="card-overlay">
+                            <div class="flex flex-col h-full justify-between py-6">
+                                <div class="mt-auto w-full">
+                                    <div class="flex flex-row justify-center items-center w-full">
+                                        <h3 class="text-white text-lg sm:text-xl font-semibold pr-2">Safaris</h3>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </a>
+                </a>
+
+                <!-- Destination Card 2 -->
+                <a href="#" class="destination-card block shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="card-image">
+                        <img src="{{asset('storage/' . $latestKilimanjaro?->featured_image)}}" alt="Serengeti National Park">
+                        <div class="card-overlay">
+                            <div class="flex flex-col h-full justify-between py-6">
+                                <div class="mt-auto w-full">
+                                    <div class="flex flex-row justify-center items-center w-full">
+                                        <h3 class="text-white text-lg sm:text-xl font-semibold  pr-2">Hiking</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Destination Card 3 -->
+                <a href="#" class="destination-card block shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="card-image">
+                        <img src="{{asset('storage/' . $latestzanzibar?->featured_image)}}" alt="Amboseli National Park">                    <div class="card-overlay">
+                            <div class="flex flex-col h-full justify-between py-6">
+                                <div class="mt-auto w-full">
+                                    <div class="flex flex-row justify-center items-center w-full">
+                                        <h3 class="text-white text-lg sm:text-xl font-semibold pr-2 ">Beaches</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                
+                <!-- You can add more cards here -->
+                {{-- Example of additional card --}}
+                {{--
+                <a href="#" class="destination-card block shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="card-image">
+                        <img src="{{ asset('path/to/additional/image.jpg') }}" alt="Additional Destination">
+                        <div class="card-overlay">
+                            <div class="flex flex-col h-full justify-between py-6">
+                                <div class="mt-auto w-full">
+                                    <div class="flex flex-row justify-center items-center w-full">
+                                        <h3 class="text-white text-lg sm:text-xl font-semibold pr-2">New Destination</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                --}}
             </div>
         </div>
         
@@ -83,45 +135,52 @@ $latestzanzibar = \App\Models\Package::where('is_active', true)
 /* Destinations Section Styles */
 .destinations-section {
     padding: 2rem 0;
-    background-color: #f9f9f9;
+    background-color: #F5F5DC;
+    overflow: hidden; /* Prevent horizontal scroll on the section */
 }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: 100%; /* Full width container */
     padding: 0 20px;
+    margin: 0 auto;
 }
 
 .section-header {
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.section-title {
-    font-size: 2.5rem;
-    color: #1a472a;
-    margin-bottom: 1rem;
-    font-weight: 700;
+.destinations-scroll-container {
+    width: 100%;
+    overflow-x: auto;
+    padding: 1rem 0;
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+    -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
 }
 
-.section-subtitle {
-    color: #666;
-    font-size: 1.1rem;
-    max-width: 700px;
-    margin: 0 auto;
+.destinations-scroll-container::-webkit-scrollbar {
+    display: none;
 }
 
 .destinations-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    display: inline-flex;
     gap: 2rem;
-    margin-bottom: 3rem;
+    padding: 0 0rem 1rem; /* Add padding to prevent cards from touching the edges */
+    min-width: min-content; /* Ensure the container is at least as wide as its content */
 }
+
+
 
 .destination-card {
     background: transparent;
     border-radius: 10px;
-    min-height: 80%;
+    min-width: 300px;
+    max-width: 350px;
+    flex: 0 0 auto;
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -129,13 +188,14 @@ $latestzanzibar = \App\Models\Package::where('is_active', true)
 }
 
 .destination-card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-5px);
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
 }
 
 .card-image {
     position: relative;
-    height: 420px;
+    height: 350px;
+    width: 100%;
     overflow: hidden;
     border-radius: 10px;
 }
@@ -151,55 +211,7 @@ $latestzanzibar = \App\Models\Package::where('is_active', true)
     transform: scale(1.05);
 }
 
-.card-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.1) 100%);
-    color: #fff;
-    padding: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    box-sizing: border-box;
-}
-
-.price-tag {
-    background: #e67e22;
-    color: #fff;
-    padding: 5px 15px;
-    border-radius: 20px;
-    font-weight: 600;
-    font-size: 0.9rem;
-    margin: 0;
-    backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.duration {
-    background: rgba(0, 0, 0, 0.4);
-    backdrop-filter: blur(5px);
-    padding: 5px 12px;
-    border-radius: 15px;
-    font-size: 0.8rem;
-    text-align: center;
-    margin: 0;
-    color: #fff;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    flex-shrink: 0;
-    margin-left: 0.5rem;
-}
-
-.line-clamp-2 {
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
+/* Rest of the existing styles remain the same */
 /* Removed card-content styles as they're no longer needed */
 
 /* Removed destination-name styles as they're now in the overlay */
@@ -272,17 +284,35 @@ $latestzanzibar = \App\Models\Package::where('is_active', true)
 /* Responsive Styles */
 @media (max-width: 992px) {
     .destinations-grid {
-        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
     }
 }
 
 @media (max-width: 768px) {
+    .destination-card {
+        min-width: 280px;
+    }
+    
     .destinations-grid {
-        grid-template-columns: 1fr;
+        padding: 0 0rem 1rem;
+    }
+    
+    .card-image {
+        height: 300px;
     }
     
     .section-title {
         font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .destination-card {
+        min-width: 260px;
+    }
+    
+    .card-image {
+        height: 280px;
     }
 }
 </style>

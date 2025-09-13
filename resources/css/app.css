@@ -25,3 +25,50 @@
     text-transform: uppercase !important;
     font-display: swap;
 }
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.scrollbar-hide {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+/* Optional: Add smooth scrolling for better UX */
+.scrollbar-hide {
+    scroll-behavior: smooth;
+}
+
+/* Add some padding to the container to prevent content from touching the edges */
+.-mx-4 {
+    margin-left: -1rem;
+    margin-right: -1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+/* Ensure the flex container takes full width */
+.flex.space-x-6 {
+    width: max-content;
+    min-width: 100%;
+}
+
+.section-title {
+    font-family: 'AlternateGotNo1D', sans-serif;
+    font-weight: 400 !important;
+    font-size: 30px!important;
+    color: var(--color-gray-900)!important;
+    letter-spacing: 3px !important;
+    text-transform: uppercase !important;
+    line-height: 54px !important;
+}
+.section-subtitle {
+    font-family: 'brandon-bold-webfont', sans-serif;
+    font-weight: 100;
+    font-size: 17px!important;
+    letter-spacing: 0.85px !important;
+    line-height: 25.5px !important;
+}

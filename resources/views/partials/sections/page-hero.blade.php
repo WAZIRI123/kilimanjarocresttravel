@@ -104,42 +104,6 @@
             align-items: center;
         }
         
-        .navbar-logo a {
-            display: flex;
-            align-items: center;
-            text-decoration: none;
-            height: 100%;
-        }
-        
-        .logo-img {
-            height: 80px;
-            width: auto;
-            transition: all 0.3s ease;
-            filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.5)) 
-                    brightness(1.2) 
-                    contrast(1.2) 
-                    saturate(1.4);
-        }
-        
-        .modern-navbar.scrolled .logo-img {
-            height: 50px; /* Slightly smaller when scrolled, increased from 35px */
-        }
-        
-        .logo-text {
-            font-size: 1.5rem;
-            line-height: 1;
-        }
-        
-        .logo-subtext {
-            font-size: 0.8rem;
-            opacity: 0.8;
-            margin-top: 2px;
-            letter-spacing: 2px;
-        }
-        
-    
-       
-        
         /* CTA Button Styles */
         .nav-cta-button {
             display: inline-block;
@@ -342,8 +306,6 @@
             background-position: center;
             background-repeat: no-repeat;
             overflow: hidden;
-            color: white;
-            text-align: center;
             padding: 0 1.5rem;
             margin: 0;
             box-sizing: border-box;
@@ -584,12 +546,6 @@
                 padding: 0 0rem;
             }
           
-            .logo-img {
-            height: 80px; /* Reduced logo size */
-            width: auto;
-            transition: all 0.3s ease;
-            filter: brightness(1.4) contrast(1.3) saturate(1.4);
-        }
             .title-line {
                 font-size: 2.8rem;
             }

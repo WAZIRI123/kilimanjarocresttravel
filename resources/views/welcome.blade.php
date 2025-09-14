@@ -17,6 +17,7 @@
             @include('partials.sections._destinations-grid')
             @include('partials.sections.text-image2')
             @include('partials.sections.popular-package')
+            @include('partials.sections.text-image-without-rounded')
             @include('partials.sections.Our-partner')
     <section class="py-6 md:py-6 lg:py-6 bg-white" style="background-color: #f5f5D5;" wire:ignore.self>
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">

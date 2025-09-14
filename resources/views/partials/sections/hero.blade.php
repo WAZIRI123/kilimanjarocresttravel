@@ -37,7 +37,7 @@ text-transform: uppercase;">
             Conquer The <br/>Africa's Summit
         </h1>
         <div class="flex flex-col sm:flex-row gap-4 py-6">
-            <a href="{{ route('book-now') }}" class="inline-block bg-transparent text-white border border-white px-8 py-3 rounded-sm font-medium hover:bg-white hover:text-black transition-colors text-sm text-center" style="font-family: AlternateGotNo1D, sans-serif; font-size: 1.2rem !important; letter-spacing: 1.84px !important; text-transform: uppercase !important; font-weight: 400 !important;">
+            <a href="{{ route('book-now') }}" class="inline-block mt-2 bg-transparent hover:bg-[#444] text-white border border-white px-3 py-2 rounded-sm font-medium transition-colors text-sm text-center" style="font-family: brandon-bold-webfont, sans-serif; font-size: 0.8rem !important; letter-spacing: 1.84px !important; text-transform: uppercase !important; font-weight: normal !important;">
                 Book Now
             </a>
         </div>

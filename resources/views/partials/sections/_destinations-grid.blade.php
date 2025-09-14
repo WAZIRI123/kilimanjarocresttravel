@@ -18,24 +18,31 @@ $latestzanzibar = \App\Models\Package::where('is_active', true)
 
 @endphp
 <!-- Destinations Grid Partial -->
-<section class="destinations-section" style="background-color: #f9f9f9;">
+<section class="destinations-section" style="background-image: url({{ asset('images/image-used/bg.AVIF') }}) !important; background-size: cover !important; background-position: center !important;">
     <div class="container">
-        <div class="section-header">
-            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 section-title">Popular Destinations</h2>
-            <p class="section-subtitle">Explore our most popular Tanzanian destinations</p>
+        <div class="section-header d-block lg:hidden">
+            <h2 class="text-2xl font-bold text-gray-900 mb-4 text-white " data-aos="fade-up">Popular Destinations</h2>
+            <p class="section-subtitle text-white text-xl" data-aos="fade-up">Explore our most popular Tanzanian destinations</p>
         </div>
         
         <div class="destinations-scroll-container">
-            <div class="destinations-grid">
+            <div class="destinations-grid h-120">
                 <!-- Destination Card 1 -->
-                <a href="#" class="destination-card block shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <a href="#" class="destination-card block duration-300 hidden lg:block" data-aos="fade-up">
                     <div class="card-image">
-                        <img src="{{asset('storage/' . $latestSafari?->featured_image)}}" alt="Maasai Mara National Reserve">
-                        <div class="card-overlay">
+                        <div>
                             <div class="flex flex-col h-full justify-between py-6">
                                 <div class="mt-auto w-full">
                                     <div class="flex flex-row justify-center items-center w-full">
-                                        <h3 class="text-white text-lg sm:text-xl font-semibold pr-2">Safaris</h3>
+                                        <div class="section-header">
+            <h2 class="text-3xl md:text-4xl font-bold text-white" style="font-family: 'AlternateGotNo1D', sans-serif;
+    font-weight: 400 !important;
+    font-size: 30px!important;
+    letter-spacing: 3px !important;
+    text-transform: uppercase !important;
+    line-height: 54px !important;">Popular Destinations</h2>
+            <p class="section-subtitle text-white">Explore our most popular Tanzanian destinations</p>
+        </div>
                                     </div>
                                 </div>
                             </div>
@@ -44,14 +51,14 @@ $latestzanzibar = \App\Models\Package::where('is_active', true)
                 </a>
 
   <!-- Destination Card 1 -->
-                <a href="#" class="destination-card block shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <a href="#" class="destination-card block duration-300" data-aos="fade-up">
                     <div class="card-image">
                         <img src="{{asset('storage/' . $latestSafari?->featured_image)}}" alt="Maasai Mara National Reserve">
-                        <div class="card-overlay">
+                        <div class="card-overlay bg-black/20 hover:bg-black/25 transition duration-500 ease-in-out">
                             <div class="flex flex-col h-full justify-between py-6">
-                                <div class="mt-auto w-full">
+                                <div class="mt-auto w-full" style="margin-top:60%" >
                                     <div class="flex flex-row justify-center items-center w-full">
-                                        <h3 class="text-white text-lg sm:text-xl font-semibold pr-2">Safaris</h3>
+                                        <h3 class="text-lg sm:text-xl font-semibold pr-2">Safaris</h3>
                                     </div>
                                 </div>
                             </div>
@@ -61,12 +68,12 @@ $latestzanzibar = \App\Models\Package::where('is_active', true)
 
 
   <!-- Destination Card 1 -->
-                <a href="#" class="destination-card block shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <a href="#" class="destination-card block duration-300" data-aos="fade-up">
                     <div class="card-image">
                         <img src="{{asset('storage/' . $latestSafari?->featured_image)}}" alt="Maasai Mara National Reserve">
-                        <div class="card-overlay">
+                        <div class="card-overlay bg-black/20 hover:bg-black/25 transition duration-500 ease-in-out">
                             <div class="flex flex-col h-full justify-between py-6">
-                                <div class="mt-auto w-full">
+                                <div class="mt-auto w-full" style="margin-top:60%" >
                                     <div class="flex flex-row justify-center items-center w-full">
                                         <h3 class="text-white text-lg sm:text-xl font-semibold pr-2">Safaris</h3>
                                     </div>
@@ -77,12 +84,12 @@ $latestzanzibar = \App\Models\Package::where('is_active', true)
                 </a>
 
                 <!-- Destination Card 2 -->
-                <a href="#" class="destination-card block shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <a href="#" class="destination-card block duration-300" data-aos="fade-up">
                     <div class="card-image">
                         <img src="{{asset('storage/' . $latestKilimanjaro?->featured_image)}}" alt="Serengeti National Park">
-                        <div class="card-overlay">
+                        <div class="card-overlay bg-black/20 hover:bg-black/25 transition duration-500 ease-in-out">
                             <div class="flex flex-col h-full justify-between py-6">
-                                <div class="mt-auto w-full">
+                                <div class="mt-auto w-full" style="margin-top:60%" >
                                     <div class="flex flex-row justify-center items-center w-full">
                                         <h3 class="text-white text-lg sm:text-xl font-semibold  pr-2">Hiking</h3>
                                     </div>
@@ -93,11 +100,11 @@ $latestzanzibar = \App\Models\Package::where('is_active', true)
                 </a>
 
                 <!-- Destination Card 3 -->
-                <a href="#" class="destination-card block shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <a href="#" class="destination-card block duration-300" data-aos="fade-up">
                     <div class="card-image">
-                        <img src="{{asset('storage/' . $latestzanzibar?->featured_image)}}" alt="Amboseli National Park">                    <div class="card-overlay">
+                        <img src="{{asset('storage/' . $latestzanzibar?->featured_image)}}" alt="Amboseli National Park">                    <div class="card-overlay bg-black/20 hover:bg-black/25 transition duration-500 ease-in-out">
                             <div class="flex flex-col h-full justify-between py-6">
-                                <div class="mt-auto w-full">
+                                <div class="mt-auto w-full" style="margin-top:60%" >
                                     <div class="flex flex-row justify-center items-center w-full">
                                         <h3 class="text-white text-lg sm:text-xl font-semibold pr-2 ">Beaches</h3>
                                     </div>
@@ -110,12 +117,12 @@ $latestzanzibar = \App\Models\Package::where('is_active', true)
                 <!-- You can add more cards here -->
                 {{-- Example of additional card --}}
                 {{--
-                <a href="#" class="destination-card block shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <a href="#" class="destination-card block duration-300" data-aos="fade-up">
                     <div class="card-image">
                         <img src="{{ asset('path/to/additional/image.jpg') }}" alt="Additional Destination">
-                        <div class="card-overlay">
+                        <div class="card-overlay bg-black/20 hover:bg-black/25 transition duration-500 ease-in-out">
                             <div class="flex flex-col h-full justify-between py-6">
-                                <div class="mt-auto w-full">
+                                <div class="mt-auto w-full" style="margin-top:60%" >
                                     <div class="flex flex-row justify-center items-center w-full">
                                         <h3 class="text-white text-lg sm:text-xl font-semibold pr-2">New Destination</h3>
                                     </div>
@@ -165,6 +172,16 @@ $latestzanzibar = \App\Models\Package::where('is_active', true)
 .destinations-scroll-container::-webkit-scrollbar {
     display: none;
 }
+.card-overlay  {
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    bottom:50;
+    left: 50;
+    width: 100%;
+    height: 100%;
+    color: #fff !important;
+}
 
 .destinations-grid {
     display: inline-flex;
@@ -177,13 +194,12 @@ $latestzanzibar = \App\Models\Package::where('is_active', true)
 
 .destination-card {
     background: transparent;
-    border-radius: 10px;
+    border-radius: 2px;
     min-width: 300px;
     max-width: 350px;
     flex: 0 0 auto;
     overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease;
     position: relative;
 }
 
@@ -194,10 +210,11 @@ $latestzanzibar = \App\Models\Package::where('is_active', true)
 
 .card-image {
     position: relative;
-    height: 350px;
+    height: 100%;
     width: 100%;
+    max-width: 300px;
     overflow: hidden;
-    border-radius: 10px;
+    border-radius: 2px;
 }
 
 .card-image img {
@@ -297,10 +314,6 @@ $latestzanzibar = \App\Models\Package::where('is_active', true)
         padding: 0 0rem 1rem;
     }
     
-    .card-image {
-        height: 300px;
-    }
-    
     .section-title {
         font-size: 2rem;
     }
@@ -311,8 +324,5 @@ $latestzanzibar = \App\Models\Package::where('is_active', true)
         min-width: 260px;
     }
     
-    .card-image {
-        height: 280px;
-    }
 }
 </style>

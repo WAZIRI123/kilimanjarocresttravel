@@ -26,6 +26,17 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'brandon-bold-webfontRegular';
+    src: url('../../public/css/fonts/used_font/brandon-regular-webfont.woff2') format('woff2'),
+         url('../../public/css/fonts/used_font/brandon-regular-webfont.woff2') format('woff2');
+    font-size: 1.1rem !important;
+    letter-spacing: 0.85pxpx !important;
+    line-height: 25.5px !important;
+    text-transform: uppercase !important;
+    font-display: swap;
+}
+
 /* Hide scrollbar for Chrome, Safari and Opera */
 .scrollbar-hide::-webkit-scrollbar {
     display: none;
@@ -66,9 +77,10 @@
     line-height: 54px !important;
 }
 .section-subtitle {
-    font-family: 'brandon-bold-webfont', sans-serif;
-    font-weight: 100;
-    font-size: 17px!important;
+    font-family: 'brandon-bold-webfontRegular'; 
+    font-weight:400; 
     letter-spacing: 0.85px !important;
     line-height: 25.5px !important;
 }
+
+

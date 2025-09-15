@@ -58,23 +58,6 @@ $latestzanzibar = \App\Models\Package::where('is_active', true)
                             <div class="flex flex-col h-full justify-between py-6">
                                 <div class="mt-auto w-full" style="margin-top:60%" >
                                     <div class="flex flex-row justify-center items-center w-full">
-                                        <h3 class="text-lg sm:text-xl font-semibold pr-2">Safaris</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-
-
-  <!-- Destination Card 1 -->
-                <a href="#" class="destination-card block duration-300" data-aos="fade-up">
-                    <div class="card-image">
-                        <img src="{{asset('storage/' . $latestSafari?->featured_image)}}" alt="Maasai Mara National Reserve">
-                        <div class="card-overlay bg-black/20 hover:bg-black/25 transition duration-500 ease-in-out">
-                            <div class="flex flex-col h-full justify-between py-6">
-                                <div class="mt-auto w-full" style="margin-top:60%" >
-                                    <div class="flex flex-row justify-center items-center w-full">
                                         <h3 class="text-white text-lg sm:text-xl font-semibold pr-2">Safaris</h3>
                                     </div>
                                 </div>

@@ -1,14 +1,14 @@
-<footer class="w-full  pt-8 bg-white">
+<footer class="w-full  pt-8 bg-[#000000] text-white">
     <div class="container mx-auto px-4 py-1 md:py-1">
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <!-- Company Info -->
-            <div class="space-y-4">
-                <div class="flex justify-center lg:justify-start items-center space-x-2">
+            <div class="space-y-0 lg:relative">
+                <div class="flex justify-center lg:justify-start items-start space-x-2">
                     <x-application-logo class="h-8 w-auto" />
                    
                 </div>
-                <p class="text-muted-foreground text-center lg:text-left">Creating unforgettable safari experiences in the heart of Africa.</p>
+                <p class="text-muted-foreground text-center lg:text-left lg:absolute lg:bottom-5">Creating unforgettable safari experiences in the heart of Africa.</p>
         
             </div>
 
@@ -35,19 +35,19 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                         </svg>
-                        <span class="text-muted-foreground font-semibold text-start">Dar es Salam, Tanzania</span>
+                        <span class="text-muted-foreground font-semibold text-start">Moshi, Tanzania</span>
                     </li>
                     <li class="flex  items-center font-semibold  justify-center lg:justify-start">
                         <svg class="h-5 w-5 text-muted-foreground mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                         </svg>
-                        <a href="mailto:info@crownedwildafrica.com" class="text-muted-foreground hover:text-foreground transition-colors font-semibold">info@crownedwildafrica.com</a>
+                        <a href="mailto:info@kilimanjarocresttravel.com" class="text-muted-foreground hover:text-foreground transition-colors font-semibold">info@kilimanjarocresttravel.com</a>
                     </li>
                     <li class="flex justify-center lg:justify-start items-center font-semibold">
                         <svg class="h-5 w-5 text-muted-foreground mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                         </svg>
-                        <a href="tel:+255 780 986 288" class="text-muted-foreground hover:text-foreground transition-colors font-semibold">+255 780 986 288</a>
+                        <a href="tel:+255 612 068 540" class="text-muted-foreground hover:text-foreground transition-colors font-semibold">+255 612 068 540</a>
                     </li>
                 </ul>
             </div>
@@ -81,22 +81,6 @@
             </div>
         </div>
 
-        <!-- Payment Methods -->
-        <div class="mt-12 pt-8">
-            <div class="relative">
-                <div class="absolute inset-0 flex items-center">
-                    <span class="w-full border-t border-gray-200"></span>
-                </div>
-                <div class="relative flex justify-center text-xs uppercase">
-                    <span class="bg-white px-2 text-muted-foreground">We Accept</span>
-                </div>
-            </div>
-            <div class="mt-6 flex flex-wrap justify-center items-center gap-4 md:gap-6">
-             
-            <img src="{{ asset('images/image-used/footer-payment.png') }}" alt="Payment Methods" width="400" height="40" class="h-auto">
-            </div>
-        </div>
-
         <!-- Copyright -->
         <div class="mt-6 pt-6">
             <div class="relative">
@@ -105,7 +89,7 @@
                 </div>
             </div>
             <div class="relative flex justify-center">
-                <p class="text-sm text-muted-foreground bg-white  px-3">&copy; {{ date('Y') }} Crowned Wild Africa. All rights reserved.</p>
+                <p class="text-sm text-muted-foreground px-3">&copy; {{ date('Y') }}  Kilimanjaro Crest Travel. All rights reserved.</p>
             </div>
         </div>
         </div>

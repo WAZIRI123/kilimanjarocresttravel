@@ -12,7 +12,7 @@
                 <!-- Book Now Button and Mobile Menu -->
                 <div class="flex items-center justify-around w-48">
                     <div class="block">
-                        <a  href="{{ route('book-now') }}" class="bg-[#e7247a] hover:text-gray-800 px-[10px] lg:px-[20px] py-3 lg:py-[12px] text-white rounded-sm text-sm font-medium hover:bg-white transition-colors text-[9px] lg:text-[12px]" style="font-family: brandon-bold-webfont, sans-serif; letter-spacing: 2.84px !important; text-transform: uppercase !important; font-weight: 700 !important; line-height: 1 !important;">
+                        <a  href="{{ route('book-now') }}" class="bg-[#e7247a] hover:text-gray-800 px-[10px] lg:px-[20px] py-2 lg:py-[12px] text-white rounded-sm text-sm font-medium hover:bg-white transition-colors text-[9px] lg:text-[12px]" style="font-family: brandon-bold-webfont, sans-serif; letter-spacing: 2.84px !important; text-transform: uppercase !important; font-weight: 700 !important; line-height: 1 !important;">
                             Enquire Now
                         </a>
                     </div>

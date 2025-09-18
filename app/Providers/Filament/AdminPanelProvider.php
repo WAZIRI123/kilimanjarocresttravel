@@ -27,7 +27,7 @@ class AdminPanelProvider extends PanelProvider
             ->id('admin')
             ->path('admin')
             ->login()
-            ->brandName('Crowned-Wild-Africa')
+            ->brandName('Kilimanjaro Crest Travel')
             ->favicon(asset('favicon.ico'))
             ->colors([
                 'primary' => Color::Amber,

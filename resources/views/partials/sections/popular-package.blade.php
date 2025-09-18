@@ -41,13 +41,15 @@ foreach ($categoryNames as $id => $name) {
 }
 @endphp
 
+
+
 @if(count($tabs) > 0)
 
 <section class="py-6 md:py-6 lg:py-6" x-data="{ activeTab: '{{ $tabs[0]['id'] }}' }" style="background-image: url({{ asset('images/image-used/bg.AVIF') }}) !important; background-size: cover !important; background-position: center !important;">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-3" data-aos="fade-up">
-            <h2 class="text-3xl text-white font-bold text-gray-900 mb-4" data-aos="fade-up">Popular Packages</h2>
-            <p class="text-xl text-white max-w-2xl mx-auto section-subtitle" data-aos="fade-up">Discover our most sought-after experiences in Africa's most breathtaking destinations</p>
+        <div class="text-center mb-3">
+            <h2 class="text-3xl text-white font-bold text-gray-900 mb-4">Popular Packages</h2>
+            <p class="text-[17px] text-white max-w-2xl mx-auto section-subtitle">Discover our most sought-after experiences in Africa's most breathtaking destinations</p>
         </div>
         
         <!-- Tabs Navigation -->
@@ -71,12 +73,12 @@ foreach ($categoryNames as $id => $name) {
                 <div class="flex overflow-x-auto pb-6 -mx-4 px-4 scrollbar-hide">
                     <div class="flex space-x-6">
                         @foreach($tab['packages'] as $package)
-                        <div class="group relative bg-white rounded-sm border border-gray-300 overflow-hidden transition-all duration-300 shadow-lg flex-shrink-0 w-80" data-aos="fade-up">
+                        <div class="group relative bg-white rounded-sm border border-gray-300 overflow-hidden transition-all duration-300 shadow-lg flex-shrink-0 w-80">
                             <!-- Image Container -->
                             <div class="relative">
                                 <a href="{{ route('package.show', $package['slug']) }}" class="group">
                                     <div class="relative">
-                                        <img src="{{'storage/'. $package['image'] }}" alt="{{ $package['title'] }}" class="w-full h-120 object-cover transition-transform duration-500 group-hover:scale-105">
+                                        <img src="{{'storage/'. $package['image'] }}" alt="{{ $package['title'] }}" class="w-full h-110 object-cover transition-transform duration-500 group-hover:scale-105">
                                         <!-- Base Overlay -->
                                         <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
                                         
@@ -96,7 +98,7 @@ foreach ($categoryNames as $id => $name) {
                                                     
                                                     <!-- Package Description (Hover Only) -->
                                                     <div class="max-h-0 overflow-hidden group-hover:max-h-20 transition-all duration-300 ease-in-out">
-                                                        <p class="section-subtitle text-gray-300 text-xl leading-relaxed line-clamp-3 mb-2">
+                                                        <p class="section-subtitle text-gray-300 text-[17px] leading-relaxed line-clamp-3 mb-2">
                                                             {{ $package['description'] ?? 'Experience the adventure of a lifetime with our exclusive package.' }}
                                                         </p>
                                                     </div>
@@ -118,7 +120,7 @@ foreach ($categoryNames as $id => $name) {
                 
                 <!-- View All Button -->
                 <div class="mt-5 mb-5 text-center">
-                    <a href="{{ route('all-packages', ['category' => $tab['name']]) }}" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-black transition-colors duration-200" style="font-family: 'brandon-bold-webfont', sans-serif; font-weight: 400; font-size: 1.2rem !important; letter-spacing: 1.84px !important; text-transform: capitalize !important;">
+                    <a href="{{ route('all-packages', ['category' => $tab['name']]) }}" class="inline-flex items-center px-6 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-black transition-colors duration-200" style="font-family: 'brandon-bold-webfont', sans-serif; font-weight: 400; font-size: 1.2rem !important; letter-spacing: 1.84px !important; text-transform: capitalize !important;">
                         View All {{ $tab['name'] }} Packages
                         <svg class="ml-2 -mr-1 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />

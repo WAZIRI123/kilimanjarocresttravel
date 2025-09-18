@@ -15,7 +15,7 @@
                 <h2 class="text-3xl font-bold text-gray-900 mb-4" data-aos="fade-up">
                     Discover Amazing Destinations
                 </h2>
-                <p class="text-gray-500 mb-6 max-w-4xl mx-auto text-xl section-subtitle" data-aos="fade-up" >
+                <p class="text-gray-500 mb-6 max-w-4xl mx-auto text-[17px] section-subtitle" data-aos="fade-up" >
                     Experience the adventure of a lifetime with our curated travel experiences. 
                     From stunning landscapes to vibrant cultures, we bring you the best destinations 
                     that will leave you with unforgettable memories.

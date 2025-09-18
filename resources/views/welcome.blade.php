@@ -15,10 +15,10 @@
                 @include('partials.sections.section-after-hero')
             </div>
             @include('partials.sections._destinations-grid')
-            @include('partials.sections.text-image2')
             @include('partials.sections.popular-package')
             @include('partials.sections.text-image-without-rounded')
             @include('partials.sections.text-image-without-rounded2')
             @include('partials.sections.Our-partner')
+            @include('partials.sections.get-in-touch')
     
 </x-layouts.app>

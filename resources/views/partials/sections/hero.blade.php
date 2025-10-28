@@ -6,7 +6,7 @@
         <!-- Fallback image that shows first -->
         <img 
             id="hero-fallback"
-            src="{{ asset('images/image-used/experts.jpeg') }}" 
+            src="{{ asset('images/image-used/cover1.jpg') }}" 
             alt="Safari Adventure" 
             class="w-full h-full object-cover"
         >
@@ -20,10 +20,10 @@
             playsinline
             oncanplay="this.classList.remove('hidden'); document.getElementById('hero-fallback').classList.add('hidden');"
         >
-            <source src="{{ asset('images/image-used/full.mp4') }}" type="video/mp4">
+            <source src="{{ asset('images/image-used/Luxury Thailand Group Trip - Phuket & Phi Phi Islands.mp4') }}" type="video/mp4">
             Your browser does not support the video tag.
         </video>
-        <div class="absolute inset-0 bg-black/20 backdrop-blur-xsm"></div>
+        <div class="absolute inset-0" style="background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 97.73%);"></div>
     </div>
     <div class="px-4 sm:px-6 lg:px-8">
     @include('partials.sections.navigation')
@@ -40,7 +40,7 @@ text-transform: uppercase;">
             <a href="{{ route('book-now') }}" class="inline-block mt-2 bg-transparent hover:bg-[#444] text-white border border-white px-3 py-2 rounded-sm font-medium transition-colors text-sm text-center" style="font-family: brandon-bold-webfont, sans-serif; font-size: 0.8rem !important; letter-spacing: 1.84px !important; text-transform: uppercase !important; font-weight: normal !important;">
                 Book Now
             </a>
-        </div>
+       </div>
         
         <!-- Animated Scroll Indicator -->
         <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 cursor-pointer" onclick="document.querySelector('#next-section').scrollIntoView({ behavior: 'smooth' });">

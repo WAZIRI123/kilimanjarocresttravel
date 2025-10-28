@@ -12,13 +12,16 @@
             @endphp
              
             <div id="next-section">
-                @include('partials.sections.section-after-hero')
+                @include('partials.sections.grandezza1')
             </div>
-            @include('partials.sections._destinations-grid')
-            @include('partials.sections.popular-package')
-            @include('partials.sections.text-image-without-rounded')
-            @include('partials.sections.text-image-without-rounded2')
-            @include('partials.sections.Our-partner')
-            @include('partials.sections.get-in-touch')
+            <div id="next-section">
+                @include('partials.sections.grandezza2')
+            </div>
+            <div id="next-section">
+                @include('partials.sections.grandezza3')
+            </div>
+            <div id="next-section">
+                @include('partials.sections.grandezza4')
+            </div>
     
 </x-layouts.app>

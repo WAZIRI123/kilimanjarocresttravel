@@ -5,15 +5,15 @@
                 <!-- Logo -->
                 <div class="flex-shrink-0" style="max-width:150px; max-height:200px">
                     <a   href="/" class="text-white text-2xl font-bold">
-                        <img src="{{ asset('images/image-used/side.png') }}" alt="crowned Wild Africa" class="logo-img h-auto pt-4 pr-[4.5rem] lg:pr-[2.5rem]">
+                        <img src="{{ asset('images/image-used/grandezza.jpg') }}" alt="crowned Wild Africa" class="logo-img h-auto pt-4 pr-[4.5rem] lg:pr-[2.5rem]">
                     </a>
                 </div>
 
                 <!-- Book Now Button and Mobile Menu -->
                 <div class="flex items-center justify-around w-48">
                     <div class="block">
-                        <a  href="{{ route('book-now') }}" class="bg-[#e7247a] hover:text-gray-800 px-[10px] lg:px-[20px] py-2 lg:py-[12px] text-white rounded-sm text-sm font-medium hover:bg-white transition-colors text-[9px] lg:text-[12px]" style="font-family: brandon-bold-webfont, sans-serif; letter-spacing: 2.84px !important; text-transform: uppercase !important; font-weight: 700 !important; line-height: 1 !important;">
-                            Enquire Now
+                        <a  href="{{ route('book-now') }}" class="text-gray-800 px-[10px] lg:px-[20px] py-2 lg:py-[8px] rounded-sm text-sm font-medium bg-white transition-colors text-[9px] lg:text-[12px]" style="font-family: brandon-bold-webfont, sans-serif; letter-spacing: 2.84px !important; text-transform: uppercase !important; font-weight: 700 !important; line-height: 1 !important;">
+                            Inquire
                         </a>
                     </div>
 
@@ -38,7 +38,7 @@
             <!-- Menu Panel -->
             <div class="fixed inset-y-0 right-0 w-full bg-white shadow-xl overflow-y-auto transform transition-transform duration-1500 ease-[cubic-bezier(0.4,0,0.2,1)] translate-x-full" id="menu-panel">
                 <div class="flex justify-between items-center px-4 py-4 border-b">
-                    <h2 class="cursor-pointer px-4 font-bold" style="font-family: 'AlternateGotNo1D', sans-serif; font-weight: 400; font-size: 1.4375rem !important; letter-spacing: 1.84px !important; text-transform: uppercase !important;">+255 612 068 540</h2>
+                    <h2 class="cursor-pointer px-4 font-bold" style="font-family: 'AlternateGotNo1D', sans-serif; font-weight: 400; font-size: 1.4375rem !important; letter-spacing: 1.84px !important; text-transform: uppercase !important;">+255 719 280 165</h2>
                     <button type="button" class="text-gray-1000 hover:text-gray-700 cursor-pointer" id="close-mobile-menu">
                         <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" >
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
@@ -49,32 +49,11 @@
                 <div class="px-4 pt-2 pb-6 space-y-1">
                     <a href="/" class="block px-4 py-3 rounded-lg text-base font-medium {{ Request::is('/') ? 'bg-gray-100 text-gray-900' : 'text-gray-700 hover:bg-gray-50' }}" style="font-family: 'AlternateGotNo1D', sans-serif; font-weight: 400; font-size: 1.4375rem !important; letter-spacing: 1.84px !important; text-transform: uppercase !important;">Home</a>
                     
-                    <!-- Safaris Mobile Dropdown -->
-                    <div x-data="{ open: false }" class="relative">
-                        <button @click="open = !open" class="w-full flex justify-start items-center px-4 py-3 rounded-lg text-base font-medium {{ in_array(request('category'), ['northern-safaris', 'short-safaris', 'southern-safaris']) ? 'bg-gray-100' : 'text-gray-700 hover:bg-gray-50' }}" style="font-family: 'AlternateGotNo1D', sans-serif; font-weight: 400; font-size: 1.4375rem !important; letter-spacing: 1.84px !important; text-transform: uppercase !important;">
-                            <span class="pr-2">Safaris</span>
-                            <svg class="w-5 h-5 transition-transform duration-200" :class="{'transform rotate-180': open}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                            </svg>
-                        </button>
-                        <div x-show="open" x-collapse class="pl-4 space-y-1 mt-1">
-                            <a href="{{ route('all-packages', ['category' => 'northern-safaris']) }}" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50 rounded-lg {{ request('category') === 'northern-safaris' ? 'bg-gray-100' : '' }}" style="font-family: 'AlternateGotNo1D', sans-serif; font-weight: 400; font-size: 1.2rem !important; letter-spacing: 1.5px !important; text-transform: uppercase !important;">
-                                Northern Safaris
-                            </a>
-                            <a href="{{ route('all-packages', ['category' => 'short-safaris']) }}" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50 rounded-lg {{ request('category') === 'short-safaris' ? 'bg-gray-100' : '' }}" style="font-family: 'AlternateGotNo1D', sans-serif; font-weight: 400; font-size: 1.2rem !important; letter-spacing: 1.5px !important; text-transform: uppercase !important;">
-                                Short Safaris
-                            </a>
-                            <a href="{{ route('all-packages', ['category' => 'southern-safaris']) }}" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50 rounded-lg {{ request('category') === 'southern-safaris' ? 'bg-gray-100' : '' }}" style="font-family: 'AlternateGotNo1D', sans-serif; font-weight: 400; font-size: 1.2rem !important; letter-spacing: 1.5px !important; text-transform: uppercase !important;">
-                                Southern Safaris
-                            </a>
-                        </div>
-                    </div>
-                    
-                    <a href="{{ route('all-packages', ['category' => 'kilimanjaro']) }}" class="block px-4 py-3 rounded-lg text-base font-medium {{ request('category') === 'kilimanjaro' ? 'bg-gray-100 text-gray-900' : 'text-gray-700 hover:bg-gray-50' }}" style="font-family: 'AlternateGotNo1D', sans-serif; font-weight: 400; font-size: 1.4375rem !important; letter-spacing: 1.84px !important; text-transform: uppercase !important;">Kilimanjaro</a>
+                    <a href="{{ route('all-packages', ['category' => 'kilimanjaro']) }}" class="block px-4 py-3 rounded-lg text-base font-medium {{ request('category') === 'kilimanjaro' ? 'bg-gray-100 text-gray-900' : 'text-gray-700 hover:bg-gray-50' }}" style="font-family: 'AlternateGotNo1D', sans-serif; font-weight: 400; font-size: 1.4375rem !important; letter-spacing: 1.84px !important; text-transform: uppercase !important;">Safaris</a>
                     
                     <a href="{{ route('all-packages', ['category' => 'zanzibar']) }}" class="block px-4 py-3 rounded-lg text-base font-medium {{ request('category') === 'zanzibar' ? 'bg-gray-100 text-gray-900' : 'text-gray-700 hover:bg-gray-50' }}" style="font-family: 'AlternateGotNo1D', sans-serif; font-weight: 400; font-size: 1.4375rem !important; letter-spacing: 1.84px !important; text-transform: uppercase !important;">Zanzibar</a>
                     
-                    <a href="{{ route('about') }}" class="block px-4 py-3 rounded-lg text-base font-medium {{ Request::is('about*') ? 'bg-gray-100 text-gray-900' : 'text-gray-700 hover:bg-gray-50' }}" style="font-family: 'AlternateGotNo1D', sans-serif; font-weight: 400; font-size: 1.4375rem !important; letter-spacing: 1.84px !important; text-transform: uppercase !important;">About</a>
+                    <a href="{{ route('about') }}" class="block px-4 py-3 rounded-lg text-base font-medium {{ Request::is('about*') ? 'bg-gray-100 text-gray-900' : 'text-gray-700 hover:bg-gray-50' }}" style="font-family: 'AlternateGotNo1D', sans-serif; font-weight: 400; font-size: 1.4375rem !important; letter-spacing: 1.84px !important; text-transform: uppercase !important;">About Us</a>
                     
                     <a href="{{ route('contact') }}" class="block px-4 py-3 rounded-lg text-base font-medium {{ Request::is('contact*') ? 'bg-gray-100 text-gray-900' : 'text-gray-700 hover:bg-gray-50' }}" style="font-family: 'AlternateGotNo1D', sans-serif; font-weight: 400; font-size: 1.4375rem !important; letter-spacing: 1.84px !important; text-transform: uppercase !important;">Contact</a>
                     

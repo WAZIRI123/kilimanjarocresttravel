@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\Package;
+use App\Models\Activity;
+use App\Models\Transfer;
 use Illuminate\Http\Request;
 
 class PackageController extends Controller
@@ -12,21 +14,44 @@ class PackageController extends Controller
      */
     public function index(Request $request)
     {
-        $query = Package::where('is_active', true);
         
         // Filter by category if provided
-        if ($request->has('category')) {
+        if ($request->query('category')=='zanzibar') {
             $category = $request->query('category');
-            $query->where('category', $category);
+            $packages = Package::take(6)->get();
             
             // Set appropriate title and subtitle based on category
             $title = match($category) {
                 'safari' => 'Safari Packages',
                 'zanzibar' => 'Zanzibar Packages',
                 'kilimanjaro' => 'Kilimanjaro Packages',
-                'northern-safaris' => 'Northern Safaris',
-                'short-safaris' => 'Short Safaris',
-                'southern-safaris' => 'Southern Safaris',
+                'activity' => 'Activity Packages',
+                'transfer' => 'Transfers Only',
+                default => 'Transfers Only'
+            };
+            
+            $subtitle = match($category) {
+                'safari' => 'Experience the Wild Beauty of Tanzania',
+                'zanzibar' => 'Discover Paradise on Earth',
+                'kilimanjaro' => 'Conquer Africa\'s Highest Peak',
+                'activity' => 'Activity Packages',
+                'transfer' => 'Transfers Only',
+                default => 'Your African Adventure Awaits'
+            };
+        } 
+
+        elseif($request->query('category')=='safari') {
+            $category = $request->query('category');
+            $packages = Package::where('id', '>', 6)->get();
+            
+            // Set appropriate title and subtitle based on category
+            $title = match($category) {
+                'safari' => 'Safari Packages',
+                'zanzibar' => 'Zanzibar Packages',
+                'kilimanjaro' => 'Kilimanjaro Packages',
+                'activity' => 'Zanzibar Excursions',
+                'transfer' => 'Transfers Only',
+                'car-rental' => 'Car Rental',
                 default => 'Our Packages'
             };
             
@@ -34,19 +59,64 @@ class PackageController extends Controller
                 'safari' => 'Experience the Wild Beauty of Tanzania',
                 'zanzibar' => 'Discover Paradise on Earth',
                 'kilimanjaro' => 'Conquer Africa\'s Highest Peak',
-                'northern-safaris' => 'Experience the Wild Beauty of northern Tanzania',
-                'short-safaris' => 'Experience the Wild Beauty of short safaris',
-                'southern-safaris' => 'Experience the Wild Beauty of southern Tanzania',
+                'activity' => 'zanzibar excursions',
+                'transfer' => 'Transfers Only',
+                'car-rental' => 'Car Rental',
                 default => 'Your African Adventure Awaits'
             };
-        } else {
+        }
+        elseif($request->query('category')=='activity') {
+            $category = $request->query('category');
+            $packages = Activity::all();
+            
+            // Set appropriate title and subtitle based on category
+            $title = match($category) {
+                'safari' => 'Safari Packages',
+                'zanzibar' => 'Zanzibar Packages',
+                'kilimanjaro' => 'Kilimanjaro Packages',
+                'activity' => 'Zanzibar Excursions',
+                'transfer' => 'Transfers Only',
+                default => 'Our Packages'
+            };
+            
+            $subtitle = match($category) {
+                'safari' => 'Experience the Wild Beauty of Tanzania',
+                'zanzibar' => 'Discover Paradise on Earth',
+                'kilimanjaro' => 'Conquer Africa\'s Highest Peak',
+                'activity' => 'Activity Packages',
+                'transfer' => 'Transfers Only',
+                default => 'Your African Adventure Awaits'
+            };
+        }
+
+        elseif($request->query('category')=='transfer') {
+            $category = $request->query('category');
+            $packages = Transfer::all();
+            // Set appropriate title and subtitle based on category
+            $title = match($category) {
+                'safari' => 'Safari Packages',
+                'zanzibar' => 'Zanzibar Packages',
+                'kilimanjaro' => 'Kilimanjaro Packages',
+                'activity' => 'Zanzibar Excursions',
+                'transfer' => 'Transfers Only',
+                default => 'Our Packages'
+            };
+            
+            $subtitle = match($category) {
+                'safari' => 'Experience the Wild Beauty of Tanzania',
+                'zanzibar' => 'Discover Paradise on Earth',
+                'kilimanjaro' => 'Conquer Africa\'s Highest Peak',
+                'activity' => 'Activity Packages',
+                'transfer' => 'Transfers Only',
+                default => 'Your African Adventure Awaits'
+            };
+        }
+
+        else {
             $title = 'Featured Packages';
             $subtitle = 'Your African Adventure Awaits';
-            $query->where('is_featured', true);
+            $packages = Package::paginate(6);
         }
-        
-        $packages = $query->orderBy('sort_order', 'asc')
-                        ->paginate(9);
 
         return view('all-packages', [
             'packages' => $packages,
@@ -55,6 +125,7 @@ class PackageController extends Controller
             'currentCategory' => $request->query('category')
         ]);
     }
+
     /**
      * Display the specified package.
      */

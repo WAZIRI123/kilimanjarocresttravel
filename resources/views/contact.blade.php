@@ -3,7 +3,7 @@
 @section('content')
     <!-- Hero Section with Page Title -->
     @include('partials.sections.page-hero', [
-        'image' => asset('images/image-used/contact-us.webp'),
+        'image' => asset('images/image-used/cantact-page.jpg'),
         'title' => 'Contact Us',
         'subtitle' => 'We’ll Get Back Soon'
     ])
@@ -20,39 +20,38 @@
                         
                         <div class="space-y-6">
                             <div class="flex items-start">
-                                <div class="flex-shrink-0 bg-amber-600 p-3 rounded-full">
+                                <div class="flex-shrink-0 bg-[#000] p-3 rounded-full">
                                     <i class="fas fa-map-marker-alt text-white text-xl"></i>
                                 </div>
                                 <div class="ml-4">
                                     <h3 class="text-xl font-semibold text-gray-800 mb-2">Our Office</h3>
-                                    <p class="text-gray-700 text-base">Dar es Salaam
+                                    <p class="text-gray-700 text-base">Zanzibar
                                         , Tanzania</p>
                                 </div>
                             </div>
                             
                             <div class="flex items-start">
-                                <div class="flex-shrink-0 bg-amber-600 p-3 rounded-full">
+                                <div class="flex-shrink-0 bg-[#000] p-3 rounded-full">
                                     <i class="fas fa-phone-alt text-white text-xl"></i>
                                 </div>
                                 <div class="ml-4">
                                     <h3 class="text-xl font-semibold text-gray-800 mb-2">Call Us</h3>
-                                    <p class="text-gray-700 text-base">+255 780 986 288</p>
+                                    <p class="text-gray-700 text-base">+255 719 280 165</p>
                                 </div>
                             </div>
                             
                             <div class="flex items-start">
-                                <div class="flex-shrink-0 bg-amber-600 p-3 rounded-full">
+                                <div class="flex-shrink-0 bg-[#000] p-3 rounded-full">
                                     <i class="fas fa-envelope text-white text-xl"></i>
                                 </div>
                                 <div class="ml-4">
                                     <h3 class="text-xl font-semibold text-gray-800 mb-2">Email Us</h3>
-                                    <p class="text-gray-700 text-base">info@crownedwildafrica.com</p>
-                                    <p class="text-gray-700 text-base">safari@crownedwildafrica.com </p>
+                                    <p class="text-gray-700 text-base">info@grandezzazanzibar.co.tz</p>
                                 </div>
                             </div>
                             
                             <div class="flex items-start">
-                                <div class="flex-shrink-0 bg-amber-600 p-3 rounded-full">
+                                <div class="flex-shrink-0 bg-[#000] p-3 rounded-full">
                                     <i class="fas fa-clock text-white text-xl"></i>
                                 </div>
                                 <div class="ml-4">
@@ -155,7 +154,7 @@
                             
                             <div class="pt-2">
                                 <button type="submit" 
-                                    class="w-full bg-amber-600 text-white font-semibold py-3 px-6 rounded-md hover:bg-amber-600 transition duration-300">
+                                    class="w-full bg-[#000] text-white font-semibold py-3 px-6 rounded-md hover:bg-[#000] transition duration-300">
                                     Send Message
                                 </button>
                             </div>
@@ -168,15 +167,7 @@
 
     <!-- Map Section -->
     <section class="h-96 bg-gray-100">
-        <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.964978242355!2d39.20820031477197!3d-6.792481195057237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x185c4b03e0991891%3A0x9d5eefcaf6a1f0a9!2sDar%20es%20Salaam%2C%20Tanzania!5e0!3m2!1sen!2s!4v1620000000000!5m2!1sen!2s" 
-            width="100%" 
-            height="100%" 
-            style="border:0;" 
-            allowfullscreen="" 
-            loading="lazy"
-            title="Stan Safaris Office Location - Dar es Salaam, Tanzania">
-        </iframe>
+       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.356706017875!2d39.217610074990326!3d-6.216601993771353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x185cdb419c8174e1%3A0x363e05e1739a886b!2sGrandezza%20Tours%20and%20Travel!5e0!3m2!1sen!2stz!4v1765305906843!5m2!1sen!2stz" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
 
     <style>
@@ -254,7 +245,7 @@
             --tw-ring-color: rgba(245, 158, 11, var(--tw-ring-opacity));
         }
         
-        .hover\:bg-amber-600:hover {
+        .hover\:bg-[#000]:hover {
             --tw-bg-opacity: 1;
             background-color: rgba(217, 119, 6, var(--tw-bg-opacity));
         }

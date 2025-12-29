@@ -9,7 +9,8 @@
             'safari' => 'storage/images/safari-hero.webp',
             'zanzibar' => 'storage/images/Zanzibar-hero.webp',
             'kilimanjaro' => 'storage/images/Kilimanjaro-hero.webp',
-            'default' => 'storage/images/honeymoon-Tanzania-and-Zanzibar.webp'
+            'activity' => 'images/image-used/rockrestaurent.jpg',
+            'default' => 'images/image-used/car1.png'
         ];
         
         $category = request()->query('category', 'default');
@@ -17,7 +18,7 @@
     @endphp
     @include('partials.sections.page-hero', [
         'image' => asset($heroImage),
-        'title' => $title,
+        'title' => $title?? 'Transfers Only',
         'subtitle' => $subtitle
     ])
 
@@ -34,20 +35,23 @@
                 'viewAllLink' => '#',
                 'packages' => $packages->map(function($package) {
                     return [
-                        'title' => $package->title,
-                        'url' => route('package.show', $package->slug),
-                        'image' => $package->featured_image ?? 'https://images.unsplash.com/photo-1523805009345-7448845a9e53?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1472&q=80',
-                        'duration' => $package->duration,
-                        'description' => $package->short_description,
-                        'views' => $package->views,
-                        'likes' => $package->likes
+                        'title' => $package->title ? $package->title : $package->name,
+                        'name' => $package->name ?? '',
+                        'slug' => $package->slug ?? '',
+                        'url' => route('package.show', $package->slug ?? ''),
+                        'image' => $package->image ?? '',
+                        'duration' => $package->duration ?? '',
+                        'description' => $package->short_description ? $package->short_description : $package->description,
+                        'price' => $package->price ? '$'.$package->price.'per person' : $package->price0,
+                        'views' => $package->views ?? '',
+                        'likes' => $package->likes ?? ''
                     ];
                 })
             ])
 
             <!-- Pagination -->
             <div class="mt-8 flex justify-center">
-                {{ $packages->onEachSide(1)->links('pagination::tailwind') }}
+              {{--  {{ $packages->onEachSide(1)->links('pagination::tailwind') }} --}}
             </div>
         @else
             <div class="no-packages-wrapper" style="min-height: 60vh; display: flex; align-items: center; justify-content: center; padding: 1rem; font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; color: #333; box-sizing: border-box;">

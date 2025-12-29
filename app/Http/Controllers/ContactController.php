@@ -28,42 +28,27 @@ class ContactController extends Controller
         $validated = $request->validate([
             'name' => 'required|string|max:255',
             'email' => 'required|email|max:255',
-            'phone' => 'nullable|string|max:20',
-            'subject' => 'required|string|max:255',
             'message' => 'required|string|max:5000',
         ]);
 
         try {
-            // Get client IP address
-            $ipAddress = $request->ip();
             
             // Create contact record
             $contact = Contact::create([
                 'name' => $validated['name'],
                 'email' => $validated['email'],
-                'phone' => $validated['phone'] ?? null,
-                'subject' => $validated['subject'],
                 'message' => $validated['message'],
-                'ip_address' => $ipAddress,
-                'status' => 'new',
             ]);
 
             // Send notification to admin
             try {
-                $adminEmail = config('mail.admin_email', 'info@stansafaris.com');
+                $adminEmail = config('mail.admin_email', 'info@grandezzazanzibar.co.tz');
                 Mail::to($adminEmail)->send(new ContactFormNotification($contact));
             } catch (\Exception $e) {
                 Log::error('Failed to send admin notification email: ' . $e->getMessage());
             }
 
-            // Send confirmation to user
-            try {
-                Mail::to($contact->email)->send(new ContactConfirmation($contact));
-            } catch (\Exception $e) {
-                Log::error('Failed to send user confirmation email: ' . $e->getMessage());
-            }
-
-            return redirect()->back()->with('success', 'Thank you for your message! We will get back to you soon.');
+            return redirect()->back()->with('success', 'Thank you for your Enquiry! We will get back to you soon.');
 
         } catch (\Exception $e) {
             Log::error('Contact form submission failed: ' . $e->getMessage());

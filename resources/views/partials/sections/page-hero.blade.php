@@ -1,40 +1,48 @@
 <section id="hero-section" class="hero-section" data-testid="section-container">
+    @if (session('error'))
+        <div style="color:red; text-align: center;">
+            {{ session('error') }}
+        </div>
+    @endif
+    @if (session('success'))
+        <div style="color:green; text-align: center;">
+            {{ session('success') }}
+        </div>
+    @endif
     <!-- Modern Transparent Navbar -->
     @include('partials.sections.navigation')
-    
+
     <!-- Background Image -->
     <div class="hero-background">
-        <img 
-            src="{{ $image }}"
-            alt="A herd of Elephants drinking water in Serengeti African Safaris - Tanzania"
-            class="hero-bg-image"
-            loading="eager"
-        >
+        <img src="{{ $image }}" alt="A herd of Elephants drinking water in Serengeti African Safaris - Tanzania"
+            class="hero-bg-image" loading="eager">
         <div class="overlay-bg"></div>
-    
+
     </div>
 
-<style>
-    .overlay-bg {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.35); /* Adjust opacity as needed */
-    }
-
+    <style>
+        .overlay-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.35);
+            /* Adjust opacity as needed */
+        }
     </style>
 
     <!-- Hero Content -->
     <div class="hero-content" style="padding-top: 20vh;">
         <div class="hero-text">
-            <h1 class="font_0 wixui-rich-text__text" style="color:#fff;font-weight: bold; font-size: 90px;
+            <h1 class="font_0 wixui-rich-text__text"
+                style="color:#fff;font-weight: bold; font-size: 90px;
     text-decoration: none;
     text-align: center;
     letter-spacing: 0.01em;">
-                <div class="title-wrapper" >
-                    <div class="title-line" style="display: inline-block; transform: translateY(0%); animation: slideUp 0.8s ease-out 0.3s forwards;">
+                <div class="title-wrapper">
+                    <div class="title-line the-girl-next-door-regular "
+                        style="display: inline-block; transform: translateY(0%); animation: slideUp 0.8s ease-out 0.3s forwards;">
                         {{ $title ?? 'The Essence of Untamed' }}
                     </div>
                 </div>
@@ -54,64 +62,72 @@
             pointer-events: none;
             z-index: 0;
         }
-        
-        .safari-bird, .safari-leaf {
+
+        .safari-bird,
+        .safari-leaf {
             position: absolute;
             opacity: 0.3;
             animation-iteration-count: infinite;
         }
-        
+
         .safari-bird-1 {
             top: 20%;
             right: 10%;
             animation: float 8s ease-in-out infinite;
         }
-        
+
         .safari-leaf-1 {
             bottom: 25%;
             left: 15%;
             animation: float 6s ease-in-out 1s infinite reverse;
         }
-        
+
         @keyframes float {
-            0%, 100% { transform: translateY(0) rotate(0deg); }
-            50% { transform: translateY(-20px) rotate(5deg); }
+
+            0%,
+            100% {
+                transform: translateY(0) rotate(0deg);
+            }
+
+            50% {
+                transform: translateY(-20px) rotate(5deg);
+            }
         }
-        
-        
+
+
         .title-line {
             display: inline-block;
         }
-        
+
         /* Reset body margin and padding */
         body {
             margin: 0;
             padding: 0;
         }
-        
+
         .modern-navbar.scrolled {
-            background: #4d4402e0; 
+            background: #4d4402e0;
             padding: 0.2rem 0;
             box-shadow: 0 4px 20px #4d4402e0;
         }
-        
+
         .navbar-container {
-            
+
             margin: 0 auto;
             padding: 0 2rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
-        
+
         /* CTA Button Styles */
         .nav-cta-button {
             display: inline-block;
             padding: 10px 30px;
             border-radius: 50px;
             font-family: questrial, sans-serif;
-    font-size: calc(15 * var(--theme-spx-ratio));
-    font-weight: 400;
+            font-size: calc(15 * var(--theme-spx-ratio));
+            font-weight: 400;
             text-transform: uppercase;
             letter-spacing: 1px;
             transition: all 0.3s ease;
@@ -123,7 +139,7 @@
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
             text-shadow: none;
         }
-        
+
         .nav-cta-button:hover {
             background-color: #fff;
             color: #000 !important;
@@ -131,7 +147,7 @@
             transform: translateY(-3px);
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
         }
-        
+
         /* Mobile Menu Button */
         .mobile-menu-btn {
             display: none;
@@ -142,7 +158,7 @@
             padding-right: 1.2rem;
             z-index: 1001;
         }
-        
+
         .menu-line {
             display: block;
             width: 30px;
@@ -152,29 +168,29 @@
             transition: all 0.3s ease;
             transform-origin: center;
         }
-        
+
         /* Menu button animation */
         .mobile-menu-btn.active .menu-line {
             background-color: #4d4402e0;
         }
-        
+
         .rotate-45 {
             transform: rotate(45deg);
         }
-        
+
         .-rotate-45 {
             transform: rotate(-45deg);
         }
-        
+
         .translate-y-2 {
             transform: translateY(7px);
         }
-        
+
         .-translate-y-2 {
             transform: translateY(-7px);
         }
-    
-        
+
+
         /* Mobile Navigation */
         .mobile-nav {
             display: none;
@@ -193,13 +209,13 @@
             transition: right 0.3s ease-in-out;
             overflow-y: auto;
         }
-        
+
         .mobile-nav.active {
             display: flex;
             right: 0;
             box-shadow: -5px 0 30px rgba(0, 0, 0, 0.2);
         }
-        
+
         .mobile-close-btn {
             position: absolute;
             top: 1.5rem;
@@ -214,11 +230,11 @@
             opacity: 0.8;
             transition: opacity 0.2s ease;
         }
-        
+
         .mobile-close-btn:hover {
             opacity: 1;
         }
-        
+
         .mobile-nav-link {
             color: rgba(255, 255, 255, 0.9);
             text-decoration: none;
@@ -227,18 +243,18 @@
             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
             transition: color 0.3s ease, padding-left 0.3s ease;
         }
-        
+
         .mobile-nav-link:hover {
             color: #fff;
             transform: translateX(8px);
         }
-        
+
         .mobile-nav-link.active {
             font-weight: bold;
             color: #fff;
             text-decoration: underline;
         }
-        
+
         .mobile-nav .nav-cta-button {
             background-color: #4d4402e0;
             color: #1a1a1a !important;
@@ -257,7 +273,7 @@
             margin-right: auto;
             display: block;
         }
-        
+
         .mobile-nav .nav-cta-button:hover {
             background-color: #4d4402e0;
             color: #1a1a1a !important;
@@ -265,34 +281,34 @@
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
             opacity: 0.95;
         }
-        
+
         /* Navbar Scroll Effect */
         .modern-navbar.scrolled {
             padding: 0.0rem 0;
-            background:#4d4402e0;
+            background: #4d4402e0;
             backdrop-filter: blur(10px);
             -webkit-backdrop-filter: blur(10px);
             border-bottom: 1px solid #4d4402e0;
             box-shadow: 0 2px 20px #4d4402e0;
         }
-        
+
         /* Responsive Styles */
         @media (max-width: 992px) {
             .navbar-links {
                 display: none;
             }
-            
+
             .mobile-menu-btn {
                 display: block;
             }
         }
-        
+
         @media (min-width: 993px) {
             .mobile-nav {
                 display: none;
             }
         }
-        
+
         /* Hero Section */
         .hero-section {
             position: relative;
@@ -310,11 +326,11 @@
             margin: 0;
             box-sizing: border-box;
         }
-        
+
         /* Hero Content */
         .hero-content {
             width: 100%;
-            
+
             margin: 0 0;
             padding: 0 1rem;
             box-sizing: border-box;
@@ -324,7 +340,7 @@
             justify-content: center;
             flex: 1;
         }
-        
+
         .hero-background {
             position: absolute;
             top: 0;
@@ -334,7 +350,7 @@
             z-index: 1;
             overflow: hidden;
         }
-        
+
         /* Tribal Motifs */
         .tribal-motif {
             position: absolute;
@@ -343,68 +359,74 @@
             z-index: 2;
             filter: drop-shadow(0 0 3px rgba(232, 177, 67, 0.3));
         }
-        
+
         .tribal-motif:hover {
             opacity: 0.9;
             transform: scale(1.1);
         }
-        
+
         .motif-1 {
             top: 30px;
             left: 30px;
             transform: rotate(-10deg);
         }
-        
+
         .motif-2 {
             top: 30px;
             right: 30px;
             transform: rotate(10deg);
         }
-        
+
         .motif-3 {
             bottom: 40px;
             left: 40px;
             transform: rotate(-5deg);
         }
-        
+
         .motif-4 {
             bottom: 30px;
             right: 30px;
             transform: rotate(5deg);
         }
-        
+
         @media (max-width: 768px) {
             .hero-section {
-                padding-top: 6px; /* Space for navbar */
+                padding-top: 6px;
+                /* Space for navbar */
                 min-height: calc(100vh - 60px);
             }
-            .hero-description{
+
+            .hero-description {
                 padding: 1.8rem 0rem !important;
                 font-size: 2rem !important;
             }
-            
+
             .hero-content {
                 padding: 1rem;
                 margin-top: 0;
             }
-            
+
             .tribal-motif {
                 opacity: 0.5;
             }
-            
-            .motif-1, .motif-2 {
+
+            .motif-1,
+            .motif-2 {
                 top: 15px;
             }
-            
-            .motif-3, .motif-4 {
+
+            .motif-3,
+            .motif-4 {
                 bottom: 15px;
             }
-            
-            .motif-1, .motif-3 {
+
+            .motif-1,
+            .motif-3 {
                 left: 15px;
             }
-            
-            .motif-2, .motif-4 {
+
+            .motif-2,
+            .motif-4 {
                 right: 15px;
             }
         }
@@ -428,41 +450,48 @@
             opacity: 0.8;
             animation: float 6s ease-in-out infinite;
         }
-        
+
         .footprint-top-left {
             top: 30px;
             left: 30px;
             transform: rotate(-15deg);
         }
-        
+
         .footprint-top-right {
             top: 30px;
             right: 30px;
             transform: rotate(15deg);
         }
-        
+
         .footprint-bottom-left {
             bottom: 30px;
             left: 30px;
             transform: rotate(15deg) scaleX(-1);
         }
-        
+
         .footprint-bottom-right {
             bottom: 30px;
             right: 30px;
             transform: rotate(-15deg) scaleX(-1);
         }
-        
+
         @keyframes float {
-            0%, 100% { transform: translateY(0) rotate(-15deg); }
-            50% { transform: translateY(-10px) rotate(-15deg); }
+
+            0%,
+            100% {
+                transform: translateY(0) rotate(-15deg);
+            }
+
+            50% {
+                transform: translateY(-10px) rotate(-15deg);
+            }
         }
 
         .hero-content {
             position: relative;
             z-index: 3;
             text-align: center;
-            
+
             width: 90%;
             padding: 0 20px;
             margin: 0 0;
@@ -500,6 +529,7 @@
             .title-line {
                 font-size: 5rem;
             }
+
             .title-line.accent {
                 font-size: 5rem;
             }
@@ -509,22 +539,26 @@
             .title-line {
                 font-size: 4.5rem;
             }
-            .hero-content{
+
+            .hero-content {
                 width: 100%;
             }
+
             #hero-section {
-              height: 100%;
-              min-height: 50vh !important;
+                height: 100%;
+                min-height: 50vh !important;
             }
+
             .hero-background {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: 1;
-            overflow: hidden;
-        }
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 1;
+                overflow: hidden;
+            }
+
             .title-line.accent {
                 font-size: 4.5rem;
             }
@@ -534,29 +568,33 @@
             .title-line {
                 font-size: 3.5rem;
             }
+
             .title-line.accent {
                 font-size: 3.5rem;
                 margin-top: -10px;
             }
-          
+
         }
 
         @media (max-width: 576px) {
-            .navbar-container{
+            .navbar-container {
                 padding: 0 0rem;
             }
-          
+
             .title-line {
                 font-size: 2.8rem;
             }
+
             .title-line.accent {
                 font-size: 3rem;
                 margin-top: -5px;
             }
+
             .cta-button {
                 padding: 12px 25px !important;
                 font-size: 0.8rem !important;
             }
+
             .hero-content {
                 padding-top: 10vh !important;
             }
@@ -568,12 +606,14 @@
                 align-items: center;
                 gap: 15px !important;
             }
+
             .cta-button {
                 width: 200px;
                 max-width: 100%;
                 text-align: center;
                 margin: 0 auto;
             }
+
             .scroll-indicator {
                 padding-left: 0;
                 margin-left: 0;
@@ -582,6 +622,7 @@
                 display: flex;
                 justify-content: center;
             }
+
             .arrow-down {
                 margin: 0 auto;
             }
@@ -596,7 +637,7 @@
             margin: 0 auto;
             max-width: 600px;
         }
-        
+
         .cta-buttons {
             display: flex;
             justify-content: center;
@@ -606,7 +647,7 @@
             padding: 0 20px;
             box-sizing: border-box;
         }
-        
+
         .cta-buttons a {
             margin: 0;
             flex: 0 0 auto;
@@ -628,21 +669,24 @@
         .cta-button:first-child {
             background-color: rgba(77, 68, 2, 1);
             font-family: questrial, sans-serif;
-    font-size: calc(15 * var(--theme-spx-ratio));
+            font-size: calc(15 * var(--theme-spx-ratio));
             color: #fff;
             font-weight: 900;
             border: 2px solid #4d4402e0;
         }
 
         .cta-button:first-child:hover {
-            background-color: #4d4402e0; /* Keep the same background color on hover */
-            color: #fff; /* Keep the text color consistent */
+            background-color: #4d4402e0;
+            /* Keep the same background color on hover */
+            color: #fff;
+            /* Keep the text color consistent */
             transform: translateY(-3px);
             font-family: questrial, sans-serif;
-    font-size: calc(15 * var(--theme-spx-ratio));
-    font-weight: 400;
+            font-size: calc(15 * var(--theme-spx-ratio));
+            font-weight: 400;
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-            opacity: 0.95; /* Slight opacity change for feedback */
+            opacity: 0.95;
+            /* Slight opacity change for feedback */
         }
 
         .cta-button.secondary {
@@ -672,7 +716,7 @@
             text-align: center;
             padding-top: 10px;
         }
-        
+
         .scroll-indicator::before {
             content: '';
             position: absolute;
@@ -682,7 +726,7 @@
             height: 1px;
             background: rgba(255, 255, 255, 0.3);
         }
-        
+
         .arrow-down {
             width: 40px;
             height: 40px;
@@ -691,12 +735,13 @@
             justify-content: center;
             animation: bounce 2s infinite;
         }
-        
+
         .arrow-down svg {
             width: 30px;
             height: 30px;
             color: #fff;
         }
+
         .scroll-text {
             font-size: 16px;
             letter-spacing: 2px;
@@ -706,14 +751,21 @@
             font-weight: 300;
             letter-spacing: 3px;
         }
-        
+
         @keyframes bounce {
-            0%, 20%, 50%, 80%, 100% {
+
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
                 transform: translateY(0);
             }
+
             40% {
                 transform: translateY(-10px);
             }
+
             60% {
                 transform: translateY(-5px);
             }
@@ -725,6 +777,7 @@
                 opacity: 0;
                 transform: translateY(30px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -736,6 +789,7 @@
                 transform: translateY(0);
                 opacity: 1;
             }
+
             100% {
                 transform: translateY(15px);
                 opacity: 0;
@@ -747,11 +801,11 @@
             .hero-title {
                 font-size: 3.5rem;
             }
-            
+
             .title-line.accent {
                 font-size: 4.5rem;
             }
-            
+
             .hero-subtitle {
                 font-size: 1.25rem;
                 padding: 0 20px;
@@ -762,15 +816,15 @@
             .hero-title {
                 font-size: 2.8rem;
             }
-            
+
             .title-line.accent {
                 font-size: 3.8rem;
             }
-            
+
             .hero-subtitle {
                 font-size: 1.1rem;
             }
-            
+
             .cta-button {
                 padding: 12px 30px;
                 font-size: 0.8rem;
@@ -781,22 +835,22 @@
             .hero-title {
                 font-size: 2.2rem;
             }
-            
+
             .title-line.accent {
                 font-size: 3rem;
                 margin-top: -10px;
             }
-            
+
             .hero-subtitle {
                 font-size: 1rem;
                 margin-bottom: 30px;
             }
-            
+
             .hero-cta {
                 flex-direction: column;
                 gap: 15px;
             }
-            
+
             .cta-button {
                 width: 100%;
                 max-width: 250px;

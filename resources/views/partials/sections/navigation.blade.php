@@ -5,16 +5,18 @@
                 <!-- Logo -->
                 <div class="flex-shrink-0" style="max-width:150px; max-height:200px">
                     <a   href="/" class="text-white text-2xl font-bold">
-                        <img src="{{ asset('images/image-used/grandezza.jpg') }}" alt="crowned Wild Africa" class="logo-img h-auto pt-4 pr-[4.5rem] lg:pr-[2.5rem]">
+                        <img src="{{ asset('images/new-logo.jpg') }}" alt="grandezza zanzibar" class="logo-img h-auto w-[4.3rem] lg:w-[5rem] rounded-sm" />
                     </a>
                 </div>
 
                 <!-- Book Now Button and Mobile Menu -->
-                <div class="flex items-center justify-around w-48">
+                <div class="flex items-center justify-end gap-3 w-48">
                     <div class="block">
-                        <a  href="{{ route('book-now') }}" class="text-gray-800 px-[10px] lg:px-[20px] py-2 lg:py-[8px] rounded-sm text-sm font-medium bg-white transition-colors text-[9px] lg:text-[12px]" style="font-family: brandon-bold-webfont, sans-serif; letter-spacing: 2.84px !important; text-transform: uppercase !important; font-weight: 700 !important; line-height: 1 !important;">
+                    @if(url()->current() == config('app.url'))
+                        <a  @click="heroQuoteModal = true" as="button" class="cursor-pointer text-gray-800 px-[10px] lg:px-[20px] py-2 lg:py-[8px] rounded-sm text-sm font-medium bg-white transition-colors text-[9px] lg:text-[12px]" style="font-family: brandon-bold-webfont, sans-serif; letter-spacing: 2.84px !important; text-transform: uppercase !important; font-weight: 700 !important; line-height: 1 !important;">
                             Inquire
                         </a>
+                    @endif
                     </div>
 
                     <!-- Mobile menu button -->
@@ -48,10 +50,6 @@
                 
                 <div class="px-4 pt-2 pb-6 space-y-1">
                     <a href="/" class="block px-4 py-3 rounded-lg text-base font-medium {{ Request::is('/') ? 'bg-gray-100 text-gray-900' : 'text-gray-700 hover:bg-gray-50' }}" style="font-family: 'AlternateGotNo1D', sans-serif; font-weight: 400; font-size: 1.4375rem !important; letter-spacing: 1.84px !important; text-transform: uppercase !important;">Home</a>
-                    
-                    <a href="{{ route('all-packages', ['category' => 'kilimanjaro']) }}" class="block px-4 py-3 rounded-lg text-base font-medium {{ request('category') === 'kilimanjaro' ? 'bg-gray-100 text-gray-900' : 'text-gray-700 hover:bg-gray-50' }}" style="font-family: 'AlternateGotNo1D', sans-serif; font-weight: 400; font-size: 1.4375rem !important; letter-spacing: 1.84px !important; text-transform: uppercase !important;">Safaris</a>
-                    
-                    <a href="{{ route('all-packages', ['category' => 'zanzibar']) }}" class="block px-4 py-3 rounded-lg text-base font-medium {{ request('category') === 'zanzibar' ? 'bg-gray-100 text-gray-900' : 'text-gray-700 hover:bg-gray-50' }}" style="font-family: 'AlternateGotNo1D', sans-serif; font-weight: 400; font-size: 1.4375rem !important; letter-spacing: 1.84px !important; text-transform: uppercase !important;">Zanzibar</a>
                     
                     <a href="{{ route('about') }}" class="block px-4 py-3 rounded-lg text-base font-medium {{ Request::is('about*') ? 'bg-gray-100 text-gray-900' : 'text-gray-700 hover:bg-gray-50' }}" style="font-family: 'AlternateGotNo1D', sans-serif; font-weight: 400; font-size: 1.4375rem !important; letter-spacing: 1.84px !important; text-transform: uppercase !important;">About Us</a>
                     

@@ -5,8 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Crowned Wild Africa') }}</title>
+   <title>Grandezzanzibar Tour and Travel</title>
     <link rel="icon" type="image/png" href="{{ asset('images/image-used/favicon.ico') }}">
+
+   <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Kaushan+Script&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
@@ -30,6 +36,14 @@
     
  @vite(['resources/css/app.css', 'resources/js/app.js'])
 @livewireStyles
+
+<style>
+    .the-girl-next-door-regular {
+ font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+</style>
 </head>
 <body class="font-sans antialiased flex flex-col min-h-screen">
     <div class="flex-1">

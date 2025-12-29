@@ -34,33 +34,19 @@
             
             <div class="package-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 300px)); gap: 2rem; justify-content: center; position: relative; z-index: 10; width: 100%;">
                 @foreach($packages as $package)
-                <a href="{{ $package['url'] ?? '#' }}" class="package-card" style="display: flex; flex-direction: column; height: 100%; text-decoration: none; color: inherit; background-color: #f5f2ed; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
-                    <div style="height: 200px; overflow: hidden; flex-shrink: 0;">
+                <a href="{{ $package['url'] ?? '#' }}" class="package-card" style="display: block; height: 350px; text-decoration: none; color: inherit; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: relative;">
+                    <div class="card-image" style="height: 100%; position: relative;">
                         <img src="{{  Storage::url($package['image'])}}" 
                              alt="{{ $package['title'] }}" 
                              style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
-                    </div>
-                    <div style="padding: 1.5rem; display: flex; flex-direction: column; flex-grow: 1;">
-                        <div style="flex-grow: 1;">
-                            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.75rem;">
-                                <h3 style="font-size: 1.25rem; color: #222; margin: 0; margin-right: 1rem;">{{ $package['title'] }}</h3>
-                               
+                        <div class="card-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0, 0, 0, 0.7); display: flex; justify-content: center; align-items: center; text-align: center; padding: 2rem; opacity: 0; transition: all 0.3s ease;">
+                            <div class="overlay-content">
+                                <h3 class="package-title" style="font-size: 1.5rem; font-weight: bold; margin: 0 0 1rem 0; color: white;">{{ $package['title'] }}</h3>
+                                @if(isset($package['description']))
+                                <p class="package-description" style="font-size: 0.95rem; line-height: 1.5; margin: 0 0 1.5rem 0; color: rgba(255, 255, 255, 0.9); display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;">{{ $package['description'] }}</p>
+                                @endif
+                                <button class="package-action-btn" style="background: linear-gradient(45deg, #f59e0b, #d97706); color: white; border: none; padding: 0.75rem 1.5rem; border-radius: 25px; font-size: 0.9rem; font-weight: 600; cursor: pointer; transition: all 0.3s ease; text-transform: uppercase; letter-spacing: 0.5px;">Explore Package</button>
                             </div>
-                            @if(isset($package['description']))
-                            <p style="color: #333; font-size: 0.95rem; line-height: 1.5; margin: 0 0 1rem 0; min-height: 4.5em; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;">
-                                {{ $package['description'] }}
-                            </p>
-                            @endif
-                        </div>
-                        <div style="border-top: 1px solid #e0e0e0; padding-top: 0.75rem; margin-top: auto; display: flex; justify-content: space-between; align-items: center; font-size: 0.9rem; color: #666;">
-                            @if(isset($package['views']))
-                            <span><i class="far fa-eye" style="margin-right: 0.25rem;"></i> {{ $package['views'] }}</span>
-                            @else
-                            <span></span>
-                            @endif
-                            @if(isset($package['likes']))
-                            <span><i class="far fa-heart" style="margin-right: 0.25rem;"></i> {{ $package['likes'] }}</span>
-                            @endif
                         </div>
                     </div>
                 </a>
@@ -145,31 +131,81 @@
         }
     }
     
-    /* Hover effects */
+    /* Package Card Styles */
     .package-card {
         transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
     
     .package-card:hover {
         transform: translateY(-5px);
-        box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.2) !important;
     }
     
-    .package-card-link {
-        color: inherit;
-        text-decoration: none;
-        display: block;
-        height: 100%;
+    .package-card .card-image:hover img {
+        transform: scale(1.1);
     }
     
-    .package-card {
-        height: 100%;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    .package-card .card-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.7);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 2rem;
+        opacity: 0;
+        transition: all 0.3s ease;
     }
     
-    .package-card-link:hover .package-card {
-        transform: translateY(-5px);
-        box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+    .package-card:hover .card-overlay {
+        opacity: 1;
+    }
+    
+    .overlay-content {
+        color: white;
+        max-width: 90%;
+    }
+    
+    .package-title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin: 0 0 1rem 0;
+        color: white;
+    }
+    
+    .package-description {
+        font-size: 0.95rem;
+        line-height: 1.5;
+        margin: 0 0 1.5rem 0;
+        color: rgba(255, 255, 255, 0.9);
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+    
+    .package-action-btn {
+        background: linear-gradient(45deg, #f59e0b, #d97706);
+        color: white;
+        border: none;
+        padding: 0.75rem 1.5rem;
+        border-radius: 25px;
+        font-size: 0.9rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+    
+    .package-action-btn:hover {
+        background: linear-gradient(45deg, #d97706, #b45309);
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(245, 158, 11, 0.4);
     }
 </style>
 @endpush

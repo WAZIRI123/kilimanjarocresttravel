@@ -1088,4 +1088,5 @@
             });
         });
     </script>
+    @include('partials.sections.quick-quote',['modalName'=>'heroQuoteModal'])
 </section>

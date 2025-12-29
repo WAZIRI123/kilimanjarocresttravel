@@ -5,13 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Crowned wild africa') }}</title>
+    <title>Grandezzanzibar Tour and Travel</title>
     <link rel="icon" type="image/png" href="{{ asset('images/image-used/favicon.ico') }}">
 
    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Kaushan+Script&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+   <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Kaushan+Script&display=swap" rel="stylesheet">
     <link href="{{ asset('css/fonts/used_font/AlternateGotNo1DRegular.woff2') }}" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=The+Girl+Next+Door&display=swap" rel="stylesheet">
     <!-- Icons -->
@@ -21,6 +27,14 @@
     @livewireStyles
     @stack('styles')
     <style>
+    .the-girl-next-door-regular {
+ font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+</style>
+    <style>
+
        :root {
         --background: 0 0% 100%;
         --foreground: 222.2 84% 4.9%;
@@ -56,7 +70,7 @@
         padding-left: 1rem;
         padding-right: 1rem;
     }
-    
+  
     @media (min-width: 640px) {
         .container {
             max-width: 640px;
@@ -94,7 +108,10 @@
     </div>
 
     @include('components.footer')
+    @stack('style')
     @livewireScripts
+    @stack('scripts')
+
 
 </body>
 </html>

@@ -15,14 +15,8 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('email');
-            $table->string('phone')->nullable();
-            $table->string('subject');
             $table->text('message');
-            $table->boolean('subscribed_to_newsletter')->default(false);
-            $table->string('ip_address')->nullable();
-            $table->string('status')->default('new');
             $table->timestamps();
-            $table->softDeletes();
         });
     }
 

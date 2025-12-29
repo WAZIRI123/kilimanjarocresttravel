@@ -2,168 +2,49 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Support\Str;
+use Illuminate\Database\Eloquent\Casts\Attribute;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Package extends Model
 {
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var array<int, string>
-     */
+    use HasFactory;
     protected $fillable = [
-        'title',
-        'slug',
-        'duration',
-        'overview',
-        'short_description',
-        'category',
-        'country',
-        'featured_image',
-        'price',
-        'is_featured',
-        'is_special',
-        'discount_percentage',
-        'valid_until',
-        'is_active',
-        'sort_order',
-        'meta_title',
-        'meta_description',
-        'meta_keywords',
-        'included_items',
-        'excluded_items',
-        'best_time_to_visit',
-        'itineraries',
+        'name',  'image', 'day1','day2','day3','day4','day5','day6','day7','day8','slug','price','package_type_id','total_days'
     ];
-
-    /**
-     * The attributes that should be cast.
-     *
-     * @var array<string, string>
-     */
-    /**
-     * The attributes that should be cast.
-     *
-     * @var array<string, string>
-     */
-    /**
-     * Boot the model.
-     */
-    protected static function boot()
+    public function scopeFilter($query, array $filters)
     {
-        parent::boot();
-
-        static::saving(function ($package) {
-            if (empty($package->slug) || $package->isDirty('title')) {
-                $slug = Str::slug($package->title);
-                $count = 2;
-                
-                // Ensure the slug is unique
-                while (static::where('slug', $slug)->where('id', '!=', $package->id ?? null)->exists()) {
-                    $slug = Str::slug($package->title) . '-' . $count++;
-                }
-                
-                $package->slug = $slug;
-            }
+        $query->when($filters['search'], function ($query, $search) {
+            return $query->where('name', 'like', "%$search%");
         });
     }
 
-    protected $casts = [
-        'is_featured' => 'boolean',
-        'is_active' => 'boolean',
-        'price' => 'decimal:2',
-        'sort_order' => 'integer',
-        'included_items' => 'array',
-        'excluded_items' => 'array',
-        'itineraries' => 'array',
-        'meta_keywords' => 'array',
-    ];
-    
-
     /**
-     * Prepare a date for array / JSON serialization.
+     * Get all of the reviews for the Package_type
      *
-     * @param  \DateTimeInterface  $date
-     * @return string
+     * @return \Illuminate\Database\Eloquent\Relations\belongsTo
      */
-    protected function serializeDate(\DateTimeInterface $date)
+
+    public function packageTypes(): BelongsTo
     {
-        return $date->format('Y-m-d H:i:s');
+        return $this->belongsTo(PackageType::class);
+    }
+    public function reservations(): HasMany
+    {
+        return $this->hasMany(Reservation::class);
+    }
+    public function Packagereservations(): HasMany
+    {
+        return $this->hasMany(PackageReservation::class);
     }
 
-    /**
-     * Convert the model instance to an array.
-     *
-     * @return array
-     */
-    public function toArray()
+    protected function name(): Attribute
     {
-        return [
-            'id' => $this->id,
-            'title' => $this->title,
-            'slug' => $this->slug,
-            'duration' => $this->duration,
-            'short_description' => $this->short_description,
-            'description' => $this->description,
-            'featured_image' => $this->featured_image,
-            'price' => $this->price,
-            'is_featured' => $this->is_featured,
-            'is_active' => $this->is_active,
-            'sort_order' => $this->sort_order,
-            'included_items' => $this->included_items,
-            'excluded_items' => $this->excluded_items,
-            'best_time_to_visit' => $this->best_time_to_visit,
-            'meta_title' => $this->meta_title,
-            'meta_description' => $this->meta_description,
-            'meta_keywords' => $this->meta_keywords,
-            'itineraries' => $this->itineraries,
-            'created_at' => $this->created_at,
-            'updated_at' => $this->updated_at,
-        ];
-    }
-
-    /**
-     * Get the URL for the featured image.
-     *
-     * @return string|null
-     */
-    public function getFeaturedImageUrlAttribute(): ?string
-    {
-        if (!$this->featured_image) {
-            return null;
-        }
-        
-        if (filter_var($this->featured_image, FILTER_VALIDATE_URL)) {
-            return $this->featured_image;
-        }
-        
-        return asset('storage/' . $this->featured_image);
-    }
-
-    /**
-     * Get the itineraries for the package.
-     */
-    public function itineraries(): HasMany
-    {
-        return $this->hasMany(PackageItinerary::class);
-    }
-
-    /**
-     * Get the gallery images for the package.
-     */
-    public function getGalleryAttribute(): array
-    {
-        if (empty($this->gallery_images)) {
-            return [];
-        }
-
-        return array_map(function ($image) {
-            return [
-                'url' => filter_var($image, FILTER_VALIDATE_URL) ? $image : asset('storage/' . $image),
-                'alt' => $this->title
-            ];
-        }, (array) $this->gallery_images);
+        return Attribute::make(
+            set: fn ($value) => ['slug' => Str::slug($value), 'name' => $value]
+        );
     }
 }

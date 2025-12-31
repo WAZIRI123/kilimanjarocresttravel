@@ -30,7 +30,7 @@
       
         @if($packages->count() > 0)
             @include('partials.packages.related-packages', [
-                'title' => 'Our Packages',
+                'title' => 'Packages',
                 'viewAllLink' => '#',
                 'packages' => $packages->map(function($package) {
                     return [
@@ -40,7 +40,9 @@
                         'duration' => $package->duration,
                         'description' => $package->short_description,
                         'views' => $package->views,
-                        'likes' => $package->likes
+                        'likes' => $package->likes,
+                        'price' => $package->price,
+
                     ];
                 })
             ])

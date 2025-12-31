@@ -1,31 +1,22 @@
 @php 
-$latestSafari = \App\Models\Package::where('is_active', true)
-    ->where('category', 'safari')
+$latestDayTrip = \App\Models\Package::where('is_active', true)
+    ->where('category', 'day-trip')
     ->orderBy('created_at', 'desc')
     ->orderBy('id', 'desc')
-    ->first();
-$latestKilimanjaro = \App\Models\Package::where('is_active', true)
-    ->where('category', 'kilimanjaro')
-    ->orderBy('created_at', 'desc')
-    ->orderBy('id', 'desc')
-    ->first();
+    ->limit(4);
 
-$latestzanzibar = \App\Models\Package::where('is_active', true)
-    ->where('category', 'zanzibar')
-    ->orderBy('created_at', 'desc')
-    ->orderBy('id', 'desc')
-    ->first();
 
-$latestSouthernSafaris = \App\Models\Package::where('is_active', true)
-    ->where('category', 'southern-safaris')
+
+
+$latestHiking = \App\Models\Package::where('is_active', true)
+    ->where('category', 'hiking')
     ->orderBy('created_at', 'desc')
     ->orderBy('id', 'desc')
-    ->first();
-$latestNorthernSafaris = \App\Models\Package::where('is_active', true)
-    ->where('category', 'northern-safaris')
-    ->orderBy('created_at', 'desc')
-    ->orderBy('id', 'desc')
-    ->first();
+    ->limit(2);
+
+    //join two
+    $combinedPackages = $latestDayTrip->merge($latestHiking);
+
 @endphp
 <!-- Destinations Grid Partial -->
 <section class="destinations-section">
@@ -35,65 +26,19 @@ $latestNorthernSafaris = \App\Models\Package::where('is_active', true)
         </div>
         
         <div class="destinations-grid">
-            <!-- Destination Card 1 -->
-            <div class="destination-card" style="height: 20rem;">
-                <a href="{{ route('all-packages', ['category' => 'safari']) }}" class="block h-full">
-                    <div class="card-image">
-                        <img src="{{asset('storage/' . $latestSafari?->featured_image)}}" alt="Ngorongoro Safari">
-                        <div class="card-overlay">
-                            <h3 class="destination-title">Ngorongoro</h3>
+            @foreach($combinedPackages as $package)
+                <!-- Destination Card -->
+                <div class="destination-card" data-aos-delay="{{100 + ($loop->index * 100)}}">
+                    <a href="{{ route('package.show', $package->slug) }}" class="block h-full">
+                        <div class="card-image">
+                            <img src="{{asset('storage/' . $package->featured_image)}}" alt="{{$package->category}}">
+                            <div class="card-overlay">
+                                <h3 class="destination-title">{{$package->category}}</h3>
+                            </div>
                         </div>
-                    </div>
-                </a>
-            </div>
-
-            <!-- Destination Card 2 -->
-            <div class="destination-card" data-aos-delay="100">
-                <a href="{{ route('all-packages', ['category' => 'kilimanjaro']) }}" class="block h-full">
-                    <div class="card-image">
-                        <img src="{{asset('storage/' . $latestKilimanjaro?->featured_image)}}" alt="Mount Kilimanjaro">
-                        <div class="card-overlay">
-                            <h3 class="destination-title">Kilimanjaro</h3>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-            <!-- Destination Card 3 -->
-            <div class="destination-card" data-aos-delay="200">
-                <a href="{{ route('all-packages', ['category' => 'zanzibar']) }}" class="block h-full">
-                    <div class="card-image">
-                        <img src="{{asset('storage/' . $latestzanzibar?->featured_image)}}" alt="Zanzibar Beaches">
-                        <div class="card-overlay">
-                            <h3 class="destination-title">Zanzibar</h3>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            
-            <!-- Destination Card 4 -->
-            <div class="destination-card" data-aos-delay="100">
-                <a href="{{ route('all-packages', ['category' => 'southern-safaris']) }}" class="block h-full">
-                    <div class="card-image">
-                        <img src="{{asset('storage/' . $latestSouthernSafaris?->featured_image)}}" alt="Southern Safaris">
-                        <div class="card-overlay">
-                            <h3 class="destination-title">Southern Safaris</h3>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            
-            <!-- Destination Card 5 -->
-            <div class="destination-card" data-aos-delay="200">
-                <a href="{{ route('all-packages', ['category' => 'northern-safaris']) }}" class="block h-full">
-                    <div class="card-image">
-                        <img src="{{asset('storage/' . $latestNorthernSafaris?->featured_image)}}" alt="Northern Safaris">
-                        <div class="card-overlay">
-                            <h3 class="destination-title">Northern Safaris</h3>
-                        </div>
-                    </div>
-                </a>
-            </div>
+                    </a>
+                </div>
+            @endforeach
             
         </div>
             </div>

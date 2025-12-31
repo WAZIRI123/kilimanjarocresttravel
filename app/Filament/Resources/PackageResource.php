@@ -141,6 +141,64 @@ class PackageResource extends Resource
                                             ->columnSpanFull()
                                             ->helperText('Maximum file size: 2MB. Allowed types: jpg, jpeg, png, gif'),
 
+                                        // Gallery Images
+                                        Forms\Components\FileUpload::make('gallery_image_1')
+                                            ->label('Gallery Image 1')
+                                            ->image()
+                                            ->directory('packages/gallery')
+                                            ->imageResizeMode('cover')
+                                            ->imagePreviewHeight('150')
+                                            ->imageResizeTargetWidth('800')
+                                            ->imageResizeTargetHeight('600')
+                                            ->imageEditor()
+                                            ->imageEditorAspectRatios([
+                                                '16:9',
+                                                '4:3',
+                                                '1:1',
+                                            ])
+                                            ->acceptedFileTypes(['image/*'])
+                                            ->maxSize(2048)
+                                            ->columnSpanFull()
+                                            ->helperText('Maximum file size: 2MB. Allowed types: jpg, jpeg, png, gif'),
+
+                                        Forms\Components\FileUpload::make('gallery_image_2')
+                                            ->label('Gallery Image 2')
+                                            ->image()
+                                            ->directory('packages/gallery')
+                                            ->imageResizeMode('cover')
+                                            ->imagePreviewHeight('150')
+                                            ->imageResizeTargetWidth('800')
+                                            ->imageResizeTargetHeight('600')
+                                            ->imageEditor()
+                                            ->imageEditorAspectRatios([
+                                                '16:9',
+                                                '4:3',
+                                                '1:1',
+                                            ])
+                                            ->acceptedFileTypes(['image/*'])
+                                            ->maxSize(2048)
+                                            ->columnSpanFull()
+                                            ->helperText('Maximum file size: 2MB. Allowed types: jpg, jpeg, png, gif'),
+
+                                        Forms\Components\FileUpload::make('gallery_image_3')
+                                            ->label('Gallery Image 3')
+                                            ->image()
+                                            ->directory('packages/gallery')
+                                            ->imageResizeMode('cover')
+                                            ->imagePreviewHeight('150')
+                                            ->imageResizeTargetWidth('800')
+                                            ->imageResizeTargetHeight('600')
+                                            ->imageEditor()
+                                            ->imageEditorAspectRatios([
+                                                '16:9',
+                                                '4:3',
+                                                '1:1',
+                                            ])
+                                            ->acceptedFileTypes(['image/*'])
+                                            ->maxSize(2048)
+                                            ->columnSpanFull()
+                                            ->helperText('Maximum file size: 2MB. Allowed types: jpg, jpeg, png, gif'),
+
                                         Forms\Components\TextInput::make('price')
                                             ->required()
                                             ->prefix('$')

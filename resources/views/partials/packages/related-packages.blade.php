@@ -9,40 +9,80 @@
 {{ $title }}
     <span style="position: absolute; bottom: -4px; left: 15px; width: 8rem; height: 4px; background-color: #E7247A; content: '';"></span>
 </h2>
-        
                 @endif
             </div>
             @endif
             
             <div class="grid grid-cols-1 mx-auto sm:grid-cols-2 lg:grid-cols-3 gap-8 relative z-10 w-[100%] justify-items-center">
                 @foreach($packages as $package)
-                <a href="{{ $package['url'] ?? '#' }}" class="package-card" style="display: flex; flex-direction: column; height: 100%; text-decoration: none; color: inherit; background-color: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
-                    <div style="height: 200px; overflow: hidden; flex-shrink: 0;">
-                        <img src="{{  Storage::url($package['image'])}}" 
-                             alt="{{ $package['title'] }}" 
-                             style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
-                    </div>
-                    <div style="padding: 1.5rem; display: flex; flex-direction: column; flex-grow: 1;">
-                        <div style="flex-grow: 1;">
-                            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.75rem;">
-                                <h3 style="font-size: 1.25rem; color: #222; margin: 0; margin-right: 1rem;">{{ $package['title'] }}</h3>
-                               
+                <div class="package-card" style="position: relative; width: 100%; max-width: 400px; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                    <a href="{{ $package['url'] ?? route('package.show', $package['slug']) }}" style="text-decoration: none; color: inherit;">
+                        <!-- Image Container with Overlay -->
+                        <div style="position: relative; height: 250px; overflow: hidden;">
+                            <img src="{{ $package['image'] ? Storage::url($package['image']) :  Storage::url($package['featured_image']) }}" 
+                                 alt="{{ $package['title'] }}" 
+                                 style="width: 100%; height: 100%; object-fit: cover;">
+                            
+                            <!-- Featured Tag -->
+                            <div style="position: absolute; top: 15px; left: 15px; background-color: #e7247a; color: white; padding: 4px 12px; border-radius: 20px; font-size: 0.75rem; font-weight: 600;">
+                                FEATURED
                             </div>
-                            @if(isset($package['description']))
-                            <p style="color: #333; font-size: 0.95rem; line-height: 1.5; margin: 0 0 1rem 0; min-height: 4.5em; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;">
-                                {{ $package['description'] }}
-                            </p>
                             
-                            @endif
+                            <!-- Heart Icon -->
+                            <div style="position: absolute; top: 15px; right: 15px; background-color: white; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                                </svg>
+                            </div>
                             
+                            <!-- Photo Counter -->
+                         
                         </div>
-                        <div style="border-top: 1px solid #e0e0e0; padding-top: 0.75rem; margin-top: auto; display: flex; justify-content: center; align-items: center; font-size: 0.9rem; border-radius: 8px;">
-    
-                            <span class="inline-flex items-center px-6 pb-2 pt-1 border border-transparent text-center font-medium rounded-md shadow-sm  transition-colors duration-200" style="background-color:#E7247A; color:#fff;">View Package </span>
-
+                        
+                        <!-- Card Content -->
+                        <div style="background: white; padding: 1.5rem; position: relative;">
+                            <!-- Title -->
+                            <h3 style="font-size: 1.25rem; font-weight: 700; margin: 0 0 1rem 0; color: #2d3748; line-height: 1.3;">
+                                {{ strtoupper($package['title']) }}
+                            </h3>
+                            
+                            <!-- Info Icons -->
+                            <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-bottom: 1.25rem;">
+                               
+                                <div style="display: flex; align-items: center; color: #4a5568; font-size: 0.9rem;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 6px;">
+                                        <line x1="12" y1="1" x2="12" y2="23"></line>
+                                        <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                                    </svg>
+                                   
+                                    @php
+                                        $prices = explode(',', $package['price']);
+                                        $firstPrice = $prices[0] ?? 0;
+                                    @endphp
+                                
+                                    From {{ $firstPrice }}
+                                </div>
+                                <div style="display: flex; align-items: center; color: #4a5568; font-size: 0.9rem;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 6px;">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <polyline points="12 6 12 12 16 14"></polyline>
+                                    </svg>
+                                  1 Day
+                                </div>
+                                
+                            </div>
+                            
+                            <!-- Explore Button -->
+                            <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 1rem; border-top: 1px solid #e2e8f0;">
+                                <span style="font-weight: 600; color: #4a5568; font-size: 0.95rem;">Explore</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </div>
                         </div>
-                    </div>
-                </a>
+                    </a>
+                </div>
                 @endforeach
             </div>
         </div>
@@ -108,6 +148,7 @@
         transform: translateY(-5px);
         box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
     }
+
 </style>
 @endpush
 @endif

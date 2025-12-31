@@ -49,30 +49,10 @@
                 <div class="px-4 pt-2 pb-6 space-y-1">
                     <a href="/" class="block px-4 py-3 rounded-lg text-base font-medium {{ Request::is('/') ? 'bg-gray-100 text-gray-900' : 'text-gray-700 hover:bg-gray-50' }}" style="font-family: 'AlternateGotNo1D', sans-serif; font-weight: 400; font-size: 1.4375rem !important; letter-spacing: 1.84px !important; text-transform: uppercase !important;">Home</a>
                     
-                    <!-- Safaris Mobile Dropdown -->
-                    <div x-data="{ open: false }" class="relative">
-                        <button @click="open = !open" class="w-full flex justify-start items-center px-4 py-3 rounded-lg text-base font-medium {{ in_array(request('category'), ['northern-safaris', 'short-safaris', 'southern-safaris']) ? 'bg-gray-100' : 'text-gray-700 hover:bg-gray-50' }}" style="font-family: 'AlternateGotNo1D', sans-serif; font-weight: 400; font-size: 1.4375rem !important; letter-spacing: 1.84px !important; text-transform: uppercase !important;">
-                            <span class="pr-2">Safaris</span>
-                            <svg class="w-5 h-5 transition-transform duration-200" :class="{'transform rotate-180': open}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                            </svg>
-                        </button>
-                        <div x-show="open" x-collapse class="pl-4 space-y-1 mt-1">
-                            <a href="{{ route('all-packages', ['category' => 'northern-safaris']) }}" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50 rounded-lg {{ request('category') === 'northern-safaris' ? 'bg-gray-100' : '' }}" style="font-family: 'AlternateGotNo1D', sans-serif; font-weight: 400; font-size: 1.2rem !important; letter-spacing: 1.5px !important; text-transform: uppercase !important;">
-                                Northern Safaris
-                            </a>
-                            <a href="{{ route('all-packages', ['category' => 'short-safaris']) }}" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50 rounded-lg {{ request('category') === 'short-safaris' ? 'bg-gray-100' : '' }}" style="font-family: 'AlternateGotNo1D', sans-serif; font-weight: 400; font-size: 1.2rem !important; letter-spacing: 1.5px !important; text-transform: uppercase !important;">
-                                Short Safaris
-                            </a>
-                            <a href="{{ route('all-packages', ['category' => 'southern-safaris']) }}" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50 rounded-lg {{ request('category') === 'southern-safaris' ? 'bg-gray-100' : '' }}" style="font-family: 'AlternateGotNo1D', sans-serif; font-weight: 400; font-size: 1.2rem !important; letter-spacing: 1.5px !important; text-transform: uppercase !important;">
-                                Southern Safaris
-                            </a>
-                        </div>
-                    </div>
+                     
+                    <a href="{{ route('all-packages', ['category' => 'hiking']) }}" class="block px-4 py-3 rounded-lg text-base font-medium {{ request('category') === 'hiking' ? 'bg-gray-100 text-gray-900' : 'text-gray-700 hover:bg-gray-50' }}" style="font-family: 'AlternateGotNo1D', sans-serif; font-weight: 400; font-size: 1.4375rem !important; letter-spacing: 1.84px !important; text-transform: uppercase !important;">hiking</a>
                     
-                    <a href="{{ route('all-packages', ['category' => 'kilimanjaro']) }}" class="block px-4 py-3 rounded-lg text-base font-medium {{ request('category') === 'kilimanjaro' ? 'bg-gray-100 text-gray-900' : 'text-gray-700 hover:bg-gray-50' }}" style="font-family: 'AlternateGotNo1D', sans-serif; font-weight: 400; font-size: 1.4375rem !important; letter-spacing: 1.84px !important; text-transform: uppercase !important;">Kilimanjaro</a>
-                    
-                    <a href="{{ route('all-packages', ['category' => 'zanzibar']) }}" class="block px-4 py-3 rounded-lg text-base font-medium {{ request('category') === 'zanzibar' ? 'bg-gray-100 text-gray-900' : 'text-gray-700 hover:bg-gray-50' }}" style="font-family: 'AlternateGotNo1D', sans-serif; font-weight: 400; font-size: 1.4375rem !important; letter-spacing: 1.84px !important; text-transform: uppercase !important;">Zanzibar</a>
+                    <a href="{{ route('all-packages', ['category' => 'day-trip']) }}" class="block px-4 py-3 rounded-lg text-base font-medium {{ request('category') === 'day-trip' ? 'bg-gray-100 text-gray-900' : 'text-gray-700 hover:bg-gray-50' }}" style="font-family: 'AlternateGotNo1D', sans-serif; font-weight: 400; font-size: 1.4375rem !important; letter-spacing: 1.84px !important; text-transform: uppercase !important;">day-trip</a>
                     
                     <a href="{{ route('about') }}" class="block px-4 py-3 rounded-lg text-base font-medium {{ Request::is('about*') ? 'bg-gray-100 text-gray-900' : 'text-gray-700 hover:bg-gray-50' }}" style="font-family: 'AlternateGotNo1D', sans-serif; font-weight: 400; font-size: 1.4375rem !important; letter-spacing: 1.84px !important; text-transform: uppercase !important;">About</a>
                     

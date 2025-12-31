@@ -3,9 +3,10 @@
 @section('content')
 @php
     $itineraries = is_string($package->itineraries) ? json_decode($package->itineraries, true) : $package->itineraries;
-    $heroImage = !empty($itineraries[1]['image']) ? $itineraries[1]['image'] : '851897_9587828f79e74b21a175b075af31661e~mv2.jpg';
+    $heroImage = $package->featured_image ?? '851897_9587828f79e74b21a175b075af31661e~mv2.jpg';
     
     $prices = explode(',', $package->price);
+
 @endphp
 
 @include('partials.sections.page-hero', [
@@ -13,6 +14,34 @@
     'title' => $package->title ?? 'Explore Our Destinations',
     'subtitle' => $package->duration ?? ''
 ])
+
+@if($package->gallery_image_1 || $package->gallery_image_2 || $package->gallery_image_3)
+<div style="background-color: #fcfcf9; padding: 20px 0;">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+        <h2 style="font-size: 1.8rem; text-align: center; color: #2c3e50; margin-bottom: 20px; position: relative;">
+            Activities
+            <span style="position: absolute; bottom: -4px; left: 50%; transform: translateX(-50%); width: 5rem; height: 4px; background-color: #E7247A; content: '';"></span>
+        </h2>
+        <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+            @if($package->gallery_image_1)
+                <div style="flex: 1; min-width: 300px; max-width: 100%;">
+                    <img src="{{ asset('storage/' . $package->gallery_image_1) }}" alt="Gallery Image 1" style="width: 100%; height: 250px; object-fit: cover; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                </div>
+            @endif
+            @if($package->gallery_image_2)
+                <div style="flex: 1; min-width: 300px; max-width: 100%;">
+                    <img src="{{ asset('storage/' . $package->gallery_image_2) }}" alt="Gallery Image 2" style="width: 100%; height: 250px; object-fit: cover; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                </div>
+            @endif
+            @if($package->gallery_image_3)
+                <div style="flex: 1; min-width: 300px; max-width: 100%;">
+                    <img src="{{ asset('storage/' . $package->gallery_image_3) }}" alt="Gallery Image 3" style="width: 100%; height: 250px; object-fit: cover; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                </div>
+            @endif
+        </div>
+    </div>
+</div>
+@endif
 
 <div style="background-color: #fcfcf9; padding: 40px 0;">
     <div style="max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; flex-wrap: wrap; gap: 40px;">

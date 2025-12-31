@@ -40,7 +40,7 @@ class PackageController extends Controller
                 default => 'Your African Adventure Awaits'
             };
         } else {
-            $title = 'Featured Packages';
+            $title = 'Our Packages';
             $subtitle = 'Your African Adventure Awaits';
             $query->where('is_featured', true);
         }

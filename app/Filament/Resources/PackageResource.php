@@ -143,7 +143,6 @@ class PackageResource extends Resource
 
                                         Forms\Components\TextInput::make('price')
                                             ->required()
-                                            ->numeric()
                                             ->prefix('$')
                                             ->columnSpanFull(),
 

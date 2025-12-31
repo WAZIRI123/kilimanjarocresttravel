@@ -73,7 +73,6 @@ class Package extends Model
     protected $casts = [
         'is_featured' => 'boolean',
         'is_active' => 'boolean',
-        'price' => 'decimal:2',
         'sort_order' => 'integer',
         'included_items' => 'array',
         'excluded_items' => 'array',

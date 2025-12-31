@@ -18,7 +18,7 @@ return [
     'country' => 'Tanzania',
     'views' => 0,
     'likes' => 0,
-    'meta_title' => '7-Day Off-Peak Tanzania Safari | Stan Safaris',
+    'meta_title' => '7-Day Off-Peak Tanzania Safari | Kilimanjaro Crest Travel',
     'meta_description' => 'Experience Tanzania\'s iconic parks without the crowds on this 7-day low-season safari. Enjoy intimate wildlife encounters in Serengeti, Ngorongoro, Tarangire & Lake Manyara at budget-friendly rates.',
     'meta_keywords' => ['tanzania safari', 'off-peak safari', 'serengeti', 'ngorongoro', 'tarangire', 'lake manyara', 'budget safari', 'low season travel'],
     'itineraries' => [

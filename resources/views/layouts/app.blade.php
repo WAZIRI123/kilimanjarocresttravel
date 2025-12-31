@@ -13,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link href="{{ asset('css/fonts/used_font/AlternateGotNo1DRegular.woff2') }}" rel="stylesheet">
+    <script src="https://www.google.com/recaptcha/enterprise.js?render=6Lef7zksAAAAAPWA3JOz3QloMg2voLx4nzeOGUod"></script>
     <link href="https://fonts.googleapis.com/css2?family=The+Girl+Next+Door&display=swap" rel="stylesheet">
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -95,6 +96,13 @@
 
     @include('components.footer')
     @livewireScripts
-
+<script>
+  function onClick(e) {
+    e.preventDefault();
+    grecaptcha.enterprise.ready(async () => {
+      const token = await grecaptcha.enterprise.execute('6Lef7zksAAAAAPWA3JOz3QloMg2voLx4nzeOGUod', {action: 'LOGIN'});
+    });
+  }
+</script>
 </body>
 </html>

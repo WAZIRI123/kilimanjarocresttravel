@@ -26,7 +26,7 @@ return
             'title' => 'Day 1: Arrival in Moshi',
             'image' => 'packages/Arrival-at-Kili-Airport.webp',
             'descriptions' => [
-                ['content' => '<p>Upon your arrival at Kilimanjaro International Airport (JRO), a friendly representative from Stan Safaris will be there to welcome you. You\'ll then be transferred comfortably to your hotel in Moshi, where you can relax and recover from your journey.</p>'],
+                ['content' => '<p>Upon your arrival at Kilimanjaro International Airport (JRO), a friendly representative from Kilimanjaro Crest Travel will be there to welcome you. You\'ll then be transferred comfortably to your hotel in Moshi, where you can relax and recover from your journey.</p>'],
                 ['content' => '<p>Attend a pre-climb briefing led by our experienced guides. During this session, we will review the Kilimanjaro trekking itinerary, discuss important safety tips, and ensure you are well-prepared for the adventure ahead.</p>']
             ],
             'tips' => 'Accommodation: Hotel in Moshi | Meal Plan: Dinner'

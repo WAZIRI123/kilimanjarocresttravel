@@ -18,7 +18,7 @@ return
     'country' => 'Tanzania',
     'views' => 0,
     'likes' => 0,
-    'meta_title' => '8 Days Classic Great Migration Safari Tanzania | Stan Safaris',
+    'meta_title' => '8 Days Classic Great Migration Safari Tanzania | Kilimanjaro Crest Travel',
     'meta_description' => 'Experience the Great Migration on this 8-day luxury safari through Tanzania\'s most iconic parks. Witness millions of wildebeest, zebras, and predators in action during peak season.',
     'meta_keywords' => ['great migration', 'safari tanzania', 'serengeti', 'ngorongoro', 'wildebeest migration', 'african safari', 'tanzania wildlife'],
     'itineraries' => [

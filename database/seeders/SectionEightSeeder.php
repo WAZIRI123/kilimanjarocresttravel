@@ -11,7 +11,7 @@ class SectionEightSeeder extends Seeder
     {
         SectionEight::create([
             'title' => 'Curated African Escapes <br> <strong>Curated for You</strong>',
-            'subtitle' => 'At Stan Safari, every journey is tailored to immerse you in Africa\'s beauty, culture, and wildlife with comfort and exclusivity at the core.' . "\n\n" . 'From thrilling safaris to cultural escapes, our curated experiences include:',
+            'subtitle' => 'At Kilimanjaro Crest Travel, every journey is tailored to immerse you in Africa\'s beauty, culture, and wildlife with comfort and exclusivity at the core.' . "\n\n" . 'From thrilling safaris to cultural escapes, our curated experiences include:',
             'destinations' => [
                 
                 [

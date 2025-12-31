@@ -25,7 +25,7 @@ return [
             'title' => 'Day 1 - Airport pick-up- Drop off at hotel',
             'image' => 'itineraries/01JYVM8644CQQ1D6M0WDKDH5VE.jpg',
             'descriptions' => [
-                ['content' => '<p>You will be picked up by the staff of Stan Safaris from Kilimanjaro International Airport (JRO) and driven to your accommodation in Moshi. Participants will be given a short briefing for the climb the next day. Kits and the necessary equipment will be checked as well.</p>']
+                ['content' => '<p>You will be picked up by the staff of Kilimanjaro Crest Travel from Kilimanjaro International Airport (JRO) and driven to your accommodation in Moshi. Participants will be given a short briefing for the climb the next day. Kits and the necessary equipment will be checked as well.</p>']
             ],
             'tips' => null
         ],

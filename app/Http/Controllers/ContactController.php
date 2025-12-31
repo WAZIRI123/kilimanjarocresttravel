@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Contact;
 use App\Mail\ContactFormNotification;
 use App\Mail\ContactConfirmation;
+use App\Rules\ReCaptcha;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Log;
@@ -31,6 +32,7 @@ class ContactController extends Controller
             'phone' => 'nullable|string|max:20',
             'subject' => 'required|string|max:255',
             'message' => 'required|string|max:5000',
+            'g-recaptcha-response' => ['required', new ReCaptcha]
         ]);
 
         try {
@@ -54,13 +56,6 @@ class ContactController extends Controller
                 Mail::to($adminEmail)->send(new ContactFormNotification($contact));
             } catch (\Exception $e) {
                 Log::error('Failed to send admin notification email: ' . $e->getMessage());
-            }
-
-            // Send confirmation to user
-            try {
-                Mail::to($contact->email)->send(new ContactConfirmation($contact));
-            } catch (\Exception $e) {
-                Log::error('Failed to send user confirmation email: ' . $e->getMessage());
             }
 
             return redirect()->back()->with('success', 'Thank you for your message! We will get back to you soon.');

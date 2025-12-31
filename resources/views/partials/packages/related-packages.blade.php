@@ -3,16 +3,20 @@
     <div style="width: 100%; display: flex; justify-content: center;">
         <div style="width: 100%; max-width: 100%; padding: 0 15px;">
             @if(isset($title) || isset($viewAllLink))
-            <div style="display: flex; justify-content:center; align-items: center; margin-bottom: 2rem; padding: 0 15px;">
+            <div style="display: flex; justify-content:center; align-items: center; margin-bottom: 2rem; padding: 0 0px;">
                 @if(isset($title))
-                <h2 style="font-size: clamp(1.25rem, 6vw, 1.75rem); color: #333; font-weight: 600; margin: 0;">{{ $title }}</h2>
+                 <h2 style="font-size: 1.8rem; color: #2c3e50; margin-bottom: 5px; padding-left: 15px; position: relative;">
+{{ $title }}
+    <span style="position: absolute; bottom: -4px; left: 15px; width: 8rem; height: 4px; background-color: #E7247A; content: '';"></span>
+</h2>
+        
                 @endif
             </div>
             @endif
             
-            <div class="grid grid-cols-1 mx-auto sm:grid-cols-2 lg:grid-cols-3 gap-8 relative z-10 w-[90%] justify-items-center">
+            <div class="grid grid-cols-1 mx-auto sm:grid-cols-2 lg:grid-cols-3 gap-8 relative z-10 w-[100%] justify-items-center">
                 @foreach($packages as $package)
-                <a href="{{ $package['url'] ?? '#' }}" class="package-card" style="display: flex; flex-direction: column; height: 100%; text-decoration: none; color: inherit; background-color: #F5F5DC; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <a href="{{ $package['url'] ?? '#' }}" class="package-card" style="display: flex; flex-direction: column; height: 100%; text-decoration: none; color: inherit; background-color: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
                     <div style="height: 200px; overflow: hidden; flex-shrink: 0;">
                         <img src="{{  Storage::url($package['image'])}}" 
                              alt="{{ $package['title'] }}" 
@@ -34,7 +38,7 @@
                         </div>
                         <div style="border-top: 1px solid #e0e0e0; padding-top: 0.75rem; margin-top: auto; display: flex; justify-content: center; align-items: center; font-size: 0.9rem; border-radius: 8px;">
     
-                            <span class="inline-flex items-center px-6 pb-2 pt-1 border border-transparent text-center font-medium rounded-md shadow-sm  transition-colors duration-200" style="background-color:#000; color:#fff;">View Package </span>
+                            <span class="inline-flex items-center px-6 pb-2 pt-1 border border-transparent text-center font-medium rounded-md shadow-sm  transition-colors duration-200" style="background-color:#E7247A; color:#fff;">View Package </span>
 
                         </div>
                     </div>
@@ -58,10 +62,10 @@
     
     @media (max-width: 768px) {
         .package-grid {
-            grid-template-columns: minmax(280px, 400px) !important;
+            grid-template-columns: repeat(2, 1fr) !important;
             justify-content: center !important;
-            gap: 1.5rem !important;
-            padding: 0 15px;
+            gap: 1rem !important;
+            padding: 0 10px;
         }
     
         .related-packages {

@@ -14,8 +14,8 @@ class ExperienceAfricaSeeder extends Seeder
     public function run(): void
     {
         ExperienceAfrica::create([
-            'heading' => "Experience Tanzania's Wild Beauty with Stan Safaris",
-            'subheading' => "Embark on a safari in Tanzania with Stan Safaris, your gateway to the Serengeti, Ngorongoro Crater, Mount Kilimanjaro, and beyond. We offer private guided tours, custom itineraries, and premium lodges, all designed for unforgettable wildlife encounters and seamless comfort. Whether you're chasing the Great Migration or relaxing in Zanzibar, your journey with us is crafted to impress.",
+            'heading' => "Experience Tanzania's Wild Beauty with Kilimanjaro Crest Travel",
+            'subheading' => "Embark on a safari in Tanzania with Kilimanjaro Crest Travel, your gateway to the Serengeti, Ngorongoro Crater, Mount Kilimanjaro, and beyond. We offer private guided tours, custom itineraries, and premium lodges, all designed for unforgettable wildlife encounters and seamless comfort. Whether you're chasing the Great Migration or relaxing in Zanzibar, your journey with us is crafted to impress.",
             'benefits' => [
                 ['benefit' => 'Tailor-Made Safari'],
                 ['benefit' => 'Expert Local Guides'],

@@ -7,7 +7,7 @@
 
     <title>{{ config('app.name', 'Crowned Wild Africa') }}</title>
     <link rel="icon" type="image/png" href="{{ asset('images/image-used/favicon.ico') }}">
-
+<script src="https://www.google.com/recaptcha/enterprise.js?render=6Lef7zksAAAAAPWA3JOz3QloMg2voLx4nzeOGUod"></script>
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
@@ -41,7 +41,14 @@
     </div>
     @livewireScripts
   @include('components.footer')
-
+<script>
+  function onClick(e) {
+    e.preventDefault();
+    grecaptcha.enterprise.ready(async () => {
+      const token = await grecaptcha.enterprise.execute('6Lef7zksAAAAAPWA3JOz3QloMg2voLx4nzeOGUod', {action: 'LOGIN'});
+    });
+  }
+</script>
 </body>
 
 </html>

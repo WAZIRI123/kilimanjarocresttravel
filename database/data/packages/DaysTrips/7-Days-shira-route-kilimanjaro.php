@@ -18,7 +18,7 @@ return
     'country' => 'Tanzania',
     'views' => 0,
     'likes' => 0,
-    'meta_title' => '7 Days Shira Route Kilimanjaro Climb - Stan Safaris',
+    'meta_title' => '7 Days Shira Route Kilimanjaro Climb - Kilimanjaro Crest Travel',
     'meta_description' => 'Climb Kilimanjaro via the scenic Shira Route. Experience the breathtaking Shira Plateau and enjoy panoramic views of Mount Meru and the Great Rift Valley.',
     'meta_keywords' => ['kilimanjaro', 'shira route', 'mount kilimanjaro', 'tanzania', 'trekking', 'hiking', 'shira plateau'],
     'itineraries' => [
@@ -26,7 +26,7 @@ return
             'title' => 'Day 1: Airport pick-up - Drop off at hotel',
             'image' => 'packages/Arrival-at-Kili-Airport.webp',
             'descriptions' => [
-                ['content' => '<p>You will be picked up by the staff of Stan Safaris from Kilimanjaro International Airport (JRO) and driven to your accommodation in Moshi. Participants will be given a short briefing for the climb the next day. Kits and the necessary equipment will be checked as well.</p>']
+                ['content' => '<p>You will be picked up by the staff of Kilimanjaro Crest Travel from Kilimanjaro International Airport (JRO) and driven to your accommodation in Moshi. Participants will be given a short briefing for the climb the next day. Kits and the necessary equipment will be checked as well.</p>']
             ],
             'tips' => 'Accommodation: Moshi Hotel | Meal Plan: Dinner'
         ],

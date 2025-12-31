@@ -20,39 +20,38 @@
                         
                         <div class="space-y-6">
                             <div class="flex items-start">
-                                <div class="flex-shrink-0 bg-amber-600 p-3 rounded-full">
+                                <div class="flex-shrink-0 bg-[#e7247a] p-3 rounded-full">
                                     <i class="fas fa-map-marker-alt text-white text-xl"></i>
                                 </div>
                                 <div class="ml-4">
                                     <h3 class="text-xl font-semibold text-gray-800 mb-2">Our Office</h3>
-                                    <p class="text-gray-700 text-base">Dar es Salaam
+                                    <p class="text-gray-700 text-base">Kilimanjaro
                                         , Tanzania</p>
                                 </div>
                             </div>
                             
                             <div class="flex items-start">
-                                <div class="flex-shrink-0 bg-amber-600 p-3 rounded-full">
+                                <div class="flex-shrink-0 bg-[#e7247a] p-3 rounded-full">
                                     <i class="fas fa-phone-alt text-white text-xl"></i>
                                 </div>
                                 <div class="ml-4">
                                     <h3 class="text-xl font-semibold text-gray-800 mb-2">Call Us</h3>
-                                    <p class="text-gray-700 text-base">+255 780 986 288</p>
+                                    <p class="text-gray-700 text-base">+255 612 068 540</p>
                                 </div>
                             </div>
                             
                             <div class="flex items-start">
-                                <div class="flex-shrink-0 bg-amber-600 p-3 rounded-full">
+                                <div class="flex-shrink-0 bg-[#e7247a] p-3 rounded-full">
                                     <i class="fas fa-envelope text-white text-xl"></i>
                                 </div>
                                 <div class="ml-4">
                                     <h3 class="text-xl font-semibold text-gray-800 mb-2">Email Us</h3>
-                                    <p class="text-gray-700 text-base">info@crownedwildafrica.com</p>
-                                    <p class="text-gray-700 text-base">safari@crownedwildafrica.com </p>
+                                    <p class="text-gray-700 text-base">info@kilimanjarocresttravel.com </p>
                                 </div>
                             </div>
                             
                             <div class="flex items-start">
-                                <div class="flex-shrink-0 bg-amber-600 p-3 rounded-full">
+                                <div class="flex-shrink-0 bg-[#e7247a] p-3 rounded-full">
                                     <i class="fas fa-clock text-white text-xl"></i>
                                 </div>
                                 <div class="ml-4">
@@ -152,10 +151,36 @@
                                     <p class="mt-1 text-sm text-red-600">{{ $message }}</p>
                                 @enderror
                             </div>
+
+                            {{-- add Recaptcha site key --}}
+                            <div class="col-md-12">
+
+                                    <div class="form-group">
+
+                                        <strong>ReCaptcha:</strong>
+
+                                        <div class="g-recaptcha" data-sitekey="{{ env('GOOGLE_RECAPTCHA_KEY') }}"></div>
+
+                                        @if ($errors->has('g-recaptcha-response'))
+
+                                            <span class="text-danger">{{ $errors->first('g-recaptcha-response') }}</span>
+
+                                        @endif
+
+                                    </div>  
+
+                                </div>
+                  
+                            @if ($errors->has('g-recaptcha-response'))
+                                <div class="mt-2 text-sm text-red-600">
+                                    {{ $errors->first('g-recaptcha-response') }}
+                                </div>
+                            @endif
+
                             
                             <div class="pt-2">
                                 <button type="submit" 
-                                    class="w-full bg-amber-600 text-white font-semibold py-3 px-6 rounded-md hover:bg-amber-600 transition duration-300">
+                                    class="w-full bg-[#e7247a] text-white font-semibold py-3 px-6 rounded-md hover:bg-[#e7247a] transition duration-300">
                                     Send Message
                                 </button>
                             </div>
@@ -169,13 +194,13 @@
     <!-- Map Section -->
     <section class="h-96 bg-gray-100">
         <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.964978242355!2d39.20820031477197!3d-6.792481195057237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x185c4b03e0991891%3A0x9d5eefcaf6a1f0a9!2sDar%20es%20Salaam%2C%20Tanzania!5e0!3m2!1sen!2s!4v1620000000000!5m2!1sen!2s" 
-            width="100%" 
-            height="100%" 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31864.72521547997!2d37.301458911368975!3d-3.32777844164367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1839d88cb4755bad%3A0xa290b94a23ffd682!2sShanty%20Town!5e0!3m2!1sen!2stz!4v1766995077875!5m2!1sen!2stz" 
+             width="100%" 
+            height="100%"
             style="border:0;" 
             allowfullscreen="" 
             loading="lazy"
-            title="Stan Safaris Office Location - Dar es Salaam, Tanzania">
+            title="Kilimanjaro Crest Travel Office Location - Shanty Town, Tanzania">
         </iframe>
     </section>
 
@@ -254,7 +279,7 @@
             --tw-ring-color: rgba(245, 158, 11, var(--tw-ring-opacity));
         }
         
-        .hover\:bg-amber-600:hover {
+        .hover\:bg-[#e7247a]:hover {
             --tw-bg-opacity: 1;
             background-color: rgba(217, 119, 6, var(--tw-bg-opacity));
         }

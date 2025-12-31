@@ -20,7 +20,7 @@ return
     'country' => 'Tanzania',
     'views' => 0,
     'likes' => 0,
-    'meta_title' => '7 Days Northern Tanzania Safari | Stan Safaris',
+    'meta_title' => '7 Days Northern Tanzania Safari | Kilimanjaro Crest Travel',
     'meta_description' => 'Explore the best of Northern Tanzania on this 7-day safari featuring Serengeti, Ngorongoro Crater, Tarangire, and Lake Natron. Witness the Great Migration and Big Five in their natural habitat.',
     'meta_keywords' => ['tanzania safari', 'northern circuit', 'serengeti', 'ngorongoro', 'tarangire', 'lake natron', 'great migration', 'african safari'],
     'itineraries' => [

@@ -34,11 +34,11 @@
         <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 " style="font-size: 3.8125rem;
         letter-spacing: 3.5px;font-family: AlternateGotNo1D, sans-serif;line-height: 1.2;
 text-transform: uppercase;">
-            Conquer The <br/>Africa's Summit
+           Discover Kilimanjaro’s  <br/>Hidden Gem
         </h1>
         <div class="flex flex-col sm:flex-row gap-4 py-6">
-            <a href="{{ route('book-now') }}" class="inline-block mt-2 bg-transparent hover:bg-[#444] text-white border border-white px-3 py-2 rounded-sm font-medium transition-colors text-sm text-center" style="font-family: brandon-bold-webfont, sans-serif; font-size: 0.8rem !important; letter-spacing: 1.84px !important; text-transform: uppercase !important; font-weight: normal !important;">
-                Book Now
+            <a href="{{ route('contact') }}" class="inline-block mt-2 bg-transparent hover:bg-[#444] text-white border border-white px-3 py-2 rounded-sm font-medium transition-colors text-sm text-center" style="font-family: brandon-bold-webfont, sans-serif; font-size: 0.8rem !important; letter-spacing: 1.84px !important; text-transform: uppercase !important; font-weight: normal !important;">
+                ENQUIRE NOW
             </a>
         </div>
         

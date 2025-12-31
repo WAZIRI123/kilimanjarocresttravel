@@ -19,8 +19,8 @@
                 <ul class="mt-4 grid grid-cols-2 gap-2 sm:grid-cols-1 sm:gap-0 sm:space-y-2">
                     <li class="lg:text-left text-center"><a href="/" class="text-muted-foreground hover:text-foreground transition-colors font-semibold">Home</a></li>
                     <li class="lg:text-left text-center"><a href="/about" class="text-muted-foreground hover:text-foreground transition-colors font-semibold">About Us</a></li>
-                    <li class="lg:text-left text-center"><a href="/all-packages" class="text-muted-foreground hover:text-foreground transition-colors font-semibold">Safari Tours</a></li>
-                    <li class="lg:text-left text-center"><a href="/destinations" class="text-muted-foreground hover:text-foreground transition-colors font-semibold">Destinations</a></li>
+                    <li class="lg:text-left text-center"><a href="/all-packages?category=day-trip" class="text-muted-foreground hover:text-foreground transition-colors font-semibold">Day Trips</a></li>
+                    <li class="lg:text-left text-center"><a href="/all-packages?category=hiking" class="text-muted-foreground hover:text-foreground transition-colors font-semibold">Hiking Tours</a></li>
                     <li class="lg:text-left text-center sm:col-span-2 md:col-span-1"><a href="/contact" class="text-muted-foreground hover:text-foreground transition-colors font-semibold">Contact Us</a></li>
                 </ul>
             </div>

@@ -1,18 +1,20 @@
 @php 
 $latestDayTrip = \App\Models\Package::where('is_active', true)
     ->where('category', 'day-trip')
-    ->orderBy('created_at', 'desc')
-    ->orderBy('id', 'desc')
-    ->limit(4);
+    ->inRandomOrder()
+    ->limit(4)
+    ->get();
 
 
 
 
 $latestHiking = \App\Models\Package::where('is_active', true)
     ->where('category', 'hiking')
+    ->inRandomOrder()
     ->orderBy('created_at', 'desc')
-    ->orderBy('id', 'desc')
-    ->limit(2);
+    ->orderBy('id', 'Asc')
+    ->limit(1)
+    ->get();
 
     //join two
     $combinedPackages = $latestDayTrip->merge($latestHiking);
@@ -33,7 +35,7 @@ $latestHiking = \App\Models\Package::where('is_active', true)
                         <div class="card-image">
                             <img src="{{asset('storage/' . $package->featured_image)}}" alt="{{$package->category}}">
                             <div class="card-overlay">
-                                <h3 class="destination-title">{{$package->category}}</h3>
+                                <h3 class="destination-title">{{$package->title}}</h3>
                             </div>
                         </div>
                     </a>

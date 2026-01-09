@@ -194,17 +194,25 @@ class Index extends Component
   5 => 60,
 ],
 
- //kuva
- 18 => [
+ //kuza
+ 17 => [
   1 => 115,
   2 => 95,
   3 => 85,
   4 => 75,
   5 => 65,
 ],
+ //m
+//  18 => [
+//   1 => 115,
+//   2 => 95,
+//   3 => 85,
+//   4 => 75,
+//   5 => 65,
+// ],
 
  //MAALUM CAVE
- 19 => [
+ 18 => [
   1 => 125,
   2 => 100,
   3 => 90,
@@ -213,7 +221,7 @@ class Index extends Component
 ],
 
  //QUAD BIKE ADVENTURE
- 20 => [
+ 19 => [
   1 => 230,
   2 => 260,
   3 => 260,
@@ -223,7 +231,7 @@ class Index extends Component
 
 
  //swim horse
- 21 => [
+ 20 => [
   1 => 165,
   2 => 165,
   3 => 165,
@@ -232,7 +240,7 @@ class Index extends Component
 ],
 
  //sea walking
- 22 => [
+ 21 => [
   1 => 150,
   2 => 150,
   3 => 150,
@@ -241,7 +249,7 @@ class Index extends Component
 ],
 
  //yatch cruise
- 23 => [
+ 22 => [
   1 => 2000,
   2 => 2000,
   3 => 2000,
@@ -251,7 +259,7 @@ class Index extends Component
 
 
  //sky dive
- 24 => [
+ 23 => [
   1 => 550,
   2 => 550,
   3 => 550,
@@ -260,7 +268,7 @@ class Index extends Component
 ],
 
  //SCUBA DIVING FOR CERTIFIED DIVERS
- 25 => [
+ 24 => [
   1 => 185,
   2 => 210,
   3 => 205,
@@ -271,7 +279,7 @@ class Index extends Component
 
  //SEMI-SUBMARINE
 
- 26 => [
+ 25 => [
   1 => 230,
   2 => 250,
   3 => 160,
@@ -280,7 +288,7 @@ class Index extends Component
 ],
 
  //NGALAWA BOAT EXPERIENCE
- 27 => [
+ 26 => [
   1 => 130,
   2 => 90,
   3 => 80,

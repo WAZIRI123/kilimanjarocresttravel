@@ -85,7 +85,7 @@
                                     document.body.style.overflow = 'hidden';
                                 } else {
                                     document.body.style.overflow = '';
-                                }" style="height: 80vh;">
+                                }" style="height: 100vh;">
                                 <!-- Modal Box -->
                                 <div x-show="tourModal" x-transition @click.outside="tourModal = false"
                                     class="bg-white rounded-lg max-w-5xl w-full mx-4 shadow-xl overflow-y-auto max-h-[90vh]">

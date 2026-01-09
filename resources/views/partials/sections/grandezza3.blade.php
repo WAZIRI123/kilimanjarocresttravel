@@ -19,7 +19,7 @@
         
         <!-- Subheading -->
         <h3 class="mb-3 mt-6 max-w-2xl" style="font-family: 'brandon-grotesque', sans-serif; letter-spacing: 1px; font-size: 24px; color: #fffffff7;">
-           From 30$
+           From 620$
         </h3>
 
         <h5 class="mb-8 max-w-2xl" style="font-family: 'brandon-grotesque', sans-serif; letter-spacing: 1px; font-size: 14px; color: #fffffff9;">

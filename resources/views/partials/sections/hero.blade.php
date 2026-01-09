@@ -45,7 +45,7 @@
            <h1 class="text-5xl md:text-6xl xl:text-7xl tracking-tight mb-4 text-white the-girl-next-door-regular">
                <span id="typewriter-text"></span><span class="typewriter-cursor">|</span>
            </h1>
-           <h2 id="subtitle" class="hidden text-2xl md:text-2xl tracking-tight mb-2 text-white neon-text font-dancing" style="font-family: 'Dancing Script !important', cursive; font-style: italic; opacity: 0; transition: opacity 0.5s ease-in-out;">Create unforgettable memories with us</h2>
+           <h2 id="subtitle" class="hidden text-2xl md:text-5xl tracking-tight mb-2 text-white neon-text font-dancing" style="font-family: 'Dancing Script !important', cursive; font-style: italic; opacity: 0; transition: opacity 0.5s ease-in-out;">Create unforgettable memories with us</h2>
        </div>
        <script>
            document.addEventListener('DOMContentLoaded', function() {
